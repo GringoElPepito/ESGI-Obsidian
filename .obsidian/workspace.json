@@ -1,0 +1,174 @@
+{
+  "main": {
+    "id": "ea86d99e2b90a082",
+    "type": "split",
+    "children": [
+      {
+        "id": "25b4f0174f53c142",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dee1bb5e125e7404",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CCNA/CCNA-J1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e1e67250754f82a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CCNA/EVE-NG.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a514aa30a7b6e39e",
+    "type": "split",
+    "children": [
+      {
+        "id": "d0295c933d0bbe87",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8255615889d72ba9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "29aec86b1c613a6b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "58d26e4a0fdd105b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4657410d733d48a7",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f4c8d9e36d52725",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "305792955e1155d5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "CCNA/CCNA-J1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5c1ce23b61c7a4bd",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "CCNA/CCNA-J1.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "89580e14eeb079b7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "d291059dc1a745c7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "CCNA/CCNA-J1.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false
+    }
+  },
+  "active": "dee1bb5e125e7404",
+  "lastOpenFiles": [
+    "CCNA/CCNA-J1.md",
+    "CCNA/EVE-NG.md",
+    "Info-ESGI.md",
+    "Projet Annuel/Projet Kasgrunt.md",
+    "Projet Annuel",
+    "Cloud Computing/Panorama.md",
+    "Cloud Computing",
+    "Outils.md",
+    "Bienvenue.md",
+    "CCNA"
+  ]
+}
