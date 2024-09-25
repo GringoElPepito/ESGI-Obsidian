@@ -1,4 +1,4 @@
-Le modèle OSI est une représentation théorique du fonctionnement des communications réseaux d'un système d'information.
+Le modèle OSI est une représentation théorique du fonctionnement des communications réseaux d'un système d'information. Il n'impose aucun protocole et sert plus de schéma d'implémentation que de représentation réelle. Les systèmes actuelles sont basés sur le [[Modèle TCP-IP]]
 OSI = Open System Interconnections, crée par l'ISO.
 PDU = Protocol Data Unit
 Modèle en 7 couches/layers :
@@ -23,7 +23,7 @@ Modèle en 7 couches/layers :
 	- PDU : Paquet / Packet
 	- Data Delivery  -> routed/routable protocol -> mécanisme d'adressage hiérarchique.  IPv4 / IPv6 / IPX / AppleTalk
 	- Path Selection -> routing protocol Static / RIP / OSPF / EIGRP / IS-IS / BGP
-	- Matériel : Router, MLS (Multi Layer Switch)
+	- Matériel : [[Router]], MLS (Multi Layer Switch)
 - [[Couche 2 - Liaison de données]] : 
 	- PDU : Trames / Frame
 	- Linear / Flat Addressing

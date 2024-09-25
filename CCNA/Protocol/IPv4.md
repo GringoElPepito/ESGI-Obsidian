@@ -45,3 +45,5 @@ Réservé (non utilisable)
 #### IP localhost
 127.X.Y.Z
 ping localhost -> pile TCP/IP est fonctionnelle d'un point de vue protocolaire
+
+Le [[Subnetting]] permet de revoir le fonctionnement des classes.

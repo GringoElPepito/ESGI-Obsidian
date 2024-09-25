@@ -3,6 +3,7 @@ Cette couche sert principal à déterminer le chemin que doivent prendre les don
 - RIP
 - OSPF
 - etc...
+Equipement de couche 3 : [[Router]]
 ### Paquet IP
 protocol non orienté connexion -> ne s'assure pas que la connexion est bidirectionnelle.
 découpage en-tête :
