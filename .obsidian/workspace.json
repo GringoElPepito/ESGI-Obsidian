@@ -47,9 +47,25 @@
             "id": "f8211c0b59379a7f",
             "type": "leaf",
             "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "7bcc5e4d494f3328",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "38e9fb6ca1f9d841",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/Matériel/Router.md",
+                "file": "Planification Projet/Cours-1.md",
                 "mode": "source",
                 "source": false
               }
@@ -59,8 +75,12 @@
             "id": "507f41697b9c700f",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Cloud Computing/Panorama.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
@@ -76,7 +96,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -142,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/Matériel/Router.md",
+                "file": "Cloud Computing/Panorama.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +179,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/Matériel/Router.md",
+                "file": "Cloud Computing/Panorama.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/Matériel/Router.md"
+                "file": "Cloud Computing/Panorama.md"
               }
             }
           }
@@ -203,17 +223,23 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "f8211c0b59379a7f",
+  "active": "507f41697b9c700f",
   "lastOpenFiles": [
+    "Planification Projet/Cours-1.md",
+    "Planification Projet",
+    "CCNA/IOS Cisco/Commande Cisco.md",
+    "CCNA/OSI model/Couche 3 - Réseau.md",
+    "CCNA/IOS Cisco",
+    "CCNA/OSI model/Couche 1 - Physique.md",
+    "CCNA/OSI model/Couche 2 - Liaison de données.md",
+    "CCNA/Matériel/Router.md",
     "CCNA/Architecture/Subnetting.md",
     "CCNA/Protocol/IPv4.md",
     "CCNA/CCNA-J1.md",
     "CCNA/OSI model/OSI Model.md",
     "CCNA/OSI model/Modèle TCP-IP.md",
-    "CCNA/OSI model/Couche 3 - Réseau.md",
     "CCNA/Autres/EVE-NG.md",
     "CCNA/Autres",
-    "CCNA/Matériel/Router.md",
     "CCNA/Architecture",
     "CCNA/OSI model",
     "CCNA/Protocol",
@@ -222,8 +248,6 @@
     "CCNA/Architecture/Type de réseau.md",
     "CCNA/OSI model/Encapsulation-Desencapsulation.md",
     "IPv4.md",
-    "CCNA/OSI model/Couche 2 - Liaison de données.md",
-    "CCNA/OSI model/Couche 1 - Physique.md",
     "Info-ESGI.md",
     "Projet Annuel/Projet Kasgrunt.md",
     "Projet Annuel",

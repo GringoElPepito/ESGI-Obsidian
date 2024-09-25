@@ -20,3 +20,7 @@ découpage en-tête :
 - Destination Address :
 - IP Option :
 l'en tête IP est de 20 octets.
+
+### Le routage :
+- Statique -> l'administrateur indique manuellement l'IP du prochain saut pour chaque destination.
+- Dynamique -> les routeurs utilisent un protocol (RIP,OSPF) de routage, ces protocoles permettent aux routeurs de s'échanger les réseaux auxquelles ils donnent accès. Le chemin sélectionner sera décidé par la qualité des chemins pour accéder à ces réseaux.
