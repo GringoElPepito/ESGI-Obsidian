@@ -100,7 +100,9 @@ EIGRP est un protocol trigger active, qui se met à jour via des déclencheurs.
 
 puis liste des voisins permettant d'atteindre cette destination :
 - Via IP du voisin (Métrique totale jusqu'à destination / RD (Reported Distance) -> FD du voisin)
-
+```
+sh ip eig topology ('all links' pour les liens en Possibility)
+```
 ![[Pasted image 20240926145100.png]]
 Lien série : BW = 1,544mbs delay = 20000
 
