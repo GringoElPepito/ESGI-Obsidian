@@ -36,7 +36,8 @@ Plus la valeur est faible, plus le router fait confiance et choisi la route. Con
 
 
 
-Delay de serialisation, le temps où la pulsion doit être à 1 ou à 0 pour être compréhensible
+Delay de serialisation, le temps où la pulsion doit être à 1 ou à 0 pour être compréhensible.
+1 nanosecondes pour lien Ethernet 10Gpbs.
 
 ## EIGRP : Enhanced Interior Gateway Routing Protocol
 Successeur d'IGRP (propriétaire cisco). AD interne (générés par EIGRP)  = 90
