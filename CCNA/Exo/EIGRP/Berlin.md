@@ -40,7 +40,8 @@ no ipv6 cef
 multilink bundle-name authenticated
 !
 !
-!
+router eigrp 100
+netw 
 !
 !
 !

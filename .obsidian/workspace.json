@@ -101,7 +101,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/OSI model/Couche 3 - Réseau.md",
+                "file": "CCNA/Exo/EIGRP/Berlin.md",
                 "mode": "source",
                 "source": false
               }
@@ -166,8 +166,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -187,7 +186,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/OSI model/Couche 3 - Réseau.md",
+                "file": "CCNA/Exo/EIGRP/Berlin.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -204,7 +203,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/OSI model/Couche 3 - Réseau.md",
+                "file": "CCNA/Exo/EIGRP/Berlin.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -227,7 +226,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/OSI model/Couche 3 - Réseau.md"
+                "file": "CCNA/Exo/EIGRP/Berlin.md"
               }
             }
           }
@@ -248,8 +247,9 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "58d26e4a0fdd105b",
+  "active": "90cb7e088ad3940c",
   "lastOpenFiles": [
+    "CCNA/OSI model/Couche 3 - Réseau.md",
     "CCNA/Brut.md",
     "CCNA/Exo/EIGRP/Berlin.md",
     "CCNA/Exo/EIGRP/Nice.md",
@@ -263,7 +263,6 @@
     "Planification Projet/Cours-1.md",
     "Planification Projet",
     "CCNA/IOS Cisco/Commande Cisco.md",
-    "CCNA/OSI model/Couche 3 - Réseau.md",
     "CCNA/IOS Cisco",
     "CCNA/OSI model/Couche 1 - Physique.md",
     "CCNA/OSI model/Couche 2 - Liaison de données.md",
