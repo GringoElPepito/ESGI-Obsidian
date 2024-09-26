@@ -45,13 +45,20 @@ EIGRP fonctionne avec 3 tables :
 EIGRP envoie un message "Hello" toutes les 5 secondes pour vérifier que les voisins ne sont pas HS si 3 "Hello" sans réponse considère que le voisin est HS.
 
 Métrique : basées sur 4 facteurs : 
-- Bande passante des liens en kbps
+- Bande passante (BW) des liens en kbps
 - Delay des liens traversé pour arrivé à destination
 - La charge
 - La fiabilité valeur débutant à 255/255 (baisse si erreur dans les paquets et remonte si  pas d'erreur pendant un certain temps)
 - MTU
 Giving the default constant values, only BW, Delay are used to compute metric.
-M = 256(10)
+M = 256(10⁷/BW min sur le chemin + S(delay lien traversé)/10)
+
+Le numéro d'AS
+
+configuration EIGRP : 
+```cfg
+(config)#router EIGRP 100 <- valeur arbitraire mais même valeur sur tous les routeurs de l'AS
+```
 
 | Code | Type          | AD  |
 | ---- | ------------- | --- |
