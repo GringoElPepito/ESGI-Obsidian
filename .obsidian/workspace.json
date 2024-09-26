@@ -77,7 +77,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud Computing/Panorama.md",
+                "file": "CCNA/Exo/Commande Exo.md",
                 "mode": "source",
                 "source": false
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud Computing/Panorama.md",
+                "file": "CCNA/Exo/Commande Exo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +179,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cloud Computing/Panorama.md",
+                "file": "CCNA/Exo/Commande Exo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -202,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cloud Computing/Panorama.md"
+                "file": "CCNA/Exo/Commande Exo.md"
               }
             }
           }
@@ -225,6 +225,9 @@
   },
   "active": "507f41697b9c700f",
   "lastOpenFiles": [
+    "Cloud Computing/Panorama.md",
+    "CCNA/Exo/Commande Exo.md",
+    "CCNA/Exo",
     "Planification Projet/Cours-1.md",
     "Planification Projet",
     "CCNA/IOS Cisco/Commande Cisco.md",
@@ -251,10 +254,8 @@
     "Info-ESGI.md",
     "Projet Annuel/Projet Kasgrunt.md",
     "Projet Annuel",
-    "Cloud Computing/Panorama.md",
     "Cloud Computing",
     "Outils.md",
-    "Bienvenue.md",
-    "CCNA"
+    "Bienvenue.md"
   ]
 }
