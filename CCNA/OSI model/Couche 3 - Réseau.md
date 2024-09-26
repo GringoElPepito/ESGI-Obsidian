@@ -38,6 +38,12 @@ Plus la valeur est faible, plus le router fait confiance et choisi la route. Con
 Successeur d'IGRP (propriétaire cisco). AD interne (générés par EIGRP)  = 90
 AD externe (redistribuées dans EIGRP) = 170
 
+EIGRP fonctionne avec 3 tables :
+- Table du voisinage -> liste tous les routeurs EIGRP directement -> accélère la convergence et la fiabilité
+- Table Topologique -> tous les chemins possibles pour chaque destination. les meilleurs routes pour chaque destination iront dans la table de routage
+- Table de routage -> les 
+EIGRP envoie un message "Hello" toutes les 5 secondes pour vérifier que les voisins ne sont pas HS si 3 "Hello" sans réponse considère que le voisin est HS.
+
 | Code | Type          | AD  |
 | ---- | ------------- | --- |
 | C    | connected     | 0   |
