@@ -40,9 +40,18 @@ AD externe (redistribuées dans EIGRP) = 170
 
 EIGRP fonctionne avec 3 tables :
 - Table du voisinage -> liste tous les routeurs EIGRP directement -> accélère la convergence et la fiabilité
-- Table Topologique -> tous les chemins possibles pour chaque destination. les meilleurs routes pour chaque destination iront dans la table de routage
-- Table de routage -> les 
+- Table Topologique -> tous les chemins possibles pour chaque destination.
+- Table de routage -> la ou les meilleurs (si métrique égal) pour chaque destination.
 EIGRP envoie un message "Hello" toutes les 5 secondes pour vérifier que les voisins ne sont pas HS si 3 "Hello" sans réponse considère que le voisin est HS.
+
+Métrique : basées sur 4 facteurs : 
+- Bande passante des liens en kbps
+- Delay des liens traversé pour arrivé à destination
+- La charge
+- La fiabilité valeur débutant à 255/255 (baisse si erreur dans les paquets et remonte si  pas d'erreur pendant un certain temps)
+- MTU
+Giving the default constant values, only BW, Delay are used to compute metric.
+M = 256(10)
 
 | Code | Type          | AD  |
 | ---- | ------------- | --- |
