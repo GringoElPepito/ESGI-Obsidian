@@ -29,9 +29,14 @@ protocole de routage à vecteur de distance -> RIP ne fonctionne qu'avec la tabl
 Métrique : Hop count -> nombre de routeur traversés jusqu'à destination, max 15 router
 Distance administrative : 120
 Fonctionnement de RIP :
-
+A---[R1]--O-[R2]-P--[R3]---D 
+     |             |            |             B
 Distance Administrative (AD) : valeur décimal qui représente la confiance que le router va porter en la source de l'information.
-Plus la valeur est faible, plus le router fait confiance et choisi la route
+Plus la valeur est faible, plus le router fait confiance et choisi la route. Convergence lente
+
+## EIGRP : Enhanced Interior Gateway Routing Protocol
+Successeur d'IGRP (propriétaire cisco). AD interne (générés par EIGRP)  = 90
+AD externe (redistribuées dans EIGRP) = 170
 
 | Code | Type          | AD  |
 | ---- | ------------- | --- |
