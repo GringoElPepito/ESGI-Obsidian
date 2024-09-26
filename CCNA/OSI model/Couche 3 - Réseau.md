@@ -58,6 +58,11 @@ Le numéro d'AS
 configuration EIGRP : 
 ```cfg
 (config)#router EIGRP 100 <- valeur arbitraire mais même valeur sur tous les routeurs de l'AS
+(config)#network 192.168.80.0 0.0.0.255 <- le Masque est inversé
+(config)#network 192.168.81.0 0.0.0.255
+(config)#network 1.1.1.1 0.0.0.3
+(config)#network 1.1.1.12 0.0.0.3
+(config)#network 1.1.1.16 0.0.0.3
 ```
 
 | Code | Type          | AD  |

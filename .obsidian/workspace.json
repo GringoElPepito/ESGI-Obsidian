@@ -166,7 +166,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -247,7 +248,7 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "90cb7e088ad3940c",
+  "active": "58d26e4a0fdd105b",
   "lastOpenFiles": [
     "CCNA/Brut.md",
     "CCNA/Exo/EIGRP/Berlin.md",
