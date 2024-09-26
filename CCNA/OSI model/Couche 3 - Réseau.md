@@ -84,9 +84,9 @@ RTO :
 Q count : nb paquet en attente vers ce voisin
 
 voir table topologique, pour chaque destination a un code donnant l'état de la route, réseau de destination, nb successeurs (Next Hop), valeur de la FD(Fusible Distance, meilleur métrique jusqu'à destination).
-```
+puis liste des voisins permettant d'atteindre cette destination :
+- Via IP du voisin (Métrique totale jusqu'à destination / RD (Reported Distance) -> FD du voisin)
 
-```
 
 | Code | Type          | AD  |
 | ---- | ------------- | --- |
