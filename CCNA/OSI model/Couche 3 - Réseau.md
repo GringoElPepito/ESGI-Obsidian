@@ -87,6 +87,9 @@ voir table topologique, pour chaque destination a un code donnant l'état de la 
 puis liste des voisins permettant d'atteindre cette destination :
 - Via IP du voisin (Métrique totale jusqu'à destination / RD (Reported Distance) -> FD du voisin)
 
+![[Pasted image 20240926145100.png]]
+Lien série 1,544mbs delay 
+
 
 | Code | Type          | AD  |
 | ---- | ------------- | --- |
