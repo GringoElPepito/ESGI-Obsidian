@@ -80,6 +80,13 @@ H   Address                 Interface              Hold Uptime   SRTT   RTO  Q  
 ```
 Hold Uptime : temps écoulé depuis la définition en tant que voisin.
 SRTT : temps moyen d'aller-retour.
+RTO :
+Q count : nb paquet en attente vers ce voisin
+
+voir table topologique, pour chaque destination a un code donnant l'état de la route, réseau de destination, nb successeurs (Next Hop), valeur de la FD(Fusible Distance, meilleur métrique jusqu'à destination).
+```
+
+```
 
 | Code | Type          | AD  |
 | ---- | ------------- | --- |
@@ -97,4 +104,6 @@ Multicast : envoie un flux à un groupe d'abonnés.
 Chaque chaine télé à sa propre addresse de diffusion au dessus de 224
 PIM : Protocol Independant Multicast, qui permet
 
-RIPv1 envoie MAJ en Broadcast, même les routeurs non-concernés recevra aussi les MAJ
+RIPv1 envoie MAJ en Broadcast, même les routeurs non-concernés recevra aussi les MAJ.
+
+SI équipement ne gérant pas le multicast 
