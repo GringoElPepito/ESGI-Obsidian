@@ -96,3 +96,5 @@ Multicast : envoie un flux à un groupe d'abonnés.
 
 Chaque chaine télé à sa propre addresse de diffusion au dessus de 224
 PIM : Protocol Independant Multicast, qui permet
+
+RIPv1 envoie MAJ en Broadcast, même les routeurs non-concernés recevra aussi les MAJ
