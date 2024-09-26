@@ -78,7 +78,8 @@ H   Address                 Interface              Hold Uptime   SRTT   RTO  Q  
 1   1.1.1.5                 Se1/1                    13 00:15:47   14   100  0  7
 0   1.1.1.10                Se1/0                    12 00:15:47   15   100  0  10
 ```
-Hold Uptime : temps écoulé depuis la définition en tant que voisin
+Hold Uptime : temps écoulé depuis la définition en tant que voisin.
+SRTT : temps moyen d'aller-retour.
 
 | Code | Type          | AD  |
 | ---- | ------------- | --- |
@@ -89,3 +90,9 @@ Hold Uptime : temps écoulé depuis la définition en tant que voisin
 | I    | IS-IS         | 115 |
 | R    | RIP           | 120 |
 | D EX | EIGRP externe | 170 |
+Multicast : envoie un flux à un groupe d'abonnés.
+
+[Streamer]==>[RDV]==>[DSLAM opérateur]
+
+Chaque chaine télé à sa propre addresse de diffusion au dessus de 224
+PIM : Protocol Independant Multicast, qui permet
