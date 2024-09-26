@@ -127,8 +127,9 @@ line con 0
  logging synchronous
 line aux 0
 line vty 0 4
+ pass 1234
  login
- transport input none
+ transport input telnet
 !
 !
 end
