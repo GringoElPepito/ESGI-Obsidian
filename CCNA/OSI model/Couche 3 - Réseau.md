@@ -44,7 +44,7 @@ Successeur d'IGRP (propriétaire cisco). AD interne (générés par EIGRP)  = 90
 AD externe (redistribuées dans EIGRP) = 170
 
 EIGRP fonctionne avec 3 tables :
-- Table du voisinage -> liste tous les routeurs EIGRP directement -> accélère la convergence et la fiabilité
+- Table du voisinage -> liste tous les routeurs EIGRP directement -> accélère la convergence et la fiabilité. est maintenu par l'envoi de données sur l'addresse 224.0.0.10
 - Table Topologique -> tous les chemins possibles pour chaque destination.
 - Table de routage -> la ou les meilleurs (si métrique égal) pour chaque destination.
 EIGRP envoie un message "Hello" toutes les 5 secondes pour vérifier que les voisins ne sont pas HS si 3 "Hello" sans réponse considère que le voisin est HS.
@@ -69,6 +69,16 @@ configuration EIGRP :
 (config)#network 1.1.1.12 0.0.0.3
 (config)#network 1.1.1.16 0.0.0.3
 ```
+
+Voir voisin eigrp
+```
+sh ip eig nei
+H   Address                 Interface              Hold Uptime   SRTT   RTO  Q  Seq
+                                                   (sec)         (ms)       Cnt Num
+1   1.1.1.5                 Se1/1                    13 00:15:47   14   100  0  7
+0   1.1.1.10                Se1/0                    12 00:15:47   15   100  0  10
+```
+Hold Uptime : temps écoulé depuis la définition en tant que voisin
 
 | Code | Type          | AD  |
 | ---- | ------------- | --- |
