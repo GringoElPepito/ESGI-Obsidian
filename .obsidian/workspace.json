@@ -96,6 +96,18 @@
             }
           },
           {
+            "id": "90cb7e088ad3940c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Brut.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "e1e67250754f82a6",
             "type": "leaf",
             "state": {
@@ -108,7 +120,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -174,7 +186,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/Exo/EIGRP/Berlin.md",
+                "file": "Brut.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -191,7 +203,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/Exo/EIGRP/Berlin.md",
+                "file": "Brut.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -214,7 +226,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/Exo/EIGRP/Berlin.md"
+                "file": "Brut.md"
               }
             }
           }
@@ -235,13 +247,14 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "5cfac8fbb6c83ee7",
+  "active": "90cb7e088ad3940c",
   "lastOpenFiles": [
+    "CCNA/Exo/EIGRP/Berlin.md",
+    "Brut.md",
     "CCNA/Exo/EIGRP/Nice.md",
     "CCNA/Exo/EIGRP/Geneve.md",
     "CCNA/Exo/Commande Exo.md",
     "CCNA/Exo/EIGRP/Brest.md",
-    "CCNA/Exo/EIGRP/Berlin.md",
     "CCNA/Exo/EIGRP/Lille.md",
     "CCNA/Exo/EIGRP",
     "Cloud Computing/Panorama.md",
@@ -271,7 +284,6 @@
     "IPv4.md",
     "Info-ESGI.md",
     "Projet Annuel/Projet Kasgrunt.md",
-    "Projet Annuel",
-    "Outils.md"
+    "Projet Annuel"
   ]
 }
