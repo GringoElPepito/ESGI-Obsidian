@@ -1,15 +1,13 @@
-Brest :
 ```
-
 !
-! Last configuration change at 08:21:44 UTC Thu Sep 26 2024
+! Last configuration change at 10:31:58 UTC Thu Sep 26 2024
 !
 version 15.4
 service timestamps debug datetime msec
 service timestamps log datetime msec
 no service password-encryption
 !
-hostname Berlin
+hostname Brest
 !
 boot-start-marker
 boot-end-marker
@@ -65,12 +63,12 @@ redundancy
 !
 interface Ethernet0/0
  no shutdown
- ip address 192.168.88.254 255.255.255.0
+ ip address 192.168.82.254 255.255.255.0
  no keepalive
 !
 interface Ethernet0/1
  no shutdown
- ip address 192.168.89.254 255.255.255.0
+ ip address 192.168.83.254 255.255.255.0
  no keepalive
 !
 interface Ethernet0/2
@@ -85,19 +83,18 @@ interface Ethernet0/3
 !
 interface Serial1/0
  no shutdown
- no ip address
- shutdown
+ ip address 1.1.1.2 255.255.255.252
  serial restart-delay 0
 !
 interface Serial1/1
  no shutdown
- no ip address
- shutdown
+ ip address 1.1.1.5 255.255.255.252
  serial restart-delay 0
 !
 interface Serial1/2
  no shutdown
- ip address 1.1.1.18 255.255.255.252
+ no ip address
+ shutdown
  serial restart-delay 0
 !
 interface Serial1/3
@@ -105,6 +102,13 @@ interface Serial1/3
  no ip address
  shutdown
  serial restart-delay 0
+!
+!
+router eigrp 100
+ network 1.1.1.0 0.0.0.3
+ network 1.1.1.4 0.0.0.3
+ network 192.168.82.0
+ network 192.168.83.0
 !
 ip forward-protocol nd
 !
@@ -133,5 +137,4 @@ line vty 0 4
 !
 !
 end
-
 ```

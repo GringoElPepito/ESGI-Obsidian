@@ -1,7 +1,5 @@
 ```cfg
 !
-! Last configuration change at 08:19:34 UTC Thu Sep 26 2024
-!
 version 15.4
 service timestamps debug datetime msec
 service timestamps log datetime msec
@@ -101,6 +99,14 @@ interface Serial1/3
  no ip address
  shutdown
  serial restart-delay 0
+!
+!
+router eigrp 100
+ network 1.1.1.0 0.0.0.3
+ network 1.1.1.12 0.0.0.3
+ network 1.1.1.16 0.0.0.3
+ network 192.168.80.0
+ network 192.168.81.0
 !
 ip forward-protocol nd
 !

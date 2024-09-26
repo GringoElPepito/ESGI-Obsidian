@@ -1,8 +1,6 @@
-Nice : 
 ```
-
 !
-! Last configuration change at 08:18:08 UTC Thu Sep 26 2024
+! Last configuration change at 10:32:56 UTC Thu Sep 26 2024
 !
 version 15.4
 service timestamps debug datetime msec
@@ -105,6 +103,13 @@ interface Serial1/3
  shutdown
  serial restart-delay 0
 !
+!
+router eigrp 100
+ network 1.1.1.4 0.0.0.3
+ network 1.1.1.8 0.0.0.3
+ network 192.168.84.0
+ network 192.168.85.0
+!
 ip forward-protocol nd
 !
 !
@@ -132,5 +137,4 @@ line vty 0 4
 !
 !
 end
-
 ```
