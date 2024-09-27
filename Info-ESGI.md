@@ -26,3 +26,17 @@ MDP : R3s3@u-G3s
 1.1.1.12/30 -> Paris/Best - 2
 1.1.1.16/30 -> Brest/Orléans
 1.1.1.20/30 -> Paris/Orléans
+
+```cfg
+conf t
+line console 0
+password 1234
+login
+line vty 0 4
+password 1234
+login
+transport input ssh
+exit
+enable secret 1234
+do wr
+```

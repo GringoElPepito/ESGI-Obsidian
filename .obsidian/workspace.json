@@ -113,7 +113,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/Matériel/Router.md",
+                "file": "Info-ESGI.md",
                 "mode": "source",
                 "source": false
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/Matériel/Router.md",
+                "file": "Info-ESGI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -203,7 +203,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/Matériel/Router.md",
+                "file": "Info-ESGI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -226,7 +226,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/Matériel/Router.md"
+                "file": "Info-ESGI.md"
               }
             }
           }
@@ -249,15 +249,16 @@
   },
   "active": "e1e67250754f82a6",
   "lastOpenFiles": [
+    "CCNA/Matériel/Router.md",
+    "CCNA/IOS Cisco/Commande Cisco.md",
+    "CCNA/Exo/Commande Exo.md",
+    "CCNA/Exo/EIGRP/Nice.md",
+    "CCNA/Exo/EIGRP/Brest.md",
+    "Info-ESGI.md",
     "CCNA/OSI model/Couche 3 - Réseau.md",
     "CCNA/Exo/EIGRP/Lille.md",
-    "CCNA/Exo/Commande Exo.md",
-    "CCNA/IOS Cisco/Commande Cisco.md",
-    "Info-ESGI.md",
     "Pasted image 20240926145100.png",
-    "CCNA/Exo/EIGRP/Brest.md",
     "CCNA/Exo/EIGRP/Berlin.md",
-    "CCNA/Exo/EIGRP/Nice.md",
     "CCNA/Autres/EVE-NG.md",
     "CCNA/Exo/EIGRP/Geneve.md",
     "CCNA/Brut.md",
@@ -269,7 +270,6 @@
     "CCNA/IOS Cisco",
     "CCNA/OSI model/Couche 1 - Physique.md",
     "CCNA/OSI model/Couche 2 - Liaison de données.md",
-    "CCNA/Matériel/Router.md",
     "CCNA/Architecture/Subnetting.md",
     "CCNA/Protocol/IPv4.md",
     "CCNA/CCNA-J1.md",

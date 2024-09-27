@@ -43,7 +43,7 @@ Configurer les mots de passe :
 	2. `#password MDP`
 	3. `login` <- active l'authentification
 - VTY (Telnet,SSH) : accéder à la console à distance
-	1. `vty line vty 0 15` <- permet 16 connexions pour administration à distance
+	1. `line vty 0 15` <- permet 16 connexions pour administration à distance
 	2. `password MDP`
 	3. `login`
 	4. `transport input ssh` <- N'autorise que les connexions SSH
