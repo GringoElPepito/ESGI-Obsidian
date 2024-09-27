@@ -113,7 +113,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Info-ESGI.md",
+                "file": "CCNA/Matériel/Router.md",
                 "mode": "source",
                 "source": false
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Info-ESGI.md",
+                "file": "CCNA/Matériel/Router.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -203,7 +203,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Info-ESGI.md",
+                "file": "CCNA/Matériel/Router.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -226,7 +226,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Info-ESGI.md"
+                "file": "CCNA/Matériel/Router.md"
               }
             }
           }
@@ -249,16 +249,16 @@
   },
   "active": "e1e67250754f82a6",
   "lastOpenFiles": [
-    "CCNA/Matériel/Router.md",
     "CCNA/IOS Cisco/Commande Cisco.md",
+    "CCNA/Exo/EIGRP/Berlin.md",
     "CCNA/Exo/Commande Exo.md",
-    "CCNA/Exo/EIGRP/Nice.md",
+    "CCNA/Exo/EIGRP/Lille.md",
     "CCNA/Exo/EIGRP/Brest.md",
     "Info-ESGI.md",
+    "CCNA/Matériel/Router.md",
+    "CCNA/Exo/EIGRP/Nice.md",
     "CCNA/OSI model/Couche 3 - Réseau.md",
-    "CCNA/Exo/EIGRP/Lille.md",
     "Pasted image 20240926145100.png",
-    "CCNA/Exo/EIGRP/Berlin.md",
     "CCNA/Autres/EVE-NG.md",
     "CCNA/Exo/EIGRP/Geneve.md",
     "CCNA/Brut.md",
