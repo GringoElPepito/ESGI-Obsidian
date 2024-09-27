@@ -113,7 +113,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Info-ESGI.md",
+                "file": "CCNA/Matériel/Router.md",
                 "mode": "source",
                 "source": false
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Info-ESGI.md",
+                "file": "CCNA/Matériel/Router.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -203,7 +203,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Info-ESGI.md",
+                "file": "CCNA/Matériel/Router.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -226,7 +226,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Info-ESGI.md"
+                "file": "CCNA/Matériel/Router.md"
               }
             }
           }
@@ -250,21 +250,22 @@
   "active": "e1e67250754f82a6",
   "lastOpenFiles": [
     "CCNA/OSI model/Couche 3 - Réseau.md",
-    "Pasted image 20240926145100.png",
     "CCNA/Exo/EIGRP/Lille.md",
+    "CCNA/Exo/Commande Exo.md",
+    "CCNA/IOS Cisco/Commande Cisco.md",
+    "Info-ESGI.md",
+    "Pasted image 20240926145100.png",
     "CCNA/Exo/EIGRP/Brest.md",
     "CCNA/Exo/EIGRP/Berlin.md",
     "CCNA/Exo/EIGRP/Nice.md",
     "CCNA/Autres/EVE-NG.md",
     "CCNA/Exo/EIGRP/Geneve.md",
     "CCNA/Brut.md",
-    "CCNA/Exo/Commande Exo.md",
     "CCNA/Exo/EIGRP",
     "Cloud Computing/Panorama.md",
     "CCNA/Exo",
     "Planification Projet/Cours-1.md",
     "Planification Projet",
-    "CCNA/IOS Cisco/Commande Cisco.md",
     "CCNA/IOS Cisco",
     "CCNA/OSI model/Couche 1 - Physique.md",
     "CCNA/OSI model/Couche 2 - Liaison de données.md",
@@ -283,7 +284,6 @@
     "CCNA/Architecture/Type de réseau.md",
     "CCNA/OSI model/Encapsulation-Desencapsulation.md",
     "IPv4.md",
-    "Info-ESGI.md",
     "Projet Annuel"
   ]
 }
