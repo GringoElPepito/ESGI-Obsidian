@@ -86,7 +86,7 @@ Q count : nb paquet en attente vers ce voisin
 voir table topologique, pour chaque destination a un code donnant l'état de la route, réseau de destination, nb successeurs (Next Hop), valeur de la FD(Feasible Distance, meilleur métrique jusqu'à destination).
 FC = Feasible Condition (RD<FD)
 - Successor : La métrique totale en passant par lui est la + faisable -> c'est la FD.
-- Fusible successor : la métrique totale en passant par lui est  > à la FD mail il valide la FC (Feasible Condition (RD<FD))
+- Feasible successor : la métrique totale en passant par lui est  > à la FD mail il valide la FC (Feasible Condition (RD<FD))
 - Possibility permet de joindre la destination mais il ne valide pas la FC. Si le lien avec le Successor tombe et qu'il n'y a pas de Fesible Successor on va alors requêter son voisin pour demander si sa route est toujours OP. Pendant le requêtage, la route devient active au sein de la table topologique.
   Quand tout est ok, la route est masqué P -> passive.
 
