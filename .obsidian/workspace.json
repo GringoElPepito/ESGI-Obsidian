@@ -72,9 +72,37 @@
               "icon": "lucide-file",
               "title": "Cours 1"
             }
+          },
+          {
+            "id": "54c445ef2cea852b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LPIC101/Cours 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cours 1"
+            }
+          },
+          {
+            "id": "2c85ce8b81ca9e7f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Virtualisation/Cours 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cours 1"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -211,8 +239,15 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "826a379f518244e1",
+  "active": "2c85ce8b81ca9e7f",
   "lastOpenFiles": [
+    "attachments/Pasted image 20241021160232.png",
+    "Virtualisation",
+    "LPIC101/Cours 1.md",
+    "Virtualisation/Cours 1.md",
+    "attachments/Pasted image 20241021151041.png",
+    "Growth Hacking/Cours 1.md",
+    "LPIC101",
     "attachments/Pasted image 20241021105237.png",
     "attachments/Pasted image 20241021104833.png",
     "attachments/Pasted image 20241021104703.png",
@@ -222,10 +257,7 @@
     "attachments/Pasted image 20241021103454.png",
     "attachments/Pasted image 20241021103438.png",
     "attachments/Pasted image 20241021103344.png",
-    "attachments/Pasted image 20241021103317.png",
-    "attachments/Pasted image 20241021102821.png",
     "attachments",
-    "Growth Hacking/Cours 1.md",
     "Growth Hacking",
     "Outils.md",
     "Info-ESGI.md",
@@ -253,11 +285,7 @@
     "CCNA/IOS Cisco/Commande Cisco.md",
     "CCNA/Exo/Commande Exo.md",
     "CCNA/Autres/EVE-NG.md",
-    "CCNA/Architecture/Type de réseau.md",
-    "CCNA/Architecture/Subnetting.md",
     "CCNA/Protocol",
-    "CCNA/OSI model",
-    "CCNA/Matériel",
-    "CCNA/IOS Cisco"
+    "CCNA/OSI model"
   ]
 }
