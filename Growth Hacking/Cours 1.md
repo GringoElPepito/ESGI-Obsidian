@@ -50,3 +50,18 @@ Study : on tire les conclusions des résultats suivants les expérimentations 3 
 ![[Pasted image 20241021104703.png]]
 ![[Pasted image 20241021104833.png]]
 ![[Pasted image 20241021105237.png]]
+![[Pasted image 20241118082511.png]]
+![[Pasted image 20241118082548.png]]
+![[Pasted image 20241118082704.png]]
+2 à 5 critères, pour caractériser sa cible
+![[Pasted image 20241118084549.png]]
+![[Pasted image 20241118085149.png]]
+![[Pasted image 20241118085443.png]]
+![[Pasted image 20241118085642.png]]
+Le benchmark concerne les parties Awareness & Acquisition
+Director competitor => audience d'un competiteur direct
+Indirect competitor => audience d'un competiteur indirect
+Same audience => audience ne provenant pas d'un concurrent
+
+
+Growth Hacking sur LinkedIn via Waalaxy
