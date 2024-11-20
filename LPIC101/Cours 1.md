@@ -89,3 +89,123 @@ Commande pour récup le nombre de cœur d'un processeur.
 - /var : on y retrouvera différents répertoire comme le cache, local, log, backups, www etc...
 
 Sticky bit = Protéger les fichiers des utilisateurs. Par exemple, un fichier sur lequel l'utilisateur toto ne sera pas propriétaire ne pourra supprimer un élément dans le dossier ayant le sticky bit
+
+Les DAC = Discretionary Access Control,
+Les droits sont à la charge du propriétaire du fichier||dossier
+Les types d'utilisateur dans les droits d'un fichier
+- Utilisateur propriétaire
+- Groupe propriétaire
+- Les autres
+
+Les droits DAC dans un fichier
+- Lecture = 4 = r
+- Ecriture = 2 = w
+- Exécution = 1 = x
+
+Sur un dossier le droit de lecture permet d'effectuer un ``ls`` dessus et le droit d'exécution permet de ce déplacer dedans ``cd``. Il faut donc pour un dossier qui doit être en lecture il faut mettre les droits en lecture et en exécution soit 5
+
+raccourci d'affectation chmod
+- u = user
+- g = group
+- o = other
+- a = all
+
+```bash
+sudo chmod ug-r fichier #Retire les droits de lecture à l'utilisateur et groupe propriétaire
+sudo chmod u=r fichier #Change tous les droits du propriétaire pour ne lui laisserque le droit de lecture
+sudo chmod a+rx fichier #Ajoute les droits de lecture d'excution à tous le monde
+sudo chmod -x fichier #Retire le droit d'execution a tout le monde
+```
+
+Le x peut être remplacé par s dans l'affichage des droits, cela correspond au setuid qui permet aux utilisateurs de modifier un fichier comme s'il avait les mêmes droit que le propriétaire.
+il peut y avoir un second s, qui correpond au setgid
+Le sticky bit noté t permet de restreindre les actions d'un utilisateur a sur un fichier créer par l'utilisateur b.
+
+Pas mettre de mot de passe a root pour créer un utilisateur avec sudo
+# Les métacaractères
+`*` est un joker permettant de remplacer toutes les occurrences possible
+`?` est un joker remplaçant un seul caractère
+`[0-9]` permet de prendre en compte n'importe quel chiffre compris entre 0 et 9 inclus
+
+# Fichier utilisateur/groupe
+## Passwd
+kaisen:x:1000:1000:Kaisen,,,:/home/kaisen:/bin/bash
+- kaisen = username
+- x = placeholder pour remplacer le mot de passe qui était anciennement stocké dans ce fichier
+- 1000 = UID User ID
+- 1000 = GID Group ID
+- Kaisen,,, = Champ commentaire
+- /home/kaisen = path to home directory
+- /bin/bash = path to the shell, le shell doit être chemin absolu sinon il n'est pas reconnu
+Pour modifier les propriété d'un utilisateur on utilisera `usermod`
+root ayant l'UID 0, si on créer un utilisateur avec l'UID 0 à sa connexion celui-ci se connectera en tant que root.
+Possibilité de passé root via vim
+```bash
+sudo vim fichier
+:shell
+```
+
+
+## Shadow
+## Group
+
+## LS -lhi
+```bash
+784925 -rw-r--r-- 1 kaisen:kaisen 4.0K Nov 19 10:18 fichier
+```
+- 784925 : inode
+- -rw-r--r-- : droit du fichier
+- 1 : nombre d'inode
+- kaisen:kaisen : propriétaire:groupe
+- 4.0K : nombre de Byte
+- Nov 19 10:18 : Date de dernière modification
+- fichier : nom du fichier
+`ls -A` : affiche tous les fichiers mais n'affiche pas `.`  & `..`
+`ls -a` : affiche tous les fichiers
+
+# Device
+sda = SCSI Device a
+
+
+# Gestionnaire de paquet APT
+APT est une surcouche d'abstraction utilisant DPKG en arrière-plan. La différence est que DPKG ne fait pas de résolution de dépendances. C'est APT qui s'en occupe 
+Met à jour la liste des paquets téléchargeables mais ne mets pas à jour les paquets
+```bash
+sudo apt update
+```
+Met à jour les paquets sans régler les soucis de dépendances
+```bash
+sudo apt upgrade
+```
+Met à jour les paquets en réglant les soucis de dépendances
+```bash
+sudo apt full-upgrade
+```
+Réparer les problèmes de dépendances
+```bash
+sudo apt install -f
+```
+Lister les paquets disponible sur les repos
+```bash
+sudo apt list
+```
+Lister les paquets installés avec DPKG
+```bash
+dpkg -l
+```
+Supprimer un paquet
+```bash
+sudo apt remove
+```
+Supprimer un paquet et ses dépendances si elles ne sont pas utilisés
+```bash
+sudo apt autoremove
+```
+Supprimer un paquet, ses dépendances non utilisés et les fichiers de configuration
+```bash
+sudo apt autoremove --purge
+```
+Supprimer les configurations d'un paquet désinstallé
+```bash
+sudo dpkg --purge nom_du_paquet
+```
