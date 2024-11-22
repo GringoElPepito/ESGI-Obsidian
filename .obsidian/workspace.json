@@ -283,9 +283,12 @@
   },
   "active": "b37d62d32f9a5c29",
   "lastOpenFiles": [
+    "Planification Projet/Gestion des risques.md",
+    "Planification Projet/Soutenance.md",
+    "Planification Projet/Suivi avancement projet.md",
+    "Virtualisation/Projet Soutenance.md",
     "LPIC101/Exo.md",
     "LPIC101/Cours 1.md",
-    "Virtualisation/Projet Soutenance.md",
     "Python/Vocabulaire.md",
     "Python/Cours 1.md",
     "Python",
@@ -325,9 +328,6 @@
     "CCNA/Protocol/IPv6.md",
     "CCNA/OSI model/OSI Model.md",
     "CCNA/Protocol/IPv4.md",
-    "CCNA/OSI model/Modèle TCP-IP.md",
-    "CCNA/OSI model/Encapsulation-Desencapsulation.md",
-    "CCNA/OSI model/Couche 3 - Réseau.md",
     "CCNA/Exo/EIGRP"
   ]
 }
