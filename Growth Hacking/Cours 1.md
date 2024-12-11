@@ -65,3 +65,8 @@ Same audience => audience ne provenant pas d'un concurrent
 
 
 Growth Hacking sur LinkedIn via Waalaxy
+
+Prospect = potentiel Client
+Lead = Prospect ayant réalisé une intéraction avec nous 
+Client = Prospect réalisant un achat
+Ambassadeur = client recommandant le produit

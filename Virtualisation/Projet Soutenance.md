@@ -13,7 +13,7 @@
 - [x] Créez stockage iSCSI sur TrueNAS pour stockage VM
 - [x] Créez stockage NFS sur TrueNAS pour stockage ISO
 - [x] Monter les stockages TrueNAS sur ESXi1
-- [x] Monter les stockages TrueNAS sur ESXi2
+- [x]  Monter les stockages TrueNAS sur ESXi2
 - [x] Création d'une VM Debian sur ESXi1
 - [x] Création d'une VM Debian sur ESXi2
 - [x] Suppression d'une VM de l'inventaire d'un des ESXi et la faire remonter sur l'autre
@@ -21,4 +21,4 @@
 - [x] Ajout des cartes réseaux supplémentaires ESXi2
 - [x] Création du PortGroup PROD & QUAL sur ESXi1
 - [x] Création du PortGroup PROD & QUAL sur ESXi2
-- [ ] Configuration du routage inter PortGroup
+- [x] Configuration du routage inter PortGroup

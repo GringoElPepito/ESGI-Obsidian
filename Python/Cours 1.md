@@ -145,3 +145,5 @@ while x>=0:
 	else: print('itération n°',x)
 print('c\'est finito')
 ```
+![[Pasted image 20241209162747.png]]
+![[Pasted image 20241209184821.png]]
