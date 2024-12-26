@@ -121,12 +121,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Fichier.md",
+                "file": "Planification Projet/Cours-1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fichier"
+              "title": "Cours-1"
             }
           },
           {
@@ -166,7 +166,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorateur de fichiers"
             }
           },
           {
@@ -273,34 +273,36 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false
     }
   },
   "active": "ad5fe8c047d977fe",
   "lastOpenFiles": [
-    "Python/Définition d'une classe.md",
-    "Python/Fichier.md",
-    "Python/Vocabulaire.md",
+    "Planification Projet/Soutenance.md",
     "Python/Cours 1.md",
+    "Python/Vocabulaire.md",
+    "Python/Fichier.md",
+    "Projet Annuel/Projet Kasgrunt.md",
+    "Planification Projet/Suivi avancement projet.md",
+    "Planification Projet/Gestion des risques.md",
+    "Planification Projet/Cours-1.md",
+    "LPIC101/Cours 1.md",
+    "LPIC101/Exo.md",
+    "Growth Hacking/Cours 1.md",
+    "Virtualisation/Gestion du Stockage.md",
+    "Python/Définition d'une classe.md",
     "Cloud Computing/Panorama.md",
     "Cloud Computing/Deploiement Azure.md",
     "Virtualisation/Projet Soutenance.md",
-    "Planification Projet/Gestion des risques.md",
-    "Planification Projet/Soutenance.md",
-    "Planification Projet/Suivi avancement projet.md",
-    "LPIC101/Exo.md",
-    "LPIC101/Cours 1.md",
     "Python",
     "Untitled",
     "Virtualisation/Gestion réseau.md",
-    "Virtualisation/Gestion du Stockage.md",
     "Virtualisation/Cours 1.md",
-    "Growth Hacking/Cours 1.md",
     "attachments/Pasted image 20241118085642.png",
     "attachments/Pasted image 20241118085443.png",
     "attachments/Pasted image 20241118085149.png",
@@ -317,9 +319,7 @@
     "Growth Hacking",
     "Outils.md",
     "Info-ESGI.md",
-    "Projet Annuel/Projet Kasgrunt.md",
     "Projet Annuel",
-    "Planification Projet/Cours-1.md",
     "Planification Projet",
     "Cloud Computing",
     "CCNA/Exo/EIGRP/Nice.md",
