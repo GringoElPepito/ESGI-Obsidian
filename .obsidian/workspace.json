@@ -273,6 +273,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "github-sync:Sync with Remote": false,
       "switcher:Ouvrir le sélecteur rapide": false,
       "graph:Ouvrir la vue graphique": false,
       "canvas:Créer une nouvelle toile": false,
@@ -281,8 +282,10 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "ad5fe8c047d977fe",
+  "active": "8255615889d72ba9",
   "lastOpenFiles": [
+    "Planification Projet/Cours-1.md",
+    "Projet Annuel/Sans titre.md",
     "Planification Projet/Soutenance.md",
     "Python/Cours 1.md",
     "Python/Vocabulaire.md",
@@ -290,7 +293,6 @@
     "Projet Annuel/Projet Kasgrunt.md",
     "Planification Projet/Suivi avancement projet.md",
     "Planification Projet/Gestion des risques.md",
-    "Planification Projet/Cours-1.md",
     "LPIC101/Cours 1.md",
     "LPIC101/Exo.md",
     "Growth Hacking/Cours 1.md",
@@ -327,7 +329,6 @@
     "CCNA/Exo/EIGRP/Geneve.md",
     "CCNA/Exo/EIGRP/Brest.md",
     "CCNA/Exo/EIGRP/Berlin.md",
-    "CCNA/Protocol/IPv6.md",
     "CCNA/Exo/EIGRP"
   ]
 }
