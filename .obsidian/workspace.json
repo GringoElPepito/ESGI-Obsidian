@@ -161,14 +161,12 @@
             "id": "b99d7dd0986286c0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Git/Git & Github.md",
-                "mode": "source",
-                "source": false
+                "file": "attachments/Pasted image 20240926145100.png"
               },
-              "icon": "lucide-file",
-              "title": "Git & Github"
+              "icon": "lucide-image",
+              "title": "Pasted image 20240926145100"
             }
           }
         ],
@@ -301,19 +299,26 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "github-sync:Sync with Remote": false,
       "switcher:Ouvrir le sélecteur rapide": false,
       "graph:Ouvrir la vue graphique": false,
       "canvas:Créer une nouvelle toile": false,
       "daily-notes:Ouvrir la note quotidienne": false,
       "templates:Insérer le modèle": false,
-      "command-palette:Ouvrir la palette de commandes": false
+      "command-palette:Ouvrir la palette de commandes": false,
+      "github-sync:Sync with Remote": false
     }
   },
   "active": "b99d7dd0986286c0",
   "lastOpenFiles": [
-    "Sans titre.md",
+    "attachments/Pasted image 20241021090738.png",
+    "attachments/Pasted image 20241021100641.png",
+    "attachments/Pasted image 20241021103554.png",
+    "attachments/Pasted image 20241118082535.png",
+    "attachments/Pasted image 20241209162747.png",
+    "attachments/Pasted image 20241118085443.png",
+    "attachments/Pasted image 20241021090424.png",
     "Git/Git & Github.md",
+    "Sans titre.md",
     "Outils.md",
     "Git",
     "Planification Projet/Cours-1.md",
@@ -338,16 +343,10 @@
     "Virtualisation/Gestion réseau.md",
     "Virtualisation/Cours 1.md",
     "attachments/Pasted image 20241118085642.png",
-    "attachments/Pasted image 20241118085443.png",
     "attachments/Pasted image 20241118085149.png",
     "attachments/Pasted image 20241118084549.png",
     "attachments/Pasted image 20241118082704.png",
-    "attachments/Pasted image 20241118082548.png",
-    "attachments/Pasted image 20241118082535.png",
-    "attachments/Pasted image 20241118082511.png",
-    "attachments/Pasted image 20241021160232.png",
     "Virtualisation",
-    "attachments/Pasted image 20241021151041.png",
     "LPIC101",
     "attachments",
     "Growth Hacking",
@@ -356,7 +355,6 @@
     "Planification Projet",
     "Cloud Computing",
     "CCNA/Exo/EIGRP/Nice.md",
-    "CCNA/Exo/EIGRP/Lille.md",
-    "CCNA/Exo/EIGRP/Geneve.md"
+    "CCNA/Exo/EIGRP/Lille.md"
   ]
 }
