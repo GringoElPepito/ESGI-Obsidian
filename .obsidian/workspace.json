@@ -145,12 +145,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Growth Hacking/Réponse Quizz.md",
+                "file": "Git/Controle.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Réponse Quizz"
+              "title": "Controle"
             }
           }
         ],
@@ -294,8 +294,9 @@
   },
   "active": "53b32bfaf50084bb",
   "lastOpenFiles": [
-    "Growth Hacking/Cours 1.md",
     "Growth Hacking/Réponse Quizz.md",
+    "Git/Controle.md",
+    "Growth Hacking/Cours 1.md",
     "attachments/Pasted image 20241021103344.png",
     "attachments/16818248792904_2C1-2.png",
     "attachments/16812073424624_1C4-4.png",
@@ -338,7 +339,6 @@
     "Projet Annuel",
     "Planification Projet",
     "Cloud Computing",
-    "CCNA/Exo/EIGRP/Nice.md",
-    "CCNA/Exo/EIGRP/Lille.md"
+    "CCNA/Exo/EIGRP/Nice.md"
   ]
 }
