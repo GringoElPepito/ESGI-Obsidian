@@ -11,14 +11,10 @@
             "id": "bd2d09c39e91a558",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CCNA/CCNA-J1.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "CCNA-J1"
+              "title": "Nouvel onglet"
             }
           },
           {
@@ -147,12 +143,14 @@
             "id": "53b32bfaf50084bb",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "attachments/Pasted image 20241021103344.png"
+                "file": "Growth Hacking/Cours 1.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20241021103344"
+              "icon": "lucide-file",
+              "title": "Cours 1"
             }
           }
         ],
@@ -294,8 +292,10 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "8255615889d72ba9",
+  "active": "53b32bfaf50084bb",
   "lastOpenFiles": [
+    "Growth Hacking/Réponse Quizz.md",
+    "attachments/Pasted image 20241021103344.png",
     "attachments/16818248792904_2C1-2.png",
     "attachments/16812073424624_1C4-4.png",
     "attachments/16812069005642_1C4-3.png",
@@ -305,8 +305,6 @@
     "attachments/16812041033598_1C1.png",
     "attachments/16390563888421_Capture d’e´cran 2021-12-09 a` 14.26.13.png",
     "attachments/16352592189881_1c2-1.png",
-    "attachments/16334778030431_image19.jpg",
-    "attachments/16334774544128_image2.png",
     "Git/Git & Github.md",
     "Sans titre.md",
     "Outils.md",
