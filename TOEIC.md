@@ -96,3 +96,6 @@ Uses :
 
 
 Tycoon = Magnant, personne riche, possédant des actions
+
+too little = pour ce que l'on ne peut compter
+not enough/too few = pour ce que l'on peut compter
