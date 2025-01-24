@@ -25,3 +25,22 @@ has/have gone
 
 ## irregular verbs
 
+# phrasal verbs
+Ask to ChatGPT to generate typical phrasal verbs 
+
+
+we can replace +ING :
+Before coming to class => Before I came to class
+
+
+# IF Clauses
+if present and future = if she studies hard, she will pass her TOEIC exam
+to generalize : if present and present
+if past and past (would, could, might) 
+if present perfect and past perfect = if i had left earlier, I would have arrived on time
+
+if I were rich, I would buy a boat
+
+past perfect for `have` is `had have`
+
+
