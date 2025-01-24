@@ -40,7 +40,31 @@ if past and past (would, could, might)
 if present perfect and past perfect = if i had left earlier, I would have arrived on time
 
 if I were rich, I would buy a boat
+for if + past be +
 
 past perfect for `have` is `had have`
 
 
+# PRESENT SIMPLE
+Uses :
+- Repeated actions
+- Facts or generalization
+- Scheduled events in near future
+signal words : always, every, never, normally, often, seldom, rarely, sometimes, usually
+if negation conjugaison over do
+
+# PRESENT COUTINUOUS
+Use :
+- Action in progress
+- Near future 
+signal words : at the moment, just, just now, Listen!, Look!, now, right now
+
+
+# PAST SIMPLE
+Use :
+- Completed actions in the past*
+signal words : yesterday, ago in 1990, the other day, last Friday
+
+# PAST COUTINUOUS
+Uses : 
+- Duration in the past
