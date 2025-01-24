@@ -90,4 +90,9 @@ signal words : already, just, never, not yet, once, until that day
 # PAST PERFECT CONTINUOUS
 Uses :
 
-# FUTURE
+# 
+
+
+
+
+Tycoon = Magnant, personne riche, possédant des actions
