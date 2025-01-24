@@ -68,3 +68,26 @@ signal words : yesterday, ago in 1990, the other day, last Friday
 # PAST COUTINUOUS
 Uses : 
 - Duration in the past
+signal words : when, while
+
+# PRESENT PERFECT CONTINUOUS
+Uses :
+- Action that is still going on
+- Finished action that has an influence on the present
+- Action that has taken place one, never or several times before now
+signal words : since, for, already, ever, just, never, not yet, so far, till now, up to now, this year, these days
+
+# PRESENT PERFECT CONTINUOUS
+Uses : 
+- Action that is still going on, putting emphasis on the course or duration, not the result
+signal words : since, for ,how long, the whole week
+
+# PAST PERFECT SIMPLE
+Uses : 
+- Actions in the past taking place before other actions in the past
+signal words : already, just, never, not yet, once, until that day
+
+# PAST PERFECT CONTINUOUS
+Uses :
+
+# FUTURE
