@@ -96,8 +96,10 @@ Uses :
 ## Astuce de phrase
 
 include peut être suivi du gérontif (-ing)
+suggest, le verbe qui suit au gérontif (-ing)
 well known suivi de for pour donner une raison ou une spécialité
 stormy doit être associé à weather
+on the internet
 
 ## Vocabulaire
 
@@ -136,3 +138,6 @@ conduct = conduire / mener
 beyond = au-delà
 weather = météo / temps / climat
 stormy = orageux
+shareholder = actionnaire
+fearful = craintif
+afraid = effrayé
