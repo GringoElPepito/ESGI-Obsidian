@@ -93,10 +93,15 @@ Uses :
 # 
 
 
+## Astuce de phrase
 
+include peut être suivi du gérontif (-ing)
+well known suivi de for pour donner une raison ou une spécialité
+stormy doit être associé à weather
+
+## Vocabulaire
 
 Tycoon = Magnant, personne riche, possédant des actions
-
 too little = pour ce que l'on ne peut compter
 not enough/too few = pour ce que l'on peut compter
 subsidy = subvention
@@ -123,3 +128,11 @@ deposit = dépôt bancaire
 draft = brouillon/brise
 fee = prix de quelque chose dans sa globalité
 fare = prix d'un voyage
+proven = prouvé
+strike = grève / frapper
+vacancy = vacance / poste vacant
+involve = impliquer
+conduct = conduire / mener
+beyond = au-delà
+weather = météo / temps / climat
+stormy = orageux
