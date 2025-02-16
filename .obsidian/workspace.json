@@ -145,12 +145,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TOEIC.md",
+                "file": "Virtualisation/Gestion du Stockage.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TOEIC"
+              "title": "Gestion du Stockage"
             }
           }
         ],
@@ -295,14 +295,14 @@
   },
   "active": "53b32bfaf50084bb",
   "lastOpenFiles": [
-    "Virtualisation/Gestion du Stockage.md",
-    "Virtualisation/Cours 1.md",
     "Virtualisation/Gestion réseau.md",
     "Virtualisation/Projet Soutenance.md",
+    "Virtualisation/Cours 1.md",
+    "Virtualisation/Gestion du Stockage.md",
+    "TOEIC.md",
     "Git/Contrôle.md",
     "Windows Server/Correction TP.md",
     "Windows Server",
-    "TOEIC.md",
     "Growth Hacking/Réponse Quizz.md",
     "Growth Hacking/Cours 1.md",
     "attachments/Pasted image 20241021103344.png",
