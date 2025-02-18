@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "d1b117fb171f8042",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CCNA/Architecture/Subnetting.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Subnetting"
+            }
+          },
+          {
             "id": "dee1bb5e125e7404",
             "type": "leaf",
             "state": {
@@ -157,7 +171,8 @@
               "title": "Deploiement Azure"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -176,7 +191,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -295,8 +311,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "665459d72635b068",
+  "active": "8255615889d72ba9",
   "lastOpenFiles": [
+    "CCNA/Architecture/Type de réseau.md",
+    "CCNA/Exo/EIGRP/Nice.md",
+    "CCNA/Exo/EIGRP/Lille.md",
+    "CCNA/Exo/EIGRP/Geneve.md",
+    "CCNA/Exo/EIGRP/Brest.md",
+    "CCNA/Exo/EIGRP/Berlin.md",
     "LPIC101/Exo.md",
     "Windows Server/Cours.md",
     "LPIC101/Cours 1.md",
@@ -329,13 +351,7 @@
     "Virtualisation/Gestion réseau.md",
     "Python/Vocabulaire.md",
     "Python/Fichier.md",
-    "Cloud Computing/Deploiement Azure.md",
-    "Virtualisation/Projet Soutenance.md",
-    "Planification Projet/Suivi avancement projet.md",
     "Python",
-    "Virtualisation/Gestion du Stockage.md",
-    "Virtualisation/Cours 1.md",
-    "Growth Hacking/Cours 1.md",
     "Virtualisation",
     "LPIC101",
     "attachments",
