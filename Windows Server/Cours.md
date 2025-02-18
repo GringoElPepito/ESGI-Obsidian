@@ -3,3 +3,11 @@ Catalogue globale
 l'activation de la corbeille est définitive
 
 créer une OU @domain.lan pour bien ranger
+
+# AGULP
+Account Global Universal Local Permissions
+*Avec une seule forêt*
+User Account est dans le Global Group qui est directement dans le Domain Local Group a qui on va accorder les droits
+
+*Avec plusieurs forêt*
+User Account est dans le Global Group qui est dans l'Universal Group qui est 
