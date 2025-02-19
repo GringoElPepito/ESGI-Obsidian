@@ -54,7 +54,6 @@ Métrique : basées sur 4 facteurs :
 - Delay des liens traversé pour arrivé à destination
 - La charge
 - La fiabilité valeur débutant à 255/255 (baisse si erreur dans les paquets et remonte si  pas d'erreur pendant un certain temps)
-- MTU
 Giving the default constant values, only BW, Delay are used to compute metric.
 M = 256(10⁷/BW min sur le chemin + S(delay lien traversé)/10)
 
