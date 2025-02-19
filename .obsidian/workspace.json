@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/Matériel/Router.md",
+                "file": "CCNA/Autres/EVE-NG.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Router"
+              "title": "EVE-NG"
             }
           },
           {
@@ -204,7 +204,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "eve",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -212,7 +212,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Rechercher"
+              "title": "Search"
             }
           },
           {
@@ -225,7 +225,8 @@
               "title": "Signet"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -313,6 +314,7 @@
   },
   "active": "d1b117fb171f8042",
   "lastOpenFiles": [
+    "CCNA/Matériel/Router.md",
     "CCNA/OSI model/OSI Model.md",
     "CCNA/OSI model/Modèle TCP-IP.md",
     "CCNA/OSI model/Encapsulation-Desencapsulation.md",
@@ -339,7 +341,6 @@
     "Windows Server/Correction TP.md",
     "Python/Cours 1.md",
     "Windows Server",
-    "Python/Définition d'une classe.md",
     "attachments/Pasted image 20241209184821.png",
     "attachments/Pasted image 20241209162747.png",
     "attachments/16964126324398_Downloadable Summary [Git et Github] .png",
