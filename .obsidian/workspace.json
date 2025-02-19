@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Growth Hacking/Cours 1.md",
+                "file": "CCNA/Matériel/Router.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cours 1"
+              "title": "Router"
             }
           },
           {
@@ -313,6 +313,17 @@
   },
   "active": "d1b117fb171f8042",
   "lastOpenFiles": [
+    "CCNA/OSI model/OSI Model.md",
+    "CCNA/OSI model/Modèle TCP-IP.md",
+    "CCNA/OSI model/Encapsulation-Desencapsulation.md",
+    "CCNA/OSI model/Couche 3 - Réseau.md",
+    "CCNA/OSI model/Couche 2 - Liaison de données.md",
+    "CCNA/OSI model/Couche 1 - Physique.md",
+    "CCNA/Protocol/IPv6.md",
+    "CCNA/Protocol/IPv4.md",
+    "CCNA/Brut.md",
+    "Growth Hacking/Cours 1.md",
+    "Growth Hacking/Réponse Quizz.md",
     "CCNA/Architecture/Subnetting.md",
     "CCNA/Architecture/Type de réseau.md",
     "CCNA/Exo/EIGRP/Nice.md",
@@ -329,7 +340,6 @@
     "Python/Cours 1.md",
     "Windows Server",
     "Python/Définition d'une classe.md",
-    "CCNA/OSI model/Couche 3 - Réseau.md",
     "attachments/Pasted image 20241209184821.png",
     "attachments/Pasted image 20241209162747.png",
     "attachments/16964126324398_Downloadable Summary [Git et Github] .png",
@@ -340,17 +350,7 @@
     "attachments/16812065786868_1C4-1.png",
     "attachments/16812057132798_1C3.png",
     "attachments/16812041033598_1C1.png",
-    "Growth Hacking/Réponse Quizz.md",
-    "Git/Git & Github.md",
-    "Git/Contrôle.md",
     "Git",
-    "Planification Projet/Cours-1.md",
-    "Planification Projet/Gestion des risques.md",
-    "Planification Projet/Soutenance.md",
-    "Outils.md",
-    "Cloud Computing/Panorama.md",
-    "Virtualisation/Gestion réseau.md",
-    "Python/Vocabulaire.md",
     "Python",
     "Virtualisation",
     "LPIC101",
