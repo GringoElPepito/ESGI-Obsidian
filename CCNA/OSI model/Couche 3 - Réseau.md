@@ -141,5 +141,38 @@ R2(config-router)#netw 1.1.1.4 0.0.0.3 area 2
 R2(config-router)#netw 11.1.1.0 0.0.0.7 area 1
 ```
 le 1 correspond au numéro de processus
+
+```cisco
+O IA     1.1.1.0 [110/74] via 11.1.1.2, 00:17:51, Ethernet0/1
+O IA     1.1.1.4 [110/74] via 11.1.1.2, 00:17:51, Ethernet0/1
+O IA     1.1.1.8 [110/138] via 11.1.1.2, 00:17:51, Ethernet0/1
+O        1.1.1.12 [110/74] via 11.1.1.4, 00:17:51, Ethernet0/1
+O IA     1.1.1.28 [110/138] via 11.1.1.4, 00:17:51, Ethernet0/1
+                  [110/138] via 11.1.1.2, 00:17:51, Ethernet0/1
+O IA     1.1.1.32 [110/202] via 11.1.1.4, 00:17:51, Ethernet0/1
+                  [110/202] via 11.1.1.2, 00:17:51, Ethernet0/1
+      11.0.0.0/8 is variably subnetted, 2 subnets, 2 masks
+C        11.1.1.0/29 is directly connected, Ethernet0/1
+L        11.1.1.5/32 is directly connected, Ethernet0/1
+      100.0.0.0/24 is subnetted, 2 subnets
+O E2     100.100.100.0 [110/20] via 11.1.1.4, 00:17:51, Ethernet0/1
+O E2     100.100.101.0 [110/20] via 11.1.1.4, 00:17:51, Ethernet0/1
+O IA  192.168.1.0/24 [110/84] via 11.1.1.4, 00:17:51, Ethernet0/1
+                     [110/84] via 11.1.1.2, 00:17:51, Ethernet0/1
+O IA  192.168.2.0/24 [110/20] via 11.1.1.2, 00:17:51, Ethernet0/1
+O     192.168.3.0/24 [110/20] via 11.1.1.3, 00:17:51, Ethernet0/1
+O     192.168.4.0/24 [110/20] via 11.1.1.4, 00:17:51, Ethernet0/1
+      192.168.5.0/24 is variably subnetted, 2 subnets, 2 masks
+C        192.168.5.0/24 is directly connected, Ethernet0/0
+L        192.168.5.254/32 is directly connected, Ethernet0/0
+O IA  192.168.6.0/24 [110/84] via 11.1.1.2, 00:17:51, Ethernet0/1
+O IA  192.168.7.0/24 [110/148] via 11.1.1.2, 00:17:51, Ethernet0/1
+O IA  192.168.8.0/24 [110/148] via 11.1.1.4, 00:17:51, Ethernet0/1
+                     [110/148] via 11.1.1.2, 00:17:51, Ethernet0/1
+O IA  192.168.9.0/24 [110/212] via 11.1.1.4, 00:17:51, Ethernet0/1
+                     [110/212] via 11.1.1.2, 00:17:51, Ethernet0/1
+
+```
+Voici un exemple d'affichage des route
 ## IS-IS
 Intermediate System - Intermediate System, protocole de communication entre routeurs non dépendant du protocole réseau (IPv4,IPv6,TokenRing etc..)
