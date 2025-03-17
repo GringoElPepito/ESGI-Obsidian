@@ -219,6 +219,9 @@ OSPF utilise 3 tables :
 Les types de réseaux OSPF :
 - Point-to-point -> encapsulation HDLC, PPP, sous-interface point-to-point ATM ou Frame-Relay. Une seule relation de voisinage (adjacency).
   Pas de DR/BDR. Les message OSPF (Hello,LSA) sont envoyés sur 224.0.0.5
-- Broadcast -> Encapsulation Ethernet. Plusieurs Adjacence
+- Broadcast -> Encapsulation Ethernet. Plusieurs Adjacences
+  Election de DR/BDR
+- NMBA -> pas vu au CCNA
+- Point-to-multipoint -> pas vu au CCNA
 ## IS-IS
 Intermediate System - Intermediate System, protocole de communication entre routeurs non dépendant du protocole réseau (IPv4,IPv6,TokenRing etc..), possède un fonctionnement très proche de OSPF -> gère la diffusion des routes d'une aire à une autre.
