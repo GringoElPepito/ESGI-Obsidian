@@ -134,9 +134,12 @@ Chez Cisco le coût est calculé automatiquement en se basant sur la bande passa
 - 1,544 Mbs : 64
 - 10 Mbs : 10
 - 100 Mbs : 1
-- 1 Gbs  : 1
-- 10 Gbs 
+- 1 Gbs  : 1 !
+- 10 Gbs : 1 !
+Pour gérer les liens supérieurs à 100Mbs on change soit la bande passante de référence. Soit (le plus utilisé pour l'hétérogénéité) on précise le coût pour chaque interface.
 Pour les autres constructeurs, il faut préciser à la main le coût de chaque interface.
+Quand un routeur reçoit une maj OSPF ajoute le coût de son interface au coût reçu.
+
 Les area sous OSPF permettent de découper un AS en différentes zones.
 Il y a deux niveaux de zones, l'area 0 qui est le backbone et toutes les autres zones qui sont connectés a l'area 0.
 ```cisco
