@@ -218,10 +218,16 @@ OSPF utilise 3 tables :
 
 Les types de réseaux OSPF :
 - Point-to-point -> encapsulation HDLC, PPP, sous-interface point-to-point ATM ou Frame-Relay. Une seule relation de voisinage (adjacency).
-  Pas de DR/BDR. Les message OSPF (Hello,LSA) sont envoyés sur 224.0.0.5
+  Pas de DR(Designated Router)/BDR(Backup Designated Router). Les message OSPF (Hello,LSA) sont envoyés sur 224.0.0.5
 - Broadcast -> Encapsulation Ethernet. Plusieurs Adjacences
   Election de DR/BDR
 - NMBA -> pas vu au CCNA
 - Point-to-multipoint -> pas vu au CCNA
+
+Sur un environnement de broadcast :
+But du DR ( Designated Router ) : il est garant de la mis à jour de la LSDB (et donc de la table de routage) sur un environnement broadcast.
+Le BDR ( Backup DR ) écoute passivement les LSA. Son seul but est de devenir DR si le DR actuel tombe.
+
+Les autres routeurs sont appelés D
 ## IS-IS
 Intermediate System - Intermediate System, protocole de communication entre routeurs non dépendant du protocole réseau (IPv4,IPv6,TokenRing etc..), possède un fonctionnement très proche de OSPF -> gère la diffusion des routes d'une aire à une autre.
