@@ -240,6 +240,11 @@ Il n'y a pas préemption sur l'élection, une fois un routeur élue, il n'y a pa
 1) Basée sur la priorité OSPF de l'interface connectée à l'environnement broadcast
    Prio : valeur de 0 à 255. Par défaut 1. Si la valeur = 0, le routeur ne pourra jamais devenir DR ou BDR.
    Pour changer la priorité : `ip ospf priority VALEUR`
-   Si impossible de se départager sur la priorité OSPF, l'élection sera
+   Si impossible de se départager sur la priorité OSPF, l'élection sera basée sur le ROUTER-ID OSPF
+2) Chaque Routeur OSPF a un router-id (codée sur 32 bits : format d'une IPv4) unique dans tout l'AS. Le routeur qui a le router-id le plus élevé devient le DR
+   Pour trouver son router-id, le router regarde
+   - la commande `router-id` => `(config-router)# router-id w.x.y.z`
+   - Si cette commande n'a pas été configurée, le router-id sera :
+     
 ## IS-IS
 Intermediate System - Intermediate System, protocole de communication entre routeurs non dépendant du protocole réseau (IPv4,IPv6,TokenRing etc..), possède un fonctionnement très proche de OSPF -> gère la diffusion des routes d'une aire à une autre.
