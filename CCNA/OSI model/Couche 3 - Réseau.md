@@ -202,5 +202,13 @@ area 1 stub
 do wr
 ```
 Totally Stub : dans une aire Totally Stub, le ou les ABR remplacent les routes externes (redistribuées) et les routes par défaut des autres aires par une route par défaut avec comme métrique (l'area default-cost) = 1. (O, O\*IA). En général : une aire qui a pas besoin (ou qui ne peut avoir) ni les routes externes ni les routes des autres aires et qui a un seul chemin vers le backbone est une bonne candidate à être totally stub
+Pour passer un router en totally stub :
+```
+en
+conf t
+router ospf 1
+area 3 stub no-summary
+do wr
+```
 ## IS-IS
 Intermediate System - Intermediate System, protocole de communication entre routeurs non dépendant du protocole réseau (IPv4,IPv6,TokenRing etc..), possède un fonctionnement très proche de OSPF -> gère la diffusion des routes d'une aire à une autre.
