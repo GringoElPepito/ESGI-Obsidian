@@ -141,7 +141,8 @@ Pour les autres constructeurs, il faut préciser à la main le coût de chaque i
 Quand un routeur reçoit une maj OSPF ajoute le coût de son interface au coût reçu.
 
 Les area sous OSPF permettent de découper un AS en différentes zones.
-Il y a deux niveaux de zones, l'area 0 qui est le backbone et toutes les autres zones qui sont connectés a l'area 0.
+OSPF : two level hierarchy design
+Il y a deux niveaux de zones, l'area 0 qui est le backbone et toutes les autres zones qui sont connectés a l'area 0. Généralement, la segmentation en aire est géographique
 ```cisco
 R2(config)#router ospf 1
 R2(config-router)#netw 192.168.2.0 0.0.0.255 area 0
@@ -182,8 +183,13 @@ O IA  192.168.9.0/24 [110/212] via 11.1.1.4, 00:17:51, Ethernet0/1
                      [110/212] via 11.1.1.2, 00:17:51, Ethernet0/1
 
 ```
-- `O` signifie que la route est au sein de l'aire ou d'une erreur dans lequel le routeur est présent
+- `O` signifie que la route est au sein de l'aire ou d'une erreur dans lequel le routeur est présent utilisé en priorité par rapport à `O `
 - `O AI` signifie que la route passe par une autre aire à laquelle le routeur n'est pas directement connecté (passe généralement par l'area 0)
-- `O E2` est
+- `O E2` type par défaut des routes redistribué, dans ce cas la métrique est toujours à 20 car le cumul des coûts n'est pas pris en compte. Si on redistribue en E1, le coût jusqu'à l'ASBR est pris en compte.
+
+ABR : Area Border Router => Connecte l'aire 0 à une ou plusieurs autres aires (R1 et R2 dans notre lab)
+Internal Router : toutes les interfaces dans la même aire (mais pas l'aire 0)
+ASBR : Autonomous System Boundary Router : router qui connecte notre AS à un ou plusieurs autres AS -> router qui redistribue des routes (R1 dans notre lab)
+Backbone : connaît toutes les routes (O, O IA, O E2 ou O E1)
 ## IS-IS
-Intermediate System - Intermediate System, protocole de communication entre routeurs non dépendant du protocole réseau (IPv4,IPv6,TokenRing etc..)
+Intermediate System - Intermediate System, protocole de communication entre routeurs non dépendant du protocole réseau (IPv4,IPv6,TokenRing etc..), possède un fonctionnement très proche de OSPF -> gère la diffusion des routes d'une aire à une autre.
