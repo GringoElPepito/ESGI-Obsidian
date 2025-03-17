@@ -191,5 +191,8 @@ ABR : Area Border Router => Connecte l'aire 0 à une ou plusieurs autres aires (
 Internal Router : toutes les interfaces dans la même aire (mais pas l'aire 0)
 ASBR : Autonomous System Boundary Router : router qui connecte notre AS à un ou plusieurs autres AS -> router qui redistribue des routes (R1 dans notre lab)
 Backbone : connaît toutes les routes (O, O IA, O E2 ou O E1)
+Ordinary : comme backbone mais l'aire 0 (O, O IA, O E2, 0 E1)
+Stub : dans une aire Stub, le ou les ABR remplacent les routes externes (redistribuées) par une route par défaut avec comme métrique (l'area default-cost) = 1. (O, O IA, O\*IA). En général : une aire qui n'a pas besoin (ou qui ne peut pas avoir) les routes externes mais qui a plusieurs chemins vers le backbone est une bonne candidate à être Stub
+Totally Stub : dans une aire Totally Stub, le ou les ABR remplacent les routes externes (redistribuées) et les routes par défaut des autres aires par une route par défaut avec comme métrique (l'area default-cost) = 1. (O, O\*IA). En général : une aire qui a pas besoin (ou qui ne peut avoir) ni les routes externes ni les routes des autres aires et qui a un seul chemin vers le backbone est une bonne candidate à être tota
 ## IS-IS
 Intermediate System - Intermediate System, protocole de communication entre routeurs non dépendant du protocole réseau (IPv4,IPv6,TokenRing etc..), possède un fonctionnement très proche de OSPF -> gère la diffusion des routes d'une aire à une autre.
