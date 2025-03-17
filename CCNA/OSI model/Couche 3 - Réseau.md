@@ -129,7 +129,7 @@ SI équipement ne gérant pas le multicast
 ## OSPF
 OSPFv2 pour IPv4 & OSPFv3 pour IPv6
 Choisi le chemin avec le plus petit cumul des coûts.
-Chez Cisco le coût est calculé automatiquement en se basant sur la bande passante.
+Chez Cisco le coût est calculé automatiquement en se basant sur la bande passante ((10^8)/Bande passante)
 Pour les autres constructeurs, il faut préciser à la main le coût de chaque interface.
 Les area sous OSPF permettent de découper un AS en différentes zones.
 Il y a deux niveaux de zones, l'area 0 qui est le backbone et toutes les autres zones qui sont connectés a l'area 0.
