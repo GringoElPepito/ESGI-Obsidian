@@ -245,6 +245,8 @@ Il n'y a pas préemption sur l'élection, une fois un routeur élue, il n'y a pa
    Pour trouver son router-id, le router regarde
    - la commande `router-id` => `(config-router)# router-id w.x.y.z`
    - Si cette commande n'a pas été configurée, le router-id sera :
+	   - L'IP la plus élevée parmi les interfaces de loopback (logical, virtual)
+	   - S'il n'y a pas de d'interface de loopback alors L’IP la plus élevée parmi toutes les interfaces du routeur sera choisi pour être le router-id.
      
 ## IS-IS
 Intermediate System - Intermediate System, protocole de communication entre routeurs non dépendant du protocole réseau (IPv4,IPv6,TokenRing etc..), possède un fonctionnement très proche de OSPF -> gère la diffusion des routes d'une aire à une autre.
