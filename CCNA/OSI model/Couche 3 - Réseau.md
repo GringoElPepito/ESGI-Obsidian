@@ -131,7 +131,15 @@ OSPFv2 pour IPv4 & OSPFv3 pour IPv6
 Choisi le chemin avec le plus petit cumul des coûts.
 Chez Cisco le coût est calculé automatiquement en se basant sur la bande passante.
 Pour les autres constructeurs, il faut préciser à la main le coût de chaque interface.
-
-
+Les area sous OSPF permettent de découper un AS en différentes zones.
+Il y a deux niveaux de zones, l'area 0 qui est le backbone et toutes les autres zones qui sont connectés a l'area 0.
+```cisco
+R2(config)#router ospf 1
+R2(config-router)#netw 192.168.2.0 0.0.0.255 area 0
+R2(config-router)#netw 1.1.1.0 0.0.0.3 area 0
+R2(config-router)#netw 1.1.1.4 0.0.0.3 area 2
+R2(config-router)#netw 11.1.1.0 0.0.0.7 area 1
+```
+le 1 correspond au numéro de processus
 ## IS-IS
 Intermediate System - Intermediate System, protocole de communication entre routeurs non dépendant du protocole réseau (IPv4,IPv6,TokenRing etc..)
