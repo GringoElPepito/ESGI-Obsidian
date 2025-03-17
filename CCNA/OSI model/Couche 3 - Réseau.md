@@ -130,7 +130,8 @@ SI équipement ne gérant pas le multicast
 OSPFv2 pour IPv4 & OSPFv3 pour IPv6
 Choisi le chemin avec le plus petit cumul des coûts.
 Chez Cisco le coût est calculé automatiquement en se basant sur la bande passante.
-Pour les autres constructeurs, il faut préciser à la main le coût de chaque interface
+Pour les autres constructeurs, il faut préciser à la main le coût de chaque interface.
+
 
 ## IS-IS
 Intermediate System - Intermediate System, protocole de communication entre routeurs non dépendant du protocole réseau (IPv4,IPv6,TokenRing etc..)
