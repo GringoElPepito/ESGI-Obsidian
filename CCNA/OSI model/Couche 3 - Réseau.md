@@ -182,6 +182,8 @@ O IA  192.168.9.0/24 [110/212] via 11.1.1.4, 00:17:51, Ethernet0/1
                      [110/212] via 11.1.1.2, 00:17:51, Ethernet0/1
 
 ```
-- `O` signifie 
+- `O` signifie que la route est au sein de l'aire ou d'une erreur dans lequel le routeur est présent
+- `O AI` signifie que la route passe par une autre aire à laquelle le routeur n'est pas directement connecté (passe généralement par l'area 0)
+- `O E2` est
 ## IS-IS
 Intermediate System - Intermediate System, protocole de communication entre routeurs non dépendant du protocole réseau (IPv4,IPv6,TokenRing etc..)
