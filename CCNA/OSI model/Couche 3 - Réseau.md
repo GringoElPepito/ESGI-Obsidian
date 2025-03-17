@@ -247,6 +247,16 @@ Il n'y a pas préemption sur l'élection, une fois un routeur élue, il n'y a pa
    - Si cette commande n'a pas été configurée, le router-id sera :
 	   - L'IP la plus élevée parmi les interfaces de loopback (logical, virtual)
 	   - S'il n'y a pas de d'interface de loopback alors L’IP la plus élevée parmi toutes les interfaces du routeur sera choisi pour être le router-id.
-     
+Voici un tableau de voisinage
+```
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+192.168.2.254   255   FULL/DROTHER    00:00:33    11.1.1.2        Ethernet0/1
+192.168.3.254   254   FULL/DROTHER    00:00:35    11.1.1.3        Ethernet0/1
+192.168.4.254     1   FULL/BDR        00:00:31    11.1.1.4        Ethernet0/1
+```
+Pour forcer une réélection :
+```
+clear ip ospf process
+```
 ## IS-IS
 Intermediate System - Intermediate System, protocole de communication entre routeurs non dépendant du protocole réseau (IPv4,IPv6,TokenRing etc..), possède un fonctionnement très proche de OSPF -> gère la diffusion des routes d'une aire à une autre.
