@@ -226,10 +226,20 @@ Les types de réseaux OSPF :
 
 Sur un environnement de broadcast :
 But du DR ( Designated Router ) : il est garant de la mis à jour de la LSDB (et donc de la table de routage) sur un environnement broadcast. Le but d'avoir un DR est de limiter le nombre d'adjacence sur un réseau où il peut y avoir de nombreux routeurs. Si ce concept n'existait pas il y aurait n(n-1)/2 adjacences où n est le nombre de routeurs.
+
 Le BDR ( Backup DR ) écoute passivement les LSA. Son seul but est de devenir DR si le DR actuel tombe.
 
 Les autres routeurs sont appelés DROTHER
 
 Quand il y a une modif, le routeur envoie la LSA sur 224.0.0.6 -> DR et BDR reçoivent. Le DR vérifie que la LSA est OK et envoie la LSA sur 224.0.0.5 à tous les autres routeurs.
+
+/!\ la notion de DR/BDR n'a rien à voir avec la notion d'aire. La notion de DR/BDR est uniquement lié à la notion de broadcast
+
+### Election DR/BDR
+Il n'y a pas préemption sur l'élection, une fois un routeur élue, il n'y a pas de réélection sauf si le DR & BDR tombent
+1) Basée sur la priorité OSPF de l'interface connectée à l'environnement broadcast
+   Prio : valeur de 0 à 255. Par défaut 1. Si la valeur = 0, le routeur ne pourra jamais devenir DR ou BDR.
+   Pour changer la priorité : `ip ospf priority VALEUR`
+   Si impossible de se départager sur la priorité OSPF, l'élection sera
 ## IS-IS
 Intermediate System - Intermediate System, protocole de communication entre routeurs non dépendant du protocole réseau (IPv4,IPv6,TokenRing etc..), possède un fonctionnement très proche de OSPF -> gère la diffusion des routes d'une aire à une autre.
