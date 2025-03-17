@@ -128,8 +128,14 @@ SI équipement ne gérant pas le multicast
 
 ## OSPF
 OSPFv2 pour IPv4 & OSPFv3 pour IPv6
-Choisi le chemin avec le plus petit cumul des coûts.
-Chez Cisco le coût est calculé automatiquement en se basant sur la bande passante ((10^8)/Bande passante)
+Choisi le chemin avec le plus petit cumul des coûts, basé sur l'algorithme de Dijkstra
+Chez Cisco le coût est calculé automatiquement en se basant sur la bande passante ((10^8)/Bande passante) par défaut :
+- 1 Mb : 100
+- 1,544 Mbs : 64
+- 10 Mbs : 10
+- 100 Mbs : 1
+- 1 Gbs  : 1
+- 10 Gbs 
 Pour les autres constructeurs, il faut préciser à la main le coût de chaque interface.
 Les area sous OSPF permettent de découper un AS en différentes zones.
 Il y a deux niveaux de zones, l'area 0 qui est le backbone et toutes les autres zones qui sont connectés a l'area 0.
@@ -173,6 +179,6 @@ O IA  192.168.9.0/24 [110/212] via 11.1.1.4, 00:17:51, Ethernet0/1
                      [110/212] via 11.1.1.2, 00:17:51, Ethernet0/1
 
 ```
-Voici un exemple d'affichage des route
+- `O` signifie 
 ## IS-IS
 Intermediate System - Intermediate System, protocole de communication entre routeurs non dépendant du protocole réseau (IPv4,IPv6,TokenRing etc..)

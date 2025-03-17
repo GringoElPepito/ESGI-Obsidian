@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/OSI model/Couche 1 - Physique.md",
+                "file": "CCNA/OSI model/Couche 3 - Réseau.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Couche 1 - Physique"
+              "title": "Couche 3 - Réseau"
             }
           },
           {
@@ -327,11 +327,12 @@
   },
   "active": "2119956c03e298a2",
   "lastOpenFiles": [
+    "CCNA/OSI model/Couche 2 - Liaison de données.md",
     "CCNA/OSI model/Couche 3 - Réseau.md",
+    "CCNA/OSI model/Encapsulation-Desencapsulation.md",
+    "CCNA/OSI model/Couche 1 - Physique.md",
     "Untitled.md",
     "Sans titre.md",
-    "CCNA/OSI model/Couche 2 - Liaison de données.md",
-    "CCNA/OSI model/Couche 1 - Physique.md",
     "CCNA/Matériel/Router.md",
     "CCNA/IOS Cisco/Commande Cisco.md",
     "CCNA/Exo/Commande Exo.md",
@@ -339,7 +340,6 @@
     "CCNA/Architecture/Subnetting.md",
     "CCNA/OSI model/Modèle TCP-IP.md",
     "CCNA/OSI model/OSI Model.md",
-    "CCNA/OSI model/Encapsulation-Desencapsulation.md",
     "Growth Hacking/Cours 1.md",
     "Projet Annuel/Explication.md",
     "CCNA/Autres/EVE-NG.md",
