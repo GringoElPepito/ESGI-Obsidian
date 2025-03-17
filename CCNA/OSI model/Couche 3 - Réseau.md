@@ -207,8 +207,18 @@ Pour passer un router en totally stub :
 en
 conf t
 router ospf 1
-area 3 stub no-summary
+area 2 stub no-summary
 do wr
 ```
+
+OSPF utilise 3 tables :
+- Neighbor Table : liste de tous les routeurs OSPF directement connectés (avec qui l'on partage un réseau). Pour voir cette table => `show ip ospf neighbor`
+- LSDB : Link State Database => contient des LSA (Link State Advertisement). Pour voir cette table => `show ip ospf database`
+- Table de routage. Pour voir cette table => `show ip route`
+
+Les types de réseaux OSPF :
+- Point-to-point -> encapsulation HDLC, PPP, sous-interface point-to-point ATM ou Frame-Relay. Une seule relation de voisinage (adjacency).
+  Pas de DR/BDR. Les message OSPF (Hello,LSA) sont envoyés sur 224.0.0.5
+- Broadcast -> Encapsulation Ethernet. Plusieurs Adjacence
 ## IS-IS
 Intermediate System - Intermediate System, protocole de communication entre routeurs non dépendant du protocole réseau (IPv4,IPv6,TokenRing etc..), possède un fonctionnement très proche de OSPF -> gère la diffusion des routes d'une aire à une autre.
