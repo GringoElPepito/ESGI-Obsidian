@@ -109,6 +109,10 @@ deny ip 192.168.10.0 0.0.0.255 192.168.11.0 0.0.0.255 log
 int e0/0
 ip access-group ACLCORPO in
 
+ip access-list extended ACLDMZ
+deny ip 192.168.11.0 0.0.0.255 any log
+int e0/1
+ip access-group ACLDMZ in
 
 ```
 `telnet` équivaut au port 23
