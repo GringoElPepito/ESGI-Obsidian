@@ -108,11 +108,18 @@ permit tcp 192.168.10.0 0.0.0.255 host 192.168.11.200 eq telnet
 deny ip 192.168.10.0 0.0.0.255 192.168.11.0 0.0.0.255 log
 int e0/0
 ip access-group ACLCORPO in
+exit
 
 ip access-list extended ACLDMZ
 deny ip 192.168.11.0 0.0.0.255 any log
 int e0/1
 ip access-group ACLDMZ in
+exit
 
+ip access-list extended ACLWAN
+permit tcp any host 5.5.5.7 eq telnet
+deny ip any any log
+int s1/0
+ip access-group ACLWAN
 ```
 `telnet` équivaut au port 23
