@@ -182,7 +182,7 @@ Autorisé des VLANs sur un port trunk :
 (config-if)#switchport trunk allowed vlan { all | except | add | remove } VLANs
 ```
 Configurer un port en mode access :
-```
+```cisco
 (config-if)#switchport mode access vlan N°
 ```
 
