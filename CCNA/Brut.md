@@ -21,4 +21,15 @@ RFC1918, défini les IP Privées :
 (FW)=\=\=\=\=\=(CPE)=\=\=\=\=\={ISP}
 CPE = Customer Premises Equipement ou CE = Customer Edge
 Le One-to-One mapping sert principalement à rendre le CPE invisible, car si on enlève le DPE l'opérateur ne garantit plus la GTR (garantie de temps de rétablissement).
-- PAT Dynamique (source NAT) : Modifie l'IP source et le port source (par un port dédié à une session sortant vers le WAN) pour permettre à X IP privées d'être translatées sur une ou un pool d'IP publique 
+- PAT Dynamique (source NAT) : Modifie l'IP source et le port source (par un port dédié à une session sortant vers le WAN) pour permettre à X IP privées d'être translatées sur une ou un pool d'IP publique (Interface WAN soit bloc IP publiques routées vers le client).
+- PAT statique (destination NAT) Modifier l'IP de destination généralement publique pour un port particulier -> hébergement
+
+### Configuration PAT Dynamique
+- Configurer ACL pour définir le ou les réseaux privées qui pourront être translatés
+- Configurer les interfaces pour le NAT (l'operation de NAT ne peut avoir lieu qu'entre une interface inside et une interface outside)
+- Créer la règle de NAT
+```cisco
+en
+conf t
+ip access
+```
