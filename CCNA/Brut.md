@@ -59,3 +59,7 @@ exit
 ip nat inside source static tcp 192.168.11.200 23 5.5.5.7 23
 do wr
 ```
+
+## ACL
+Sécurité de base sur un réseau.
+Les ACL sont stateless -> pas de table d'état. Chaque paquet est traité individuellement. Un flux interdit dans un sens l'est aussi dans l'autre.
