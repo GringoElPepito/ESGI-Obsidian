@@ -97,3 +97,18 @@ Dans l'ACL : 10.1.1.1 0.0.0.0 -> peut être remplacé par host 10.1.1.1
 
 Vérifier toutes les IP :
 Dans l'ACL : 0.0.0.0 255.255.255.255 -> peut être remplacé par `any`
+
+
+### EXO ACL Correction
+
+```cisco
+ip access-list extended ACLCORPO
+permit ip host 192.168.10.1 192.168.11.0 0.0.0.255
+permit tcp 192.168.10.0 0.0.0.255 host 192.168.11.200 eq telnet
+deny ip 192.168.10.0 0.0.0.255 192.168.11.0 0.0.0.255 log
+int e0/0
+ip access-group ACLCORPO in
+
+
+```
+`telnet` équivaut au port 23
