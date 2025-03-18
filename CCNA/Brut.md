@@ -46,4 +46,16 @@ Pour voir les traductions NAT en cours :
 ```cisco
 show ip nat translation
 ```
-`CTRL` + `SHIFT` + `9 (pas celui du pavé numérique)`
+`CTRL` + `SHIFT` + `9 (pas celui du pavé numérique)` pour quitter le domain name translating
+Configuration du PAT statique :
+- Configurer les interfaces pour le NAT
+- Configurer la redirection de port
+```
+en
+conf t
+int e0/1
+ip nat inside
+exit
+ip nat inside source static tcp 192.168.11.200 23 5.5.5.7 23
+do wr
+```
