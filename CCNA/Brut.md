@@ -31,5 +31,19 @@ Le One-to-One mapping sert principalement à rendre le CPE invisible, car si on 
 ```cisco
 en
 conf t
-ip access
+ip access-list standard ACLNAT
+permit 192.168.10.0 0.0.0.255
+exit
+int e0/0
+ip nat inside
+int s1/0
+ip nat outside
+exit
+ip nat inside source list ACLNAT int s1/0 overload
+do wr
 ```
+Pour voir les traductions NAT en cours :
+```cisco
+show ip nat translation
+```
+`CTRL` + `SHIFT` + `9 (pas celui du pavé numérique)`
