@@ -123,3 +123,5 @@ int s1/0
 ip access-group ACLWAN
 ```
 `telnet` équivaut au port 23
+
+Création de règles d'inspection 
