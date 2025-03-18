@@ -138,3 +138,6 @@ ip inspect INSP_WAN in
 exit
 do wr
 ```
+
+Router On A Stick = router faisant du routage inter vlan
+1 VLAN = 
