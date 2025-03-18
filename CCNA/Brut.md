@@ -72,3 +72,23 @@ Dans les ACL, aux IP, on fait correspondre un Wildcard mask
 ACL : collection séquentielle (l'ordre à une importance) d'instructions vérifiant des paramètres aboutissant à une autorisation ou un refus. (DENY ANY implicite à la fin de chaque ACL). Il faut aller du plus précis au plus général
 
 Sur un router, on peut appliquer UNE SEULE ACL par sens (in ou out), par interface par protocole routé (IPv4,IPv6).
+
+Configuration ACL Standard :
+```ACL
+(config)# access-list X { permit | deny } IP_SOURCE WILDCARD_SOURCE
+```
+Configuration ACL Etendu :
+```ACL
+(config)# access-list X { permit | deny } IP_SOURCE WILDCARD_SOURCE IP_DESTINATION WILDCARD_DESTINATION [ operator operand ]
+```
+- Opérateur = eq, neq, gt, lt, range
+- Opérance = numéro de port, type ICMP
+Configuration ACL nommée :
+```ACL
+(config)# ip access-list { standard | extended } NOM
+(config-nacl)# { deny | permit }
+```
+Appliquer l'ACL à une interface :
+```cisco
+(config)# ip access-group { N°|Nom } {in|ou}
+```
