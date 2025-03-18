@@ -152,7 +152,19 @@ Partage de la base de données des VLANs : VTP => Virtual Trunking Protocol
 VTP est un protocole propriétaire Cisco.
 Il existe 3 modes :
 - Serveur : créer, modifier, supprimer, apprendre les VLANs et relayer les messages VTP. Mode par défaut
-- Client : apprendre les VLANs et relayer les message
+- Client : apprendre les VLANs et relayer les messages VTP.
+- transparent : créer, modifier, supprimer des VLANs mais ces derniers restent locaux à ce switch et il relaye les messages VTP.
+VTP fonctionne avec un numéro de révision ; à l'origine = 1
+A chaque modification de VLAN, le switch envoie un message VTP et le numéro avec le numéro de révision incrémenté de 1.
+Pour configurer VTP :
+Les switchs doivent avoir le même nom de domaine VTP, le même mot de passe et on peut préciser le mode.
+```cisco
+en
+conf t
+vtp domain ESGI
+vtp password toto
+
+```
 
 
 
