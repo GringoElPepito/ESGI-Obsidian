@@ -53,12 +53,14 @@
             "id": "848c40724213bbbc",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.8.9"
+                "file": "CCNA/Brut.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.9"
+              "icon": "lucide-file",
+              "title": "Brut"
             }
           },
           {
@@ -339,6 +341,7 @@
   },
   "active": "848c40724213bbbc",
   "lastOpenFiles": [
+    "CCNA/OSI model/OSI Model.md",
     "CCNA/Exo/Commande Exo.md",
     "CCNA/Brut.md",
     "CCNA/Matériel/Router.md",
@@ -352,7 +355,6 @@
     "CCNA/Architecture/Type de réseau.md",
     "CCNA/Architecture/Subnetting.md",
     "CCNA/OSI model/Modèle TCP-IP.md",
-    "CCNA/OSI model/OSI Model.md",
     "Growth Hacking/Cours 1.md",
     "Projet Annuel/Explication.md",
     "CCNA/Autres/EVE-NG.md",
