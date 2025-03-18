@@ -156,6 +156,7 @@ Il existe 3 modes :
 - transparent : créer, modifier, supprimer des VLANs mais ces derniers restent locaux à ce switch et il relaye les messages VTP.
 VTP fonctionne avec un numéro de révision ; à l'origine = 1
 A chaque modification de VLAN, le switch envoie un message VTP et le numéro avec le numéro de révision incrémenté de 1.
+Les messages VTP ne s'échangent que sur les trunks
 Pour configurer VTP :
 Les switchs doivent avoir le même nom de domaine VTP, le même mot de passe et on peut préciser le mode.
 ```cisco
@@ -163,8 +164,23 @@ en
 conf t
 vtp domain ESGI
 vtp password toto
-
 ```
+Pour réinitialiser le numéro de révision :
+- passer le sw en mode transparent puis le repasser dans le mode voulu
+- ou changer le nom de domaine VTP puis remettre le bon
+
+### Trunks
+Protocole proprio Cisco : DTP = Dynamic Trunking Protocol
+Négocier automatique un trunk entre 2 switchs
+```cisco
+(config-if)# switchport mode { dynamic desirable | dynamic auto | trunk }
+```
+Toutes les combinaisons aboutissent à un trunk sauf auto avec auto
+Autorisé des VLANs sur un port trunk :
+```cisco
+switchport trunk allowed vlan { all | except | add | remove } VLANs
+```
+Configurer un port en mode access :
 
 
 
