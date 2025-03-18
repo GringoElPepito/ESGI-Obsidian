@@ -143,5 +143,16 @@ Router On A Stick = router faisant du routage inter vlan
 1 VLAN = 1 réseau IP/ domaine de broadcast
 Les Trunks : lien physique transportant plusieurs VLANs -> il est nécessaire d'étiqueter/taguer les trames pour identifier leur VLAN d'appartenance. 
 Norme 802.1q ou dot1q
-Chez Cisco tous les VLANs connu du switch (présent dans la VLAN Database) sont autorisés par défaut
+Chez Cisco tous les VLANs connu du switch (présent dans la VLAN Database) sont autorisés par défaut sur les trunks
+Pour traiter les VLANs (Lire et /ou écrire le tag), le switch doit connaître ces VLANs. donc typiquement dans un LAN tous les switchs ont la même base de données des VLANs.
+Chez Cisco les VLANs dans le fichier de configuration, ils sont stockés dans flash:vlan.dat.
+Par défaut, tous les ports d'un switch sont dans le VLAN 1 -> VLAN Natif (untagged).
+
+Partage de la base de données des VLANs : VTP => Virtual Trunking Protocol
+VTP est un protocole propriétaire Cisco.
+Il existe 3 modes :
+- Serveur : créer, modifier, supprimer, apprendre les VLANs et relayer les messages VTP. Mode par défaut
+- Client : apprendre les VLANs et relayer les message
+
+
 
