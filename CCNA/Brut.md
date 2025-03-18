@@ -173,7 +173,8 @@ Pour réinitialiser le numéro de révision :
 Protocole proprio Cisco : DTP = Dynamic Trunking Protocol
 Négocier automatique un trunk entre 2 switchs
 ```cisco
-(config-if)# switchport mode { dynamic desirable | dynamic auto | trunk }
+(config-if)#switchport encapsulation dot1q
+(config-if)#switchport mode { dynamic desirable | dynamic auto | trunk }
 ```
 Toutes les combinaisons aboutissent à un trunk sauf auto avec auto
 Autorisé des VLANs sur un port trunk :
