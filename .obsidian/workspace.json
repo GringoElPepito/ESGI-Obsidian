@@ -50,6 +50,18 @@
             }
           },
           {
+            "id": "848c40724213bbbc",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.9"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.9"
+            }
+          },
+          {
             "id": "dee1bb5e125e7404",
             "type": "leaf",
             "state": {
@@ -186,7 +198,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -325,7 +337,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2119956c03e298a2",
+  "active": "848c40724213bbbc",
   "lastOpenFiles": [
     "CCNA/Exo/Commande Exo.md",
     "CCNA/Brut.md",
