@@ -90,7 +90,7 @@ Configuration ACL nommée :
 ```
 Appliquer l'ACL à une interface :
 ```cisco
-(config)# ip access-group { N°|Nom } {in|out}
+(config-if)# ip access-group { N°|Nom } {in|out}
 ```
 Vérifier une IP unicast (Exemple vérifier IP 10.1.1.1) :
 Dans l'ACL : 10.1.1.1 0.0.0.0 -> peut être remplacé par host 10.1.1.1
