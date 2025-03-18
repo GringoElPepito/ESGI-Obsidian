@@ -140,4 +140,6 @@ do wr
 ```
 
 Router On A Stick = router faisant du routage inter vlan
-1 VLAN = 
+1 VLAN = 1 réseau IP/ domaine de broadcast
+Les Trunks : lien physique transportant plusieurs VLANs -> il est nécessaire d'étiqueter/taguer les trames pour identifier leur VLAN d'appartenance. 
+Norme 802.1q ou dot1q
