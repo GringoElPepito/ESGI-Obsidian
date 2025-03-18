@@ -124,4 +124,17 @@ ip access-group ACLWAN
 ```
 `telnet` équivaut au port 23
 
-Création de règles d'inspection 
+Création de règles d'inspections :
+```cisco
+ip inspect name INSP_CORPO tcp
+ip inspect name INSP_CORPO udp
+ip inspect name INSP_CORPO icmp
+int e0/0
+ip inspect INSP_CORPO in
+exit
+ip inspect name INSP_WAN telnet
+int s1/0
+ip inspect INSP_WAN in
+exit
+do wr
+```
