@@ -63,3 +63,12 @@ do wr
 ## ACL
 Sécurité de base sur un réseau.
 Les ACL sont stateless -> pas de table d'état. Chaque paquet est traité individuellement. Un flux interdit dans un sens l'est aussi dans l'autre.
+
+3 types d'ACL
+- Standard : numéro compris entre 1 & 99. On peut seulement vérifier l'IP source
+- Etendue : numéro compris entre 1 & 99. Vérifie IPs, IPd, Numéro de protocole IP, Port source, Port destination
+- Nommée : qui est soit standard soit étendue
+Dans les ACL, aux IP, on fait correspondre un Wildcard mask
+ACL : collection séquentielle (l'ordre à une importance) d'instructions vérifiant des paramètres aboutissant à une autorisation ou un refus. (DENY ANY implicite à la fin de chaque ACL). Il faut aller du plus précis au plus général
+
+Sur un router, on peut appliquer UNE SEULE ACL par sens (in ou out), par interface par protocole routé (IPv4,IPv6).
