@@ -178,9 +178,13 @@ Négocier automatique un trunk entre 2 switchs
 Toutes les combinaisons aboutissent à un trunk sauf auto avec auto
 Autorisé des VLANs sur un port trunk :
 ```cisco
-switchport trunk allowed vlan { all | except | add | remove } VLANs
+(config-if)#switchport trunk allowed vlan { all | except | add | remove } VLANs
 ```
 Configurer un port en mode access :
+```
+(config-if)#switchport mode access vlan N°
+```
+
 
 
 
