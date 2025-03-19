@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/Brut.md",
+                "file": "CCNA/Exo/STP/EXO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brut"
+              "title": "EXO"
             }
           },
           {
@@ -355,11 +355,11 @@
   },
   "active": "b9ebb92ea90368dc",
   "lastOpenFiles": [
-    "CCNA/Exo/STP/EXO.md",
+    "CCNA/Exo/Commande Exo.md",
     "CCNA/Brut.md",
+    "CCNA/Exo/STP/EXO.md",
     "CCNA/Exo/STP",
     "CCNA/OSI model/OSI Model.md",
-    "CCNA/Exo/Commande Exo.md",
     "CCNA/Matériel/Router.md",
     "CCNA/OSI model/Couche 3 - Réseau.md",
     "CCNA/OSI model/Couche 2 - Liaison de données.md",
