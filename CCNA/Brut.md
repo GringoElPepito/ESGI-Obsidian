@@ -281,6 +281,11 @@ port de C qui va vers B blocked
 port de E qui va vers C blocked
 port de E Gi3 qui va vers B blocked
 
+Un bpdu envoyé toutes les 2 secondes
+
+Quand un switch ayant 2 RP voit son meilleur RP tomber alors il lance débloquage du second port
+le STP reste actif même sur un poerfast
+
 802.1w ou multiple STP permet de faire un arbre STP par VLAN
 ## EVE-NG
 Pour mettre internet dans une maquette EVE-NG 
