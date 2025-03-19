@@ -218,3 +218,6 @@ Visualisation load-balancing :
 sh ethernetchannel load-balance
 ```
 
+## EVE-NG
+Pour mettre internet dans une maquette EVE-NG 
+
