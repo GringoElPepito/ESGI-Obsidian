@@ -262,8 +262,24 @@ Rôle des ports :
    Port-id est composé de 2 valeurs : port-priority - Identifiant de port
    Port-Priority est compris entre 0 et 255, par défaut chez Cisco 128
 
+A est root
+A vers B = RPC 19
+A vers C = RPC 19
+B vers C = RPC 4
+B vers E 1 = RPC 4
+B vers E 2 = RPC 4
+C vers E = RPC 4
+C vers D = RPC 4
 
+A RPC = 0
+B RPC = 19
+C RPC = 19
+D RPC = 23
+E RPC = 23
 
+port de C qui va vers B blocked
+port de E qui va vers C blocked
+port de E Gi3 qui va vers B blocked
 ## EVE-NG
 Pour mettre internet dans une maquette EVE-NG 
 
