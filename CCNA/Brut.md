@@ -218,6 +218,16 @@ Visualisation load-balancing :
 sh ethernetchannel load-balance
 ```
 
+## Spanning-tree
+STP = Spanning-Tree Protocol 
+
+Explication transmission paquet :
+1. Quand un switch reçoit une trame, celui-ci renseigne l'adresse MAC source dans la table CAM en l'associant avec le port d'où vient la trame.
+
+Création de l'arbre STP : 
+
 ## EVE-NG
 Pour mettre internet dans une maquette EVE-NG 
+
+
 
