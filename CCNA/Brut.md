@@ -206,9 +206,15 @@ port-channel load-balance [algo]
 Bundlisation des ports :
 ```cisco
 int range e1/2-3
-channel-protocol lacp
-channel-group 1 mode active
+channel-protocol { pagp | lacp(lacp) }
+channel-group 1 mode { desirable(pour pagp) | auto(pour pagp) | active(lacp) | passive(lacp) }
 ```
-
-
+Visualtion du port-channel :
+```cisco
+sh etherchannel summ
+```
+Visualisation load-balancing :
+```cisco
+sh ethernetchannel load-balance
+```
 
