@@ -245,10 +245,24 @@ A l'issue de ces 30s, que le port passe en :
 - Blocking : n'émet aucune trame, ni même des BPDU
 RP = Root Port
 DP = Designated Port port qui mène vers un hub ou terminal
+
 Sur un lien non actif du fait du STP, un côté du câble reste en forwarding. C'est le côté du SW qui a le plus petit RPC. Si les 2 switch ont le même RPC, c'est le côté du SW qui a le plus petit bridge-id.
-Le port qui reste en forwarding transmet des BPDU, ce qui permet en cas de rupture du lien pri
+Le port qui reste en forwarding transmet des BPDU, ce qui permet en cas de rupture du lien principale de basculer sur ce second lien.
+
 Un port de switch qui connait aucune MAC ne transmet aucune trame utilisateurs, Broadcast ou unicast flood.
-1. 
+Rôle des ports :
+- RP : Root Port : Port qui mène vers le root
+- AP : Alternate Port : RP en blocking
+- DP : Designated Port : face à un RP ou face à un équipement qui ne fait pas de STP
+
+1. Si même RPC en passant par plusieurs switch :
+   Choix du RP qui mène vers le switch qui a le plus petit bridge-id
+2. Si même RPC en passant par le même switch :
+   choix du RP qui mène vers le port qui a le plus petit port-id
+   Port-id est composé de 2 valeurs : port-priority - Identifiant de port
+   Port-Priority est compris entre 0 et 255, par défaut chez Cisco 128
+
+
 
 ## EVE-NG
 Pour mettre internet dans une maquette EVE-NG 
