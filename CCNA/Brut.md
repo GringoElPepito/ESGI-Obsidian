@@ -186,6 +186,15 @@ Configurer un port en mode access :
 (config-if)#switchport mode access vlan N°
 ```
 
+## Agrégation de liens
+Entre 2 switchs -> agréger 2,4,8 ou 16 liens pour augmenter la BW
+2 protocoles :
+- PagP : Port Aggreg Proto : proprio Cisco
+- LACP : Link Aggre Control Protocol 802.3ad
+Algo de distribution entre les 2 switchs pour utiliser les x liens, il y a 2 familles d'algo :
+- Binaire : basé sur un seul paramètre (IP-source, IP-destination, Mac-source, Mac-destination, Port-source, Port-destination).
+- Hashage : XOR entre 2 paramètres (IP-source XOR IP-destination, Mac-source XOR Mac-destination, Port-source XOR Port-destination).
+A noter : les 2 switchs ne doivent pas forcément utiliser le même algo
 
 
 
