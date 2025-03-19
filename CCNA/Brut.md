@@ -287,6 +287,30 @@ Quand un switch ayant 2 RP voit son meilleur RP tomber alors il lance débloquag
 le STP reste actif même sur un poerfast
 
 802.1w ou multiple STP permet de faire un arbre STP par VLAN
+Influencer le STP :
+Modifier le bridge-priority :
+```cisco
+spanning-tree vlan N° priority VALUE
+```
+la valeur doit être un multiple de 4096
+
+Modifier le coût STP d'un port :
+```cisco
+(config-if)#spanning-tree vlan N° cost COUT
+```
+
+Modifier le port-priority :
+```cisco
+(config-if)#spanning-tree vlan N° port-priority PRIORITY
+```
+
+Visualiser :
+```cisco
+show spanning-tree
+```
+
+
+
 ## EVE-NG
 Pour mettre internet dans une maquette EVE-NG 
 
