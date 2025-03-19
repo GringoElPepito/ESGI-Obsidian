@@ -238,7 +238,16 @@ Création de l'arbre STP. Les SW échangent des BPDU (Bridge Proto Data Unit) po
 	- 25Gbps = 1
 Si plusieurs RP (port qui mène vers le root) : choix du RP qui a le plus petit RPC
 Etats des ports :
-- Listening : 15s. Ecoute des
+- Listening : 15s. Ecoute d'éventuels BPDU. Aucune trame transmise
+- Learning : 15s. Ecoute d'éventuels BPDU. Aucune trame transmise. Apprentissage des MAC joignables par ce port
+A l'issue de ces 30s, que le port passe en :
+- Forwarding : opérationnel
+- Blocking : n'émet aucune trame, ni même des BPDU
+RP = Root Port
+DP = Designated Port port qui mène vers un hub ou terminal
+Sur un lien non actif du fait du STP, un côté du câble reste en forwarding. C'est le côté du SW qui a le plus petit RPC. Si les 2 switch ont le même RPC, c'est le côté du SW qui a le plus petit bridge-id.
+Le port qui reste en forwarding transmet des BPDU, ce qui permet en cas de rupture du lien pri
+Un port de switch qui connait aucune MAC ne transmet aucune trame utilisateurs, Broadcast ou unicast flood.
 1. 
 
 ## EVE-NG
