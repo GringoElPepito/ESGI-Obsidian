@@ -280,6 +280,8 @@ E RPC = 23
 port de C qui va vers B blocked
 port de E qui va vers C blocked
 port de E Gi3 qui va vers B blocked
+
+802.1w ou multiple STP permet de faire un arbre STP par VLAN
 ## EVE-NG
 Pour mettre internet dans une maquette EVE-NG 
 
