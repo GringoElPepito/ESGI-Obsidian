@@ -224,7 +224,22 @@ STP = Spanning-Tree Protocol
 Explication transmission paquet :
 1. Quand un switch reçoit une trame, celui-ci renseigne l'adresse MAC source dans la table CAM en l'associant avec le port d'où vient la trame.
 
-Création de l'arbre STP : 
+Création de l'arbre STP. Les SW échangent des BPDU (Bridge Proto Data Unit) pour s'accorder sur une topo de niveau exempte de boucles de commutation.
+/!\ Préemption dans le STP
+1. Election du Root-Bridge, basé sur le bridge-id, 
+   le plus petit bridge-id est celui qui gagne, le bridge-id est composé de 2 valeurs : bridge-priority - MAC du switch
+   Bridge-prio : 0 à 65535. Chez Cisco : 32768
+2. Les autres switchs vont calculer leur RPC ( Root Path Cost ) pour leur RP (Root Port), le RPC correspond au cumul des coût STP des liens jusqu'au root.
+   Le coût STP est basé sur la BandWidth :
+	- 10Mbps = 100
+	- 100Mbps = 19
+	- 1Gbps = 4
+	- 10Gbps = 2
+	- 25Gbps = 1
+Si plusieurs RP (port qui mène vers le root) : choix du RP qui a le plus petit RPC
+Etats des ports :
+- Listening : 15s. Ecoute des
+1. 
 
 ## EVE-NG
 Pour mettre internet dans une maquette EVE-NG 
