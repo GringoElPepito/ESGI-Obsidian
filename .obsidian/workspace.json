@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/Brut.md",
+                "file": "CCNA/OSI model/Couche 3 - Réseau.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brut"
+              "title": "Couche 3 - Réseau"
             }
           },
           {
@@ -355,11 +355,11 @@
   },
   "active": "b9ebb92ea90368dc",
   "lastOpenFiles": [
+    "CCNA/Brut.md",
     "Projet Annuel/Plan.md",
     "Projet Annuel/Explication.md",
     "Projet Annuel/DNS.md",
     "Projet Annuel/Projet Kasgrunt.md",
-    "CCNA/Brut.md",
     "CCNA/Exo/HSRP.md",
     "CCNA/Exo/STP/EXO.md",
     "CCNA/Exo/Commande Exo.md",
