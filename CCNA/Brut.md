@@ -338,6 +338,14 @@ active de HSRP = master sur VRRP
 standby de HSRP = slave sur VRRP
 
 Même config que HSRP -> remplacer `standby` par `vrrp`
+Même visu que HSRP -> remplacer `standby` par `vrrp`
+# GLBP
+Gateway Load Balancing Protocol
+A une VIP correspond jusqu'à 4 MAC virtuelles
+Algo load balancing : 
+- round-robin : chaque routeur est sollicité à tour de rôle
+- weighted : la charge est réparti entre les routeurs en fonction du poids qui leur est définit
+- host-dependant : 
 
 ## EVE-NG
 Pour mettre internet dans une maquette EVE-NG 
