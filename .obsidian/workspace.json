@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel/DNS.md",
+                "file": "Projet Annuel/Plan.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DNS"
+              "title": "Plan"
             }
           },
           {
@@ -355,8 +355,9 @@
   },
   "active": "b9ebb92ea90368dc",
   "lastOpenFiles": [
-    "Projet Annuel/Explication.md",
     "Projet Annuel/DNS.md",
+    "Projet Annuel/Plan.md",
+    "Projet Annuel/Explication.md",
     "CCNA/Exo/HSRP.md",
     "CCNA/Brut.md",
     "CCNA/Exo/STP/EXO.md",
@@ -381,7 +382,6 @@
     "Growth Hacking/Réponse Quizz.md",
     "CCNA/Exo/EIGRP/Nice.md",
     "CCNA/Exo/EIGRP/Lille.md",
-    "CCNA/Exo/EIGRP/Geneve.md",
     "Windows Server",
     "attachments/Pasted image 20241209184821.png",
     "attachments/Pasted image 20241209162747.png",
