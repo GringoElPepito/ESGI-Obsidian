@@ -1,7 +1,8 @@
 # Infra Sys & Com
 VM sous Linux = Rocky
-DHCP = isc-dhcp server
-DNS = AdGuard Home
+2xDHCP = isc-dhcp server
+2xDNS = AdGuard Home
+Maquette Réseau
 
 # Infra Virtu 
 2 esxi sous vSphere
