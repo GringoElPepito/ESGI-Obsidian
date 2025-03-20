@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel/Plan.md",
+                "file": "CCNA/Brut.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Plan"
+              "title": "Brut"
             }
           },
           {
@@ -355,11 +355,11 @@
   },
   "active": "b9ebb92ea90368dc",
   "lastOpenFiles": [
+    "Projet Annuel/Plan.md",
     "Projet Annuel/Explication.md",
     "Projet Annuel/DNS.md",
     "Projet Annuel/Projet Kasgrunt.md",
     "CCNA/Brut.md",
-    "Projet Annuel/Plan.md",
     "CCNA/Exo/HSRP.md",
     "CCNA/Exo/STP/EXO.md",
     "CCNA/Exo/Commande Exo.md",
