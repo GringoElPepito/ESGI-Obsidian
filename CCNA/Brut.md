@@ -340,7 +340,7 @@ standby de HSRP = slave sur VRRP
 Même config que HSRP -> remplacer `standby` par `vrrp`
 Même visu que HSRP -> remplacer `standby` par `vrrp`
 # GLBP
-Gateway Load Balancing Protocol
+Gateway Load Balancing Protocol, Proprio Cisco
 A une VIP correspond jusqu'à 4 MAC virtuelles
 Algo load balancing : 
 - round-robin : chaque routeur est sollicité à tour de rôle
