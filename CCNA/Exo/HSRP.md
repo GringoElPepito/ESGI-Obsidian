@@ -34,6 +34,7 @@ ip nat inside
 standby 1 priority 200
 standby 1 preempt
 standby 1 track 10 decrement 101
+standby 1 ip 192.168.10.254
 no sh
 exit
 ip nat inside source list ACLNAT int s1/0 overload
@@ -55,7 +56,8 @@ no sh
 int e0/0
 ip add 192.168.10.251 255.255.255.0
 ip nat inside
-standby 1 priority 
+standby 1 preempt
+standby 1 ip 192.168.10.254
 no sh
 ip nat inside source list ACLNAT int s1/0 overload
 do wr
