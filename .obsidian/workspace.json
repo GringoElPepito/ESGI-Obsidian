@@ -67,10 +67,14 @@
             "id": "b9ebb92ea90368dc",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Projet Annuel/DNS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DNS"
             }
           },
           {
@@ -351,6 +355,8 @@
   },
   "active": "b9ebb92ea90368dc",
   "lastOpenFiles": [
+    "Outils.md",
+    "Sans titre.md",
     "CCNA/Brut.md",
     "CCNA/OSI model/Couche 3 - Réseau.md",
     "Projet Annuel/Plan.md",
@@ -367,7 +373,6 @@
     "CCNA/OSI model/Encapsulation-Desencapsulation.md",
     "CCNA/OSI model/Couche 1 - Physique.md",
     "Untitled.md",
-    "Sans titre.md",
     "CCNA/IOS Cisco/Commande Cisco.md",
     "CCNA/Architecture/Type de réseau.md",
     "CCNA/Architecture/Subnetting.md",
@@ -377,7 +382,6 @@
     "CCNA/Protocol/IPv6.md",
     "CCNA/Protocol/IPv4.md",
     "Growth Hacking/Réponse Quizz.md",
-    "CCNA/Exo/EIGRP/Nice.md",
     "Windows Server",
     "attachments/Pasted image 20241209184821.png",
     "attachments/Pasted image 20241209162747.png",
