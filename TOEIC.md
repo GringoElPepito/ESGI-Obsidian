@@ -145,8 +145,17 @@ afraid = effrayé
 # Shark's tank pitch
 4P's :
 - Product : produit ou service
+	- Demo
+	- Prevision
+	- Feedback
+	- Problem solved by the product
 - Price : Price of the whole production of your product/service ?
 	- Profitability
-	- 
-- Place : Where is you  product going to be available ? Where it is produced or stored ?
+	- Cost of production
+- Place : 
+	- Where is you  product going to be available ? 
+	- Where it is produced ?
+	- Where it is stored ?
 - Promotion
+	- Target Market
+	- Competitive analysis
