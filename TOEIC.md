@@ -141,3 +141,12 @@ stormy = orageux
 shareholder = actionnaire
 fearful = craintif
 afraid = effrayé
+
+# Shark's tank pitch
+4P's :
+- Product : produit ou service
+- Price : Price of the whole production of your product/service ?
+	- Profitability
+	- 
+- Place : Where is you  product going to be available ? Where it is produced or stored ?
+- Promotion
