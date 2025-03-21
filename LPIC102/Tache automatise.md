@@ -3,3 +3,5 @@ exemple de shebang :
 ```bash
 #!/bin/bash
 ```
+
+`$?` enregistre le code retour de la dernière commande.
