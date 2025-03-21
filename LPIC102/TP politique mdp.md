@@ -8,5 +8,5 @@ sudo passwd -n 0 -x 90 -w 3 test3
 #Politique 4
 sudo passwd -x 1 -w 1 test4
 #Politique 5
-sudo chage 
+sudo chage -m 7 -M 10 -W 2 -E 20347 test5
 ```
