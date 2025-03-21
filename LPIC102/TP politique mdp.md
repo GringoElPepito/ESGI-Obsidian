@@ -16,7 +16,7 @@ sudo passwd -n 0 -x 1 -w 1 test4
 #ou
 sudo chage -m 0 -M 1 -W 1 test4
 #####Politique 5
-sudo chage -m 7 -M 10 -W 2 -E 20347 test5
+sudo chage -m 7 -M 10 -W 2 -E $(date -d +180days +%Y-%m-%d) test5
 ```
 # SCRIPT 
 ```bash
@@ -51,4 +51,11 @@ output="$(date -d "$param" '+%Y/%m/%d')"
 echo "The password of the user $user expires at : $output"
 
 exit 0
+```
+
+## Correction Script
+```bash
+#!/bin/bash
+
+
 ```
