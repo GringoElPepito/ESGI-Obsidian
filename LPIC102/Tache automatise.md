@@ -5,3 +5,8 @@ exemple de shebang :
 ```
 
 `$?` enregistre le code retour de la dernière commande.
+
+Afficher les logs d'exécutions :
+```bash
+sudo bash -x ./script.sh
+```
