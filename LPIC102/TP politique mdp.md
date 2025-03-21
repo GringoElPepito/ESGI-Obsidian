@@ -10,3 +10,10 @@ sudo passwd -x 1 -w 1 test4
 #Politique 5
 sudo chage -m 7 -M 10 -W 2 -E 20347 test5
 ```
+
+# SCRIPT 
+```bash
+$user = ''
+if [ -z ${1} ]; then $user = $USER; else $user = $1;
+echo $user
+```
