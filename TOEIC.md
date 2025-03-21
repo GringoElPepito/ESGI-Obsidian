@@ -141,6 +141,11 @@ stormy = orageux
 shareholder = actionnaire
 fearful = craintif
 afraid = effrayé
+loan = 
+commercial loan =
+loan shark = private investor
+mortage =  
+borrow = emprunter
 
 # Shark's tank pitch
 4P's :
