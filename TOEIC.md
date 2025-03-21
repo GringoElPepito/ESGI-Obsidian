@@ -107,6 +107,7 @@ Tycoon = Magnant, personne riche, possédant des actions
 too little = pour ce que l'on ne peut compter
 not enough/too few = pour ce que l'on peut compter
 subsidy = subvention
+subsidiary = filiale
 stake = un  investissement
 union = syndicat
 rate = tarif/taux
@@ -147,7 +148,7 @@ paperwork bureaucracy = paperasse
 commercial loan =
 loan shark = quiet like business angel but with higher interest rate
 pawnbroker = Prêteur sur gage
-mortage =  
+mortgage =  
 Business angel = somebody that invest his money in a project
 venture capitalist = somebody that makes part of a invests founds (venture capital found)
 borrow = emprunter
@@ -166,6 +167,7 @@ refund = remboursement
 rise = s'élever sans COD
 raises = levé
 shares = part d'une entreprise/actif
+grant = Bourse
 
 
 
