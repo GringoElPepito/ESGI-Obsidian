@@ -128,7 +128,7 @@ compliance = aux normes
 currency = devise
 deposit = dépôt bancaire
 draft = brouillon/brise
-fee = prix de quelque chose dans sa globalité
+fee = tarif
 fare = prix d'un voyage
 proven = prouvé
 strike = grève / frapper
@@ -154,6 +154,14 @@ borrow = emprunter
 Money
 nothing venture nothing gain
 Don't throw good money after bad = if your invests are getting lower take a loss
+He who pays the piper calls the tune = Who pay Who choose
+beggars = mendiant
+cashflow =
+equity = part of value invest that you own 
+asset = actifs
+balanesheet = bilan annuel
+state-of-the art = le dernier cri/le meilleur
+
 
 
 # Shark's tank pitch
