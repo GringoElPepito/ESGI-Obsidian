@@ -145,11 +145,16 @@ lend = prêter
 loan = un prêt
 paperwork bureaucracy = paperasse
 commercial loan =
-loan shark = 
+loan shark = quiet like business angel but with higher interest rate
+pawnbroker = Prêteur sur gage
 mortage =  
 Business angel = somebody that invest his money in a project
 venture capitalist = somebody that makes part of a invests founds (venture capital found)
 borrow = emprunter
+Money
+nothing venture nothing gain
+Don't throw good money after bad = if your invests are getting lower take a loss
+
 
 # Shark's tank pitch
 4P's :
