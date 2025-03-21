@@ -1,4 +1,5 @@
 {
   "attachmentFolderPath": "attachments",
-  "showLineNumber": true
+  "showLineNumber": true,
+  "alwaysUpdateLinks": true
 }

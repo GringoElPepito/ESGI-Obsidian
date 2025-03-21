@@ -32,4 +32,6 @@ La couche 3 est principalement centré sur le routage des paquets, pour garantir
 - [[GLBP]]
 - [[VRRP]]
 - [[STP]]
-- [[Aggrégation de Lien]]
+- [[Linkagg]]
+- [[Trunk & VTP]]
+- 
