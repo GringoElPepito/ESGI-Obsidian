@@ -128,8 +128,8 @@ compliance = aux normes
 currency = devise
 deposit = dépôt bancaire
 draft = brouillon/brise
-fee = tarif
-fare = prix d'un voyage
+fee = tarif, prix complet d'un service.
+fare = prix du transport
 proven = prouvé
 strike = grève / frapper
 vacancy = vacance / poste vacant
@@ -161,6 +161,13 @@ equity = part of value invest that you own
 asset = actifs
 balanesheet = bilan annuel
 state-of-the art = le dernier cri/le meilleur
+overpayment = payement en trop
+refund = remboursement
+rise = s'élever sans COD
+raises = levé
+shares = part d'une entreprise/actif
+
+
 
 
 
