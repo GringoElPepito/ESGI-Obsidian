@@ -141,10 +141,14 @@ stormy = orageux
 shareholder = actionnaire
 fearful = craintif
 afraid = effrayé
-loan = 
+lend = prêter
+loan = un prêt
+paperwork bureaucracy = paperasse
 commercial loan =
-loan shark = private investor
+loan shark = 
 mortage =  
+Business angel = somebody that invest his money in a project
+venture capitalist = somebody that makes part of a invests founds (venture capital found)
 borrow = emprunter
 
 # Shark's tank pitch
