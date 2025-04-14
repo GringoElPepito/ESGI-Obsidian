@@ -3,3 +3,5 @@ Supervision :
 - Outils : Zabbix, Centreon, Nagios
 Métrologie : 
 - Définition : récupération des valeurs de métrique.
+
+Le corum nombre de panne possible pour un cluster, nombre de node / 2 + 1
