@@ -35,3 +35,11 @@ Ordre de priorité :
 1. Variable d'environnement Utilisateur
 2. Variable d'environnement Système
 3. Fichier `/etc/localtime`
+
+# Tâche planifié
+## CRON
+Il est préférable de ne pas intégrer les tâches planifiés directement dans le fichier `/etc/crontab`
+
+## SystemD
+## Exo
+### Tâche 1
