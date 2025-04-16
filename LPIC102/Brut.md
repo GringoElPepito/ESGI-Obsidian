@@ -42,7 +42,8 @@ Il est préférable de ne pas intégrer les tâches planifiés directement dans 
 On favorisera le fait de créer un fichier dans `/etc/cron.d`
 
 ## AT
-Ce package fonctionne avec un compteur de tâche.
+Ce package fonctionne avec un compteur de tâche qui est contenu dans le fichier `/var/spool/cron/atjobs/.SEQ`
+
 ## SystemD
 ## Exo
 ### Tâche 1
