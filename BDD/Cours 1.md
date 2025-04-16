@@ -44,4 +44,13 @@ Une association ou relation est une liaison fonctionnelle entre objets :
 - relation ternaire, relation qui associe 3 entités
 - relation n-air,
 
-Une propriété est le plus petit élément d'information qui ait un sens en lui-même et qui sera placée soit un dans une entité, soit dans une associatio
+Une propriété est le plus petit élément d'information qui ait un sens en lui-même et qui sera placée soit un dans une entité, soit dans une association.
+
+L'identifiant d'une entité, la ou les propriété qui permettant de désigner sans ambiguité une occurence présente dans une entité.
+
+Les cardinalités, sont exprimés en minimum,maximum :
+- Le minimum est soit 0 Soit 1
+- Le maximum est soit 0, 1, n ou un nombre précis par très grand
+- Contrainte d'intégrité fonctionnelle
+
+S'il y a plus de 
