@@ -38,8 +38,22 @@ Ordre de priorité :
 
 # Tâche planifié
 ## CRON
-Il est préférable de ne pas intégrer les tâches planifiés directement dans le fichier `/etc/crontab`
+Il est préférable de ne pas intégrer les tâches planifiés directement dans le fichier `/etc/crontab` car celui-ci peut être remis à 0 lors de la mis à jour du paquet.
+On favorisera le fait de créer un fichier dans `/etc/cron.d`
 
+## AT
+Ce package fonctionne avec un compteur de tâche.
 ## SystemD
 ## Exo
 ### Tâche 1
+`/etc/cron.d/task1` :
+```
+00 00 * * 7 root /opt/task1.sh
+```
+
+### Tâche 2
+```bash
+sudo apt install at -y
+sudo at 12:00 2034-12-30
+```
+
