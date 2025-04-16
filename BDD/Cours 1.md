@@ -51,6 +51,13 @@ L'identifiant d'une entité, la ou les propriété qui permettant de désigner s
 Les cardinalités, sont exprimés en minimum,maximum :
 - Le minimum est soit 0 Soit 1
 - Le maximum est soit 0, 1, n ou un nombre précis par très grand
-- Contrainte d'intégrité fonctionnelle
+- Contrainte d'intégrité fonctionnelle ou CIF
 
-S'il y a plus de 
+S'il y a plus de 2 entités reliés par une association on stop la lecture à l'association
+De plus toutes les cardinalités seront x,n.
+
+Association réflexive, association reliant une entité à elle-même.
+
+Héritage ou spécialisation
+
+Association relative ou lien identifiant, cardinalités (1,1) cela signifie que l'identifiant est unique avec l'identifiant de la seconde table de la relation.
