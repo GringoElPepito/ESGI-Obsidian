@@ -16,3 +16,24 @@ Avec le paquet `tzdata`, il est possible d'attribuer une timezone différente pa
 ```bash
 tzselect
 ```
+Puis
+```bash
+export TZ="America/La_Paz"
+```
+Pour rendre cela persistant, il faut modifier le fichier `.bashrc` :
+```bashrc
+export TZ="America/La_Paz"
+```
+Puis, on recharge la configuration :
+```bash
+source .bashrc
+```
+
+On peut aussi ajouter un `export TZ="America/La_Paz` dans le fichier `/etc/bash.bashrc` pour appliquer une timezone par défaut à tous les utilisateurs. 
+```
+```
+
+Ordre de priorité :
+1. Variable d'environnement Utilisateur
+2. Variable d'environnement Système
+3. Fichier `/etc/localtime`
