@@ -73,7 +73,20 @@ Persistent=true
 RemainAfterElapse=true
 OnBootSec=1us
 
-[]
+[Install]
+WantedBy=timers.target
+```
+
+`/lib/systemd/system/task3.service`
+```ini
+[Unit]
+Description=Task 3 service
+
+[Service]
+ExecStart=/bin/bash -c 'rm -rf /srv/.[^.]*'
+
+[Install]
+WantedBy=multi-user.target
 ```
 
 ### Tâche 4
