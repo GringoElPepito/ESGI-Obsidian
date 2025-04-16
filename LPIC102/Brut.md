@@ -45,6 +45,7 @@ On favorisera le fait de créer un fichier dans `/etc/cron.d`
 Ce package fonctionne avec un compteur de tâche qui est contenu dans le fichier `/var/spool/cron/atjobs/.SEQ`
 
 ## SystemD
+Il faut placer les fichiers `.timer` & `.service` dans le dossier `/lib/systemd/system/`
 ## Exo
 ### Tâche 1
 `/etc/cron.d/task1` :
@@ -58,3 +59,30 @@ sudo apt install at -y
 sudo at 12:00 2034-12-30
 ```
 
+### Tâche 3
+`/lib/systemd/system/task3.timer`:
+```ini
+[Unit]
+Description=Task 3 timer
+
+[Timer]
+AccuracySec=1us
+RandomizedDelaySec=1800
+FixedRandomDelay=false
+Persistent=true
+RemainAfterElapse=true
+OnBootSec=1us
+
+[]
+```
+
+### Tâche 4
+`/etc/cron.monthly/task4`:
+```bash
+#!/bin/bash
+
+set -e
+
+apt-get update > /var/log/task-$(date +%d-%m-%Y)
+apt list --upgradable >> /var/log/task-$(date +%d-%m-%Y)
+```
