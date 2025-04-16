@@ -30,8 +30,6 @@ source .bashrc
 ```
 
 On peut aussi ajouter un `export TZ="America/La_Paz` dans le fichier `/etc/bash.bashrc` pour appliquer une timezone par défaut à tous les utilisateurs. 
-```
-```
 
 Ordre de priorité :
 1. Variable d'environnement Utilisateur
