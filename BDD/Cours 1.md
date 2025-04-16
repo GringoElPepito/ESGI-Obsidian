@@ -17,9 +17,11 @@ On sépare le schéma de données du schéma de traitement
 2. MLD => Modèle Logique de Données + choix de type de SGBD
 3. MPD => Modèle Physique de Données
 
+Il est possible d'utiliser un UML à la place d'un MLD
+Classe persistantes => classe que l'on garde
+Classe
 ### Traitement
 1. MCT => Modèle Conceptuel de Traitement
 2. MOT => Modèle Opérationnel de traitement
 3. Code
 
-Classe persistantes
