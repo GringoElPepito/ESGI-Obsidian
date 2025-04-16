@@ -25,3 +25,23 @@ Classe
 2. MOT => Modèle Opérationnel de traitement
 3. Code
 
+## Modèle Entité/Association ou MCD
+La systémique (notion de biologie) concept dans lequel on définit un système qui fonctionne sur un ensemble de sous-systèmes qui sont interactions.
+
+Un système d'informations est l'ensemble des moyens (humains, matériels) et des méthodes rapportant aux traitement des informations rencontrées dans une organisation.
+
+Le système d'information est utile à 2 autres systèmes :
+- Le système de pilotage
+- Le système des opérations
+
+Les base de données sont faîtes pour enregistrer tout l'historique.
+Lors de la réalisation du modèle conceptuelle, on ne formule pas d'hypothèse technique (Interface utilisé pour l'interaction avec les données, support de stockage de la base de données etc...).
+
+Une entité ou objet est une collection d'informations ayant un rapport entre elles
+
+Une association ou relation est une liaison fonctionnelle entre objets :
+- relation binaire, relation qui associe 2 entités
+- relation ternaire, relation qui associe 3 entités
+- relation n-air,
+
+Une propriété est le plus petit élément d'information qui ait un sens en lui-même et qui sera placée soit un dans une entité, soit dans une associatio
