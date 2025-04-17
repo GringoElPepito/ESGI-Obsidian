@@ -38,3 +38,15 @@ ServerActive, correspond au serveur à contacter
 ## Agent Passif
 l'hôte que le serveur lui demande pour transmettre les informations
 Serveur, correspond aux serveurs pouvant contacter l'hôte.
+
+
+accéder à un socket en local :
+```
+unix://var/path/to/socket
+```
+Accéder à un socket à distance :
+```
+tcp://ip:port
+# ou 
+udp://ip:port
+```
