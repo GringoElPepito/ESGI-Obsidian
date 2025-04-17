@@ -33,6 +33,8 @@ UDP 162 client
 sorte de base de données, identifiant chaque élément de la machine supervisé
 
 ## Agent Actif
-l'hôte envoie directement les informations au serveur, dans ce cas l'hôte contactera le serveur toutes les minutes. Il faut que le nom d'hôte de la machine corresponde au nom d'hôte enregistré dans ZABBIX.
+l'hôte envoie directement les informations au serveur, dans ce cas l'hôte contactera le serveur toutes les minutes. Il faut que le nom d'hôte de la machine corresponde au nom d'hôte enregistré dans ZABBIX. 
+ServerActive, correspond au serveur à contacter
 ## Agent Passif
 l'hôte que le serveur lui demande pour transmettre les informations
+Serveur, correspond aux serveurs pouvant contacter l'hôte.
