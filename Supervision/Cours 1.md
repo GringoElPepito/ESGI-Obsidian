@@ -8,4 +8,17 @@ Le corum nombre de panne possible pour un cluster, nombre de node / 2 + 1
 
 # Architecture de Supervision
 Supervision centralisée : Tous les systèmes rapportent à un serveur central
-Supervision distribuée : Plusieurs serveurs de super
+Supervision distribuée : Plusieurs serveurs de supervision pour des sites ou des services spécifiques, clusterisation.
+Hiérarchisation : Prioriser les services critiques pour l'entreprise.
+
+Services Zabbix :
+- Serveur
+- Base de données
+- Frontend
+- Proxy
+
+Services Nagios :
+- Serveur
+- Pollers
+
+Segmentation des services
