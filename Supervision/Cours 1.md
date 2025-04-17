@@ -22,3 +22,12 @@ Services Nagios :
 - Pollers
 
 Segmentation des services
+
+# SNMP
+collecte d'informations sur les équipements réseau (switches, routeurs, serveurs)
+Fonctionnement
+UDP 161 serveur
+UDP 162 client
+
+## MIB
+sorte de base de données, identifiant chaque élément de la machine supervisé
