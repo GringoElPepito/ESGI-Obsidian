@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Cours 1.md",
+                "file": "TOEIC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cours 1"
+              "title": "TOEIC"
             }
           },
           {
@@ -369,6 +369,8 @@
   },
   "active": "87123a620381440e",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Python/Cours 1.md",
     "Supervision/Cours 1.md",
     "LPIC102/Brut.md",
     "LPIC102/Untitled.md",
@@ -397,8 +399,6 @@
     "CCNA/Brut.md",
     "LPIC102",
     "Projet Annuel/DNS.md",
-    "Outils.md",
-    "CCNA/OSI model/Couche 3 - Réseau.md",
     "CCNA/Exo/STP",
     "Windows Server",
     "attachments/Pasted image 20241209184821.png",

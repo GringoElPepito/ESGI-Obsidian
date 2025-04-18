@@ -168,6 +168,15 @@ rise = s'élever sans COD
 raises = levé
 shares = part d'une entreprise/actif
 grant = Bourse
+value for money = rapport qualité/prix
+upmarket = luxe
+timeless = intemporel
+well-made = bien fait
+durable = robuste
+reliable = fiable
+fashionable = a la mode
+trendy = tendance
+sexy = séduisant, sexy
 
 
 
