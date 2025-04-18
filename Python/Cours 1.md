@@ -147,3 +147,49 @@ print('c\'est finito')
 ```
 ![[Pasted image 20241209162747.png]]
 ![[Pasted image 20241209184821.png]]
+
+Un socket est une association entre une IP et un numéro de port.
+
+```python
+import socket
+sock=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+# en local
+sock.connect(('127.0.0.1',20337))
+```
+Choix du protocole de couche 3 :
+- `scoket.AF_INET` pour IPv4
+- `socket.AF_INET6` pour IPv6
+Choix du protocole de couche 4 :
+- `socket.STREAM` pour une connexion TCP
+- `socket.DGRAM` pour une connexion UDP
+
+Création d'un serveur
+```python
+import socket
+sock=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+HOST=127.0.0.1
+PORT=2020
+BUFFER=1024
+
+Mysocket.bind((HOST,PORT))
+
+while 1 :
+	Myscoket.listen(2)
+
+	connexion,adresse=Mysocket.accept()
+
+	connexion.send(b"hello client")
+
+	msgClient=connexion.recv(BUFFER)
+
+	
+```
+
+Création d'un client
+```python
+import socket, sys
+
+sock=socket.socket()
+
+
+```
