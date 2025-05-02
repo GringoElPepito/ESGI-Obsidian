@@ -46,16 +46,6 @@
             }
           },
           {
-            "id": "dee1bb5e125e7404",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vue graphique"
-            }
-          },
-          {
             "id": "826a379f518244e1",
             "type": "leaf",
             "state": {
@@ -180,7 +170,7 @@
             }
           }
         ],
-        "currentTab": 12
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -321,6 +311,7 @@
   },
   "active": "ad62851806dc1951",
   "lastOpenFiles": [
+    "LPIC102/TP politique mdp.md",
     "LPIC102/Tache automatise.md",
     "LPIC102/etc-shadow.md",
     "LPIC102/Brut.md",
@@ -347,7 +338,6 @@
     "CCNA/OSI model/Couche3/OSPF.md",
     "CCNA/OSI model/Couche3/IS-IS.md",
     "CCNA/OSI model/Couche3/RIP.md",
-    "CCNA/OSI model/Couche3/EIGRP.md",
     "CCNA/OSI model/Couche3",
     "LPIC102",
     "CCNA/Exo/STP",
