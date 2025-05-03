@@ -1,6 +1,7 @@
-- [ ] HSRP VLAN 51
+- [x] HSRP VLAN 51
 - [ ] HSRP VLAN 71
 - [x] HSRP VLAN 41
 - [ ] HSRP VLAN 31
+- [ ] LACP NET_CORE
 - [ ] IPSec Inter Site
 - [ ] VxLAN
