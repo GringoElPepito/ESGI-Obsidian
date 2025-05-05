@@ -25,7 +25,9 @@ Le service informatique est composé de 3 personnes :
 - M. Radu Daniel ILIE, Directeur des Systèmes d'Information
 - M. Stéphane NAGY, Technicien IT
 - et moi-même, Technicien IT
+C'est une équipe assez restreinte en termes d'effectif, ce qui facilite la circulation des informations entre les membres et qui nous pousse à mettre en place un système d'organisation minutieux pour pouvoir gérer au mieux la charge de travail.
 
+Notre rôle est d'assure
 
 # Partie 2 : Descriptif de mon quotidien
 
