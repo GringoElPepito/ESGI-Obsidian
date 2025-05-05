@@ -17,7 +17,7 @@ Dans un second temps, je décrirai mon quotidien en tant que Technicien IT en vo
 SAINT HONORE est une SCA, Société en Commandite par Actions 
 
 ## Focus sur le service
-Au cours de mon alternance, j'ai eu la chance d'évoluer au sein du service informatique de l'entreprise.
+Au cours de mon alternance, j'ai eu la chance d'évoluer au sein du service informatique de l'entreprise, qui se charge de la mise en place, de la maintenance et de la supervision des systèmes d'informations des différents entreprise et établissement du groupe. La majorité des éta
 
 # Partie 2 : Descriptif de mon quotidien
 
