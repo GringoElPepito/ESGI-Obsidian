@@ -27,7 +27,9 @@ Le service informatique est composé de 3 personnes :
 - et moi-même, Technicien IT
 C'est une équipe assez restreinte en termes d'effectif, ce qui facilite la circulation des informations entre les membres et qui nous pousse à mettre en place un système d'organisation minutieux pour pouvoir gérer au mieux la charge de travail.
 
-Notre rôle est d'assurer le bon fonctionnement de l'ensemble des systèmes et services servant à la production, tout en l'améliorant ces derniers pour réduire les risques d'erreurs, répondre au nouveaux besoins de nos collaborateurs et de nos clients
+Notre rôle est d'assurer le bon fonctionnement de l'ensemble des systèmes et services servant à la production, tout en l'améliorant ces derniers pour réduire les risques d'erreurs, répondre au nouveaux besoins de nos collaborateurs et de nos clients.
+
+Pour compenser notre petit effectif, nous faisons appel à des prestataires pour nous aider à la mise en place, maintenance et amélioration de nos différentes solutions. Par exemple, p
 
 # Partie 2 : Descriptif de mon quotidien
 
