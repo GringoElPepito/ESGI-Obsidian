@@ -29,7 +29,9 @@ C'est une équipe assez restreinte en termes d'effectif, ce qui facilite la circ
 
 Notre rôle est d'assurer le bon fonctionnement de l'ensemble des systèmes et services servant à la production, tout en l'améliorant ces derniers pour réduire les risques d'erreurs, répondre au nouveaux besoins de nos collaborateurs et de nos clients.
 
-Pour compenser notre petit effectif, nous faisons appel à des prestataires pour nous aider à la mise en place, maintenance et amélioration de nos différentes solutions. Par exemple, p
+Pour compenser notre petit effectif, nous faisons appel à des prestataires pour nous aider à la mise en place, maintenance et amélioration de nos différentes solutions. Par exemple, en ce qui concerne le réseau, la téléphonie et la virtualisation, nous faisons appel à ITM. Dans le cadre de la gestion des utilisateurs et de notre environnement Microsoft Cloud, nous sommes assisté par Tibco. Nos logiciels de production, sont des solutions fournis par Oracle.
+
+Nous prenons en charge les demandes et incidents utilisateur, nous analysons la problématique, si nous pouvons nous même accéder à la demande alors nous y répondons directement. Dans le cas contraire, nous contactons le prestataire concerné pour qu'il puisse nous aider à répondre à la demande ou à l'incident.
 
 # Partie 2 : Descriptif de mon quotidien
 
