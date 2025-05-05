@@ -7,7 +7,11 @@ Je souhaite également adresser mes plus sincères remerciements aux équipes p�
 # Introduction
 Le but de ce rapport d'activité est d'expliquer mon rôle au sein du service IT du groupe SAINT HONORE, les missions ainsi que les projets que j'ai eu l'occasion d'y réaliser.
 
-Pour commencer, 
+J'ai débuter cette alternance le 2 Septembre 2024, j'ai à cette occasion intégrer le service informatique de l'entreprise.
+
+Dans un premier temps, je détaillerai l'entreprise de son ensemble, en abordant notamment son statut juridique, son chiffre d'affaire ou encore son secteur d'activité. Par la suite, je me concentrerai plus spécifiquement sur le service au sein du quel j'ai eu la chance d'évoluer au cours de cette alternance, en détaillant les différentes missions relatives au service informatique ainsi que les personnes en faisant parties.
+
+Dans un second temps, je décrirai mon quotidien en tant que Technicien IT en vous présenter les missions et projets que j'ai eu l'occasion de réaliser tout au long de cette période en entreprise ainsi
 # Partie 1 : Contexte Entreprise
 ## Entreprise d'accueil
 
