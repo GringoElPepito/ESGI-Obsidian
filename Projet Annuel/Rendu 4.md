@@ -17,7 +17,15 @@ Dans un second temps, je décrirai mon quotidien en tant que Technicien IT en vo
 SAINT HONORE est une SCA, Société en Commandite par Actions 
 
 ## Focus sur le service
-Au cours de mon alternance, j'ai eu la chance d'évoluer au sein du service informatique de l'entreprise, qui se charge de la mise en place, de la maintenance et de la supervision des systèmes d'informations des différents entreprise et établissement du groupe. La majorité des éta
+Au cours de mon alternance, j'ai eu la chance d'évoluer au sein du service informatique de l'entreprise, qui se charge de la mise en place, de la maintenance et de la supervision des systèmes d'informations des différents entreprise et établissement du groupe. 
+
+La majorité des établissements sont situés à Paris, ce qui représente donc la plus grande partie de notre champ d'action. Cependant, il peut aussi nous arriver d'intervenir à distance à l'Hôtel Plage Palace situé à Palavas-les-Flots, situé dans la banlieue de Montpellier.
+
+Le service informatique est composé de 3 personnes :
+- M. Radu Daniel ILIE, Directeur des Systèmes d'Information
+- M. Stéphane NAGY, Technicien IT
+- et moi-même, Technicien IT
+
 
 # Partie 2 : Descriptif de mon quotidien
 
