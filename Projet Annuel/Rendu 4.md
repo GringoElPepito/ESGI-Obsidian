@@ -11,7 +11,7 @@ J'ai débuter cette alternance le 2 Septembre 2024, j'ai à cette occasion inté
 
 Dans un premier temps, je détaillerai l'entreprise de son ensemble, en abordant notamment son statut juridique, son chiffre d'affaire ou encore son secteur d'activité. Par la suite, je me concentrerai plus spécifiquement sur le service au sein du quel j'ai eu la chance d'évoluer au cours de cette alternance, en détaillant les différentes missions relatives au service informatique ainsi que les personnes en faisant parties.
 
-Dans un second temps, je décrirai mon quotidien en tant que Technicien IT en vous présenter les missions et projets que j'ai eu l'occasion de réaliser tout au long de cette période en entreprise ainsi
+Dans un second temps, je décrirai mon quotidien en tant que Technicien IT en vous présenter les missions et projets que j'ai eu l'occasion de réaliser tout au long de cette période en entreprise, en détaillant la manière et les moyens mis en œuvre pour y parvenir.
 # Partie 1 : Contexte Entreprise
 ## Entreprise d'accueil
 
