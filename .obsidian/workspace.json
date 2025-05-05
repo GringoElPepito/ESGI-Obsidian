@@ -135,12 +135,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel/Rendu 4.md",
+                "file": "Rapport Alternance.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Rendu 4"
+              "title": "Rapport Alternance"
             }
           },
           {
@@ -299,8 +299,9 @@
   },
   "active": "ad62851806dc1951",
   "lastOpenFiles": [
-    "Projet Annuel/Maquette Réseau.md",
     "Projet Annuel/Rendu 4.md",
+    "Rapport Alternance.md",
+    "Projet Annuel/Maquette Réseau.md",
     "Projet Annuel/Projet Kasgrunt.md",
     "CCNA/OSI model/Couche3/HSRP.md",
     "LPIC102/TP politique mdp.md",
@@ -326,7 +327,6 @@
     "CCNA/OSI model/Modèle TCP-IP.md",
     "CCNA/OSI model/Couche 1 - Physique.md",
     "CCNA/OSI model/Couche 2 - Liaison de données.md",
-    "CCNA/OSI model/Encapsulation-Desencapsulation.md",
     "CCNA/OSI model/Couche3/Sans titre",
     "CCNA/OSI model/Couche3",
     "LPIC102",
