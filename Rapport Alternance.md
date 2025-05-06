@@ -67,10 +67,14 @@ Ils possèdent plusieurs fonctionnalités intéressantes comme la création d'un
 
 La partie téléphonie est aussi assuré par des solutions Alcatel, nous avons une interface de gestion qui est Omnivista 8770, qui se présente sous la forme d'un client lourd directement installés sur un serveur sur lequel nous prenons la main à distance. Omnivista 8770 permet de gérer les équipements téléphoniques fixes et mobiles (DECT) de notre parc, en reliant par exemple ces derniers à des numéros et en leur accordant plus ou moins de droits. Pour cela, le serveur Omnivista 8770 communique avec les deux serveurs OXE qui sont ceux chargés de distribué la configuration aux différents équipements et d'assurer leurs communications.
 
-Concernant la partie virtualisation, pour cela nous avons 3 serveurs ESXi tous indépendant, qui virtualise nos différents services
+Dans un hôtel, le contrôle d'accès est un sujet qu'il ne faut surtout pas négliger. Dans notre cas, nous utilisons la solution Guest key qui est serveur centralisant les évènements ainsi que les permissions des cartes/clé optiques enregistrer dans le système. Ce serveur communique avec les badgeuses et/ou lecteur optiques pour vérifier que la personnes souhaitant accéder à un endroit spécifique est en possession des permissions requises. Ce serveur propose une interface graphique sous la forme d'un client lourd installé directement sur le serveur, permettant de gérer l'intégralité du parc de contrôle d'accès. En plus, du serveur en local, il existe la solution Guest Key Cloud qui est une interface web accessible depuis n'importe quel navigateur qui communique avec le serveur Guest Key local, ce qui évite de devoir donné accès aux 
+
+Concernant la partie virtualisation, pour cela nous avons 3 serveurs ESXi tous indépendant, qui virtualise nos différents serveurs à savoir, Omnivista 2500 & 8770, les serveurs OXE, le serveur Guest Key
 
 
 ## Projets et missions
+
+## Mis en place de Guest Key Cloud
 
 ## Rassemblement des Tenant Microsoft 365
 Comme expliqué plus tôt, le service informatique est chargé du service informatique de différentes entités, 3 d'entre elles, COSTES GESTION, COSTES ACHATS et GROUPE COSTES sont situés dans le même bâtiment, de ce fait ces 3 entités avait un tenant Microsoft 365 leur étant dédié. 
