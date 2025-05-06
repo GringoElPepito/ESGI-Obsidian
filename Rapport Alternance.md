@@ -35,7 +35,8 @@ Nous prenons en charge les demandes et incidents utilisateur, nous analysons la 
 
 # Partie 2 : Descriptif de mon quotidien
 
-## L'intégration
+## Fonction occupée et missions
+Au sei
 
 ## Le ressen
 
