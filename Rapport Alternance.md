@@ -51,7 +51,13 @@ Le poste que j'occupe au sein du groupe SCA SAINT HONORE est celui de technicien
 ## Outils & Prestataires
 L'activité de toute entreprise nécessite aujourd'hui un système d'information répondant aux besoins de la production. De plus, il est impératif pour le service informatique, de mettre en place des solutions lui facilitant la gestion de son parc et des différents services mises à disposition des utilisateurs.
 
-En ce qui concerne la gestion des postes et comptes utilisateurs, nous utilisons la solutions Microsoft 365 qui est une solution cloud offrant différentes consoles d'administrations visant à gérer certains aspects spécifiques des systèmes d'informations. Voici celle que nous utilisons réguliIntune qui permet l'administration des postes et des utilisateurs, 
+En ce qui concerne la gestion des postes et comptes utilisateurs, nous utilisons la solutions Microsoft 365 qui est une solution cloud offrant différentes consoles d'administrations visant à gérer certains aspects spécifiques des systèmes d'informations. Voici celle que j'ai eu l'occasion d'utiliser :
+- Intune qui permet l'administration des postes et des utilisateurs grâce à ces fonctionnalités : déploiement d'applications, mis en place de restrictions sur les appareils, création de groupe de sécurité et distribution.
+- Entra qui permet de suivre en direct très poussé des utilisateurs en enregistrant et journalisant leurs connexions en temps réel.
+- Exchange qui est une solution de mail et qui permet donc, entre autres, de gérer les permissions accordées aux utilisateurs présents dans Intune concernant l'utilisation du service de mail.
+- Microsoft Defender qui est une console permettant de suivre les failles potentiels présentes sur nos postes utilisateurs.
+- SharePoint qui permet de créer des sites, nous les utilisons généralement pour créer des partages de fichiers.
+Sur cette partie, j'ai eu l'
 ## Projets et missions
 
 ## Rassemblement des Tenant Microsoft 365
