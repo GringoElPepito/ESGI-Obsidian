@@ -48,11 +48,15 @@ Le poste que j'occupe au sein du groupe SCA SAINT HONORE est celui de technicien
 - Je recense régulière le matériel en service dans le but d'assurer le suivi de notre parc informatique et d'en assurer une gestion optimale
 - Je prend part aux projets visant à mettre à jour ou ajouter des solutions au sein de notre système d'informations en réalisant des tâches liés à ce dernier et/ou en supervisant les acteurs du projet.
 
+## Outils & Prestataires
+L'activité de toute entreprise nécessite aujourd'hui un système d'information répondant aux besoins de la production. De plus, il est impératif pour le service informatique, de mettre en place des solutions lui facilitant la gestion de son parc et des différents services mises à disposition des utilisateurs.
+
+En ce qui concerne la gestion des postes et comptes utilisateurs, nous utilisons la solutions Microsoft 365 qui est une solution cloud offrant différentes consoles d'administrations visant à gérer certains aspects spécifiques des systèmes d'informations. Voici celle que nous utilisons réguliIntune qui permet l'administration des postes et des utilisateurs, 
 ## Projets et missions
 
 ## Rassemblement des Tenant Microsoft 365
 Comme expliqué plus tôt, le service informatique est chargé du service informatique de différentes entités, 3 d'entre elles, COSTES GESTION, COSTES ACHATS et GROUPE COSTES sont situés dans le même bâtiment, de ce fait ces 3 entités avait un tenant Microsoft 365 leur étant dédié. 
-Cette configuration, avait été mise en place par notre ancien prestataire Bouche Cousue et malheureusement celle-ci présentait certains défauts. Comme ces entités interagissaient régulièremen
+Cette configuration, avait été mise en place par notre ancien prestataire Bouche Cousue et malheureusement celle-ci présentait certains défauts. Comme ces entités interagissent régulièrement avec l'Hôtel COSTES, des échanges d'informations réguliers sont réalisé entre les 2 systèmes d'informations. Pour faciliter ces interactions, nous avons pris la décision de réunir toutes ces entités sous le Tenant de l'hôtel. De cette manière, il devient plus aisé d'échanger des informations entre l'hôtel et le site administratif sans oublier que la gestion côté informatique est elle aussi simplifier car tous les appareils sont accessibles depuis une même interface.
 
 ### Migration du PMS OperaV5 vers Opera Cloud
 Opera est une solution PMS (Property Management System) proposé par Oracle, les PMS sont des logiciels visant à gérer toutes les activités d'un hôtel afin d'améliorer la qualité de la production et donc l'expérience du client. 
