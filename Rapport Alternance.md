@@ -51,7 +51,7 @@ Le poste que j'occupe au sein du groupe SCA SAINT HONORE est celui de technicien
 ## Projets et missions
 
 ### Migration du PMS OperaV5 vers Opera Cloud
-Opera est une solution PMS (Property Management System) proposé par Oracle, les PMS sont des logiciels visant à gérer toutes les activités d'un hôtel afin d'améliorer la qualité 
+Opera est une solution PMS (Property Management System) proposé par Oracle, les PMS sont des logiciels visant à gérer toutes les activités d'un hôtel afin d'améliorer la qualité de la production et donc l'expérience du client. 
 
 Les suites Castiglione sont des chambres incluant un système de domotique assez complet permettant de gérer, depuis une application mis à disposition des clients via une ou plusieurs tablette, de contrôler différents éléments de la chambre comme : les télévisions, les lumières, les volets, les rideaux ou encore la musique. De plus, ces chambres sont équipés de 2 téléphones VoIP ainsi que d'un ou plusieurs Chromecast permettant au client de diffuser l'affichage de leurs appareils sur les télévisions en chambre. Enfin une borne wifi ainsi qu'un switch placé dans les placards techniques de la chambre sont présent permettant la communication entre les différents systèmes. C'est pour m'assurer du bon fonctionnement de tout ceci que je passe vérifier l'ensemble des systèmes de la chambre avant chaque arrivé client pour que ce dernier ne rencontre pas de panne au cours de son séjour.
 
