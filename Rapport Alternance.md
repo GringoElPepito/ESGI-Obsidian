@@ -62,7 +62,12 @@ En ce qui concerne la gestion des postes et comptes utilisateurs, nous utilisons
 - SharePoint qui permet de créer des sites, nous les utilisons généralement pour créer des partages de fichiers.
 Sur cette partie, j'ai eu l'occasion de collaborer avec notre prestataire Tibco, qui nous vient en aide lorsque nous n'avons pas le temps ou les compétences pour répondre au pannes/demandes utilisateurs.
 
-La gestion de notre infrastructure réseau est assuré grâce à l'outil Omnivista 2500 proposé par Alcat, l'intégralité de notre 
+La gestion de notre infrastructure réseau est assuré grâce à l'outil Omnivista 2500 proposé par Alcatel, la quasi-intégralité de notre infrastructure réseau est basé sur des équipements Alcatel, c'est pourquoi leur solution Omnivista 2500 est actuellement en place. Ce dernier se présente sous la forme d'une interface web offrant une console permettant une gestion totale des équipements réseaux bornes wifi comme commutateurs. 
+Ils possèdent plusieurs fonctionnalités intéressantes comme la création d'un schéma de l'infrastructure à partir des données fournies par le protocole LLDP. Fonctionnalités qui m'a été particulièrement utile à mon arrivée pour comprendre le fonctionnement et l'agencement de cette même infrastructure.
+
+La partie téléphonie est aussi assuré par des solutions Alcatel, nous avons une interface de gestion qui est Omnivista 8770, qui se présente sous la forme d'un client lourd directement installés sur un serveur sur lequel nous prenons la main à distance. Omnivista 8770 permet de gérer les équipements téléphoniques fixes et mobiles (DECT) de notre parc, en reliant par exemple ces derniers à des numéros et en leur accordant plus ou moins de droits. Pour cela, le serveur Omnivista 8770 communique avec les deux serveurs OXE qui sont ceux chargés de distribué la configuration aux différents équipements et d'assurer leurs communications.
+
+Concernant la partie virtualisation, pour cela nous avons 3 serveurs ESXi tous indépendant, qui virtualise nos différents services
 
 
 ## Projets et missions
