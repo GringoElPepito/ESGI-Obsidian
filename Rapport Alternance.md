@@ -37,7 +37,12 @@ Nous prenons en charge les demandes et incidents utilisateur, nous analysons la 
 
 ## Fonction occupée et missions
 Le poste que j'occupe au sein du groupe SCA SAINT HONORE est celui de technicien IT, voici les missions que j'ai eu l'occasion de d'effectuer à cette occasion :
-- La vérification des systèmes domotiques des suites Castiglione avant les arrivés clients pour anticiper de potentielles pannes auquel le client pour être confronté. 
+- Je réalise une vérification quotidienne des systèmes domotiques des suites Castiglione avant les arrivés clients pour anticiper de potentielles pannes auquel le client pour être confronté.
+- Je vérifie et corrige si besoin, le chiffre d'affaire enregistré par nos différents logiciels de production Opéra (PMS) et Simphony (POS).
+- Je suis chargé de la préparation et le déploiement des postes pour les nouveaux collaborateurs ainsi que de la formation de ces derniers à l'utilisation de nos systèmes.
+- 
+
+Les suites Castiglione sont des chambres incluant un système de domotique assez complet permettant de gérer, depuis une application mis à disposition des clients via une ou plusieurs tablette, de contrôler différents éléments de la chambre comme : les télévisions, les lumières, les volets, les rideaux ou encore la musique. De plus, ces chambres sont équipés de 2 téléphones VoIP ainsi que d'un ou plusieurs Chromecast permettant au client de diffuser l'affichage de leurs appareils sur les télévisions en chambre. Enfin une borne wifi ainsi qu'un switch placé dans les placards techniques de la chambre sont présent permettant la communication entre les différents systèmes. C'est pour m'assurer du bon fonctionnement de tout ceci que je passe vérifier l'ensemble des systèmes de la chambre avant chaque arrivé client pour que ce dernier ne rencontre pas de panne au cours de son séjour.
 
 ## Le ressen
 
