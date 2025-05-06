@@ -36,7 +36,8 @@ Nous prenons en charge les demandes et incidents utilisateur, nous analysons la 
 # Partie 2 : Descriptif de mon quotidien
 
 ## Fonction occupée et missions
-Au sei
+Le poste que j'occupe au sein du groupe SCA SAINT HONORE est celui de technicien IT, voici les missions que j'ai eu l'occasion de d'effectuer à cette occasion :
+- La vérification des systèmes domotiques des suites Castiglione avant les arrivés clients pour anticiper de potentielles pannes auquel le client pour être confronté. 
 
 ## Le ressen
 
