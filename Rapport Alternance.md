@@ -43,7 +43,9 @@ Le poste que j'occupe au sein du groupe SCA SAINT HONORE est celui de technicien
 - Je package et déploies les applications nécessaire à la production pour accélérer et automatiser l'installation de nouveaux postes informatiques.
 - Je supervise le fonctionnement de nos logiciels de production ainsi que leur interfaçage pour garantir le bon déroulement des étapes de la production.
 - Je propose des idées dans le but d'améliorer notre système d'information ainsi que sa gestion au quotidien.
-- Je réalise des documentations dédiés aux équipes techniques et aux utilisateurs pour procédurer 
+- Je réalise des documentations dédiés aux équipes techniques et aux utilisateurs pour faciliter et standardiser les différents process.
+- Je réponds aux pannes et demandes rencontrées par les collaborateurs et/ou clients.
+- 
 
 Les suites Castiglione sont des chambres incluant un système de domotique assez complet permettant de gérer, depuis une application mis à disposition des clients via une ou plusieurs tablette, de contrôler différents éléments de la chambre comme : les télévisions, les lumières, les volets, les rideaux ou encore la musique. De plus, ces chambres sont équipés de 2 téléphones VoIP ainsi que d'un ou plusieurs Chromecast permettant au client de diffuser l'affichage de leurs appareils sur les télévisions en chambre. Enfin une borne wifi ainsi qu'un switch placé dans les placards techniques de la chambre sont présent permettant la communication entre les différents systèmes. C'est pour m'assurer du bon fonctionnement de tout ceci que je passe vérifier l'ensemble des systèmes de la chambre avant chaque arrivé client pour que ce dernier ne rencontre pas de panne au cours de son séjour.
 
