@@ -50,9 +50,14 @@ Le poste que j'occupe au sein du groupe SCA SAINT HONORE est celui de technicien
 
 ## Projets et missions
 
+## Rassemblement des Tenant Microsoft 365
+Comme expliqué plus tôt, le service informatique est chargé du service informatique de différentes entités, 3 d'entre elles, COSTES GESTION, COSTES ACHATS et GROUPE COSTES sont situés dans le même bâtiment, de ce fait ces 3 entités avait un tenant Microsoft 365 leur étant dédié. 
+Cette configuration, avait été mise en place par notre ancien prestataire Bouche Cousue et malheureusement celle-ci présentait certains défauts. Comme ces entités interagissaient régulièremen
+
 ### Migration du PMS OperaV5 vers Opera Cloud
 Opera est une solution PMS (Property Management System) proposé par Oracle, les PMS sont des logiciels visant à gérer toutes les activités d'un hôtel afin d'améliorer la qualité de la production et donc l'expérience du client. 
 A mon arrivé au sein du service informatique de l'entreprise SCA SAINT HONORE, le rôle de PMS était assuré par la solution OperaV5 qui proposait une interface sous la forme d'un client lourd développé en Java 8. Le logiciel arrivant à la fin de son support, nous nous sommes entretenus avec Oracle pour migrer vers Opera Cloud. Cette fois-ci le logiciel est une web app accessible depuis n'importe quel navigateur ce qui facilite grandement le déploiement de l'application sur les postes utilisateurs.
+La migration c'est déroulé en 2 temps, la première partie a été la mise en place de l'environnement de test, permettant ainsi à nos collaborateurs de découvrir le nouvel outil sans risquer de mettre à mal la production. Ensuite, s'est déroulé la mise en production
 
 Les suites Castiglione sont des chambres incluant un système de domotique assez complet permettant de gérer, depuis une application mis à disposition des clients via une ou plusieurs tablette, de contrôler différents éléments de la chambre comme : les télévisions, les lumières, les volets, les rideaux ou encore la musique. De plus, ces chambres sont équipés de 2 téléphones VoIP ainsi que d'un ou plusieurs Chromecast permettant au client de diffuser l'affichage de leurs appareils sur les télévisions en chambre. Enfin une borne wifi ainsi qu'un switch placé dans les placards techniques de la chambre sont présent permettant la communication entre les différents systèmes. C'est pour m'assurer du bon fonctionnement de tout ceci que je passe vérifier l'ensemble des systèmes de la chambre avant chaque arrivé client pour que ce dernier ne rencontre pas de panne au cours de son séjour.
 
