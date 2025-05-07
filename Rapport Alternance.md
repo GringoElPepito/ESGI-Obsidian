@@ -96,7 +96,8 @@ Mes recherches ont abouti à 3 résultats remplissant nos critères :
 - SpaBooker
 - Book4Time
 - ???
-Une fois mes 3 candidats définis, j'ai contacté les entreprises à l'origine de ces solutions pour obtenir plus d'informations, 
+Une fois mes 3 candidats définis, j'ai contacté les entreprises à l'origine de ces solutions pour obtenir plus d'informations, j'ai convenu d'une date pour chacune des trois solutions pour réaliser un premier meeting. Ce premier meeting avait pour but principal de définir nos besoins pour par la suite prévoir une démonstration technique permettant ainsi de voir si la solution nous convient. Le second meeting a pour but de nous présenter le potentiel de chacun des outils. Chacun des meetings a été réalisé avec l'accompagnement de Mme JACQUEMART. De cette manière, elle pouvait se charger des questions portant sur l'opérationnel et moi sur le technique comme par exemple le type d'interface utilisé pour communiquer avec Opéra, le temps de synchronisation avec le PMS, les prérequis nécessaire à la mise en place ou le temps nécessaire à la mise en place de la solution. Tous ces points cités précédemment sont d'une importance capital car ils influencent la manière dont mener le projet.
+Après évaluation des
 
 ### Migration du PMS OperaV5 vers Opera Cloud
 Opera est une solution PMS (Property Management System) proposé par Oracle, les PMS sont des logiciels visant à gérer toutes les activités d'un hôtel afin d'améliorer la qualité de la production et donc l'expérience du client. 
