@@ -88,7 +88,15 @@ Comme expliqué plus tôt, le service informatique est chargé du service inform
 Cette configuration, avait été mise en place par notre ancien prestataire Bouche Cousue et malheureusement celle-ci présentait certains défauts. Comme ces entités interagissent régulièrement avec l'Hôtel COSTES, des échanges d'informations réguliers sont réalisé entre les 2 systèmes d'informations. Pour faciliter ces interactions, nous avons pris la décision de réunir toutes ces entités sous le Tenant de l'hôtel. De cette manière, il devient plus aisé d'échanger des informations entre l'hôtel et le site administratif sans oublier que la gestion côté informatique est elle aussi simplifier car tous les appareils sont accessibles depuis une même interface. Une fois tous les domaines rassemblés, il a fallut réinitialiser tous les postes enrôler dans l'ancien Tenant pour les ajouter au nouveau. 
 
 ## Mis en place du logiciel de Spa
-Le spa de l'hôtel est actuellement en travaux et prépare sa réouverture, à cette occasion, la nouvelle directrice du Spa Mme JACQUEMART à demander au service informatique de me
+Le spa de l'hôtel est actuellement en travaux et prépare sa réouverture, à cette occasion, la nouvelle directrice du Spa Mme JACQUEMART à demander au service informatique de mettre en place une solution logiciel dans le but de fluidifié l'activité. J'ai donc commencé par me renseigner sur différentes solutions logiciels pouvant convenir à nos besoins à savoir :
+- Un logiciel permettant de gérer tous les aspects du spa ainsi que les stocks et la boutique de vente de produit de soin & beauté
+- Le logiciel doit être interfaçable avec Opéra Cloud
+- Le logiciel doit être une solution fonctionnant en Cloud
+Mes recherches ont abouti à 3 résultats remplissant nos critères :
+- SpaBooker
+- Book4Time
+- ???
+Une fois mes 3 candidats définis, j'ai contacté les entreprises à l'origine de ces solutions pour obtenir plus d'informations, 
 
 ### Migration du PMS OperaV5 vers Opera Cloud
 Opera est une solution PMS (Property Management System) proposé par Oracle, les PMS sont des logiciels visant à gérer toutes les activités d'un hôtel afin d'améliorer la qualité de la production et donc l'expérience du client. 
