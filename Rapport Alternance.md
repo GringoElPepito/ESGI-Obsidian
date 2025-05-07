@@ -27,7 +27,7 @@ Le service informatique est composé de 3 personnes :
 - et moi-même, Technicien IT
 C'est une équipe assez restreinte en termes d'effectif, ce qui facilite la circulation des informations entre les membres et qui nous pousse à mettre en place un système d'organisation minutieux pour pouvoir gérer au mieux la charge de travail.
 
-Notre rôle est d'assurer le bon fonctionnement de l'ensemble des systèmes et services servant à la production, tout en l'améliorant ces derniers pour réduire les risques d'erreurs, répondre au nouveaux besoins de nos collaborateurs et de nos clients.
+Notre rôle est d'assurer le bon fonctionnement de l'ensemble des systèmes et services servant à la production, tout en l'améliorant ces derniers pour réduire les risques d'erreurs, répondre au nouveaux besoins de nos collaborateurs et de nos clients. Nous assurons un service 7j/7 pour pouvoir garantir la présence d'un technicien sur place si une panne se produit.
 
 Pour compenser notre petit effectif, nous faisons appel à des prestataires pour nous aider à la mise en place, maintenance et amélioration de nos différentes solutions. Par exemple, en ce qui concerne le réseau, la téléphonie et la virtualisation, nous faisons appel à ITM. Dans le cadre de la gestion des utilisateurs et de notre environnement Microsoft Cloud, nous sommes assisté par Tibco. Nos logiciels de production, sont des solutions fournis par Oracle.
 
@@ -79,7 +79,9 @@ Concernant la partie virtualisation, pour cela nous avons 3 serveurs ESXi tous i
 
 ## Projets et missions
 
-## Mis en place de Guest Key Cloud
+
+### Déploiement
+### Mis en place de Guest Key Cloud
 
 ## Rassemblement des Tenant Microsoft 365
 Comme expliqué plus tôt, le service informatique est chargé du service informatique de différentes entités, 3 d'entre elles, COSTES GESTION, COSTES ACHATS et GROUPE COSTES sont situés dans le même bâtiment, de ce fait ces 3 entités avait un tenant Microsoft 365 leur étant dédié. 
@@ -93,6 +95,7 @@ Le logiciel arrivant à la fin de son support, nous nous sommes entretenus avec 
 [screen Opéra Cloud]
 La migration c'est déroulé en 2 temps, la première partie a été la mise en place de l'environnement de test, permettant ainsi à nos collaborateurs de découvrir le nouvel outil sans risquer de mettre à mal la production. Ensuite, s'est déroulé la mise en production, celle-ci a débuté le 28 Avril 2025 à 22h00 et c'est achevée le 29 Avril 2025 à 11h00. Une fois la migration terminée, il a fallut créer l'intégralité des comptes pour nos utilisateurs ainsi que les différents rôles accordant les droits à ces derniers. Les 2 versions du logiciel ayant été conçu différemment, il n'était pas possible de migrer les utilisateurs et rôles déjà existant dans l'ancien logiciel vers le nouveau. J'ai donc du tous les recréer à la main en essayant de reproduire ce qui était existant sur OpéraV5. Une fois les comptes, rôles et droits définies, je me suis chargé de communiquer les informations pour accéder à la nouvelle plateformes aux collaborateurs. Après cela débuta le support aux utilisateurs, j'ai dû ajuster les droits mal définis, aidé les utilisateurs à appréhender le logiciel et remonté au support d'oracle et des autres prestataires les erreurs anormales, les données n'ayant pas été ou mal été migrées, les erreurs de communication entre les différents logiciels interfacés avec Opéra Cloud.
 
+### Vérification des chambres
 Les suites Castiglione sont des chambres incluant un système de domotique assez complet permettant de gérer, depuis une application mis à disposition des clients via une ou plusieurs tablette, de contrôler différents éléments de la chambre comme : les télévisions, les lumières, les volets, les rideaux ou encore la musique. De plus, ces chambres sont équipés de 2 téléphones VoIP ainsi que d'un ou plusieurs Chromecast permettant au client de diffuser l'affichage de leurs appareils sur les télévisions en chambre. Enfin une borne wifi ainsi qu'un switch placé dans les placards techniques de la chambre sont présent permettant la communication entre les différents systèmes. C'est pour m'assurer du bon fonctionnement de tout ceci que je passe vérifier l'ensemble des systèmes de la chambre avant chaque arrivé client pour que ce dernier ne rencontre pas de panne au cours de son séjour.
 
 ## Le ressen
