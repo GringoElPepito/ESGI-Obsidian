@@ -121,3 +121,6 @@ Les suites Castiglione sont des chambres incluant un système de domotique assez
 ## Apport à l'entreprise
 
 ## Résultat de l'alternance
+Cette alternance est une expérience très enrichissante et ce à plusieurs niveaux. Notre service informatique étant assez restreint au vu de la taille de notre infrastructure, nous avons donc besoin d'être parfaitement organisé au risque de finir assez vite débordé. 
+C'est d'ailleurs un point sur lequel j'ai beaucoup travaillé avec mon tuteur M. ILIE qui m'a présenté de nombreuse méthodes d'organisation et de gestion comme la GTD, Kanban, Ishikawa, RCA, Kaizen, Pomodoro ou encore le principe d'Eisenhower. J'ai pu au cours de cette alternance testé et expérimenté ces différentes méthodes ce qui m'a fait énormément progresser sur ma gestion du stress, la priorisation des tâches, la gestion d'un projet ou encore sur ma gestion du temps qui sont des points sur lesquels j'avais réellement besoin de m'améliorer. 
+Même si cette alternance n'est pas vraiment porté sur la technique, j'ai tout de même pu apprendre énormément de concept et acquérir de nouvelles 
