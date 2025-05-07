@@ -52,6 +52,7 @@ Le poste que j'occupe au sein du groupe SCA SAINT HONORE est celui de technicien
 L'activité de toute entreprise nécessite aujourd'hui un système d'information répondant aux besoins de la production. De plus, il est impératif pour le service informatique, de mettre en place des solutions lui facilitant la gestion de son parc et des différents services mises à disposition des utilisateurs.
 
 Pour l'organisation du service informatique, nous utilisons Trello. Que ce soit pour les missions quotidiennes, les projets à long terme ou encore l'enregistrement des différents contact important, tout est renseigné scrupuleusement au sein de notre tableau Trello.
+Nous créons chaque jour des ToD
 Cette outil nous permet de diffuser en temps réel les avancées sur les différents sujets en cours. Ceci se révèle particulièrement avantageux étant donné que nous assurons un service 7j/7 et qu'il peut arriver que nous nous voyons pas en physique ce qui empêche la prise d'informations sur lesdits sujets à l'oral.
 
 En ce qui concerne la gestion des postes et comptes utilisateurs, nous utilisons la solutions Microsoft 365 qui est une solution cloud offrant différentes consoles d'administrations visant à gérer certains aspects spécifiques des systèmes d'informations. Voici celle que j'ai eu l'occasion d'utiliser :
@@ -128,4 +129,7 @@ J'ai aussi pu développer mon rapport aux autres, le domaine de l'hôtellerie po
 J'ai pour projet professionnel de créer ma propre entreprise, qui aurait pour activité la vente de solutions de gestion réseau. Cette alternance a été une expérience plus qu'adapté dans la construction de mon projet professionnel. En effet, tout ce que j'ai pu apprendre concernant la gestion et l'organisation m'ont permis de visualiser un peu mieux le projet que je souhaite mettre en place, ce qui renforce mon envie de mener à bien ce dernier.
 
 # Conclusion
-Pour conclure, ce rapport d'activité à pour but de dresser une vue d'ensemble de ce qu'a été mon alternance dans le service informatique du groupe SCA SAINT HONORE. I
+Pour conclure, ce rapport d'activité à pour but de dresser un bilan de ce qu'a été mon alternance dans le service informatique du groupe SCA SAINT HONORE, en mettant en lumière les missions effectués et projets auxquels j'ai eu l'occasion de contribué. De mon arrivé, au sein de l'équipe informatique, le 2 Septembre 2024, j'ai eu la chance d'approfondir mes compétences tout en en acquérant des nouvelles.
+
+La première partie de ce rapport se concentre sur la présentation de l'entreprise SCA SAINT HONORE, en détaillant notamment le secteur d'activité, le chiffre d'affaires, le statut juridique ou encore la répartition des différents services. Le but initial de ce passage est posé le contexte dans lequel j'ai pu évoluer au cours de cette alternance, vous permettant ainsi de réaliser les enjeux et les problématiques auxquels j'ai pu être confrontés.
+J'ai poursuivi, en m'attardant cette fois-ci sur le service informatique, en expliquant le rôle du service les missions qui en découlaient ainsi que notre organisation au quotidien
