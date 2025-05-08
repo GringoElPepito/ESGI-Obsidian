@@ -102,7 +102,7 @@ Après évaluation des 3 solutions nous avons optés pour Spa Booker. les 3 solu
 Une fois cela fait, j'ai présenté la solution ainsi que le devis à mon tuteur M. ILIE qui l'a par la suite lui même présenté au directeur financier. Le projet bien que validé, est pour le moment en suspens car nous priorisons la migration du logiciel PMS.
 
 ### Migration du PMS OperaV5 vers Opera Cloud
-Opera est une solution PMS (Property Management System) proposé par Oracle, les PMS sont des logiciels visant à gérer toutes les activités d'un hôtel afin d'améliorer la qualité de la production et donc l'expérience du client. 
+Opera est une solution PMS (Property Management System) proposé par Oracle, les PMS sont des logiciels visant à gérer toutes les activités d'un hôtel afin d'améliorer la qualité de la production et donc l'expérience du client. Ce logiciel est donc au cœur du fonctionnement de l'hôtel, sans lui c'est toute les activités de l'établissement qui en pâtissent.
 A mon arrivé au sein du service informatique de l'entreprise SCA SAINT HONORE, le rôle de PMS était assuré par la solution OperaV5 qui proposait une interface sous la forme d'un client lourd développé en Java 8.
 [screen OpéraV5]
 Le logiciel arrivant à la fin de son support, nous nous sommes entretenus avec Oracle pour migrer vers Opera Cloud. Cette fois-ci le logiciel est une web app accessible depuis n'importe quel navigateur ce qui facilite grandement le déploiement de l'application sur les postes utilisateurs.
@@ -112,7 +112,9 @@ Une fois la migration terminée, il a fallut créer l'intégralité des comptes 
 Une fois les comptes, rôles et droits définies, je me suis chargé de communiquer les informations pour accéder à la nouvelle plateformes aux collaborateurs. Après cela débuta le support aux utilisateurs, j'ai dû ajuster les droits mal définis, aidé les utilisateurs à appréhender le logiciel et remonté au support d'oracle et des autres prestataires les erreurs anormales, les données n'ayant pas été ou mal été migrées, les erreurs de communication entre les différents logiciels interfacés avec Opéra Cloud. La migration est à ce jour terminé et logiciel en production, je continue de suivre les équipes dans leur utilisation quotidiennes de la solution pour relever les anomalies et les remontés au support d'Oracle pour qu'ils puissent les corriger.
 
 ### Vérification des chambres
-Les suites Castiglione sont des chambres incluant un système de domotique assez complet permettant de gérer, depuis une application mis à disposition des clients via une ou plusieurs tablette, de contrôler différents éléments de la chambre comme : les télévisions, les lumières, les volets, les rideaux ou encore la musique. Chaque télé est relié à un boitier appelé SetupBox permettant de gérer le flux diffusé sur la télévision tout en étant administrable via le serveur Teveo à distance. De plus, ces chambres sont équipés de 2 téléphones VoIP ainsi que d'un ou plusieurs Chromecast permettant au client de diffuser l'affichage de leurs appareils sur les télévisions en chambre. Enfin une borne wifi ainsi qu'un switch placé dans les placards techniques de la chambre sont présent permettant la communication entre les différents systèmes. C'est pour m'assurer du bon fonctionnement de tout ceci que je passe vérifier l'ensemble des systèmes de la chambre avant chaque arrivé client pour que ce dernier ne rencontre pas de panne au cours de son séjour.
+Les suites Castiglione sont des chambres incluant un système de domotique assez complet permettant de gérer, depuis une application mis à disposition des clients via une ou plusieurs tablette, les différents éléments de la chambre. On peut citer comme exemples : les télévisions, les lumières, les volets, les rideaux ou encore la musique. 
+Chaque télé est relié à un boitier appelé SetupBox permettant de gérer le flux diffusé sur la télévision tout en étant administrable via le serveur Teveo à distance. De plus, ces chambres sont équipés de 2 téléphones VoIP ainsi que d'un ou plusieurs Chromecast permettant au client de diffuser l'affichage de leurs appareils sur les télévisions en chambre. 
+Enfin une borne wifi ainsi qu'un switch placé dans les placards techniques de la chambre sont présent permettant la communication entre les différents systèmes. C'est pour m'assurer du bon fonctionnement de tout ceci que je passe vérifier l'ensemble des systèmes de la chambre avant chaque arrivé client pour que ce dernier ne rencontre pas de panne au cours de son séjour.
 
 ## Le ressen
 
@@ -120,6 +122,7 @@ Les suites Castiglione sont des chambres incluant un système de domotique assez
 ## Analyse de l'entreprise
 
 ## Apport à l'entreprise
+Cette période en entreprise, a été pour moi une occasion de mettre à l'œuvre mes compétences techniques. En effet, Le service informatique étant formé uniquement de deux personnes avant mon arrivé, M. ILIE et son prédécesseur avaient orienté celui-ci principalement sur la gestion d'incident et de projet, en déléguant le plus possible les tâches techniques aux différents prestataires. 
 
 ## Résultat de l'alternance
 Cette alternance est une expérience très enrichissante et ce à plusieurs niveaux. Notre service informatique étant assez restreint au vu de la taille de notre infrastructure, nous avons donc besoin d'être parfaitement organisé au risque de finir assez vite débordé. 
