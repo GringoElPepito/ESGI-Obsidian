@@ -120,7 +120,8 @@ Enfin une borne wifi ainsi qu'un switch placé dans les placards techniques de l
 
 # Partie 3 : Bilan et recul sur les missions
 ## Analyse de l'entreprise
-L'entreprise SCA SAINT HONORE et plus particulièrement l'Hôtel COSTES se base énormément sur les talents individuelles de son personnel
+L'entreprise SCA SAINT HONORE et plus particulièrement l'Hôtel COSTES se base sur de fortes personnalités, la principale étant bien évidemment Jean-Louis COSTES fondateur de l'hôtel éponyme. En effet, l'hôtel ne possède à ce jour pas de service marketing ou commercial, la clientèle de l'hôtel s'est principalement construite autour de la réputation de M. COSTES. Peu d'établissement peuvent se vanter d'une telle prouesse et M. COSTES n'est pas la seule personnalité sur laquelle se repose l'Hôtel COSTES, il y a aussi Mme. Taly NAINVILLE Directrice de l'Hébergement, MM. Clément & François LAUMONIER qui sont respectivement Directeur du restaurant & Directeur du Room Service ou encore M. Radu Daniel ILIE Directeur des Systèmes d'Informations. Tous contribuent grandement à l'organisation globale de l'hôtel qui est assez singulière. 
+Là où dans la plupart des entreprises, l'organi
 
 ## Apport à l'entreprise
 Cette période en entreprise, a été pour moi une occasion de mettre à l'œuvre mes compétences techniques. En effet, Le service informatique étant formé uniquement de deux personnes avant mon arrivé, M. ILIE et son prédécesseur avaient orienté celui-ci principalement sur la gestion d'incident et de projet, en déléguant le plus possible les tâches techniques aux différents prestataires. 
