@@ -25,7 +25,9 @@ L'Hôtel COSTES a été inauguré en 1995, à cette époque, celui-ci ne contien
 
 En 2004, l'Hôtel COSTES s'étendit avec l'acquisition de l'Hôtel le Lotti situé 7 rue Castiglione, qui est par ailleurs aujourd'hui l'entrée principale de l'hôtel. Castiglione est bien évidemment le nom qui a été donné à cette partie de l'hôtel. Cette fois-ci Jean-Louis COSTES a fait appel Christian LIAIGRE pour se charger du design. Le résultat obtenue est bien plus sobre s'articulant cette fois-ci sur le contraste entre le blanc apporté par les murs et les teintes plus sombres visibles sur les meubles et pièces en bois. La section Castiglione compte un total 35 chambres réparties en suite et Grande suite qui sont les chambres les plus onéreuses de l'établissement avec un prix compris entre 1800€ et 15 000€ la nuit.
 
-Une troisième section appelé Mont Thabor, toujours basé sur le nom de la rue adjacente, est actuellement en travaux. Cette 
+Une troisième section appelé Mont Thabor, toujours basé sur le nom de la rue adjacente, est actuellement en travaux. Cette partie comptera environ une quarantaine de chambres ce qui viendra grandement augmenter le nombre totale de chambre de l'hôtel.
+
+Cependant, l'hébergement n'est pas la seule activité de l'hôtel, l'établissement accueille aussi un restaurant ainsi qu'un bar connaissant tous deux une très forte affluence.
 
 
 ## Focus sur le service
