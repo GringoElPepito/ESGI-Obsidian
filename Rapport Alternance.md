@@ -14,7 +14,13 @@ Dans un premier temps, je détaillerai l'entreprise de son ensemble, en abordant
 Dans un second temps, je décrirai mon quotidien en tant que Technicien IT en vous présenter les missions et projets que j'ai eu l'occasion de réaliser tout au long de cette période en entreprise, en détaillant la manière et les moyens mis en œuvre pour y parvenir.
 # Partie 1 : Contexte Entreprise
 ## Entreprise d'accueil
-SAINT HONORE est une SCA, Société en Commandite par Actions principalement détenue par Jean-Louis COSTES. Cette société possède l'Hôtel COSTES ainsi que d'autres entreprises, voici celles avec lesquelles
+SAINT HONORE est une SCA, Société en Commandite par Actions principalement détenue par Jean-Louis COSTES. Cette société possède l'Hôtel COSTES ainsi que d'autres entreprises, voici celles avec lesquelles j'ai eu l'occasion d'échanger ou de travailler :
+- COSTES ACHATS, qui est l'entité se chargeant de la négociation des tarifs avec les différents fournisseurs. Une fois cela fait, ces derniers conçoivent un catalogue avec les tarifs renégociés accessibles à tous les établissements du groupe.
+- GESTION COSTES, cette entreprise se charge de la comptabilité et de la gestion des ressources humaines des sociétés du groupe. 
+- LA TREMOILLE, cette société est un Hôtel 3 étoiles situé au 14 rue de la Trémoille dans le 8ème arrondissement de Paris.
+- JLGC, est une entité possédant l'Hôtel Plage Palace, qui est un hôtel 5 étoiles situé au 336 Avenue Saint-Maurice, à Palavas-les-Flots près de Montpellier.
+
+
 
 ## Focus sur le service
 Au cours de mon alternance, j'ai eu la chance d'évoluer au sein du service informatique de l'entreprise, qui se charge de la mise en place, de la maintenance et de la supervision des systèmes d'informations des différents entreprise et établissement du groupe. 
