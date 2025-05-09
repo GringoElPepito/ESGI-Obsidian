@@ -21,7 +21,8 @@ Cette société possède l'Hôtel COSTES ainsi que d'autres entreprises, voici c
 - LA TREMOILLE, cette société est un Hôtel 3 étoiles situé au 14 rue de la Trémoille dans le 8ème arrondissement de Paris.
 - JLGC, est une entité possédant l'Hôtel Plage Palace, qui est un hôtel 5 étoiles situé au 336 Avenue Saint-Maurice, à Palavas-les-Flots près de Montpellier.
 
-L'Hôtel COSTES a été inauguré en 1995, à cette époque, celui-ci ne contient que la partie Saint-Honoré nom défini à partir de la rue adjacente à cette partie de l'hôtel. Cette section de l'hôtel est le fruit de la collaboration entre Jean-Louis COSTES et le designer Jacques GARCIA
+L'Hôtel COSTES a été inauguré en 1995, à cette époque, celui-ci ne contient que la partie Saint-Honoré nom défini à partir de la rue adjacente à cette partie de l'hôtel. Cette section de l'hôtel est le fruit de la collaboration entre Jean-Louis COSTES et le designer Jacques GARCIA, elle se définit par son apparence singulière avec des teintes plutôt orientés sur le pourpre et le rouge bordeaux ainsi qu'un style tout particulier reprenant certains codes. La partie Saint-Honoré regroupe les chambres ainsi que les petites suites.
+En 2004, l'Hôtel COSTES s'étendit avec l'acquisition de l'Hôtel le Lotti situé 7 rue Castiglione, qui est par ailleurs aujourd'hui l'entrée principale de l'hôtel. Castiglione est bien évidemment le nom qui a été donné à cette partie de l'hôtel. Cette fois-ci Jean-Louis COSTES a fait appel Christian LIAIGRE pour se charger du design. 
 
 
 ## Focus sur le service
