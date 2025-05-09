@@ -27,7 +27,7 @@ En 2004, l'Hôtel COSTES s'étendit avec l'acquisition de l'Hôtel le Lotti situ
 
 Une troisième section appelé Mont Thabor, toujours basé sur le nom de la rue adjacente, est actuellement en travaux. Cette partie comptera environ une quarantaine de chambres ce qui viendra grandement augmenter le nombre totale de chambre de l'hôtel.
 
-Cependant, l'hébergement n'est pas la seule activité de l'hôtel, l'établissement accueille aussi un restaurant ainsi qu'un bar connaissant tous deux une très forte affluence.
+Cependant, l'hébergement n'est pas la seule activité de l'hôtel, l'établissement accueille aussi un restaurant ainsi qu'un bar connaissant tous deux une très forte affluence. Les 2 se démarquent par l'un de l'autre grâce à leurs ambiance particulière, pour le restaurant celui-ci puise son charme dans le contraste amené par la luminosité de la terrasse et l'obscurité issue des salons aux lumières tamisées. Le bar de l'hôtel quant à lui joue sur  
 
 
 ## Focus sur le service
