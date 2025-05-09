@@ -21,6 +21,7 @@ Cette société possède l'Hôtel COSTES ainsi que d'autres entreprises, voici c
 - LA TREMOILLE, cette société est un Hôtel 3 étoiles situé au 14 rue de la Trémoille dans le 8ème arrondissement de Paris.
 - JLGC, est une entité possédant l'Hôtel Plage Palace, qui est un hôtel 5 étoiles situé au 336 Avenue Saint-Maurice, à Palavas-les-Flots près de Montpellier.
 
+L'Hôtel COSTES a été 
 
 
 ## Focus sur le service
