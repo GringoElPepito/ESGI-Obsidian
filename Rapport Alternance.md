@@ -27,7 +27,10 @@ En 2004, l'Hôtel COSTES s'étendit avec l'acquisition de l'Hôtel le Lotti situ
 
 Une troisième section appelé Mont Thabor, toujours basé sur le nom de la rue adjacente, est actuellement en travaux. Cette partie comptera environ une quarantaine de chambres ce qui viendra grandement augmenter le nombre totale de chambre de l'hôtel.
 
-Cependant, l'hébergement n'est pas la seule activité de l'hôtel, l'établissement accueille aussi un restaurant ainsi qu'un bar connaissant tous deux une très forte affluence. On peut ajouter à cela la boutique éphémère ainsi que la boutique à vinyle. La boutique éphémère est directement placé à la réception de l'hôtel, tandis que la boutique à vinyle, qui par ailleurs ne vend pas uniquement des vinyles, est situé à l'extérieur de l'hôtel et est juxtaposé à l'entrée de l'hôtel. Les deux boutiques vendent des produits dérivés comme par exemple des bougies, des parfums ou encore des sauces. Dans le cas de la boutique à vinyle, en plus des produits cités précédemment celle-ci vend aussi les vinyles produit par le studio  
+Cependant, l'hébergement n'est pas la seule activité de l'hôtel, l'établissement accueille aussi un restaurant ainsi qu'un bar connaissant tous deux une très forte affluence. On peut ajouter à cela la boutique éphémère ainsi que la boutique à vinyle. La boutique éphémère est directement placé à la réception de l'hôtel, tandis que la boutique à vinyle, qui par ailleurs ne vend pas uniquement des vinyles, est situé à l'extérieur de l'hôtel et est juxtaposé à l'entrée de l'hôtel. Les deux boutiques vendent des produits dérivés comme par exemple des bougies, des parfums ou encore des sauces. Dans le cas de la boutique à vinyle, en plus des produits cités précédemment celle-ci vend aussi les vinyles produit par le Studio HC (Hôtel Costes). Ce dernier est née au cours des travaux de la partie Castiglione et a depuis produit un certain nombre de musiques, musiques qui sont par ailleurs diffusés sur la radio COSTES écoutable directement à l'hôtel dans les suites Castiglione, les parties communes où sur le site internet de l'hôtel.
+
+L'hôtel COSTES se démarquent de ses concurrents par son ambiance singulière
+
 
 
 ## Focus sur le service
