@@ -14,7 +14,8 @@ Dans un premier temps, je détaillerai l'entreprise de son ensemble, en abordant
 Dans un second temps, je décrirai mon quotidien en tant que Technicien IT en vous présenter les missions et projets que j'ai eu l'occasion de réaliser tout au long de cette période en entreprise, en détaillant la manière et les moyens mis en œuvre pour y parvenir.
 # Partie 1 : Contexte Entreprise
 ## Entreprise d'accueil
-SAINT HONORE est une SCA, Société en Commandite par Actions principalement détenue par Jean-Louis COSTES. Cette société possède l'Hôtel COSTES ainsi que d'autres entreprises, voici celles avec lesquelles j'ai eu l'occasion d'échanger ou de travailler :
+SAINT HONORE est une SCA, Société en Commandite par Actions principalement détenue par Jean-Louis COSTES. La société SAINT HONORE a pour capital social 18 252 753,41€, son chiffre d'affaires s'élevait en 2023 à 58 895 199,00€. En 2021, l'entreprise comptait 147 employés, valeur semblant être désormais comprise entre 250 et 499 salariés.
+Cette société possède l'Hôtel COSTES ainsi que d'autres entreprises, voici celles avec lesquelles j'ai eu l'occasion d'échanger ou de travailler :
 - COSTES ACHATS, qui est l'entité se chargeant de la négociation des tarifs avec les différents fournisseurs. Une fois cela fait, ces derniers conçoivent un catalogue avec les tarifs renégociés accessibles à tous les établissements du groupe.
 - GESTION COSTES, cette entreprise se charge de la comptabilité et de la gestion des ressources humaines des sociétés du groupe. 
 - LA TREMOILLE, cette société est un Hôtel 3 étoiles situé au 14 rue de la Trémoille dans le 8ème arrondissement de Paris.
