@@ -14,7 +14,7 @@ Dans un premier temps, je détaillerai l'entreprise de son ensemble, en abordant
 Dans un second temps, je décrirai mon quotidien en tant que Technicien IT en vous présenter les missions et projets que j'ai eu l'occasion de réaliser tout au long de cette période en entreprise, en détaillant la manière et les moyens mis en œuvre pour y parvenir.
 # Partie 1 : Contexte Entreprise
 ## Entreprise d'accueil
-SAINT HONORE est une SCA, Société en Commandite par Actions 
+SAINT HONORE est une SCA, Société en Commandite par Actions principalement détenue par Jean-Louis COSTES. Cette société possède l'Hôtel COSTES ainsi que d'autres entreprises, voici celles avec lesquelles
 
 ## Focus sur le service
 Au cours de mon alternance, j'ai eu la chance d'évoluer au sein du service informatique de l'entreprise, qui se charge de la mise en place, de la maintenance et de la supervision des systèmes d'informations des différents entreprise et établissement du groupe. 
