@@ -106,6 +106,9 @@ Tous les logs sont stockés dans le dossier `/var/log`. Tous les services émett
 `syslog` est un protocole permettant la centralisation des logs sur une machine.
 
 Il existe 3 logiciels permettant de centraliser les logs de la machine via le protocole `syslog`
-- syslog : Créé à la fin des années 80 et était la première version du logiciel syslog
-  2 limitations : Il ne supporte que l'UDP.
-- 
+- `syslog` : Créé à la fin des années 80 et était la première version du logiciel `syslog`
+  2 limitations : 
+	- Il ne supporte que l'UDP
+	- Il ne supporte pas le chiffrement via SSL/TLS.
+- `syslog-ng` : Créé à la fin des années 90 et est une amélioration de `syslog`. Apporte le support de TCP et le chiffrement via SSL/TLS
+- `journalctl` : 
