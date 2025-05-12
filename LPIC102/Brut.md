@@ -111,4 +111,4 @@ Il existe 3 logiciels permettant de centraliser les logs de la machine via le pr
 	- Il ne supporte que l'UDP
 	- Il ne supporte pas le chiffrement via SSL/TLS.
 - `syslog-ng` : Créé à la fin des années 90 et est une amélioration de `syslog`. Apporte le support de TCP et le chiffrement via SSL/TLS
-- `journalctl` : 
+- `rsyslog` : Créé en 2004 et apporte le support du protocole RELP. 
