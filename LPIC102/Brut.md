@@ -99,3 +99,6 @@ set -e
 apt-get update > /var/log/task-$(date +%d-%m-%Y)
 apt list --upgradable >> /var/log/task-$(date +%d-%m-%Y)
 ```
+
+# LOG 
+les logs sont stockés dans le dossier `/var/log`. Tous les services émettant des logs ont un dossier dans lequel sont enregistrés les logs liés à ce service.
