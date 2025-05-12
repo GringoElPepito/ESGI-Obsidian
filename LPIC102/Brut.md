@@ -115,9 +115,19 @@ Il existe 3 logiciels permettant de centraliser les logs de la machine via le pr
 	- Il ne supporte pas le chiffrement via SSL/TLS.
 - `syslog-ng` : Créé à la fin des années 90 et est une amélioration de `syslog`. Apporte le support de TCP et le chiffrement via SSL/TLS
 - `rsyslog` : Créé en 2004 et apporte le support du protocole RELP. 
-`journalctl`
 
-Filtre les log pour n'afficher
+`journalctl` génère des logs et les stockent `/var/log/journal/system.journal` qui est un fichier binaire non exécutable. Les données ne sont donc pas lisible en brut.
+
+Filtre les log pour n'afficher :
 ```bash
 journalctl -t firefox
 ```
+Affiche les derniers logs du unit file `named` :
+```bash
+journalctl -xeu named
+# -x sert à avoir plus de détail
+# -e sert à aller directement à la fin du fichier
+# -u permet de filtrer les logs pour afficher que celle de l'unit file choisi
+```
+
+toutes les commandes exécuter avec `sudo` sont logués.
