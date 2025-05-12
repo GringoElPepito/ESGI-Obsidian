@@ -101,4 +101,11 @@ apt list --upgradable >> /var/log/task-$(date +%d-%m-%Y)
 ```
 
 # LOG 
-les logs sont stockés dans le dossier `/var/log`. Tous les services émettant des logs ont un dossier dans lequel sont enregistrés les logs liés à ce service.
+Tous les logs sont stockés dans le dossier `/var/log`. Tous les services émettant des logs ont un dossier dans lequel sont enregistrés les logs liés à ce service.
+`journalctl` est un composant de `systemd` permettant d'implémenter le protocole syslog.
+`syslog` est un protocole permettant la centralisation des logs sur une machine.
+
+Il existe 3 logiciels permettant de centraliser les logs de la machine via le protocole `syslog`
+- syslog : Créé à la fin des années 80 et était la première version du logiciel syslog
+  2 limitations : Il ne supporte que l'UDP.
+- 
