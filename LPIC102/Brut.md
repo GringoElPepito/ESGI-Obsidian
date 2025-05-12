@@ -129,5 +129,14 @@ journalctl -xeu named
 # -e sert à aller directement à la fin du fichier
 # -u permet de filtrer les logs pour afficher que celle de l'unit file choisi
 ```
-
 toutes les commandes exécuter avec `sudo` sont logués.
+
+Permet de lire tous les logs du fichier `/proc/kmsg` :
+```bash
+sudo dmesg
+```
+
+Affiche tous les périphériques connectés à la machine :
+```bash
+lspci
+```
