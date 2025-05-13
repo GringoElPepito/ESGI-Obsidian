@@ -2,8 +2,25 @@ cgroups fonctionnalité du kernel linux permettant d'isoler les processus avec u
 namespace fonctionnalité du kernel permettant de donner un nom au processus et de les identifier grâce à celui-ci.
 
 Image Docker : Equivalent d'un OVA pour les conteneurs
-Conteneur Docker : Equivalent de la VM
+Conteneur Docker : Equivalent de la VM, résultat du lancement d'une image.
 
+Docker Hub est un registre de conteneur qui stocke les images docker.
+
+Docker Commande de base
 ```bash
 docker 
 ```
+
+Récupérer l'image docker NGINX :
+```bash
+docker pull nginx
+```
+
+Lister les images docker :
+```bash
+docker images
+# ou 
+docker image ls
+```
+
+
