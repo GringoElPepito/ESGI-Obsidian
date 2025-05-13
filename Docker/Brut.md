@@ -1,0 +1,1 @@
+cgroups fonctionnalité du kernel linux permettant d'isoler les processus
