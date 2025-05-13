@@ -43,3 +43,12 @@ Lister tous les conteneurs docker aussi ceux arrêté :
 docker ps -a
 ```
 
+Stopper un conteneur
+```bash
+# Avec le conteneur ID
+docker stop 909392e75bf3
+# Avec les 2 premiers caractère du conteneur ID
+docker stop 90
+# Avec le nom du conteneur
+docker stop nginx
+```
