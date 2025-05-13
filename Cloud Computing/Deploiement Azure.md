@@ -21,3 +21,6 @@ Une fois les paramètres renseignés on peut les appeler de la manière suivante
          "adminUsername": "[parameters('adminUsername')]",
          "adminPassword": "[parameters('adminPassword')]",
 ```
+
+Supprimer les dépendances circulaires 
+Ajouter dépendances sur les réseaux virtuels
