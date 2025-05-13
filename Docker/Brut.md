@@ -33,10 +33,16 @@ Créer un conteneur à partir d'une image sans bloquer le terminal :
 docker run -d nginx
 ```
 
-Créer un conteneur à partir d'une image en nommant le conteneur :
+Créer un conteneur à partir d'une image en nommant le conteneur, il n'est pas possible d'avoir deux conteneurs avec le même nom :
 ```bash
 docker run --name nginx nginx
 ```
+
+Créer un conteneur à partir d'une image en mappant les ports :
+```bash
+docker run -p 80:80 nginx
+```
+`-p` permet de définir la correspondance des ports entre la machine hôte et le conteneur, `80:80` le `80` situé à gauche du `:` correspond au port de la machine hôte et le `80` est le port du conteneur.
 
 Lister les conteneurs docker en cours d'exécution :
 ```bash
