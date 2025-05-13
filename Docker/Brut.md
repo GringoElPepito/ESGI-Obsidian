@@ -23,4 +23,23 @@ docker images
 docker image ls
 ```
 
+Créer un conteneur à partir d'une image :
+```bash
+docker run nginx
+```
+
+Créer un conteneur à partir d'une image sans bloquer le terminal :
+```bash
+docker run nginx -d
+```
+
+Lister les conteneurs docker en cours d'exécution :
+```bash
+docker ps
+```
+
+Lister tous les conteneurs docker aussi ceux arrêté :
+```bash
+docker ps -a
+```
 
