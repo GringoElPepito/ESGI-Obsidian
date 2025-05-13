@@ -30,7 +30,12 @@ docker run nginx
 
 Créer un conteneur à partir d'une image sans bloquer le terminal :
 ```bash
-docker run nginx -d
+docker run -d nginx
+```
+
+Créer un conteneur à partir d'une image en nommant le conteneur :
+```bash
+docker run --name nginx nginx
 ```
 
 Lister les conteneurs docker en cours d'exécution :
@@ -52,3 +57,14 @@ docker stop 90
 # Avec le nom du conteneur
 docker stop nginx
 ```
+
+Pour relancer un conteneur arrêté : 
+```bash
+# Avec le conteneur ID
+docker start 909392e75bf3
+# Avec les 2 premiers caractère du conteneur ID
+docker start 90
+# Avec le nom du conteneur
+docker start nginx
+```
+
