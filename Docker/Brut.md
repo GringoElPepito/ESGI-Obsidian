@@ -74,3 +74,7 @@ docker start 90
 docker start nginx
 ```
 
+Supprimer un conteneur lorsqu'il s'arrête :
+```bash
+docker run -d --name nginx-kevin --rm nginx
+```
