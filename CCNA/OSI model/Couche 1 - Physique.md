@@ -1,5 +1,6 @@
 - ### Câble : 
 	- Copper / Cuivre :
+		- Serial, T1 Numeris -> 1,544Mbps
 		- Coaxial : 
 			- 10 Base 2, Thinnet, 185 m, 10 Mbps
 			- 10 Base 5, Thinnet, 500 m, 10 Mbps

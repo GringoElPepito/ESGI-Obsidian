@@ -1,0 +1,2 @@
+## IS-IS
+Intermediate System - Intermediate System, protocole de communication entre routeurs non dépendant du protocole réseau (IPv4,IPv6,TokenRing etc..), possède un fonctionnement très proche de [[OSPF]] -> gère la diffusion des routes d'une aire à une autre.

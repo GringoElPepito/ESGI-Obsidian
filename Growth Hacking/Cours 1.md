@@ -70,3 +70,6 @@ Prospect = potentiel Client
 Lead = Prospect ayant réalisé une intéraction avec nous 
 Client = Prospect réalisant un achat
 Ambassadeur = client recommandant le produit
+durée expérimentation 2 à 4 semaines
+
+Funnel AAARRR créé par Dave Mcluren
