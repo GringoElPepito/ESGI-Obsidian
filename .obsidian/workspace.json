@@ -11,14 +11,10 @@
             "id": "bd2d09c39e91a558",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CCNA/CCNA-J1.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "CCNA-J1"
+              "title": "Nouvel onglet"
             }
           },
           {
@@ -47,16 +43,6 @@
               },
               "icon": "lucide-file",
               "title": "CCNA-J1"
-            }
-          },
-          {
-            "id": "dee1bb5e125e7404",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vue graphique"
             }
           },
           {
@@ -144,57 +130,35 @@
             }
           },
           {
-            "id": "53b32bfaf50084bb",
+            "id": "ad62851806dc1951",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Outils.md",
+                "file": "CCNA/OSI model/Couche3/OSPF.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Outils"
+              "title": "OSPF"
             }
           },
           {
-            "id": "b99d7dd0986286c0",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "attachments/Pasted image 20240926145100.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20240926145100"
-            }
-          },
-          {
-            "id": "1e0b17ab9939b1c9",
+            "id": "79d81f4a30196083",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud Computing/Deploiement Azure.md",
+                "file": "Projet Annuel/Maquette Réseau.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Deploiement Azure"
-            }
-          },
-          {
-            "id": "446bbb5a63b9e141",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Nouvel onglet"
+              "title": "Maquette Réseau"
             }
           }
         ],
-        "currentTab": 12
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -213,7 +177,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Explorateur de fichiers"
@@ -225,7 +190,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ospf",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -246,7 +211,8 @@
               "title": "Signet"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -323,52 +289,52 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "github-sync:Sync with Remote": false,
       "switcher:Ouvrir le sélecteur rapide": false,
       "graph:Ouvrir la vue graphique": false,
       "canvas:Créer une nouvelle toile": false,
       "daily-notes:Ouvrir la note quotidienne": false,
       "templates:Insérer le modèle": false,
-      "command-palette:Ouvrir la palette de commandes": false,
-      "github-sync:Sync with Remote": false
+      "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "1e0b17ab9939b1c9",
+  "active": "ad62851806dc1951",
   "lastOpenFiles": [
-    "Docker/Brut.md",
-    "Docker/Exo.md",
-    "LPIC101/Cours 1.md",
-    "LPIC102/TP 12-05-2025.md",
-    "Docker",
-    "LPIC102/Brut.md",
-    "Git/Git & Github.md",
-    "Windows Server/Cours.md",
-    "Windows Server/Correction TP.md",
-    "Windows Server",
-    "Untitled.md",
+    "CCNA/OSI model/Couche3/Couche 3 - Réseau.md",
+    "CCNA/OSI model/Couche3/Linkagg.md",
     "Untitled 1.md",
-    "TOEIC.md",
-    "Supervision/Cours 1.md",
-    "Supervision",
-    "Sans titre 1.md",
+    "LPIC102/TP 12-05-2025.md",
+    "Docker/Exo.md",
+    "Docker/Brut.md",
+    "Docker",
     "Rapport Alternance.md",
     "Projet Annuel/Rendu 4.md",
-    "Projet Annuel/Plan.md",
     "Projet Annuel/Maquette Réseau.md",
-    "Projet Annuel/Explication.md",
-    "Projet Annuel/DNS.md",
-    "LPIC102/etc-shadow.md",
-    "LPIC102/Untitled.md",
-    "LPIC102/Tache automatise.md",
+    "Projet Annuel/Projet Kasgrunt.md",
+    "CCNA/OSI model/Couche3/HSRP.md",
     "LPIC102/TP politique mdp.md",
-    "LPIC102",
-    "Git/Contrôle.md",
+    "Cloud Computing/Deploiement Azure.md",
+    "CCNA/OSI model/Couche3/ACL.md",
     "CCNA/OSI model/Couche3/VRRP.md",
+    "CCNA/OSI model/Couche3/STP.md",
     "CCNA/OSI model/Couche3/Trunk & VTP.md",
-    "CCNA/OSI model/Couche3",
-    "CCNA/Exo/STP",
+    "CCNA/Brut.md",
+    "Sans titre 1.md",
+    "Supervision/Cours 1.md",
+    "Supervision",
+    "LPIC102/Untitled.md",
+    "BDD/Cours 1.md",
     "BDD",
-    "attachments/Pasted image 20240926145100.png",
-    "attachments/16964126324398_Downloadable Summary [Git et Github] .png",
+    "LPIC102/Tache automatise.md",
+    "LPIC102/etc-shadow.md",
+    "LPIC102/Brut.md",
+    "LPIC101/Exo.md",
+    "CCNA/OSI model/Couche3/Sans titre",
+    "CCNA/OSI model/Couche3",
+    "LPIC102",
+    "CCNA/Exo/STP",
+    "Windows Server",
+    "attachments/Pasted image 20241021103344.png",
     "attachments/16818248792904_2C1-2.png",
     "attachments/16812073424624_1C4-4.png",
     "attachments/16812069005642_1C4-3.png",
@@ -377,8 +343,8 @@
     "attachments/16812057132798_1C3.png",
     "attachments/16812041033598_1C1.png",
     "attachments/16390563888421_Capture d’e´cran 2021-12-09 a` 14.26.13.png",
+    "attachments/16352592189881_1c2-1.png",
     "Git",
-    "Python",
-    "Untitled"
+    "Python"
   ]
 }
