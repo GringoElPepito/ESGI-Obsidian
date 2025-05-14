@@ -175,12 +175,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docker/Brut.md",
+                "file": "Cloud Computing/Deploiement Azure.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brut"
+              "title": "Deploiement Azure"
             }
           },
           {
@@ -335,8 +335,8 @@
   },
   "active": "1e0b17ab9939b1c9",
   "lastOpenFiles": [
-    "Docker/Exo.md",
     "Docker/Brut.md",
+    "Docker/Exo.md",
     "Cloud Computing/Deploiement Azure.md",
     "LPIC101/Cours 1.md",
     "LPIC102/TP 12-05-2025.md",
