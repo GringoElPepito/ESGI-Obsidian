@@ -81,4 +81,4 @@ docker run -d --name nginx-kevin --rm nginx
 
 ## Dockerfile
 
-chaque instruction devient une couche dans le conteneur. Chaque opération est définitive dans la taille dans l'image.
+chaque instruction devient une couche dans le conteneur. Chaque opération est définitive dans la taille dans l'image. 
