@@ -140,3 +140,16 @@ Affiche tous les périphériques connectés à la machine :
 ```bash
 lspci
 ```
+
+Afficher les ports ouverts :
+```bash
+ss
+#ou
+netstat
+```
+`-l` affiche les ports en écoute
+`-t` affiche les ports en TCP
+`-u` affiche les ports en UDP
+`-n` affiche le numéro de port
+`-p` affiche le process auxquels il est lié
+`-a` affiche tous les ports

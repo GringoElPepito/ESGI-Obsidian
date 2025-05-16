@@ -43,3 +43,14 @@ breakeven ?
 600K for 12% => certification, tooling, sales hires, 2M shields solds by year 3
 
 Patten => Brevet
+
+# SmartChef Fridge
+
+fridge that cook
+convenience :
+personnalization : Adapts
+
+Target :
+- Busy professional
+- Tech lovers
+- Families

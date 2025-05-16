@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Note TOEIC.md",
+                "file": "LPIC102/Brut.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Note TOEIC"
+              "title": "Brut"
             }
           },
           {
@@ -397,8 +397,8 @@
   },
   "active": "86851b9b0e2c9ac3",
   "lastOpenFiles": [
-    "TOEIC.md",
     "Note TOEIC.md",
+    "TOEIC.md",
     "Untitled 2.md",
     "LPIC102/Brut.md",
     "Docker/Exo.md",
