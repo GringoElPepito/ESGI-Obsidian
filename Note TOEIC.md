@@ -21,6 +21,13 @@ Product price :
 - Upgrade technologies
 - Communication
 
-Sales forecasts :
+# SipSafe Shield
 
-Use ener
+block a spiker to put drugs in a drink
+can detect if there is drugs in the drink, 
+communicate with bluetooth to your smartphone to notify you if there is drugs in your drink.
+
+Target : European Students
+
+Price :
+- B2C 
