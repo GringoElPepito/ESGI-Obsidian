@@ -30,4 +30,16 @@ communicate with bluetooth to your smartphone to notify you if there is drugs in
 Target : European Students
 
 Price :
-- B2C 
+- B2C 29€ + 4€/month
+- B2B : 49€/month/venue - Dashboard + 10 cartridge
+
+Roadmap : 
+- Beta : 4 bars in Paris
+- Letter of intent
+- EU compliance certification
+
+breakeven ?
+
+600K for 12% => certification, tooling, sales hires, 2M shields solds by year 3
+
+Patten => Brevet
