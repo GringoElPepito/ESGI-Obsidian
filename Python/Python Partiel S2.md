@@ -7,6 +7,6 @@
 - [x] Ajouter un répertoire/sous répertoire/fichier
 - [ ] Copier un répertoire/fichier
 - [ ] Déplacer un répertoire/fichier
-- [ ] Supprimer un répertoire/fichier
+- [x] Supprimer un répertoire/fichier
 - [ ] Transfert de fichier vers le local
 - [ ] Transfert de fichier depuis le local
