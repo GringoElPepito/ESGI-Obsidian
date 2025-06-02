@@ -135,12 +135,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LPIC102/Brut.md",
+                "file": "CCNA/OSI model/Couche3/HSRP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brut"
+              "title": "HSRP"
             }
           },
           {
@@ -190,7 +190,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ospf",
+                "query": "HSRP",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -211,7 +211,8 @@
               "title": "Signet"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -299,12 +300,15 @@
   },
   "active": "ad62851806dc1951",
   "lastOpenFiles": [
+    "CCNA/OSI model/Couche3/Couche 3 - Réseau.md",
+    "Git/Git & Github.md",
+    "CCNA/OSI model/Couche3/EIGRP.md",
+    "LPIC102/Brut.md",
     "LPIC102/TP politique mdp.md",
     "LPIC102/Tache automatise.md",
     "Python/Python Partiel S2.md",
     "CCNA/OSI model/Couche3/OSPF.md",
     "Note TOEIC.md",
-    "CCNA/OSI model/Couche3/Couche 3 - Réseau.md",
     "CCNA/OSI model/Couche3/Linkagg.md",
     "Untitled 1.md",
     "LPIC102/TP 12-05-2025.md",
@@ -323,10 +327,7 @@
     "CCNA/OSI model/Couche3/Trunk & VTP.md",
     "CCNA/Brut.md",
     "Sans titre 1.md",
-    "Supervision/Cours 1.md",
     "Supervision",
-    "LPIC102/Untitled.md",
-    "BDD/Cours 1.md",
     "BDD",
     "CCNA/OSI model/Couche3/Sans titre",
     "CCNA/OSI model/Couche3",
