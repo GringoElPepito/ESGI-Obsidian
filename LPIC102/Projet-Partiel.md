@@ -19,8 +19,7 @@ global(\
 ' /etc/rsyslog.conf
 echo "" | sudo tee -a /etc/rsyslog.conf
 echo "$template(name=\"RemoteLogs\" type=\"string\" string=\"/var/log/remote/%HOSTNAME%.log\") *.* ?RemoteLogs" | sudo tee -a /etc/rsyslog.conf
-sudo mkdir /etc/rsyslog
-sudo openssl req -x509 -newkey rsa:2048 -keyout /etc/rsyslog/rsyslog.key -out /etc/rsyslog/rsyslog.crt -days 365 -nodes
+sudo openssl req -x509 -newkey rsa:2048 -keyout /etc/rsyslog/rsyslog.key -out /etc/rsyslog.d/rsyslog.crt -days 365 -nodes
 sudo systemctl restart rsyslog
 ```
 # CLIENT-RSYSLOG
@@ -33,8 +32,9 @@ $DefaultNetstreamDriverCAFile /etc/rsyslog/rsyslog.crt
 $ActionSendStreamDriver gtls
 $ActionSendStreamDriverMode 1
 $ActionSendStreamDriverAuthMode anon*.* @@serveur-central-ip:514
-' >> /etc/rsyslog.conf
-scp kaisen@192.168.206.136:/etc/rsyslog/rsyslog.crt /etc/rsyslog/rsyslog.crt
+' | sudo tee -a /etc/rsyslog.conf
+sudo scp kaisen@192.168.206.136:/etc/rsyslog.d/rsyslog.crt /etc/rsyslog.d/rsyslog.crt
+sudo systemctl restart rsyslog
 ```
 
 # Tâche Planifié
