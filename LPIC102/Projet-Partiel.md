@@ -1,3 +1,8 @@
+# TEMP
+```bash
+#module(load="imtcp")
+#input(type="imtcp" port="514")
+```
 # SRV-RSYSLOG
 ```bash
 sudo apt update -y && sudo apt upgrade -y
