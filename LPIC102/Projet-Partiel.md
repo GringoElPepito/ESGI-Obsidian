@@ -12,14 +12,14 @@ sudo sed -i 's/^#module(load="imtcp")/module(load="imtcp" StreamDriver.Name="gtl
 sudo sed -i '/^#input(type="imtcp" port="514")/c\
 input(type="imtcp" port="514" StreamDriver="gtls")\
 global(\
-    defaultNetstreamDriverCAFile="/etc/rsyslog/rsyslog.crt"\
-    defaultNetstreamDriverCertFile="/etc/rsyslog/rsyslog.crt"\
-    defaultNetstreamDriverKeyFile="/etc/rsyslog/rsyslog.key"\
-)
+    defaultNetstreamDriverCAFile="/etc/rsyslog.d/rsyslog.crt"\
+    defaultNetstreamDriverCertFile="/etc/rsyslog.d/rsyslog.crt"\
+    defaultNetstreamDriverKeyFile="/etc/rsyslog.d/rsyslog.key"\
+)\
+template(name="RemoteLogs" type=" string"string="/var/log/remote/%HOSTNAME%.log") *.* ?RemoteLogs
 ' /etc/rsyslog.conf
-echo "" | sudo tee -a /etc/rsyslog.conf
-echo "$template(name=\"RemoteLogs\" type=\"string\" string=\"/var/log/remote/%HOSTNAME%.log\") *.* ?RemoteLogs" | sudo tee -a /etc/rsyslog.conf
-sudo openssl req -x509 -newkey rsa:2048 -keyout /etc/rsyslog/rsyslog.key -out /etc/rsyslog.d/rsyslog.crt -days 365 -nodes
+
+sudo openssl req -x509 -newkey rsa:2048 -keyout /etc/rsyslog.d/rsyslog.key -out /etc/rsyslog.d/rsyslog.crt -days 365 -nodes
 sudo systemctl restart rsyslog
 ```
 # CLIENT-RSYSLOG
