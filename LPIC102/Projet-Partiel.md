@@ -23,6 +23,7 @@ $template(name="RemoteLogs" type=" string"string="/var/log/remote/%HOSTNAME%.log
 '
 echo '*.* ?RemoteLogs' | sudo tee -a /etc/rsyslog.conf
 sudo openssl req -x509 -newkey rsa:2048 -keyout /etc/rsyslog.d/rsyslog.key -out /etc/rsyslog.d/rsyslog.crt -days 365 -nodes
+sudo mkdir /var/log/remote
 sudo systemctl restart rsyslog
 ```
 # CLIENT-RSYSLOG
@@ -33,8 +34,8 @@ sudo systemctl enable --now rsyslog
 sudo sed -i '/^#input(type="imtcp" port="514")/c\
 \
 global(DefaultNetstreamDriverCAFile="/etc/rsyslog.d/rsyslog.crt") \
-action(type="omfwd" protocol="tcp" target="192.168.206.136" port="514" StreamDriver="gtls" StreamDriverMode="1" StreamDriverAuthMode="anon")' /etc/rsyslog.conf
-sudo scp kaisen@192.168.206.136:/etc/rsyslog.d/rsyslog.crt /etc/rsyslog.d/rsyslog.crt
+action(type="omfwd" protocol="tcp" target="192.168.206.139" port="514" StreamDriver="gtls" StreamDriverMode="1" StreamDriverAuthMode="anon")' /etc/rsyslog.conf
+sudo scp kaisen@192.168.206.139:/etc/rsyslog.d/rsyslog.crt /etc/rsyslog.d/rsyslog.crt
 sudo systemctl restart rsyslog
 ```
 
