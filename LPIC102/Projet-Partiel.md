@@ -16,7 +16,8 @@ global(\
     defaultNetstreamDriverCertFile="/etc/rsyslog.d/rsyslog.crt"\
     defaultNetstreamDriverKeyFile="/etc/rsyslog.d/rsyslog.key"\
 )\
-template(name="RemoteLogs" type=" string"string="/var/log/remote/%HOSTNAME%.log") *.* ?RemoteLogs
+template(name="RemoteLogs" type=" string"string="/var/log/remote/%HOSTNAME%.log") \ 
+*.* ?RemoteLogs
 ' /etc/rsyslog.conf
 
 sudo openssl req -x509 -newkey rsa:2048 -keyout /etc/rsyslog.d/rsyslog.key -out /etc/rsyslog.d/rsyslog.crt -days 365 -nodes
