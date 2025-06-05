@@ -16,8 +16,11 @@ global(\
     defaultNetstreamDriverCertFile="/etc/rsyslog.d/rsyslog.crt"\
     defaultNetstreamDriverKeyFile="/etc/rsyslog.d/rsyslog.key"\
 )\
-template(name="RemoteLogs" type=" string"string="/var/log/remote/%HOSTNAME%.log")
 ' /etc/rsyslog.conf
+sudo sed _i '/^$IncludeConfig /etc/rsyslog.d/*.conf/c\
+$IncludeConfig /etc/rsyslog.d/*.conf
+$template(name="RemoteLogs" type=" string"string="/var/log/remote/%HOSTNAME%.log")
+'
 echo '*.* ?RemoteLogs' | sudo tee -a /etc/rsyslog.conf
 sudo openssl req -x509 -newkey rsa:2048 -keyout /etc/rsyslog.d/rsyslog.key -out /etc/rsyslog.d/rsyslog.crt -days 365 -nodes
 sudo systemctl restart rsyslog
@@ -28,10 +31,12 @@ sudo apt update -y && sudo apt upgrade -y
 sudo apt install rsyslog rsyslog-gnutls vim -y
 sudo systemctl enable --now rsyslog
 echo '
-$DefaultNetstreamDriverCAFile /etc/rsyslog/rsyslog.crt
-$ActionSendStreamDriver gtls
-$ActionSendStreamDriverMode 1
-$ActionSendStreamDriverAuthMode anon*.* @@serveur-central-ip:514
+# certificate files - just CA for a client
+global(DefaultNetstreamDriverCAFile="/etc/rsyslog.d/rsyslog.crt")
+
+# set up the action for all messages
+action(type="omfwd" protocol="tcp" target="192.168.206.136" port="514" StreamDriver="gtls" StreamDriverMode="1" StreamDriverAuthMode="anon")
+
 ' | sudo tee -a /etc/rsyslog.conf
 sudo scp kaisen@192.168.206.136:/etc/rsyslog.d/rsyslog.crt /etc/rsyslog.d/rsyslog.crt
 sudo systemctl restart rsyslog
