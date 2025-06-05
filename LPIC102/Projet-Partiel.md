@@ -30,14 +30,10 @@ sudo systemctl restart rsyslog
 sudo apt update -y && sudo apt upgrade -y
 sudo apt install rsyslog rsyslog-gnutls vim -y
 sudo systemctl enable --now rsyslog
-echo '
-# certificate files - just CA for a client
-global(DefaultNetstreamDriverCAFile="/etc/rsyslog.d/rsyslog.crt")
-
-# set up the action for all messages
-action(type="omfwd" protocol="tcp" target="192.168.206.136" port="514" StreamDriver="gtls" StreamDriverMode="1" StreamDriverAuthMode="anon")
-
-' | sudo tee -a /etc/rsyslog.conf
+sudo sed -i '/^#input(type="imtcp" port="514")/c\
+\
+global(DefaultNetstreamDriverCAFile="/etc/rsyslog.d/rsyslog.crt") \
+action(type="omfwd" protocol="tcp" target="192.168.206.136" port="514" StreamDriver="gtls" StreamDriverMode="1" StreamDriverAuthMode="anon")' /etc/rsyslog.conf
 sudo scp kaisen@192.168.206.136:/etc/rsyslog.d/rsyslog.crt /etc/rsyslog.d/rsyslog.crt
 sudo systemctl restart rsyslog
 ```
