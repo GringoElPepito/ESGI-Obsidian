@@ -37,9 +37,37 @@ sudo systemctl restart rsyslog
 ```
 
 # Tâche Planifié
+## Tâche 1
+`/lib/systemd/system/task3.timer`:
 ```bash
+[Unit]
+Description=Task 1 timer
 
+[Timer]
+AccuracySec=1us
+RandomizedDelaySec=1800
+FixedRandomDelay=false
+Persistent=true
+RemainAfterElapse=true
+OnBootSec=1us
+
+[Install]
+WantedBy=timers.target
 ```
+
+`/lib/systemd/system/task1.service`
+```bash
+[Unit]
+Description=Task 1 service
+
+[Service]
+ExecStart=/bin/bash -c 'logger tâche 1 ok'
+
+[Install]
+WantedBy=multi-user.target
+```
+
+## Tâche 2
 
 # Script
 ```bash
