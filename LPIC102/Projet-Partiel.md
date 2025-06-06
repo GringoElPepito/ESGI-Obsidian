@@ -205,8 +205,7 @@ while [[ $loop -ne 0 ]]; do
 		exit 1
 	fi
 
-	for i in {1..10}
-	do
+	for i in {1..10}; do
 		username="utilisateur$i"
 		getent passwd $username > /dev/null
 		if [[ $? -eq 0 ]]; then
@@ -237,8 +236,7 @@ while [[ $loop -ne 0 ]]; do
 		apt install -y $package
 	}
 
-	while [[ $choice -ne '4' ]]
-	do
+	while [[ $choice -ne '4' ]]; do
 		echo 'Veuillez choisir votre interface graphique :'
 		echo '- 1 pour KDE'
 		echo '- 2 pour XFCE'
