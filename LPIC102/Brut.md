@@ -94,7 +94,7 @@ WantedBy=multi-user.target
 ```bash
 #!/bin/bash
 
-set -e
+set -e #Indique que l'exécution doit s'arrêter si un autre code retour que 0 est reçu
 
 apt-get update > /var/log/task-$(date +%d-%m-%Y)
 apt list --upgradable >> /var/log/task-$(date +%d-%m-%Y)
