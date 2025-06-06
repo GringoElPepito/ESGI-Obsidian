@@ -238,7 +238,7 @@ do
 		apt install -y $package
 	}
 
-	while [[ $choice -ne '4' ]
+	while [[ $choice -ne '4' ]]
 	do
 		echo 'Veuillez choisir votre interface graphique :'
 		echo '- 1 pour KDE'
@@ -246,26 +246,26 @@ do
 		echo '- 3 pour MATE'
 		echo '- 4 pour quitter'
 		read -p 'Choix : ' choice
-		if [ $choice -eq '1']; then
+		if [[ $choice -eq '1' ]]; then
 			package="kde-plasma-desktop plasma-nm lightdm"
 			gui="KDE"
-		elif [ $choice -eq '2']; then
+		elif [[ $choice -eq '2' ]]; then
 			package="xfce4 xfce4-goodies lightdm"
 			gui="XFCE"
-		elif [ $choice -eq '3']; then
+		elif [[ $choice -eq '3' ]]; then
 			package="mate-desktop-environment lightdm"
 			gui="MATE"
-		elif [ $choix -eq '4']; then
+		elif [[ $choix -eq '4' ]]; then
 			echo 'Au revoir.'
 			exit 0
 		else
-			echo 'Votre choix n\'est pas valide'
+			echo "Votre choix n'est pas valide"
 			echo ''
 			continue
 		fi
 		install_package
-		if [$? -ne 0]; then
-			echo 'Une erreur s\'est produite lors de l\'installation des paquets'
+		if [[ $? -ne 0 ]]; then
+			echo "Une erreur s'est produite lors de l'installation des paquets"
 			loop=1
 		fi
 
