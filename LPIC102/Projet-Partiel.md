@@ -91,7 +91,7 @@ apt list --upgradable >> /var/log/task2/task-$(date +%d-%m-%Y)
 `/lib/systemd/system/task2.timer`
 ```bash
 [Unit]
-Description=Task 1 timer
+Description=Task 2 timer
 
 [Timer]
 AccuracySec=1us
@@ -103,10 +103,10 @@ RemainAfterElapse=true
 WantedBy=timers.target
 ```
 
-`/lib/systemd/system/task1.service`
+`/lib/systemd/system/task2.service`
 ```bash
 [Unit]
-Description=Task 1 service
+Description=Task 2 service
 
 [Service]
 ExecStart=/opt/task2.sh
@@ -123,6 +123,35 @@ at> logger 'lancement de la tâche ponctuelle'
 at> echo test > /opt/mytask
 ```
 
+## Tâche 4
+`/lib/systemd/system/task4.timer`
+```bash
+[Unit]
+Description=Task 4 timer
+
+[Timer]
+AccuracySec=1us
+OnUnitInactiveSec=1s
+OnBootSec=1s
+Persistent=true
+RemainAfterElapse=true
+Restart=always
+
+[Install]
+WantedBy=timers.target
+```
+
+`/lib/systemd/system/task4.service`
+```bash
+[Unit]
+Description=Task 4 service
+
+[Service]
+ExecStart=/bin/bash -c 'echo "computer started" > '
+
+[Install]
+WantedBy=multi-user.target
+```
 # Script
 ```bash
 ```
