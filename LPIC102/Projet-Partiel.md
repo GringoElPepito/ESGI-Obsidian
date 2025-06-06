@@ -198,12 +198,21 @@ Script:
 set -ex
 
 if [[ "$EUID" -ne 0 ]]; then
-	echo "Run this script as root to continue. Aborting"
+	echo "Le script doit être lancé en tant que root."
 	exit 1
 fi
 
 for i in {1..10}
 do
-	getent passwd "utilisateur$i" > /dev/null 2&>1
-	useradd -ms /bin/bash
+	username="utilisateur$i"
+	getent passwd $username > /dev/null
+	if [ $? -eq 0 ]; then
+		echo "Utilisateur $username déjà créé."
+	else
+		useradd -ms /bin/bash utilisateur$1
+		getent passwd $username > /dev/null
+		if [ $? -eq 0 ]; then
+			echo "Ok pour $username."
+	fi
+done
 ```
