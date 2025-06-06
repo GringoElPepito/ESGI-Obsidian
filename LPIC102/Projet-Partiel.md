@@ -158,30 +158,28 @@ sudo systemctl enable --now task4.timer
 ```
 
 ## Tâche 5
-`/lib/systemd/system/task4.timer`
+`/lib/systemd/system/task5.timer`
 ```bash
 [Unit]
-Description=Task 4 timer
+Description=Task 5 timer
 
 [Timer]
 AccuracySec=1us
-OnUnitActiveSec=1s
-OnBootSec=1s
+onCalendar=*-*-* 00:00:00
 Persistent=true
 RemainAfterElapse=true
-Restart=always
 
 [Install]
 WantedBy=timers.target
 ```
 
-`/lib/systemd/system/task4.service`
+`/lib/systemd/system/task5.service`
 ```bash
 [Unit]
-Description=Task 4 service
+Description=Task 5 service
 
 [Service]
-ExecStart=/bin/bash -c 'echo "computer started"'
+ExecStart=/bin/bash -c 'logger $(date +%d/%m/%Y)'
 
 [Install]
 WantedBy=multi-user.target
