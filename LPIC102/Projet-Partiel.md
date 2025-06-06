@@ -196,8 +196,7 @@ Script:
 ```bash
 #!/bin/bash
 loop=1
-while [[ $loop -ne 0 ]]
-do
+while [[ $loop -ne 0 ]]; do
 	loop=0
 	set -ex
 
