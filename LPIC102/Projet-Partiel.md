@@ -197,8 +197,6 @@ Script:
 #!/bin/bash
 set -ex
 
-
-
 if [[ "$EUID" -ne 0 ]]; then
 	echo "Le script doit être lancé en tant que root."
 	exit 1
@@ -261,6 +259,10 @@ do
 		echo ''
 		continue
 	fi
+	install_package
+	if [$? -ne 0]; then
+		echo 'Une erreur s\'est produite lors de l\'installation des paquets'
+	
 
 done
 
