@@ -226,6 +226,7 @@ do
 	echo '- 4 pour quitter'
 	read -p 'Choix : ' choice
 	if [ $choice -eq '1']
+		dpkg -s kde-plasma-desktop
 
 done
 ```
