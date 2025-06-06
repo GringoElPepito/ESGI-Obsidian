@@ -197,6 +197,8 @@ Script:
 #!/bin/bash
 set -ex
 
+
+
 if [[ "$EUID" -ne 0 ]]; then
 	echo "Le script doit être lancé en tant que root."
 	exit 1
@@ -213,10 +215,22 @@ do
 		getent passwd $username > /dev/null
 		if [ $? -eq 0 ]; then
 			echo "Ok pour $username."
+		else
+			echo "Une erreur s'est produite."
+			exit 1
+		fi
 	fi
 done
 
 choice='0'
+package=''
+gui=''
+
+install_package () {
+	dpkg -s $package
+	if [ $? -]
+}
+
 while [ $choice -ne '4' ]
 do
 	echo 'Veuillez choisir votre interface graphique :'
@@ -225,8 +239,25 @@ do
 	echo '- 3 pour MATE'
 	echo '- 4 pour quitter'
 	read -p 'Choix : ' choice
-	if [ $choice -eq '1']
-		dpkg -s kde-plasma-desktop
-
+	if [ $choice -eq '1']; then
+		package="kde-plasma-desktop plasma-nm"
+		gui="KDE"
+	elif [ $choice -eq '2']; then
+		package=""
+		gui="XFCE"
+	elif [ $choice -eq '3']; then
+		package="mate-desktop-environment lightdm"
+		gui="MATE"
+	elif [ $choix -eq '4']; then
+		echo 'Au revoir.'
+		exit 0
+	else
+		echo 'Votre choix n\'est pas valide'
+		echo ''
+		continue
+	fi
+	
 done
+
+exit 0
 ```
