@@ -196,7 +196,7 @@ Script:
 ```bash
 #!/bin/bash
 loop=1
-while [$loop -ne 0]
+while [[ $loop -ne 0 ]]
 do
 	loop=0
 	set -ex
@@ -210,12 +210,12 @@ do
 	do
 		username="utilisateur$i"
 		getent passwd $username > /dev/null
-		if [ $? -eq 0 ]; then
+		if [[ $? -eq 0 ]]; then
 			echo "Utilisateur $username déjà créé."
 		else
 			useradd -ms /bin/bash utilisateur$1
 			getent passwd $username > /dev/null
-			if [ $? -eq 0 ]; then
+			if [[ $? -eq 0 ]]; then
 				echo "Ok pour $username."
 			else
 				echo "Une erreur s'est produite."
@@ -230,15 +230,15 @@ do
 
 	install_package () {
 		dpkg -s $package
-		if [ $? -eq 1]; then
+		if [[ $? -eq 1 ]]; then
 			echo "$gui est déjà installé"
 			choix='4'
 			return
-		done
+		fi
 		apt install -y $package
 	}
 
-	while [ $choice -ne '4' ]
+	while [[ $choice -ne '4' ]
 	do
 		echo 'Veuillez choisir votre interface graphique :'
 		echo '- 1 pour KDE'
