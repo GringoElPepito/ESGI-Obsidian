@@ -164,8 +164,8 @@ sudo systemctl enable --now task4.timer
 Description=Task 5 timer
 
 [Timer]
-AccuracySec=1us
-onCalendar=*-*-* 00:00:00
+AccuracySec=1s
+OnCalendar=daily
 Persistent=true
 RemainAfterElapse=true
 
@@ -186,5 +186,14 @@ WantedBy=multi-user.target
 ```
 
 # Script
+base commande :
 ```bash
+sudo vim /usr/local/sbin/user-and-ui
+sudo chmod +x /usr/local/sbin/user-and-ui
+```
+
+Script:
+```bash
+#!/bin/bash
+set -e
 ```
