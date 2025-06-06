@@ -61,7 +61,7 @@ set -e
 
 #Vérifier si c'est root qui lance le script
 if [[ "$EUID" -ne 0 ]]; then
-	echo "Rune this script as root to continue. Aborting"
+	echo "Run this script as root to continue. Aborting"
 	exit 1
 fi
 ```

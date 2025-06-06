@@ -195,5 +195,15 @@ sudo chmod +x /usr/local/sbin/user-and-ui
 Script:
 ```bash
 #!/bin/bash
-set -e
+set -ex
+
+if [[ "$EUID" -ne 0 ]]; then
+	echo "Run this script as root to continue. Aborting"
+	exit 1
+fi
+
+for i in {1..10}
+do
+	getent passwd "utilisateur$i" > /dev/null 2&>1
+	useradd -ms /bin/bash
 ```
