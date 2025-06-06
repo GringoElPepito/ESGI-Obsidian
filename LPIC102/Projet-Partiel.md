@@ -228,7 +228,12 @@ gui=''
 
 install_package () {
 	dpkg -s $package
-	if [ $? -]
+	if [ $? -eq 1]; then
+		echo "$gui est déjà installé"
+		choix='4'
+		return
+	done
+	apt install -y $package
 }
 
 while [ $choice -ne '4' ]
@@ -256,7 +261,7 @@ do
 		echo ''
 		continue
 	fi
-	
+
 done
 
 exit 0
