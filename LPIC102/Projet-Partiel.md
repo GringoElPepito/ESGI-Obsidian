@@ -38,7 +38,7 @@ sudo systemctl restart rsyslog
 
 # Tâche Planifié
 ## Tâche 1
-`/lib/systemd/system/task3.timer`:
+`/lib/systemd/system/task1.timer`:
 ```bash
 [Unit]
 Description=Task 1 timer
@@ -88,13 +88,34 @@ apt list --upgradable >> /var/log/task2/task-$(date +%d-%m-%Y)
 ```
 
 ### Systemd
+`/lib/systemd/system/task2.timer`
+```bash
+[Unit]
+Description=Task 1 timer
+
+[Timer]
+AccuracySec=1us
+onCalendar= Sun *-*-* 12:00:00
+Persistent=true
+RemainAfterElapse=true
+
+[Install]
+WantedBy=timers.target
 ```
+
+`/lib/systemd/system/task1.service`
+```bash
+[Unit]
+Description=Task 1 service
+
+[Service]
+ExecStart=/opt/task2.sh
+
+[Install]
+WantedBy=multi-user.target
 ```
+
+## Tâche 3
 # Script
 ```bash
-[ ! -d "/var/log/task2" ] && sudo mkdir /var/log/task2
-
-
-sudo apt-get update | sudo tee /var/logtask2/task-$(date +%d-%m-%Y)
-sudo apt list --upgradable | sudo tee -a /var/log/task2/task-$(date +%d-%m-%Y)
 ```
