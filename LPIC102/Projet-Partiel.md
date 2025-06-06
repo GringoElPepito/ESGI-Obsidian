@@ -215,4 +215,17 @@ do
 			echo "Ok pour $username."
 	fi
 done
+
+choice='0'
+while [ $choice -ne '4' ]
+do
+	echo 'Veuillez choisir votre interface graphique :'
+	echo '- 1 pour KDE'
+	echo '- 2 pour XFCE'
+	echo '- 3 pour MATE'
+	echo '- 4 pour quitter'
+	read -p 'Choix : ' choice
+	if [ $choice -eq '1']
+
+done
 ```
