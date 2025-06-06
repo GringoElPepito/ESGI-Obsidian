@@ -200,12 +200,12 @@ while [[ $loop -ne 0 ]]; do
 	loop=0
 	set -ex
 
-	if [[ "$EUID" -ne 0 ]]; then
+	if [[ $EUID -ne 0 ]]; then
 		echo "Le script doit être lancé en tant que root."
 		exit 1
 	fi
 
-	for i in {1..10}; do
+	for i in {1..10};do
 		username="utilisateur$i"
 		getent passwd $username > /dev/null
 		if [[ $? -eq 0 ]]; then
