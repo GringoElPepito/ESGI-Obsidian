@@ -68,8 +68,33 @@ WantedBy=multi-user.target
 ```
 
 ## Tâche 2
+### Script
+`/opt/task2.sh`
+```bash
+#!/bin/bash
 
+set -e #Indique que l'exécution doit s'arrêter si un autre code retour que 0 est reçu
+[ ! -d "/var/log/task2" ] && mkdir /var/log/task2
+
+
+apt-get update > /var/logtask2/task-$(date +%d-%m-%Y)
+apt list --upgradable >> /var/log/task2/task-$(date +%d-%m-%Y)
+```
+
+### Cron
+`/etc/cron.d/task1` :
+```
+00 12 * * 7 root /opt/task2.sh
+```
+
+### Systemd
+```
+```
 # Script
 ```bash
+[ ! -d "/var/log/task2" ] && sudo mkdir /var/log/task2
 
+
+sudo apt-get update | sudo tee /var/logtask2/task-$(date +%d-%m-%Y)
+sudo apt list --upgradable | sudo tee -a /var/log/task2/task-$(date +%d-%m-%Y)
 ```
