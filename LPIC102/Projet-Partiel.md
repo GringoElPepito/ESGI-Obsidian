@@ -118,7 +118,9 @@ WantedBy=multi-user.target
 ## Tâche 3
 ### At
 ```bash
-at 
+sudo at now + 5 minutes
+at> logger 'lancement de la tâche ponctuelle'
+at> echo test > /opt/mytask
 ```
 
 # Script
