@@ -147,11 +147,46 @@ WantedBy=timers.target
 Description=Task 4 service
 
 [Service]
-ExecStart=/bin/bash -c 'echo "computer started" >> ~/test'
+ExecStart=/bin/bash -c 'echo "computer started"'
 
 [Install]
 WantedBy=multi-user.target
 ```
+Commande
+```bash
+sudo systemctl enable --now task4.timer
+```
+
+## Tâche 5
+`/lib/systemd/system/task4.timer`
+```bash
+[Unit]
+Description=Task 4 timer
+
+[Timer]
+AccuracySec=1us
+OnUnitActiveSec=1s
+OnBootSec=1s
+Persistent=true
+RemainAfterElapse=true
+Restart=always
+
+[Install]
+WantedBy=timers.target
+```
+
+`/lib/systemd/system/task4.service`
+```bash
+[Unit]
+Description=Task 4 service
+
+[Service]
+ExecStart=/bin/bash -c 'echo "computer started"'
+
+[Install]
+WantedBy=multi-user.target
+```
+
 # Script
 ```bash
 ```
