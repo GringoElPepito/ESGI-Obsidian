@@ -131,7 +131,7 @@ Description=Task 4 timer
 
 [Timer]
 AccuracySec=1us
-OnUnitInactiveSec=1s
+OnUnitActiveSec=1s
 OnBootSec=1s
 Persistent=true
 RemainAfterElapse=true
@@ -147,7 +147,7 @@ WantedBy=timers.target
 Description=Task 4 service
 
 [Service]
-ExecStart=/bin/bash -c 'echo "computer started" > '
+ExecStart=/bin/bash -c 'echo "computer started" >> ~/test'
 
 [Install]
 WantedBy=multi-user.target
