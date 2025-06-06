@@ -207,7 +207,7 @@ while [[ $loop -ne 0 ]]; do
 
 	for i in {1..10};do
 		username="utilisateur$i"
-		getent passwd $username > /dev/null
+		getent passwd $username
 		if [[ $? -eq 0 ]]; then
 			echo "Utilisateur $username déjà créé."
 		else
