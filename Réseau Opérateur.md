@@ -31,4 +31,17 @@ Les opérateurs mettent en place des mécanismes pour garantir une qualité de s
 
 ## Sécurité et Résilience
 - Firewall et IDS/IPS : Protection contre les attaques et filtrage du trafic
-- DDOS mitigation: 
+- DDOS mitigation: Protection contre les attaques DDOS
+- Redondance et HA : mis en place de liens de secours et de mécanismes de failover
+
+## Services et infra supportés
+Proposition de services :
+- Internet fixe et mobile : fourniture de connectivité  aux particuliers
+- Téléphonie IP et traditionnelle : Voix sur IP (VoIP) et services RTC
+- Télévision sur IP (IPTV) : Distribution de contenu multimédia via IP
+
+## Tendance et évolutions des réseaux opérateurs
+Les technologies évoluent pour répondre aux nouveaux besoins des utilisateurs et aux contraintes techniques
+- NFV (Network function virtualisation) : virtualisation des équipements réseau
+- SDN (Software-defined networking) : Automatisation et gestion centralisée des réseaux
+- ZERO-TOUCH PROVISIONING (ZTP) : Déploiement automatique des équipements
