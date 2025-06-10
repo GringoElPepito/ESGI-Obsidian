@@ -156,8 +156,11 @@ netstat
 
 
 ## Sudoers file syntax
-```
+```sudoers
 service_account ALL=(root) NOPASSWD:/usr/sbin/systemctl restart apcahe2
 ```
 - `service_account` : compte auquel on souhaite accorder des droits
-- `ALL` : 
+- `ALL` : autorisation valable sur tous les hôtes
+- `(root)` : autorisation du droit d'exécution d'une commande en tant que 
+- `NOPASSWD` : autorise l'exécution de la commande sans avoir à entrer de mot de passe
+- `/usr/sbin/systemctl restart apacahe2` : commande que l'utilisateur doit pouvoir exécuter.
