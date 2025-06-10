@@ -45,3 +45,27 @@ Les technologies évoluent pour répondre aux nouveaux besoins des utilisateurs 
 - NFV (Network function virtualisation) : virtualisation des équipements réseau
 - SDN (Software-defined networking) : Automatisation et gestion centralisée des réseaux
 - ZERO-TOUCH PROVISIONING (ZTP) : Déploiement automatique des équipements
+
+# OSPF
+## Fonctionnement de OSPF
+Protocole de routage dynamique, permettant de faire communiquer des routeurs au sein d'un même AS (Autonomous System).
+Il repose sur l'algo de Dijkstra (SPF - Shortest Path First) pour calculer les chemins les plus courts vers une destination
+Caractéristiques :
+- Protocole à état de lien et non à vecteur de distance
+- Convergence rapide grâce à la mis à jour incrémentales des routes
+- Hiérarchisation du réseau en aires pour optimiser les performances
+- support du VLSM (Variable Length Subnet Mask) et du CIDR (CLASSLESS INTER-DOMAIN Routing)
+- Utilisation du multicast pour la mise à jour des routes (224.0.0.5 et 224.0.0.6)
+Masque inversé car les 0 sont plus rapide à interprété
+
+## Types de routeurs
+- Routeur Interne : situé dans une seule aire OSPF
+- Routeur de bordure d'aire (ABR - Area Border Router) : Connecte plusieurs aires OSPF
+- Routeur autonome de bordure (ASBR - Autonomous System Boundary Router) : Connect OSPF à d'autres protocoles de routage (ex. BGP, EIGRP)
+
+## Types de paquets :
+- Hello : Etablit et maintient les relations de voisinage
+- Database Description (DBD) : Synchronise les base de données OSPF
+- Link-State request (LSR) : Demande les mis à jour de l'é 
+- Link-state Update
+- Link-state ACKNOWLEDGMENT
