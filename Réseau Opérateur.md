@@ -77,6 +77,13 @@ Masque inversé car les 0 sont plus rapide à interprété
 - Aires Totally stub : Filtrent à la fois LSAS externes et internes non nécessaires.
 - Aires NSSA ( )
 
-# VPN IPsec
+# VPN
+## VPN IPsec
 Phase 1 : négociation de la connexion entre les 2 terminaux pour la création du tunnel 
 Phase 2 : Autorisation des VLANs distant à passé au travers du tunnel
+Le routage dynamique fonctionne sur des transmission TCP ce qui par défaut rend impossible son fonctionnement à travers un tunnel IPsec.
+IPSec (Internet Protocol Security) : FOURNIT des mécanismes de Chiffrement et d'authentification pour sécuriser les communications
+
+## VPN GRE
+GRE = Generic Routing Encapsulation : permet d'encapsuler différents protocoles dans un tunnel IP
+IPSec over GRE permet d'utiliser des protocoles de routages
