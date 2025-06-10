@@ -153,3 +153,11 @@ netstat
 `-n` affiche le numéro de port
 `-p` affiche le process auxquels il est lié
 `-a` affiche tous les ports
+
+
+## Sudoers file syntax
+```
+service_account ALL=(root) NOPASSWD:/usr/sbin/systemctl restart apcahe2
+```
+- `service_account` : compte auquel on souhaite accorder des droits
+- `ALL` : 
