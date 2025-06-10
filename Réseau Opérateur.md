@@ -66,6 +66,17 @@ Masque inversé car les 0 sont plus rapide à interprété
 ## Types de paquets :
 - Hello : Etablit et maintient les relations de voisinage
 - Database Description (DBD) : Synchronise les base de données OSPF
-- Link-State request (LSR) : Demande les mis à jour de l'é 
-- Link-state Update
-- Link-state ACKNOWLEDGMENT
+- Link-State request (LSR) : Demande les mis à jour de l'état de lien
+- Link-state Update (LSU) : Contient les mis à jour des informations de routage
+- Link-state ACKNOWLEDGMENT (LSACK) : Confirme la réception des mises à jour
+
+## Types d'aires OSPF :
+- Aire Backbone (Area 0) : L'aire principale à laquelle toutes les autres doivent être connecté
+- Aires standards : contiennent l'ensemble des routes et des LSAS
+- Aires stub : Réduisent la taille des tables de routage en filtrant les LSAS Externes
+- Aires Totally stub : Filtrent à la fois LSAS externes et internes non nécessaires.
+- Aires NSSA ( )
+
+# VPN IPsec
+Phase 1 : négociation de la connexion entre les 2 terminaux pour la création du tunnel 
+Phase 2 : Autorisation des VLANs distant à passé au travers du tunnel
