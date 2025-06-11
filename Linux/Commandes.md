@@ -18,4 +18,5 @@ ls -lhi
 alias c=clear
 c
 ```
+`cat /proc/cupinfo | grep -i ^processor | wc -l` : permet de connaître le nombre de cœur du processeur d'une machine 
 

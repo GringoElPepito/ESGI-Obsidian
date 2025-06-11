@@ -12,7 +12,7 @@
 - `/opt` : Optional, répertoire servant soit à stocker des scripts soit des programmes non-standard (généralement ceux ayant besoin de tous les fichiers au même endroit que l'exécutable).
 - `/proc` : est un *tmpfs*, ce répertoire est directement géré par le système, il centralise les informations de fonctionnement processeur et des différents programmes tournant sur la machine.
 - `/root` : dossier personnel du compte root
-- `/run` : est un *tmpfs*, va stocker les fichier PID (Process Identifiant)
+- `/run` : est un *tmpfs.* ^[Temporary FileSystem ou système de fichier temporaire] , va stocker les fichier PID (Process Identifiant)
 - `/srv` : Service, sert à stocker les données utilisées par les services
 - `/sys` : System, fait le lien entre le matériel et le noyau, contient les infos liés au matériel de la machine.
 - `/tmp` : répertoire vide servant à stocker des fichiers temporaires et étant vidés à chaque redémarrage. Ce répertoire est dit World Writable qui signifie que tout le monde peut tout faire dans ce répertoire. De plus le dernier caractère de droit qui devrait être un `x` ou un `-` est ici un `t`, on appelle cela un Sticky bit est permet d'ajouter une sécurité supplémentaire en autorisant pas la suppression ou modification d'un fichier créer par un autre utilisateur (sauf si root).
@@ -21,7 +21,7 @@
 - `/var` : on y retrouvera différents répertoire comme le cache, local, log, backups, www etc...
 
 FHS = File Hierarchy Standard
-tmpfs=Temporary Filesystem est système de fichier temporaire 
+
 
 ```bash
 784925 -rw-r--r-- 1 kaisen:kaisen 4.0K Nov 19 10:18 fichier
