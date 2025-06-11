@@ -16,9 +16,7 @@ Commande pour récup le nombre de cœur d'un processeur.
 # Fichier utilisateur/groupe
 
 ## LS -lhi
-```bash
-784925 -rw-r--r-- 1 kaisen:kaisen 4.0K Nov 19 10:18 fichier
-```
+
 - 784925 : inode
 - -rw-r--r-- : droit du fichier
 - 1 : nombre d'inode
