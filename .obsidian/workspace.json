@@ -109,10 +109,14 @@
             "id": "86851b9b0e2c9ac3",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Sécu/Brut.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Brut"
             }
           },
           {
@@ -393,6 +397,8 @@
   },
   "active": "86851b9b0e2c9ac3",
   "lastOpenFiles": [
+    "Sécu/Brut.md",
+    "Sécu",
     "Réseau Opérateur/exo conf.md",
     "Réseau Opérateur/Brut.md",
     "Réseau Opérateur",
@@ -422,7 +428,6 @@
     "BDD/Cours 1.md",
     "BDD",
     "Supervision",
-    "CCNA/OSI model/Couche3/VRRP.md",
     "CCNA/OSI model/Couche3",
     "LPIC102",
     "CCNA/Exo/STP",
@@ -437,7 +442,6 @@
     "attachments/16812065786868_1C4-1.png",
     "attachments/16812057132798_1C3.png",
     "attachments/16812041033598_1C1.png",
-    "Git",
-    "Python"
+    "Git"
   ]
 }
