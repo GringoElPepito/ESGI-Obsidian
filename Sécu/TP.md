@@ -10,4 +10,4 @@ Les options de chaque partition sont à renseigné dans le fichier `/etc/fstab`,
 
 ## Partie 2
 1. Il est possible de mettre un fichier binaire dans le dossier `/boot`, `/tmp` ou `/var/log` par contre il n'est pas possible d'exécuter un binaire contenu dans l'un de ces dossiers
-2. 
+2. La commande `mknod -m 0660 test b 254 4` fonctionne mais il n'est pas possible de monter la partition à partir de là
