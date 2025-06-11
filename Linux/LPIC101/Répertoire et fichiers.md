@@ -20,6 +20,24 @@
 	- `/usr/share` : contient la quasi-totalité des fichiers spécifiques aux distributions
 - `/var` : on y retrouvera différents répertoire comme le cache, local, log, backups, www etc...
 
+FHS = File Hierarchy Standard
+tmpfs=Temporary Filesystem est système de fichier temporaire 
+
 ```bash
 784925 -rw-r--r-- 1 kaisen:kaisen 4.0K Nov 19 10:18 fichier
 ```
+- 784925 : numéro d'inode*
+- `-` : type de fichier
+	- `-` : fichier classique
+	- `l` : lien symbolique
+	- `d` : dossier
+	- `c` : caractère
+	- `b` : bloc
+- `rw-` : droit du propriétaire du fichier
+- `r--` : droit du groupe propriétaire du fichier
+- `r--` : droit des autres (tout utilisateur n'étant pas propriétaire et ne faisant pas partie du groupe propriétaire)
+- 1 : nombre d'inode ou lien physique
+- kaisen:kaisen : propriétaire:groupe
+- 4.0K : nombre de Byte
+- Nov 19 10:18 : Date de dernière modification
+- fichier : nom du fichier
