@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sécu/TP.md",
+                "file": "Linux/LPIC101/Histoire de Linux.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TP"
+              "title": "Histoire de Linux"
             }
           },
           {
@@ -397,41 +397,42 @@
   },
   "active": "86851b9b0e2c9ac3",
   "lastOpenFiles": [
+    "Linux/LPIC101/Cours 1.md",
+    "Linux/LPIC101/Histoire de Linux.md",
+    "Linux/Linux.md",
     "Sécu/Brut.md",
+    "Linux",
+    "Cours Brut",
     "Sécu/TP.md",
-    "LPIC102/Brut.md",
-    "LPIC101/Cours 1.md",
+    "Linux/LPIC102/Brut.md",
     "Sécu",
     "Réseau Opérateur/exo conf.md",
     "Réseau Opérateur/Brut.md",
     "Réseau Opérateur",
     "Python/Python Partiel S2.md",
-    "LPIC102/Projet-Partiel.md",
+    "Linux/LPIC102/Projet-Partiel.md",
     "Note TOEIC.md",
     "TOEIC.md",
     "Untitled 2.md",
     "Docker/Exo.md",
     "Docker/Brut.md",
     "Docker",
-    "LPIC102/TP 12-05-2025.md",
-    "LPIC102/Tache automatise.md",
-    "LPIC101/Exo.md",
+    "Linux/LPIC102/TP 12-05-2025.md",
+    "Linux/LPIC102/Tache automatise.md",
+    "Linux/LPIC101/Exo.md",
     "LPIC102/Untitled.md",
-    "LPIC102/TP politique mdp.md",
-    "LPIC102/etc-shadow.md",
+    "Linux/LPIC102/TP politique mdp.md",
+    "Linux/LPIC102/etc-shadow.md",
     "Untitled 1.md",
     "Sans titre 1.md",
     "Rapport Alternance.md",
     "Projet Annuel/Rendu 4.md",
     "Projet Annuel/Maquette Réseau.md",
-    "Python/Cours 1.md",
-    "Supervision/Cours 1.md",
     "BDD",
     "Supervision",
     "CCNA/OSI model/Couche3",
-    "LPIC102",
+    "Linux/LPIC102",
     "CCNA/Exo/STP",
-    "Windows Server",
     "attachments/Pasted image 20241209184821.png",
     "attachments/Pasted image 20241209162747.png",
     "attachments/16964126324398_Downloadable Summary [Git et Github] .png",
@@ -441,7 +442,6 @@
     "attachments/16812067004336_1C4-2.png",
     "attachments/16812065786868_1C4-1.png",
     "attachments/16812057132798_1C3.png",
-    "attachments/16812041033598_1C1.png",
-    "Git"
+    "attachments/16812041033598_1C1.png"
   ]
 }
