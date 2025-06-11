@@ -17,3 +17,9 @@ Il faut séparer dans des partitions primaires les dossier suivants :
 - `/var/log`
 
 Chiffrement AES minimum 256 bits
+
+Possibilité de passé root via vim
+```bash
+sudo vim fichier
+:shell
+```
