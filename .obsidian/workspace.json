@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sécu/Brut.md",
+                "file": "Sécu/TP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brut"
+              "title": "TP"
             }
           },
           {
@@ -397,9 +397,10 @@
   },
   "active": "86851b9b0e2c9ac3",
   "lastOpenFiles": [
+    "Sécu/Brut.md",
+    "Sécu/TP.md",
     "LPIC102/Brut.md",
     "LPIC101/Cours 1.md",
-    "Sécu/Brut.md",
     "Sécu",
     "Réseau Opérateur/exo conf.md",
     "Réseau Opérateur/Brut.md",
@@ -425,7 +426,6 @@
     "Projet Annuel/Maquette Réseau.md",
     "Python/Cours 1.md",
     "Supervision/Cours 1.md",
-    "BDD/Cours 1.md",
     "BDD",
     "Supervision",
     "CCNA/OSI model/Couche3",
