@@ -1,3 +1,4 @@
+#LPIC101
 Linux n'est pas un OS (operating system), Linux est une partie d'OS, c'est le noyau d'un système d'exploitation.
 Debian, Ubuntu, Fedora… = GNU/Linux
 GNU combinés à Linux
@@ -40,7 +41,7 @@ Le noyau Linux et le système GNU a donné le système GNU/Linux.
 
 Distributions GNU/Linux -> Debian, Ubuntu, Fedora, Redhat, Arch Linux...
 
-Paquets => un logiciel distribué via un serveur Web.
+Paquets -> un logiciel distribué via un serveur Web.
 
 Interface graphique (GNOME, KDE...)
 Navigateurs Web (Firefox)
@@ -48,6 +49,6 @@ Lecteurs multimédia (VLC...)
 
 Une distribution est une extension du système GNU/Linux distribué une version de GNU/Linux avec des des logiciels supplémentaires pour étendre les fonctionnalités du système.
 
- **Types d'utilisateurs**
+**Types d'utilisateurs**
 Utilisateurs standards pouvant se connecter
 Utilisateurs root (super admin sur Windows)

@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/LPIC101/Histoire de Linux.md",
+                "file": "Linux/Linux.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Histoire de Linux"
+              "title": "Linux"
             }
           },
           {
@@ -397,9 +397,14 @@
   },
   "active": "86851b9b0e2c9ac3",
   "lastOpenFiles": [
-    "Linux/LPIC101/Cours 1.md",
+    "Linux/LPIC101/Répertoire.md",
+    "Linux/LPIC101/Exo.md",
+    "Linux/LPIC101/Droits.md",
     "Linux/LPIC101/Histoire de Linux.md",
+    "Linux/LPIC101/Cours 1.md",
     "Linux/Linux.md",
+    "LPIC101/Histoire.md",
+    "LPIC101",
     "Sécu/Brut.md",
     "Linux",
     "Cours Brut",
@@ -419,20 +424,15 @@
     "Docker",
     "Linux/LPIC102/TP 12-05-2025.md",
     "Linux/LPIC102/Tache automatise.md",
-    "Linux/LPIC101/Exo.md",
     "LPIC102/Untitled.md",
     "Linux/LPIC102/TP politique mdp.md",
     "Linux/LPIC102/etc-shadow.md",
     "Untitled 1.md",
     "Sans titre 1.md",
-    "Rapport Alternance.md",
-    "Projet Annuel/Rendu 4.md",
-    "Projet Annuel/Maquette Réseau.md",
     "BDD",
     "Supervision",
     "CCNA/OSI model/Couche3",
     "Linux/LPIC102",
-    "CCNA/Exo/STP",
     "attachments/Pasted image 20241209184821.png",
     "attachments/Pasted image 20241209162747.png",
     "attachments/16964126324398_Downloadable Summary [Git et Github] .png",
