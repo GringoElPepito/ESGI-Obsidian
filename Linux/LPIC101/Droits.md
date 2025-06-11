@@ -30,3 +30,4 @@ sudo chmod -x fichier #Retire le droit d'execution a tout le monde
 Le x peut être remplacé par s dans l'affichage des droits, cela correspond au setuid qui permet aux utilisateurs de modifier un fichier comme s'il avait les mêmes droit que le propriétaire.
 il peut y avoir un second s, qui correpond au setgid
 Le sticky bit noté t permet de restreindre les actions d'un utilisateur a sur un fichier créer par l'utilisateur b.
+

@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Commandes.md",
+                "file": "Linux/LPIC101/Cours 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Commandes"
+              "title": "Cours 1"
             }
           },
           {
@@ -397,14 +397,14 @@
   },
   "active": "86851b9b0e2c9ac3",
   "lastOpenFiles": [
+    "Linux/LPIC101/Répertoire et fichiers.md",
+    "Linux/LPIC101/Droits.md",
+    "Linux/LPIC101/Fichier utilisateur-groupe.md",
+    "Linux/Commandes.md",
     "Linux/Linux.md",
     "Linux/LPIC101/Cours 1.md",
-    "Linux/Commandes.md",
     "Sécu/Brut.md",
-    "Linux/LPIC101/Répertoire.md",
-    "Linux/LPIC101/Fichier utilisateur-groupe.md",
     "Linux/LPIC101/Les métacaractères.md",
-    "Linux/LPIC101/Droits.md",
     "Linux/LPIC101/Exo.md",
     "Linux/LPIC101/Histoire de Linux.md",
     "LPIC101/Histoire.md",

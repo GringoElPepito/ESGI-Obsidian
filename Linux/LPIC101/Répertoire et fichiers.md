@@ -19,3 +19,7 @@
 - `/usr` : (Unix System Ressources), initialement le répertoire des utilisateurs. Désormais est un répertoire un peu fourre-tout qui sert plus ou moins de coeur au système
 	- `/usr/share` : contient la quasi-totalité des fichiers spécifiques aux distributions
 - `/var` : on y retrouvera différents répertoire comme le cache, local, log, backups, www etc...
+
+```bash
+784925 -rw-r--r-- 1 kaisen:kaisen 4.0K Nov 19 10:18 fichier
+```
