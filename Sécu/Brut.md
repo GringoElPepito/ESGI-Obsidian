@@ -11,4 +11,9 @@ Options de montage :
 - noexec : empêche l'exécution de binaires sur la partition
 
 
+Il faut séparer dans des partitions primaires les dossier suivants :
+- `/boot`
+- `/tmp`
+- `/var/log`
+
 Chiffrement AES minimum 256 bits
