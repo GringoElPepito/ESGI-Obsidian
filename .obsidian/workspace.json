@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/LPIC102/TP 12-05-2025.md",
+                "file": "Linux/LPIC102/TP politique mdp.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TP 12-05-2025"
+              "title": "TP politique mdp"
             }
           },
           {
@@ -397,8 +397,12 @@
   },
   "active": "86851b9b0e2c9ac3",
   "lastOpenFiles": [
-    "Linux/LPIC102/TP politique mdp.md",
+    "Linux/LPIC102/TP 12-05-2025.md",
+    "Linux/LPIC102/Brut.md",
     "Linux/LPIC102/etc-shadow.md",
+    "Linux/LPIC102/Projet-Partiel.md",
+    "Linux/LPIC102/Tache automatise.md",
+    "Linux/LPIC102/TP politique mdp.md",
     "Linux/Linux.md",
     "Linux/Commandes.md",
     "Linux/LPIC101/Cours 1.md",
@@ -415,20 +419,16 @@
     "Linux",
     "Cours Brut",
     "Sécu/TP.md",
-    "Linux/LPIC102/Brut.md",
     "Sécu",
     "Réseau Opérateur/exo conf.md",
     "Réseau Opérateur/Brut.md",
     "Réseau Opérateur",
     "Python/Python Partiel S2.md",
-    "Linux/LPIC102/Projet-Partiel.md",
     "Note TOEIC.md",
     "TOEIC.md",
     "Untitled 2.md",
     "Docker/Exo.md",
-    "Docker/Brut.md",
     "Docker",
-    "Linux/LPIC102/TP 12-05-2025.md",
     "BDD",
     "Supervision",
     "CCNA/OSI model/Couche3",
