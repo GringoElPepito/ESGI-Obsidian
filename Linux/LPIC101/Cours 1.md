@@ -13,11 +13,6 @@ Commande pour récup le nombre de cœur d'un processeur.
 ![[Pasted image 20241021151041.png]]
 # Répertoire Linux
 
-
-
-
-Pas mettre de mot de passe a root pour créer un utilisateur avec sudo
-
 # Fichier utilisateur/groupe
 
 ## LS -lhi

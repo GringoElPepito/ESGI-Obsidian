@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sécu/Brut.md",
+                "file": "Linux/Commandes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brut"
+              "title": "Commandes"
             }
           },
           {
@@ -397,17 +397,18 @@
   },
   "active": "86851b9b0e2c9ac3",
   "lastOpenFiles": [
-    "Linux/LPIC101/Fichier utilisateur-groupe.md",
-    "Linux/LPIC101/Répertoire.md",
     "Linux/LPIC101/Cours 1.md",
+    "Linux/Commandes.md",
+    "Sécu/Brut.md",
+    "Linux/LPIC101/Répertoire.md",
     "Linux/Linux.md",
+    "Linux/LPIC101/Fichier utilisateur-groupe.md",
     "Linux/LPIC101/Les métacaractères.md",
     "Linux/LPIC101/Droits.md",
     "Linux/LPIC101/Exo.md",
     "Linux/LPIC101/Histoire de Linux.md",
     "LPIC101/Histoire.md",
     "LPIC101",
-    "Sécu/Brut.md",
     "Linux",
     "Cours Brut",
     "Sécu/TP.md",
@@ -428,7 +429,6 @@
     "Linux/LPIC102/Tache automatise.md",
     "LPIC102/Untitled.md",
     "Linux/LPIC102/TP politique mdp.md",
-    "Linux/LPIC102/etc-shadow.md",
     "BDD",
     "Supervision",
     "CCNA/OSI model/Couche3",

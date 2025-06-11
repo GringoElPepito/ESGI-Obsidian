@@ -23,3 +23,5 @@ Possibilité de passé root via vim
 sudo vim fichier
 :shell
 ```
+
+Pas mettre de mot de passe a root pour créer un utilisateur avec sudo
