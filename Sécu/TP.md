@@ -9,4 +9,5 @@ Installation de Rocky Linux, création d'une partition dédié pour :
 Les options de chaque partition sont à renseigné dans le fichier `/etc/fstab`, il faut sur chaque ligne remplacer la mention `defaults` par `nodev,nosuid,noexec`
 
 ## Partie 2
-1. I
+1. Il est possible de mettre un fichier binaire dans le dossier `/boot`, `/tmp` ou `/var/log` par contre il n'est pas possible d'exécuter un binaire contenu dans l'un de ces dossiers
+2. 
