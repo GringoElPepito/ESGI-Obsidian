@@ -7,5 +7,5 @@ soit via puce TPM
 
 Options de montage :
 - nodev : 
-- nosuid : 
+- nosuid : empêche l'ajout du suid sur les fichires présent dans le point de montage
 - noexec : empêche l'exécution de binaire
