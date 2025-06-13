@@ -39,3 +39,4 @@ La commande suivante permet de vérifier la conf du fichier `/etc/fstab` et de r
 ```bash
 sudo mount -a
 ```
+
