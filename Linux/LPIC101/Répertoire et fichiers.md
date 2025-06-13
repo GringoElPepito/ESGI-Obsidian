@@ -10,7 +10,7 @@
 - `/media` : Utilisé par les interfaces graphiques pour monter les périphériques externes type CD-ROM, Clé USB, Disque Dur etc...
 - `/mnt` : Mount, répertoire dédié au montage des périphériques via CMD
 - `/opt` : Optional, répertoire servant soit à stocker des scripts soit des programmes non-standard (généralement ceux ayant besoin de tous les fichiers au même endroit que l'exécutable).
-- `/proc` : est un *tmpfs*, ce répertoire est directement géré par le système, il centralise les informations de fonctionnement processeur et des différents programmes tournant sur la machine.
+- `/proc` : est un *tmpfs*[^1], ce répertoire est directement géré par le système, il centralise les informations de fonctionnement processeur et des différents programmes tournant sur la machine.
 - `/root` : dossier personnel du compte root
 - `/run` : est un *tmpfs*  va stocker les fichier PID (Process Identifiant)
 - `/srv` : Service, sert à stocker les données utilisées par les services
@@ -42,6 +42,4 @@ FHS = File Hierarchy Standard
 - Nov 19 10:18 : Date de dernière modification
 - fichier : nom du fichier
 
-[^1]: 
-
-[^2]: 
+[^1]: Temporary FileSystem ou système de fichier temporaire

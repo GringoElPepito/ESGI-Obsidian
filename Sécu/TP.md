@@ -32,13 +32,25 @@ Configuration :
 R-Debian - Networks :
 - VMnet1 : 10.10.10.2
 - VMnet8 : DHCP
+```bash
+
+```
 
 C-Debian - Networks :
 - VMnet1 : DHCP - GW 10.10.10.2
+```bash
+
+```
 
 R-Rocky - Networks :
 - VMnet2 : 10.20.20.2 
 - VMnet8 : DHCP 
+```bash
+
+```
 
 C-Rocky - Networks :
 - VMnet2 : DHCP - GW 10.20.20.2
+```bash
+
+```
