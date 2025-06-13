@@ -16,3 +16,5 @@ epoch ou temps UNIX, temps de référence = 1er Janvier 1970
 ```bash
 date -d "1970/01/01 +20109 days"
 ```
+
+[^1]: 

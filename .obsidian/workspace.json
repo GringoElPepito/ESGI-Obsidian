@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sécu/TP.md",
+                "file": "Linux/LPIC101/Répertoire et fichiers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TP"
+              "title": "Répertoire et fichiers"
             }
           },
           {
@@ -329,16 +329,17 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Linux/LPIC101/Répertoire et fichiers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Rétroliens"
+              "title": "Backlinks for Répertoire et fichiers"
             }
           },
           {
@@ -381,8 +382,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -397,8 +397,14 @@
   },
   "active": "86851b9b0e2c9ac3",
   "lastOpenFiles": [
-    "Note TOEIC.md",
+    "Linux/Linux.md",
+    "Linux/LPIC101/Droits.md",
+    "Linux/Commandes.md",
+    "Linux/LPIC101/Les métacaractères.md",
+    "Linux/LPIC101/Gestionnaire de paquets.md",
+    "Linux/LPIC102/etc-shadow.md",
     "Sécu/TP.md",
+    "Note TOEIC.md",
     "Sécu/Brut.md",
     "TOEIC.md",
     "Rapport Alternance.md",
@@ -413,16 +419,10 @@
     "Linux/LPIC102/TP politique mdp.md",
     "Linux/LPIC102/TP 12-05-2025.md",
     "Linux/LPIC102/Brut.md",
-    "Linux/LPIC102/etc-shadow.md",
     "Linux/LPIC102/Projet-Partiel.md",
     "Linux/LPIC102/Tache automatise.md",
-    "Linux/Linux.md",
-    "Linux/Commandes.md",
     "Linux/LPIC101/Cours 1.md",
     "Linux/LPIC101/Répertoire et fichiers.md",
-    "Linux/LPIC101/Les métacaractères.md",
-    "Linux/LPIC101/Gestionnaire de paquets.md",
-    "Linux/LPIC101/Histoire de Linux.md",
     "LPIC101",
     "Linux",
     "Cours Brut",

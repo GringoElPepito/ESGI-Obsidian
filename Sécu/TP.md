@@ -29,6 +29,16 @@ Configuration :
 - VMnet 2 : Host-Only 10.20.20.0/24
 - VMnet 8 : NAT 192.168.0.0/24
 
-R-Debian :
-- Networks :
-	- 
+R-Debian - Networks :
+- VMnet1 : 10.10.10.2
+- VMnet8 : DHCP
+
+C-Debian - Networks :
+- VMnet1 : DHCP - GW 10.10.10.2
+
+R-Rocky - Networks :
+- VMnet2 : 10.20.20.2 
+- VMnet8 : DHCP 
+
+C-Rocky - Networks :
+- VMnet2 : DHCP - GW 10.20.20.2
