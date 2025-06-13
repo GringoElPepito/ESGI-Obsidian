@@ -54,7 +54,7 @@ R-Rocky
 	- Réseau
 	- Activation du routage des paquets
 ```bash
-
+net.ipv4.ip_forward=1
 ```
 
 C-Rocky - Networks :
