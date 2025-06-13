@@ -25,3 +25,4 @@ sudo vim fichier
 ```
 
 Pas mettre de mot de passe a root pour créer un utilisateur avec sudo
+
