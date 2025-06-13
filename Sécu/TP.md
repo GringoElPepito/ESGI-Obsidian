@@ -29,9 +29,13 @@ Configuration :
 - VMnet 2 : Host-Only 10.20.20.0/24
 - VMnet 8 : NAT 192.168.0.0/24
 
-R-Debian - Networks :
-- VMnet1 : 10.10.10.2
-- VMnet8 : DHCP
+R-Debian 
+- Networks :
+	- VMnet1 : 10.10.10.2
+	- VMnet8 : DHCP
+- Configuration : 
+	- Réseau
+	- Activation du routage des paquets
 ```bash
 
 ```
@@ -42,9 +46,13 @@ C-Debian - Networks :
 
 ```
 
-R-Rocky - Networks :
-- VMnet2 : 10.20.20.2 
-- VMnet8 : DHCP 
+R-Rocky 
+- Networks :
+	- VMnet2 : 10.20.20.2 
+	- VMnet8 : DHCP 
+- Configuration : 
+	- Réseau
+	- Activation du routage des paquets
 ```bash
 
 ```
