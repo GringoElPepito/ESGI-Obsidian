@@ -15,7 +15,20 @@ Les options de chaque partition sont à renseigné dans le fichier `/etc/fstab`,
 # TP 2
 
 # TP 3
-
+Modification du fichier `/etc/ssh/sshd_config`
 ```sshd_config
+Protocol 2
+Port 2022
+PermitRootLogin no
+
+
 ```
 # TP 4
+Configuration : 
+- VMnet 1 : Host-Only 10.10.10.0/24
+- VMnet 2 : Host-Only 10.20.20.0/24
+- VMnet 8 : NAT 192.168.0.0/24
+
+R-Debian :
+- Networks :
+	- 

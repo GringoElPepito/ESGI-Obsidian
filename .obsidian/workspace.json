@@ -397,8 +397,9 @@
   },
   "active": "86851b9b0e2c9ac3",
   "lastOpenFiles": [
-    "Sécu/Brut.md",
     "Note TOEIC.md",
+    "Sécu/TP.md",
+    "Sécu/Brut.md",
     "TOEIC.md",
     "Rapport Alternance.md",
     "Virtualisation/Cours 1.md",
@@ -422,7 +423,6 @@
     "Linux/LPIC101/Les métacaractères.md",
     "Linux/LPIC101/Gestionnaire de paquets.md",
     "Linux/LPIC101/Histoire de Linux.md",
-    "Linux/LPIC101/Fichier utilisateur-groupe.md",
     "LPIC101",
     "Linux",
     "Cours Brut",
