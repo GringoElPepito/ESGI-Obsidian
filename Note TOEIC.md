@@ -54,3 +54,7 @@ Target :
 - Busy professional
 - Tech lovers
 - Families
+
+# AI Lens
+Phase 1 : learning period, analyze you life
+Phase 2 : personnalized suggestions

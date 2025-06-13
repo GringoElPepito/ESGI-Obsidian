@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sécu/Brut.md",
+                "file": "Note TOEIC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brut"
+              "title": "Note TOEIC"
             }
           },
           {
@@ -397,6 +397,18 @@
   },
   "active": "86851b9b0e2c9ac3",
   "lastOpenFiles": [
+    "TOEIC.md",
+    "Rapport Alternance.md",
+    "Virtualisation/Cours 1.md",
+    "Docker/Brut.md",
+    "Git/Git & Github.md",
+    "Git/Contrôle.md",
+    "Planification Projet/Gestion des risques.md",
+    "Planification Projet/Cours-1.md",
+    "Note TOEIC.md",
+    "Outils.md",
+    "CCNA/OSI model/Couche3/IS-IS.md",
+    "Sécu/Brut.md",
     "Linux/LPIC102/TP politique mdp.md",
     "Linux/LPIC102/TP 12-05-2025.md",
     "Linux/LPIC102/Brut.md",
@@ -411,23 +423,11 @@
     "Linux/LPIC101/Gestionnaire de paquets.md",
     "Linux/LPIC101/Histoire de Linux.md",
     "Linux/LPIC101/Fichier utilisateur-groupe.md",
-    "Linux/LPIC101/Exo.md",
-    "Linux/LPIC101/Droits.md",
-    "Sécu/Brut.md",
-    "LPIC101/Histoire.md",
     "LPIC101",
     "Linux",
     "Cours Brut",
-    "Sécu/TP.md",
     "Sécu",
-    "Réseau Opérateur/exo conf.md",
-    "Réseau Opérateur/Brut.md",
     "Réseau Opérateur",
-    "Python/Python Partiel S2.md",
-    "Note TOEIC.md",
-    "TOEIC.md",
-    "Untitled 2.md",
-    "Docker/Exo.md",
     "Docker",
     "BDD",
     "Supervision",
