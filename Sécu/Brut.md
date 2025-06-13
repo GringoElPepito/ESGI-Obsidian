@@ -26,3 +26,16 @@ sudo vim fichier
 
 Pas mettre de mot de passe a root pour créer un utilisateur avec sudo
 
+`/etc/fstab` :
+```
+uuid du disk  point de montage  option de montage  utilitaire dump  activer fsck
+```
+- uuid :
+- point de montage
+- 
+- fsck : FileSystem Check si on met 1, le filesystem sera vérifier en premier généralement utilisé pour le /. Le 2 effectue aussi la réparation mais s'exécute seulement après avoir fini tous les disk en 1. 0 désactive la vérification du disque
+
+La commande suivante permet de vérifier la conf du fichier `/etc/fstab` et de remonter les disques suit
+```bash
+sudo mount -a
+```
