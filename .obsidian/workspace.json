@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sécu/TP.md",
+                "file": "Linux/LPIC102/Brut.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TP"
+              "title": "Brut"
             }
           },
           {
@@ -288,7 +288,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "port en écoute",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -329,7 +329,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sécu/TP.md",
+                "file": "Linux/LPIC102/Brut.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -339,7 +339,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for TP"
+              "title": "Backlinks for Brut"
             }
           },
           {
@@ -397,17 +397,20 @@
   },
   "active": "86851b9b0e2c9ac3",
   "lastOpenFiles": [
+    "Untitled.canvas",
+    "Linux/LPIC101/Exo.md",
+    "Linux/LPIC101/Droits.md",
+    "Linux/LPIC101/Histoire de Linux.md",
+    "Linux/LPIC101/Cours 1.md",
+    "Sécu/TP.md",
     "Docker/Brut.md",
     "Linux/LPIC101/Fichier utilisateur-groupe.md",
     "Linux/LPIC101/Gestionnaire de paquets.md",
-    "Linux/LPIC101/Histoire de Linux.md",
     "Linux/LPIC101/Répertoire et fichiers.md",
     "Linux/Linux.md",
-    "Linux/LPIC101/Droits.md",
     "Linux/Commandes.md",
     "Linux/LPIC101/Les métacaractères.md",
     "Linux/LPIC102/etc-shadow.md",
-    "Sécu/TP.md",
     "Note TOEIC.md",
     "Sécu/Brut.md",
     "TOEIC.md",
@@ -420,9 +423,6 @@
     "Outils.md",
     "CCNA/OSI model/Couche3/IS-IS.md",
     "Linux/LPIC102/TP politique mdp.md",
-    "Linux/LPIC102/TP 12-05-2025.md",
-    "Linux/LPIC102/Brut.md",
-    "Linux/LPIC102/Projet-Partiel.md",
     "LPIC101",
     "Linux",
     "Cours Brut",
