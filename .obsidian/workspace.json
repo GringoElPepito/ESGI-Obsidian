@@ -135,12 +135,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Réseau Opérateur/Partielle.md",
+                "file": "CCNA/OSI model/Couche3/OSPF.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Partielle"
+              "title": "OSPF"
             }
           },
           {
@@ -190,7 +190,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "OSPF",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -211,7 +211,8 @@
               "title": "Signet"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -300,6 +301,9 @@
   },
   "active": "ad62851806dc1951",
   "lastOpenFiles": [
+    "CCNA/OSI model/OSI Model.md",
+    "CCNA/OSI model/Couche3/IS-IS.md",
+    "CCNA/OSI model/Couche3/EIGRP.md",
     "Réseau Opérateur/Brut.md",
     "Réseau Opérateur/Partielle.md",
     "Linux/LPIC102/Projet-Partiel.md",
@@ -329,9 +333,6 @@
     "Linux/Commandes.md",
     "Linux",
     "LPIC102/Projet-Partiel.md",
-    "LPIC101/Exo.md",
-    "LPIC101/Cours 1.md",
-    "LPIC102/TP 12-05-2025.md",
     "Docker",
     "Supervision",
     "BDD",
