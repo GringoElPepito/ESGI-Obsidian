@@ -135,12 +135,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/Exo/EIGRP/Berlin.md",
+                "file": "Réseau Opérateur/Partiel.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Berlin"
+              "title": "Partiel"
             }
           },
           {
@@ -211,8 +211,7 @@
               "title": "Signet"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -301,12 +300,13 @@
   },
   "active": "ad62851806dc1951",
   "lastOpenFiles": [
+    "CCNA/Exo/EIGRP/Berlin.md",
     "CCNA/OSI model/Couche3/OSPF.md",
     "CCNA/OSI model/OSI Model.md",
     "CCNA/OSI model/Couche3/IS-IS.md",
     "CCNA/OSI model/Couche3/EIGRP.md",
     "Réseau Opérateur/Brut.md",
-    "Réseau Opérateur/Partielle.md",
+    "Réseau Opérateur/Partiel.md",
     "Linux/LPIC102/Projet-Partiel.md",
     "Untitled.canvas",
     "Linux/LPIC102/TP 12-05-2025.md",
@@ -331,7 +331,6 @@
     "Linux/LPIC101/Cours 1.md",
     "Linux/LPIC102",
     "Linux/LPIC101",
-    "Linux/Commandes.md",
     "Linux",
     "Docker",
     "Supervision",
