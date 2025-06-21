@@ -33,4 +33,8 @@ Marketing :
 - Partenariat avec les ministères de l'écologie
 - Partenariat avec des entreprises
 - Partenariat avec des influenceurs (Max Bird, Poisson Fécond)
+- Publicité sur les réseaux sociaux
 
+Boutique ligne avec référencement optimisé via SEO
+
+Production actuellement à taiwan pour cause de fond mais relocalisation en Europe (Portugal)
