@@ -1,6 +1,9 @@
 # Projet
 
-Projet lancé depuis 2 ans 1 an et 6 mois  de R&D pour l'ia et le système de tri
+Projet lancé depuis 3 ans, 2 ans de R&D pour l'ia et le système de tri
+1 an de vente
+
+Vente B2C au bout de 1 an : 
 
 Problème :
 - Temps nécessaire au tri
@@ -30,6 +33,7 @@ Pas de concurrence seulement des projets d'étudiants, donc potentiellement de l
 Marché visé principalement marché européen et dans le futur marchés internationaux
 
 Marketing : 
+- 1 mois de test du produit pour les 100 premiers
 - Partenariat avec les ministères de l'écologie
 - Partenariat avec des entreprises
 - Partenariat avec des influenceurs (Max Bird, Poisson Fécond)
