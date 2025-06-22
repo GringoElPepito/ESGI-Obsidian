@@ -212,9 +212,6 @@ Description=Task 4 timer
 AccuracySec=1us
 OnUnitActiveSec=1s
 OnBootSec=1s
-Persistent=true
-RemainAfterElapse=true
-Restart=always
 
 [Install]
 WantedBy=timers.target
@@ -270,6 +267,10 @@ ExecStart=/bin/bash -c 'logger $(date +%d/%m/%Y)'
 WantedBy=multi-user.target
 ```
 
+`commande`
+```bash
+sudo systemctl enable --now task5.timer
+```
 # Script
 
 base commande :
