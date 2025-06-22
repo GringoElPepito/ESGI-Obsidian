@@ -129,6 +129,11 @@ ExecStart=/bin/bash -c 'logger tâche 1 ok'
 [Install]
 WantedBy=multi-user.target
 ```
+
+`Commandes`
+```bash
+sudo systemctl enable --now task1.timer
+```
 ## Tâche 2
 
 ### Script
@@ -180,6 +185,10 @@ ExecStart=/opt/task2.sh
 
 [Install]
 WantedBy=multi-user.target
+```
+`Commandes`
+```bash
+sudo systemctl enable --now task2.timer
 ```
 
 ## Tâche 3
