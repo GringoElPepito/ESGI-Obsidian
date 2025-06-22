@@ -10,15 +10,15 @@ ln -s /usr/share/easy-rsa/* ~/easy-rsa/
 chmod 700 ~/easy-rsa
 cd ~/easy-rsa
 ./easyrsa init-pki
-echo "set_var EASYRSA_REQ_COUNTRY    "FR"
-set_var EASYRSA_REQ_PROVINCE   "Ile-de-France"
-set_var EASYRSA_REQ_CITY       "Paris"
-set_var EASYRSA_REQ_ORG        "Paris"
-set_var EASYRSA_REQ_EMAIL      "admin@ludovik.ovh"
-set_var EASYRSA_REQ_OU         "Community"
-set_var EASYRSA_ALGO           "ec"
-set_var EASYRSA_DIGEST         "sha512"
-" > pki/vars
+echo 'set_var EASYRSA_REQ_COUNTRY "FR"
+set_var EASYRSA_REQ_PROVINCE "Ile-de-France"
+set_var EASYRSA_REQ_CITY "Paris"
+set_var EASYRSA_REQ_ORG "ESGI"
+set_var EASYRSA_REQ_EMAIL "admin@ludovik.ovh"
+set_var EASYRSA_REQ_OU "Community"
+set_var EASYRSA_ALGO "rsa"
+set_var EASYRSA_DIGEST "sha512"
+' > pki/vars
 ./easyrsa build-ca
 sudo scp pki/ca.crt $IP_CLIENT:/tmp
 sudo cp pki/ca.crt /usr/local/share/ca-certificates/
