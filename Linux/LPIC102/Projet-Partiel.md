@@ -144,8 +144,8 @@ sudo systemctl enable --now task1.timer
 #!/bin/bash
 set -e #Indique que l'exécution doit s'arrêter si un autre code retour que 0 est reçu
 [ ! -d "/var/log/task2" ] && mkdir /var/log/task2
-apt-get update > /var/logtask2/task-$(date +%d-%m-%Y)
-apt list --upgradable >> /var/log/task2/task-$(date +%d-%m-%Y)
+apt-get update &> /var/log/task2/task-$(date +%d-%m-%Y)
+apt list --upgradable &>> /var/log/task2/task-$(date +%d-%m-%Y)
 ```
 
 ### Cron
@@ -166,7 +166,7 @@ Description=Task 2 timer
 
 [Timer]
 AccuracySec=1us
-onCalendar= Sun *-*-* 12:00:00
+onCalendar=Sun *-*-* 12:00:00
 Persistent=true
 RemainAfterElapse=true  
 
