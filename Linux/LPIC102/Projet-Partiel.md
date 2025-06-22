@@ -2,12 +2,12 @@
 
 ## SRV-RSYSLOG
 ```bash
-IPCLIENT="kaisen@192.168.206.147"
+IPCLIENT="kaisen@192.168.206.140"
 sudo apt update -y && sudo apt upgrade -y
 sudo apt install rsyslog rsyslog-gnutls rsyslog-relp openssl ca-certificates easy-rsa vim -y
 mkdir ~/easy-rsa
 ln -s /usr/share/easy-rsa/* ~/easy-rsa/
-chmod 700 /home/kaisen/easy-rsa
+chmod 700 ~/easy-rsa
 cd ~/easy-rsa
 ./easyrsa init-pki
 echo "set_var EASYRSA_REQ_COUNTRY    "FR"
@@ -68,7 +68,7 @@ sudo systemctl enable --now rsyslog
 
 
 ```bash
-
+IPSRV=192.168.206.141
 sudo apt update -y && sudo apt upgrade -y
 sudo apt install rsyslog rsyslog-gnutls rsyslog-relp ca-certificates vim -y
 sudo mkdir /usr/local/share/ca-certificates
@@ -82,7 +82,7 @@ sudo sed -i '/^#input(type="imtcp" port="514")/c\
 module(load="omrelp") \
 action( \
         type="omrelp" \
-        target="192.168.206.148" \
+        target="'"$IPSRV"'" \
         port="20514" tls="on" \
         tls.caCert="/etc/rsyslog.d/ca.crt" \
         tls.myCert="/etc/rsyslog.d/client-rsyslog.crt" \
@@ -187,7 +187,6 @@ WantedBy=multi-user.target
 ### At
 
 ```bash
-
 sudo at now + 5 minutes
 at> logger 'lancement de la tâche ponctuelle'
 at> echo test > /opt/mytask
@@ -197,63 +196,38 @@ at> echo test > /opt/mytask
 `/lib/systemd/system/task4.timer`
 
 ```bash
-
 [Unit]
-
 Description=Task 4 timer
 
-  
-
 [Timer]
-
 AccuracySec=1us
-
 OnUnitActiveSec=1s
-
 OnBootSec=1s
-
 Persistent=true
-
 RemainAfterElapse=true
-
 Restart=always
 
-  
-
 [Install]
-
 WantedBy=timers.target
-
 ```
 
 `/lib/systemd/system/task4.service`
 
 ```bash
-
 [Unit]
-
 Description=Task 4 service
 
-  
-
 [Service]
-
 ExecStart=/bin/bash -c 'echo "computer started"'
 
-  
-
 [Install]
-
 WantedBy=multi-user.target
-
 ```
 
 Commande
 
 ```bash
-
 sudo systemctl enable --now task4.timer
-
 ```  
   
 ## Tâche 5
@@ -261,51 +235,30 @@ sudo systemctl enable --now task4.timer
 `/lib/systemd/system/task5.timer`
 
 ```bash
-
 [Unit]
-
 Description=Task 5 timer
 
-  
-
 [Timer]
-
 AccuracySec=1s
-
 OnCalendar=daily
-
 Persistent=true
-
 RemainAfterElapse=true
 
-  
-
 [Install]
-
 WantedBy=timers.target
-
 ```
 
 `/lib/systemd/system/task5.service`
 
 ```bash
-
 [Unit]
-
 Description=Task 5 service
 
-  
-
 [Service]
-
 ExecStart=/bin/bash -c 'logger $(date +%d/%m/%Y)'
 
-  
-
 [Install]
-
 WantedBy=multi-user.target
-
 ```
 
 # Script
@@ -313,11 +266,8 @@ WantedBy=multi-user.target
 base commande :
 
 ```bash
-
 sudo vim /usr/local/sbin/user-and-ui
-
 sudo chmod +x /usr/local/sbin/user-and-ui
-
 ```
 
 ```bash
