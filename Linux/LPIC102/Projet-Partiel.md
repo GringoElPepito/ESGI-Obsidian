@@ -2,7 +2,7 @@
 
 ## SRV-RSYSLOG
 ```bash
-IPCLIENT="kaisen@192.168.206.140"
+IP_CLIENT="debian@192.168.206.140"
 sudo apt update -y && sudo apt upgrade -y
 sudo apt install rsyslog rsyslog-gnutls rsyslog-relp openssl ca-certificates easy-rsa vim -y
 mkdir ~/easy-rsa
@@ -68,7 +68,7 @@ sudo systemctl enable --now rsyslog
 
 
 ```bash
-IPSRV=192.168.206.141
+IP_SRV=192.168.206.141
 sudo apt update -y && sudo apt upgrade -y
 sudo apt install rsyslog rsyslog-gnutls rsyslog-relp ca-certificates vim -y
 sudo mkdir /usr/local/share/ca-certificates
@@ -82,7 +82,7 @@ sudo sed -i '/^#input(type="imtcp" port="514")/c\
 module(load="omrelp") \
 action( \
         type="omrelp" \
-        target="'"$IPSRV"'" \
+        target="'"$IP_SRV"'" \
         port="20514" tls="on" \
         tls.caCert="/etc/rsyslog.d/ca.crt" \
         tls.myCert="/etc/rsyslog.d/client-rsyslog.crt" \
@@ -91,7 +91,6 @@ action( \
         tls.permittedpeer=["*"] \
 )' /etc/rsyslog.conf
 sudo systemctl enable --now rsyslog
-
 ```
   
 
