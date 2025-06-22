@@ -83,7 +83,8 @@ module(load="omrelp") \
 action( \
         type="omrelp" \
         target="'"$IP_SRV"'" \
-        port="20514" tls="on" \
+        port="20514" \ 
+        tls="on" \
         tls.caCert="/etc/rsyslog.d/ca.crt" \
         tls.myCert="/etc/rsyslog.d/client-rsyslog.crt" \
         tls.myPrivKey="/etc/rsyslog.d/client-rsyslog.key" \
@@ -274,131 +275,67 @@ sudo chmod +x /usr/local/sbin/user-and-ui
 #!/bin/bash
 
 set -e
-
 loop=1
-
 while [[ $loop -ne 0 ]]; do
-
     loop=0
-
     if [[ "$EUID" -ne 0 ]]; then
-
         echo "Le script doit être lancé en tant que root."
-
         exit 1
-
     fi
-
     for i in {1..10}; do
-
         username="utilisateur$i"
-
         if id -u "$username" > /dev/null 2>&1; then
-
             echo "Utilisateur $username déjà créé."
-
         else
-
             useradd -ms /bin/bash $username
-
             if id -u "$username" > /dev/null 2>&1; then
-
                 echo "Ok pour $username."
-
             else
-
                 echo "Une erreur s'est produite."
-
                 exit 1
-
             fi
-
         fi
-
         echo 'utilisateur suivant'
-
     done
-
     choice='0'
-
     package=''
-
     gui=''
-
     while [[ $choice -ne '4' ]]; do
-
         echo 'Veuillez choisir votre interface graphique :'
-
         echo '- 1 pour KDE'
-
         echo '- 2 pour XFCE'
-
         echo '- 3 pour MATE'
-
         echo '- 4 pour quitter'
-
         read -p 'Choix : ' choice
-
         if [[ $choice -eq 1 ]]; then
-
             package="kde-plasma-desktop plasma-nm lightdm"
-
             gui="KDE"
-
         elif [[ $choice -eq 2 ]]; then
-
             package="xfce4 xfce4-goodies lightdm"
-
             gui="XFCE"
-
         elif [[ $choice -eq 3 ]]; then
-
             package="mate-desktop-environment lightdm"
-
             gui="MATE"
-
         elif [[ $choice -eq 4 ]]; then
-
             echo 'Au revoir'
-
             exit 0
-
         else
-
             echo "Votre choix n'est pas valide"
-
             echo ''
-
             continue
-
         fi
-
         if dpkg -s $package > /dev/null 2> /dev/null; then
-
             echo "$gui est déjà installé"
-
         else
-
             apt install -y $package 3> /dev/null 2> /dev/null > /dev/null || {
-
                 echo "Une erreur s'est produite lors de l'installation des paquets"
-
                 loop=1
-
                 continue
-
             }
-
             echo "L'interface graphique $gui a bien été installée"
-
         fi
-
         choice=4
-
     done
-
 done
-
 exit 0
-
 ```
