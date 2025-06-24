@@ -1,4 +1,4 @@
-# Projet
+.# Projet
 
 Projet lancé depuis 3 ans, 2 ans de R&D pour l'ia et le système de tri
 1 an de vente
