@@ -19,7 +19,7 @@ Modèle B2C :
 Modèle B2B :
 - Prix : 800€
 - Coût : 500€
-- Abonnement : 30€/mois/poubelle pour entretien et maj en exclus
+- Abonnement : 0€/mois/poubelle pour entretien et maj en exclus
 - 10 jours de production possibilité de réduire à semaine
 
 Modèle industriel :
