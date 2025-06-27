@@ -27,8 +27,9 @@ Our products can be purchased directly from our website, which is accessible 24/
 # Our Products
 
 We currently offer 3 different versions of our product :
-- The tiny version, 
-
+-  The reduced version, priced at 350€, costs 200€ to produce and takes 4 days to assemble. This version is aimed primarily at individuals and small businesses.
+- The medium version, priced at 800€, costs 350€ to produce and takes 5 days to assemble. This version is aimed at medium-sized and large companies.
+- The industrial model, is a tailor-made version especially 
 # Location
 
 # Market
