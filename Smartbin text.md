@@ -40,6 +40,8 @@ Our factory is currently located in Taiwan. We have a warehouse in Portugal and 
 
 The market in which we operate is one in which there are currently no major players. Intelligent waste recycling has not yet been democratized, which represents a great opportunity.
 
+What's more, people are becoming increasingly aware of the problem of global warming, so there's plenty of potential new customers who could be interested in our product.
+
 # Table of sales
 
 # Futur & Previsions
