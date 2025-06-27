@@ -34,9 +34,11 @@ We currently offer 3 different versions of our product :
 - The industrial model is a custom-built version designed specifically for waste treatment centers. We tailor its creation to the size of the center, and the types and quantities of waste processed.
 # Location
 
-
+Our factory is currently located in Taiwan. We have a warehouse in Portugal and our head office is located in France near Paris. Products are shipped directly from the Taiwan factory to our warehouse before being delivered to our customers.
 
 # Market
+
+The market in which we operate is one in which there are currently no major players. Intelligent waste recycling has not yet been democratized, which represents a great opportunity.
 
 # Table of sales
 
