@@ -55,6 +55,6 @@ Let's get on with our roadmap. For 2026, we aim to open our first European facto
 # Offer
 
 Here's our offer, 10% of our company for €500,000.
-This money will be used to finance the factory in Portugal as well as research and development aimed at improving our product.
+This money will be used to finance the factory in Portugal as well as research and developpement aimed at improving our product.
 Now that you know a little more, would you like to be part of the smartbin adventure?
 # Thank you
