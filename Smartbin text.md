@@ -26,11 +26,12 @@ Our products can be purchased directly from our website, which is accessible 24/
 
 # Our Products
 
-The sale of our product is divided into 2 parts, a single purchase for the product itself and a non-binding subscription offering maintenance and bags for the various compartments. You can also use others bag than ours, it's just that our system work better with our bags. The bags doesn't concern the industrial model because it doesn't use it.
+The sale of our product is divided into 2 parts, a single purchase for the product itself and a non-binding subscription offering maintenance and bags for the various compartments. 
+You can also use others bag than ours, it's just that our system work better with our bags. The bags doesn't concern the industrial model because it doesn't use it.
 
 We currently offer 3 different versions of our product :
--  The reduced version, priced at 350€, costs 200€ to produce and takes 4 days to assemble. The subscription is 30€ per month. This version is aimed primarily at individuals and small businesses.
-- The medium version, priced at 800€, costs 350€ to produce and takes 5 days to assemble. The subscription is 30€ per month. This version is aimed at medium-sized and large companies.
+-  The tiny version, priced at 350€, costs 200€ to produce and takes 4 days to assemble. The subscription is 30€ per month. This version is aimed primarily at individuals and small businesses.
+- The medium version, priced at 800€, costs 350€ to produce and takes 5 days to assemble. The subscription is 100€ per month. This version is aimed at medium-sized and large companies.
 - The industrial model is a custom-built version designed specifically for waste treatment centers. We tailor its creation to the size of the center, and the types and quantities of waste processed.
 # Location
 
