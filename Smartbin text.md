@@ -52,6 +52,9 @@ All in all, we achieved sales of 394260€ (three hundred ninety-four thousand t
 
 Let's get on with our roadmap. For 2026, we aim to open our first European factory in Portugal, which will enable us to reduce our delivery times. By 2028, we aim to deploy 50 industrial models across Europe. Finally, by 2030 we aim to create a building-integrated version of Smartbin.
 
+# Marketing
+
+
 # Offer
 
 Here's our offer, 10% of our company for €500,000.
