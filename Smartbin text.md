@@ -44,7 +44,10 @@ What's more, people are becoming increasingly aware of the problem of global war
 
 # Table of sales
 
-Here are our sales since the beginning of 2025, 
+Here are our sales figures since the start of 2025. As you can see, we've almost multiplied our sales of the reduced version by 7 between January and May. 
+As for the medium version, we multiplied our sales by 8.5 over the same period. 
+In addition, we made two sales of our industrial model between April and May.
+With all
 
 # Futur & Previsions
 
