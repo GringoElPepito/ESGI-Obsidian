@@ -47,7 +47,7 @@ What's more, people are becoming increasingly aware of the problem of global war
 Here are our sales figures since the start of 2025. As you can see, we've almost multiplied our sales of the tiny version by 7 between January and May. 
 As for the medium version, we multiplied our sales by 8.5 over the same period. 
 In addition, we made two sales of our industrial model between April and May.
-All in all, we achieved sales of 394260€ on only five month. 
+All in all, we achieved sales of 394260€ (three hundred ninety-four thousand two hundred and sixty) on only five month. 
 # Futur & Previsions
 
 Let's get on with our roadmap. For 2026, we aim to open our first European factory in Portugal, which will enable us to reduce our delivery times. By 2028, we aim to deploy 50 industrial models across Europe. Finally, by 2030 we aim to create a building-integrated version of Smartbin.
