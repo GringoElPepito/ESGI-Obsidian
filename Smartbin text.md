@@ -50,7 +50,7 @@ In addition, we made two sales of our industrial model between April and May.
 All in all, we achieved sales of 394260€ on only five month. 
 # Futur & Previsions
 
-
+Let's get on with our roadmap. For 2026, we aim to open our first European factory in Portugal, which will enable us to reduce our delivery times. By 2028, we aim to deploy 50 industrial models across Europe. Finally, by 2030 we aim to create a building-integrated version of Smartbin.
 
 # Offer
 
