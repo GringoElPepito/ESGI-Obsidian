@@ -26,7 +26,8 @@ Our products can be purchased directly from our website, which is accessible 24/
 
 # Our Products
 
-We currently offer 3 different versions of our product, 
+We currently offer 3 different versions of our product :
+- The tiny version, 
 
 # Location
 
