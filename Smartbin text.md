@@ -44,6 +44,8 @@ What's more, people are becoming increasingly aware of the problem of global war
 
 # Table of sales
 
+Here are our sales since the beginning of 2025, 
+
 # Futur & Previsions
 
 # Offer
