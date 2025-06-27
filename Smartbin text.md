@@ -4,7 +4,7 @@ In a world increasingly aware of the environmental impact of waste, **Smartbin**
 
 # The Problem
 
-We have identified 3 problems to bo solved regarding waste sorting
+We have identified 3 problems to be solved regarding waste sorting
 ## **Time:**  
 Properly sorting waste requires user effort and awareness. In busy households or companies, this task is often rushed or skipped altogether, leading to environmental inefficiencies.
 
@@ -54,5 +54,7 @@ Let's get on with our roadmap. For 2026, we aim to open our first European facto
 
 # Offer
 
-
+Here's our offer, 10% of our company for €500,000.
+This money will be used to finance the factory in Portugal as well as research and development aimed at improving our product.
+Now that you know a little more, would you like to be part of the smartbin adventure?
 # Thank you
