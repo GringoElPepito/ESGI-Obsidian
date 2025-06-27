@@ -20,9 +20,13 @@ Smartbin uses **artificial intelligence** and **machine vision** to instantly re
 
 **Started in early 2022**, our research and development team focused on machine learning, object detection, and robotics integration.
 
+After almost 3 years, we have succeeded in designing the first marketable version of our product. We started selling it at the beginning of 2025.
 
+Our products can be purchased directly from our website, which is accessible 24/7.
 
 # Our Products
+
+We currently offer 3 different versions of our product, 
 
 # Location
 
