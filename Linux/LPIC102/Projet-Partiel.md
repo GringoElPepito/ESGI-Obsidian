@@ -1,44 +1,106 @@
-# TEMP
-```bash
+# RSYSLOG
 
-
-```
-# SRV-RSYSLOG
+## SRV-RSYSLOG
 ```bash
+IP_CLIENT="debian@192.168.206.140"
 sudo apt update -y && sudo apt upgrade -y
-sudo apt install rsyslog rsyslog-gnutls vim -y
-sudo systemctl enable --now rsyslog
-sudo sed -i 's/^#module(load="imtcp")/module(load="imtcp" StreamDriver.Name="gtls" StreamDriver.Mode="1" StreamDriver.AuthMode="anon")/' /etc/rsyslog.conf
-sudo sed -i '/^#input(type="imtcp" port="514")/c\
-input(type="imtcp" port="514")\
-global(\
-    defaultNetstreamDriverCAFile="/etc/rsyslog.d/rsyslog.crt"\
-    defaultNetstreamDriverCertFile="/etc/rsyslog.d/rsyslog.crt"\
-    defaultNetstreamDriverKeyFile="/etc/rsyslog.d/rsyslog.key"\
-)\
-' /etc/rsyslog.conf
+sudo apt install rsyslog rsyslog-gnutls rsyslog-relp openssl ca-certificates easy-rsa vim -y
+mkdir ~/easy-rsa
+ln -s /usr/share/easy-rsa/* ~/easy-rsa/
+chmod 700 ~/easy-rsa
+cd ~/easy-rsa
+./easyrsa init-pki
+echo 'set_var EASYRSA_REQ_COUNTRY "FR"
+set_var EASYRSA_REQ_PROVINCE "Ile-de-France"
+set_var EASYRSA_REQ_CITY "Paris"
+set_var EASYRSA_REQ_ORG "ESGI"
+set_var EASYRSA_REQ_EMAIL "admin@ludovik.ovh"
+set_var EASYRSA_REQ_OU "Community"
+set_var EASYRSA_ALGO "rsa"
+set_var EASYRSA_DIGEST "sha512"
+' > pki/vars
+./easyrsa build-ca
+sudo scp pki/ca.crt $IP_CLIENT:/tmp
+sudo cp pki/ca.crt /usr/local/share/ca-certificates/
+sudo update-ca-certificates
+mkdir ~/practice-csr
+cd ~/practice-csr
+openssl genrsa -out client-rsyslog.key
+openssl req -new -key client-rsyslog.key -out client-rsyslog.req -subj "/C=FR/ST=Île-de-France/L=Paris/O=ESGI/OU=SRC/CN=client-rsyslog/emailAddress=admin@ludovik.ovh"
+openssl req -in client-rsyslog.req -noout -subject
+cp client-rsyslog.req /tmp
+cd ~/easy-rsa
+./easyrsa import-req /tmp/client-rsyslog.req client-rsyslog
+./easyrsa sign-req server client-rsyslog
+sudo scp pki/issued/client-rsyslog.crt $IP_CLIENT:/tmp
+cd ~/practice-csr/
+sudo scp ./client-rsyslog.key $IP_CLIENT:/tmp
+openssl genrsa -out srv-rsyslog.key
+openssl req -new -key srv-rsyslog.key -out srv-rsyslog.req -subj "/C=FR/ST=Île-de-France/L=Paris/O=ESGI/OU=SRC/CN=srv-rsyslog/emailAddress=admin@ludovik.ovh"
+sudo cp srv-rsyslog.req /tmp
+cd ~/easy-rsa
+./easyrsa import-req /tmp/srv-rsyslog.req srv-rsyslog
+./easyrsa sign-req server srv-rsyslog
+sudo cp pki/ca.crt /etc/rsyslog.d
+sudo cp pki/issued/srv-rsyslog.crt /etc/rsyslog.d
+cd ~/practice-csr/
+sudo cp srv-rsyslog.key /etc/rsyslog.d
+sudo sed -i '/^#module(load="imtcp")/c\
+module(load="imrelp") \
+input( \
+    type="imrelp" \
+    port="20514" \
+    tls="on" \
+    tls.caCert="/etc/rsyslog.d/ca.crt" \
+    tls.myCert="/etc/rsyslog.d/srv-rsyslog.crt" \
+    tls.myPrivKey="/etc/rsyslog.d/srv-rsyslog.key" \
+    tls.authMode="name" \
+    tls.permittedpeer=["*"] \
+)' /etc/rsyslog.conf
 sudo sed -i '/^\$IncludeConfig \/etc\/rsyslog\.d\/\*\.conf/a \$template RemoteLogs,"/var/log/remote/%HOSTNAME%.log"' /etc/rsyslog.conf
 echo '*.* ?RemoteLogs' | sudo tee -a /etc/rsyslog.conf
-sudo openssl req -x509 -newkey rsa:2048 -keyout /etc/rsyslog.d/rsyslog.key -out /etc/rsyslog.d/rsyslog.crt -days 365 -nodes
 sudo mkdir /var/log/remote
-sudo systemctl restart rsyslog
-```
-# CLIENT-RSYSLOG
-```bash
-sudo apt update -y && sudo apt upgrade -y
-sudo apt install rsyslog rsyslog-gnutls vim -y
 sudo systemctl enable --now rsyslog
-sudo sed -i '/^#input(type="imtcp" port="514")/c\
-\
-global(DefaultNetstreamDriverCAFile="/etc/rsyslog.d/rsyslog.crt") \
-action(type="omfwd" protocol="tcp" target="192.168.206.139" port="514" StreamDriver="gtls" StreamDriverMode="1" StreamDriverAuthMode="anon")' /etc/rsyslog.conf
-sudo scp kaisen@192.168.206.139:/etc/rsyslog.d/rsyslog.crt /etc/rsyslog.d/rsyslog.crt
-sudo systemctl restart rsyslog
 ```
 
-# Tâche Planifié
+
+## CLIENT-RSYSLOG
+
+
+```bash
+IP_SRV=192.168.206.141
+sudo apt update -y && sudo apt upgrade -y
+sudo apt install rsyslog rsyslog-gnutls rsyslog-relp ca-certificates vim -y
+sudo mkdir /usr/local/share/ca-certificates
+sudo cp /tmp/ca.crt /usr/local/share/ca-certificates/
+sudo update-ca-certificates
+sudo mv /tmp/ca.crt /etc/rsyslog.d/ca.crt
+sudo mv /tmp/client-rsyslog.crt /etc/rsyslog.d/client-rsyslog.crt
+sudo mv /tmp/client-rsyslog.key /etc/rsyslog.d/client-rsyslog.key
+sudo sed -i '/^#input(type="imtcp" port="514")/c\
+\
+module(load="omrelp") \
+action( \
+        type="omrelp" \
+        target="'"$IP_SRV"'" \
+        port="20514" \ 
+        tls="on" \
+        tls.caCert="/etc/rsyslog.d/ca.crt" \
+        tls.myCert="/etc/rsyslog.d/client-rsyslog.crt" \
+        tls.myPrivKey="/etc/rsyslog.d/client-rsyslog.key" \
+        tls.authmode="name" \
+        tls.permittedpeer=["*"] \
+)' /etc/rsyslog.conf
+sudo systemctl enable --now rsyslog
+```
+  
+
+# Tâches planifiées
+
 ## Tâche 1
+
 `/lib/systemd/system/task1.timer`:
+
 ```bash
 [Unit]
 Description=Task 1 timer
@@ -56,6 +118,7 @@ WantedBy=timers.target
 ```
 
 `/lib/systemd/system/task1.service`
+
 ```bash
 [Unit]
 Description=Task 1 service
@@ -67,43 +130,52 @@ ExecStart=/bin/bash -c 'logger tâche 1 ok'
 WantedBy=multi-user.target
 ```
 
+`Commandes`
+```bash
+sudo systemctl enable --now task1.timer
+```
 ## Tâche 2
+
 ### Script
+
 `/opt/task2.sh`
+
 ```bash
 #!/bin/bash
-
 set -e #Indique que l'exécution doit s'arrêter si un autre code retour que 0 est reçu
 [ ! -d "/var/log/task2" ] && mkdir /var/log/task2
-
-
-apt-get update > /var/logtask2/task-$(date +%d-%m-%Y)
-apt list --upgradable >> /var/log/task2/task-$(date +%d-%m-%Y)
+apt-get update &> /var/log/task2/task-$(date +%d-%m-%Y)
+apt list --upgradable &>> /var/log/task2/task-$(date +%d-%m-%Y)
 ```
 
 ### Cron
+
 `/etc/cron.d/task1` :
+
 ```
 00 12 * * 7 root /opt/task2.sh
 ```
 
 ### Systemd
+
 `/lib/systemd/system/task2.timer`
+
 ```bash
 [Unit]
 Description=Task 2 timer
 
 [Timer]
 AccuracySec=1us
-onCalendar= Sun *-*-* 12:00:00
+onCalendar=Sun *-*-* 12:00:00
 Persistent=true
-RemainAfterElapse=true
+RemainAfterElapse=true  
 
 [Install]
 WantedBy=timers.target
 ```
 
 `/lib/systemd/system/task2.service`
+
 ```bash
 [Unit]
 Description=Task 2 service
@@ -114,17 +186,24 @@ ExecStart=/opt/task2.sh
 [Install]
 WantedBy=multi-user.target
 ```
+`Commandes`
+```bash
+sudo systemctl enable --now task2.timer
+```
 
 ## Tâche 3
+
 ### At
+
 ```bash
 sudo at now + 5 minutes
 at> logger 'lancement de la tâche ponctuelle'
 at> echo test > /opt/mytask
 ```
-
 ## Tâche 4
+
 `/lib/systemd/system/task4.timer`
+
 ```bash
 [Unit]
 Description=Task 4 timer
@@ -133,15 +212,13 @@ Description=Task 4 timer
 AccuracySec=1us
 OnUnitActiveSec=1s
 OnBootSec=1s
-Persistent=true
-RemainAfterElapse=true
-Restart=always
 
 [Install]
 WantedBy=timers.target
 ```
 
 `/lib/systemd/system/task4.service`
+
 ```bash
 [Unit]
 Description=Task 4 service
@@ -152,13 +229,17 @@ ExecStart=/bin/bash -c 'echo "computer started"'
 [Install]
 WantedBy=multi-user.target
 ```
+
 Commande
+
 ```bash
 sudo systemctl enable --now task4.timer
-```
-
+```  
+  
 ## Tâche 5
+
 `/lib/systemd/system/task5.timer`
+
 ```bash
 [Unit]
 Description=Task 5 timer
@@ -174,6 +255,7 @@ WantedBy=timers.target
 ```
 
 `/lib/systemd/system/task5.service`
+
 ```bash
 [Unit]
 Description=Task 5 service
@@ -185,16 +267,23 @@ ExecStart=/bin/bash -c 'logger $(date +%d/%m/%Y)'
 WantedBy=multi-user.target
 ```
 
+`commande`
+```bash
+sudo systemctl enable --now task5.timer
+```
 # Script
+
 base commande :
+
 ```bash
 sudo vim /usr/local/sbin/user-and-ui
 sudo chmod +x /usr/local/sbin/user-and-ui
 ```
 
-Script:
 ```bash
+
 #!/bin/bash
+
 set -e
 loop=1
 while [[ $loop -ne 0 ]]; do

@@ -1,4 +1,4 @@
-# Projet
+.# Projet
 
 Projet lancé depuis 3 ans, 2 ans de R&D pour l'ia et le système de tri
 1 an de vente
@@ -22,7 +22,7 @@ Modèle B2C :
 Modèle B2B :
 - Prix : 800€
 - Coût : 500€
-- Abonnement : 30€/mois/poubelle pour entretien et maj en exclus
+- Abonnement : 0€/mois/poubelle pour entretien et maj en exclus
 - 10 jours de production possibilité de réduire à semaine
 
 Modèle industriel :
