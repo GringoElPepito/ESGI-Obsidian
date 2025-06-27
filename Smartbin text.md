@@ -16,6 +16,12 @@ Having separate bins for plastic, paper, organic, and general waste occupies con
 
 # Our Solution
 
+Smartbin uses **artificial intelligence** and **machine vision** to instantly recognize and classify various types of waste—plastic, glass, paper, organic matter, etc. Once detected, a **mechanical sorting system** directs the item into the correct internal compartment. This eliminates the need for multiple bins and user guesswork.
+
+**Started in early 2022**, our research and development team focused on machine learning, object detection, and robotics integration.
+
+
+
 # Our Products
 
 # Location
