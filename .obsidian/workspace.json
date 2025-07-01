@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel/Rendu Finale.md",
+                "file": "Projet Annuel/Oral - Diapo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Rendu Finale"
+              "title": "Oral - Diapo"
             }
           },
           {
@@ -404,12 +404,13 @@
   },
   "active": "2f1fbb8eef8c0004",
   "lastOpenFiles": [
-    "Projet Annuel/Projet Kasgrunt.md",
     "Projet Annuel/Plan.md",
+    "Projet Annuel/Oral - Diapo.md",
+    "Projet Annuel/Rendu Finale.md",
+    "Projet Annuel/Projet Kasgrunt.md",
     "Projet Annuel/DNS.md",
     "Projet Annuel/Maquette Réseau.md",
     "Projet Annuel/Explication.md",
-    "Projet Annuel/Rendu Finale.md",
     "Smartbin text.md",
     "SmartBin.md",
     "Untitled.md",
@@ -430,7 +431,6 @@
     "Linux/Linux.md",
     "Linux/Commandes.md",
     "Linux/LPIC101/Les métacaractères.md",
-    "Linux/LPIC102/etc-shadow.md",
     "LPIC101",
     "Linux",
     "Cours Brut",
