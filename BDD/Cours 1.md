@@ -61,3 +61,13 @@ Association réflexive, association reliant une entité à elle-même.
 Héritage ou spécialisation
 
 Association relative ou lien identifiant, cardinalités (1,1) cela signifie que l'identifiant est unique avec l'identifiant de la seconde table de la relation.
+
+# Vérification du MCD
+
+## Formes Normales
+La normalisation, telle que définie par M. Codd en 1970 :
+- Une entité est un 1ère FORME normale si tous ses éléments sont atomiques et s'ils dépendent de son identifiant.
+- Une entité ou relation est en 2ème FORME NORMALE si ses éléments dépendent de TOUT l'identifiant
+- Une entité est en 3ème FORME NORMALE si ses éléments dépendent UNIQUEMENT de l'identifiant
+
+## Les vérifications
