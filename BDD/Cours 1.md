@@ -71,3 +71,9 @@ La normalisation, telle que définie par M. Codd en 1970 :
 - Une entité est en 3ème FORME NORMALE si ses éléments dépendent UNIQUEMENT de l'identifiant
 
 ## Les vérifications
+- L'analyse de l'existant conduit à la constitution d'un dictionnaire de données
+- Epuration des redondances, polysèmes et synonymes
+- L'agrégation en objets et relations
+- Etablir le Modèle Conceptuel des Données
+- Simplification du Modèle Conceptuel des données
+- Vérification du Modèle Conceptuel des données
