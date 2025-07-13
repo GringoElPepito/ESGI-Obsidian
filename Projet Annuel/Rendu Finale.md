@@ -5,6 +5,9 @@
 # Méthodologie
 
 # Technique
+
+## Stockage
+RAIDZ2 type de RAID fonctionnement uniquement avec le système de fichier ZFS
 ## Réseau
 ### LAN
 Le routage est assuré par 2 routeurs cisco qui font le liens entre les pare-feux interne et le LAN.
