@@ -36,7 +36,7 @@ Dans un contexte professionnel, la supervision des systèmes d'information est e
 2. Analyse des besoins
 Le cahier des charges impose la supervision de plusieurs types de machines : un serveur Windows Active Directory, un poste Windows 10, et un serveur Debian hébergeant des services tels qu'Apache2, FTP, SSH, MariaDB et WordPress. Les besoins incluent également la mise en place de déclencheurs personnalisés, de notifications par mail, et d'une interface graphique adaptée à la visualisation rapide des métriques critiques.
 3. Architecture technique
-Tous les composants de la solution Zabbix ont été installés sur un seul serveur Rocky Linux, incluant le serveur Zabbix, le frontend web et la base de données MariaDB. Cette architecture simplifiée permet un déploiement rapide et une gestion centralisée. Les agents Zabbix sont déployés sur les machines clientes, configurés en mode actif pour remonter les métriques vers le serveur.
+
 4. Mise en œuvre technique
 La supervision repose sur des agents Zabbix actifs, configurés pour remonter automatiquement les métriques système. Un template personnalisé a été créé pour superviser les machines Linux, incluant des items pour l’usage CPU, RAM, disque, et les services critiques. Des déclencheurs ont été définis pour alerter les administrateurs en cas de surcharge CPU ou RAM (au-delà de 95% pendant plus de 5 minutes). Le dashboard Zabbix a été modifié pour afficher en priorité des graphiques représentant l’usage CPU et RAM, facilitant ainsi la prise de décision rapide.
 # Optionnel si on le fait vraiment 5. Sécurité
