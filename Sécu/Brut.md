@@ -84,4 +84,12 @@ Protocol 2
 
 Génération d'une paire de clé privé/public
 ```bash
+ssh-keygen -t rsa -b 4096
 ```
+
+Copie la clé publique sur une machine distante
+```bash
+ssh-copy-id -p 100 -f -i .ssh/id_rsa.pub debian@192.168.1.100
+```
+
+Les droits à mettre sur le dossier `.ssh` sont 0700 et 0600 sur les fichiers de clé publics
