@@ -58,6 +58,13 @@ UsePAM yes
 AllowAgentForwarding no
 AllowTcpForwarding no
 X11Forwarding no
+PermitTTY yes
+PrintMotd no
+PrintLastLog yes
+TCPKeepAlive no
+PermitUserEnvironment no
+AllowGroups sshusers
+Protocol 2
 ```
 
 - `Port` : permet de spécifier le port
@@ -67,4 +74,5 @@ X11Forwarding no
 - `MaxAuthTries` : Nombre de tentatives de connexion maximum
 - `MaxSessions` : Limite du nombre de session SSH simultanées
 - `AuthorizedKeysFile` : 
-- `X11Forwarding` : permet de déporter la configuration d'affichage sur 
+- `X11Forwarding` : permet de déporter la configuration d'affichage sur le client SSH
+- `PermitTTY` : 
