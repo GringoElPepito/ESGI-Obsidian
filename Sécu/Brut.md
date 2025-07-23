@@ -67,12 +67,21 @@ AllowGroups sshusers
 Protocol 2
 ```
 
-- `Port` : permet de spécifier le port
-- `LoginGraceTime` : le temps d'inactivité
+- `Port` : permet de spécifier le port (si exposé sur internet mettre autre chose que 22)
+- `LoginGraceTime` : le temps d'inactivité ()
 - `PermitRootLogin` : Autorise ou non la connexion de root en ssh
 - `StrictModes` : 
 - `MaxAuthTries` : Nombre de tentatives de connexion maximum
 - `MaxSessions` : Limite du nombre de session SSH simultanées
 - `AuthorizedKeysFile` : 
-- `X11Forwarding` : permet de déporter la configuration d'affichage sur le client SSH
+- `X11Forwarding` : permet de déporter la configuration d'affichage sur le client SSH (à mettre sur `no`)
 - `PermitTTY` : 
+- `PrintMotd` : Affiche le message du jour
+- `PrintLastLog` : Affiche la date de la dernière connexion
+- `TCPKeepAlive` : 
+- `AllowGroups` : Permet de spécifier un groupe dont les membres seront autorisé à se connecter (à renseigner)
+- `Protocol` : permet de spécifier la version de SSH utiliser (mettre à 2)
+
+Génération d'une paire de clé privé/public
+```bash
+```
