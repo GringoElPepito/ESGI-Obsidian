@@ -93,3 +93,15 @@ ssh-copy-id -p 100 -f -i .ssh/id_rsa.pub debian@192.168.1.100
 ```
 
 Les droits à mettre sur le dossier `.ssh` sont 0700 et 0600 sur les fichiers de clé publics
+
+```bash
+sudo firewall-cmd --list-all
+```
+
+```bash
+sudo firewall-cmd --add-port=60000/tcp
+```
+
+```bash
+sudo semanage port -a -t ssh_port_t -p tcp 60000
+```
