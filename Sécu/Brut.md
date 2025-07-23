@@ -40,3 +40,17 @@ La commande suivante permet de vérifier la conf du fichier `/etc/fstab` et de r
 sudo mount -a
 ```
 
+Il ne faut pas modifier le fichier de configuration par défaut, il faut plutôt ajouter des fichiers dans le dossier à la configuration.
+La configuration du service SSH doivent être créer dans le dossier `/etc/sshd/sshd_config.d`
+Ceci est valable pour tous les packages.
+
+```sshd_config
+Port 100
+LoginGraceTime 1m
+PermitRootLogin no
+StrictModes yes
+MaxAuthTries 3
+MaxSessions 5
+
+```
+
