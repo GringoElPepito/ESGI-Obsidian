@@ -51,6 +51,20 @@ PermitRootLogin no
 StrictModes yes
 MaxAuthTries 3
 MaxSessions 5
-
+AuhtorizedKeysFile .ssh/authorized_keys
+PasswordAuthentication yes
+PermitEmptyPasswords no
+UsePAM yes
+AllowAgentForwarding no
+AllowTcpForwarding no
+X11Forwarding no
 ```
 
+- `Port` : permet de spécifier le port
+- `LoginGraceTime` : le temps d'inactivité
+- `PermitRootLogin` : Autorise ou non la connexion de root en ssh
+- `StrictModes` : 
+- `MaxAuthTries` : Nombre de tentatives de connexion maximum
+- `MaxSessions` : Limite du nombre de session SSH simultanées
+- `AuthorizedKeysFile` : 
+- `X11Forwarding` : permet de déporter la configuration d'affichage sur 
