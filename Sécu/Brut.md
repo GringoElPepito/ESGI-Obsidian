@@ -102,6 +102,11 @@ sudo firewall-cmd --list-all
 sudo firewall-cmd --add-port=60000/tcp
 ```
 
+Activer le NAT de manière permanent
+```bash
+sudo firewall-cmd --add-masquerade --permanent
+```
+
 ```bash
 sudo semanage port -a -t ssh_port_t -p tcp 60000
 ```
