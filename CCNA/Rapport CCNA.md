@@ -1142,6 +1142,12 @@ end
 #### show ip cdp neighbor
 ![[Pasted image 20250725005230.png]]
 
+### Paris
+#### show ip route ospf
+![[Pasted image 20250725010910.png]]
+#### show ip ospf neigh
+![[Pasted image 20250725010950.png]]
+
 ## Tests
 ### Requête HTTP de PC12.64 vers www.google.fr
 ![[Pasted image 20250725004621.png]]
@@ -1149,3 +1155,5 @@ end
 ### Ping PC12.64 vers 192.168.13.250
 ![[Pasted image 20250725005957.png]]
 
+### Ping PC12.64 vers 192.168.2.1 (PC Administrateurs)
+![[Pasted image 20250725010712.png]]
