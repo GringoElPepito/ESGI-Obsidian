@@ -105,3 +105,5 @@ sudo firewall-cmd --add-port=60000/tcp
 ```bash
 sudo semanage port -a -t ssh_port_t -p tcp 60000
 ```
+
+Renommage des machines plus définition des adresses IP statiques pour toutes les machines
