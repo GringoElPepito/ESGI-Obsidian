@@ -1132,3 +1132,15 @@ no scheduler allocate
 end
 ```
 
+## Output
+
+### DEFENSE
+#### show ip route
+![[Pasted image 20250725004818.png]]
+
+#### show ip ospf neigh
+
+## Tests
+### Requête HTTP de PC12.64 vers www.google.fr
+![[Pasted image 20250725004621.png]]
+
