@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/OSI model/Couche3/HSRP.md",
+                "file": "CCNA/OSI model/Couche3/STP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HSRP"
+              "title": "STP"
             }
           },
           {
@@ -288,7 +288,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "hsrp",
+                "query": "stp",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -405,6 +405,7 @@
   },
   "active": "2f1fbb8eef8c0004",
   "lastOpenFiles": [
+    "CCNA/OSI model/Couche3/HSRP.md",
     "CCNA/OSI model/Couche3/Trunk & VTP.md",
     "Sécu/Brut.md",
     "Projet Annuel/Todo.md",
@@ -431,7 +432,6 @@
     "Docker/Brut.md",
     "Linux/LPIC101/Fichier utilisateur-groupe.md",
     "Linux/LPIC101/Gestionnaire de paquets.md",
-    "Linux/LPIC101/Répertoire et fichiers.md",
     "LPIC101",
     "Linux",
     "Cours Brut",
