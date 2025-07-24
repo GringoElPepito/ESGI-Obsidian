@@ -1137,10 +1137,15 @@ end
 ### DEFENSE
 #### show ip route
 ![[Pasted image 20250725004818.png]]
-
-#### show ip ospf neigh
+#### show ip ospf neighbor
+![[Pasted image 20250725005120.png]]
+#### show ip cdp neighbor
+![[Pasted image 20250725005230.png]]
 
 ## Tests
 ### Requête HTTP de PC12.64 vers www.google.fr
 ![[Pasted image 20250725004621.png]]
+
+### Ping PC12.64 vers 192.168.13.250
+![[Pasted image 20250725005957.png]]
 
