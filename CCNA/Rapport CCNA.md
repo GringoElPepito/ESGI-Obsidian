@@ -1148,7 +1148,25 @@ end
 #### show ip ospf neigh
 ![[Pasted image 20250725010950.png]]
 
+### LYON
+#### show ip route ospf
+![[Pasted image 20250725011132.png]]
+
+#### show ip ospf neighbor
+![[Pasted image 20250725011202.png]]
+
+### Reims
+#### show ip route ospf
+![[Pasted image 20250725011309.png]]
+
+#### show ip ospf neigh
+![[Pasted image 20250725011337.png]]
+
 ## Tests
+
+### Ping DEFENSE vers PC12.64
+![[Pasted image 20250725011523.png]]
+
 ### Requête HTTP de PC12.64 vers www.google.fr
 ![[Pasted image 20250725004621.png]]
 
