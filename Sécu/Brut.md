@@ -106,4 +106,19 @@ sudo firewall-cmd --add-port=60000/tcp
 sudo semanage port -a -t ssh_port_t -p tcp 60000
 ```
 
+Activer le routage sur Linux de manière non persistante :
+```bash
+sudo sysctl -w net.ipv4.ip_forward=1
+```
+
+Afficher tous les paramètres de Linux :
+```bash
+sudo sysctl -a
+```
+
+Actualiser la configuration system sans redémarrer :
+```bash
+sudo sysctl -f
+```
+
 Renommage des machines plus définition des adresses IP statiques pour toutes les machines
