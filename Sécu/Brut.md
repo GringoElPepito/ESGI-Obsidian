@@ -121,4 +121,9 @@ Actualiser la configuration system sans redémarrer :
 sudo sysctl -f
 ```
 
+Ajout d'une route statique de manière persistante sur Debian (à ajouter dans la configuration de l'interface voulu dans le fichier `/etc/network/interfaces`) :
+```bash
+post-up /usr/bin/ip route add 192.168.120.0/24 via 192.168.100.254
+```
+
 Renommage des machines plus définition des adresses IP statiques pour toutes les machines
