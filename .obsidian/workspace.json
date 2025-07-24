@@ -190,7 +190,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "PAT",
+                "query": "ligh",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -299,7 +299,7 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "ad62851806dc1951",
+  "active": "29aec86b1c613a6b",
   "lastOpenFiles": [
     "CCNA/Matériel/Router.md",
     "CCNA/OSI model/Couche3/STP.md",
