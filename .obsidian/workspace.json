@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/OSI model/Couche3/STP.md",
+                "file": "CCNA/Rapport CCNA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "STP"
+              "title": "Rapport CCNA"
             }
           },
           {
@@ -309,8 +309,7 @@
               "title": "Signet"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -405,6 +404,7 @@
   },
   "active": "2f1fbb8eef8c0004",
   "lastOpenFiles": [
+    "CCNA/OSI model/Couche3/STP.md",
     "attachments/Pasted image 20250725011523.png",
     "attachments/Pasted image 20250725011337.png",
     "attachments/Pasted image 20250725011309.png",
@@ -415,7 +415,6 @@
     "attachments/Pasted image 20250725010712.png",
     "attachments/Pasted image 20250725010557.png",
     "attachments/Pasted image 20250725005957.png",
-    "attachments/Pasted image 20250725005230.png",
     "CCNA/Rapport CCNA.md",
     "CCNA/OSI model/Couche3/HSRP.md",
     "CCNA/OSI model/Couche3/Trunk & VTP.md",
