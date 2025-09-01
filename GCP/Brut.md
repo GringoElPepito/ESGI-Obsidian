@@ -38,3 +38,5 @@ deployment type, type de déploiement Cloud Run :
 ![[Pasted image 20250901152137.png]]
 ![[Pasted image 20250901154402.png]]
 ![[Pasted image 20250901154812.png]]
+![[Pasted image 20250901160903.png]]
+![[Pasted image 20250901161133.png]]
