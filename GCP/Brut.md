@@ -24,3 +24,4 @@ Projects = conteneur logique central servant à contenir les ressources
 
 La facturation est appliqué par projets
 ![[Pasted image 20250901114118.png]]
+![[Pasted image 20250901114702.png]]
