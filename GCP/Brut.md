@@ -34,3 +34,5 @@ deployment type, type de déploiement Cloud Run :
 - source : basé sur un dépôt github
 - container : vous avez directement fournit une image docker (DockerHub ou Google Artifact Registry)
 - function : permettant d'écrire du code à exécuter directement
+![[Pasted image 20250901151756.png]]
+![[Pasted image 20250901152137.png]]
