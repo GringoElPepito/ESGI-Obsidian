@@ -9,3 +9,5 @@ le coût du lab est débité dés le lancement du lab
 
 ![[Pasted image 20250901103126.png]]
 
+![[Pasted image 20250901104133.png]]
+![[Pasted image 20250901104424.png]]
