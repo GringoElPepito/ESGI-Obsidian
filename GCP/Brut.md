@@ -25,3 +25,5 @@ Projects = conteneur logique central servant à contenir les ressources
 La facturation est appliqué par projets
 ![[Pasted image 20250901114118.png]]
 ![[Pasted image 20250901114702.png]]
+![[Pasted image 20250901140524.png]]
+Kubernetes est basé sur Borg qui est un orchestrateur de service
