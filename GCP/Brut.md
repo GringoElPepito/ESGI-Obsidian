@@ -27,3 +27,5 @@ La facturation est appliqué par projets
 ![[Pasted image 20250901114702.png]]
 ![[Pasted image 20250901140524.png]]
 Kubernetes est basé sur Borg qui est un orchestrateur de service
+![[Pasted image 20250901141312.png]]
+![[Pasted image 20250901141631.png]]
