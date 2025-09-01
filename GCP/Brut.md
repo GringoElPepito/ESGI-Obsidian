@@ -17,3 +17,9 @@ OPEX => coût opérationnel
 ![[Pasted image 20250901105234.png]]
 ![[Pasted image 20250901110603.png]]
 ![[Pasted image 20250901110812.png]]
+![[Pasted image 20250901113102.png]]
+Organisation
+Folders = dossier permettant de trier les projets
+Projects = conteneur logique central servant à contenir les ressources
+
+La facturation est appliqué par projet
