@@ -29,3 +29,8 @@ La facturation est appliqué par projets
 Kubernetes est basé sur Borg qui est un orchestrateur de service
 ![[Pasted image 20250901141312.png]]
 ![[Pasted image 20250901141631.png]]
+Cloud Run conteneurise automatiquement le code qui lui est transmis
+deployment type, type de déploiement Cloud Run :
+- source : basé sur un dépôt github
+- container : vous avez directement fournit une image docker (DockerHub ou Google Artifact Registry)
+- function : permettant d'écrire du code à exécuter directement
