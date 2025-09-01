@@ -15,3 +15,4 @@ CAPEX => investissement prévisionnel
 OPEX => coût opérationnel
 
 ![[Pasted image 20250901105234.png]]
+![[Pasted image 20250901110603.png]]
