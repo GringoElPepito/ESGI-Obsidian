@@ -22,4 +22,5 @@ Organisation
 Folders = dossier permettant de trier les projets
 Projects = conteneur logique central servant à contenir les ressources
 
-La facturation est appliqué par projet
+La facturation est appliqué par projets
+![[Pasted image 20250901114118.png]]
