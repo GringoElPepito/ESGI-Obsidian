@@ -42,3 +42,10 @@ deployment type, type de déploiement Cloud Run :
 ![[Pasted image 20250901161133.png]]
 ![[Pasted image 20250901163152.png]]
 ![[Pasted image 20250901163528.png]]
+![[Pasted image 20250901163725.png]]
+Warning et best practice :
+- Pas de NAT Port-Forwarding pour un serveur mail
+
+![[Pasted image 20250901164012.png]]
+![[Pasted image 20250901164249.png]]
+![[Pasted image 20250901164434.png]]
