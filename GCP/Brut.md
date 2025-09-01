@@ -11,3 +11,7 @@ le coût du lab est débité dés le lancement du lab
 
 ![[Pasted image 20250901104133.png]]
 ![[Pasted image 20250901104424.png]]
+CAPEX => investissement prévisionnel
+OPEX => coût opérationnel
+
+![[Pasted image 20250901105234.png]]
