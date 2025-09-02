@@ -61,3 +61,4 @@ Warning et best practice :
 ![[Pasted image 20250902115639.png]]
 ![[Pasted image 20250902121529.png]]
 ![[Pasted image 20250902122308.png]]
+![[Pasted image 20250902123718.png]]
