@@ -1,0 +1,22 @@
+Un projet se définit par 3 paramètres :
+- Un objectif
+- Une notion de temps (un début et une fin)
+- La manière d'y parvenir, les moyens et les étapes
+
+La typologie d'un projet se caractérise par 6 critères :
+- La nature/Finalité
+- La taille
+- La complexité
+- L'enjeu
+- L'intégration dans l'organisation
+- Le degré d'innovation
+
+L'objectif du projet doit être défini de manière SMART :
+- Spécifique
+- Mesurable (et Motivant)
+- Atteignable et Acceptable
+- Réaliste
+- Temporellement défini, avec un début et une fin
+
+Pour chaque projet, il faut définir les moyens qui sont les ressources allant être allouées au projet.
+

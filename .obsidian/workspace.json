@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/LPIC101/Gestionnaire de paquets.md",
+                "file": "Planification Projet/Révision.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gestionnaire de paquets"
+              "title": "Révision"
             }
           },
           {
@@ -415,6 +415,8 @@
   },
   "active": "861891a0a3ec616d",
   "lastOpenFiles": [
+    "Linux/LPIC101/Gestionnaire de paquets.md",
+    "Planification Projet/Révision.md",
     "Linux/LPIC101/Histoire de Linux.md",
     "Linux/LPIC101/Répertoire et fichiers.md",
     "Linux/LPIC101/Les métacaractères.md",
@@ -450,8 +452,6 @@
     "Projet Annuel/Plan.md",
     "Projet Annuel/Rendu Finale.md",
     "Projet Annuel/Projet Kasgrunt.md",
-    "Projet Annuel/DNS.md",
-    "Projet Annuel/Maquette Réseau.md",
     "Untitled.canvas",
     "LPIC101",
     "Linux",
