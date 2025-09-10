@@ -23,3 +23,8 @@ Pour chaque projet, il faut définir les moyens qui sont les ressources allant �
 Un projet se découpe, en lots, phases et tâches
 
 Un projet doit répondre à une situation non satisfaisante ou au moins perfectible, il faut que la réponse soit une situation plus satisfaisante, possible dans le futur qui sera donc l'objectif à atteindre.
+
+Un projet doit avoir pour finalité de :
+- Répondre à un besoin
+- Créer de la valeur
+- Être innovant
