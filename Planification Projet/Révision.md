@@ -20,3 +20,6 @@ L'objectif du projet doit être défini de manière SMART :
 
 Pour chaque projet, il faut définir les moyens qui sont les ressources allant être allouées au projet.
 
+Un projet se découpe, en lots, phases et tâches
+
+Un projet doit répondre à une situation non satisfaisante ou au moins perfectible
