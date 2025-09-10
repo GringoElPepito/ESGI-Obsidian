@@ -49,3 +49,34 @@ Le management d'un projet consiste à :
 
 La pure gestion du projet ne requiert pas de faire ou de savoir faire.
 
+Il existe différent référentiel portant sur la gestion de projet :
+- ISO : International System Organization
+- PMI : Référentiel de Management de projet structuré autour de 10 domaines de processus de projet
+- CMMI : Capability Maturity Model integrated
+- ITIL : Référentiel de management de la production informatique
+- Prince 2
+- CObIT : Control Objectives for Information and related Technology
+- e-SCM : maitrise des relations fournisseurs
+- ToolKit 4 Manager : Le management global
+
+Un projet possède un cycle de vie qui se représente avec le schéma suivant :
+![[Pasted image 20250911002239.png]]
+
+Les projets concernant l'informatique se structure d'une manière assez précise :
+- Exploration
+	- Analyse du besoin
+	- Etude de faisabilité/cadrage
+- Préparation
+	- Organisation du projet
+	- Structuration du projet
+	- Planification
+	- Budgétisation
+- Réalisation
+	- Conception
+	- Développement
+	- Tests/Qualification
+- Mise en service
+	- Recette Utilisateurs
+	- Clôture
+
+Les étapes/phases ont pour but d'empêcher la dérivation du projet et permet de faciliter l'avancement de celui-ci en 
