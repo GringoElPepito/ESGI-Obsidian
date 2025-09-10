@@ -28,3 +28,13 @@ Un projet doit avoir pour finalité de :
 - Répondre à un besoin
 - Créer de la valeur
 - Être innovant
+
+Chaque projet se place dans un triangle, dont les 3 extrémités sont :
+- Qualité
+- Coût
+- Délais
+
+Si un projet doit être fait rapidement et être de bonne qualité alors il sera chère
+Si un projet doit être de bonne qualité et peu chère alors il sera lent
+Si un projet doit être fait rapidement et peu chère alors la qualité sera réduite
+
