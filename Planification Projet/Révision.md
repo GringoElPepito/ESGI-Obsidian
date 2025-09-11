@@ -110,3 +110,14 @@ Pour le découpage en tâche on réalise un WBS (Work Breakdown Structure), qui 
 
 Pour l'organisation des ressources on utilise plusieurs outils :
 - RBS (Ressources Breakdown Structure)
+- Matrice RACI
+	- Réalise
+	- Approuve
+	- Consulté
+	- Informé
+Les rôles et acteurs d'un projet
+- Le couple client-fournisseur
+- L'équipe projet
+- Les utilisateurs
+
+MOA (Maitrise d'Ouvrage) représente le client -> Entité qui deviendra attributaire du produit ou service Entité qui "commande"
