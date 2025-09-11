@@ -120,4 +120,42 @@ Les rôles et acteurs d'un projet
 - L'équipe projet
 - Les utilisateurs
 
-MOA (Maitrise d'Ouvrage) représente le client -> Entité qui deviendra attributaire du produit ou service Entité qui "commande"
+MOA (Maitrise d'Ouvrage) représente le client -> Entité qui deviendra attributaire du produit ou service Entité qui "commande", il fixe les objectifs, le budget et le délai.
+Il doit :
+- Définir les besoins et les traduire sous forme d'un cahier des charges
+- Identifier les changements de l'organisation
+- Contribuer aux choix (fonctionnels, ergonomie)
+- Valider, tester et recetter
+- Prendre les décisions à chaque JALON
+- Evaluer le projet
+
+MOE (Maitrise d'œuvre) représente le fournisseur -> Personne morale chargée et responsable de la réalisation
+il doit :
+- Coordonner, synchroniser les travaux
+- Découper le projet en produits à réaliser
+- Concevoir les spécifications techniques
+- Choisir les sous-traitants
+- Contrôler les sous-traitants
+- Valider les choix techniques
+- Réceptionner les travaux
+- Intégrer les travaux réalisés
+
+Sous-traitants -> Personne morale à qui est confié une partie de la réalisation
+
+
+L'équipe de projet :
+- Directeur de projet
+- Chef de projet
+- Les producteurs du projet
+	- Concepteurs, développeurs, testeurs (fonctionnels & techniques)
+- Les supports
+	- Support technique/infrastructure
+	- Contrôleur qualité
+	- support sécurité
+
+Les instances de projet :
+- Le comité de pilotage
+- Le comité de projet
+- Les réunions de suivi, de travail
+
+![[Pasted image 20250911232022.png]]
