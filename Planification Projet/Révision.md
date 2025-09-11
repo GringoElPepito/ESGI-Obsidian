@@ -79,4 +79,34 @@ Les projets concernant l'informatique se structure d'une manière assez précise
 	- Recette Utilisateurs
 	- Clôture
 
-Les étapes/phases ont pour but d'empêcher la dérivation du projet et permet de faciliter l'avancement de celui-ci en 
+Les étapes/phases ont pour but d'empêcher la dérivation du projet et permet de faciliter l'avancement de celui-ci.
+
+Les modèles les plus utilisés sont :
+- Modèle en cascade
+- Modèle en V
+- Modèle itératif
+- Modèle des méthodes agiles itératifs et incrémental
+
+L'objectif d'un projet est généralement :
+- Abstrait, flou
+- Compliqué
+- Gros, d'approche difficile
+Le but va donc être de désassembler cette objectif en un ensemble de constituants :
+- Simples
+- mieux connus
+- Organisables
+- Petits
+- Maitrisables
+
+Découpage structurel du projet :
+- Produits -> que doit-on produire ?
+- Activités / Tâches -> Que doit-on faire, comment doit-on s'y prendre ?
+- Lots -> comment organiser le travail pour que le résultat attendu soit atteignable ?
+
+Pour le découpage en produits on réalise un PBS (Product Breakdown Structure), qui correspond à une décomposition cohérente et organisée du produit final dont la réalisation est l'objet du projet.
+On décompose le produit en éléments gérables aussi appelés livrables.
+
+Pour le découpage en tâche on réalise un WBS (Work Breakdown Structure), qui consiste en un ensemble de composant de travail pour parvenir au résultat tel que décrit dans le PBS. On peut utiliser une numérotation pour chaque activité pour facilité la lecture et l'identification de chaque activité.
+
+Pour l'organisation des ressources on utilise plusieurs outils :
+- RBS (Ressources Breakdown Structure)
