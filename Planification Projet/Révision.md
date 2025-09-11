@@ -159,3 +159,42 @@ Les instances de projet :
 - Les réunions de suivi, de travail
 
 ![[Pasted image 20250911232022.png]]
+
+Un risque est un problème potentiel ou une menace pouvant perturber le projet.
+
+Voici les étapes de la gestion des risques :
+- Identifier
+- Prioriser
+- Prévenir
+- Suivre
+
+Identification des risques :
+- Clarifier et valider les objectifs
+	- Fiche de définition de projet
+	- Cahier des charges
+	- Des attendus/livrables
+	- Qui fait quoi
+- Clarifier les ressources 
+	- Humaines
+	- Locaux et matérielles
+	- Financières
+	- Temporelles
+- Les types de menaces qui pèsent sur les ressources
+	- Technologies, matériaux, milieu
+		- Sécurité, milieu
+			- Accident, mise en danger
+			- Sécurité matériel ou données
+			- Environnement, pollution
+		- Juridique
+			- Clause dangereuse ou impossible à satisfaire
+	- Financement
+		- Budget sous estimé
+		- Arrivée d'un concurrent sur le marché
+		- Recette arrivée trop tard (trésorerie)
+		- Rentabilité : satisfaction financeur
+
+
+Pour mesurer un risque on met en corrélation la gravité d'un risque avec la probabilité que celui-ci se produise.
+
+Méthodes d'analyse :
+- 
