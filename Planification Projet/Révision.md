@@ -197,4 +197,6 @@ Identification des risques :
 Pour mesurer un risque on met en corrélation la gravité d'un risque avec la probabilité que celui-ci se produise.
 
 Méthodes d'analyse :
-- 
+- Diagramme ishikawa (Cause-effet)
+- 5 pourquoi
+- Arbres de causes
