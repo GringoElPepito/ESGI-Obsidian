@@ -41,7 +41,7 @@ sudo mount -a
 ```
 
 Il ne faut pas modifier le fichier de configuration par défaut, il faut plutôt ajouter des fichiers dans le dossier à la configuration.
-La configuration du service SSH doivent être créer dans le dossier `/etc/sshd/sshd_config.d`
+La configuration du service SSH doivent être créer dans le dossier `/etc/ssh/sshd_config.d`
 Ceci est valable pour tous les packages.
 
 ```sshd_config
