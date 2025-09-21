@@ -45,7 +45,7 @@ La configuration du service SSH doivent être créer dans le dossier `/etc/sshd/
 Ceci est valable pour tous les packages.
 
 ```sshd_config
-Port 100
+Port 22
 LoginGraceTime 1m
 PermitRootLogin no
 StrictModes yes
@@ -73,12 +73,15 @@ Protocol 2
 - `StrictModes` : Vérifie les modes et propriétaires des fichiers utilisateurs et du répertoire de base de l'utilisateur avant d'accepter une connexion. Permet de limiter le risque en cas de répertoire laisser accessible par tous suite à une gestion des droits trop permissive
 - `MaxAuthTries` : Nombre de tentatives de connexion maximum
 - `MaxSessions` : Limite du nombre de session SSH simultanées
-- `AuthorizedKeysFile` : Permet de spécifier le chemin stockant les clés publiques servant à l'authentification de l'utilisateur. Le chemin peut être absolu ou relatif et peut être renseigné en utilisant des hj
+- `AuthorizedKeysFile` : Permet de spécifier le chemin stockant les clés publiques servant à l'authentification de l'utilisateur. Le chemin peut être absolu ou relatif et peut être renseigné en utilisant des jetons :
+	- `%%` est un jeton qui sera remplacé par `%`
+	- `%h` est un jeton qui sera remplacé par le répertoire de base (home directory) de l'utilisateur souhaitant se connecter
+	- `%u` est un jeton qui sera remplacé par le nom de l'utilisateur voulant se connecter.
 - `X11Forwarding` : permet de déporter la configuration d'affichage sur le client SSH (à mettre sur `no`)
-- `PermitTTY` : 
+- `PermitTTY` : Permet d'autoriser ou non l'utilisation de pseudo terminal
 - `PrintMotd` : Affiche le message du jour
 - `PrintLastLog` : Affiche la date de la dernière connexion
-- `TCPKeepAlive` : 
+- `TCPKeepAlive` : Permet d'envoyer ou non des messages de maintient de connexion, permet de détecter automatiquement si la connexion est perdue entre le serveur et le client, ce qui déclenchera un arrêt propre et notifié de la connexion, évitant ainsi que des connexions fantômes ne soient maintenues.
 - `AllowGroups` : Permet de spécifier un groupe dont les membres seront autorisé à se connecter (à renseigner)
 - `Protocol` : permet de spécifier la version de SSH utiliser (mettre à 2)
 
