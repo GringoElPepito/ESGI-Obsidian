@@ -70,10 +70,10 @@ Protocol 2
 - `Port` : permet de spécifier le port (si exposé sur internet mettre autre chose que 22)
 - `LoginGraceTime` : le temps d'inactivité ()
 - `PermitRootLogin` : Autorise ou non la connexion de root en ssh
-- `StrictModes` : 
+- `StrictModes` : Vérifie les modes et propriétaires des fichiers utilisateurs et du répertoire de base de l'utilisateur avant d'accepter une connexion. Permet de limiter le risque en cas de répertoire laisser accessible par tous suite à une gestion des droits trop permissive
 - `MaxAuthTries` : Nombre de tentatives de connexion maximum
 - `MaxSessions` : Limite du nombre de session SSH simultanées
-- `AuthorizedKeysFile` : 
+- `AuthorizedKeysFile` : Permet de spécifier le chemin stockant les clés publiques servant à l'authentification de l'utilisateur. Le chemin peut être absolu ou relatif et peut être renseigné en utilisant des hj
 - `X11Forwarding` : permet de déporter la configuration d'affichage sur le client SSH (à mettre sur `no`)
 - `PermitTTY` : 
 - `PrintMotd` : Affiche le message du jour
