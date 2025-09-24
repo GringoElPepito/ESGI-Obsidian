@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sécu/Brut.md",
+                "file": "Linux/LPIC102/Projet-Partiel.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brut"
+              "title": "Projet-Partiel"
             }
           },
           {
@@ -415,8 +415,8 @@
   },
   "active": "861891a0a3ec616d",
   "lastOpenFiles": [
-    "Sécu/TP.md",
     "Sécu/Brut.md",
+    "Sécu/TP.md",
     "Linux/Linux.md",
     "Sans titre.base",
     "CCNA/OSI model/Couche3/OSPF.md",
