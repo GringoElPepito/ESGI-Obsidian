@@ -19,10 +19,7 @@ while + (continuous or past)
 the door is locked 
 the house was sold
 
-test
-test
-test
-test
+testest
 
 ## Present perfect
 has/have gone 
