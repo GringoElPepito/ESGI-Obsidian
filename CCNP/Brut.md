@@ -22,16 +22,32 @@ Pour avoir le CCNP Entreprise il faut :
 ## Chapitre 1
 
 ### Network Device Communication
-Model OSI
+#### Model OSI
 
-| Layer   | Name         | PDU         | Description                               |
-| ------- | ------------ | ----------- | ----------------------------------------- |
-| Layer 7 | Application  | Data        | Interface for receiving and sending data  |
-| Layer 6 | Presentation | Data        | Formatting of data and encryption         |
-| Layer 5 | Session      | Transaction | Tracking of packets                       |
-| Layer 4 | Transport    | Segment     | End-to-end communication between devices  |
-| Layer 3 | Network      | Packet      | Logical addressing and routing of packets |
-| Layer 2 | Data Link    | Frame       | Hardware addressing                       |
-| Layer 1 | Physical     | Bit         | Media type and connector                  |
+| Layer   | Name         | PDU              | Description                               |
+| ------- | ------------ | ---------------- | ----------------------------------------- |
+| Layer 7 | Application  | Data             | Interface for receiving and sending data  |
+| Layer 6 | Presentation | Data             | Formatting of data and encryption         |
+| Layer 5 | Session      | Transaction/data | Tracking of packets                       |
+| Layer 4 | Transport    | Segment          | End-to-end communication between devices  |
+| Layer 3 | Network      | Packet           | Logical addressing and routing of packets |
+| Layer 2 | Data Link    | Frame            | Hardware addressing                       |
+| Layer 1 | Physical     | Bit              | Media type and connector                  |
 
-Lorsqu'une machine envoie un message, ce dernier traverse chacune des 7 couches
+Lorsqu'une machine envoie un message, ce dernier traverse chacune des 7 couches en partant de la 7 pour aller jusqu'à la 1
+
+Encapsulation consiste à convertir une unité de données de protocol (PDU) dans l'unité de données de protocol de la couche inférieur.
+
+
+#### Model TCP/IP
+
+| Layer   | Name        | PDU | Description                                                         |
+| ------- | ----------- | --- | ------------------------------------------------------------------- |
+| Layer 4 | Application |     | Réuni les couches :<br>- Application<br>- Presentation<br>- Session |
+| Layer 3 | Transport   |     |                                                                     |
+| Layer 2 | Reseau      |     |                                                                     |
+| Layer 1 |             |     |                                                                     |
+
+#### Forwarding and Collisions Domain
+
+méthode CSMA/CD permet d'écouter sur le réseau 
