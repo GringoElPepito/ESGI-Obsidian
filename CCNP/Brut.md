@@ -57,3 +57,16 @@ Type de communication :
 - Multicast -> Message transmis à plusieurs machines
 - Broadcast -> Message transmis à tout le réseau
 
+
+## Chapter 2 : Spanning tree
+
+Protocole du control plane servant à détecter et empêcher l'apparition de boucle sur le réseau. IEEE 802.1D, il existe plusieurs état de ports avec Spanning tree protocol
+
+| Port States | Description |
+| ----------- | ----------- |
+| Disabled    |             |
+| Blocking    |             |
+| Listening   |             |
+| Learning    |             |
+
+Root port
