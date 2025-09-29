@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sécu-Master/Brut.md",
+                "file": "CCNP/Brut.md",
                 "mode": "source",
                 "source": false
               },
@@ -415,8 +415,10 @@
   },
   "active": "861891a0a3ec616d",
   "lastOpenFiles": [
-    "TOEIC.md",
     "Sécu-Master/Brut.md",
+    "CCNP/Brut.md",
+    "CCNP",
+    "TOEIC.md",
     "Sécu-Master",
     "Linux/LPIC102/Projet-Partiel.md",
     "Sécu/Brut.md",
@@ -453,14 +455,12 @@
     "GCP",
     "CCNA/Rapport CCNA.md",
     "CCNA/OSI model/Couche3/STP.md",
-    "CCNA/OSI model/Couche3/HSRP.md",
     "Untitled.canvas",
     "LPIC101",
     "Linux",
     "Cours Brut",
     "Sécu",
     "Réseau Opérateur",
-    "Docker",
-    "BDD"
+    "Docker"
   ]
 }
