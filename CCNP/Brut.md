@@ -50,4 +50,10 @@ Encapsulation consiste à convertir une unité de données de protocol (PDU) dan
 
 #### Forwarding and Collisions Domain
 
-méthode CSMA/CD permet d'écouter sur le réseau 
+méthode CSMA/CD permet d'écouter sur le réseau et si aucun message n'est reçu alors la machine peut commencer à émettre
+
+Type de communication :
+- Unicast -> Message transmis à une seule machine
+- Multicast -> Message transmis à plusieurs machines
+- Broadcast -> Message transmis à tout le réseau
+
