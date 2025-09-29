@@ -70,3 +70,5 @@ Protocole du control plane servant à détecter et empêcher l'apparition de bou
 | Learning    |             |
 
 Root port
+
+Les trames BPDU (Bridge Protocol Data Unit) 
