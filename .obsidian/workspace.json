@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNP/Brut.md",
+                "file": "IA/Brut.md",
                 "mode": "source",
                 "source": false
               },
@@ -403,23 +403,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Ouvrir le sélecteur rapide": false,
       "graph:Ouvrir la vue graphique": false,
       "canvas:Créer une nouvelle toile": false,
       "daily-notes:Ouvrir la note quotidienne": false,
       "templates:Insérer le modèle": false,
       "command-palette:Ouvrir la palette de commandes": false,
-      "github-sync:Sync with Remote": false,
-      "bases:Create new base": false
+      "github-sync:Sync with Remote": false
     }
   },
   "active": "861891a0a3ec616d",
   "lastOpenFiles": [
+    "TOEIC.md",
+    "IA/Brut.md",
+    "IA",
     "Sécu-Master/Brut.md",
+    "Sécu-Master",
     "CCNP/Brut.md",
     "CCNP",
-    "TOEIC.md",
-    "Sécu-Master",
     "Linux/LPIC102/Projet-Partiel.md",
     "Sécu/Brut.md",
     "Sécu/TP.md",
@@ -454,13 +456,11 @@
     "Growth Hacking/Réponse Quizz.md",
     "GCP",
     "CCNA/Rapport CCNA.md",
-    "CCNA/OSI model/Couche3/STP.md",
     "Untitled.canvas",
     "LPIC101",
     "Linux",
     "Cours Brut",
     "Sécu",
-    "Réseau Opérateur",
-    "Docker"
+    "Réseau Opérateur"
   ]
 }
