@@ -72,3 +72,6 @@ Protocole du control plane servant à détecter et empêcher l'apparition de bou
 Root port
 
 Les trames BPDU (Bridge Protocol Data Unit) 
+
+VLAN Trunking Protocol permet la diffusion des VLANs sur différents équipements.
+Dynamic Trunking Protocol permet de négocier une liaison en trunk.
