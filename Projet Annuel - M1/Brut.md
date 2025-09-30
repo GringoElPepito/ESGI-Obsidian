@@ -8,3 +8,5 @@ Le projet est coupé en 4 phases
 	- Analyse des ressources financières, humaines et des responsabilités (RACI)
 	- Schéma de la mise en œuvre technique et définition des règles de nommage
 ![[Pasted image 20250930142432.png]]
+![[Pasted image 20250930142655.png]]
+![[Pasted image 20250930142811.png]]
