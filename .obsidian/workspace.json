@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IA/Brut.md",
+                "file": "Projet Annuel - M1/Brut.md",
                 "mode": "source",
                 "source": false
               },
@@ -415,8 +415,10 @@
   },
   "active": "861891a0a3ec616d",
   "lastOpenFiles": [
-    "TOEIC.md",
     "IA/Brut.md",
+    "Projet Annuel - M1/Brut.md",
+    "Projet Annuel - M1",
+    "TOEIC.md",
     "IA",
     "Sécu-Master/Brut.md",
     "Sécu-Master",
@@ -455,12 +457,10 @@
     "Growth Hacking/Cours 1.md",
     "Growth Hacking/Réponse Quizz.md",
     "GCP",
-    "CCNA/Rapport CCNA.md",
     "Untitled.canvas",
     "LPIC101",
     "Linux",
     "Cours Brut",
-    "Sécu",
-    "Réseau Opérateur"
+    "Sécu"
   ]
 }
