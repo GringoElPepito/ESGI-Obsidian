@@ -8,3 +8,6 @@ La technique est au service du business
 
 
 La compréhension des données
+
+but de l'ia : résolution de problème complexe en probabilité (XVIIIe siècle) engendré par gohess
+constitution de base de données à la main, Fisher à créer une base de données nommé IRIS
