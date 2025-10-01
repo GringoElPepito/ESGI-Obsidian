@@ -72,6 +72,7 @@ Protocole du control plane servant à détecter et empêcher l'apparition de bou
 
 Root port
 
+<<<<<<< HEAD
 Les trames BPDU (Bridge Protocol Data Unit) servent à avertir des changement de topologie au sein de l'architecture
 
 
@@ -80,3 +81,9 @@ Les trames BPDU (Bridge Protocol Data Unit) servent à avertir des changement de
 | Port |     |
 | ---- | --- |
 |      |     |
+=======
+Les trames BPDU (Bridge Protocol Data Unit) 
+
+VLAN Trunking Protocol permet la diffusion des VLANs sur différents équipements.
+Dynamic Trunking Protocol permet de négocier une liaison en trunk.
+>>>>>>> 50859d62d9f6ed26e30313b2a24aa96517ca6a49
