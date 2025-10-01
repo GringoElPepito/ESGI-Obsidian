@@ -60,6 +60,7 @@ Type de communication :
 
 ## Chapter 2 : Spanning tree
 
+#### STP
 Protocole du control plane servant à détecter et empêcher l'apparition de boucle sur le réseau. IEEE 802.1D, il existe plusieurs état de ports avec Spanning tree protocol
 
 | Port States | Description |
@@ -71,4 +72,11 @@ Protocole du control plane servant à détecter et empêcher l'apparition de bou
 
 Root port
 
-Les trames BPDU (Bridge Protocol Data Unit) 
+Les trames BPDU (Bridge Protocol Data Unit) servent à avertir des changement de topologie au sein de l'architecture
+
+
+#### RSTP
+
+| Port |     |
+| ---- | --- |
+|      |     |
