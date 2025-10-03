@@ -35,5 +35,15 @@
 
 ## Réseau
 - Firewall externe : OPNsense ou Juniper
+	- VIP
+	- OSPF
 - Firewall interne : Pfsense ou Palo-Alto
-- Netcore : 
+	- VIP
+	- OSPF 
+	- VPN IPSEC over GRE
+- Netcore : Cisco
+- Switch_Distrib : Cisco
+- Switch_Access : Cisco
+- VPN IPSEC over GRE
+- OSPF pour routage interne
+- VIP
