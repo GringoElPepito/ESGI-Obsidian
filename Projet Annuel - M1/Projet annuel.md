@@ -18,4 +18,13 @@
 - Automatisation : Ansible
 - Supervision/métrologie : Zabbix, Prometheus, Grafana
 - Sécurité 
+	- Firewall externe : OPNSense
+	- Firewall interne : PfSense
+	- IDS : Snort
+	- IPS : Suricata
+	- VPN Point-to-Site : WireGuard
+	- SIEM : Wazuh
+- Système
+	- AD : Windows Active Directory ou OpenLDAP
+	- DNS : ADGuard Home
 	- 
