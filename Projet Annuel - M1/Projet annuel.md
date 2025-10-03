@@ -11,6 +11,7 @@
 - Cloud -> AWS, Azure, GCP au moins 1 service déployé
 - PRA/PCA -> diagramme + liste des services critiques + procédures pas à pas
 # Choix des technologies
+## Système
 - Virtualisation -> Proxmox
 - Conteneurisation -> LXC & Kubernetes ou OpenShift
 - Stockage : Ceph et si pas possible TrueNAS
@@ -18,8 +19,6 @@
 - Automatisation : Ansible
 - Supervision/métrologie : Zabbix, Prometheus, Grafana
 - Sécurité 
-	- Firewall externe : OPNSense
-	- Firewall interne : PfSense
 	- IDS : Snort
 	- IPS : Suricata
 	- VPN Point-to-Site : WireGuard
@@ -31,3 +30,6 @@
 	- Mail 
 		- Soit Mailcow
 		- Soit Dovecot, Postfix
+
+## Réseau
+- Firewall externe : OPNsense ou Juniper
