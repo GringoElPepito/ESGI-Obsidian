@@ -42,8 +42,8 @@
 	- OSPF 
 	- VPN IPSEC over GRE
 - Netcore : Cisco
+	- VLAN
 - Switch_Distrib : Cisco
+	- VLAN
 - Switch_Access : Cisco
-- VPN IPSEC over GRE
-- OSPF pour routage interne
-- VIP
+	- VLAN
