@@ -27,9 +27,13 @@
 	- AD : Windows Active Directory ou OpenLDAP
 	- DHCP : ISC-KEA ou DHCP Windows
 	- DNS : ADGuard Home ou DNS Windows
+	- VoIP : FreePBX
+	- Messagerie : 
 	- Mail 
 		- Soit Mailcow
 		- Soit Dovecot, Postfix
 
 ## Réseau
 - Firewall externe : OPNsense ou Juniper
+- Firewall interne : Pfsense ou Palo-Alto
+- Netcore : 
