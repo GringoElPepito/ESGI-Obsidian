@@ -26,5 +26,8 @@
 	- SIEM : Wazuh
 - Système
 	- AD : Windows Active Directory ou OpenLDAP
-	- DNS : ADGuard Home
-	- 
+	- DHCP : ISC-KEA ou DHCP Windows
+	- DNS : ADGuard Home ou DNS Windows
+	- Mail 
+		- Soit Mailcow
+		- Soit Dovecot, Postfix
