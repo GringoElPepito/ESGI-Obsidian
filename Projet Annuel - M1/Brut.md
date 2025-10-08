@@ -1,4 +1,4 @@
-Le projet est coupé en 4 phases 
+  Le projet est coupé en 4 phases 
 - Etude et Conception de l'infrastructure
 	- Présentation de l'entreprise fictive
 	- Introduction de l'équipe avec les informations de contact
