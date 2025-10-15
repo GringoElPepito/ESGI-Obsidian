@@ -36,3 +36,13 @@ Mis en place d'une infra par
 - Virtualisation (VMware/Nutanix)
 - Conteneurisation (Kubernetes/OpenShift)
 
+1. Prompt -> 
+2. Tokenize Embed (Transformation du langage naturelle en nombre)-> 
+3. Prefill (plongement du nombre dans un monde vectorielle à X dimensions, calcul simple réalisable avec des GPUs optimisés pour réaliser des grandes quantités de calculs simple) -> 
+4. KV Cache | Model Weights -> 
+5. Decoding Loop (Autoregressive) -> 
+6. De-Tokenize
+
+
+
+D
