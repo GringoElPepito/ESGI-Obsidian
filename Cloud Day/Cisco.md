@@ -45,4 +45,14 @@ Mis en place d'une infra par
 
 
 
-D
+Différent Models :
+- Embedding Model
+- RAG Vector Database, FAISS, Qdrant, Weaviate
+
+Accelerated Compute Dimensioning
+Plus le Time to first token doit être court plus cela requiert une plus grande quantité de GPU
+
+Pour faire tourner un model en local
+Parametre * Precision = Graphic RAM
+8 billion * 2 Byte = 16Gb 
+
