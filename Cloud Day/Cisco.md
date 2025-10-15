@@ -11,7 +11,9 @@ Private data center 're-acceleration' mis en place d'infra IA On-premise
 400Gb/s par GPU pour une infra IA
 
 L'IA est donc directment impacté par l'infrastructure réseau sur laquelle elle repose
-Pour ce genre d'infrastructure, TCP/IP est mis de côté
+Pour ce genre d'infrastructure, TCP/IP est mis de côté pour utiliser RDMA à la place RDMA peut faire du L2 & du L3
+utilisation de paquet RCEv2 
+Rail Design
 
 Agentic Design Pattern
 
@@ -55,4 +57,8 @@ Plus le Time to first token doit être court plus cela requiert une plus grande 
 Pour faire tourner un model en local
 Parametre * Precision = Graphic RAM
 8 billion * 2 Byte = 16Gb 
+
+Le facteur limitant est la vitesse d'écriture et de lecture de la mémoire
+
+100 millions d'euros pour entrainer un model comme GPT-5 pendant 4 mois
 
