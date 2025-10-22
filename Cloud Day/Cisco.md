@@ -13,6 +13,9 @@ Private data center 're-acceleration' mis en place d'infra IA On-premise
 L'IA est donc directment impacté par l'infrastructure réseau sur laquelle elle repose
 Pour ce genre d'infrastructure, TCP/IP est mis de côté pour utiliser RDMA à la place RDMA peut faire du L2 & du L3
 utilisation de paquet RCEv2 
+
+Dynamic Load Balancing, commutation et routage par paquet et non pas par session, paquet pas forcément reçu dans l'ordre
+
 Rail Design
 
 Agentic Design Pattern

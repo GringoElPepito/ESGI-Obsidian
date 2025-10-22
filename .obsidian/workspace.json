@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud Day/Cisco.md",
+                "file": "Cloud Day/Docker.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cisco"
+              "title": "Docker"
             }
           },
           {
@@ -429,8 +429,9 @@
   },
   "active": "c908d374d9c98530",
   "lastOpenFiles": [
-    "CCNP/Brut.md",
     "Cloud Day/Cisco.md",
+    "Cloud Day/Docker.md",
+    "CCNP/Brut.md",
     "Cloud Day",
     "Projet Annuel - M1/Projet annuel.md",
     "attachments/Pasted image 20250930142811.png",
@@ -466,7 +467,6 @@
     "attachments/Pasted image 20250911232022.png",
     "attachments/Pasted image 20250911002239.png",
     "Linux/LPIC101/Gestionnaire de paquets.md",
-    "Linux/LPIC101/Histoire de Linux.md",
     "attachments/Pasted image 20250902123718.png",
     "attachments/Pasted image 20250902122308.png",
     "attachments/Pasted image 20250902121529.png",
