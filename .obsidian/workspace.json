@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Contexte.md",
+                "file": "Projet Annuel - M1/Liste Technos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Contexte"
+              "title": "Liste Technos"
             }
           },
           {
@@ -429,8 +429,9 @@
   },
   "active": "c908d374d9c98530",
   "lastOpenFiles": [
-    "Projet Annuel - M1/Projet annuel.md",
     "Projet Annuel - M1/Contexte.md",
+    "Projet Annuel - M1/Liste Technos.md",
+    "Projet Annuel - M1/Projet annuel.md",
     "CCNP/Révision.md",
     "CCNP/Brut.md",
     "Projet Annuel - M1/Brut.md",
@@ -464,7 +465,6 @@
     "CCNA/OSI model/Couche3/OSPF.md",
     "CCNA/OSI model/Couche3/Couche 3 - Réseau.md",
     "Réseau Opérateur/Brut.md",
-    "Planification Projet/Révision.md",
     "attachments/Pasted image 20250911232022.png",
     "attachments/Pasted image 20250911002239.png",
     "attachments/Pasted image 20250902123718.png",
