@@ -35,3 +35,5 @@ Qualité de l'algo
 La méthode non-supervisé sert à classer
 ![[Pasted image 20251027113559.png]]![[Pasted image 20251027115026.png]]
 ![[Pasted image 20251027120903.png]]
+![[Pasted image 20251027122758.png]]
+![[Pasted image 20251027122807.png]]
