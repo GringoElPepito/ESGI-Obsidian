@@ -13,4 +13,14 @@ but de l'ia : résolution de problème complexe en probabilité (XVIIIe siècle)
 constitution de base de données à la main, Fisher à créer une base de données nommé IRIS
 Le business conditionne la technique
 
+
+
 Création d'un modèle apparition d'erreur donc optimisation
+
+- On a vu l'histoire du machine learning
+- Tout est axé sur le besoin métier
+- Importance de la donnée
+- Les types de machines learning
+    - Supervised
+    - Unsupervised
+    - Reinforcement
