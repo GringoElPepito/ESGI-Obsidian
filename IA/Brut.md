@@ -30,3 +30,5 @@ Qualité de l'algo
     - Unsupervised
     - Reinforcement
 ![[Pasted image 20251027085304.png]]![[Pasted image 20251027092204.png]]
+![[Pasted image 20251027101636.png]]
+![[Pasted image 20251027101832.png]]
