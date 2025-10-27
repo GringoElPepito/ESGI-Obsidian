@@ -17,6 +17,8 @@ Le business conditionne la technique
 
 Création d'un modèle apparition d'erreur donc optimisation
 
+Qualité de la
+
 - On a vu l'histoire du machine learning
 - Tout est axé sur le besoin métier
 - Importance de la donnée
