@@ -51,54 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud Day/Docker.md",
+                "file": "Projet Annuel - M1/Liste Technos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Docker"
-            }
-          },
-          {
-            "id": "7b598e465074367d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sans titre.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Sans titre"
-            }
-          },
-          {
-            "id": "2b2079b50981b045",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sans titre 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Sans titre 1"
-            }
-          },
-          {
-            "id": "7ebe53c2a5019677",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/M1/Brut.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Brut"
+              "title": "Liste Technos"
             }
           },
           {
@@ -322,7 +280,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -469,14 +427,37 @@
       "bases:Create new base": false
     }
   },
-  "active": "8255615889d72ba9",
+  "active": "c908d374d9c98530",
   "lastOpenFiles": [
-    "Linux/M1",
-    "Linux/L3/Linux.md",
-    "Linux/M1/Brut.md",
-    "Sans titre 1.md",
-    "Linux/L3",
+    "Projet Annuel - M1/Contexte.md",
+    "Projet Annuel - M1/Brut.md",
+    "CCNP/Brut.md",
+    "CCNP/Révision.md",
+    "IA/Brut.md",
     "Sans titre.md",
+    "Sans titre 1.md",
+    "Linux/M1/Brut.md",
+    "Linux/M1",
+    "Linux/L3/LPIC102/TP 12-05-2025.md",
+    "Linux/L3/LPIC102/TP politique mdp.md",
+    "Linux/L3/LPIC102/Projet-Partiel.md",
+    "Linux/L3/LPIC102/Tache automatise.md",
+    "Linux/L3/LPIC102/etc-shadow.md",
+    "Linux/L3/LPIC101/Répertoire et fichiers.md",
+    "Linux/L3/LPIC102/Brut.md",
+    "Linux/L3/LPIC101/Les métacaractères.md",
+    "Linux/L3/LPIC101/Histoire de Linux.md",
+    "Linux/L3/LPIC101/Gestionnaire de paquets.md",
+    "Linux/L3/LPIC101/Fichier utilisateur-groupe.md",
+    "Linux/L3/LPIC101/Exo.md",
+    "Linux/L3/LPIC101/Droits.md",
+    "Linux/L3/LPIC101/Cours 1.md",
+    "Linux/L3/LPIC102",
+    "Linux/L3/LPIC101",
+    "Linux/L3/Linux.md",
+    "Linux/L3/Commandes.md",
+    "Linux/L3",
+    "Cloud Day/Docker.md",
     "attachments/Pasted image 20251027122807.png",
     "attachments/Pasted image 20251027122758.png",
     "attachments/Pasted image 20251027120903.png",
@@ -487,36 +468,13 @@
     "attachments/Pasted image 20251027092204.png",
     "attachments/Pasted image 20251027085304.png",
     "Projet Annuel - M1/Liste Technos.md",
-    "CCNP/Révision.md",
-    "Cloud Day/Docker.md",
-    "Projet Annuel - M1/Contexte.md",
-    "Cloud Day/Cisco.md",
-    "CCNP/Brut.md",
     "Cloud Day",
-    "Projet Annuel - M1/Projet annuel.md",
     "attachments/Pasted image 20250930142811.png",
-    "Projet Annuel - M1/Brut.md",
     "Projet Annuel - M1",
-    "Projet Annuel - Bachelor 3/Todo.md",
-    "Projet Annuel - Bachelor 3/Rendu Finale.md",
-    "Projet Annuel - Bachelor 3/Rendu 4.md",
-    "Projet Annuel - Bachelor 3/Projet Kasgrunt.md",
-    "Projet Annuel - Bachelor 3/Plan.md",
-    "Projet Annuel - Bachelor 3/Oral - Diapo.md",
-    "Projet Annuel - Bachelor 3/Maquette Réseau.md",
-    "Projet Annuel - Bachelor 3/Explication.md",
-    "Projet Annuel - Bachelor 3/DNS.md",
     "Projet Annuel - Bachelor 3",
-    "IA/Brut.md",
     "IA",
-    "Sécu-Master/Brut.md",
     "CCNP",
-    "TOEIC.md",
     "Sécu-Master",
-    "Linux/L3/LPIC102/Projet-Partiel.md",
-    "Sans titre.base",
-    "GCP",
-    "Untitled.canvas",
-    "LPIC101"
+    "Untitled.canvas"
   ]
 }
