@@ -50,3 +50,4 @@ La commande `kill` permet de tuer un processus, en rajoutant l'option `-9` perme
 # Réseau
 
 L'interface réseau de loopback permet la communication entre les services 
+Sous Ubuntu le service permettant de gérer le réseau est `netplan`
