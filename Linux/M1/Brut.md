@@ -108,3 +108,20 @@ Le Port Knocking est une méthode permettant d'activer dynamiquement un service 
 `tcptraceroute` permet de donné la route empruntée comme si on avait fait un `curl`
 
 Il est possible d'enregistrer statiquement certaine route même si cette route utilise la passerelle par défaut, de cette manière si l'on veut changer la route par défaut pour en tester une nouvelle on va pouvoir maintenir les routes pour certaines destination
+
+## Gestion de route
+Ajouter une route  non-persistante dynamiquement :
+```bash
+ip route add IP/CIDR gw GATEWAY
+```
+
+Supprimer une route persistante dynamiquement :
+```bash
+ip route del IP/CIDR gw GATEWAY
+```
+
+## Scan de port
+`nmap` permet de scanner des ports
+
+## Capture de paquets
+`tcpdump` permet de capturer les paquets entrants.
