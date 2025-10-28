@@ -82,3 +82,10 @@ network:
 ```
 
 Sur debian 
+
+Les fichiers utiles :
+- `/etc/hosts` : associe des adresses IP à des noms d'hôtes
+- `/etc/hostname` : hostname de l'OS
+- `/etc/networks` : associe des noms d'hôtes à une adresses IP
+- `/etc/services` : nom des services tcp/udp ainsi que leur numéro de port, sert principalement pour que les automates puissent configurer automatiquement le pare-feu pour faire fonctionner le service.
+- `/etc/resolv.conf` : configuration DNS (priorisation Netplan sur Ubuntu)
