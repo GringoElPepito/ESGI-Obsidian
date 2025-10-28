@@ -107,4 +107,4 @@ Le Port Knocking est une méthode permettant d'activer dynamiquement un service 
 
 `tcptraceroute` permet de donné la route empruntée comme si on avait fait un `curl`
 
-Il est possible d'enregistrer statiquement certaine route m
+Il est possible d'enregistrer statiquement certaine route même si cette route utilise la passerelle par défaut, de cette manière si l'on veut changer la route par défaut pour en tester une nouvelle on va pouvoir maintenir les routes pour certaines destination
