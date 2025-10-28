@@ -73,6 +73,12 @@ network:
 			nameservers:
 				addresses: [127.0.0.1, 10.16.16.1, 10.16.17.1]
 		ens224:
+			dhcp4: no
+			dhcp6: no
+			addresses:
+				- 10.66.133.97/25
 		 
 		
 ```
+
+Sur debian 
