@@ -46,3 +46,4 @@ La commande `kill` permet de tuer un processus, en rajoutant l'option `-9` perme
 `wall` permet d'envoyer un message aux autres utilisateurs connectés
 
 `hostnamectl` permet d'afficher plusieurs info sur la machine comme par exemple si la machine est une VM.
+
