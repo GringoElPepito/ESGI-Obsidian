@@ -93,4 +93,8 @@ Active le mode spanning-tree portfast sur tous les ports en mode access
 spanning-tree portfast default
 ```
 
-Active le BPDU Guard sur tous les ports en mode portfast
+Active le BPDU Guard sur tous les ports en mode portfast :
+```config
+spanning-tree bpduguard enable default
+```
+
