@@ -101,4 +101,10 @@ watch ping 1.1.1.1 -c 4
 La commande `ping` permet de réaliser du Port Knocking,
 Le Port Knocking est une méthode permettant d'activer dynamiquement un service en utilisant une séquence de ping précise.
 
-`traceroute` permet de
+`traceroute` permet de voir la route empruntée pour atteindre une destination réseau.
+
+`mtr` est une version améliorer de `traceroute` permettant de tester en continu la route empruntée pour atteindre une destination réseau.
+
+`tcptraceroute` permet de donné la route empruntée comme si on avait fait un `curl`
+
+Il est possible d'enregistrer statiquement certaine route m
