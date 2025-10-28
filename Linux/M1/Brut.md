@@ -26,7 +26,7 @@ elles affichent plusieurs informations comme
 On peut utiliser `top` ou `htop`, cependant `ps` permet d'avoir une visualisation beaucoup plus poussés de vos processus.
 
 TTY = console local
-PTS = Terminal virutelle
+PTS = Terminal virtuelle
 
 Options de `ps` :
 - `-a` permet d'afficher les processus des autres utilisateurs
@@ -35,4 +35,14 @@ Options de `ps` :
 
 La commande `kill` permet de tuer un processus, en rajoutant l'option `-9` permet de tuer tous les processus de la même famille que le processus spécifié
 
-# 
+# Regarder le temps d'activité de la machine
+
+`uptime` permet de voir le temps écoulé depuis le dernier démarrage de la machine
+
+# Regarder les utilisateurs connectés
+
+`who` permet de lister tous les utilisateurs actuellement connectés
+
+`wall` permet d'envoyer un message aux autres utilisateurs connectés
+
+`hostnamectl` permet d'afficher plusieurs info sur la machine comme par exemple si la machine est une VM.
