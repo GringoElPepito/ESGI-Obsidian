@@ -89,3 +89,16 @@ Les fichiers utiles :
 - `/etc/networks` : associe des noms d'hôtes à une adresses IP
 - `/etc/services` : nom des services tcp/udp ainsi que leur numéro de port, sert principalement pour que les automates puissent configurer automatiquement le pare-feu pour faire fonctionner le service.
 - `/etc/resolv.conf` : configuration DNS (priorisation Netplan sur Ubuntu)
+
+`arp`
+
+`watch` permet de lancer en boucle une commande,
+La commande suivante va lancer un ping de 4 paquets vers l'IP 1.1.1.1 toutes les 2 secondes
+```bash
+watch ping 1.1.1.1 -c 4
+```
+
+La commande `ping` permet de réaliser du Port Knocking,
+Le Port Knocking est une méthode permettant d'activer dynamiquement un service en utilisant une séquence de ping précise.
+
+`traceroute` permet de
