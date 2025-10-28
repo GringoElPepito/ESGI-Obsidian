@@ -51,3 +51,23 @@ La commande `kill` permet de tuer un processus, en rajoutant l'option `-9` perme
 
 L'interface réseau de loopback permet la communication entre les services 
 Sous Ubuntu le service permettant de gérer le réseau est `netplan`
+Un fichier de configuration `netplan` est généré lors de l'installation de la VM Ubuntu
+`/etc/netplan/99-netcfg-vmware.yaml` :
+```YAML
+network:
+	version: 2
+	renderer: networkd
+	ethernets:
+		ens192:
+			dhcp4: no
+			dhcp6: no
+			addresses:
+				- 10.66.131.97/25
+			routes:
+				- to: default
+				  via: 10.66.131.1
+				- to: 192.168.252.0/24
+				  via: 10.66.131.1
+				- to: 
+		
+```
