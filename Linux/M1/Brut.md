@@ -47,3 +47,6 @@ La commande `kill` permet de tuer un processus, en rajoutant l'option `-9` perme
 
 `hostnamectl` permet d'afficher plusieurs info sur la machine comme par exemple si la machine est une VM.
 
+# Réseau
+
+L'interface réseau de loopback permet la communication entre les services 
