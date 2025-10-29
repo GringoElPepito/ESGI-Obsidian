@@ -138,6 +138,8 @@ Les deux principaux packages managers :
 - APT (Advanced Package Tool) : Utilisé par les distributions basées sur Debian, telles qu'Ubuntu
 - YUM/DNF (Yellowdog Updater Modified/Dandified YUM) : Utilisé par les distributions telles que Red Hat/Cent OS/Alma/Rocky et Fedora
 
+`apt` fourni une sortie qui n'est pas réellement exploitable via un script.
+Pour les scripts on privilégiera 
 ## Configuration des dépôts
 Pour simplifier l'installation et la mise à jour des logiciels, Linux utilise des dépôts, également appelés référentiels ou repositories. Les dépôts sont des bibliothèques en ligne qui contiennent des packages de logiciels prêts à être installés sur votre système.
 
@@ -205,9 +207,19 @@ toto ALL=(ALL) ALL
 ```
 
 
+
+
 ## Log
 Les types de logs :
 - `Syslog` : Logs système de journalisation principal dans Ubuntu
 - `Auth Logs` : Ces journaux enregistrent les informations d'authentification, y compris les tentatives de connexions réussies ou échouées
 - `Kernel Logs` : Ces logs contiennent des informations spécifiques au noyau du système
-- `Dmesg Logs` : Ces logs conti
+- `Dmesg Logs` : Ces logs contiennent les messages du noyau système au moment du démarrage. Ces messages sont générés par le noyau Linux pendant le processus de démarrage du système. La commande `dmesg` existe également qui permet d'afficher les logs du démarrage (sur RedHat, il n'a pas de fichier de lof `dmesg`, il faudra obligatoirement passer par la commande).
+- `Apache/Nginx Logs` : 
+
+
+## Brut
+Linux possède 3 Kernel :
+- Version en cours d'utilisation
+- Version précédente
+- Version qui a été installé à la création de la machine (fallback)
