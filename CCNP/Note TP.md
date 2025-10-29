@@ -34,6 +34,17 @@ name Management
 
 # Interface
 
+Activation de l'interface :
+```config
+no shutdown
+```
+
+Attribution d'une adresse IP sur une interface :
+Pour les routeurs -> uniquement faisable sur des interfaces ou sous-interfaces physiques
+Pour les switches -> uniquement faisable sur des interfaces vlan
+```config
+ip address 172.16.0.1 255.255.255.0
+```
 ## Interface de Port physique
 Entrer dans la configuration d'un port :
 ```config
@@ -48,11 +59,6 @@ interface fastEthernet0/1-24
 Entrer dans la configuration de plusieurs ports avec des numéros ne se suivants pas :
 ```config
 interface fastEthernet0/1,fastEthernet0/10,fastEthernet0/20
-```
-
-Activation du ou des ports :
-```config
-no shutdown
 ```
 
 Passage du ou des ports en mode `access` :
@@ -90,18 +96,42 @@ switchport trunk allowed vlan 10-12,50
 
 
 # STP
+
+Action du Rapid PVST+ :
+```config
+spanning-tree mode rapid-pvst
+```
+
+Passage swi en prioritaire secondaire :
+```config
+spanning-tree vlan 1,10,20,30,40,50,60,70,80,99 root secondary
+```
+
+==A réaliser sur une configuration de port **PAS CONNECTER A UN SWITCH**==
 Activation du `spanning-tree` en mode `portfast` sur un port **A réaliser dans la configuration d'un ou plusieurs ports** :
 ```config
-spanning portfast
+spanning-tree portfast
 ```
 
-Activation du `spanning-tree` en mode `portfast` sur un ou plusieurs ports en `trunk` **A réaliser dans la configuration d'un ou plusieurs ports** :
+==A réaliser sur une configuration de port **PAS CONNECTER A UN SWITCH**==
+Activation du `spanning-tree` en mode `portfast` sur un ou plusieurs ports en `trunk` :
 ```config
-spanning portfast trunk
+spanning-tree portfast trunk
 ```
 
-Désactivation du `spanning-tree` en mode `portfast` sur un ou plusieurs ports :
+==A réaliser sur une configuration de port==
+Désactivation du `spanning-tree` en mode `portfast` sur un ou plusieurs ports:
+```config
+spanning-tree portfast disable
+# ou
+no spanning-tree portfast
+```
 
+==A réaliser sur une configuration de port **PAS CONNECTER A UN SWITCH**==
+Activation de la BPDU Guard sur un ou plusieurs ports :
+```config
+spanning-tree bpduguard enable
+```
 
 # EIGRP
 Rentrer dans la configuration de EIGRP pour l'AS 1 :
