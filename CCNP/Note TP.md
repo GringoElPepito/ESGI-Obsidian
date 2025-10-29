@@ -21,6 +21,16 @@ Désactiver la résolution de nom de domaine :
 no ip domain-lookup
 ```
 
+Configuration d'une route statique par défaut en passant par la passerelle 172.16.1.1 :
+```config
+ip route 0.0.0.0 0.0.0.0 172.16.1.1
+```
+
+Configuration d'une route statique vers le réseau 172.16.0.0/24 via 172.16.1.1 avec une métrique à 1 :
+```config
+ip route 172.16.0.0 255.255.255.0 172.16.1.1 1
+```
+
 # VLAN
 Création du vlan 10 et Entrée dans la configuration du vlan 10 :
 ```config
@@ -102,7 +112,12 @@ Action du Rapid PVST+ :
 spanning-tree mode rapid-pvst
 ```
 
-Passage swi en prioritaire secondaire :
+Passage du switch en root-bridge primaire pour les vlan 1,10,30,50,70 :
+```config
+spanning-tree vlan 1,10,30,50,70 root primary
+```
+
+Passage switch en root-bridge secondaire pour les vlan 1,10,20,30,40,50,60,70,80,99 :
 ```config
 spanning-tree vlan 1,10,20,30,40,50,60,70,80,99 root secondary
 ```
@@ -133,6 +148,21 @@ Activation de la BPDU Guard sur un ou plusieurs ports :
 spanning-tree bpduguard enable
 ```
 
+# BGP
+Entrer dans la configuration de BGP pour l'AS 65001 :
+```config
+router bgp 65001
+```
+
+Définition d'un voisin BGP avec l'adresse IP 1.1.1.1 appartenant à l'AS 65003 :
+```config
+neighbor 1.1.1.1 remote-as 65003
+```
+
+Définition du réseau 192.168.0.0/ à redistribuer via BGP :
+```config
+
+```
 # EIGRP
 Rentrer dans la configuration de EIGRP pour l'AS 1 :
 ```conf
