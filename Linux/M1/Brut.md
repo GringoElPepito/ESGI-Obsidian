@@ -125,3 +125,9 @@ ip route del IP/CIDR gw GATEWAY
 
 ## Capture de paquets
 `tcpdump` permet de capturer les paquets entrants.
+
+## Debug DNS
+Solutions possibles :
+- `host` -> `host IP SERVEURDNS`
+- `dig` -> 
+- `nslookup` -> 
