@@ -11,6 +11,11 @@ Passer en mode configuration :
 configure terminal
 ```
 
+Annulation d'un commande :
+```config
+no $commande_a_annuler
+```
+
 Changer le nom d'hôte de l'équipement :
 ```config
 hostname SW1
@@ -21,21 +26,6 @@ Désactiver la résolution de nom de domaine :
 no ip domain-lookup
 ```
 
-Afficher la table de routage :
-```config
-show ip route
-```
-
-Configuration d'une route statique par défaut en passant par la passerelle 172.16.1.1 :
-```config
-ip route 0.0.0.0 0.0.0.0 172.16.1.1
-```
-
-Configuration d'une route statique vers le réseau 172.16.0.0/24 via 172.16.1.1 avec une métrique à 1 :
-```config
-ip route 172.16.0.0 255.255.255.0 172.16.1.1 1
-```
-
 Sauvegarder/Enregistrer la configuration :
 ```config
 write 
@@ -43,6 +33,36 @@ write
 write memory
 # ou 
 copy runnning-config startup-config
+```
+
+Afficher la table de routage :
+```config
+show ip route
+```
+
+Définition de l'adresse IP 172.16.1.1 en tant que passerelle par défaut :
+```config
+ip default-gateway 172.16.1.1
+```
+
+Configuration d'une route statique IPv4 par défaut en passant par la passerelle 172.16.1.1 :
+```config
+ip route 0.0.0.0 0.0.0.0 172.16.1.1
+```
+
+Configuration d'une route statique IPv4 vers le réseau 172.16.0.0/24 via 172.16.1.1 avec une métrique à 1 :
+```config
+ip route 172.16.0.0 255.255.255.0 172.16.1.1 1
+```
+
+Activation du routage IPv6 :
+```config
+ipv6 unicast-routing
+```
+
+Configuration d'une route statique IPv6 vers le réseau 2001:DB8:1:2::/64 via 2001:DB8:1:A001::2 :
+```config
+
 ```
 
 # VLAN
@@ -63,11 +83,21 @@ Activation de l'interface :
 no shutdown
 ```
 
-Attribution d'une adresse IP sur une interface :
+Attribution d'une adresse IPv4 sur une interface :
 Pour les routeurs -> uniquement faisable sur des interfaces ou sous-interfaces physiques
 Pour les switches -> uniquement faisable sur des interfaces vlan
 ```config
 ip address 172.16.0.1 255.255.255.0
+```
+
+Attribution d'une adresse IPv6 sur une interface :
+```config
+ipv6 address 2001:db8:1::1/64
+```
+
+Ajout d'une description à l'interface :
+```config
+description Ceci est une description
 ```
 ## Interface de Port physique
 Entrer dans la configuration d'un port :
@@ -122,9 +152,16 @@ Entrer dans la sous-interface 10 du port GigabitEthernet0/0 :
 interface GigabitEthernet0/0.10
 ```
 
-Définition du vlan 10 sur la sous-interface GigabitEthernet0/0.10 :
+==Le numéro de vlan peut être différent du numéro de sous-interface==
+Définition du vlan 10 sur la sous-interface :
+```config
+encapsulation dot1Q 10
+```
 
-
+Définition du vlan 90 en tant que vlan natif sur la sous-interface :
+```config
+encapsulation dot1Q 90 native
+```
 
 ## Interface VLAN
 
