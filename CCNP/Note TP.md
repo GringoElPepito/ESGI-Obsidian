@@ -21,6 +21,11 @@ Désactiver la résolution de nom de domaine :
 no ip domain-lookup
 ```
 
+Afficher la table de routage :
+```config
+show ip route
+```
+
 Configuration d'une route statique par défaut en passant par la passerelle 172.16.1.1 :
 ```config
 ip route 0.0.0.0 0.0.0.0 172.16.1.1
@@ -29,6 +34,15 @@ ip route 0.0.0.0 0.0.0.0 172.16.1.1
 Configuration d'une route statique vers le réseau 172.16.0.0/24 via 172.16.1.1 avec une métrique à 1 :
 ```config
 ip route 172.16.0.0 255.255.255.0 172.16.1.1 1
+```
+
+Sauvegarder/Enregistrer la configuration :
+```config
+write 
+# ou
+write memory
+# ou 
+copy runnning-config startup-config
 ```
 
 # VLAN
@@ -102,8 +116,22 @@ Liste des vlan autorisé par la commande suivante : 10,11,12,50
 switchport trunk allowed vlan 10-12,50
 ```
 
+## Sous-interface **Routeur Uniquement**
+Entrer dans la sous-interface 10 du port GigabitEthernet0/0 :
+```config
+interface GigabitEthernet0/0.10
+```
+
+Définition du vlan 10 sur la sous-interface GigabitEthernet0/0.10 :
+
+
+
 ## Interface VLAN
 
+Entrer dans l'interface du vlan 10 :
+```config
+interface vlan 10
+```
 
 # STP
 
@@ -149,19 +177,35 @@ spanning-tree bpduguard enable
 ```
 
 # BGP
+Afficher l'état de BGP :
+```config
+show ip bgp
+```
+
+Afficher le résumé de l'état de BGP :
+```config
+show ip bgp summary
+```
+
 Entrer dans la configuration de BGP pour l'AS 65001 :
 ```config
 router bgp 65001
 ```
 
+==Si le voisin est dans le même AS alors IBGP sinon EBGP==
 Définition d'un voisin BGP avec l'adresse IP 1.1.1.1 appartenant à l'AS 65003 :
 ```config
 neighbor 1.1.1.1 remote-as 65003
 ```
 
-Définition du réseau 192.168.0.0/ à redistribuer via BGP :
+Définition du réseau 192.168.0.0/24 à redistribuer via BGP :
 ```config
+network 192.168.0.0 mask 255.255.255.0
+```
 
+Activation de l'affichage des mis à jours des voisins BGP :
+```config
+bgp log-neighbor-changes
 ```
 # EIGRP
 Rentrer dans la configuration de EIGRP pour l'AS 1 :
