@@ -139,7 +139,7 @@ Les deux principaux packages managers :
 - YUM/DNF (Yellowdog Updater Modified/Dandified YUM) : Utilisé par les distributions telles que Red Hat/Cent OS/Alma/Rocky et Fedora
 
 `apt` fourni une sortie qui n'est pas réellement exploitable via un script.
-Pour les scripts on privilégiera 
+Pour les scripts on privilégiera `apt-get`
 ## Configuration des dépôts
 Pour simplifier l'installation et la mise à jour des logiciels, Linux utilise des dépôts, également appelés référentiels ou repositories. Les dépôts sont des bibliothèques en ligne qui contiennent des packages de logiciels prêts à être installés sur votre système.
 
@@ -215,7 +215,11 @@ Les types de logs :
 - `Auth Logs` : Ces journaux enregistrent les informations d'authentification, y compris les tentatives de connexions réussies ou échouées
 - `Kernel Logs` : Ces logs contiennent des informations spécifiques au noyau du système
 - `Dmesg Logs` : Ces logs contiennent les messages du noyau système au moment du démarrage. Ces messages sont générés par le noyau Linux pendant le processus de démarrage du système. La commande `dmesg` existe également qui permet d'afficher les logs du démarrage (sur RedHat, il n'a pas de fichier de lof `dmesg`, il faudra obligatoirement passer par la commande).
-- `Apache/Nginx Logs` : 
+- `Apache/Nginx Logs` : Si vous avez un serveur web Apache ou Nginx, les journaux de ces serveurs enregistrent les requêtes clientes.
+
+On trouve les logs dans le fichier logs dans le dossier `/var/log`
+
+`tail -f /var/log/nom_du_fichier.log` : Cette commande affiche la fin du fichier tout en affichant les informations ajoutées à celui-ci en temps réel
 
 
 ## Brut
