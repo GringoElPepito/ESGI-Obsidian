@@ -50,9 +50,14 @@ Configuration d'une route statique IPv4 par défaut en passant par la passerelle
 ip route 0.0.0.0 0.0.0.0 172.16.1.1
 ```
 
-Configuration d'une route statique IPv4 vers le réseau 172.16.0.0/24 via 172.16.1.1 avec une métrique à 1 :
+Configuration d'une route statique IPv4 vers le réseau 172.16.0.0/24 via 172.16.1.1 :
 ```config
-ip route 172.16.0.0 255.255.255.0 172.16.1.1 1
+ip route 172.16.0.0 255.255.255.0 172.16.1.1
+```
+
+Configuration d'une route statique flottante IPv4 vers le réseau 172.16.0.0/24 via 172.16.1.1 avec une métrique à 5 **La métrique est à modifier en fonction des besoins** :
+```config
+ip route 172.16.0.0 255.255.255.0 172.16.1.1 5
 ```
 
 Activation du routage IPv6 :
@@ -62,7 +67,12 @@ ipv6 unicast-routing
 
 Configuration d'une route statique IPv6 vers le réseau 2001:DB8:1:2::/64 via 2001:DB8:1:A001::2 :
 ```config
+ipv6 route 2001:DB8:1:2::/64 2001:DB8:1:A001::2
+```
 
+Configuration d'une route statique IPv6 vers le réseau 2001:DB8:1:3::/64 par l'interface S0/0/1 via 2001:DB8:1:A002::2 
+```config
+ipv6 route 2001:DB8:1:3::/64 S0/0/1 2001:DB8:1:A002::2
 ```
 
 # VLAN
@@ -212,6 +222,33 @@ Activation de la BPDU Guard sur un ou plusieurs ports :
 ```config
 spanning-tree bpduguard enable
 ```
+
+# RIP
+
+
+
+## RIPng
+Activation de RIPng :
+```config
+ipv6 router rip CISCO
+```
+
+Activation de RIPng sur l'interface GigabitEthernet0/0 :
+```config
+interface GigabitEthernet0/0
+ipv6 router rip CISCO enable
+```
+
+# OSPF
+
+## OSPFv3
+Entrer dans la configuration OSPFv3 numéro 10
+```config
+ipv6 router ospf 10
+```
+
+Activer l'OSPFv3 sur l'interface GigabitEthernet0/0 :
+
 
 # BGP
 Afficher l'état de BGP :
