@@ -25,7 +25,7 @@
 	- 4Gb RAM
 	- Disk
 		- System -> 60Go
-		- 
+		- Data -> 500Go
 
 ## Système et Com
 - [ ] Annuaire - Windows Active Directory
@@ -69,6 +69,9 @@
 
 ## Securité
 - [ ] Firewall - OPNsense
+	- Features
+		- [ ] VPN site à site -> IPSEC
+		- [ ] VPN Point à site -> OpenVPN ou WireGuard
 	- VM
 	- 2vCPU
 	- 2Gb RAM
@@ -121,5 +124,7 @@
 
 # Secondaire
 
+
 ## Sécurité
+- [ ] Sécurisation de l'AD
 - [ ] SSO - KeyCloak
