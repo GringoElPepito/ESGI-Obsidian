@@ -13,13 +13,19 @@
 		- Disk
 			- System -> 100Go
 
-## Stockage
-- [ ] TrueNAS
+## Stockage & Sauvegarde
+- [ ] Stockage - TrueNAS
 	- 4vCPU
 	- 8Gb RAM
 	- DIsk
 		- System -> 32Go
 		- Data -> Tout l'espace disque supplémentaire disponible
+- [ ] Sauvegarde - VEEAM BACKUP
+	- 2vCPU
+	- 4Gb RAM
+	- Disk
+		- System -> 60Go
+		- 
 
 ## Système et Com
 - [ ] Annuaire - Windows Active Directory
@@ -54,6 +60,12 @@
 	- Disk
 		- System -> 16Go
 		- Data -> 250Go
+- [ ] Communication - Mattermost 
+	- 1 LXC
+	- 2vCPU
+	- 1Gb RAM
+	- Disk
+		- System -> 32Go
 
 ## Securité
 - [ ] Firewall - OPNsense
@@ -84,7 +96,14 @@
 		- 1vCPU
 		- 2Gb RAM
 		- Disk
+			- System -> 16Go
 - [ ] Dashboard - Grafana
+	- Si Kubernetes -> pas de requirements
+	- Si LXC
+		- 1vCPU
+		- 2Gb RAM
+		- Disk
+			- System -> 16Go
 - [ ] SYSLOG - RSYSLOG
 	- LXC
 	- 1vCPU
