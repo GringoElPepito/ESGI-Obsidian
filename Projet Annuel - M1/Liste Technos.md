@@ -1,6 +1,11 @@
 # Prio
-## Virtu
+## Virtu & Conteneurisation
 - [ ] Virutalisation - Proxmox
+- [ ] Conteneurisation - Kubernetes
+	- 1 Master
+		- 4vCPU
+		- 16Gb RAM
+		- 
 
 ## Stockage
 - [ ] TrueNAS
