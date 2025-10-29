@@ -28,6 +28,7 @@
 		- Data -> 500Go
 
 ## Système et Com
+
 - [ ] Annuaire - Windows Active Directory
 	- 2 VM
 		- 2vCPU
@@ -60,6 +61,7 @@
 	- Disk
 		- System -> 16Go
 		- Data -> 250Go
+
 - [ ] Communication - Mattermost 
 	- 1 LXC
 	- 2vCPU
@@ -67,7 +69,15 @@
 	- Disk
 		- System -> 32Go
 
-## Securité
+- [ ] VoIP - FreePBX
+	- VM
+	- 2vCPU
+	- 2Gb RAM
+	- Disk
+		- System -> 32Go
+
+## Sécurité
+
 - [ ] Firewall - OPNsense
 	- Features
 		- [ ] VPN site à site -> IPSEC
@@ -93,6 +103,7 @@
 		- System -> 32Go
 
 ## Supervision
+
 - [ ] Collecteur - Prometheus
 	- Si Kubernetes -> pas de requirements
 	- SI LXC
@@ -100,6 +111,7 @@
 		- 2Gb RAM
 		- Disk
 			- System -> 16Go
+
 - [ ] Dashboard - Grafana
 	- Si Kubernetes -> pas de requirements
 	- Si LXC
@@ -107,6 +119,7 @@
 		- 2Gb RAM
 		- Disk
 			- System -> 16Go
+
 - [ ] SYSLOG - RSYSLOG
 	- LXC
 	- 1vCPU
@@ -123,7 +136,6 @@
 		- Data -> 100Go
 
 # Secondaire
-
 
 ## Sécurité
 - [ ] Sécurisation de l'AD
