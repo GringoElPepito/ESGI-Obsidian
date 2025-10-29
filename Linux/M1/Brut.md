@@ -225,7 +225,10 @@ On trouve les logs dans le fichier logs dans le dossier `/var/log`
 
 Rotation des logs : les logs sont des fichiers pouvant être très volumineux, il faut donc optimisé leur gestion
 
-On peut configurer la rotation des logs 
+On peut configurer la rotation des logs dans le fichier `/etc/logrotate.conf` ou dans le dossier `/etc/logrotate.d/`. Les conf s'appliquent dynamiquement
+```bash
+weekly #Toutes les semaines le dimanche à minuit
+```
 
 ## Brut
 Linux possède 3 Kernel :
