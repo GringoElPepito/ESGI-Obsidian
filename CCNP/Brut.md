@@ -99,8 +99,14 @@ spanning-tree bpduguard enable default
 ```
 
 
-
+Plus le niveau est élevé moins le niveau est critique
 Niveau de log système :
-- 7. D
+- 7. Debug
+- 6. Information
 - 5. Notification
-- 
+- 4. Warning 
+- 3. Error
+- 2. Alert
+- 1. Critical
+- 0. Emergency
+
