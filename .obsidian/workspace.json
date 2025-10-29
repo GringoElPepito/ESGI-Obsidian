@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Liste Technos.md",
+                "file": "CCNP/Note TP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Liste Technos"
+              "title": "Note TP"
             }
           },
           {
@@ -430,6 +430,7 @@
   "active": "c908d374d9c98530",
   "lastOpenFiles": [
     "CCNP/Brut.md",
+    "CCNP/Note TP.md",
     "Projet Annuel - M1/Liste Technos.md",
     "Projet Annuel - M1/Contexte.md",
     "Projet Annuel - M1/Brut.md",
@@ -458,7 +459,6 @@
     "Linux/L3/Linux.md",
     "Linux/L3/Commandes.md",
     "Linux/L3",
-    "Cloud Day/Docker.md",
     "attachments/Pasted image 20251027122807.png",
     "attachments/Pasted image 20251027122758.png",
     "attachments/Pasted image 20251027120903.png",
