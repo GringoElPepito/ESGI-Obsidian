@@ -137,3 +137,9 @@ Solutions possibles :
 Les deux principaux packages managers :
 - APT (Advanced Package Tool) : Utilisé par les distributions basées sur Debian, telles qu'Ubuntu
 - YUM/DNF (Yellowdog Updater Modified/Dandified YUM) : Utilisé par les distributions telles que Red Hat/Cent OS/Alma/Rocky et Fedora
+
+## Configuration des dépôts
+Pour simplifier l'installation et la mise à jour des logiciels, Linux utilise des dépôts, également appelés référentiels ou repositories. Les dépôts sont des bibliothèques en ligne qui contiennent des packages de logiciels prêts à être installés sur votre système.
+
+### Ubuntu/Debian
+Pour Ubuntu et Debian `/`
