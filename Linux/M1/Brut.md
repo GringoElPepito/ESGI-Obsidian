@@ -203,3 +203,11 @@ Exemple :
 ```sudo
 toto ALL=(ALL) ALL
 ```
+
+
+## Log
+Les types de logs :
+- `Syslog` : Logs système de journalisation principal dans Ubuntu
+- `Auth Logs` : Ces journaux enregistrent les informations d'authentification, y compris les tentatives de connexions réussies ou échouées
+- `Kernel Logs` : Ces logs contiennent des informations spécifiques au noyau du système
+- `Dmesg Logs` : Ces logs conti
