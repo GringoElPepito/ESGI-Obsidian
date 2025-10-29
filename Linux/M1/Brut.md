@@ -142,4 +142,24 @@ Les deux principaux packages managers :
 Pour simplifier l'installation et la mise à jour des logiciels, Linux utilise des dépôts, également appelés référentiels ou repositories. Les dépôts sont des bibliothèques en ligne qui contiennent des packages de logiciels prêts à être installés sur votre système.
 
 ### Ubuntu/Debian
-Pour Ubuntu et Debian `/`
+Pour Ubuntu et Debian, on configure les dépôts avec le fichier `/etc/apt/sources.list` ainsi que le dossier `/etc/apt/sources.list.d/` 
+```/etc/apt/sources.list
+deb https://
+```
+
+- jammy: C'est le nom de code de la version spécifique d'Ubuntu pour laquelle ce dépôt est configuré, dans ce cas "jammy" pourrait être le nom de code ''
+
+
+### RedHat
+On configure les dépôts de DNF et YUM avec le dossier `/etc/yum.repos.d/`
+
+Voici un exemple de configuration :
+```
+[rhel-9-for-x86_64-appstream-rpms]
+name = Red Hat Enterprise Linux 9 for x86_64 - AppStream (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel9/$releasever/x86_64/appstream/os
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/
+
+```
