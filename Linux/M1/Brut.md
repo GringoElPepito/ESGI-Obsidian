@@ -190,3 +190,16 @@ Liste des attributs :
 - `i` immuable -> Empêche toute modification du fichier
 - `s` 
 - `e` ext4 -> précise 
+
+### Sudo
+On spécifie les utilisateurs ayant le droit d'utiliser sudo dans le fichier `/etc/sudoers` on modifiera ce fichier uniquement avec `visudo`
+
+Voici le format :
+```sudo
+user hôte=(utilisateur_cible) commande
+```
+
+Exemple :
+```sudo
+toto ALL=(ALL) ALL
+```
