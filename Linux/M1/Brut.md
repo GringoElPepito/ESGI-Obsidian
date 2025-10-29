@@ -131,3 +131,9 @@ Solutions possibles :
 - `host` -> `host IP SERVEURDNS`
 - `dig` -> 
 - `nslookup` -> 
+
+# Gestion des paquets
+
+Les deux principaux packages managers :
+- APT (Advanced Package Tool) : Utilisé par les distributions basées sur Debian, telles qu'Ubuntu
+- YUM/DNF (Yellowdog Updater Modified/Dandified YUM) : Utilisé par les distributions telles que Red Hat/Cent OS/Alma/Rocky et Fedora
