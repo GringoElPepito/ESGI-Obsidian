@@ -178,3 +178,7 @@ Les permissions :
 
 Le Sticky Bit permet de limiter la suppression du fichier au créateur du fichier et à root.
 
+Chaque permission est représentée par un chiffre :
+- 4 -> Lecture (read)
+- 2 -> Ecriture (write)
+- 1 -> Execution (execute)
