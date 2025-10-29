@@ -223,8 +223,20 @@ Activation de la BPDU Guard sur un ou plusieurs ports :
 spanning-tree bpduguard enable
 ```
 
-# RIP
+# Routage
+==Fonctionne avec tous les protocoles de Routage **A REALISER DANS LA CONFIGURATION DU PROTOCOLE DE ROUTAGE VOULU**==
+Permet de diffuser la route par défaut :
+```config
+default-information originate
+```
 
+==Fonctionne avec tous les protocoles de Routage **A REALISER DANS LA CONFIGURATION DU PROTOCOLE DE ROUTAGE VOULU**==
+Activer la redistribution des routes récupérées via un autre protocole :
+```config
+redistribute
+```
+
+## RIP
 Entrer dans la configuration de RIP :
 ```config
 router rip
@@ -235,10 +247,22 @@ Activation de la version v2 de RIP :
 version 2
 ```
 
-Désactivation du 
+Désactivation du résumer automatique des routes :
+```config
+no auto-summary
+```
 
+Définition du réseau 192.168.1.0 :
+```config
+network 192.168.1.0
+```
 
-## RIPng
+Définition de l'interface GigabitEthernet0/0 en tant qu'interface passive :
+```config
+passive-interface GigabitEthernet0/0
+```
+
+### RIPng
 Activation de RIPng :
 ```config
 ipv6 router rip CISCO
@@ -250,8 +274,7 @@ interface GigabitEthernet0/0
 ipv6 router rip CISCO enable
 ```
 
-# OSPF
-
+## OSPF
 Entrer dans la configuration OSPFv2 numéro 10 :
 ```config
 router ospf 10
@@ -272,7 +295,7 @@ Passage de l'interface  GigabitEthernet0/0 en mode passif :
 passive-interface GigabitEthernet0/0
 ```
 
-## OSPFv3
+### OSPFv3
 Entrer dans la configuration OSPFv3 numéro 10 :
 ```config
 ipv6 router ospf 10
@@ -284,10 +307,7 @@ interface GigabitEthernet0/0
 ipv6 ospf 10 area 0
 ```
 
-
-
-
-# BGP
+## BGP
 Afficher l'état de BGP :
 ```config
 show ip bgp
@@ -318,13 +338,15 @@ Activation de l'affichage des mis à jours des voisins BGP :
 ```config
 bgp log-neighbor-changes
 ```
-# EIGRP
+## EIGRP
 Rentrer dans la configuration de EIGRP pour l'AS 1 :
 ```conf
 router eigrp 1
 ```
 
-Rentrer dans la configuration de EIGRP IPv6 :
+### EIGRPv6
+
+Rentrer dans la configuration de EIGRPv6 :
 ```config
 ipv6 router eigrp 1
 ```
