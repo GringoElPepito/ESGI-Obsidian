@@ -98,3 +98,9 @@ Active le BPDU Guard sur tous les ports en mode portfast :
 spanning-tree bpduguard enable default
 ```
 
+
+
+Niveau de log système :
+- 7. D
+- 5. Notification
+- 
