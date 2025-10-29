@@ -221,6 +221,11 @@ On trouve les logs dans le fichier logs dans le dossier `/var/log`
 
 `tail -f /var/log/nom_du_fichier.log` : Cette commande affiche la fin du fichier tout en affichant les informations ajoutées à celui-ci en temps réel
 
+`sudo grep -Ri toto /var/log/` : 
+
+Rotation des logs : les logs sont des fichiers pouvant être très volumineux, il faut donc optimisé leur gestion
+
+On peut configurer la rotation des logs 
 
 ## Brut
 Linux possède 3 Kernel :
