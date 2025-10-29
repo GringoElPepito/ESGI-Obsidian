@@ -1,6 +1,24 @@
+# Prio
+## Virtu
+- [ ] Virutalisation - Proxmox
+
+## Stockage
+- [ ] Ceph
+OU
+- [ ] TrueNAS
+
 - [ ] Annuaire - Windows Active Directory
-- [ ] SSO - KeyCloak
+
+## Securité
 - [ ] PKI - Linux
 - [ ] SYSLOG - RSYSLOG
 - [ ] SIEM - Wazuh
-- [ ] Supervision - 
+## Supervision
+- [ ] Prometheus
+- [ ] Grafana
+
+
+# Secondaire
+
+## Sécurité
+- [ ] SSO - KeyCloak
