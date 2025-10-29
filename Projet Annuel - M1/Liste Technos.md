@@ -1,14 +1,25 @@
 # Prio
 ## Virtu & Conteneurisation
 - [ ] Virutalisation - Proxmox
-- [ ] Conteneurisation - Kubernetes
-	- 1 Master
+- [ ] Conteneurisation - Kubernetes 
+	- 1 Master -> Sur Proxmox
+		- 2vCPU
+		- 8Gb RAM
+		- Disk
+			- System -> 40Go
+	- 2 Workers -> Sur Proxmox
 		- 4vCPU
 		- 16Gb RAM
-		- 
+		- Disk
+			- System -> 100Go
 
 ## Stockage
 - [ ] TrueNAS
+	- 4vCPU
+	- 8Gb RAM
+	- DIsk
+		- System -> 32Go
+		- Data -> Tout l'espace disque supplémentaire disponible
 
 ## Système et Com
 - [ ] Annuaire - Windows Active Directory
@@ -35,6 +46,14 @@
 		- 1Gb RAM
 		- Disk
 			- System -> 16Go
+
+- [ ] BDD - PostGreSQL
+	- 3 LXC
+	- 2vCPU
+	- 4Gb TAM
+	- Disk
+		- System -> 16Go
+		- Data -> 250Go
 
 ## Securité
 - [ ] Firewall - OPNsense
