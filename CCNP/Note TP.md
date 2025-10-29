@@ -21,8 +21,6 @@ Désactiver la résolution de nom de domaine :
 no ip domain-lookup
 ```
 
-
-
 # VLAN
 Création du vlan 10 et Entrée dans la configuration du vlan 10 :
 ```config
@@ -35,6 +33,8 @@ name Management
 ```
 
 # Interface
+
+## Interface de Port physique
 Entrer dans la configuration d'un port :
 ```config
 interface fastEthernet0/1
@@ -70,16 +70,39 @@ Passage du ou des ports en mode `trunk` :
 switchport mode trunk
 ```
 
+Activer l'encapsulation dot1q **uniquement pour les switches L3** :
+```config
+switchport trunk encapsulation dot1q
+```
+
 Définition du vlan 10 en vlan natif sur un ou plusieurs ports en mode  `trunk` :
 ```config
 switchport trunk native vlan 10
 ```
 
 Définition de la liste des vlan autorisés sur un ou plusieurs ports en mode `trunk`
-Vlans 10 à 20
+Liste des vlan autorisé par la commande suivante : 10,11,12,50
 ```config
-switchport trunk allowed vlan 10-20,50
+switchport trunk allowed vlan 10-12,50
 ```
+
+## Interface VLAN
+
+
+# STP
+Activation du `spanning-tree` en mode `portfast` sur un port **A réaliser dans la configuration d'un ou plusieurs ports** :
+```config
+spanning portfast
+```
+
+Activation du `spanning-tree` en mode `portfast` sur un ou plusieurs ports en `trunk` **A réaliser dans la configuration d'un ou plusieurs ports** :
+```config
+spanning portfast trunk
+```
+
+Désactivation du `spanning-tree` en mode `portfast` sur un ou plusieurs ports :
+
+
 # EIGRP
 Rentrer dans la configuration de EIGRP pour l'AS 1 :
 ```conf
