@@ -171,3 +171,10 @@ dnf search ^ansible
 
 ## Gestion des droits fichiers
 
+Les permissions :
+- Lecture (r) : Permet de lire le contenu du fichier ou du répertoire
+- Ecriture (w) : Permet de modifier le fichier ou d'ajouter, supprimer ou renommer des fichiers dans un répertoire
+- Execution (x) : Pour un fichier, permet de l'exécuter en tant que programme ou script. Pour un répertoire permet d'accéder à son contenu
+
+Le Sticky Bit permet de limiter la suppression du fichier au créateur du fichier et à root.
+
