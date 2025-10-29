@@ -12,8 +12,24 @@
 		- 2Gb RAM
 		- Disk
 			- System -> 60Go
+
 - [ ] DHCP - Windows ou Linux (ISC-KEA)
+	- Si Windows => sur VM Active Directory
+	- Si Linux
+		- 2 LXC
+		- 1vCPU
+		- 1Gb RAM
+		- Disk
+			- System -> 16Go
+
 - [ ] DNS - Windows ou Linux (ADGuard-Home)
+	- Si Windows => sur VM Active Directory
+	- Si Linux
+		- 2 LXC
+		- 1vCPU
+		- 1Gb RAM
+		- Disk
+			- System -> 16Go
 
 ## Securité
 - [ ] Firewall - OPNsense
@@ -39,6 +55,7 @@
 
 ## Supervision
 - [ ] Collecteur - Prometheus
+	- 
 - [ ] Dashboard - Grafana
 - [ ] SYSLOG - RSYSLOG
 	- LXC
