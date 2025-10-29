@@ -182,3 +182,11 @@ Chaque permission est représentée par un chiffre :
 - 4 -> Lecture (read)
 - 2 -> Ecriture (write)
 - 1 -> Execution (execute)
+
+### Attributs
+`lsattr` permet de lister les attributs d'un fichier
+Liste des attributs :
+- `a` append only -> Permet uniquement l'ajout de contenu dans le fichier en bloquant tout le reste (Suppression, modification des métadonnées, modification des droits etc...)
+- `i` immuable -> Empêche toute modification du fichier
+- `s` 
+- `e` ext4 -> précise 
