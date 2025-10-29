@@ -87,3 +87,14 @@ Les trames BPDU (Bridge Protocol Data Unit)
 VLAN Trunking Protocol permet la diffusion des VLANs sur différents équipements.
 Dynamic Trunking Protocol permet de négocier une liaison en trunk.
 >>>>>>> 50859d62d9f6ed26e30313b2a24aa96517ca6a49
+
+Active le mode spanning-tree portfast sur tous les ports en mode access
+```config
+spanning-tree portfast default
+```
+
+Active le BPDU Guard sur tous les ports en mode portfast :
+```config
+spanning-tree bpduguard enable default
+```
+
