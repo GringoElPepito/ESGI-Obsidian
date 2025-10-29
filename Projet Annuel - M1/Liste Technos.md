@@ -3,28 +3,36 @@
 - [ ] Virutalisation - Proxmox
 
 ## Stockage
-- [ ] Ceph
-OU
 - [ ] TrueNAS
 
 ## Système et Com
 - [ ] Annuaire - Windows Active Directory
-	- VM
-	- 
+	- 2 VM
+		- 2vCPU
+		- 2Gb RAM
+		- Disk
+			- System -> 60Go
 
 ## Securité
-- [ ] PKI - Linux
+- [ ] PKI CA - Linux
+- [ ] PKI CA Issuer - Linux
 - [ ] SYSLOG - RSYSLOG
+	- LXC
+	- 1vCPU
+	- 2Gb RAM
+	- Disk
+		- System -> 16Go
+		- Data -> 100Go
 - [ ] SIEM - Wazuh
 	- LXC 
 	- 2vCPU
 	- 4Gb RAM
 	- Disk
-		- Disk
+		- System -> 16 Go
+		- Data -> 100Go
 ## Supervision
 - [ ] Prometheus
 - [ ] Grafana
-
 
 # Secondaire
 
