@@ -225,6 +225,17 @@ spanning-tree bpduguard enable
 
 # RIP
 
+Entrer dans la configuration de RIP :
+```config
+router rip
+```
+
+Activation de la version v2 de RIP :
+```config
+version 2
+```
+
+Désactivation du 
 
 
 ## RIPng
@@ -241,13 +252,39 @@ ipv6 router rip CISCO enable
 
 # OSPF
 
+Entrer dans la configuration OSPFv2 numéro 10 :
+```config
+router ospf 10
+```
+
+Définition du router-id :
+```config
+router-id 1.1.1.1
+```
+
+Définition du réseau 172.16.3.0/30 dans l'area 0 :
+```config
+network 172.16.3.0 0.0.0.3 area 0
+```
+
+Passage de l'interface  GigabitEthernet0/0 en mode passif :
+```config
+passive-interface GigabitEthernet0/0
+```
+
 ## OSPFv3
-Entrer dans la configuration OSPFv3 numéro 10
+Entrer dans la configuration OSPFv3 numéro 10 :
 ```config
 ipv6 router ospf 10
 ```
 
-Activer l'OSPFv3 sur l'interface GigabitEthernet0/0 :
+Définition de l'interface GigabitEthernet0/0 dans l'area 0 d'OSPFv3 configuration numéro 10 :
+```config
+interface GigabitEthernet0/0
+ipv6 ospf 10 area 0
+```
+
+
 
 
 # BGP
