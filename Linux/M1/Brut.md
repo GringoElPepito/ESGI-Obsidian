@@ -154,7 +154,7 @@ deb https://
 On configure les dépôts de DNF et YUM avec le dossier `/etc/yum.repos.d/`
 
 Voici un exemple de configuration :
-```
+```INI
 [rhel-9-for-x86_64-appstream-rpms]
 name = Red Hat Enterprise Linux 9 for x86_64 - AppStream (RPMs)
 baseurl = https://cdn.redhat.com/content/dist/rhel9/$releasever/x86_64/appstream/os
@@ -163,3 +163,11 @@ gpgcheck = 1
 gpgkey = file:///etc/pki/
 
 ```
+
+Recherche de package fonctionne avec les regex, la commande suivante va retourner tous les packages commençant par `ansible` :
+```bash
+dnf search ^ansible
+```
+
+## Gestion des droits fichiers
+
