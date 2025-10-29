@@ -55,7 +55,11 @@
 
 ## Supervision
 - [ ] Collecteur - Prometheus
-	- 
+	- Si Kubernetes -> pas de requirements
+	- SI LXC
+		- 1vCPU
+		- 2Gb RAM
+		- Disk
 - [ ] Dashboard - Grafana
 - [ ] SYSLOG - RSYSLOG
 	- LXC
