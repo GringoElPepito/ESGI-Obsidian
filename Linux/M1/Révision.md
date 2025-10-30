@@ -38,3 +38,12 @@ Pour RedHat
 - `sslverify` -> Permet d'activer ou non la vérification du certificat du Repository
 - `gpgkey` -> Permet de préciser l'emplacement de la clé GPG permettant de vérifier la signature des paquets
 - `baseurl` -> Lien http ou https du Repository
+
+`rpm -qa` pour savoir quels paquets sont installés pour les machines fonctionnant sous une Distrib basé  sur RedHat
+
+`systemctl restart` redémarre le service
+`systemctl reload` recharge la configuration d'un service
+
+`journalctl -u` permet d'afficher les logs du service voulu
+
+`visudo` pour modifier le fichier `/etc/sudoers`, car cette commande permet de vérifier la syntaxe avant l'application des modifications sur le fichier
