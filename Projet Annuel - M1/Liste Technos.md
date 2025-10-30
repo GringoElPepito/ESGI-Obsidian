@@ -20,6 +20,7 @@
 	- DIsk
 		- System -> 32Go
 		- Data -> Tout l'espace disque supplémentaire disponible
+
 - [ ] Sauvegarde - VEEAM BACKUP
 	- 2vCPU
 	- 4Gb RAM
@@ -68,6 +69,14 @@
 	- Disk
 		- System -> 32Go
 
+- [ ] Mail - Mailcow
+	- Si Kubernetes -> pas de requirements
+	- Si VM
+		- 2vCPU
+		- 4Gb RAM
+		- Disk
+			- System -> 50Go
+
 - [ ] VoIP - FreePBX
 	- VM
 	- 2vCPU
@@ -75,11 +84,19 @@
 	- Disk
 		- System -> 32Go
 
+- [ ] Cloud - NextCloud
+	- LXC
+	- 2vCPU
+	- 2Gb RAM
+	- Disk
+		- System -> 16Go
+		- Data -> 500Go
 ## Sécurité
 - [ ] Firewall - OPNsense
 	- Features
 		- [ ] VPN site à site -> IPSEC
 		- [ ] VPN Point à site -> OpenVPN ou WireGuard
+		- [ ] IPS/IDS -> Suricata
 	- VM
 	- 2vCPU
 	- 2Gb RAM
