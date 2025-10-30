@@ -23,3 +23,18 @@ Option de `ps` :
 `tcptraceroute` -> permet d'afficher la route utilisé pour atteindre une destination via une communication TCP/IP
 
 `route add -net IP/CIDR gw GATEWAY` -> permet d'ajouter une route réseau 
+
+`route del -net IP/CIDR gw GATEWAY` -> permet de supprimer une route réseau
+
+`nmap` -> permet de vérifier les ports ouvert par une machine
+
+`tcpdump` -> permet d'afficher l'intégralité des segments entrants
+
+`apt` -> package manager de Distrib basé sur Debian
+`yum/dnf` -> package manager de Distrib basé sur RedHat
+
+Pour RedHat
+- `enabled_metada` -> Permet d'activer la récupération des métadonnées du Repository
+- `sslverify` -> Permet d'activer ou non la vérification du certificat du Repository
+- `gpgkey` -> Permet de préciser l'emplacement de la clé GPG permettant de vérifier la signature des paquets
+- `baseurl` -> Lien http ou https du Repository
