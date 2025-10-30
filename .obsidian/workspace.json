@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNP/Note TP.md",
+                "file": "Linux/M1/Révision.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Note TP"
+              "title": "Révision"
             }
           },
           {
@@ -429,16 +429,17 @@
   },
   "active": "c908d374d9c98530",
   "lastOpenFiles": [
-    "CCNP/Brut.md",
-    "CCNP/Note TP.md",
+    "Linux/M1/Brut.md",
+    "Linux/M1/Révision.md",
     "Projet Annuel - M1/Liste Technos.md",
+    "CCNP/Note TP.md",
+    "CCNP/Brut.md",
     "Projet Annuel - M1/Contexte.md",
     "Projet Annuel - M1/Brut.md",
     "CCNP/Révision.md",
     "IA/Brut.md",
     "Sans titre.md",
     "Sans titre 1.md",
-    "Linux/M1/Brut.md",
     "Linux/M1",
     "Linux/L3/LPIC102/TP 12-05-2025.md",
     "Linux/L3/LPIC102/TP politique mdp.md",
@@ -457,7 +458,6 @@
     "Linux/L3/LPIC102",
     "Linux/L3/LPIC101",
     "Linux/L3/Linux.md",
-    "Linux/L3/Commandes.md",
     "Linux/L3",
     "attachments/Pasted image 20251027122807.png",
     "attachments/Pasted image 20251027122758.png",
