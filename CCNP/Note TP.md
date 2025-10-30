@@ -233,7 +233,10 @@ default-information originate
 ==Fonctionne avec tous les protocoles de Routage **A REALISER DANS LA CONFIGURATION DU PROTOCOLE DE ROUTAGE VOULU**==
 Activer la redistribution des routes récupérées via un autre protocole :
 ```config
-redistribute
+redistribute <protocole> <AS ou numéro de configuration>
+# Exemple 
+router ospf 10 ! Entrer dans la configuration OSPF numéro 10
+redistribute bgp 65001
 ```
 
 ## RIP
