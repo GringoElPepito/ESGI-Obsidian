@@ -28,7 +28,6 @@
 		- Data -> 500Go
 
 ## Système et Com
-
 - [ ] Annuaire - Windows Active Directory
 	- 2 VM
 		- 2vCPU
@@ -77,7 +76,6 @@
 		- System -> 32Go
 
 ## Sécurité
-
 - [ ] Firewall - OPNsense
 	- Features
 		- [ ] VPN site à site -> IPSEC
@@ -103,7 +101,6 @@
 		- System -> 32Go
 
 ## Supervision
-
 - [ ] Collecteur - Prometheus
 	- Si Kubernetes -> pas de requirements
 	- SI LXC
@@ -127,6 +124,7 @@
 	- Disk
 		- System -> 16Go
 		- Data -> 100Go
+
 - [ ] SIEM - Wazuh
 	- LXC 
 	- 2vCPU
