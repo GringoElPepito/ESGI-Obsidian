@@ -91,6 +91,13 @@
 	- Disk
 		- System -> 16Go
 		- Data -> 500Go
+ - [ ] Mirroir - Rocky Linux
+	 - LXC
+	 - 1vCPU
+	 - 2Gb RAM
+	 - Disk
+		- System-> 16Go
+		- Data -> 500Go
 ## Sécurité
 - [ ] Firewall - OPNsense
 	- Features
