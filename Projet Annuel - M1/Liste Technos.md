@@ -21,7 +21,7 @@
 		- System -> 32Go
 		- Data -> Tout l'espace disque supplémentaire disponible
 
-- [ ] Sauvegarde - VEEAM BACKUP
+- [ ] Sauvegarde - Proxmox Backup Server
 	- 2vCPU
 	- 4Gb RAM
 	- Disk
@@ -57,7 +57,7 @@
 - [ ] BDD - PostGreSQL
 	- 3 LXC
 	- 2vCPU
-	- 4Gb TAM
+	- 4Gb RAM
 	- Disk
 		- System -> 16Go
 		- Data -> 250Go
