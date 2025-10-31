@@ -36,4 +36,28 @@ Livrables projets
 	- Devis
 	- GANTT
 	- 
-	  
+
+
+# RACI
+
+|                                 | Julien | Soratha | Vivien | Miguel |
+| ------------------------------- | ------ | ------- | ------ | ------ |
+| Installation Proxmox            |        |         |        |        |
+| Clusterisation Proxmox          |        |         |        |        |
+| Installation Kubernetes         |        |         |        |        |
+| Installation TrueNAS            |        |         |        |        |
+| Installation Proxmox Backup     |        |         |        |        |
+| Installation Windows AD         |        |         |        |        |
+| Installation Mattermost         |        |         |        |        |
+| Déploiement Mailcow             |        |         |        |        |
+| Installation FreePBX            |        |         |        |        |
+| Installation NextCloud          |        |         |        |        |
+| Installation Reposync           |        |         |        |        |
+| Installation Harbor             |        |         |        |        |
+| Installation Pare-feu           |        |         |        |        |
+| Installation Serveur PKI        |        |         |        |        |
+| Installation Serveur PKI Issuer |        |         |        |        |
+| Déploiement Prometheus          |        |         |        |        |
+| Déploiement Grafana             |        |         |        |        |
+| Installation RSYSLOG            |        |         |        |        |
+| Installation Wazuh              |        |         |        |        |
