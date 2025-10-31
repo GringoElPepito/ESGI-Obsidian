@@ -15,7 +15,25 @@
 
 # Objectifs
 - Création d'une infrastructure informatique supportant la production de l'entreprise Cenexi, L'infrastructure doit être
-	- Utiles, l'infrastructure doit 
+	- Utiles, l'infrastructure doit fournir l'ensemble des outils et services permettant de conduire et suivre la production en temps réel
 	- Sécurisé, penser pour garantir la confidentialité et l'intégrité des données liés à l'activité de l'entreprise
 	- Redondé, l'infrastructure ne doit pas cesser de fonctionner même en cas de panne et ne pas impacter la production de l'entreprise
+	- Tracé, l'infrastructures doit garder toutes les données relatives et la production et garantir la disponibilité de ces données même en cas d'incident majeur
+
+# Livrables
+Livrables projets
+- Systèmes de virtualisation
+- Service de gestion des utilisateurs
+- Solution de sauvegarde
+- Solutions de journalisation
+- Solutions de supervision
+- Documentation technique
+	- DAT
+	- LDD
+	- cahier des charges
+- Documentation 
+	- Facture
+	- Devis
+	- GANTT
 	- 
+	  
