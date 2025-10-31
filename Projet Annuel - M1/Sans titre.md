@@ -50,10 +50,10 @@ Livrables projets
 | Windows AD                          | A      | R       | C      |        |
 | Mattermost                          | R      |         | A      |        |
 | Mailcow                             |        |         | A      | R      |
-| FreePBX                             |        |         | R      |        |
+| FreePBX                             |        |         | R      | A      |
 | NextCloud                           |        | R       | A      |        |
 | Reposync                            |        | R       | A      |        |
-| Harbor                              |        |         |        | R      |
+| Harbor                              | A      |         |        | R      |
 | Pare-feu                            | R      |         | A      |        |
 | Serveur PKI                         | A      | I       | R      | I      |
 | Serveur PKI Issuer                  | A      | I       | R      | I      |
@@ -61,8 +61,8 @@ Livrables projets
 | Grafana                             | R      | C       | A      |        |
 | RSYSLOG                             | C      | A       | R      |        |
 | Wazuh                               | A      | C       |        | R      |
-| Conception de l'architecture Réseau | C      |         |        | R      |
-| Plan d'adressage                    | C      |         |        | R      |
+| Conception de l'architecture Réseau | C      | A       |        | R      |
+| Plan d'adressage                    | C      | A       |        | R      |
 | Configuration du switching          | R      |         |        | A      |
 | Configuration du routage            | R      |         |        | A      |
 | Configuration des pare-feu          | A      | R       |        | C      |
