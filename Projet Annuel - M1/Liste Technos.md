@@ -91,6 +91,7 @@
 	- Disk
 		- System -> 16Go
 		- Data -> 500Go
+
  - [ ] Mirroir - Rocky Linux
 	 - LXC
 	 - 1vCPU
@@ -98,6 +99,7 @@
 	 - Disk
 		- System-> 16Go
 		- Data -> 500Go
+
 - [ ] Registry - Harbor
 	- LXC
 	- 2vCPU
@@ -111,6 +113,7 @@
 		- [ ] VPN site à site -> IPSEC
 		- [ ] VPN Point à site -> OpenVPN ou WireGuard
 		- [ ] IPS/IDS -> Suricata
+		- [ ] Proxy -> 
 	- VM
 	- 2vCPU
 	- 2Gb RAM
