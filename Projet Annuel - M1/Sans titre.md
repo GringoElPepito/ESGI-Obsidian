@@ -40,24 +40,33 @@ Livrables projets
 
 # RACI
 
-|                                 | Julien | Soratha | Vivien | Miguel |
-| ------------------------------- | ------ | ------- | ------ | ------ |
-| Installation Proxmox            |        |         |        |        |
-| Clusterisation Proxmox          |        |         |        |        |
-| Installation Kubernetes         |        |         |        |        |
-| Installation TrueNAS            |        |         |        |        |
-| Installation Proxmox Backup     |        |         |        |        |
-| Installation Windows AD         |        |         |        |        |
-| Installation Mattermost         |        |         |        |        |
-| Déploiement Mailcow             |        |         |        |        |
-| Installation FreePBX            |        |         |        |        |
-| Installation NextCloud          |        |         |        |        |
-| Installation Reposync           |        |         |        |        |
-| Installation Harbor             |        |         |        |        |
-| Installation Pare-feu           |        |         |        |        |
-| Installation Serveur PKI        |        |         |        |        |
-| Installation Serveur PKI Issuer |        |         |        |        |
-| Déploiement Prometheus          |        |         |        |        |
-| Déploiement Grafana             |        |         |        |        |
-| Installation RSYSLOG            |        |         |        |        |
-| Installation Wazuh              |        |         |        |        |
+|                                     | Julien | Soratha | Vivien | Miguel |
+| ----------------------------------- | ------ | ------- | ------ | ------ |
+| Proxmox                             |        |         |        |        |
+| Clusterisation Proxmox              |        |         |        |        |
+| Kubernetes                          |        |         |        |        |
+| TrueNAS                             |        |         |        |        |
+| Proxmox Backup                      |        |         |        |        |
+| Windows AD                          |        |         |        |        |
+| Mattermost                          |        |         |        |        |
+| Mailcow                             |        |         |        |        |
+| FreePBX                             |        |         |        |        |
+| NextCloud                           |        |         |        |        |
+| Reposync                            |        |         |        |        |
+| Harbor                              |        |         |        |        |
+| Pare-feu                            |        |         |        |        |
+| Serveur PKI                         |        |         |        |        |
+| Installation Serveur PKI Issuer     |        |         |        |        |
+| Déploiement Prometheus              |        |         |        |        |
+| Déploiement Grafana                 |        |         |        |        |
+| Installation RSYSLOG                |        |         |        |        |
+| Installation Wazuh                  |        |         |        |        |
+| Conception de l'architecture Réseau |        |         |        |        |
+| Plan d'adressage                    |        |         |        |        |
+| Configuration du switching          |        |         |        |        |
+| Configuration du routage            |        |         |        |        |
+| Configuration des pare-feu          |        |         |        |        |
+| Configuration du VPN Point-to-site  |        |         |        |        |
+| Configuration du VPN site-to-site   |        |         |        |        |
+| Configuration de l'IDS/IPS          |        |         |        |        |
+| Automatisation via Ansible          |        |         |        |        |
