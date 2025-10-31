@@ -42,31 +42,31 @@ Livrables projets
 
 |                                     | Julien | Soratha | Vivien | Miguel |
 | ----------------------------------- | ------ | ------- | ------ | ------ |
-| Proxmox                             |        |         |        |        |
-| Clusterisation Proxmox              |        |         |        |        |
-| Kubernetes                          |        |         |        |        |
-| TrueNAS                             |        |         |        |        |
-| Proxmox Backup                      |        |         |        |        |
-| Windows AD                          |        |         |        |        |
-| Mattermost                          |        |         |        |        |
-| Mailcow                             |        |         |        |        |
-| FreePBX                             |        |         |        |        |
-| NextCloud                           |        |         |        |        |
-| Reposync                            |        |         |        |        |
-| Harbor                              |        |         |        |        |
-| Pare-feu                            |        |         |        |        |
-| Serveur PKI                         |        |         |        |        |
-| Installation Serveur PKI Issuer     |        |         |        |        |
-| Déploiement Prometheus              |        |         |        |        |
-| Déploiement Grafana                 |        |         |        |        |
-| Installation RSYSLOG                |        |         |        |        |
-| Installation Wazuh                  |        |         |        |        |
-| Conception de l'architecture Réseau |        |         |        |        |
-| Plan d'adressage                    |        |         |        |        |
-| Configuration du switching          |        |         |        |        |
-| Configuration du routage            |        |         |        |        |
-| Configuration des pare-feu          |        |         |        |        |
-| Configuration du VPN Point-to-site  |        |         |        |        |
-| Configuration du VPN site-to-site   |        |         |        |        |
-| Configuration de l'IDS/IPS          |        |         |        |        |
-| Automatisation via Ansible          |        |         |        |        |
+| Proxmox                             | C      | A       |        | R      |
+| Clusterisation Proxmox              | C      | A       |        | R      |
+| Kubernetes                          | R      |         |        | A      |
+| TrueNAS                             |        | A       | R      |        |
+| Proxmox Backup                      | A      | R       |        | C      |
+| Windows AD                          | A      | R       | C      |        |
+| Mattermost                          | R      |         | A      |        |
+| Mailcow                             |        |         | A      | R      |
+| FreePBX                             |        |         | R      |        |
+| NextCloud                           |        | R       | A      |        |
+| Reposync                            |        | R       | A      |        |
+| Harbor                              |        |         |        | R      |
+| Pare-feu                            | R      |         | A      |        |
+| Serveur PKI                         | A      | I       | R      | I      |
+| Serveur PKI Issuer                  | A      | I       | R      | I      |
+| Prometheus                          | C      | R       | A      |        |
+| Grafana                             | R      | C       | A      |        |
+| RSYSLOG                             | C      | A       | R      |        |
+| Wazuh                               | A      | C       |        | R      |
+| Conception de l'architecture Réseau | C      |         |        | R      |
+| Plan d'adressage                    | C      |         |        | R      |
+| Configuration du switching          | R      |         |        | A      |
+| Configuration du routage            | R      |         |        | A      |
+| Configuration des pare-feu          | A      | R       |        | C      |
+| Configuration du VPN Point-to-site  | R      | A       |        | C      |
+| Configuration du VPN site-to-site   |        | A       | R      | C      |
+| Configuration de l'IDS/IPS          | A      | R       |        |        |
+| Automatisation via Ansible          | A      |         |        | R      |
