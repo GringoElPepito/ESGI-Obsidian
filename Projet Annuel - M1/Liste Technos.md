@@ -100,7 +100,11 @@
 		- System-> 16Go
 		- Data -> 500Go
 
+<<<<<<< HEAD
 - [ ] Image Registry - Harbor
+=======
+- [ ] Registry - Harbor
+>>>>>>> 90667be5dbfd2e905d93b9f9f57519de3d3f9fe3
 	- LXC
 	- 2vCPU
 	- 4Gb RAM
@@ -113,6 +117,7 @@
 		- [ ] VPN site à site -> IPSEC
 		- [ ] VPN Point à site -> OpenVPN ou WireGuard
 		- [ ] IPS/IDS -> Suricata
+		- [ ] Proxy -> 
 	- VM
 	- 2vCPU
 	- 2Gb RAM
