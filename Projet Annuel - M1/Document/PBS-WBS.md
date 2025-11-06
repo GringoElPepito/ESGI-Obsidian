@@ -31,7 +31,8 @@ Windows Active Directory
 Windows Active Directory de Gestion
 - Installation du serveur
 - Ajouts du rôle
-- 
+- Enregistrement du serveur auprès de l'AD
+- Automatisation de l'installation et de la configuration
 DHCP -> à voir
 DNS -> à voir
 PostgreSQL 
@@ -44,6 +45,7 @@ PostgreSQL
 Mattermost
 - Installation du serveur
 - Configuration du serveur
+- Création de la base de données et des accès sur le cluster PostgreSQL
 - Ajout de l'intégration à l'Active Directory
 - Automatisation de l'installation et de la configuration
 Mailcow
