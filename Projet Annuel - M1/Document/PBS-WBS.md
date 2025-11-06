@@ -72,5 +72,28 @@ PKI CA
 - Configuration du serveur
 - Enregistrement des certificats
 - Automatisation de l'installation et de la configuration
-- 
+- Arrêt du serveur
 PKI CA Issuer
+- Installation du serveur
+- Configuration du serveur
+- Automatisation de l'installation et de la configuration
+Prometheus
+- Installation du serveur
+- Configuration du serveur
+- Configuration des exporteurs
+- Automatisation de l'installation et de la configuration
+Grafana
+- Installation du serveur
+- Configuration du serveur
+- Connexion à Prometheus
+- Automatisation de l'installation et de la configuration
+RSYSLOG
+- Installation du serveur
+- Configuration du serveur
+- Automatisation de l'installation et de la configuration
+Wazuh
+- Installation du serveur
+- Configuration du serveur
+- Récupération des logs depuis le serveur RSYSLOG
+- Configuration des règles d'alertes
+- Automatisation de l'installation et de la configuration
