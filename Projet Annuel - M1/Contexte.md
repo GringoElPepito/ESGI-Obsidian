@@ -28,4 +28,5 @@ On peut regrouper les produits de Cenexi sous 2 catéogries :
 	- sirops
 
 La pandémie de la COVID-19 a mis en lumière la criticité de tous les services liés à la santé dont l'entreprise Cenexi fait partie en tant que industriel pharmaceutique. De plus, Cenexi est une entreprise française et donc par la même occasion un acteur souverain dans le domaine de la médicamentation. Enfin, Cenexi ne se contente pas de produire ils accompagnent aussi les laboratoires et entreprises souhaitant développer leurs propres solutions pharmaceutiques. En cette qualité, Cenexi se doit de préserver la confidentialité des informations de ces clients ainsi que leurs solutions.
+Les secteurs industriels sont des secteurs 
 Il est donc absolument nécessaire pour tous les services de ce domaine d'avoir un système d'informations robuste permettant de garantir le bon déroulement de la production en toute circonstance. Cela nécessite donc de mettre l'accent sur la sécurité et la redondance du système.

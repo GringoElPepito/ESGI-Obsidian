@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Contexte.md",
+                "file": "Projet Annuel - M1/Document/Présentation Equipe Projet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Contexte"
+              "title": "Présentation Equipe Projet"
             }
           },
           {
@@ -443,6 +443,11 @@
   },
   "active": "bfb643269a2d6408",
   "lastOpenFiles": [
+    "Projet Annuel - M1/Document/Présentation Entreprise cliente.md",
+    "Projet Annuel - M1/Document/Présentation Equipe Projet.md",
+    "Projet Annuel - M1/Sans titre/Sans titre",
+    "Projet Annuel - M1/Contexte.md",
+    "Projet Annuel - M1/Document",
     "Projet Annuel - M1/Sans titre.md",
     "Projet Annuel - M1/Brut.md",
     "Projet Annuel - M1/Liste Technos.md",
@@ -450,7 +455,6 @@
     "CCNP/Note TP.md",
     "Linux/M1/Révision.md",
     "CCNP/Brut.md",
-    "Projet Annuel - M1/Contexte.md",
     "CCNP/Révision.md",
     "IA/Brut.md",
     "Sans titre.md",
@@ -468,8 +472,6 @@
     "Linux/L3/LPIC101/Histoire de Linux.md",
     "Linux/L3/LPIC101/Gestionnaire de paquets.md",
     "Linux/L3/LPIC101/Fichier utilisateur-groupe.md",
-    "Linux/L3/LPIC101/Exo.md",
-    "Linux/L3/LPIC101/Droits.md",
     "Linux/L3/LPIC102",
     "Linux/L3/LPIC101",
     "Linux/L3",
@@ -487,8 +489,6 @@
     "Projet Annuel - M1",
     "Projet Annuel - Bachelor 3",
     "IA",
-    "CCNP",
-    "Sécu-Master",
     "Untitled.canvas"
   ]
 }
