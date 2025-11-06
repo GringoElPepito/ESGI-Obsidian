@@ -4,6 +4,26 @@
     "type": "split",
     "children": [
       {
+        "id": "8e8fe966281f8310",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bfb643269a2d6408",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projet Annuel - M1/Document/PBS-WBS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "PBS-WBS"
+            }
+          }
+        ]
+      },
+      {
         "id": "25b4f0174f53c142",
         "type": "tabs",
         "children": [
@@ -57,20 +77,6 @@
               },
               "icon": "lucide-file",
               "title": "Liste Technos"
-            }
-          },
-          {
-            "id": "bfb643269a2d6408",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projet Annuel - M1/Document/Méthode Agile-SCRUM.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Méthode Agile-SCRUM"
             }
           },
           {
@@ -294,7 +300,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -412,13 +418,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Smartbin text.md",
+                "file": "Projet Annuel - M1/Document/PBS-WBS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Smartbin text"
+              "title": "Plan de PBS-WBS"
             }
           }
         ],
@@ -443,15 +449,16 @@
   },
   "active": "bfb643269a2d6408",
   "lastOpenFiles": [
-    "Projet Annuel - M1/Document/Présentation Equipe Projet.md",
+    "Projet Annuel - M1/Liste Technos.md",
+    "Projet Annuel - M1/Document/PBS-WBS.md",
     "Projet Annuel - M1/Document/Méthode Agile-SCRUM.md",
+    "Projet Annuel - M1/Document/Présentation Equipe Projet.md",
     "Projet Annuel - M1/Document/Présentation Entreprise cliente.md",
     "Projet Annuel - M1/Sans titre/Sans titre",
     "Projet Annuel - M1/Contexte.md",
     "Projet Annuel - M1/Document",
     "Projet Annuel - M1/Sans titre.md",
     "Projet Annuel - M1/Brut.md",
-    "Projet Annuel - M1/Liste Technos.md",
     "Projet Annuel - M1/Projet annuel.md",
     "CCNP/Note TP.md",
     "Linux/M1/Révision.md",
@@ -471,7 +478,6 @@
     "Linux/L3/LPIC102/Brut.md",
     "Linux/L3/LPIC101/Les métacaractères.md",
     "Linux/L3/LPIC101/Histoire de Linux.md",
-    "Linux/L3/LPIC101/Gestionnaire de paquets.md",
     "Linux/L3/LPIC102",
     "Linux/L3/LPIC101",
     "Linux/L3",
