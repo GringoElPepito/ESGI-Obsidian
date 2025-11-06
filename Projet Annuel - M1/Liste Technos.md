@@ -54,7 +54,7 @@
 		- Disk
 			- System -> 16Go
 
-- [ ] BDD - PostGreSQL
+- [ ] BDD - PostgreSQL
 	- 3 LXC
 	- 2vCPU
 	- 4Gb RAM
