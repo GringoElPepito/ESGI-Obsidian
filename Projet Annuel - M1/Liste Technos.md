@@ -91,6 +91,7 @@
 	- Disk
 		- System -> 16Go
 		- Data -> 500Go
+
  - [ ] Mirroir - Rocky Linux
 	 - LXC
 	 - 1vCPU
@@ -98,6 +99,14 @@
 	 - Disk
 		- System-> 16Go
 		- Data -> 500Go
+
+- [ ] Image Registry - Harbor
+	- LXC
+	- 2vCPU
+	- 4Gb RAM
+	- Disk
+		- System -> 16Go
+		- Data -> 200Go
 ## Sécurité
 - [ ] Firewall - OPNsense
 	- Features
