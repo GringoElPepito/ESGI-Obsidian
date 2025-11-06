@@ -39,4 +39,27 @@ PostgreSQL
 Mattermost
 - Installation du serveur
 - Configuration du serveur
-- Exposition du serveur sur 
+- Ajout de l'intégration à l'Active Directory
+- Automatisation de l'installation et de la configuration
+Mailcow
+- Installation du serveur
+- Configuration du serveur
+- Ajout de l'intégration à l'Active Directory
+- Exposition des services sur Internet
+- Automatisation de l'installation et de la configuration
+FreePBX
+- Installation du serveur
+- Configuration du serveur
+- Automatisation de la création des utilisateurs à partir de l'annuaire Active Directory
+- Exposition des services sur Internet
+- Automatisation de l'installation et de la configuration
+Repo Rocky Linux
+- Installation du serveur
+- Configuration du serveur
+- Automatisation de l'installation et de la configuration
+Harbor
+- Installation du serveur
+- Configuration du serveur
+- Automatisation de l'installation et de la configuration
+OPNsense - Virtu
+- Installation du  
