@@ -62,4 +62,15 @@ Harbor
 - Configuration du serveur
 - Automatisation de l'installation et de la configuration
 OPNsense - Virtu
-- Installation du  
+- Installation du pare-feu
+- Configuration des accès
+- Configuration de base
+- Définition des règles de pare-feu
+- Configuration du VPN Point-to-site (OpenVPN)
+PKI CA
+- Installation du serveur
+- Configuration du serveur
+- Enregistrement des certificats
+- Automatisation de l'installation et de la configuration
+- 
+PKI CA Issuer
