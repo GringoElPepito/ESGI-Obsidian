@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Document/PBS-WBS.md",
+                "file": "Projet Annuel - M1/Document/Méthode Agile-SCRUM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PBS-WBS"
+              "title": "Méthode Agile-SCRUM"
             }
           }
         ]
@@ -418,13 +418,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projet Annuel - M1/Document/PBS-WBS.md",
+                "file": "Projet Annuel - M1/Document/Méthode Agile-SCRUM.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de PBS-WBS"
+              "title": "Plan de Méthode Agile-SCRUM"
             }
           }
         ],
@@ -450,9 +450,9 @@
   "active": "bfb643269a2d6408",
   "lastOpenFiles": [
     "Projet Annuel - M1/Liste Technos.md",
-    "Projet Annuel - M1/Document/PBS-WBS.md",
     "Projet Annuel - M1/Document/Méthode Agile-SCRUM.md",
     "Projet Annuel - M1/Document/Présentation Equipe Projet.md",
+    "Projet Annuel - M1/Document/PBS-WBS.md",
     "Projet Annuel - M1/Document/Présentation Entreprise cliente.md",
     "Projet Annuel - M1/Sans titre/Sans titre",
     "Projet Annuel - M1/Contexte.md",
