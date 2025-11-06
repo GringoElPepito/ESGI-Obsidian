@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "8e8fe966281f8310",
+        "id": "25b4f0174f53c142",
         "type": "tabs",
         "children": [
           {
@@ -13,20 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Document/Méthode Agile-SCRUM.md",
+                "file": "Projet Annuel - M1/Document/PBS-WBS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Méthode Agile-SCRUM"
+              "title": "PBS-WBS"
             }
-          }
-        ]
-      },
-      {
-        "id": "25b4f0174f53c142",
-        "type": "tabs",
-        "children": [
+          },
           {
             "id": "665459d72635b068",
             "type": "leaf",
@@ -299,8 +293,7 @@
               "title": "Deploiement Azure"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -418,13 +411,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projet Annuel - M1/Document/Méthode Agile-SCRUM.md",
+                "file": "Projet Annuel - M1/Document/PBS-WBS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de Méthode Agile-SCRUM"
+              "title": "Plan de PBS-WBS"
             }
           }
         ],
@@ -449,11 +442,11 @@
   },
   "active": "bfb643269a2d6408",
   "lastOpenFiles": [
-    "Projet Annuel - M1/Liste Technos.md",
-    "Projet Annuel - M1/Document/Méthode Agile-SCRUM.md",
+    "Projet Annuel - M1/Document/Présentation Entreprise cliente.md",
     "Projet Annuel - M1/Document/Présentation Equipe Projet.md",
     "Projet Annuel - M1/Document/PBS-WBS.md",
-    "Projet Annuel - M1/Document/Présentation Entreprise cliente.md",
+    "Projet Annuel - M1/Document/Méthode Agile-SCRUM.md",
+    "Projet Annuel - M1/Liste Technos.md",
     "Projet Annuel - M1/Sans titre/Sans titre",
     "Projet Annuel - M1/Contexte.md",
     "Projet Annuel - M1/Document",

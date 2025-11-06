@@ -20,6 +20,7 @@ Proxmox Backup Server
 - Configuration des accès
 - Configuration de la sauvegarde
 - Test de sauvegarde et de restauration
+- Externalisation des sauvegardes
 - Automatisation de l'installation et de la configuration
 Windows Active Directory
 - Installation des serveurs
@@ -27,6 +28,10 @@ Windows Active Directory
 - Configuration des rôles
 - Clusterisation des serveurs
 - Automatisation de l'installation et de la configuration
+Windows Active Directory de Gestion
+- Installation du serveur
+- Ajouts du rôle
+- 
 DHCP -> à voir
 DNS -> à voir
 PostgreSQL 
