@@ -141,6 +141,7 @@ OPNsense OU Juniper -> FW Externe
 - Clusterisation des pares-feux
 - Configuration des règles de pare-feu
 - Configuration du VPN site-to-site (IPsec + VxLAN)
+- Automatisation de la configuration
 
 Pfsense OU OPNsense si Juniper en externe -> FW Interne
 - Installation des instances
@@ -148,6 +149,7 @@ Pfsense OU OPNsense si Juniper en externe -> FW Interne
 - Clusterisation des pares-feux
 - Configuration du routage LAN
 - Configuration des règles de pare-feu
+- Automatisation de la configuration
 
 NetCore 
 - Configuration des interfaces de gestion
@@ -158,6 +160,7 @@ NetCore
   - RPVST+
   - BPDU Guard
   - Port-Security
+- Automatisation de la configuration
 
 Distribution
 - Configuration des interfaces de gestion
@@ -168,7 +171,8 @@ Distribution
   - RPVST+
   - BPDU Guard
   - Port-Security
- 
+- Automatisation de la configuration
+
 Access
 - Configuration des interfaces de gestion
 - Configuration des VLANs
@@ -178,3 +182,4 @@ Access
   - RPVST+
   - BPDU Guard
   - Port-Security
+- Automatisation de la configuration
