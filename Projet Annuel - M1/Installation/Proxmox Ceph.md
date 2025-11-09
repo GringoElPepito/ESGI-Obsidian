@@ -7,3 +7,4 @@ sgdisk -n 1:0:1T /dev/sda
 - `0` -> commence la partition au premier block disponible
 - `1T` -> Taille de la partition
 - `/dev/sda` -> chemin vers le disque cible
+
