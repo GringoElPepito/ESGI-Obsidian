@@ -8,3 +8,12 @@ sgdisk -n 1:0:1T /dev/sda
 - `1T` -> Taille de la partition
 - `/dev/sda` -> chemin vers le disque cible
 
+Connection d'un disque/partition physique a une VM via un pass-through 
+```bash
+qm set 510002 -scsi2 /dev/sda2
+```
+- `qm` -> commande permettant d'intéragir avec qemu
+- `set` -> argument permettant de définir un paramètre pour une VM
+- `510002` -> id de la VM cible
+- `-scsi2` -> type de stockage à ajouter + identifiant
+- `/dev/sda2` -> chemin vers le disque/partition cible
