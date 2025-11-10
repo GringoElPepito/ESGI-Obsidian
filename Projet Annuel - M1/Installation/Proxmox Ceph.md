@@ -1,3 +1,8 @@
+Définition du quorum proxmox à 1 :
+```bash
+pvecm expected 1
+```
+
 Création de partition de disque 
 ```bash
 sgdisk -n 1:0:1T /dev/sda
