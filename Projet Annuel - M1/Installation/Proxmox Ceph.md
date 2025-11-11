@@ -22,3 +22,7 @@ qm set 510002 -scsi2 /dev/sda2
 - `510002` -> id de la VM cible
 - `-scsi2` -> type de stockage à ajouter + identifiant
 - `/dev/sda2` -> chemin vers le disque/partition cible
+
+Migration à chaud de VM Linux -> pas de perte de connexion
+Migration à chaud de VM Windows -> perte de 1 paquet
+Migration de LXC -> Perte de 1 à 3 paquets (pas possible de faire de la migration à chaud car Kernel dépendant)
