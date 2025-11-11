@@ -22,3 +22,12 @@ L'apparition de ces comportements a été très grandement favorisé par Interne
 Ces individus sont pour la plupart conscient qu'ils font du mal, cependant tant qu'ils ne sont pas révélés au grand jour cela ne les dérange pas. Ils se font par ailleurs souvent passés pour des bienfaiteurs en public. Pour ces personnes, ce type d'agissement est vital et agit comme une drogue pour eux
 
 Les profils n'apparaissent que rarement seul. les machiavéliques sont souvent psychopathe. Morten Moshagen explique ceci : “La raison en est que les deux constructions sont très similaires. Ils ne diffèrent en principe que par le fait que les machiavéliques sont plus stratégiques, c’est-à-dire qu’ils peuvent mieux contrôler leurs impulsions que les psychopathes.”
+Ces deux traits reviennent plus ou moins à la même chose : la volonté d'xploiter les autres de sang-froid, sans compassion tant que cela sert leur propre fin.
+Ces 4 profils ont tous en communs un élément, le facteur D (pour Dark). Ce facteur se retranscrit comme la tendance prononcée à rechercher son propre avantage, couplée à la volonté de passer par-dessus des cadavres si nécessaires. Ce qui est une forme particulièrement malveillante d'égoïsme.
+
+Les personnes qui ont un facteur D très développé s’abritent pour se
+justifier derrière des jugements qu’ils formulent sur les autres. Il n’est ainsi
+pas rare qu’ils affirment que tout le monde a, comme eux, son propre
+avantage en tête, ou que la plupart des gens sont des perdants, qu’il n’y a
+aucun mal à exploiter.
+
