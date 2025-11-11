@@ -26,3 +26,5 @@ qm set 510002 -scsi2 /dev/sda2
 Migration à chaud de VM Linux -> pas de perte de connexion
 Migration à chaud de VM Windows -> perte de 1 paquet
 Migration de LXC -> Perte de 1 à 3 paquets (pas possible de faire de la migration à chaud car Kernel dépendant)
+
+Failover fonctionnel mais très lent -> 5m30 pour VM Windows 10 et 4m30 pour VM Linux
