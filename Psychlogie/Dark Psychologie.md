@@ -1,3 +1,5 @@
+# Introduction
+
 La Dark Psychologie ou psychologie sombre consiste en l'art de la manipulation et du contrôle de l'esprit.
 Le but ici est de s'intéresser au comportement des personnes mal intentionnées pour s'en prémunir. On estime que 99% des individus ayant de tels comportements en sont conscientes.
 Généralement, ces derniers sont motivés par l'un ou plusieurs des motifs suivants :
@@ -31,3 +33,11 @@ pas rare qu’ils affirment que tout le monde a, comme eux, son propre
 avantage en tête, ou que la plupart des gens sont des perdants, qu’il n’y a
 aucun mal à exploiter.
 
+On retrouve aussi généralement un déficit de l'amabilité, un refus de suivre les règles et une tendance à contourner la loi.
+
+# La triade sombre
+La triade sombre est le résultat de recherches psychologiques mené dans le but de déterminer les facteurs pouvant nuire à une organisation. La triade sombre se compose de trois traits :
+- Le narcissisme
+- Le machiavélisme
+- La psychopathie subclinique
+Ces trois traits partagent en commun la volonté de faire passer leurs objectifs personnels avant le bonheur des autres. Les personnes possédant ces traits sont prêtes à exploiter, manipuler ou tromper les autres afin de progresser professionnellement ou d'obtenir des avantages dans leur vie privée.
