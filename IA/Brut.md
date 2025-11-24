@@ -42,4 +42,6 @@ Pour l'apprentissage non supervisé
 - Chacun des groupes doit être hétérogène par rapport aux autres groupes -> inertie intra-classe
 - Silhouette de Rousseuw doit être compromis 1 et -1
 
-La modélisation est 
+La modélisation est une représentation simplifié de la réalité
+
+Pour les modèles de régression, la performance du modèle se mesure avec le R²
