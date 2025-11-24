@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Installation/Ansible.md",
+                "file": "IA/Brut.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ansible"
+              "title": "Brut"
             }
           },
           {
@@ -471,10 +471,10 @@
   },
   "active": "64cd3c7873020beb",
   "lastOpenFiles": [
+    "Projet Annuel - M1/Installation/Ansible.md",
     "Sécu/Brut.md",
     "Linux/L3/LPIC102/Tache automatise.md",
     "Sans titre 2.md",
-    "Projet Annuel - M1/Installation/Ansible.md",
     "Projet Annuel - M1/Installation/Proxmox Ceph.md",
     "Psychlogie/Dark Psychologie.md",
     "Psychlogie",
