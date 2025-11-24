@@ -44,4 +44,9 @@ Pour l'apprentissage non supervisé
 
 La modélisation est une représentation simplifié de la réalité
 
-Pour les modèles de régression, la performance du modèle se mesure avec le R²
+Pour les modèles de régression, la performance du modèle se mesure avec R² (indicateur de performance). Il faut maximiser les performances et minimiser les erreurs.
+
+MSE
+RMSE
+MAE
+
