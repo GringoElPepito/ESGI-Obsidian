@@ -51,3 +51,4 @@ RMSE
 MAE
  
 ![[Pasted image 20251124084821.png]]
+![[Pasted image 20251124092243.png]]
