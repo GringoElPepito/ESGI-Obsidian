@@ -38,9 +38,9 @@ La méthode non-supervisé sert à classer
 ![[Pasted image 20251027122758.png]]
 ![[Pasted image 20251027122807.png]]
 Pour l'apprentissage non supervisé
-- Chaque groupe doit être homogène -> inertie inter-classe
-- Chacun des groupes doit être hétérogène par rapport aux autres groupes -> inertie intra-classe
-- Silhouette de Rousseuw doit être compromis 1 et -1
+- Chaque groupe doit être homogène -> inertie inter-classe plus l'inertie inter-classe est élevé plus les performances le seront
+- Chacun des groupes doit être hétérogène par rapport aux autres groupes -> inertie intra-classe plus l'inertie intra-classe est faible moins il y aura d'erreur
+- Silhouette de Rousseuw doit être compromis 1 et -1, elle permet de mesurer à la fois les performances et les erreurs
 
 La modélisation est une représentation simplifié de la réalité
 
@@ -49,4 +49,5 @@ Pour les modèles de régression, la performance du modèle se mesure avec R² (
 MSE
 RMSE
 MAE
-
+ 
+![[Pasted image 20251124084821.png]]
