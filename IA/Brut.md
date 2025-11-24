@@ -37,3 +37,9 @@ La méthode non-supervisé sert à classer
 ![[Pasted image 20251027120903.png]]
 ![[Pasted image 20251027122758.png]]
 ![[Pasted image 20251027122807.png]]
+Pour l'apprentissage non supervisé
+- Chaque groupe doit être homogène -> inertie inter-classe
+- Chacun des groupes doit être hétérogène par rapport aux autres groupes -> inertie intra-classe
+- Silhouette de Rousseuw doit être compromis 1 et -1
+
+La modélisation est 
