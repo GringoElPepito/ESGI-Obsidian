@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vmware/Introduciton à la Virtualisation et découverte de l'hyperviseur ESXi.md",
+                "file": "Projet Annuel - M1/Installation/Proxmox Ceph.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introduciton à la Virtualisation et découverte de l'hyperviseur ESXi"
+              "title": "Proxmox Ceph"
             }
           },
           {
@@ -429,8 +429,8 @@
   },
   "active": "c908d374d9c98530",
   "lastOpenFiles": [
-    "Vmware/Brut.md",
     "Vmware/Introduciton à la Virtualisation et découverte de l'hyperviseur ESXi.md",
+    "Vmware/Brut.md",
     "Projet Annuel - M1/Sans titre.md",
     "Vmware",
     "attachments/Pasted image 20251124114936.png",
