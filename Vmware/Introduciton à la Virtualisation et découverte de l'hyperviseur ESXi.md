@@ -37,3 +37,6 @@ Interface de gestion :
 
 # vCenter
 Point de gestion centralisé pour les ESXi, se présentant sous la forme d'une VM fonctionnant 
+
+# SDDC
+Software-Defined Data Center permet d'automatiser la création d'une infrastructure
