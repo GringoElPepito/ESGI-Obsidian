@@ -40,3 +40,7 @@ Point de gestion centralisé pour les ESXi, se présentant sous la forme d'une V
 
 # SDDC
 Software-Defined Data Center permet d'automatiser la création d'une infrastructure
+
+# Virtualisation VS Container
+
+
