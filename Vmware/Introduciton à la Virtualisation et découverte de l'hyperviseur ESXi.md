@@ -18,3 +18,22 @@ Avantages :
 # Virtualisation
 
 Matérielle physique de l'hyperviseur :
+- CPU (compute)
+- RAM (compute)
+- Disque (stockage)
+- Réseau
+
+Hyperviseur Type 1 -> OS permettant de directement créer et gérer des machines virtuelles
+
+Hyperviseur Type 2 -> OS permettant de faire fonctionner une application qui va pouvoir créer et gérer des machines virtuelles
+
+# ESXi
+
+Interface de gestion :
+- VMWare Host
+- SSH
+- vCenter
+- PowerCLI
+
+# vCenter
+Point de gestion centralisé pour les ESXi, se présentant sous la forme d'une VM fonctionnant 
