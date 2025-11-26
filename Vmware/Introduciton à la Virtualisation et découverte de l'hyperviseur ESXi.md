@@ -47,3 +47,11 @@ Software-Defined Data Center permet d'automatiser la création d'une infrastruct
 # Réseau
 
 Promiscuous mode -> permet de faire fonctionner le vSwitch comme un hub
+
+# Stockage
+
+Thin provisionning -> Alloue uniquement le stockage réellement utilisé par la VM
+Thick provisionning -> Réserve toute la place allouer à la VM sur le disque
+Thick provisionning :
+- Performance -> Block déjà découvert donc écriture plus rapide
+- Facilité de gestion
