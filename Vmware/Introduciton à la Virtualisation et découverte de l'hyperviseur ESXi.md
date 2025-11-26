@@ -44,3 +44,6 @@ Software-Defined Data Center permet d'automatiser la création d'une infrastruct
 # Virtualisation VS Container
 
 
+# Réseau
+
+Promiscuous mode -> permet de faire fonctionner le vSwitch comme un hub
