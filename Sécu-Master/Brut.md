@@ -70,3 +70,19 @@ Permet de lister tous les fichiers dans le working directory
 ```
 echo *
 ```
+
+# TP2
+Création d'une sous installation de debian :
+```bash
+deboot-strap sid
+```
+
+Ajout d'un nouveau chemin dans la variable d'environnement `PATH` :
+```bash
+export PATH=$PATH:/root
+```
+
+Les ressources physiques sont partagés avec le système chroot
+
+Possible de gérer lancement de processus dans environnement chroot avec init.d
+
