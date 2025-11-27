@@ -17,3 +17,5 @@ Les principes :
 - 
 
 ## Méthode SCRUM
+
+Backlog produit -> backlog du sprint -> sprint de 1 à 4 semaines avec des mêlées quotidiennes -> produit partiel potentiellement utilisable
