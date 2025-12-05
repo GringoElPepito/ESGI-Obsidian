@@ -50,6 +50,18 @@
             }
           },
           {
+            "id": "0a45f404dd0d9562",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.6"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.10.6"
+            }
+          },
+          {
             "id": "665459d72635b068",
             "type": "leaf",
             "state": {
@@ -322,7 +334,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -469,7 +481,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "64cd3c7873020beb",
+  "active": "0a45f404dd0d9562",
   "lastOpenFiles": [
     "Vmware/Introduciton à la Virtualisation et découverte de l'hyperviseur ESXi.md",
     "Vmware/Brut.md",
