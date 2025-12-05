@@ -50,18 +50,6 @@
             }
           },
           {
-            "id": "0a45f404dd0d9562",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.10.6"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.10.6"
-            }
-          },
-          {
             "id": "665459d72635b068",
             "type": "leaf",
             "state": {
@@ -481,7 +469,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "0a45f404dd0d9562",
+  "active": "665459d72635b068",
   "lastOpenFiles": [
     "Vmware/Introduciton à la Virtualisation et découverte de l'hyperviseur ESXi.md",
     "Vmware/Brut.md",
