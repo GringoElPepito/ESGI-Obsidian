@@ -37,4 +37,4 @@ Les secteurs industriels sont des secteurs
 Il est donc absolument nécessaire pour tous les services de ce domaine d'avoir un système d'informations robuste permettant de garantir le bon déroulement de la production en toute circonstance. Cela nécessite donc de mettre l'accent sur la sécurité et la redondance du système.
 ### 2. Contexte du projet
 
-
+Pour répondre aux nouvelles exigences en matière de sécurité de l'information définis par la CNIL, l'ANSSI et la RGPD, Cenexi doit revoir l'intégralité de son système d'informations 
