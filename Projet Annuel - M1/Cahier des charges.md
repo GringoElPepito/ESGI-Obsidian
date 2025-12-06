@@ -37,4 +37,7 @@ Les secteurs industriels sont des secteurs
 Il est donc absolument nécessaire pour tous les services de ce domaine d'avoir un système d'informations robuste permettant de garantir le bon déroulement de la production en toute circonstance. Cela nécessite donc de mettre l'accent sur la sécurité et la redondance du système.
 ### 2. Contexte du projet
 
-Pour répondre aux nouvelles exigences en matière de sécurité de l'information définis par la CNIL, l'ANSSI et la RGPD, Cenexi doit revoir l'intégralité de son système d'informations 
+Pour répondre aux nouvelles exigences en matière de sécurité de l'information définis par la CNIL, l'ANSSI et la RGPD, Cenexi doit revoir l'intégralité du système d'informations du site de Fontenay-sous-Bois qui est le site historique de l'entreprise.
+Le site de Fontenay-sous-Bois compte à ce jour environ 800 employés répartit sur 5 bâtiments 
+Ce site existant depuis plus d'un siècle, n'a malheureusement pas toujours pu se tenir à jour en ce qui concerne son infrastructure informatique, empêchant parfois l'entreprise à répondre à certaines normes ou certifications permettant de rassurer de potentiels clients quand à la sécurité des informations confidentiels pouvant circuler au sein de ce même système.
+Voilà pourquoi il est d'une importance primordiale, pour Cenexi de revoir le système d'informations de son site principal
