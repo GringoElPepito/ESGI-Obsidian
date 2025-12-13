@@ -30,7 +30,9 @@ Machine :
 - OPNSense -> srv.ludovik.lan
 	- LAN : 172.16.0.254
 - vCenter -> vcenter.ludovik.lan
-	- 
+	- LAN : 172.16.0.20
+- AD + DNS -> ad.desigual.lan
+	- LAN : 172.16.0.10
 
 Customisation de l'OS :
 - Linux :
