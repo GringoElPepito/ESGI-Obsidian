@@ -257,12 +257,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vmware/Rapport Projet Vmware.md",
+                "file": "Projet Annuel - M1/Cahier des charges.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Rapport Projet Vmware"
+              "title": "Cahier des charges"
             }
           },
           {
@@ -491,14 +491,16 @@
   },
   "active": "665459d72635b068",
   "lastOpenFiles": [
-    "Vmware/Brut.md",
-    "Vmware/Rapport Projet Vmware.md",
-    "Vmware/Introduciton à la Virtualisation et découverte de l'hyperviseur ESXi.md",
-    "Projet Annuel - M1/Sans titre.md",
-    "Projet Annuel - M1/Cahier des charges.md",
-    "Projet Annuel - M1/Brut.md",
-    "Projet Annuel - M1/Liste Technos.md",
     "Projet Annuel - M1/Contexte.md",
+    "Projet Annuel - M1/Liste Technos.md",
+    "Projet Annuel - M1/Sans titre.md",
+    "Projet Annuel - M1/Projet annuel.md",
+    "Projet Annuel - M1/Cahier des charges.md",
+    "Projet Annuel - Bachelor 3/DNS.md",
+    "Vmware/Rapport Projet Vmware.md",
+    "Vmware/Brut.md",
+    "Vmware/Introduciton à la Virtualisation et découverte de l'hyperviseur ESXi.md",
+    "Projet Annuel - M1/Brut.md",
     "SmartBin.md",
     "Vmware",
     "Planification Projet/Brut.md",
@@ -522,12 +524,10 @@
     "Projet Annuel - M1/Document/Méthode Agile-SCRUM.md",
     "Projet Annuel - M1/Sans titre/Sans titre",
     "Projet Annuel - M1/Document",
-    "Projet Annuel - M1/Projet annuel.md",
     "CCNP/Note TP.md",
     "Linux/M1/Révision.md",
     "CCNP/Brut.md",
     "CCNP/Révision.md",
-    "IA/Brut.md",
     "Linux/M1",
     "Linux/L3/LPIC102",
     "Linux/L3/LPIC101",
