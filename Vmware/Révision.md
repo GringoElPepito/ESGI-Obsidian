@@ -56,3 +56,5 @@ Composant d'un vSwitch standard :
 
 Pour que les Portgroup VMkernel et VM puisse accéder au réseau extérieur, il faut que des cartes réseaux de l'ESXi (Uplink Ports) soient assignés au vSwitch portant ces Portgroups, ce qui n'est pas forcément le cas. Il est possible d'avoir un vSwitch connecté à aucune vmnic permettant ainsi la communication uniquement entre les machines virtuelles.
 
+On peut soit répartir notre réseau ESXi entre différent vSwitch soit tout mutualiser sur un seul unique vSwitch et segmenter les différents trafics via des Portgroups. Dans le second cas, tous les Portgroups passeront pas le ou les mêmes ports physiques pour sortir (Possible via trunk).
+
