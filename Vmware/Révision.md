@@ -15,4 +15,13 @@ résultat de cette architecture :
 Architecture : 1 serveur, pour X systèmes d'exploitation et X application
 résultat de cette architecture :
 - Consolidation des charges de travail et des ressources, il est maintenant possible d'exploiter pleinement les capacités de chaque serveur physique, jusqu'à 80% sans perte de performances pour les machines virtuelles.
-- Gains d'espace et d'énergie, moins de serveurs physiques nécessaires pour faire fonctionner le même nombre de services
+- Gains d'espace et d'énergie, moins de serveurs physiques nécessaires pour faire fonctionner le même nombre de services.
+- Gain de temps et d'argent, déploiement et mise en production accéléré, création d'une VM en quelques minutes depuis l'interface graphique.
+- Maintenance de l'hyperviseur sans interruption de service, possibilité de réaliser des migrations à chaud (sans arrêt de la VM) pour répartir la charge d'un hyperviseur entre tous les autres et pouvoir assurer la maintenance de celui-ci sans problème de maintien du service.
+
+## Qu'est-ce qu'un hyperviseur ? :
+Un hyperviseur permet de mutualiser les ressources d'une architecture matérielle physique en plusieurs architectures matérielles logiques. En d'autres termes, c'est une solution logicielle permettant de créer et d'exécuter des machines virtuelles. Virtual Machine Monitor (VMM) est un alias d'hyperviseur.
+L'une des fonctions principales d'un hyperviseur est l'isolation, une machine virtuelle ne peut pas affecter l'hôte ou d'autres machines virtuelles, même en cas de blocage.
+
+Schéma de base d'un ESXi :
+- 
