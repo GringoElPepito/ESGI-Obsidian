@@ -144,3 +144,11 @@ Prérequis :
 mode EVC :
 Simplifie l'utilisation de vMotion en utilisant des processeurs de plusieurs générations. Ajoute une option pour choisir la génération du processeur
 
+Migration à chaud :
+- RAM migré sur le réseau vMotion de l'hôte source à l'hôte cible
+- CPU déroulement en 2 temps :
+	- Toutes les instructions CPU en cours d'exécutions continuent d'être envoyé au CPU physique de l'hôte source jusqu'à ce qu'il n'y en ait plus
+	- Toutes les nouvelles instructions CPU demandés par la VM sont envoyé au CPU de l'hôte cible
+- Réseau routage des paquets une fois migration terminée
+
+Une fois ces étapes achevées, l'hyperviseur de
