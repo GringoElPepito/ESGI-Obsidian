@@ -65,4 +65,28 @@ Local Storage est un Datastore accessible par un seul et unique ESXi. On peut in
 
 Shared Storage est un Datastore accessible par plusieurs ESXi permettant la HA, vMotion ou encore DRS. Il peut se présenter sous la forme d'une baie SAN ou NAS ou encore sous une solution virtualisé comme vSAN.
 
-Datastore est un conteneur contenant des fichiers et des 
+Datastore est un conteneur contenant des fichiers et des objets. Ils sont des conteneurs logiques indépendant du système de fichier permettant un modèle uniforme pour le stockage des fichiers de machine virtuelle.
+
+Systèmes de fichier pris en charge par vSphere :
+- VMFS
+- NFS
+- Virtual SAN
+- Virtual Volumes
+
+Une machine virtuelle est stockée sous la forme d'un ensemble de fichier dans un répertoire (VMFS/NFS) ou d'un groupe d'objets dans une banque de données (vSAN).
+
+Les Datastores peuvent également stockés ISO, Template etc...
+
+Type de provisionnement de stockage :
+- Thin : ne consommera que l'espace réellement consommé par la VM
+- Thick : consommera tout l'espace attribué à la VM même si pas réellement utilisé
+
+# Découverte VM
+Config MAX pour VM en 7.0 :
+- 4 adaptateurs SCSI
+- 15 disques par adaptateurs -> 60 disques MAX par VM
+- 10 cartes réseau 
+- 6To de RAM
+
+Fichier d'une VM :
+- 
