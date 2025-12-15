@@ -35,6 +35,7 @@ Hyperviseur de type 1 (Hyperviseur natif ou bare métal) ->Il s'exécute directe
 Hyperviseur de type 2 -> Il est installé en tant qu'application sur un système d'exploitation hôte existant. (Ex: VirtualBox, MS Virtual PC, VMWare Server et Workstation)
 
 # Gestion Stockage et Réseau :
+## Réseau :
 Découpage Réseau chez VMWare ESXi :
 1. Il y a tout d'abord les Switches physiques qui transmettent le réseau
 2. Chaque ESXi possèdent des ==vmnic== qui sont les cartes réseaux physiques reliés aux commutateurs (Switches) physiques
@@ -58,3 +59,10 @@ Pour que les Portgroup VMkernel et VM puisse accéder au réseau extérieur, il 
 
 On peut soit répartir notre réseau ESXi entre différent vSwitch soit tout mutualiser sur un seul unique vSwitch et segmenter les différents trafics via des Portgroups. Dans le second cas, tous les Portgroups passeront pas le ou les mêmes ports physiques pour sortir (Possible via trunk).
 
+
+## Stockage :
+Local Storage est un Datastore accessible par un seul et unique ESXi. On peut installé des VM dessus mais ne permet pas la HA, vMotion ou encore DRS. Bien pour test mais pas pour prod
+
+Shared Storage est un Datastore accessible par plusieurs ESXi permettant la HA, vMotion ou encore DRS. Il peut se présenter sous la forme d'une baie SAN ou NAS ou encore sous une solution virtualisé comme vSAN.
+
+Datastore est un conteneur contenant des fichiers et des 
