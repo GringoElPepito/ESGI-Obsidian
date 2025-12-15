@@ -113,4 +113,34 @@ Les snapshots :
 .vmsn contient l'état de la VM, il est créé si la case prendre en compte la mémoire est coché. Il enregistre les informations contenu dans la RAM de la VM.
 -Delat.vmdk delta des données d'un disque depuis le snapshot.
 
-Possibilité de cloner une VM
+Possibilité de cloner une VM, pour éviter les conflits :
+- Modifier hostname
+- adressage IP
+- adresse MAC
+- Sysprep (Windows uniquement)
+Possibilité de créer une VM à partir d'une template. gain de temps, standardisation des configurations etc...
+une VM soit être éteinte pour être convertit en VM. Possible de cloner une VM en template sans que la machine soit éteinte.
+
+# vMotion
+deux type de migration vMotion :
+- Migration à chaud (VM allumé)
+- Migration à froid (VM éteinte)
+
+3 possibilités de migration :
+- Migration du compute (RAM, CPU, Réseau) -> Stockage partagé entre les deux ESXi nécessaire
+- Migration du stockage
+- Migration du compute et du storage
+
+Prérequis :
+- 2 hôtes ESXi ou plus
+- Compatibilité CPU, minimum même fabricant
+- 1 instance vCenter
+- Un cluster vCenter
+- Adressage IP statique pour les hôtes ESXi
+- configuration réseau identique pour les ESXi avec un Portgroup VMkernel ayant l'option vMotion activé sur le même plan d'adressage
+- Stockage partagé entre les hôtes
+- Ressources disponible sur l'hôte cible
+
+mode EVC :
+Simplifie l'utilisation de vMotion en utilisant des processeurs de plusieurs générations. Ajoute une option pour choisir la génération du processeur
+
