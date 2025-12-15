@@ -180,6 +180,28 @@ L'ESXi avec le plus de datastore est élu maitre. Si égalité, l'hôte avec le 
 Si le maître est défaillant une nouvelle élection à lieu.
 
 Le Master communique avec vCenter et les ESXi slaves. Le master doit déterminé l'état de chaque slave (Panne total ou isolement réseau).
-En cas d'isolement réseau, le comportement est déterminé par la configuration, les VM ne sont pas systématiquement déplacés vers les autres ESXi
+En cas d'isolement réseau, le comportement est déterminé par la configuration, les VM ne sont pas systématiquement déplacés vers les autres ESXi, car seul le réseau management peut être impacté et non les autres réseaux, les VM pouvant donc être potentiellement joignables.
 
-A l'ajout d'un
+A l'ajout d'un ESXi au cluster ou à l'activation de la fonctionnalité, un agent FDM est installé sur les ESXi du cluster.
+
+L'agent FDM du Master communique avec les agents FDM des slave ainsi qu'avec vCenter.
+
+Si le master tombe vCenter déclenche une nouvel élection en parallèle se fait le redémarrage des VM sur les autres ESXi.
+
+2 types de pannes :
+- PDL : Permanent Device Loss (Arrêt électrique de l'hôte ou coupure total du réseau) - perte d'accessibilité irrécupérable d'un datastore, il est possible de mettre hors tension les VM pour les redémarrer sur un autre ESXi
+- APD : All Path Down (Coupure partiel du réseau - réseau management) - perte d'accessibilité temporaire ou inconnue ayant un retard dans les traitements des E/S, cette condition peut être rétablie. Possible de ne pas agir sur les VM
+
+Pour déterminer le type de panne un ESXi slave communique avec :
+- l'ESXi master sur le réseau management
+- les datastores de sont cluster
+- la ou les gateways configuré au niveau HA
+
+Contrôle d'admission, s'assure qu'il y a assez de ressources (CPU et RAM) pour les VM du cluster en cas de panne d'un ESXi.
+
+Nombre d'échec hôte toléré :
+Si valide cela veut dire que même si un ESXi tombe, les hôtes restant pourront supportés la charge supplémentaire.
+
+Si non valide, alors les VM ne pourront pas être démarrés afin de respecter la règle du contrôle d'admission
+
+Pourcentage de ressource à réservées :
