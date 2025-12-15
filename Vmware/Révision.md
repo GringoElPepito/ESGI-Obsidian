@@ -35,3 +35,9 @@ Hyperviseur de type 1 (Hyperviseur natif ou bare métal) ->Il s'exécute directe
 Hyperviseur de type 2 -> Il est installé en tant qu'application sur un système d'exploitation hôte existant. (Ex: VirtualBox, MS Virtual PC, VMWare Server et Workstation)
 
 # Gestion Stockage et Réseau :
+Découpage Réseau chez VMWare ESXi :
+1. Il y a tout d'abord les Switches physiques qui transmettent le réseau
+2. Chaque ESXi possèdent des ==vmnic== qui sont les cartes réseaux physiques reliés aux commutateurs (Switches) physiques
+3. Chaque vmnic est relié à un ==vSwitch==, qui est un switch virtuel présent au sein de l'ESXi. une vmnic ne peut être associé qu'à un vSwitch et un vSwitch peut être associé à plusieurs vmnic.
+4. Pour chaque vSwitch, on peut créer des ==Portgroups== (Groupe de ports). Il est possible d'attribuer des VLANs à un Portgroup
+5. Les cartes réseaux des VM sont connectés à un Portgroup de l'
