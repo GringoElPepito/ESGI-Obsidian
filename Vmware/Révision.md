@@ -24,4 +24,14 @@ Un hyperviseur permet de mutualiser les ressources d'une architecture matériell
 L'une des fonctions principales d'un hyperviseur est l'isolation, une machine virtuelle ne peut pas affecter l'hôte ou d'autres machines virtuelles, même en cas de blocage.
 
 Schéma de base d'un ESXi :
-- 
+- 4 ressources matérielles :
+	- 3 (CPU, RAM, Réseau)
+	- 1 (Stockage)
+- Couche de virtualisation (ESXi) OS propriétaire
+- Machines virtuelles utilisant les ressources de la machine hôte, pour faire fonctionner des services/applications.
+
+Hyperviseur de type 1 (Hyperviseur natif ou bare métal) ->Il s'exécute directement sur le matériel physique, les machines virtuelles s'exécutent directement sur l'hyperviseur. (Ex: VM Oracle, VMWare ESXi, Hyper-V)
+
+Hyperviseur de type 2 -> Il est installé en tant qu'application sur un système d'exploitation hôte existant. (Ex: VirtualBox, MS Virtual PC, VMWare Server et Workstation)
+
+# Gestion Stockage et Réseau :
