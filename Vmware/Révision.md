@@ -200,8 +200,30 @@ Pour déterminer le type de panne un ESXi slave communique avec :
 Contrôle d'admission, s'assure qu'il y a assez de ressources (CPU et RAM) pour les VM du cluster en cas de panne d'un ESXi.
 
 Nombre d'échec hôte toléré :
-Si valide cela veut dire que même si un ESXi tombe, les hôtes restant pourront supportés la charge supplémentaire.
-
-Si non valide, alors les VM ne pourront pas être démarrés afin de respecter la règle du contrôle d'admission
+- Si valide cela veut dire que même si un ESXi tombe, les hôtes restant pourront supportés la charge supplémentaire.
+- Si non valide, alors les VM ne pourront pas être démarrés afin de respecter la règle du contrôle d'admission
 
 Pourcentage de ressource à réservées :
+- Le pourcentage s'applique au cluster en terme de RAM et CPU. Si 25% sont réservés alors, ces 25% doivent suffire à absorber la charge des VM en cas de panne d'un ESXi
+- Si le pourcentage ne permet pas cela alors les VM ne démarreront pas.
+
+Spécifier des hôtes de basculement :
+- On peut désigner certains hôtes spécifiques qui ne seront utilisés qu'en cas de panne d'un autre ESXi. HA va vérifier que les ressources cumulés sont suffisantes pour la reprise de la charge des VM en cours d'exécution sur le cluster
+- Si non garantit alors les VM ne pourront pas démarré.
+
+# DRS :
+DRS permet de faire de la répartition de charge CPU et RAM entre les ESXi du cluster.
+Il peut faire des recommandations de placement de VM dans le but d'optimiser les ressources du cluster.
+Si des déplacements sont réalisés par DRS, celui-ci exploitera le réseau vMotion.
+
+DRS propose le service DPM permettant d'optimiser l'alimentation des ESXi. Dans un cluster de 3 ESXi, si 2 ESXi suffisent à supporter la charge de manière optimale alors, DPM peut mettre en standby le 3e ESXi pour réaliser des économies d'énergies.
+
+Prérequis :
+- 2 hôtes ESXi ou plus
+- 1 instance vCenter
+- Un Cluster vCenter
+- configuration réseau identique sur chaque ESXi
+- réseau vMotion
+- Processeur de même marque
+- stockage partagé
+- Licence ESXi comprenant la fonctionnalité
