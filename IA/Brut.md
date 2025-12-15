@@ -46,9 +46,9 @@ La modélisation est une représentation simplifié de la réalité
 
 Pour les modèles de régression, la performance du modèle se mesure avec R² (indicateur de performance). Il faut maximiser les performances et minimiser les erreurs.
 
-MSE
-RMSE
-MAE
+MSE -> Mean Squared Error
+RMSE -> Root Mean Square Error
+MAE -> M Absolute Error
  
 ![[Pasted image 20251124084821.png]]
 ![[Pasted image 20251124092243.png]]

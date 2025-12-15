@@ -257,12 +257,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vmware/Rapport Projet Vmware.md",
+                "file": "IA/Brut.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Rapport Projet Vmware"
+              "title": "Brut"
             }
           },
           {
@@ -491,6 +491,7 @@
   },
   "active": "665459d72635b068",
   "lastOpenFiles": [
+    "Vmware/Rapport Projet Vmware.md",
     "Vmware/Introduciton à la Virtualisation et découverte de l'hyperviseur ESXi.md",
     "Projet Annuel - M1/Cahier des charges.md",
     "Projet Annuel - M1/Contexte.md",
@@ -498,7 +499,6 @@
     "Projet Annuel - M1/Sans titre.md",
     "Projet Annuel - M1/Projet annuel.md",
     "Projet Annuel - Bachelor 3/DNS.md",
-    "Vmware/Rapport Projet Vmware.md",
     "Vmware/Brut.md",
     "Projet Annuel - M1/Brut.md",
     "SmartBin.md",
