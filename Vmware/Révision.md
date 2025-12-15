@@ -40,4 +40,19 @@ Découpage Réseau chez VMWare ESXi :
 2. Chaque ESXi possèdent des ==vmnic== qui sont les cartes réseaux physiques reliés aux commutateurs (Switches) physiques
 3. Chaque vmnic est relié à un ==vSwitch==, qui est un switch virtuel présent au sein de l'ESXi. une vmnic ne peut être associé qu'à un vSwitch et un vSwitch peut être associé à plusieurs vmnic.
 4. Pour chaque vSwitch, on peut créer des ==Portgroups== (Groupe de ports). Il est possible d'attribuer des VLANs à un Portgroup
-5. Les cartes réseaux des VM sont connectés à un Portgroup de l'
+5. Les cartes réseaux des VM sont connectés à un Portgroup de l'ESXi. Une carte réseau d'une VM ne peut être associé qu'à un seul Portgroup. Pour qu'une VM ait accès à plusieurs Portgroup, il faudra donc lui ajouter d'autres carte réseau.
+
+Il existe 2 types de Portgroup :
+- ==Type VM== dédié au trafic des VM
+- ==Type VMkernel== dédié aux différents services des ESXi (Management, vMotion, vSAN, Fault Tolerance). Chaque Portgroup de type VMkernel doit avoir une IP statique.
+
+2 configurations de port pour les switches physiques :
+- Access -> ne laisse passer qu'un seul VLAN
+- Trunk -> laisse passer plusieurs VLAN à la fois
+
+Composant d'un vSwitch standard :
+1. Connexion de machines virtuelles au réseau physique. (Portgroup de type VM)
+2. Connexion des services VMkernel au réseau physique. (Portgroup de type VMkernel).
+
+Pour que les Portgroup VMkernel et VM puisse accéder au réseau extérieur, il faut que des cartes réseaux de l'ESXi (Uplink Ports) soient assignés au vSwitch portant ces Portgroups, ce qui n'est pas forcément le cas. Il est possible d'avoir un vSwitch connecté à aucune vmnic permettant ainsi la communication uniquement entre les machines virtuelles.
+
