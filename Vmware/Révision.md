@@ -89,4 +89,13 @@ Config MAX pour VM en 7.0 :
 - 6To de RAM
 
 Fichier d'une VM :
-- 
+- vmx -> fichier de configuration, permet d'inscrire la 
+- nvram -> BIOS de la VM
+- log -> fichier journal
+- vmdk -> Fichier description disque de la VM
+- flat-vmdk -> disque virtuel de la machine
+- vmss -> Etat de la VM en mode suspend
+- vswp -> fichier swap de la VM
+- -delta.vmdk -> Fichier de données du snapshot
+- vmsd -> métadonnées des snapshot
+- vmsn -> etat du snapshot de la VM
