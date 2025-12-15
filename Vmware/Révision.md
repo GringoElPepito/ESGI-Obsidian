@@ -151,4 +151,35 @@ Migration à chaud :
 	- Toutes les nouvelles instructions CPU demandés par la VM sont envoyé au CPU de l'hôte cible
 - Réseau routage des paquets une fois migration terminée
 
-Une fois ces étapes achevées, l'hyperviseur de
+Une fois ces étapes achevées, l'hyperviseur destination prend la main sur les fichiers.
+
+Cause d'échec connexion à un périphérique virtuelle, lecteur CD/DVD ou disquette, ou image présent uniquement localement sur l'hôte source.
+
+Dans le cas d'une migration stockage et compute, le stockage est migré en premier.
+
+# HA
+permet de se protéger contre :
+- panne d'un ESXi, si un hôte ESXi est en panne alors les VM redémarreront sur les autres hôtes du cluster
+- panne d'une VM, si le monitoring est activé sur la VM et que la VM stop l'envoie de heartbeats à vCenter la VM est reset et reste sur le même hôte
+
+Prérequis :
+- 2 hôtes ESXi ou plus
+- 1 instance vCenter
+- Un cluster vCenter
+- adressage IP statique des hôtes ESXi
+- Configuration réseau identique pour les ESXi
+- Stockage partagé entre les hôtes ESXi
+
+Il y a 2 rôle dans un cluster HA :
+- Master ou Maître
+- Slave ou esclave
+
+Ils sont attribué par une élection se déroulant à l'activation de la fonctionnalité HA.
+L'ESXi avec le plus de datastore est élu maitre. Si égalité, l'hôte avec le plus grand MOID (id aléatoire généré à l'installation de l'ESXi) est élu Maître.
+
+Si le maître est défaillant une nouvelle élection à lieu.
+
+Le Master communique avec vCenter et les ESXi slaves. Le master doit déterminé l'état de chaque slave (Panne total ou isolement réseau).
+En cas d'isolement réseau, le comportement est déterminé par la configuration, les VM ne sont pas systématiquement déplacés vers les autres ESXi
+
+A l'ajout d'un
