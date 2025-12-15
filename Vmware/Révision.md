@@ -89,13 +89,28 @@ Config MAX pour VM en 7.0 :
 - 6To de RAM
 
 Fichier d'une VM :
-- vmx -> fichier de configuration, permet d'inscrire la 
+- vmx -> fichier de configuration, permet d'inscrire la VM dans l'inventaire. vmx devient vmtx lorsque la VM est convertit en template
 - nvram -> BIOS de la VM
 - log -> fichier journal
 - vmdk -> Fichier description disque de la VM
 - flat-vmdk -> disque virtuel de la machine
 - vmss -> Etat de la VM en mode suspend
-- vswp -> fichier swap de la VM
+- vswp -> fichier swap de la VM, à prendre en compte pour le dimensionnement des datastores. utilisé pour une migration vMotion. Sa taille est égal à la quantité de RAM alloué à la VM. il est créé au démarrage et supprimé à l'arrêt de la VM.
 - -delta.vmdk -> Fichier de données du snapshot
 - vmsd -> métadonnées des snapshot
-- vmsn -> etat du snapshot de la VM
+- vmsn -> état du snapshot de la VM
+
+Suppression de l'inventaire -> les fichier de la VM sont toujours présents
+Suppresion du disque -> les fichiers de la VM sont supprimés
+
+VMWare tools :
+- Possibilité d'arrêter "proprement" les VM
+- Améliorations des performances graphiques
+- Synchronisation du temps via l'utilisation des paramètres NTP de l'ESXi.
+
+Les snapshots :
+.vmsd contient des entrées de ligne définissant les relations entre les snapshots et les disques enfants de chaque snapshot.
+.vmsn contient l'état de la VM, il est créé si la case prendre en compte la mémoire est coché. Il enregistre les informations contenu dans la RAM de la VM.
+-Delat.vmdk delta des données d'un disque depuis le snapshot.
+
+Possibilité de cloner une VM
