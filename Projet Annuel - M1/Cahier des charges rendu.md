@@ -41,10 +41,14 @@ Il est donc absolument nécessaire pour tous les services de ce domaine d'avoir 
 # Présentation de l'entreprise
 SMJV est une startup s'illustrant dans le domaine de l'intégration de système d'information depuis 2023. L'entreprise monte et réalise les projets de mise en place d'infrastructure informatique de A à Z pour ces clients, débutant avec le pilotage et planification du projet, jusqu'à la livraison clé en main de la solution accompagné des livrables et recettes du projet. Elle opère pour des clients de tous domaines et de toutes tailles, ayant travaillé avec des établissement hôtelier de luxe, des PME ou encore des complexes industriels, ceci permit par la grande capacité d'adaptation et la versatilité de son équipe.
 
-L'équipe compte un total de 4 collaborateurs :
+L'équipe compte un total de 4 collaborateurs, chacun excellant dans leur domaine, leur offrant ainsi la possibilité de gérer au mieux chaque partie des projets qu'ils entreprennent :
 - Soratha LIM--OUK, ingénieur Systèmes et DevOps
 - Julien ZEYMEL, ingénieur Systèmes et Sécurité
 - Vivien GASNIER, ingénieur Virtualisation et Stockage
 - Miguel FERREIRA, Chef de projet et ingénieur Systèmes et Réseaux
 La taille réduite de cette équipe permet une circulation fluide de l'information entre les différents membres, permettant des prises de décisions rapides permettant de s'adapter en temps réel au évolution du projet pour répondre de la meilleure manière aux attentes du client.
 
+SMJV propose un accompagnement complet pour chaque étape du projet 
+
+# Présentation du contexte
+L'entreprise CENEXIS fait appel à l'entreprise SMJV dans le but de se faire accompagner dans la création d'une infrastructure informatique complète sur leu
