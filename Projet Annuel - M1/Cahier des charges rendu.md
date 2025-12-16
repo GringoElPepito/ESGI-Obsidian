@@ -151,30 +151,101 @@ Nous avons opté pour Kubernetes, car bien plus facilement scalable et répondan
 
 ## Sauvegarde :
 
-|Critère|**Proxmox Backup Server (PBS)**|**Veeam Backup & Replication**|
-|---|---|---|
-|**Type**|Open-source avec support payant|Propriétaire|
-|**Coût**|Gratuit (support commercial optionnel)|Payant (licence par socket ou par VM)|
-|**Plateformes supportées**|Proxmox VE, Linux, Windows (agents)|VMware, Hyper-V, Nutanix, Linux, Windows|
-|**Virtualisation supportée**|Principalement Proxmox VE (KVM/LXC)|Multi-hyperviseur complet (VMware, Hyper-V…)|
-|**Méthode de sauvegarde**|Incremental, dédupliquée, compression|Incremental, deduplication, compression, replication|
-|**Stockage cible**|Local, NFS, CIFS, S3 compatible|Local, NAS, SAN, Cloud (AWS, Azure, GCP)|
-|**Gestion**|Web UI, CLI|Web UI, console centralisée, PowerShell|
-|**Réplication**|Oui (PBS vers PBS distant)|Oui (replication entre sites ou cloud)|
-|**Snapshots**|Intégration avec Proxmox VE|Intégration avec hyperviseurs supportés|
-|**Restauration**|Granulaire (VM, fichiers), rapide|Granulaire et instant recovery (VM, fichiers, applications)|
-|**Support application**|Limité (via agents)|Large (SQL, Exchange, Oracle, Active Directory…)|
-|**Scalabilité**|Bonne pour clusters Proxmox|Très élevée (multi-site, multi-hyperviseur)|
-|**Facilité d’utilisation**|Simple, interface épurée|Très complète mais plus complexe|
-|**Public cible**|PME, labs, environnements Proxmox|Entreprises, SOC, infrastructures multi-hyperviseurs|
-|**Cas d’usage principal**|Sauvegarde et réplication pour Proxmox VE|Sauvegarde, réplication et DR pour environnements hétérogènes|
+| Critère                      | **Proxmox Backup Server (PBS)**           | **Veeam Backup & Replication**                                |
+| ---------------------------- | ----------------------------------------- | ------------------------------------------------------------- |
+| **Type**                     | Open-source avec support payant           | Propriétaire                                                  |
+| **Coût**                     | Gratuit (support commercial optionnel)    | Payant (licence par socket ou par VM)                         |
+| **Plateformes supportées**   | Proxmox VE, Linux, Windows (agents)       | VMware, Hyper-V, Nutanix, Linux, Windows                      |
+| **Virtualisation supportée** | Principalement Proxmox VE (KVM/LXC)       | Multi-hyperviseur complet (VMware, Hyper-V…)                  |
+| **Méthode de sauvegarde**    | Incremental, dédupliquée, compression     | Incremental, deduplication, compression, replication          |
+| **Stockage cible**           | Local, NFS, CIFS, S3 compatible           | Local, NAS, SAN, Cloud (AWS, Azure, GCP)                      |
+| **Gestion**                  | Web UI, CLI                               | Web UI, console centralisée, PowerShell                       |
+| **Réplication**              | Oui (PBS vers PBS distant)                | Oui (replication entre sites ou cloud)                        |
+| **Snapshots**                | Intégration avec Proxmox VE               | Intégration avec hyperviseurs supportés                       |
+| **Restauration**             | Granulaire (VM, fichiers), rapide         | Granulaire et instant recovery (VM, fichiers, applications)   |
+| **Support application**      | Limité (via agents)                       | Large (SQL, Exchange, Oracle, Active Directory…)              |
+| **Scalabilité**              | Bonne pour clusters Proxmox               | Très élevée (multi-site, multi-hyperviseur)                   |
+| **Facilité d’utilisation**   | Simple, interface épurée                  | Très complète mais plus complexe                              |
+| **Cas d’usage principal**    | Sauvegarde et réplication pour Proxmox VE | Sauvegarde, réplication et DR pour environnements hétérogènes |
 Notre choix s'est porté sur Proxmox Backup Server notamment pour sa faciliter d'intégration avec Proxmox VE.
 
 ## Mail :
 
-
+| Critère                         | **Mailcow**                                                             | **Microsoft Exchange**                                                                |
+| ------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **Type**                        | Open-source (Docker-based)                                              | Propriétaire                                                                          |
+| **Coût**                        | Gratuit (support optionnel payant)                                      | Payant (licences Office 365 / Exchange Server)                                        |
+| **Déploiement**                 | On-prem, VPS, cloud                                                     | On-prem (Exchange Server) ou cloud (Exchange Online / Microsoft 365)                  |
+| **Administration**              | Interface web intuitive (Docker Mailcow UI)                             | Exchange Admin Center, PowerShell                                                     |
+| **Compatibilité clients**       | IMAP, SMTP, CalDAV, CardDAV                                             | Outlook, ActiveSync, IMAP, SMTP, MAPI                                                 |
+| **Fonctionnalités principales** | Emails, calendriers, contacts, listes de diffusion, antivirus, antispam | Emails, calendriers, contacts, tâches, intégration Teams/SharePoint, sécurité avancée |
+| **Sécurité**                    | TLS, SPF, DKIM, DMARC, antivirus/antispam intégrés                      | TLS, MFA, DLP, anti-spam avancé, sécurité intégrée Office 365                         |
+| **Scalabilité**                 | Moyenne (dépend de l’infrastructure)                                    | Très élevée, adaptée aux grandes entreprises                                          |
+| **Maintenance**                 | Gestion par admin système, mise à jour Docker                           | Automatisée pour cloud, ou manuelle on-prem avec patches                              |
+| **Intégration**                 | Limitée à outils open-source et scripts                                 | Très large (Office 365, Teams, SharePoint, Azure AD…)                                 |
+| **Support éditeur**             | Communauté, support commercial optionnel                                | Microsoft, support premium entreprise                                                 |
+| **Cas d’usage principal**       | Serveur mail complet open-source avec contrôle total                    | Solution de messagerie et collaboration professionnelle à grande échelle              |
 Nous avons optés pour Mailcow car conteneurisable et donc déployable sur un cluster Kubernetes ce qui permettra d'adapter en temps réel la consommation du service aux besoins utilisateurs.
 
+## Messagerie instantanée :
+
+|Critère|**Mattermost**|**Rocket.Chat**|
+|---|---|---|
+|**Type**|Open-source (avec version entreprise)|Open-source (avec version entreprise)|
+|**Licence**|MIT (OSS) + Enterprise|MIT (OSS) + Enterprise|
+|**Déploiement**|On-prem, cloud privé, Docker/Kubernetes|On-prem, cloud privé, Docker/Kubernetes|
+|**Interface**|Web, desktop, mobile|Web, desktop, mobile|
+|**Messagerie**|Canaux publics/privés, messages directs, threads|Canaux publics/privés, messages directs, threads|
+|**Audio / Vidéo**|Intégré via plugins ou Jitsi, WebRTC|Intégré via Jitsi ou WebRTC|
+|**Notifications / Alertes**|Push, email, webhook, intégration alerting|Push, email, webhook, intégration alerting|
+|**Intégrations**|GitLab, Jira, CI/CD, Webhooks, plugins|GitLab, Jira, CI/CD, Webhooks, plugins|
+|**Sécurité**|SSO, OAuth, LDAP, 2FA, chiffrement TLS|SSO, OAuth, LDAP, 2FA, chiffrement TLS|
+|**Scalabilité**|Bonne (clusters possibles)|Bonne (clusters possibles)|
+|**Personnalisation**|Thèmes, plugins, APIs, bots|Thèmes, plugins, APIs, bots|
+|**Support multilingue**|Oui|Oui|
+|**Mises à jour**|Régulières, version OSS + Enterprise|Régulières, version OSS + Enterprise|
+|**Public cible**|PME, grandes entreprises, DevOps|PME, grandes entreprises, communautés open-source|
+|**Cas d’usage principal**|Collaboration sécurisée et intégrée avec outils DevOps|Collaboration sécurisée et personnalisable, communication d’équipe|
+Nous avons optés pour Mattermost pour la facilité de son déploiement, les intégrations qu'ils proposent ainsi que la possibilité de déploiement sous forme de conteneur.
+
+## Téléphonie IP :
+
+| Critère                               | **3CX**                                                    | **FreePBX**                                                       |
+| ------------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------------- |
+| **Type**                              | Propriétaire (freemium avec version payante)               | Open-source                                                       |
+| **Licence**                           | Licence commerciale selon nombre d’utilisateurs/extensions | GPLv2                                                             |
+| **Plateformes supportées**            | Windows, Linux, cloud (AWS, Azure, Google)                 | Linux (principalement CentOS/Ubuntu/Debian)                       |
+| **Installation / Déploiement**        | Simple, assistant d’installation, cloud ou on-prem         | Installation plus technique, serveur Linux requis                 |
+| **Interface de gestion**              | Web intuitive et moderne                                   | Web (GUI) + CLI pour configuration avancée                        |
+| **Fonctionnalités téléphoniques**     | Appels, voicemail, fax, conférences, CTI, intégration CRM  | Appels, voicemail, fax, conférences, CTI, IVR                     |
+| **Compatibilité SIP / téléphones IP** | Large (Yealink, Grandstream, Polycom, etc.)                | Large (tous téléphones SIP compatibles)                           |
+| **Mobilité**                          | Applications mobiles iOS et Android, softphone inclus      | Applications tierces possibles, softphone non inclus par défaut   |
+| **Sécurité**                          | SSL/TLS, SRTP, firewall intégré, mise à jour automatique   | SSL/TLS possible, dépend de configuration, modules de sécurité    |
+| **Scalabilité**                       | Bonne, adaptée PME et grandes entreprises                  | Moyenne, dépend de l’infrastructure et expertise admin            |
+| **Maintenance / Support**             | Support officiel (payant), mises à jour automatiques       | Support communautaire, options commerciales via Sangoma           |
+| **Courbe d’apprentissage**            | Faible à moyenne                                           | Moyenne à élevée (Linux + Asterisk knowledge)                     |
+| **Public cible**                      | PME, entreprises cherchant une solution clé en main        | PME, organisations techniques capables de gérer Asterisk          |
+| **Cas d’usage principal**             | Téléphonie IP simple à déployer et gérer, intégration CRM  | Téléphonie IP flexible, personnalisable et extensible via modules |
+Nous avons optés pour FreePBX car il permet une bien plus grande personnalisation de le fonctionnement du service de téléphonie.
+
+## Supervision :
+|Critère|**Prometheus**|**Zabbix**|
+|---|---|---|
+|**Type**|Open-source, orienté métriques (time-series)|Open-source, monitoring complet|
+|**Licence**|Apache 2.0|GPLv2|
+|**Collecte des données**|Pull (HTTP endpoints)|Pull ou push (agents)|
+|**Surveillance**|Métriques, performances, disponibilité|Serveurs, applications, réseaux, services|
+|**Base de données**|Time-series intégrée (TSDB)|SQL (MySQL, PostgreSQL, SQLite)|
+|**Alerting**|Alertmanager, règles configurables|Système interne d’alertes et notifications|
+|**Visualisation**|Grafana (recommandé)|Interface web Zabbix native|
+|**Scalabilité**|Très élevée pour métriques (clusters possibles)|Élevée mais plus lourde sur très gros environnements|
+|**Intégration / API**|API REST, exportateurs nombreux|API JSON, intégrations limitées par plugins|
+|**Installation / Maintenance**|Plus technique, nécessite configuration|Plus simple, interface et templates prêts à l’emploi|
+|**Courbe d’apprentissage**|Raide, nécessite familiarité avec TSDB et métriques|Plus accessible, nombreux templates existants|
+|**Usage principal**|Monitoring temps réel, observabilité, DevOps|Supervision complète IT, alerting système et réseau|
+|**Public cible**|DevOps, ingénieurs cloud, infrastructures modernes|Administrateurs systèmes, entreprises traditionnelles|
+|**Support entreprise**|Par partenaires (CNCF / Red Hat etc.)|Zabbix SIA (support commercial)|
+Nous avons optés pour Prometheus pour sa haute compatibilité avec les environnements DevOps.
 ## SIEM :
 
 | Critère                       | **Splunk**                                       | **Wazuh**                                    |
@@ -194,3 +265,43 @@ Nous avons optés pour Mailcow car conteneurisable et donc déployable sur un cl
 | **Support éditeur**           | Support premium entreprise                       | Support communautaire + abonnement           |
 | **Cas d’usage principal**     | Analyse massive de données & SIEM avancé         | Sécurité, conformité, détection d’intrusions |
 Nous avons décidés de nous orienter vers Wazuh, car la solution étant Open-source elle permet de grandement réduire les coûts tout en offrant un service répondant pleinement aux besoins de l'infrastructure
+
+## Automatisation 
+
+|Critère|**Ansible**|**Puppet**|
+|---|---|---|
+|**Type**|Open-source (Red Hat)|Open-source (Puppet Inc.)|
+|**Licence**|GPLv3|Apache 2.0|
+|**Architecture**|Agentless (SSH/WinRM)|Agent/master ou agentless (Bolt)|
+|**Langage de configuration**|YAML (Playbooks)|DSL (Puppet Language)|
+|**Installation / Déploiement**|Simple, pas d’agent requis|Plus complexe, nécessite agents ou master|
+|**Gestion des noeuds**|Direct via SSH/WinRM|Via agents ou orchestration centralisée|
+|**Déploiement d’applications**|Automatisation simple et rapide|Automatisation robuste mais plus complexe|
+|**Idempotence**|Oui|Oui|
+|**Orchestration**|Orienté tâches et flux, séquentiel|Orienté état désiré, déclaratif, idempotence stricte|
+|**Courbe d’apprentissage**|Douce (YAML facile)|Plus raide (DSL spécifique)|
+|**Scalabilité**|Très bonne, facile à déployer sur grands environnements|Très bonne, mais master-agent plus lourd à gérer|
+|**Écosystème / Modules**|Large collection de modules Ansible Galaxy|Large collection de modules Puppet Forge|
+|**Intégration DevOps**|Très adaptée CI/CD, cloud, containers|Adaptée infrastructures classiques et cloud, DevOps avec intégration|
+|**Sécurité**|SSH natif, pas d’agent|SSL/TLS pour communication agent-master|
+|**Public cible**|DevOps, équipes cloud, PME à grandes infrastructures|Administrateurs système, grandes infrastructures, entreprises traditionnelles|
+|**Support entreprise**|Red Hat Ansible Automation Platform|Puppet Enterprise|
+Nous avons optés pour Ansible pour sa simplicité de configuration et son absence d'agent.
+
+## Container Registry
+|Critère|**Harbor**|**Quay (Red Hat Quay)**|
+|---|---|---|
+|**Type**|Open-source (CNCF)|Propriétaire / Open-source limité|
+|**Licence**|Apache 2.0|Licence commerciale / AGPL pour certaines versions|
+|**Déploiement**|On-prem, Kubernetes, Docker|On-prem, Kubernetes, cloud|
+|**Interface de gestion**|Web UI, CLI|Web UI, CLI, API|
+|**Registry supportée**|OCI-compliant, Docker|OCI-compliant, Docker|
+|**Authentification**|LDAP, OIDC, OAuth, local users|LDAP, OAuth, SAML, OpenID Connect|
+|**Sécurité**|Scanner vulnérabilités (Clair/Trivy), signature Notary, RBAC|Scanner vulnérabilités intégré, signature Notary, RBAC|
+|**Replication / Mirroring**|Multi-site, push/pull|Multi-site, push/pull, geo-replication avancée|
+|**Scalabilité**|Clusterable via Kubernetes|Clusterable, haute disponibilité supportée|
+|**Intégration CI/CD**|Compatible Jenkins, GitLab, ArgoCD, Tekton|Compatible Jenkins, GitLab, OpenShift Pipelines|
+|**Monitoring / Logging**|Prometheus, Grafana|Prometheus, Grafana, audit log intégré|
+|**Support Enterprise**|CNCF / Vendor support possible|Red Hat support officiel|
+|**Public cible**|Entreprises open-source, DevOps, Kubernetes|Grandes entreprises, Red Hat/OpenShift users|
+|**Cas d’usage principal**|Registry sécurisée, gestion d’images OCI/Docker, multi-cloud|Registry sécurisée avec intégration Red Hat/OpenShift et haute disponibilité|
