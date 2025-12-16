@@ -80,4 +80,68 @@ On définit comme exigences non-fonctionnelles les caractéristiques liés au fo
 - Solution de sauvegarde permettant la sauvegarde complète de l'infrastructure
 - Infrastructure réseau sécurisé et redondé permettant une liaison inter-sites et comprenant deux niveaux de Pares-feux
 - Solution d'automatisation permettant un déploiement de l'infrastructure
-- 
+- Redondance des services critiques
+- Haut niveau de sécurité pour l'ensemble du système d'information et des données qui y circulent
+
+# Choix technologiques
+
+## Virtualisation :
+Nous avons étudiés 2 candidats pour la virtualisation Proxmox et VMWare ESXi
+|Critère|**Proxmox VE**|**VMware ESXi**|
+|---|---|---|
+
+|   |   |   |
+|---|---|---|
+|**Type**|Open-source|Propriétaire|
+
+|   |   |   |
+|---|---|---|
+|**Coût**|Gratuit (support payant optionnel)|Payant (version gratuite très limitée)|
+
+|   |   |   |
+|---|---|---|
+|**Hyperviseur**|KVM|VMware ESXi|
+
+|   |   |   |
+|---|---|---|
+|**Conteneurs**|Oui (LXC natif)|Non (via solutions tierces)|
+
+|   |   |   |
+|---|---|---|
+|**Interface de gestion**|Web intégrée|vSphere / vCenter|
+
+|   |   |   |
+|---|---|---|
+|**Clustering / HA**|Natif|Oui (via vCenter)|
+
+|   |   |   |
+|---|---|---|
+|**Live migration**|Oui|Oui (vMotion)|
+
+|   |   |   |
+|---|---|---|
+|**Sauvegardes**|Intégrées|Via outils VMware / tiers|
+
+|   |   |   |
+|---|---|---|
+|**Stockage**|ZFS, Ceph, NFS, iSCSI|VMFS, NFS, iSCSI|
+
+|   |   |   |
+|---|---|---|
+|**Snapshots**|Oui|Oui|
+
+|   |   |   |
+|---|---|---|
+|**API / CLI**|Oui|Oui|
+
+|   |   |   |
+|---|---|---|
+|**Compatibilité matérielle**|Large, dépend de Linux|Très large (HCL VMware)|
+
+|   |   |   |
+|---|---|---|
+|**Support éditeur**|Abonnement optionnel|Support entreprise premium|
+
+|   |   |   |
+|---|---|---|
+|**Écosystème**|Communauté open-source|Écosystème très mature|
