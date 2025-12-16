@@ -39,4 +39,4 @@ La pandémie de la COVID-19 a mis en lumière la criticité de tous les services
 Il est donc absolument nécessaire pour tous les services de ce domaine d'avoir un système d'informations robuste permettant de garantir le bon déroulement de la production en toute circonstance. Cela nécessite donc de mettre l'accent sur la sécurité et la redondance du système.
 
 # Présentation de l'entreprise
-SMJV, 
+SMJV est une startup s'illustrant dans le domaine de l'intégration de système d'information depuis 2023. L'entreprise monte et réalise les projets de mise en place d'infrastructure informatique de A à Z pour ces clients, débutant avec le pilotage et planification du projet, jusqu'à la livraison clé en main de la solution accompagné des livrables et recettes du projet. Elle opère pour des clients de tous domaines et de toutes tailles, ayant travaillé avec des établissement hotelie
