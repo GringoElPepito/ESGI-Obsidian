@@ -65,8 +65,19 @@ Le site compte un total de 7 bâtiments permettant de répartir les différents 
 # Expression du besoin
 Le secteur de la production pharmaceutique, est un domaine d'une haute criticité, nécessitant un système d'informations capable de répondre aux contraintes lié à ce secteur.
 
-On définit comme exigences fonctionnelles les services et/ou comportements que doit fournir le système, voici ce qui est attendu pour nouveau site par CENEXIS :
+On définit comme exigences fonctionnelles les services et/ou comportements que doit fournir le système, voici ce qui est attendu pour ce nouveau site par CENEXIS :
 - Gestion centralisé des utilisateurs
 - Connexion VPN site-à-site
 - Connexion VPN Point-to-site
-- Solution de VOIP pouvant joindre et étant joignable pa
+- Solution de VOIP pouvant joindre et étant joignable par l'extérieur
+- Solution de messagerie électronique
+- Solution de supervision permettant une remonté d'alerte en cas de panne
+- Solution SIEM permettant une analyse en temps réel des activités sur les différents systèmes
+- Déploiement d'un service sur une infrastructure externe au site (Cloud)
+
+On définit comme exigences non-fonctionnelles les caractéristiques liés au fonctionnement du système comme ses performances, sa tolérance aux pannes ou encore sa sécurité, voici ce qui est attendu pour ce nouveau site par CENEXIS :
+- Solution de virtualisation en cluster permettant redondance et tolérance de panne
+- Solution de sauvegarde permettant la sauvegarde complète de l'infrastructure
+- Infrastructure réseau sécurisé et redondé permettant une liaison inter-sites et comprenant deux niveaux de Pares-feux
+- Solution d'automatisation permettant un déploiement de l'infrastructure
+- 
