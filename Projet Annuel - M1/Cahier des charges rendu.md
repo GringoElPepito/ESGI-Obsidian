@@ -86,7 +86,6 @@ On définit comme exigences non-fonctionnelles les caractéristiques liés au fo
 # Choix technologiques
 
 ## Virtualisation :
-Nous avons étudiés 2 candidats pour la virtualisation Proxmox et VMWare ESXi
 
 | Critère                      | **Proxmox VE**                     | **VMware ESXi**                        |
 | ---------------------------- | ---------------------------------- | -------------------------------------- |
@@ -107,31 +106,76 @@ Nous avons étudiés 2 candidats pour la virtualisation Proxmox et VMWare ESXi
 Nous avons décidés de nous orienter vers Proxmox, car la versatilité offerte par la solution permet une meilleur adaptation en temps réel de l'environnement de virtualisation.
 
 ## Stockage :
-Nous avons étudiés 2 candidats pour le stockage Ceph et TrueNAS
 
-|Critère|**Ceph**|**TrueNAS (CORE / SCALE)**|
+| Critère                        | **Ceph**                             | **TrueNAS (CORE / SCALE)**          |
+| ------------------------------ | ------------------------------------ | ----------------------------------- |
+| **Type**                       | Open-source                          | Open-source (Enterprise disponible) |
+| **Nature**                     | Stockage distribué logiciel (SDS)    | OS de stockage clé en main          |
+| **Cas d’usage principal**      | Stockage massif, haute disponibilité | NAS / SAN pour PME et entreprises   |
+| **Architecture**               | Distribuée, scale-out                | Centralisée ou cluster limitée      |
+| **Types de stockage**          | Objet, Bloc, Fichier                 | Fichier, Bloc                       |
+| **Protocoles**                 | S3 (RGW), RBD, CephFS                | SMB, NFS, iSCSI                     |
+| **Scalabilité**                | Très élevée (centaines de nœuds)     | Moyenne à élevée selon version      |
+| **Haute disponibilité**        | Native                               | Dépend de la configuration          |
+| **Tolérance aux pannes**       | Très élevée                          | Élevée (ZFS)                        |
+| **Gestion**                    | CLI + Dashboard                      | Interface web très intuitive        |
+| **Système de fichiers**        | Propre à Ceph                        | ZFS                                 |
+| **Snapshots / Réplication**    | Oui                                  | Oui                                 |
+| **Performance**                | Optimisée pour clusters distribués   | Excellente sur un nœud              |
+| **Facilité de déploiement**    | Complexe                             | Simple                              |
+| **Maintenance**                | Technique, nécessite expertise       | Plus accessible                     |
+| **Support entreprise**         | Via Red Hat / Canonical              | iXsystems                           |
+| **Intégration virtualisation** | Excellente (Proxmox, OpenStack)      | Bonne (VMware, Proxmox)             |
+| **Coût**                       | Gratuit (support payant)             | Gratuit / Licence entreprise        |
+| **Public cible**               | Grandes infrastructures, cloud privé | PME, lab, stockage local            |
+
+## Orchestrateur
+
+| Critère                           | **Kubernetes (K3s)**                                      | **Docker Swarm**                                                |
+| --------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------- |
+| **Type**                          | Open-source                                               | Open-source                                                     |
+| **Orchestration**                 | Conteneurs (Pods)                                         | Conteneurs (Services)                                           |
+| **Complexité**                    | Élevée, courbe d’apprentissage raide                      | Simple, facile à prendre en main                                |
+| **Installation / Déploiement**    | Plus complexe, nécessite configuration                    | Simple, intégré à Docker Engine                                 |
+| **Écosystème / Intégration**      | Très large, supporte Helm, CRD, opérateurs                | Plus restreint, limité à Docker ecosystem                       |
+| **Scalabilité**                   | Très élevée, adapté aux grandes infrastructures           | Moyenne, adaptée aux petits et moyens clusters                  |
+| **Haute disponibilité**           | Native (control plane + worker nodes)                     | Supportée, mais moins robuste que K8s                           |
+| **Réseau / CNI**                  | Flexibilité via plugins (Calico, Flannel, Weave)          | Overlay réseau intégré, simple mais moins configurable          |
+| **Load balancing**                | Interne via Services / Ingress                            | Simple, intégré aux services Swarm                              |
+| **Mise à jour / rollback**        | Rolling updates, declaratif                               | Rolling updates et rollback simples                             |
+| **Sécurité**                      | RBAC, NetworkPolicies, secrets                            | TLS pour communication entre nœuds, secrets intégrés            |
+| **Support multi-cloud / hybride** | Excellent, standard industriel                            | Limitée, moins adaptée au multi-cloud                           |
+| **Public cible**                  | Entreprises, grandes infrastructures, DevOps expérimentés | PME, équipes dev souhaitant simplicité et rapidité              |
+| **Cas d’usage principal**         | Production à grande échelle, cloud natif                  | Déploiements simples et rapides, développement et petites infra |
+Nous avons opté pour Kubernetes, car bien plus facilement scalable et répondant à l'adaptation à la demande en temps réel.
+
+## Sauvegarde :
+
+|Critère|**Proxmox Backup Server (PBS)**|**Veeam Backup & Replication**|
 |---|---|---|
-|**Type**|Open-source|Open-source (Enterprise disponible)|
-|**Nature**|Stockage distribué logiciel (SDS)|OS de stockage clé en main|
-|**Cas d’usage principal**|Stockage massif, haute disponibilité|NAS / SAN pour PME et entreprises|
-|**Architecture**|Distribuée, scale-out|Centralisée ou cluster limitée|
-|**Types de stockage**|Objet, Bloc, Fichier|Fichier, Bloc|
-|**Protocoles**|S3 (RGW), RBD, CephFS|SMB, NFS, iSCSI|
-|**Scalabilité**|Très élevée (centaines de nœuds)|Moyenne à élevée selon version|
-|**Haute disponibilité**|Native|Dépend de la configuration|
-|**Tolérance aux pannes**|Très élevée|Élevée (ZFS)|
-|**Gestion**|CLI + Dashboard|Interface web très intuitive|
-|**Système de fichiers**|Propre à Ceph|ZFS|
-|**Snapshots / Réplication**|Oui|Oui|
-|**Performance**|Optimisée pour clusters distribués|Excellente sur un nœud|
-|**Facilité de déploiement**|Complexe|Simple|
-|**Maintenance**|Technique, nécessite expertise|Plus accessible|
-|**Support entreprise**|Via Red Hat / Canonical|iXsystems|
-|**Intégration virtualisation**|Excellente (Proxmox, OpenStack)|Bonne (VMware, Proxmox)|
-|**Coût**|Gratuit (support payant)|Gratuit / Licence entreprise|
-|**Public cible**|Grandes infrastructures, cloud privé|PME, lab, stockage local|
+|**Type**|Open-source avec support payant|Propriétaire|
+|**Coût**|Gratuit (support commercial optionnel)|Payant (licence par socket ou par VM)|
+|**Plateformes supportées**|Proxmox VE, Linux, Windows (agents)|VMware, Hyper-V, Nutanix, Linux, Windows|
+|**Virtualisation supportée**|Principalement Proxmox VE (KVM/LXC)|Multi-hyperviseur complet (VMware, Hyper-V…)|
+|**Méthode de sauvegarde**|Incremental, dédupliquée, compression|Incremental, deduplication, compression, replication|
+|**Stockage cible**|Local, NFS, CIFS, S3 compatible|Local, NAS, SAN, Cloud (AWS, Azure, GCP)|
+|**Gestion**|Web UI, CLI|Web UI, console centralisée, PowerShell|
+|**Réplication**|Oui (PBS vers PBS distant)|Oui (replication entre sites ou cloud)|
+|**Snapshots**|Intégration avec Proxmox VE|Intégration avec hyperviseurs supportés|
+|**Restauration**|Granulaire (VM, fichiers), rapide|Granulaire et instant recovery (VM, fichiers, applications)|
+|**Support application**|Limité (via agents)|Large (SQL, Exchange, Oracle, Active Directory…)|
+|**Scalabilité**|Bonne pour clusters Proxmox|Très élevée (multi-site, multi-hyperviseur)|
+|**Facilité d’utilisation**|Simple, interface épurée|Très complète mais plus complexe|
+|**Public cible**|PME, labs, environnements Proxmox|Entreprises, SOC, infrastructures multi-hyperviseurs|
+|**Cas d’usage principal**|Sauvegarde et réplication pour Proxmox VE|Sauvegarde, réplication et DR pour environnements hétérogènes|
+Notre choix s'est porté sur Proxmox Backup Server notamment pour sa faciliter d'intégration avec Proxmox VE.
+
+## Mail :
+
+
+Nous avons optés pour Mailcow car conteneurisable et donc déployable sur un cluster Kubernetes ce qui permettra d'adapter en temps réel la consommation du service aux besoins utilisateurs.
+
 ## SIEM :
-Nous avons étudiés 2 candidats pour le SIEM Splunk et Wazuh
 
 | Critère                       | **Splunk**                                       | **Wazuh**                                    |
 | ----------------------------- | ------------------------------------------------ | -------------------------------------------- |
