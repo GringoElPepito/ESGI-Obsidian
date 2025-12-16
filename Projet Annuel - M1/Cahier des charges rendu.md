@@ -85,6 +85,64 @@ On définit comme exigences non-fonctionnelles les caractéristiques liés au fo
 
 # Choix technologiques
 
+## Switching
+| Critère                          | **Cisco**                                    | **Alcatel-Lucent / Nokia**                                    |
+| -------------------------------- | -------------------------------------------- | ------------------------------------------------------------- |
+| **Type**                         | Commercial / Propriétaire                    | Commercial / Propriétaire                                     |
+| **Gammes principales**           | Catalyst, Nexus, Meraki                      | OmniSwitch, SR (Service Router)                               |
+| **Licence / Coût**               | Élevé, licences IOS XE / NX-OS               | Moyennement élevé, licences SR / OS                           |
+| **Matériel**                     | Haute performance, large gamme               | Bonne performance, gamme PME à entreprise                     |
+| **Système d’exploitation**       | IOS, IOS XE, NX-OS                           | AOS / SR OS                                                   |
+| **Gestion**                      | CLI, GUI (Web, DNA Center), API              | CLI, Web GUI, SNMP, API (REST)                                |
+| **Scalabilité**                  | Très élevée, datacenter & campus             | Élevée, surtout campus et PME, datacenter limité              |
+| **Réseaux supportés**            | L2/L3, VLAN, VXLAN, MPLS, SD-Access          | L2/L3, VLAN, VXLAN, MPLS (SR OS pour réseau large)            |
+| **Sécurité**                     | ACL, 802.1X, segmentation, TrustSec          | ACL, 802.1X, segmentation                                     |
+| **Haute disponibilité**          | StackWise, VSS, VPC                          | Chassis clustering, MLAG                                      |
+| **Monitoring / Analytics**       | SNMP, NetFlow, Telemetry, DNA Center         | SNMP, sFlow, NetVanta Manager, AOS / SR analytics             |
+| **Intégration SDN / Automation** | Cisco DNA Center, SD-Access, Ansible modules | Alcatel-Lucent Fabric Automation, APIs REST, Ansible modules  |
+| **Facilité de déploiement**      | Mature, documentation abondante              | Relativement simple, moins répandu                            |
+| **Public cible**                 | Grandes entreprises, datacenter, campus      | PME, entreprises, opérateurs                                  |
+| **Support / Écosystème**         | Excellent, support mondial et certifications | Bon, support commercial et partenaires, moins vaste que Cisco |
+Nous avons optés pour Cisco car bien plus mature en tant qu'éco-système.
+
+## Pare-feu interne
+| Critère                          | **Juniper (SRX, EX, MX… / Junos OS)**              | **pfSense**                                         |
+| -------------------------------- | -------------------------------------------------- | --------------------------------------------------- |
+| **Type**                         | Commercial / Propriétaire                          | Open-source                                         |
+| **Licence**                      | Licence matérielle et logicielle                   | Gratuit (support optionnel payant)                  |
+| **Plateformes**                  | Matériel dédié (SRX, EX, MX) ou virtualisé (vSRX)  | x86 / VM / Cloud                                    |
+| **Système d’exploitation**       | Junos OS                                           | FreeBSD + WebGUI pfSense                            |
+| **Fonctionnalités principales**  | Routing L3/L2, Firewall, VPN, SD-WAN, QoS, IDS/IPS | Firewall, NAT, VPN, IDS/IPS, load balancing         |
+| **Performance**                  | Très élevée sur matériel Juniper                   | Dépend du matériel / VM utilisé                     |
+| **Sécurité**                     | Firewall stateful, IPS/IDS, UTM, AppSecure         | Firewall stateful, Suricata/Snort IDS, VPN          |
+| **Scalabilité**                  | Très élevée, adaptée aux datacenters et opérateurs | Moyenne, adaptée PME / lab / petites entreprises    |
+| **Gestion**                      | CLI, Junos Space, Web UI limitée                   | WebGUI complète, CLI possible                       |
+| **Intégration SDN / Automation** | Juniper Contrail, Ansible, APIs                    | APIs limitées, Ansible possible avec modules tiers  |
+| **Maintenance / Support**        | Support officiel, mises à jour régulières          | Communauté OSS, support payant via Netgate          |
+| **Courbe d’apprentissage**       | Raide, nécessite connaissance Junos / réseau       | Moyenne, facile à prendre en main pour admin réseau |
+| **Public cible**                 | Grandes entreprises, opérateurs, datacenters       | PME, lab, TPE, utilisateurs techniques              |
+| **Cas d’usage principal**        | Infrastructures critiques, datacenter, backbone    | Firewall, routeur, VPN pour PME et lab              |
+Notre choix s'est porté sur Pfsense pour sa facilité de déploiement.
+
+## Pare-feu externe :
+| Critère                          | **Palo Alto Networks**                                                                  | **OPNsense**                                                                                    |
+| -------------------------------- | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **Type**                         | Commercial / Propriétaire                                                               | Open-source                                                                                     |
+| **Licence**                      | Licence matérielle ou virtuelle, abonnement support/updates                             | Gratuit (support optionnel via tiers)                                                           |
+| **Plateformes**                  | Matériel dédié (PA Series), VM (VM-Series), Cloud                                       | x86 / VM / Cloud                                                                                |
+| **Système d’exploitation**       | PAN-OS                                                                                  | FreeBSD + WebGUI OPNsense                                                                       |
+| **Fonctionnalités principales**  | Firewall stateful, NGFW, VPN, IPS/IDS, URL filtering, App-ID, Threat Prevention, SD-WAN | Firewall stateful, NAT, VPN (IPSec/OpenVPN), IDS/IPS (Suricata), load balancing, captive portal |
+| **Performance**                  | Très élevée sur matériel dédié                                                          | Dépend du matériel / VM utilisé                                                                 |
+| **Sécurité**                     | Avancée : App-ID, Threat Prevention, WildFire (sandboxing), URL filtering               | Bonne : IPS/IDS, VPN, firewall, plugins de sécurité                                             |
+| **Scalabilité**                  | Très élevée, adaptée entreprises et datacenters                                         | Moyenne, adaptée PME, TPE, lab                                                                  |
+| **Gestion**                      | Web UI, CLI, Panorama (centralisé), API REST                                            | WebGUI complète, CLI possible, API REST limitée                                                 |
+| **Intégration SDN / Automation** | Panorama, APIs, Ansible modules                                                         | Plugins limités, Ansible possible via scripts tiers                                             |
+| **Maintenance / Support**        | Support officiel 24/7, mises à jour régulières                                          | Support communautaire, updates via OPNsense community                                           |
+| **Courbe d’apprentissage**       | Raide, nécessite formation sur PAN-OS                                                   | Moyenne, facile à prendre en main pour admin réseau                                             |
+| **Public cible**                 | Grandes entreprises, datacenters, opérateurs                                            | PME, TPE, lab, utilisateurs techniques                                                          |
+| **Cas d’usage principal**        | Sécurité avancée, NGFW, déploiements critiques                                          | Firewall et VPN open-source, protection PME / lab / TPE                                         |
+Nous avons optés pour OPNSense pour sa facilité de déploiement. 
+
 ## Virtualisation :
 
 | Critère                      | **Proxmox VE**                     | **VMware ESXi**                        |
@@ -305,3 +363,8 @@ Nous avons optés pour Ansible pour sa simplicité de configuration et son absen
 |**Support Enterprise**|CNCF / Vendor support possible|Red Hat support officiel|
 |**Public cible**|Entreprises open-source, DevOps, Kubernetes|Grandes entreprises, Red Hat/OpenShift users|
 |**Cas d’usage principal**|Registry sécurisée, gestion d’images OCI/Docker, multi-cloud|Registry sécurisée avec intégration Red Hat/OpenShift et haute disponibilité|
+Pour sa facilité d'interfaçage avec Kubernetes nous avons optés pour Harbor.
+
+# Pilotage
+
+Le pilotage d'un projet est l'élément centrale de celui-ci permettant de faire le lien entre tous les autres parties. C'est pourquoi l'équipe SMJV y a accorde toujours une attention particulière. Une planification solide permettant 
