@@ -56,8 +56,8 @@ Ce nouveau site sera le plus grand site de production du groupe CENEXIS, il comp
 Le site compte un total de 7 bâtiments permettant de répartir les différents services liés au fonctionnement du site :
 - PC Sécurité : ce bâtiment héberge l'équipe de sécurité chargé de contrôler les entrées et sorties du site, ainsi que du respect des règles de sécurité du site
 - Chaufferie : ce bâtiment abrite l'intégralité du système de chaufferie du site permettant de réguler la température des différents environnements de production ou des différents produits
-- Bâtiment 25 - Laboratoire : ce bâtiment
-- Bâtiment 30
-- Bâtiment 40
-- Bâtiment 70
-- Bâtiment 90
+- Bâtiment 25 - Laboratoire : ce bâtiment accueille les équipes de laborantins chargé de la conception et des tests d'élaborations des produits pharmaceutiques avant la mise en production
+- Bâtiment 30 - Administration et Production : Ce bâtiment est découpé en 2 partie, une dédié à l'administration et l'autre à la production. Cette seconde partie est un environnement stérile
+- Bâtiment 40 - Maintenance & Petit Magasin : Ce bâtiment accueille les différentes équipes de maintenance technique, dont l'équipe informatique ainsi que le petit magasin fournissant les différentes pièces détachés nécessaire à la maintenance.
+- Bâtiment 70 - Production : Ce bâtiment est intégralement dédié à la production et est donc entièrement stérile, complexifiant donc les interventions en son sein.
+- Bâtiment 90 - MGH (Magasin Grand Hauteur) : Magasin réceptionnant les principes actifs et autres composants des produits pharmaceutiques. Il sert aussi à l'envoie des médicaments une fois ces derniers p
