@@ -87,61 +87,66 @@ On définit comme exigences non-fonctionnelles les caractéristiques liés au fo
 
 ## Virtualisation :
 Nous avons étudiés 2 candidats pour la virtualisation Proxmox et VMWare ESXi
-|Critère|**Proxmox VE**|**VMware ESXi**|
-|---|---|---|
 
-|   |   |   |
-|---|---|---|
-|**Type**|Open-source|Propriétaire|
+| Critère                      | **Proxmox VE**                     | **VMware ESXi**                        |
+| ---------------------------- | ---------------------------------- | -------------------------------------- |
+| **Type**                     | Open-source                        | Propriétaire                           |
+| **Coût**                     | Gratuit (support payant optionnel) | Payant (version gratuite très limitée) |
+| **Hyperviseur**              | KVM                                | VMware ESXi                            |
+| **Conteneurs**               | Oui (LXC natif)                    | Non (via solutions tierces)            |
+| **Interface de gestion**     | Web intégrée                       | vSphere / vCenter                      |
+| **Clustering / HA**          | Natif                              | Oui (via vCenter)                      |
+| **Live migration**           | Oui                                | Oui (vMotion)                          |
+| **Sauvegardes**              | Intégrées                          | Via outils VMware / tiers              |
+| **Stockage**                 | ZFS, Ceph, NFS, iSCSI              | VMFS, NFS, iSCSI                       |
+| **Snapshots**                | Oui                                | Oui                                    |
+| **API / CLI**                | Oui                                | Oui                                    |
+| **Compatibilité matérielle** | Large, dépend de Linux             | Très large (HCL VMware)                |
+| **Support éditeur**          | Abonnement optionnel               | Support entreprise premium             |
+| **Écosystème**               | Communauté open-source             | Écosystème très mature                 |
+Nous avons décidés de nous orienter vers Proxmox, car la versatilité offerte par la solution permet une meilleur adaptation en temps réel de l'environnement de virtualisation.
 
-|   |   |   |
-|---|---|---|
-|**Coût**|Gratuit (support payant optionnel)|Payant (version gratuite très limitée)|
+## Stockage :
+Nous avons étudiés 2 candidats pour le stockage Ceph et TrueNAS
 
-|   |   |   |
+|Critère|**Ceph**|**TrueNAS (CORE / SCALE)**|
 |---|---|---|
-|**Hyperviseur**|KVM|VMware ESXi|
+|**Type**|Open-source|Open-source (Enterprise disponible)|
+|**Nature**|Stockage distribué logiciel (SDS)|OS de stockage clé en main|
+|**Cas d’usage principal**|Stockage massif, haute disponibilité|NAS / SAN pour PME et entreprises|
+|**Architecture**|Distribuée, scale-out|Centralisée ou cluster limitée|
+|**Types de stockage**|Objet, Bloc, Fichier|Fichier, Bloc|
+|**Protocoles**|S3 (RGW), RBD, CephFS|SMB, NFS, iSCSI|
+|**Scalabilité**|Très élevée (centaines de nœuds)|Moyenne à élevée selon version|
+|**Haute disponibilité**|Native|Dépend de la configuration|
+|**Tolérance aux pannes**|Très élevée|Élevée (ZFS)|
+|**Gestion**|CLI + Dashboard|Interface web très intuitive|
+|**Système de fichiers**|Propre à Ceph|ZFS|
+|**Snapshots / Réplication**|Oui|Oui|
+|**Performance**|Optimisée pour clusters distribués|Excellente sur un nœud|
+|**Facilité de déploiement**|Complexe|Simple|
+|**Maintenance**|Technique, nécessite expertise|Plus accessible|
+|**Support entreprise**|Via Red Hat / Canonical|iXsystems|
+|**Intégration virtualisation**|Excellente (Proxmox, OpenStack)|Bonne (VMware, Proxmox)|
+|**Coût**|Gratuit (support payant)|Gratuit / Licence entreprise|
+|**Public cible**|Grandes infrastructures, cloud privé|PME, lab, stockage local|
+## SIEM :
+Nous avons étudiés 2 candidats pour le SIEM Splunk et Wazuh
 
-|   |   |   |
-|---|---|---|
-|**Conteneurs**|Oui (LXC natif)|Non (via solutions tierces)|
-
-|   |   |   |
-|---|---|---|
-|**Interface de gestion**|Web intégrée|vSphere / vCenter|
-
-|   |   |   |
-|---|---|---|
-|**Clustering / HA**|Natif|Oui (via vCenter)|
-
-|   |   |   |
-|---|---|---|
-|**Live migration**|Oui|Oui (vMotion)|
-
-|   |   |   |
-|---|---|---|
-|**Sauvegardes**|Intégrées|Via outils VMware / tiers|
-
-|   |   |   |
-|---|---|---|
-|**Stockage**|ZFS, Ceph, NFS, iSCSI|VMFS, NFS, iSCSI|
-
-|   |   |   |
-|---|---|---|
-|**Snapshots**|Oui|Oui|
-
-|   |   |   |
-|---|---|---|
-|**API / CLI**|Oui|Oui|
-
-|   |   |   |
-|---|---|---|
-|**Compatibilité matérielle**|Large, dépend de Linux|Très large (HCL VMware)|
-
-|   |   |   |
-|---|---|---|
-|**Support éditeur**|Abonnement optionnel|Support entreprise premium|
-
-|   |   |   |
-|---|---|---|
-|**Écosystème**|Communauté open-source|Écosystème très mature|
+| Critère                       | **Splunk**                                       | **Wazuh**                                    |
+| ----------------------------- | ------------------------------------------------ | -------------------------------------------- |
+| **Type**                      | Propriétaire                                     | Open-source                                  |
+| **Positionnement**            | SIEM / Observabilité / Analyse de données        | SIEM / XDR orienté sécurité                  |
+| **Coût**                      | Élevé (licences basées sur le volume de données) | Gratuit (support payant optionnel)           |
+| **Déploiement**               | On-prem, cloud, hybride                          | On-prem, cloud, hybride                      |
+| **Collecte de logs**          | Très large (agents et intégrations nombreuses)   | Agents Wazuh (logs, intégrité, sécurité)     |
+| **Détection de menaces**      | Oui (corrélation avancée, UEBA selon modules)    | Oui (règles de sécurité, MITRE ATT&CK)       |
+| **HIDS / FIM**                | Limité / via modules                             | Oui (fonctionnalité clé)                     |
+| **Vulnérabilités**            | Via modules/add-ons                              | Scan de vulnérabilités intégré               |
+| **Tableaux de bord**          | Très avancés et personnalisables                 | Intégrés (OpenSearch Dashboards)             |
+| **Scalabilité**               | Excellente (grands volumes de données)           | Bonne, dépend de l’architecture              |
+| **Facilité de prise en main** | Courbe d’apprentissage élevée                    | Plus simple pour la sécurité                 |
+| **Écosystème**                | Très riche (apps, add-ons, intégrations)         | Plus restreint mais ciblé sécurité           |
+| **Support éditeur**           | Support premium entreprise                       | Support communautaire + abonnement           |
+| **Cas d’usage principal**     | Analyse massive de données & SIEM avancé         | Sécurité, conformité, détection d’intrusions |
+Nous avons décidés de nous orienter vers Wazuh, car la solution étant Open-source elle permet de grandement réduire les coûts tout en offrant un service répondant pleinement aux besoins de l'infrastructure
