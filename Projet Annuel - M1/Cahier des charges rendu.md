@@ -51,4 +51,13 @@ La taille réduite de cette équipe permet une circulation fluide de l'informati
 SMJV propose un accompagnement complet pour chaque étape du projet 
 
 # Présentation du contexte
-L'entreprise CENEXIS fait appel à l'entreprise SMJV dans le but de se faire accompagner dans la création d'une infrastructure informatique complète sur leu
+L'entreprise CENEXIS fait appel à l'entreprise SMJV dans le but de se faire accompagner dans la création d'une infrastructure informatique complète sur un nouveau site de production situé à Fontenay-sous-Bois en Île-de-France.
+Ce nouveau site sera le plus grand site de production du groupe CENEXIS, il comptera environ 800 employés ainsi qu'une cinquantaine de ligne de production répartie sur 2 bâtiments.
+Le site compte un total de 7 bâtiments permettant de répartir les différents services liés au fonctionnement du site :
+- PC Sécurité : ce bâtiment héberge l'équipe de sécurité chargé de contrôler les entrées et sorties du site, ainsi que du respect des règles de sécurité du site
+- Chaufferie : ce bâtiment abrite l'intégralité du système de chaufferie du site permettant de réguler la température des différents environnements de production ou des différents produits
+- Bâtiment 25 - Laboratoire : ce bâtiment
+- Bâtiment 30
+- Bâtiment 40
+- Bâtiment 70
+- Bâtiment 90
