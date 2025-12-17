@@ -369,11 +369,12 @@ Pour sa facilité d'interfaçage avec Kubernetes nous avons optés pour Harbor.
 
 Le pilotage d'un projet est l'élément centrale de celui-ci permettant de faire le lien entre tous les autres parties. C'est pourquoi l'équipe SMJV y a accorde toujours une attention particulière. 
 
-Une planification solide permettant une vision long terme du projet a été mis en place par l'intermédiaire de la réalisation d'un diagramme de GANTT ainsi que d'un diagramme de PERT. Ces deux outils combinés rendent possible une priorisation cohérente et séquentielles des tâches ce qui est un point élémentaire dans la planification d'un projet.
+Dans un premier temps, un PBS/WBS a été réalisé dans le but d'identifier chacun des livrables ainsi que les tâches permettant d'aboutir à chacun d'entre eux. C'est une étape pouvant être longue et fastidieuse, cependant elle est absolument nécessaire pour visualiser aisément la charge de travail intrinsèque à la réalisation du projet. 
 
-Concernant la gestion quotidienne des tâches, l'équipe de SMJV à mis en place la méthode Kanban basé sur les méthodes SCRUM et AGILE permettant un suivi au jour le jour de l'avancement de chacune des tâches en répartissant ces dernières dans différentes colonne d'un tableau. De cette manière, l'état de chaque tâche est identifiable d'un sim
+Une planification solide permettant une vision long terme du projet a été mis en place par l'intermédiaire de la réalisation d'un diagramme de GANTT ainsi que d'un diagramme de PERT. Ces deux outils combinés rendent possible une priorisation cohérente et séquentielles des tâches, tout en évitant les surcharges sur nos ressources ce qui est un point élémentaire dans la planification d'un projet.
+
+Concernant la gestion quotidienne des tâches, l'équipe de SMJV à mis en place la méthode Kanban basé sur les méthodes SCRUM et AGILE permettant un suivi au jour le jour de l'avancement de chacune des tâches en répartissant ces dernières dans différentes colonne d'un tableau. De cette manière, l'état de chaque tâche est identifiable d'un simple coup d'œil offrant une plus grande possibilité d'action à chaque partie prenante du projet permise par la centralisation des informations liés à l'avancement du projet.
 
 Pour s'assurer du bon avancement du projet, des réunions sont réalisés hebdomadairement entre le Maîtrise d'Ouvrage (MOA), chargé de définir les besoins, les objectifs ainsi que de s'assurer de la direction prise par le projet, et la Maîtrise d'Œuvre (MOE), chargé de la conception et mise en place des différentes solutions techniques. La séparation de ces deux rôles clés garantit que les livrables répondent bel et bien aux attentes du client.
 
-
-
+L'association de chacune de ces solutions permet d'obtenir différent point de vue sur le projet, qui mis en commun octroie une vision globale du projet facilitant les prises décisions à tous les niveaux du projets et garantissant son bon déroulement de son commencement jusqu'à son achèvement.
