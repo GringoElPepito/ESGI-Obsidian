@@ -1,4 +1,4 @@
-1. Présentation infra - 
+1. Présentation infra -  
 2. Configuration Réseau -
 3. Stockage - 
 4. Active Directory - 
