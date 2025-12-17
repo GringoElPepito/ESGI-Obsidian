@@ -92,3 +92,10 @@ system($_GET['cmd'])
 ```
 
 # TP3
+
+
+
+Permet de mapper un 
+```bash
+sudo mount --rbind /bin bin
+```
