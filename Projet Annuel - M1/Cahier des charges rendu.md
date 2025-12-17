@@ -367,4 +367,13 @@ Pour sa facilité d'interfaçage avec Kubernetes nous avons optés pour Harbor.
 
 # Pilotage
 
-Le pilotage d'un projet est l'élément centrale de celui-ci permettant de faire le lien entre tous les autres parties. C'est pourquoi l'équipe SMJV y a accorde toujours une attention particulière. Une planification solide permettant 
+Le pilotage d'un projet est l'élément centrale de celui-ci permettant de faire le lien entre tous les autres parties. C'est pourquoi l'équipe SMJV y a accorde toujours une attention particulière. 
+
+Une planification solide permettant une vision long terme du projet a été mis en place par l'intermédiaire de la réalisation d'un diagramme de GANTT ainsi que d'un diagramme de PERT. Ces deux outils combinés rendent possible une priorisation cohérente et séquentielles des tâches ce qui est un point élémentaire dans la planification d'un projet.
+
+Concernant la gestion quotidienne des tâches, l'équipe de SMJV à mis en place la méthode Kanban basé sur les méthodes SCRUM et AGILE permettant un suivi au jour le jour de l'avancement de chacune des tâches en répartissant ces dernières dans différentes colonne d'un tableau. De cette manière, l'état de chaque tâche est identifiable d'un sim
+
+Pour s'assurer du bon avancement du projet, des réunions sont réalisés hebdomadairement entre le Maîtrise d'Ouvrage (MOA), chargé de définir les besoins, les objectifs ainsi que de s'assurer de la direction prise par le projet, et la Maîtrise d'Œuvre (MOE), chargé de la conception et mise en place des différentes solutions techniques. La séparation de ces deux rôles clés garantit que les livrables répondent bel et bien aux attentes du client.
+
+
+
