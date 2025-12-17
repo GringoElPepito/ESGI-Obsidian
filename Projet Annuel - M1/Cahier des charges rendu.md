@@ -103,6 +103,7 @@ On définit comme exigences non-fonctionnelles les caractéristiques liés au fo
 | **Facilité de déploiement**      | Mature, documentation abondante              | Relativement simple, moins répandu                            |
 | **Public cible**                 | Grandes entreprises, datacenter, campus      | PME, entreprises, opérateurs                                  |
 | **Support / Écosystème**         | Excellent, support mondial et certifications | Bon, support commercial et partenaires, moins vaste que Cisco |
+
 Nous avons optés pour Cisco car bien plus mature en tant qu'éco-système.
 
 ## Pare-feu interne
