@@ -1,12 +1,12 @@
-1. Présentation infra -  
-2. Configuration Réseau -
-3. Stockage - 
-4. Active Directory - 
-5. vCenter -
-6. vMotion - 
-7. vSphere HA -
-8. Fault Tolerance -
-9. OS Customization -
-10. Liaison à l'AD -
-11. DRS - 
-12. SRDS - 
+1. Présentation infra - Miguel
+2. Configuration Réseau - Soratha
+3. Stockage - Julien
+4. Active Directory - Vivien
+5. vCenter - Julien
+6. vMotion - Soratha
+7. vSphere HA - Vivien
+8. Fault Tolerance - Miguel
+9. OS Customization - Miguel
+10. Liaison à l'AD - Vivien
+11. DRS - Soratha
+12. SRDS - Julien
