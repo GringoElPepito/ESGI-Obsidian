@@ -33,3 +33,11 @@ L'infrastructure contient les éléments suivants :
 	- DECT
 	- Poste téléphonique
 En plus du plan d'adressage, répartis moi tous les éléments contenus dans l'infrastructure entre les différents sous-réseaux que tu auras créés dans le but de segmenter au mieux les différents trafics.
+
+
+
+découpage de adresses :
+Voici le format de notre adressage : 10.XY.Z.0
+- X correspond au numéro du site
+- Y correspond à la zone réseau
+- Z correspond
