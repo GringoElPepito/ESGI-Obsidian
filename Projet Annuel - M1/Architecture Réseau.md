@@ -42,4 +42,7 @@ Voici le format de notre adressage : 10.XY.Z.0
 - Y correspond à la zone réseau (type de trafic) - compris entre 0 et 9
 - Z correspond au numéro de sous-réseau - compris entre 0 et 255
 
-Voici le format des VLAN ID : X
+Voici le format des VLAN ID : XXYZ
+- X correspond au numéro du site - compris entre 1 et 39
+- Y correspond à la zone réseau (type de trafic) - compris entre 0 et 9
+- Z correspond au numéro de sous-réseau - compris entre 0 et 9
