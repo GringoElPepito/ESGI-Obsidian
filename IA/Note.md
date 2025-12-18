@@ -3,3 +3,4 @@ Imputation
 outlier
 feature engineering
 normalisation données
+test du chi²
