@@ -269,12 +269,14 @@
             "id": "b7ecdd526037ece0",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "attachments/Pasted image 20251027101636.png"
+                "file": "IA/Note.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251027101636"
+              "icon": "lucide-file",
+              "title": "Note"
             }
           },
           {
@@ -469,8 +471,9 @@
   },
   "active": "b7ecdd526037ece0",
   "lastOpenFiles": [
-    "IA/Brut.md",
     "attachments/Pasted image 20251027101636.png",
+    "IA/Note.md",
+    "IA/Brut.md",
     "Windows Server/Correction TP.md",
     "attachments/Pasted image 20251027092204.png",
     "Projet Annuel - M1/Architecture Réseau.md",
@@ -502,7 +505,6 @@
     "Sécu/Brut.md",
     "Linux/L3/LPIC102/Tache automatise.md",
     "Sans titre 2.md",
-    "Psychlogie/Dark Psychologie.md",
     "Psychlogie",
     "Projet Annuel - M1/Installation",
     "Projet Annuel - M1/Sans titre/Sans titre",
