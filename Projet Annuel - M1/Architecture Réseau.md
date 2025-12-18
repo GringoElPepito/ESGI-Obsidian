@@ -39,5 +39,5 @@ En plus du plan d'adressage, répartis moi tous les éléments contenus dans l'i
 découpage de adresses :
 Voici le format de notre adressage : 10.XY.Z.0
 - X correspond au numéro du site
-- Y correspond à la zone réseau
-- Z correspond
+- Y correspond à la zone réseau (type de trafic)
+- Z correspond au numéro de sous-réseau 
