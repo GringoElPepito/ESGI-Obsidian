@@ -9,7 +9,7 @@ La technique est au service du business
 
 La compréhension des données
 
-but de l'ia : résolution de problème complexe en probabilité (XVIIIe siècle) engendré par gohess
+but de l'ia : résolution de problème complexe en probabilité (XVIIIe siècle) engendré par gauss
 constitution de base de données à la main, Fisher à créer une base de données nommé IRIS
 Le business conditionne la technique
 
