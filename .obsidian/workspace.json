@@ -320,7 +320,7 @@
             }
           }
         ],
-        "currentTab": 18
+        "currentTab": 19
       }
     ],
     "direction": "vertical"
@@ -467,10 +467,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "1f37fbbbfd27e491",
+  "active": "b7ecdd526037ece0",
   "lastOpenFiles": [
-    "attachments/Pasted image 20251027101636.png",
     "IA/Brut.md",
+    "attachments/Pasted image 20251027101636.png",
     "Windows Server/Correction TP.md",
     "attachments/Pasted image 20251027092204.png",
     "Projet Annuel - M1/Architecture Réseau.md",
@@ -513,7 +513,6 @@
     "Linux/L3",
     "attachments/Pasted image 20251027122807.png",
     "attachments/Pasted image 20251027122758.png",
-    "attachments/Pasted image 20251027120903.png",
     "Cloud Day",
     "Untitled.canvas"
   ]
