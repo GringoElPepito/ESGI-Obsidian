@@ -49,11 +49,13 @@ Voici le format des VLAN ID : XXYZ
 
 Découpage par zone :
 
-| Name       | Zone | Network | Mask |
-| ---------- | ---- | ------- | ---- |
-| Management |      |         |      |
-| Identity   |      |         |      |
-| OT         |      |         |      |
-| Users      |      |         |      |
-| DMZ        |      |         |      |
-|            |      |         |      |
+| Name                   | Zone | Network   | Mask        |
+| ---------------------- | ---- | --------- | ----------- |
+| Management             | 0    | 10.10.0.0 | 255.255.0.0 |
+| Identity               | 1    | 10.11.0.0 | 255.255.0.0 |
+| OT                     | 2    | 10.12.0.0 | 255.255.0.0 |
+| Users                  | 3    | 10.13.0.0 | 255.255.0.0 |
+| DMZ                    | 4    | 10.14.0.0 | 255.255.0.0 |
+| Supervision & Security | 5    | 10.15.0.0 | 255.255.0.0 |
+| Backup                 | 6    | 10.16.0.0 | 255.255.0.0 |
+
