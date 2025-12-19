@@ -99,3 +99,20 @@ Permet de mapper un
 ```bash
 sudo mount --rbind /bin bin
 ```
+
+
+
+mode démarrage pour un conteneur systemd-nspawn :
+```bash
+sudo systemd-nspawn -b -D .
+```
+
+Lister tous les conteneurs lancés :
+```bash
+machinectl
+```
+
+Afficher les logs d'un conteneur :
+```bash
+sudo journalctl -M debi
+```
