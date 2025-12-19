@@ -59,3 +59,8 @@ Découpage par zone :
 | Supervision & Security | 5    | 10.15.0.0 | 255.255.0.0 |
 | Backup                 | 6    | 10.16.0.0 | 255.255.0.0 |
 
+Découpage des zones :
+
+| Name | Zone |     |
+| ---- | ---- | --- |
+|      |      |     |
