@@ -101,6 +101,10 @@ sudo mount --rbind /bin bin
 ```
 
 
+Création d'un conteneur avec isolation réseau :
+```bash
+sudo systemd-nspawn --private-network -D
+```
 
 mode démarrage pour un conteneur systemd-nspawn :
 ```bash
@@ -114,5 +118,13 @@ machinectl
 
 Afficher les logs d'un conteneur :
 ```bash
-sudo journalctl -M debi
+sudo journalctl -M debian
+# permet d'afficher les logs du conteneur nommé debian
 ```
+
+éteindre un conteneur :
+```bash
+sudo machinectl poweroff debian
+```
+
+Dans un conteneur les dossiers montés sont par défaut en lecture seule, exception faites du dossier tmp qui est un point de montage
