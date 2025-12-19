@@ -9,7 +9,7 @@ La technique est au service du business
 
 La compréhension des données
 
-but de l'ia : résolution de problème complexe en probabilité (XVIIIe siècle) engendré par gohess
+but de l'ia : résolution de problème complexe en probabilité (XVIIIe siècle) engendré par gauss
 constitution de base de données à la main, Fisher à créer une base de données nommé IRIS
 Le business conditionne la technique
 
@@ -40,7 +40,7 @@ La méthode non-supervisé sert à classer
 Pour l'apprentissage non supervisé
 - Chaque groupe doit être homogène -> inertie inter-classe plus l'inertie inter-classe est élevé plus les performances le seront
 - Chacun des groupes doit être hétérogène par rapport aux autres groupes -> inertie intra-classe plus l'inertie intra-classe est faible moins il y aura d'erreur
-- Silhouette de Rousseuw doit être compromis 1 et -1, elle permet de mesurer à la fois les performances et les erreurs
+- Silhouette de Rousseuw doit être compris entre 1 et -1, elle permet de mesurer à la fois les performances et les erreurs
 
 La modélisation est une représentation simplifié de la réalité
 
@@ -48,7 +48,7 @@ Pour les modèles de régression, la performance du modèle se mesure avec R² (
 
 MSE -> Mean Squared Error
 RMSE -> Root Mean Square Error
-MAE -> M Absolute Error
+MAE -> Mean Absolute Error
  
 ![[Pasted image 20251124084821.png]]
 ![[Pasted image 20251124092243.png]]
