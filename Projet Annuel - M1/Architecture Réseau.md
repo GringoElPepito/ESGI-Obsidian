@@ -61,11 +61,11 @@ Découpage par zone :
 
 Découpage des zones (sous-zones) :
 
-| Name     | Zone | subnet ID | Network | Mask | Gateway |
-| -------- | ---- | --------- | ------- | ---- | ------- |
-| Switch   | 0    |           |         |      |         |
-| Firewall | 0    |           |         |      |         |
-| Bastion  | 0    |           |         |      |         |
-| PKI      | 1    |           |         |      |         |
-| AD       | 1    |           |         |      |         |
-|          | 1    |           |         |      |         |
+| Name      | Zone | subnet ID | Network | Mask | Gateway |
+| --------- | ---- | --------- | ------- | ---- | ------- |
+| Switch    | 0    |           |         |      |         |
+| Firewall  | 0    |           |         |      |         |
+| Bastion   | 0    |           |         |      |         |
+| PKI       | 1    |           |         |      |         |
+| AD&²dz;:, | 1    |           |         |      |         |
+|           | 1    |           |         |      |         |
