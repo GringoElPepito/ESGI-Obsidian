@@ -111,6 +111,11 @@ mode démarrage pour un conteneur systemd-nspawn :
 sudo systemd-nspawn -b -D .
 ```
 
+Modifier la limite de RAM d'un conteneur en exécution :
+```bash
+systemclt set-property systemd-nspawn@debian 
+```
+
 Lister tous les conteneurs lancés :
 ```bash
 machinectl
