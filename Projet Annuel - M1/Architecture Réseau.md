@@ -59,8 +59,13 @@ Découpage par zone :
 | Supervision & Security | 5    | 10.15.0.0 | 255.255.0.0 |
 | Backup                 | 6    | 10.16.0.0 | 255.255.0.0 |
 
-Découpage des zones :
+Découpage des zones (sous-zones) :
 
-| Name | Zone |     |
-| ---- | ---- | --- |
-|      |      |     |
+| Name     | Zone | subnet ID | Network | Mask | Gateway |
+| -------- | ---- | --------- | ------- | ---- | ------- |
+| Switch   | 0    |           |         |      |         |
+| Firewall | 0    |           |         |      |         |
+| Bastion  | 0    |           |         |      |         |
+| PKI      | 1    |           |         |      |         |
+| AD       | 1    |           |         |      |         |
+|          | 1    |           |         |      |         |
