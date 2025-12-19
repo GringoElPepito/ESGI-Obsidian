@@ -37,7 +37,7 @@ En plus du plan d'adressage, répartis moi tous les éléments contenus dans l'i
 
 
 découpage de adresses :
-Voici le format de notre adressage : 10.XY.Z.0
+Voici le format de notre adressage : 10.XXY.Z.0
 - X correspond au numéro du site - compris entre 1 et 25
 - Y correspond à la zone réseau (type de trafic) - compris entre 0 et 9
 - Z correspond au numéro de sous-réseau - compris entre 0 et 255
@@ -53,7 +53,7 @@ Découpage par zone :
 | ---------------------- | ---- | --------- | ----------- |
 | Management             | 0    | 10.10.0.0 | 255.255.0.0 |
 | Identity               | 1    | 10.11.0.0 | 255.255.0.0 |
-| OT                     | 2    | 10.12.0.0 | 255.255.0.0 |
+| OT - Prod              | 2    | 10.12.0.0 | 255.255.0.0 |
 | Users                  | 3    | 10.13.0.0 | 255.255.0.0 |
 | DMZ                    | 4    | 10.14.0.0 | 255.255.0.0 |
 | Supervision & Security | 5    | 10.15.0.0 | 255.255.0.0 |
