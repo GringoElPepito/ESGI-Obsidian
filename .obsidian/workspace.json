@@ -8,17 +8,45 @@
         "type": "tabs",
         "children": [
           {
-            "id": "665459d72635b068",
+            "id": "bfb643269a2d6408",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SmartBin.md",
+                "file": "Psychlogie/Dark Psychologie.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SmartBin"
+              "title": "Dark Psychologie"
+            }
+          },
+          {
+            "id": "43fafdac9951b11e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projet Annuel - M1/Installation/Ansible.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ansible"
+            }
+          },
+          {
+            "id": "64cd3c7873020beb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "IA/Brut.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Brut"
             }
           },
           {
@@ -51,26 +79,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Brut.md",
+                "file": "Projet Annuel - M1/Liste Technos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brut"
-            }
-          },
-          {
-            "id": "391420f3138115c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sécu-Master/Brut.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Brut"
+              "title": "Liste Technos"
             }
           },
           {
@@ -243,12 +257,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Cours 1.md",
+                "file": "Projet Annuel - M1/Installation/Proxmox Ceph.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cours 1"
+              "title": "Proxmox Ceph"
+            }
+          },
+          {
+            "id": "b7ecdd526037ece0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "IA/Note.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Note"
             }
           },
           {
@@ -294,7 +322,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 18
       }
     ],
     "direction": "vertical"
@@ -412,13 +440,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Smartbin text.md",
+                "file": "Projet Annuel - M1/Cahier des charges.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Smartbin text"
+              "title": "Plan de Cahier des charges"
             }
           }
         ],
@@ -441,43 +469,46 @@
       "bases:Create new base": false
     }
   },
-  "active": "391420f3138115c3",
+  "active": "1f37fbbbfd27e491",
   "lastOpenFiles": [
-    "Projet Annuel - M1/Architecture Réseau.md",
-    "Sécu-Master/Brut.md",
-    "Projet Annuel - M1/Sans titre.md",
-    "Projet Annuel - M1/Sans titre 1.md",
+    "Projet Annuel - M1/Installation/Ansible.md",
+    "IA/Brut.md",
     "Sans titre 3.md",
+    "Windows Server/Correction TP.md",
     "IA/Note.md",
-    "Projet Annuel - M1/Brut.md",
-    "Projet Annuel - M1/Cahier des charges.md",
-    "Projet Annuel - Bachelor 3/Maquette Réseau.md",
-    "Projet Annuel - M1/Projet annuel.md",
-    "Projet Annuel - M1/Contexte.md",
+    "attachments/Pasted image 20251027101636.png",
+    "attachments/Pasted image 20251027092204.png",
+    "Projet Annuel - M1/Architecture Réseau.md",
     "Projet Annuel - M1/Cahier des charges rendu.md",
+    "Python/Cours 1.md",
+    "Projet Annuel - M1/Cahier des charges.md",
     "Vmware/Répartition.md",
-    "Vmware/Révision.md",
-    "Planification Projet/Brut.md",
-    "Vmware/Rapport Projet Vmware.md",
-    "Planification Projet/Cours-1.md",
-    "Planification Projet/Gestion des risques.md",
-    "Planification Projet/Révision.md",
-    "Planification Projet/Soutenance.md",
-    "Planification Projet/Suivi avancement projet.md",
-    "Vmware/Introduciton à la Virtualisation et découverte de l'hyperviseur ESXi.md",
+    "Projet Annuel - M1/Liste Technos.md",
+    "Projet Annuel - M1/Projet annuel.md",
     "Projet Annuel - M1/Installation/Proxmox Ceph.md",
+    "Vmware/Révision.md",
+    "Projet Annuel - M1/Contexte.md",
+    "Vmware/Rapport Projet Vmware.md",
+    "Vmware/Introduciton à la Virtualisation et découverte de l'hyperviseur ESXi.md",
+    "Projet Annuel - M1/Sans titre.md",
+    "Projet Annuel - Bachelor 3/DNS.md",
     "Vmware/Brut.md",
+    "Projet Annuel - M1/Brut.md",
+    "SmartBin.md",
     "Vmware",
+    "Planification Projet/Brut.md",
     "attachments/Pasted image 20251124114936.png",
     "attachments/Pasted image 20251124105553.png",
     "attachments/Pasted image 20251124103355.png",
     "attachments/Pasted image 20251124095729.png",
     "attachments/Pasted image 20251124092243.png",
     "attachments/Pasted image 20251124084821.png",
+    "Sécu/Brut.md",
+    "Linux/L3/LPIC102/Tache automatise.md",
     "Sans titre 2.md",
-    "Projet Annuel - M1/Installation/Ansible.md",
     "Psychlogie",
     "Projet Annuel - M1/Installation",
+    "Projet Annuel - M1/Sans titre/Sans titre",
     "Projet Annuel - M1/Document",
     "Linux/M1",
     "Linux/L3/LPIC102",
@@ -485,10 +516,7 @@
     "Linux/L3",
     "attachments/Pasted image 20251027122807.png",
     "attachments/Pasted image 20251027122758.png",
-    "attachments/Pasted image 20251027120903.png",
-    "attachments/Pasted image 20251027115026.png",
     "Cloud Day",
-    "Projet Annuel - M1",
     "Untitled.canvas"
   ]
 }
