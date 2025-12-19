@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vmware/Répartition.md",
+                "file": "Projet Annuel - M1/Sans titre 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Répartition"
+              "title": "Sans titre 1"
             }
           },
           {
@@ -429,13 +429,19 @@
   },
   "active": "c908d374d9c98530",
   "lastOpenFiles": [
-    "Sécu-Master/Brut.md",
-    "Vmware/Répartition.md",
-    "Vmware/Révision.md",
+    "Projet Annuel - M1/Brut.md",
+    "Projet Annuel - M1/Sans titre 1.md",
+    "Projet Annuel - M1/Cahier des charges.md",
+    "Projet Annuel - Bachelor 3/Maquette Réseau.md",
+    "Projet Annuel - M1/Sans titre.md",
+    "Projet Annuel - M1/Projet annuel.md",
+    "Projet Annuel - M1/Contexte.md",
     "Projet Annuel - M1/Cahier des charges rendu.md",
+    "Vmware/Répartition.md",
+    "Sécu-Master/Brut.md",
+    "Vmware/Révision.md",
     "Planification Projet/Brut.md",
     "Vmware/Rapport Projet Vmware.md",
-    "Projet Annuel - M1/Cahier des charges.md",
     "Planification Projet/Cours-1.md",
     "Planification Projet/Gestion des risques.md",
     "Planification Projet/Révision.md",
@@ -444,7 +450,6 @@
     "Vmware/Introduciton à la Virtualisation et découverte de l'hyperviseur ESXi.md",
     "Projet Annuel - M1/Installation/Proxmox Ceph.md",
     "Vmware/Brut.md",
-    "Projet Annuel - M1/Sans titre.md",
     "Vmware",
     "attachments/Pasted image 20251124114936.png",
     "attachments/Pasted image 20251124105553.png",
@@ -459,12 +464,7 @@
     "Projet Annuel - M1/Installation",
     "Projet Annuel - M1/Document/Présentation Equipe Projet.md",
     "Projet Annuel - M1/Document/Présentation Entreprise cliente.md",
-    "Projet Annuel - M1/Document/PBS-WBS.md",
-    "Projet Annuel - M1/Document/Méthode Agile-SCRUM.md",
     "Projet Annuel - M1/Document",
-    "Projet Annuel - M1/Liste Technos.md",
-    "Projet Annuel - M1/Projet annuel.md",
-    "Linux/M1/Brut.md",
     "Linux/M1",
     "Linux/L3/LPIC102",
     "Linux/L3/LPIC101",
