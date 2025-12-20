@@ -1,21 +1,34 @@
-Installation 
+Installation du package si non présent :
 ```bash
 apt install open-iscsi # installation du package
-iscsiadm -m discovery -t sendtargets -p 10.99.99.2 # recherche des targets
-iscsiadm -m node -T iqn.2025.local.truenas:proxmox01 -p 10.99.99.2 --login # connexion à la target
-lsblk # vérification de la présence d'un nouveau disque
-pvcreate /dev/sda # initialisation du disque
-vgcreate vg_iscsi_vm_datastore /dev/sdb # création d'un volume group
-lvcreate -l 100%FREE -T vg_iscsi_vm_datastore/data # création d'un thin pool
-pvesm add lvmthin truenas-iscsi \ # ajout du LVM-Thin iSCSI en tant que datastore
-  --vgname vg_iscsi_truenas \
-  --thinpool data
 ```
-
-
-
-Modification 
+Ajout du partage iSCSI pour montage automatique au démarrage du service `open-iscsi.service` :
 ```bash
 iscsiadm -m node -T iqn.2005-10.org.freenas.ctl:vm-datastore -p 10.99.99.2 --op update -n node.startup -v automatic
-systemctl restart open-iscsi
+```
+redémarrage du service :
+```bash
+systemctl restart open-iscsi.service 
+```
+vérification de la présence d'un nouveau disque :
+```bash
+lsblk
+```
+initialisation du disque :
+```bash
+pvcreate /dev/sda
+```
+création d'un volume group :
+```bash
+vgcreate vg_iscsi_vm_datastore /dev/sdb 
+```
+création d'un thin pool :
+```bash
+lvcreate -l 100%FREE -T vg_iscsi_vm_datastore/data 
+```
+ajout du LVM-Thin iSCSI en tant que datastore :
+```bash
+pvesm add lvmthin truenas-iscsi \ 
+  --vgname vg_iscsi_truenas \
+  --thinpool data
 ```
