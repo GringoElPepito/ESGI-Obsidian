@@ -15,3 +15,7 @@ pvesm add lvmthin truenas-iscsi \ # ajout du LVM-Thin iSCSI en tant que datastor
 
 
 Modification 
+```bash
+iscsiadm -m node -T iqn.2005-10.org.freenas.ctl:vm-datastore -p 10.99.99.2 --op update -n node.startup -v automatic
+systemctl restart open-iscsi
+```
