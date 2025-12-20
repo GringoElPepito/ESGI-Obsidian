@@ -1,5 +1,4 @@
-A réaliser sur chaque node :
-
+Installation 
 ```bash
 apt install open-iscsi # installation du package
 iscsiadm -m discovery -t sendtargets -p 10.99.99.2 # recherche des targets
@@ -13,3 +12,6 @@ pvesm add lvmthin truenas-iscsi \ # ajout du LVM-Thin iSCSI en tant que datastor
   --thinpool data
 ```
 
+
+
+Modification 
