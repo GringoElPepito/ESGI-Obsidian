@@ -2,9 +2,13 @@ Installation du package si non présent :
 ```bash
 apt install open-iscsi # installation du package
 ```
+Récupérer les partages disponibles iscsi :
+```bash
+iscsiadm -m discovery -t sendtargets -p 10.99.99.2:3260
+```
 Ajout du partage iSCSI pour montage automatique au démarrage du service `open-iscsi.service` :
 ```bash
-iscsiadm -m node -T iqn.2005-10.org.freenas.ctl:vm-datastore -p 10.99.99.2 --op update -n node.startup -v automatic
+iscsiadm -m node -T iqn.2005-10.org.freenas.ctl:vm-datastore -p 10.99.99.2:3260 --op update -n node.startup -v automatic
 ```
 redémarrage du service :
 ```bash
