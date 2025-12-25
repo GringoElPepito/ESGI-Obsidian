@@ -36,3 +36,7 @@ pvesm add lvmthin truenas-iscsi \
   --vgname vg_iscsi_truenas \
   --thinpool data
 ```
+Déconnecter l'hôte du partage iscsi :
+```bash
+iscsiadm -m node -p 10.99.99.2:3260 --logout
+```
