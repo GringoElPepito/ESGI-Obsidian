@@ -1,3 +1,4 @@
+# Ajout partage iscsi
 Installation du package si non présent :
 ```bash
 apt install open-iscsi # installation du package
@@ -18,6 +19,8 @@ vérification de la présence d'un nouveau disque :
 ```bash
 lsblk
 ```
+
+# Installation LVM on iscsi
 initialisation du disque :
 ```bash
 pvcreate /dev/sda
@@ -40,3 +43,5 @@ Déconnecter l'hôte du partage iscsi :
 ```bash
 iscsiadm -m node -p 10.99.99.2:3260 --logout
 ```
+
+# Installation ZFS on iscsi
