@@ -45,3 +45,7 @@ iscsiadm -m node -p 10.99.99.2:3260 --logout
 ```
 
 # Installation ZFS on iscsi
+Création du pool zfs :
+```
+zpool create -f -o ashift=12 zfs-pool
+```
