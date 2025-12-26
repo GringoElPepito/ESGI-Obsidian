@@ -46,9 +46,7 @@ lvcreate -l 100%FREE -T vg_iscsi_vm_datastore/data
 
 Ajout du LVM-Thin iSCSI en tant que datastore :
 ```bash
-pvesm add lvmthin truenas-iscsi \ 
-  --vgname vg_iscsi_truenas \
-  --thinpool data
+pvesm add lvmthin truenas-iscsi --vgname vg_iscsi_vm_datastore --thinpool data
 ```
 
 # Installation ZFS on iscsi
