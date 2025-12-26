@@ -52,9 +52,17 @@ pvesm add lvmthin truenas-iscsi \
 ```
 
 # Installation ZFS on iscsi
+## Version 1 -> pas très fonctionnel
 Création du pool zfs :
 ```bash
 zpool create -f -o ashift=12 zfs-pool
 ```
 
 Puis ajout du stockage via interface web.
+
+## Version 2 -> plus carré
+Nécessite SSH activé sur TrueNAS
+Ajout de la clé public sur les hôtes Proxmox :
+```bash
+ssh truenas_admin@10.99.99.2
+```
