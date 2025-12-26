@@ -73,4 +73,13 @@ Création d'un dossier pour stocker les clés privés :
 mkdir -p /etc/pve/priv/zfs
 ```
 
-Création de la clé privé
+Création de la clé privé et public :
+```bash
+ssh-keygen -f /etc/pve/priv/zfs/10.99.99.1_id_rsa
+```
+
+Copie de la clé public vers TrueNAS :
+```bash
+ssh-copy-id -i /etc/pve/priv/zfs/10.99.99.1_id_rsa.pub pve01@10.99.99.2
+```
+
