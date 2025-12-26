@@ -257,12 +257,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Installation/Proxmox iscsi.md",
+                "file": "Projet Annuel - M1/Document/PBS-WBS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Proxmox iscsi"
+              "title": "PBS-WBS"
             }
           },
           {
@@ -354,7 +354,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "cluster proxmox",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -375,7 +375,8 @@
               "title": "Signet"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -471,8 +472,10 @@
   },
   "active": "1f37fbbbfd27e491",
   "lastOpenFiles": [
-    "Projet Annuel - M1/Installation/Proxmox Ceph.md",
+    "Projet Annuel - M1/Projet annuel.md",
+    "Projet Annuel - M1/Cahier des charges rendu.md",
     "Projet Annuel - M1/Installation/Proxmox iscsi.md",
+    "Projet Annuel - M1/Installation/Proxmox Ceph.md",
     "Projet Annuel - M1/Installation/Ansible.md",
     "IA/Brut.md",
     "Sans titre 3.md",
@@ -481,12 +484,10 @@
     "attachments/Pasted image 20251027101636.png",
     "attachments/Pasted image 20251027092204.png",
     "Projet Annuel - M1/Architecture Réseau.md",
-    "Projet Annuel - M1/Cahier des charges rendu.md",
     "Python/Cours 1.md",
     "Projet Annuel - M1/Cahier des charges.md",
     "Vmware/Répartition.md",
     "Projet Annuel - M1/Liste Technos.md",
-    "Projet Annuel - M1/Projet annuel.md",
     "Vmware/Révision.md",
     "Projet Annuel - M1/Contexte.md",
     "Vmware/Rapport Projet Vmware.md",
