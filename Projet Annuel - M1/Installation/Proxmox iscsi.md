@@ -62,7 +62,10 @@ Puis ajout du stockage via interface web.
 
 ## Version 2 -> plus carré
 Nécessite SSH activé sur TrueNAS
+Un utilisateur par node Proxmox avec accès SSH
 Ajout de la clé public sur les hôtes Proxmox :
 ```bash
 ssh truenas_admin@10.99.99.2
 ```
+
+Création d
