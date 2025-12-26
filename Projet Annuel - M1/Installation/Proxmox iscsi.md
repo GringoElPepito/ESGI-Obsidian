@@ -68,4 +68,9 @@ Ajout de la clé public sur les hôtes Proxmox :
 ssh truenas_admin@10.99.99.2
 ```
 
-Création d
+Création d'un dossier pour stocker les clés privés :
+```bash
+mkdir -p /etc/pve/priv/zfs
+```
+
+Création de la clé privé
