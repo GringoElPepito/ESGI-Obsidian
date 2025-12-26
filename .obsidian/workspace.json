@@ -257,12 +257,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Document/PBS-WBS.md",
+                "file": "Projet Annuel - M1/Installation/Proxmox iscsi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PBS-WBS"
+              "title": "Proxmox iscsi"
             }
           },
           {
@@ -354,7 +354,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cluster proxmox",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -375,8 +375,7 @@
               "title": "Signet"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -472,6 +471,7 @@
   },
   "active": "1f37fbbbfd27e491",
   "lastOpenFiles": [
+    "Projet Annuel - M1/Document/PBS-WBS.md",
     "Projet Annuel - M1/Projet annuel.md",
     "Projet Annuel - M1/Cahier des charges rendu.md",
     "Projet Annuel - M1/Installation/Proxmox iscsi.md",
@@ -506,7 +506,6 @@
     "attachments/Pasted image 20251124092243.png",
     "attachments/Pasted image 20251124084821.png",
     "Sécu/Brut.md",
-    "Linux/L3/LPIC102/Tache automatise.md",
     "Psychlogie",
     "Projet Annuel - M1/Installation",
     "Projet Annuel - M1/Sans titre/Sans titre",
