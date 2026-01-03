@@ -99,24 +99,41 @@ Avant de passer aux réalisations techniques, il est important d'établir en pla
 
 ## Conception fonctionnelle
 La conception fonctionnelle a pour but de définir les différents services et interactions que devra prendre en charge l'infrastructure.
-Voici donc la liste des services que nous avons pu définir jusqu'à maintenant ainsi que les interactions les concernant 
+Voici donc la liste des services que nous avons pu définir jusqu'à maintenant ainsi que les interactions les concernant :
 - ERP
 	- Flux entrants : Interactions utilisateurs
-	- Flux bidirectionnels : Interactions avec les logiciels de production
+	- Flux bidirectionnels : logiciels de production
+	- Flux sortant : Interaction avec Blueway (Récupération des numéros de production)
 - Annuaire utilisateur
 	- Flux entrants : Interactions utilisateurs
-	- Flux entrants : service mail
-	- Flux entrants : 
+	- Flux entrants : Accès interface de gestion
+	- Flux entrants : service de mail
+	- Flux entrants : service de messagerie instantanné
+	- Flux entrants : service de téléphonie IP
 - Supervision
+	- Flux entrants : Accès interface de gestion
+	- Flux bidirectionnels : Supervision des équipements
+	- Flux sortants : émission des alertes
 - SIEM
+	- Flux entrants : Accès interface de gestion
+	- Flux entrants : Récupération des logs
+	- Flux sortant : émission des alertes
 - Automatisation
-- Orchestrateur de conteneur
+	- Flux sortants : Accès aux différents terminaux
 - Sauvegarde
+	- Flux entrants : Accès interface de gestion
+	- Flux sortants : Réalisation des sauvegardes
 - Mail
+	- Flux entrants : réception de mail externe
+	- Flux entrants : Interaction utilisateurs interne (envoie + réception)
+	- Flux sortants : envoie de mail externe
 - Messagerie instantanné
+	- Flux entrants : Interaction utilisateurs
 - Téléphonie IP
-- Registry de Conteneur
+	- Flux bidirectionnel : Gestion des communications entre les terminaux (externes ou internes)
 - Logiciel de production
+	- Flux entrants : Interactions utilisateurs
+	- Flux bidirectionnels : ERP
 
 ## Conception technique
 ### Réseau
