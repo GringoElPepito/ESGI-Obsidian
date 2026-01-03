@@ -257,12 +257,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sans titre 2.md",
+                "file": "Projet Annuel - M1/Cahier des charges rendu.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sans titre 2"
+              "title": "Cahier des charges rendu"
             }
           },
           {
@@ -471,6 +471,7 @@
   },
   "active": "1f37fbbbfd27e491",
   "lastOpenFiles": [
+    "Sans titre 2.md",
     "Projet Annuel - M1/Installation/Ansible.md",
     "Projet Annuel - M1/Installation/Proxmox iscsi.md",
     "Projet Annuel - M1/Document/PBS-WBS.md",
@@ -505,7 +506,6 @@
     "attachments/Pasted image 20251124095729.png",
     "attachments/Pasted image 20251124092243.png",
     "attachments/Pasted image 20251124084821.png",
-    "Sécu/Brut.md",
     "Psychlogie",
     "Projet Annuel - M1/Installation",
     "Projet Annuel - M1/Sans titre/Sans titre",

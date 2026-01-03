@@ -104,10 +104,10 @@ On définit comme exigences non-fonctionnelles les caractéristiques liés au fo
 | **Public cible**                 | Grandes entreprises, datacenter, campus      | PME, entreprises, opérateurs                                  |
 | **Support / Écosystème**         | Excellent, support mondial et certifications | Bon, support commercial et partenaires, moins vaste que Cisco |
 
-Nous avons optés pour Cisco car bien plus mature en tant qu'éco-système.
+Nous avons optés pour Cisco et cela pour plusieurs raisons. Tout d'abord 
 
 ## Pare-feu interne
-| Critère                          | **Juniper (SRX, EX, MX… / Junos OS)**              | **pfSense**                                         |
+| Critère                          | **Juniper SRX380**                                 | **pfSense**                                         |
 | -------------------------------- | -------------------------------------------------- | --------------------------------------------------- |
 | **Type**                         | Commercial / Propriétaire                          | Open-source                                         |
 | **Licence**                      | Licence matérielle et logicielle                   | Gratuit (support optionnel payant)                  |
@@ -123,7 +123,7 @@ Nous avons optés pour Cisco car bien plus mature en tant qu'éco-système.
 | **Courbe d’apprentissage**       | Raide, nécessite connaissance Junos / réseau       | Moyenne, facile à prendre en main pour admin réseau |
 | **Public cible**                 | Grandes entreprises, opérateurs, datacenters       | PME, lab, TPE, utilisateurs techniques              |
 | **Cas d’usage principal**        | Infrastructures critiques, datacenter, backbone    | Firewall, routeur, VPN pour PME et lab              |
-Notre choix s'est porté sur Pfsense pour sa facilité de déploiement.
+Notre choix s'est porté sur l'équipement Juniper SRX380 et cela même si sont coût est plus élevé car c'est un équipement ayant déjà fait ses preuves dans des environnements critiques. De plus, nous pourrons bénéficier du support éditeur si jamais nous rencontrons des difficultés de configuration ou que des CVE concernant ce produit font leurs apparitions.
 
 ## Pare-feu externe :
 | Critère                          | **Palo Alto Networks**                                                                  | **OPNsense**                                                                                    |
