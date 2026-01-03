@@ -6,9 +6,9 @@
 	- [ ] PERT ?
 	- [ ] Kanban
 	- [ ] RACI
-- [ ] Relire + Corriger expression du besoin
-- [ ] Relire + Corriger exigences Fonctionnelles
-- [ ] Relire + Corriger exigences Non- Fonctionnelles
+- [x] Relire + Corriger expression du besoin
+- [x] Relire + Corriger exigences Fonctionnelles
+- [x] Relire + Corriger exigences Non- Fonctionnelles
 - [ ] Rédiger les objectifs globaux et spécifiques
 - [ ] Définition de la partie fonctionnelle -> services + interactions
 - [ ] Définition de la partie technique -> Réseau, Serveurs, Stockage, Cloud

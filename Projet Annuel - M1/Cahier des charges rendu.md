@@ -73,6 +73,7 @@ Voici les besoins exprimés par le client concernant l'infrastructure à réalis
 - Liaison nomade entre site et client
 - Système de communication multimédia (Mail, Messagerie, Téléphonie)
 
+Pour faciliter l'identification des besoins ainsi que la recherche de la solution la plus adapté pour chacun d'entre eux, nous divisons les besoins et les classons dans 2 catégories distinctes.
 ## Exigences fonctionnelles
 On définit comme exigences fonctionnelles les services et/ou comportements que doit fournir le système, voici ce qui est attendu par CENEXIS pour ce nouveau site :
 - Gestion centralisé des utilisateurs
@@ -92,6 +93,17 @@ On définit comme exigences non-fonctionnelles les caractéristiques liés au fo
 - Solution d'automatisation permettant un déploiement de l'infrastructure
 - Redondance des services critiques
 - Haut niveau de sécurité pour l'ensemble du système d'information et des données qui y circulent
+
+# Conception globale de l'infrastructure
+Avant de passer aux réalisations techniques, il est important d'établir en plan global auquel ressembler l'infrastructure finale. Cette étape a pour but de préparer la réalisation 
+
+## Conception fonctionnelle
+
+## Conception technique
+
+## Mesures de sécurité
+Il est évidemment primordial d'aborder la question de la sécurité au sein de l'infrastructure
+
 
 # Choix technologiques
 
