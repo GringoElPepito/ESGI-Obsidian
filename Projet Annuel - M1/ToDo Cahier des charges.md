@@ -10,7 +10,7 @@
 - [x] Relire + Corriger exigences Fonctionnelles
 - [x] Relire + Corriger exigences Non- Fonctionnelles
 - [ ] Rédiger les objectifs globaux et spécifiques
-- [ ] Définition de la partie fonctionnelle -> services + interactions
+- [x] Définition de la partie fonctionnelle -> services + interactions
 - [ ] Définition de la partie technique -> Réseau, Serveurs, Stockage, Cloud
 - [ ] Intégration de la sécurité
 	- [x] Segmentation réseau
