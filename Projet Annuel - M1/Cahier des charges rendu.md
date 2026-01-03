@@ -108,6 +108,7 @@ L'adresse réseau de chaque zone se définit de la manière suivante : 10.XXY.Z.
 - Y correspond à la zone réseau (type de trafic) - compris entre 0 et 9
 - Z correspond au numéro de sous-réseau - compris entre 0 et 255
 De cette manière, chaque adresse devient facilement interprétable ce qui simplifie la gestion quotidienne de l'infrastructure.
+
 *Tableau des zones pour le site de Fontenay-sous-Bois*
 
 | Name         | Zone | Network   | Mask        |
@@ -123,13 +124,48 @@ De cette manière, chaque adresse devient facilement interprétable ce qui simpl
 | IPSec        | 8    | 10.8.0.0  | 255.255.0.0 |
 Concernant la 8e zone IPSec, à savoir celle qui concentre le trafic intersites, étant donné que cette fait le lien entre les différents sites de l'entreprise cliente, nous avons définit sont numéro de site comme 0.
 
-Cependant le découpage par zone n'est pas suffisant, c'est pourquoi chaque zone est elle-même redécoupé en sous-réseaux permettant de segmenter les différents services présent au sein d'une même zone.
-*Tableau *
-
-Voici le format des VLAN ID : XXYZ
+Cependant le découpage par zone n'est pas suffisant, c'est pourquoi chaque zone est elle-même redécoupé en sous-réseaux permettant de segmenter les différents services présent au sein d'une même zone pour les répartir en VLAN.
+Chaque sous-réseau du zone possède un ID VLAN définit de la manière suivante : XXYZ
 - X correspond au numéro du site - compris entre 1 et 39
 - Y correspond à la zone réseau (type de trafic) - compris entre 0 et 9
 - Z correspond au numéro de sous-réseau - compris entre 0 et 9
+
+*Tableau des sous-réseaux pour le site de Fontenay-sous-Bois*
+
+| Name                   | Zone | Subnet | VLAN | Network   | Mask          | Gateway   |
+| ---------------------- | ---- | ------ | ---- | --------- | ------------- | --------- |
+| Switch                 | 0    | 0      | 100  | 10.10.0.0 | 255.255.255.0 | 10.10.0.1 |
+| Firewall               | 0    | 1      | 101  | 10.10.1.0 | 255.255.255.0 | 10.10.1.1 |
+| Hardware Server        | 0    | 2      | 102  | 10.10.2.0 | 255.255.255.0 | 10.10.2.1 |
+| Bastion                | 0    | 3      | 103  | 10.10.3.0 | 255.255.255.0 | 10.10.3.1 |
+| Ansible                | 0    | 4      | 104  | 10.10.4.0 | 255.255.255.0 | 10.10.4.1 |
+| Proxmox                | 1    | 0      | 110  | 10.11.0.0 | 255.255.255.0 | 10.11.0.1 |
+| Ceph/TrueNAS           | 1    | 1      | 111  | 10.11.1.0 | 255.255.255.0 | 10.11.1.1 |
+| Active Directory       | 1    | 2      | 112  | 10.11.2.0 | 255.255.255.0 | 10.11.2.1 |
+| SAP                    | 1    | 3      | 113  | 10.11.3.0 | 255.255.255.0 | 10.11.3.1 |
+| Kubernetes - Harbor    | 1    | 4      | 114  | 10.11.4.0 | 255.255.255.0 | 10.11.4.1 |
+| Production Lines       | 2    | 0      | 120  | 10.12.0.0 | 255.255.255.0 | 10.12.0.1 |
+| Production Software    | 2    | 1      | 121  | 10.12.1.0 | 255.255.255.0 | 10.12.1.1 |
+| Production Printers    | 2    | 2      | 122  | 10.12.2.0 | 255.255.255.0 | 10.12.2.1 |
+| Production Users wired | 2    | 3      | 123  | 10.12.3.0 | 255.255.255.0 | 10.12.3.1 |
+| Production Users wifi  | 2    | 4      | 124  | 10.12.4.0 | 255.255.255.0 | 10.12.4.1 |
+| Laboratory devices     | 2    | 5      | 125  | 10.12.5.0 | 255.255.255.0 | 10.12.5.1 |
+| Laboratory Users wired | 2    | 6      | 126  | 10.12.6.0 | 255.255.255.0 | 10.12.6.1 |
+| Laboratory Users wifi  | 2    | 7      | 127  | 10.12.7.0 | 255.255.255.0 | 10.12.7.1 |
+| Normal Users wired     | 3    | 0      | 130  | 10.13.0.0 | 255.255.255.0 | 10.13.0.1 |
+| Normal Users wifi      | 3    | 1      | 131  | 10.13.1.0 | 255.255.255.0 | 10.13.1.1 |
+| Printers               | 3    | 2      | 132  | 10.13.2.0 | 255.255.255.0 | 10.13.2.1 |
+| Guest wifi             | 3    | 3      | 133  | 10.13.3.0 | 255.255.255.0 | 10.13.3.1 |
+| Mail                   | 4    | 0      | 140  | 10.14.0.0 | 255.255.255.0 | 10.14.0.1 |
+| 3CX                    | 4    | 1      | 141  | 10.14.1.0 | 255.255.255.0 | 10.14.1.1 |
+| VPN point-to-site      | 4    | 2      | 142  | 10.14.2.0 | 255.255.255.0 | 10.14.2.1 |
+| Proxmox Backup Server  | 5    | 0      | 150  | 10.15.0.0 | 255.255.255.0 | 10.15.0.1 |
+| Supervision            | 6    | 0      | 160  | 10.16.0.0 | 255.255.255.0 | 10.16.0.1 |
+| SIEM                   | 6    | 1      | 161  | 10.16.1.0 | 255.255.255.0 | 10.16.1.1 |
+| IP Phones              | 7    | 0      | 170  | 10.17.0.0 | 255.255.255.0 | 10.17.0.1 |
+| DECT                   | 7    | 1      | 171  | 10.17.1.0 | 255.255.255.0 | 10.17.1.1 |
+| VoIP Access Points     | 7    | 2      | 172  | 10.17.2.0 | 255.255.255.0 | 10.17.2.1 |
+
 
 
 
