@@ -363,7 +363,7 @@ Nous avons optés pour Ansible pour sa simplicité de configuration et son absen
 | **Support Enterprise**      | CNCF / Vendor support possible                               | Red Hat support officiel                                                     |
 | **Public cible**            | Entreprises open-source, DevOps, Kubernetes                  | Grandes entreprises, Red Hat/OpenShift users                                 |
 | **Cas d’usage principal**   | Registry sécurisée, gestion d’images OCI/Docker, multi-cloud | Registry sécurisée avec intégration Red Hat/OpenShift et haute disponibilité |
-Pour sa facilité d'interfaçage avec Kubernetes nous avons optés pour Harbor. De plus Harbor est une solution OpenSource ne nécessitant donc aucune licence pour son utilisation
+Pour sa facilité d'interfaçage avec Kubernetes nous avons optés pour Harbor. De plus Harbor est une solution Open Source ne nécessitant donc aucune licence pour son utilisation.
 
 ## Bastion
 
