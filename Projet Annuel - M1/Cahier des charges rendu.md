@@ -98,7 +98,25 @@ On définit comme exigences non-fonctionnelles les caractéristiques liés au fo
 Avant de passer aux réalisations techniques, il est important d'établir en plan global auquel ressembler l'infrastructure finale. Cette étape a pour but de préparer la mis en place de l'infrastructure en définissant les critères et contraintes, identifier à partir des exigences, auxquels celle-ci devra respecter. 
 
 ## Conception fonctionnelle
-
+La conception fonctionnelle a pour but de définir les différents services et interactions que devra prendre en charge l'infrastructure.
+Voici donc la liste des services que nous avons pu définir jusqu'à maintenant ainsi que les interactions les concernant 
+- ERP
+	- Flux entrants : Interactions utilisateurs
+	- Flux bidirectionnels : Interactions avec les logiciels de production
+- Annuaire utilisateur
+	- Flux entrants : Interactions utilisateurs
+	- Flux entrants : service mail
+	- Flux entrants : 
+- Supervision
+- SIEM
+- Automatisation
+- Orchestrateur de conteneur
+- Sauvegarde
+- Mail
+- Messagerie instantanné
+- Téléphonie IP
+- Registry de Conteneur
+- Logiciel de production
 
 ## Conception technique
 ### Réseau
