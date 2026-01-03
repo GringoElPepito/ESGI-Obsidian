@@ -221,19 +221,17 @@ Grâce à cette architecture, il est bien plus simple d'agrandir et de gérer l'
 
 ### PCA
 PCA signifie Plan de Continuité d'Activité, il définit l'ensemble des moyens mis en place pour maintenir l'activité de l'entreprise et ce même en cas de panne.
-Dans notre cas voici ce que nous avons prévu :
-- Mis en place de 2 salles informatiques qui contiendront chacune les éléments suivants :
-	- 1x Pare-feu externe
-	- 1x Pare-feu interne
-	- 1x Cœur de réseau
-	- 1x Pile de distribution
-	- 3x serveurs de virtualisation
-
-De cette manière nous répartissons les éléments centraux à l'infrastructure entre 2 bât
-
+Tout d'abord, il y a mis en place de 2 salles informatiques, chacune localisé dans un bâtiment différent (2e étage du bâtiment 40 & 1er sous-sol du bâtiment 70), dans le but de maintenir l'activité et ce même si l'une des 2 salles est rendue inexploitable. Chaque salle contiendra les éléments suivants :
+- 1x Pare-feu externe
+- 1x Pare-feu interne
+- 1x Cœur de réseau
+- 1x Pile de distribution
+- 3x serveurs de virtualisation
+- 1x onduleur par baie
+Les 2 salles seront comme évoqués ci-dessus équipés d'un onduleur par baie pour maintenir les équipements en fonctionnement soit en attendant que le courant soit rétablit, soit pour permettre la réalisation d'un arrêt "propre" des machines suite à une coupure de courant.
+Chaque baie de distribution est lié aux 2 Cœur de réseau pour maintenir l'accès réseaux aux différents terminaux mais en cas de panne de l'un des deux équipements.
 ### PRA
-
-
+PRA signifie Plan de Reprise d'Activité, il définit l'ensemble des moyens mis en place dans le but de permettre une reprise de l'activité de l'entreprise suite à l'apparition d'un incident d'une telle grav
 
 # Choix technologiques
 
