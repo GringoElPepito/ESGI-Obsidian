@@ -347,23 +347,43 @@ Nous avons décidés de nous orienter vers Wazuh, car la solution étant Open-so
 Nous avons optés pour Ansible pour sa simplicité de configuration et son absence d'agent.
 
 ## Container Registry
-|Critère|**Harbor**|**Quay (Red Hat Quay)**|
-|---|---|---|
-|**Type**|Open-source (CNCF)|Propriétaire / Open-source limité|
-|**Licence**|Apache 2.0|Licence commerciale / AGPL pour certaines versions|
-|**Déploiement**|On-prem, Kubernetes, Docker|On-prem, Kubernetes, cloud|
-|**Interface de gestion**|Web UI, CLI|Web UI, CLI, API|
-|**Registry supportée**|OCI-compliant, Docker|OCI-compliant, Docker|
-|**Authentification**|LDAP, OIDC, OAuth, local users|LDAP, OAuth, SAML, OpenID Connect|
-|**Sécurité**|Scanner vulnérabilités (Clair/Trivy), signature Notary, RBAC|Scanner vulnérabilités intégré, signature Notary, RBAC|
-|**Replication / Mirroring**|Multi-site, push/pull|Multi-site, push/pull, geo-replication avancée|
-|**Scalabilité**|Clusterable via Kubernetes|Clusterable, haute disponibilité supportée|
-|**Intégration CI/CD**|Compatible Jenkins, GitLab, ArgoCD, Tekton|Compatible Jenkins, GitLab, OpenShift Pipelines|
-|**Monitoring / Logging**|Prometheus, Grafana|Prometheus, Grafana, audit log intégré|
-|**Support Enterprise**|CNCF / Vendor support possible|Red Hat support officiel|
-|**Public cible**|Entreprises open-source, DevOps, Kubernetes|Grandes entreprises, Red Hat/OpenShift users|
-|**Cas d’usage principal**|Registry sécurisée, gestion d’images OCI/Docker, multi-cloud|Registry sécurisée avec intégration Red Hat/OpenShift et haute disponibilité|
-Pour sa facilité d'interfaçage avec Kubernetes nous avons optés pour Harbor.
+| Critère                     | **Harbor**                                                   | **Quay (Red Hat Quay)**                                                      |
+| --------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| **Type**                    | Open-source (CNCF)                                           | Propriétaire / Open-source limité                                            |
+| **Licence**                 | Apache 2.0                                                   | Licence commerciale / AGPL pour certaines versions                           |
+| **Déploiement**             | On-prem, Kubernetes, Docker                                  | On-prem, Kubernetes, cloud                                                   |
+| **Interface de gestion**    | Web UI, CLI                                                  | Web UI, CLI, API                                                             |
+| **Registry supportée**      | OCI-compliant, Docker                                        | OCI-compliant, Docker                                                        |
+| **Authentification**        | LDAP, OIDC, OAuth, local users                               | LDAP, OAuth, SAML, OpenID Connect                                            |
+| **Sécurité**                | Scanner vulnérabilités (Clair/Trivy), signature Notary, RBAC | Scanner vulnérabilités intégré, signature Notary, RBAC                       |
+| **Replication / Mirroring** | Multi-site, push/pull                                        | Multi-site, push/pull, geo-replication avancée                               |
+| **Scalabilité**             | Clusterable via Kubernetes                                   | Clusterable, haute disponibilité supportée                                   |
+| **Intégration CI/CD**       | Compatible Jenkins, GitLab, ArgoCD, Tekton                   | Compatible Jenkins, GitLab, OpenShift Pipelines                              |
+| **Monitoring / Logging**    | Prometheus, Grafana                                          | Prometheus, Grafana, audit log intégré                                       |
+| **Support Enterprise**      | CNCF / Vendor support possible                               | Red Hat support officiel                                                     |
+| **Public cible**            | Entreprises open-source, DevOps, Kubernetes                  | Grandes entreprises, Red Hat/OpenShift users                                 |
+| **Cas d’usage principal**   | Registry sécurisée, gestion d’images OCI/Docker, multi-cloud | Registry sécurisée avec intégration Red Hat/OpenShift et haute disponibilité |
+Pour sa facilité d'interfaçage avec Kubernetes nous avons optés pour Harbor. De plus Harbor est une solution OpenSource ne nécessitant donc aucune licence pour son utilisation
+
+## Bastion
+
+| Critère                     | Wallix | Guacamole |
+| --------------------------- | ------ | --------- |
+| **Type**                    |        |           |
+| **Licence**                 |        |           |
+| **Déploiement**             |        |           |
+| **Interface de gestion**    |        |           |
+| **Registry supportée**      |        |           |
+| **Authentification**        |        |           |
+| **Sécurité**                |        |           |
+| **Replication / Mirroring** |        |           |
+| **Scalabilité**             |        |           |
+| **Intégration CI/CD**       |        |           |
+| **Monitoring / Logging**    |        |           |
+| **Support Enterprise**      |        |           |
+| **Public cible**            |        |           |
+| **Cas d’usage principal**   |        |           |
+
 
 # Pilotage
 
