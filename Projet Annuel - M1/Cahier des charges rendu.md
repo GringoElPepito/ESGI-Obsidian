@@ -102,19 +102,15 @@ Avant de passer aux réalisations techniques, il est important d'établir en pla
 
 ## Conception technique
 ### Réseau
-La conception de l'architecture réseau est un point essentiel pour toute infrastructure souhaitant prioriser la sécurité, 
+La conception de l'architecture réseau est un point essentiel pour toute infrastructure souhaitant prioriser la sécurité. Dans notre cas, nous avons commencé par découpé le trafic en différentes zones. Chaque zone correspond à un type de trafic
 découpage des adresses :
 Voici le format de notre adressage : 10.XXY.Z.0
 - X correspond au numéro du site - compris entre 1 et 25
 - Y correspond à la zone réseau (type de trafic) - compris entre 0 et 9
 - Z correspond au numéro de sous-réseau - compris entre 0 et 255
+Concernant la 8e zone IPSec, à savoir celle qui concentre le trafic intersites, étant donné que cette fait le lien entre les différents sites de l'entreprise cliente, nous avons définit sont numéro de site comme 0.
 
-Voici le format des VLAN ID : XXYZ
-- X correspond au numéro du site - compris entre 1 et 39
-- Y correspond à la zone réseau (type de trafic) - compris entre 0 et 9
-- Z correspond au numéro de sous-réseau - compris entre 0 et 9
-
-Découpage par zone :
+Voici maintenant le tableau de découpage par zone pour le de Fontenay-sous-Bois :
 
 | Name         | Zone | Network   | Mask        |
 | ------------ | ---- | --------- | ----------- |
@@ -126,7 +122,12 @@ Découpage par zone :
 | Backup       | 5    | 10.15.0.0 | 255.255.0.0 |
 | Observabilty | 6    | 10.16.0.0 | 255.255.0.0 |
 | Voice        | 7    | 10.17.0.0 | 255.255.0.0 |
-| IPSec        | 8    | 10.16.0.0 | 255.255.0.0 |
+| IPSec        | 8    | 10.8.0.0  | 255.255.0.0 |
+Voici le format des VLAN ID : XXYZ
+- X correspond au numéro du site - compris entre 1 et 39
+- Y correspond à la zone réseau (type de trafic) - compris entre 0 et 9
+- Z correspond au numéro de sous-réseau - compris entre 0 et 9
+
 
 
 # Choix technologiques
