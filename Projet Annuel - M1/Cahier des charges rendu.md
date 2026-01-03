@@ -97,6 +97,8 @@ On définit comme exigences non-fonctionnelles les caractéristiques liés au fo
 # Conception globale de l'infrastructure
 Avant de passer aux réalisations techniques, il est important d'établir en plan global auquel ressembler l'infrastructure finale. Cette étape a pour but de préparer la mis en place de l'infrastructure en définissant les critères et contraintes, identifier à partir des exigences, auxquels celle-ci devra respecter. 
 
+Avant d'aborder la conception de l'infrastructure en elle-même, il est important d'évoqué le site en lui-même. Ce site étant un site de production industriel opérant dans un domaine critique la sécurité est au centre de celui-ci. 
+L'ensemble des accès aux différents bâtiments et zones du site sont restreint par des badgeuses 
 ## Conception fonctionnelle
 La conception fonctionnelle a pour but de définir les différents services et interactions que devra prendre en charge l'infrastructure.
 Voici donc la liste des services que nous avons pu définir jusqu'à maintenant ainsi que les interactions les concernant :
@@ -238,7 +240,7 @@ Tout d'abord il y a la sauvegarde, dans notre cas, c'est la méthode 3-2-1 qui s
 - 1 copie de sauvegarde externe (au moins 1 des copies doit être stockés en dehors du lieu hébergeant l'infrastructure à sauvegarder). Dans notre cas, les cassettes LTO seront stockés au sein du PC sécurité qui est le bâtiment le plus à l'extérieur du site.
 En respectant cette méthode on garantit qu'au moins une copie reste disponible même en cas d'incident majeur.
 
-
+Ensuite, chaque site a été dimensionné pour pouvoir accueillir du personnel supplémentaire provenant du site ayant subit un incident de ce type. De plus, ils sont aussi tous dotés d'un accès VPN point-to-site permettant de minimiser les déplacements vers un autre site uniquement aux collaborateurs ne pouvant pas travailler à distance.
 
 # Choix technologiques
 

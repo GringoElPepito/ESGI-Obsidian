@@ -17,7 +17,7 @@
 	- [x] Pare-feu
 	- [ ] Gestion des accès
 	- [x] Sauvegarde
-	- [ ] bases de PRA/PCA
+	- [x] bases de PRA/PCA
 - [ ] Schéma logique -> Vue d'ensemble des services et flux
 - [ ] Schéma technique -> Infrastructure et composants
 - [ ] Schéma de sécurité -> Zones de confiance, filtrage, accès
