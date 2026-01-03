@@ -219,6 +219,9 @@ Pour la partie LAN, nous prévoyons de suivre une architecture 3 tiers qui se d�
 - ACCESS - cette partie du LAN a pour objectif de fournir les accès réseaux aux différents terminaux utilisateurs.
 Grâce à cette architecture, il est bien plus simple d'agrandir et de gérer l'infrastructure au cours du temps, notamment en facilitant l'identification de potentielles pannes réseaux pouvant survenir au cours du cycle de vie de l'infrastructure.
 
+### PRA & PCA
+
+
 
 # Choix technologiques
 
