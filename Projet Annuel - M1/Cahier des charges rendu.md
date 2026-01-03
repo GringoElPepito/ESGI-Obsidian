@@ -179,9 +179,10 @@ Les pares-feux externes se chargeront de l'accès à internet ainsi que de l'exp
 Les pares-feux internes se chargeront du routage entre les différents sous-réseaux du LAN ainsi que des VPN site-to-site et point-to-site.
 
 Pour la partie LAN, nous prévoyons de suivre une architecture 3 tiers qui se découpe de la manière suivante :
-- NETCORE - cette partie du LAN a pour objectif de concentrer et centraliser le trafic dans
-- DISTRIBUTION - cette partie du LAN a pour objectif de diffuser le réseau et de 
+- NETCORE - cette partie du LAN a pour objectif de concentrer le trafic réseau en un point central pour en faciliter sa gestion et son évolution.
+- DISTRIBUTION - cette partie du LAN a pour objectif de diffuser le réseau aux différents équipements de la couche ACCESS.
 - ACCESS - cette partie du LAN a pour objectif de fournir les accès réseaux aux différents terminaux utilisateurs.
+Grâce à cette architecture, il est bien plus simple d'agrandir et de gérer l'infrastructure au cours du temps, notamment en facilitant l'identification de potentielles pannes réseaux pouvant survenir au cours du cycle de vie de l'infrastructure.
 
 
 # Choix technologiques

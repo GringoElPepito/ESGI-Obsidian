@@ -14,7 +14,7 @@
 - [ ] Définition de la partie technique -> Réseau, Serveurs, Stockage, Cloud
 - [ ] Intégration de la sécurité
 	- [x] Segmentation réseau
-	- [ ] Pare-feu
+	- [x] Pare-feu
 	- [ ] Gestion des accès
 	- [ ] Sauvegarde
 	- [ ] bases de PRA/PCA
