@@ -103,7 +103,6 @@ On définit comme exigences non-fonctionnelles les caractéristiques liés au fo
 | **Facilité de déploiement**      | Mature, documentation abondante              | Relativement simple, moins répandu                            |
 | **Public cible**                 | Grandes entreprises, datacenter, campus      | PME, entreprises, opérateurs                                  |
 | **Support / Écosystème**         | Excellent, support mondial et certifications | Bon, support commercial et partenaires, moins vaste que Cisco |
-
 Nous avons optés pour Cisco et cela pour plusieurs raisons. Tout d'abord l'écosystème Cisco est bien plus mature que celui proposé par Alcatel-Lucent/Nokia, que ce soit par la taille de leur communauté ou la longévité de leurs équipements. De plus, Cisco propose une bien meilleur gestion du cycle de vie de ces équipements ne serait-ce que par leurs interfaces bien plus adapté aux évolutions de l'infrastructure.
 ## Pare-feu interne
 | Critère                          | **Juniper SRX380**                                 | **pfSense**                                         |
@@ -288,22 +287,22 @@ Nous avons optés pour Mattermost pour la facilité de son déploiement, les int
 Nous avons optés pour 3CX car la solution met bien plus l'accent sur la sécurisation du service ce qui est un point indispensable au vu de la criticité de notre contexte.
 
 ## Supervision :
-|Critère|**Prometheus**|**Zabbix**|
-|---|---|---|
-|**Type**|Open-source, orienté métriques (time-series)|Open-source, monitoring complet|
-|**Licence**|Apache 2.0|GPLv2|
-|**Collecte des données**|Pull (HTTP endpoints)|Pull ou push (agents)|
-|**Surveillance**|Métriques, performances, disponibilité|Serveurs, applications, réseaux, services|
-|**Base de données**|Time-series intégrée (TSDB)|SQL (MySQL, PostgreSQL, SQLite)|
-|**Alerting**|Alertmanager, règles configurables|Système interne d’alertes et notifications|
-|**Visualisation**|Grafana (recommandé)|Interface web Zabbix native|
-|**Scalabilité**|Très élevée pour métriques (clusters possibles)|Élevée mais plus lourde sur très gros environnements|
-|**Intégration / API**|API REST, exportateurs nombreux|API JSON, intégrations limitées par plugins|
-|**Installation / Maintenance**|Plus technique, nécessite configuration|Plus simple, interface et templates prêts à l’emploi|
-|**Courbe d’apprentissage**|Raide, nécessite familiarité avec TSDB et métriques|Plus accessible, nombreux templates existants|
-|**Usage principal**|Monitoring temps réel, observabilité, DevOps|Supervision complète IT, alerting système et réseau|
-|**Public cible**|DevOps, ingénieurs cloud, infrastructures modernes|Administrateurs systèmes, entreprises traditionnelles|
-|**Support entreprise**|Par partenaires (CNCF / Red Hat etc.)|Zabbix SIA (support commercial)|
+| Critère                        | **Prometheus**                                      | **Zabbix**                                            |
+| ------------------------------ | --------------------------------------------------- | ----------------------------------------------------- |
+| **Type**                       | Open-source, orienté métriques (time-series)        | Open-source, monitoring complet                       |
+| **Licence**                    | Apache 2.0                                          | GPLv2                                                 |
+| **Collecte des données**       | Pull (HTTP endpoints)                               | Pull ou push (agents)                                 |
+| **Surveillance**               | Métriques, performances, disponibilité              | Serveurs, applications, réseaux, services             |
+| **Base de données**            | Time-series intégrée (TSDB)                         | SQL (MySQL, PostgreSQL, SQLite)                       |
+| **Alerting**                   | Alertmanager, règles configurables                  | Système interne d’alertes et notifications            |
+| **Visualisation**              | Grafana (recommandé)                                | Interface web Zabbix native                           |
+| **Scalabilité**                | Très élevée pour métriques (clusters possibles)     | Élevée mais plus lourde sur très gros environnements  |
+| **Intégration / API**          | API REST, exportateurs nombreux                     | API JSON, intégrations limitées par plugins           |
+| **Installation / Maintenance** | Plus technique, nécessite configuration             | Plus simple, interface et templates prêts à l’emploi  |
+| **Courbe d’apprentissage**     | Raide, nécessite familiarité avec TSDB et métriques | Plus accessible, nombreux templates existants         |
+| **Usage principal**            | Monitoring temps réel, observabilité, DevOps        | Supervision complète IT, alerting système et réseau   |
+| **Public cible**               | DevOps, ingénieurs cloud, infrastructures modernes  | Administrateurs systèmes, entreprises traditionnelles |
+| **Support entreprise**         | Par partenaires (CNCF / Red Hat etc.)               | Zabbix SIA (support commercial)                       |
 Nous avons optés pour Prometheus pour sa versatilité permettant à la fois de réaliser de la supervision
 ## SIEM :
 
