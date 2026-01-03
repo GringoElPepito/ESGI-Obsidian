@@ -1,6 +1,6 @@
-- [ ] Relire + Corriger présentation entreprise cliente
+- [x] Relire + Corriger présentation entreprise cliente
 - [ ] Créer un logo pour l'entreprise cliente
-- [ ] Relire + Corriger présentation équipe projet
+- [x] Relire + Corriger présentation équipe projet
 - [ ] Planification projet
 	- [ ] GANTT
 	- [ ] PERT ?
