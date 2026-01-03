@@ -303,7 +303,7 @@ Nous avons optés pour 3CX car la solution met bien plus l'accent sur la sécuri
 | **Usage principal**            | Monitoring temps réel, observabilité, DevOps        | Supervision complète IT, alerting système et réseau   |
 | **Public cible**               | DevOps, ingénieurs cloud, infrastructures modernes  | Administrateurs systèmes, entreprises traditionnelles |
 | **Support entreprise**         | Par partenaires (CNCF / Red Hat etc.)               | Zabbix SIA (support commercial)                       |
-Nous avons optés pour Prometheus pour sa versatilité permettant à la fois de réaliser de la supervision
+Nous avons optés pour Zabbix car la solution est plus adapté
 ## SIEM :
 
 | Critère                       | **Splunk**                                       | **Wazuh**                                    |
