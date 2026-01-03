@@ -238,7 +238,6 @@ Tout d'abord il y a la sauvegarde, dans notre cas, c'est la méthode 3-2-1 qui s
 - 1 copie de sauvegarde externe (au moins 1 des copies doit être stockés en dehors du lieu hébergeant l'infrastructure à sauvegarder). Dans notre cas, les cassettes LTO seront stockés au sein du PC sécurité qui est le bâtiment le plus à l'extérieur du site.
 En respectant cette méthode on garantit qu'au moins une copie reste disponible même en cas d'incident majeur.
 
-
 # Choix technologiques
 
 ## Switching

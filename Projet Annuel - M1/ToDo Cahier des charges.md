@@ -16,7 +16,7 @@
 	- [x] Segmentation réseau
 	- [x] Pare-feu
 	- [ ] Gestion des accès
-	- [ ] Sauvegarde
+	- [x] Sauvegarde
 	- [ ] bases de PRA/PCA
 - [ ] Schéma logique -> Vue d'ensemble des services et flux
 - [ ] Schéma technique -> Infrastructure et composants
