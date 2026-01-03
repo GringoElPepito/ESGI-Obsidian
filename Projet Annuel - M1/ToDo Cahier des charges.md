@@ -13,7 +13,7 @@
 - [ ] Définition de la partie fonctionnelle -> services + interactions
 - [ ] Définition de la partie technique -> Réseau, Serveurs, Stockage, Cloud
 - [ ] Intégration de la sécurité
-	- [ ] Segmentation réseau
+	- [x] Segmentation réseau
 	- [ ] Pare-feu
 	- [ ] Gestion des accès
 	- [ ] Sauvegarde

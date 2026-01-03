@@ -165,7 +165,7 @@ Chaque sous-réseau du zone possède un ID VLAN définit de la manière suivante
 | IP Phones              | 7    | 0      | 170  | 10.17.0.0 | 255.255.255.0 | 10.17.0.1 |
 | DECT                   | 7    | 1      | 171  | 10.17.1.0 | 255.255.255.0 | 10.17.1.1 |
 | VoIP Access Points     | 7    | 2      | 172  | 10.17.2.0 | 255.255.255.0 | 10.17.2.1 |
-
+Maintenant que nous avons définit notre plan d'
 
 
 
