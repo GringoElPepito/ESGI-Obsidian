@@ -35,8 +35,7 @@ L'infrastructure contient les éléments suivants :
 En plus du plan d'adressage, répartis moi tous les éléments contenus dans l'infrastructure entre les différents sous-réseaux que tu auras créés dans le but de segmenter au mieux les différents trafics.
 
 
-
-découpage de adresses :
+découpage des adresses :
 Voici le format de notre adressage : 10.XXY.Z.0
 - X correspond au numéro du site - compris entre 1 et 25
 - Y correspond à la zone réseau (type de trafic) - compris entre 0 et 9

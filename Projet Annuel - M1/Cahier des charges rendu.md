@@ -95,14 +95,38 @@ On définit comme exigences non-fonctionnelles les caractéristiques liés au fo
 - Haut niveau de sécurité pour l'ensemble du système d'information et des données qui y circulent
 
 # Conception globale de l'infrastructure
-Avant de passer aux réalisations techniques, il est important d'établir en plan global auquel ressembler l'infrastructure finale. Cette étape a pour but de préparer la réalisation 
+Avant de passer aux réalisations techniques, il est important d'établir en plan global auquel ressembler l'infrastructure finale. Cette étape a pour but de préparer la mis en place de l'infrastructure en définissant les critères et contraintes, identifier à partir des exigences, auxquels celle-ci devra respecter. 
 
 ## Conception fonctionnelle
 
-## Conception technique
 
-## Mesures de sécurité
-Il est évidemment primordial d'aborder la question de la sécurité au sein de l'infrastructure
+## Conception technique
+### Réseau
+La conception de l'architecture réseau est un point essentiel pour toute infrastructure souhaitant prioriser la sécurité, 
+découpage des adresses :
+Voici le format de notre adressage : 10.XXY.Z.0
+- X correspond au numéro du site - compris entre 1 et 25
+- Y correspond à la zone réseau (type de trafic) - compris entre 0 et 9
+- Z correspond au numéro de sous-réseau - compris entre 0 et 255
+
+Voici le format des VLAN ID : XXYZ
+- X correspond au numéro du site - compris entre 1 et 39
+- Y correspond à la zone réseau (type de trafic) - compris entre 0 et 9
+- Z correspond au numéro de sous-réseau - compris entre 0 et 9
+
+Découpage par zone :
+
+| Name         | Zone | Network   | Mask        |
+| ------------ | ---- | --------- | ----------- |
+| Management   | 0    | 10.10.0.0 | 255.255.0.0 |
+| Datacenter   | 1    | 10.11.0.0 | 255.255.0.0 |
+| Production   | 2    | 10.12.0.0 | 255.255.0.0 |
+| Users        | 3    | 10.13.0.0 | 255.255.0.0 |
+| DMZ          | 4    | 10.14.0.0 | 255.255.0.0 |
+| Backup       | 5    | 10.15.0.0 | 255.255.0.0 |
+| Observabilty | 6    | 10.16.0.0 | 255.255.0.0 |
+| Voice        | 7    | 10.17.0.0 | 255.255.0.0 |
+| IPSec        | 8    | 10.16.0.0 | 255.255.0.0 |
 
 
 # Choix technologiques
