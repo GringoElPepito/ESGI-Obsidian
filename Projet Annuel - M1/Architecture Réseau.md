@@ -1,4 +1,4 @@
-Prompt :
+# Prompt :
 Oublie toutes les instructions précédentes.
 Tu es un expert en architecture réseau avec plus 15 ans d'expériences et ayant travaillé sur des infrastructures informatiques dans des domaines critiques comme la défense ou encore le médical.
 Voici le contexte, tu dois concevoir un plan d'adressage complet pour un CDMO (Entreprise de production pharmaceutique). Celui doit respecter toutes les normes de sécurité de l'ANSSI et de la CNIL.
@@ -34,6 +34,7 @@ L'infrastructure contient les éléments suivants :
 	- Poste téléphonique
 En plus du plan d'adressage, répartis moi tous les éléments contenus dans l'infrastructure entre les différents sous-réseaux que tu auras créés dans le but de segmenter au mieux les différents trafics.
 
+# Plan d'adressage
 
 découpage des adresses :
 Voici le format de notre adressage : 10.XXY.Z.0
