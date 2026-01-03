@@ -172,11 +172,16 @@ Chaque sous-réseau du zone possède un ID VLAN définit de la manière suivante
 
 Concernant la schématisation de l'infrastructure, nous pouvons découpé cette étape en plusieurs parties :
 - Pare-feu
-- DMZ
 - LAN
 
 Pour la partie Pare-feu, nous prévoyons de mettre en place 2 niveau de pare-feu redondés, ce qui correspond à la présence de 2 pares-feux externes ainsi que 2 pares-feux internes.
-Les pares-feux externes se chargeront 
+Les pares-feux externes se chargeront de l'accès à internet ainsi que de l'exposition des réseaux DMZ.
+Les pares-feux internes se chargeront du routage entre les différents sous-réseaux du LAN ainsi que des VPN site-to-site et point-to-site.
+
+Pour la partie LAN, nous prévoyons de suivre une architecture 3 tiers qui se découpe de la manière suivante :
+- NETCORE - cette partie du LAN a pour objectif de concentrer et centraliser le trafic dans
+- DISTRIBUTION - cette partie du LAN a pour objectif de diffuser le réseau et de 
+- ACCESS - cette partie du LAN a pour objectif de fournir les accès réseaux aux différents terminaux utilisateurs.
 
 
 # Choix technologiques
