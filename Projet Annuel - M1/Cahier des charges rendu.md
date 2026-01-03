@@ -102,15 +102,13 @@ Avant de passer aux réalisations techniques, il est important d'établir en pla
 
 ## Conception technique
 ### Réseau
-La conception de l'architecture réseau est un point essentiel pour toute infrastructure souhaitant prioriser la sécurité. Dans notre cas, nous avons commencé par découpé le trafic en différentes zones. Chaque zone correspond à un type de trafic
-découpage des adresses :
-Voici le format de notre adressage : 10.XXY.Z.0
+La conception de l'architecture réseau est un point essentiel pour toute infrastructure souhaitant prioriser la sécurité. Dans notre cas, nous avons commencé par découpé le trafic en différentes zones. Chaque zone correspond à un type de trafic précis, cette étape sert de premier découpage et permet de créer des politiques d'accès générale pour chacune des zones. Nous avons définit un total de 9 zones numérotés de 0 à 8 (cf. tableau ci-dessous). Pour chacune des zones nous avons définit l'adresse réseau ainsi qu'un masque.
+L'adresse réseau de chaque zone se définit de la manière suivante : 10.XXY.Z.0
 - X correspond au numéro du site - compris entre 1 et 25
 - Y correspond à la zone réseau (type de trafic) - compris entre 0 et 9
 - Z correspond au numéro de sous-réseau - compris entre 0 et 255
-Concernant la 8e zone IPSec, à savoir celle qui concentre le trafic intersites, étant donné que cette fait le lien entre les différents sites de l'entreprise cliente, nous avons définit sont numéro de site comme 0.
-
-Voici maintenant le tableau de découpage par zone pour le de Fontenay-sous-Bois :
+De cette manière, chaque adresse devient facilement interprétable ce qui simplifie la gestion quotidienne de l'infrastructure.
+*Tableau des zones pour le site de Fontenay-sous-Bois*
 
 | Name         | Zone | Network   | Mask        |
 | ------------ | ---- | --------- | ----------- |
@@ -123,6 +121,11 @@ Voici maintenant le tableau de découpage par zone pour le de Fontenay-sous-Bois
 | Observabilty | 6    | 10.16.0.0 | 255.255.0.0 |
 | Voice        | 7    | 10.17.0.0 | 255.255.0.0 |
 | IPSec        | 8    | 10.8.0.0  | 255.255.0.0 |
+Concernant la 8e zone IPSec, à savoir celle qui concentre le trafic intersites, étant donné que cette fait le lien entre les différents sites de l'entreprise cliente, nous avons définit sont numéro de site comme 0.
+
+Cependant le découpage par zone n'est pas suffisant, c'est pourquoi chaque zone est elle-même redécoupé en sous-réseaux permettant de segmenter les différents services présent au sein d'une même zone.
+*Tableau *
+
 Voici le format des VLAN ID : XXYZ
 - X correspond au numéro du site - compris entre 1 et 39
 - Y correspond à la zone réseau (type de trafic) - compris entre 0 et 9
