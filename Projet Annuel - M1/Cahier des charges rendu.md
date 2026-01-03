@@ -99,7 +99,8 @@ Avant de passer aux réalisations techniques, il est important d'établir en pla
 
 Avant d'aborder la conception de l'infrastructure en elle-même, il est important d'évoqué le site en lui-même. Ce site étant un site de production industriel opérant dans un domaine critique la sécurité est au centre de celui-ci. 
 L'ensemble des accès aux différents bâtiments et zones du site sont restreint par des dispositifs de contrôle d'accès n'autorisant le passage uniquement aux personnes possédant un badge avec suffisamment de privilège. 
-De cette manière, seulement l'équipe IT pourra accéder aux différentes salles informatiques
+De cette manière, seulement l'équipe IT pourra accéder aux différentes salles informatiques réparties entre les bâtiments du site.
+Concernant les accès informatique, ces derniers seront gérés à l'aide d'un annuaire utilisateur LDAP permettant ainsi de définir pour chaque utilisateur de groupe de sécurité leur conférant uniquement les accès nécessaire à la réalisation de leurs tâches.
 ## Conception fonctionnelle
 La conception fonctionnelle a pour but de définir les différents services et interactions que devra prendre en charge l'infrastructure.
 Voici donc la liste des services que nous avons pu définir jusqu'à maintenant ainsi que les interactions les concernant :
@@ -222,6 +223,9 @@ Pour la partie LAN, nous prévoyons de suivre une architecture 3 tiers qui se d�
 - ACCESS - cette partie du LAN a pour objectif de fournir les accès réseaux aux différents terminaux utilisateurs.
 Grâce à cette architecture, il est bien plus simple d'agrandir et de gérer l'infrastructure au cours du temps, notamment en facilitant l'identification de potentielles pannes réseaux pouvant survenir au cours du cycle de vie de l'infrastructure.
 
+### Serveurs
+
+### Stockage
 ### PCA
 PCA signifie Plan de Continuité d'Activité, il définit l'ensemble des moyens mis en place pour maintenir l'activité de l'entreprise et ce même en cas de panne.
 Tout d'abord, il y a mis en place de 2 salles informatiques, chacune localisé dans un bâtiment différent (2e étage du bâtiment 40 & 1er sous-sol du bâtiment 70), dans le but de maintenir l'activité et ce même si l'une des 2 salles est rendue inexploitable. Chaque salle contiendra les éléments suivants :

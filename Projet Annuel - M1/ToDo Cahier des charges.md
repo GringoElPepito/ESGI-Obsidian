@@ -12,10 +12,10 @@
 - [ ] Rédiger les objectifs globaux et spécifiques
 - [x] Définition de la partie fonctionnelle -> services + interactions
 - [ ] Définition de la partie technique -> Réseau, Serveurs, Stockage, Cloud
-- [ ] Intégration de la sécurité
+- [x] Intégration de la sécurité
 	- [x] Segmentation réseau
 	- [x] Pare-feu
-	- [ ] Gestion des accès
+	- [x] Gestion des accès
 	- [x] Sauvegarde
 	- [x] bases de PRA/PCA
 - [ ] Schéma logique -> Vue d'ensemble des services et flux
