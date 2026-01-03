@@ -177,7 +177,7 @@ Nous avons décidés de nous orienter vers Proxmox, car la versatilité offerte 
 | **Haute disponibilité**        | Native                               | Dépend de la configuration          |
 | **Tolérance aux pannes**       | Très élevée                          | Élevée (ZFS)                        |
 | **Gestion**                    | CLI + Dashboard                      | Interface web très intuitive        |
-| **Système de fichiers**        | Propre à Ceph                        | ZFS                                 |
+| **Système de fichiers**        | CephFS                               | ZFS                                 |
 | **Snapshots / Réplication**    | Oui                                  | Oui                                 |
 | **Performance**                | Optimisée pour clusters distribués   | Excellente sur un nœud              |
 | **Facilité de déploiement**    | Complexe                             | Simple                              |
@@ -186,6 +186,7 @@ Nous avons décidés de nous orienter vers Proxmox, car la versatilité offerte 
 | **Intégration virtualisation** | Excellente (Proxmox, OpenStack)      | Bonne (VMware, Proxmox)             |
 | **Coût**                       | Gratuit (support payant)             | Gratuit / Licence entreprise        |
 | **Public cible**               | Grandes infrastructures, cloud privé | PME, lab, stockage local            |
+Nous avons optés pour Ceph, en effet cette solution s'intègre parfaitement à Proxmox tout en permettant une haute disponibilité du stockage. Par ailleurs Ceph permet de faciliter l'agrandissement du stockage en permettant un scaling horizontal assez simple à mettre en place. Là où le scaling horizontal de TrueNAS est plus complexe et réservé à certains modèles précis de baie de stockage pouvant complexifier l'évolution de l'infrastructure. 
 
 ## Orchestrateur
 
