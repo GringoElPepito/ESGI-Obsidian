@@ -104,8 +104,7 @@ On définit comme exigences non-fonctionnelles les caractéristiques liés au fo
 | **Public cible**                 | Grandes entreprises, datacenter, campus      | PME, entreprises, opérateurs                                  |
 | **Support / Écosystème**         | Excellent, support mondial et certifications | Bon, support commercial et partenaires, moins vaste que Cisco |
 
-Nous avons optés pour Cisco et cela pour plusieurs raisons. Tout d'abord 
-
+Nous avons optés pour Cisco et cela pour plusieurs raisons. Tout d'abord l'écosystème Cisco est bien plus mature que celui proposé par Alcatel-Lucent/Nokia, que ce soit par la taille de leur communauté ou la longévité de leurs équipements. De plus, Cisco propose une bien meilleur gestion du cycle de vie de ces équipements ne serait-ce que par leurs interfaces bien plus adapté aux évolutions de l'infrastructure.
 ## Pare-feu interne
 | Critère                          | **Juniper SRX380**                                 | **pfSense**                                         |
 | -------------------------------- | -------------------------------------------------- | --------------------------------------------------- |
