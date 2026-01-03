@@ -303,7 +303,7 @@ Nous avons optés pour 3CX car la solution met bien plus l'accent sur la sécuri
 | **Usage principal**            | Monitoring temps réel, observabilité, DevOps        | Supervision complète IT, alerting système et réseau   |
 | **Public cible**               | DevOps, ingénieurs cloud, infrastructures modernes  | Administrateurs systèmes, entreprises traditionnelles |
 | **Support entreprise**         | Par partenaires (CNCF / Red Hat etc.)               | Zabbix SIA (support commercial)                       |
-Nous avons optés pour Zabbix car la solution est plus adapté
+Nous avons optés pour Zabbix car c'est la solution la plus adapté à la surveillance d'infrastructures On-Premise avec de nombreux équipements réseaux.
 ## SIEM :
 
 | Critère                       | **Splunk**                                       | **Wazuh**                                    |
@@ -322,7 +322,7 @@ Nous avons optés pour Zabbix car la solution est plus adapté
 | **Écosystème**                | Très riche (apps, add-ons, intégrations)         | Plus restreint mais ciblé sécurité           |
 | **Support éditeur**           | Support premium entreprise                       | Support communautaire + abonnement           |
 | **Cas d’usage principal**     | Analyse massive de données & SIEM avancé         | Sécurité, conformité, détection d’intrusions |
-Nous avons décidés de nous orienter vers Wazuh, car la solution étant Open-source elle permet de grandement réduire les coûts tout en offrant un service répondant pleinement aux besoins de l'infrastructure
+Nous avons décidés de nous orienter vers Wazuh, car la solution étant Open-source elle permet de grandement réduire les coûts tout en offrant un service répondant pleinement aux besoins de l'infrastructure.
 
 ## Automatisation 
 
@@ -345,6 +345,7 @@ Nous avons décidés de nous orienter vers Wazuh, car la solution étant Open-so
 |**Public cible**|DevOps, équipes cloud, PME à grandes infrastructures|Administrateurs système, grandes infrastructures, entreprises traditionnelles|
 |**Support entreprise**|Red Hat Ansible Automation Platform|Puppet Enterprise|
 Nous avons optés pour Ansible pour sa simplicité de configuration et son absence d'agent.
+De plus Ansible est très facilement scalable et possède une très grande communauté ce qui facilitera le développement des automatisations liés à l'infrastructure.
 
 ## Container Registry
 | Critère                     | **Harbor**                                                   | **Quay (Red Hat Quay)**                                                      |
