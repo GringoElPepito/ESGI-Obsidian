@@ -102,7 +102,11 @@ Avant de passer aux réalisations techniques, il est important d'établir en pla
 
 ## Conception technique
 ### Réseau
-La conception de l'architecture réseau est un point essentiel pour toute infrastructure souhaitant prioriser la sécurité. Dans notre cas, nous avons commencé par découpé le trafic en différentes zones. Chaque zone correspond à un type de trafic précis, cette étape sert de premier découpage et permet de créer des politiques d'accès générale pour chacune des zones. Nous avons définit un total de 9 zones numérotés de 0 à 8 (cf. tableau ci-dessous). Pour chacune des zones nous avons définit l'adresse réseau ainsi qu'un masque.
+La conception de l'architecture réseau est un point essentiel nécessitant une minutieuse élaboration pour toute infrastructure souhaitant prioriser la sécurité. L'architecture du réseau peut se découper en 2 grandes étapes :
+- Concernant la segmentation des réseaux et des flux
+- Schématisation de l'infrastructure
+
+Concernant la segmentation des réseaux et des flux, nous avons commencé par découpé le trafic en différentes zones. Chaque zone correspond à un type de trafic précis, cette étape sert de premier découpage et permet de créer des politiques d'accès générale pour chacune des zones. Nous avons définit un total de 9 zones numérotés de 0 à 8 (cf. tableau ci-dessous). Pour chacune des zones nous avons définit l'adresse réseau ainsi qu'un masque.
 L'adresse réseau de chaque zone se définit de la manière suivante : 10.XXY.Z.0
 - X correspond au numéro du site - compris entre 1 et 25
 - Y correspond à la zone réseau (type de trafic) - compris entre 0 et 9
@@ -165,8 +169,14 @@ Chaque sous-réseau du zone possède un ID VLAN définit de la manière suivante
 | IP Phones              | 7    | 0      | 170  | 10.17.0.0 | 255.255.255.0 | 10.17.0.1 |
 | DECT                   | 7    | 1      | 171  | 10.17.1.0 | 255.255.255.0 | 10.17.1.1 |
 | VoIP Access Points     | 7    | 2      | 172  | 10.17.2.0 | 255.255.255.0 | 10.17.2.1 |
-Maintenant que nous avons définit notre plan d'
 
+Concernant la schématisation de l'infrastructure, nous pouvons découpé cette étape en plusieurs parties :
+- Pare-feu
+- DMZ
+- LAN
+
+Pour la partie Pare-feu, nous prévoyons de mettre en place 2 niveau de pare-feu redondés, ce qui correspond à la présence de 2 pares-feux externes ainsi que 2 pares-feux internes.
+Les pares-feux externes se chargeront 
 
 
 # Choix technologiques
