@@ -125,7 +125,7 @@ Nous avons optés pour Cisco et cela pour plusieurs raisons. Tout d'abord l'éco
 Notre choix s'est porté sur l'équipement Juniper SRX380 et cela même si sont coût est plus élevé car c'est un équipement ayant déjà fait ses preuves dans des environnements critiques. De plus, nous pourrons bénéficier du support éditeur si jamais nous rencontrons des difficultés de configuration ou que des CVE concernant ce produit font leurs apparitions.
 
 ## Pare-feu externe :
-| Critère                          | **Palo Alto Networks**                                                                  | **OPNsense**                                                                                    |
+| Critère                          | **Palo Alto PA-560**                                                                    | **OPNsense**                                                                                    |
 | -------------------------------- | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | **Type**                         | Commercial / Propriétaire                                                               | Open-source                                                                                     |
 | **Licence**                      | Licence matérielle ou virtuelle, abonnement support/updates                             | Gratuit (support optionnel via tiers)                                                           |
@@ -141,7 +141,7 @@ Notre choix s'est porté sur l'équipement Juniper SRX380 et cela même si sont 
 | **Courbe d’apprentissage**       | Raide, nécessite formation sur PAN-OS                                                   | Moyenne, facile à prendre en main pour admin réseau                                             |
 | **Public cible**                 | Grandes entreprises, datacenters, opérateurs                                            | PME, TPE, lab, utilisateurs techniques                                                          |
 | **Cas d’usage principal**        | Sécurité avancée, NGFW, déploiements critiques                                          | Firewall et VPN open-source, protection PME / lab / TPE                                         |
-Nous avons optés pour OPNSense pour sa facilité de déploiement. 
+Nous avons optés pour le Palo Alto PA-560 et cela même si sont coût est plus élevé car c'est un équipement ayant déjà fait ses preuves dans des environnements critiques. De plus, nous pourrons bénéficier du support éditeur si jamais nous rencontrons des difficultés de configuration ou que des CVE concernant ce produit font leurs apparitions.
 
 ## Virtualisation :
 
@@ -161,7 +161,7 @@ Nous avons optés pour OPNSense pour sa facilité de déploiement.
 | **Compatibilité matérielle** | Large, dépend de Linux             | Très large (HCL VMware)                |
 | **Support éditeur**          | Abonnement optionnel               | Support entreprise premium             |
 | **Écosystème**               | Communauté open-source             | Écosystème très mature                 |
-Nous avons décidés de nous orienter vers Proxmox, car la versatilité offerte par la solution permet une meilleur adaptation en temps réel de l'environnement de virtualisation.
+Nous avons décidés de nous orienter vers Proxmox, car la versatilité offerte par la solution permet une meilleur adaptation en temps réel de l'environnement de virtualisation, notamment grâce à la possibilité de créer des LXC. De plus, Proxmox est bien moins gourmand en termes de ressources tout en étant une solution bien moins coûteuses ce qui est d'autant plus vrai depuis le rachat par BroadCom.
 
 ## Stockage :
 
