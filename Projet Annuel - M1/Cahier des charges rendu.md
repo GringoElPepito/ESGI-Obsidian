@@ -64,9 +64,17 @@ Le site compte un total de 7 bâtiments permettant de répartir les différents 
 
 # Expression du besoin
 Le secteur de la production pharmaceutique, est un domaine d'une haute criticité, nécessitant un système d'informations capable de répondre aux contraintes lié à ce secteur.
+Voici les besoins exprimés par le client concernant l'infrastructure à réaliser :
+- Capacité à supporter les différentes solutions liés à la production
+- Liaison sécurisé entre les différents site de production
+- Tolérance aux pannes
+- Sauvegarde de l'infrastructure
+- Sécurisation des données et de l'infrastructure
+- Liaison nomade entre site et client
+- Système de communication multimédia (Mail, Messagerie, Téléphonie)
 
 ## Exigences fonctionnelles
-On définit comme exigences fonctionnelles les services et/ou comportements que doit fournir le système, voici ce qui est attendu pour ce nouveau site par CENEXIS :
+On définit comme exigences fonctionnelles les services et/ou comportements que doit fournir le système, voici ce qui est attendu par CENEXIS pour ce nouveau site :
 - Gestion centralisé des utilisateurs
 - Connexion VPN site-à-site
 - Connexion VPN Point-to-site
@@ -77,7 +85,7 @@ On définit comme exigences fonctionnelles les services et/ou comportements que 
 - Déploiement d'un service sur une infrastructure externe au site (Cloud)
 
 ## Exigences non-fonctionnelles
-On définit comme exigences non-fonctionnelles les caractéristiques liés au fonctionnement du système comme ses performances, sa tolérance aux pannes ou encore sa sécurité, voici ce qui est attendu pour ce nouveau site par CENEXIS :
+On définit comme exigences non-fonctionnelles les caractéristiques liés au fonctionnement du système comme ses performances, sa tolérance aux pannes ou encore sa sécurité, voici ce qui est attendu par CENEXIS pour ce nouveau site :
 - Solution de virtualisation en cluster permettant redondance et tolérance de panne
 - Solution de sauvegarde permettant la sauvegarde complète de l'infrastructure
 - Infrastructure réseau sécurisé et redondé permettant une liaison inter-sites et comprenant deux niveaux de Pares-feux
