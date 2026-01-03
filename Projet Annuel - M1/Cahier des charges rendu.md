@@ -98,7 +98,8 @@ On définit comme exigences non-fonctionnelles les caractéristiques liés au fo
 Avant de passer aux réalisations techniques, il est important d'établir en plan global auquel ressembler l'infrastructure finale. Cette étape a pour but de préparer la mis en place de l'infrastructure en définissant les critères et contraintes, identifier à partir des exigences, auxquels celle-ci devra respecter. 
 
 Avant d'aborder la conception de l'infrastructure en elle-même, il est important d'évoqué le site en lui-même. Ce site étant un site de production industriel opérant dans un domaine critique la sécurité est au centre de celui-ci. 
-L'ensemble des accès aux différents bâtiments et zones du site sont restreint par des badgeuses 
+L'ensemble des accès aux différents bâtiments et zones du site sont restreint par des dispositifs de contrôle d'accès n'autorisant le passage uniquement aux personnes possédant un badge avec suffisamment de privilège. 
+De cette manière, seulement l'équipe IT pourra accéder aux différentes salles informatiques
 ## Conception fonctionnelle
 La conception fonctionnelle a pour but de définir les différents services et interactions que devra prendre en charge l'infrastructure.
 Voici donc la liste des services que nous avons pu définir jusqu'à maintenant ainsi que les interactions les concernant :
