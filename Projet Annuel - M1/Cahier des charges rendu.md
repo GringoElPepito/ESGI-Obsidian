@@ -231,7 +231,13 @@ Tout d'abord, il y a mis en place de 2 salles informatiques, chacune localisé d
 Les 2 salles seront comme évoqués ci-dessus équipés d'un onduleur par baie pour maintenir les équipements en fonctionnement soit en attendant que le courant soit rétablit, soit pour permettre la réalisation d'un arrêt "propre" des machines suite à une coupure de courant.
 Chaque baie de distribution est lié aux 2 Cœur de réseau pour maintenir l'accès réseaux aux différents terminaux mais en cas de panne de l'un des deux équipements.
 ### PRA
-PRA signifie Plan de Reprise d'Activité, il définit l'ensemble des moyens mis en place dans le but de permettre une reprise de l'activité de l'entreprise suite à l'apparition d'un incident d'une telle grav
+PRA signifie Plan de Reprise d'Activité, il définit l'ensemble des moyens mis en place dans le but de permettre une reprise de l'activité de l'entreprise suite à l'apparition d'un incident d'une telle gravité que le PCA ne puisse être appliqué.
+Tout d'abord il y a la sauvegarde, dans notre cas, c'est la méthode 3-2-1 qui sera mise en place qui se découpe de la manière suivantes :
+- 3 copies (1 copie de production, 2 copies de sauvegarde)
+- 2 support différents (les copies de sauvegarde ne doivent pas être stockés sur le même type de média). Dans notre cas nous utiliserons des SSD ainsi que des LTO
+- 1 copie de sauvegarde externe (au moins 1 des copies doit être stockés en dehors du lieu hébergeant l'infrastructure à sauvegarder). Dans notre cas, les cassettes LTO seront stockés au sein du PC sécurité qui est le bâtiment le plus à l'extérieur du site.
+En respectant cette méthode on garantit qu'au moins une copie reste disponible même en cas d'incident majeur.
+
 
 # Choix technologiques
 
