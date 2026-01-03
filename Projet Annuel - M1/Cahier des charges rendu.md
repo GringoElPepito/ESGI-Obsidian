@@ -208,11 +208,6 @@ Chaque sous-réseau du zone possède un ID VLAN définit de la manière suivante
 | IP Phones              | 7    | 0      | 170  | 10.17.0.0 | 255.255.255.0 | 10.17.0.1 |
 | DECT                   | 7    | 1      | 171  | 10.17.1.0 | 255.255.255.0 | 10.17.1.1 |
 | VoIP Access Points     | 7    | 2      | 172  | 10.17.2.0 | 255.255.255.0 | 10.17.2.1 |
-
-Concernant la schématisation de l'infrastructure, nous pouvons découpé cette étape en plusieurs parties :
-- Pare-feu
-- LAN
-
 Pour la partie Pare-feu, nous prévoyons de mettre en place 2 niveau de pare-feu redondés, ce qui correspond à la présence de 2 pares-feux externes ainsi que 2 pares-feux internes.
 Les pares-feux externes se chargeront de l'accès à internet ainsi que de l'exposition des réseaux DMZ.
 Les pares-feux internes se chargeront du routage entre les différents sous-réseaux du LAN ainsi que des VPN site-to-site et point-to-site.
