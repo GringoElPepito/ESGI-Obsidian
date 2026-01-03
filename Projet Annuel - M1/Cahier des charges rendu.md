@@ -38,7 +38,7 @@ La pandémie de la COVID-19 a mis en lumière la criticité de tous les services
 
 Il est donc absolument nécessaire pour tous les services de ce domaine d'avoir un système d'informations robuste permettant de garantir le bon déroulement de la production en toute circonstance. Cela nécessite donc de mettre l'accent sur la sécurité et la redondance du système.
 
-# Présentation de l'entreprise
+# Présentation de l'équipe projet
 SMJV est une startup s'illustrant dans le domaine de l'intégration de système d'information depuis 2023. L'entreprise monte et réalise les projets de mise en place d'infrastructure informatique de A à Z pour ces clients, débutant avec le pilotage et planification du projet, jusqu'à la livraison clé en main de la solution accompagné des livrables et recettes du projet. Elle opère pour des clients de tous domaines et de toutes tailles, ayant travaillé avec des établissement hôtelier de luxe, des PME ou encore des complexes industriels, ceci permit par la grande capacité d'adaptation et la versatilité de son équipe.
 
 L'équipe compte un total de 4 collaborateurs, chacun excellant dans leur domaine, leur offrant ainsi la possibilité de gérer au mieux chaque partie des projets qu'ils entreprennent :
@@ -65,6 +65,7 @@ Le site compte un total de 7 bâtiments permettant de répartir les différents 
 # Expression du besoin
 Le secteur de la production pharmaceutique, est un domaine d'une haute criticité, nécessitant un système d'informations capable de répondre aux contraintes lié à ce secteur.
 
+## Exigences fonctionnelles
 On définit comme exigences fonctionnelles les services et/ou comportements que doit fournir le système, voici ce qui est attendu pour ce nouveau site par CENEXIS :
 - Gestion centralisé des utilisateurs
 - Connexion VPN site-à-site
@@ -75,6 +76,7 @@ On définit comme exigences fonctionnelles les services et/ou comportements que 
 - Solution SIEM permettant une analyse en temps réel des activités sur les différents systèmes
 - Déploiement d'un service sur une infrastructure externe au site (Cloud)
 
+## Exigences non-fonctionnelles
 On définit comme exigences non-fonctionnelles les caractéristiques liés au fonctionnement du système comme ses performances, sa tolérance aux pannes ou encore sa sécurité, voici ce qui est attendu pour ce nouveau site par CENEXIS :
 - Solution de virtualisation en cluster permettant redondance et tolérance de panne
 - Solution de sauvegarde permettant la sauvegarde complète de l'infrastructure

@@ -1,14 +1,14 @@
-- [ ] Relire + Corrigé présentation entreprise cliente
+- [ ] Relire + Corriger présentation entreprise cliente
 - [ ] Créer un logo pour l'entreprise cliente
-- [ ] Relire + Corrigé présentation équipe projet
+- [ ] Relire + Corriger présentation équipe projet
 - [ ] Planification projet
 	- [ ] GANTT
 	- [ ] PERT ?
 	- [ ] Kanban
 	- [ ] RACI
-- [ ] Relire + Corrigé expression du besoin
-- [ ] Relire + Corrigé exigences Fonctionnelles
-- [ ] Relire + Corrigé exigences Non- Fonctionnelles
+- [ ] Relire + Corriger expression du besoin
+- [ ] Relire + Corriger exigences Fonctionnelles
+- [ ] Relire + Corriger exigences Non- Fonctionnelles
 - [ ] Rédiger les objectifs globaux et spécifiques
 - [ ] Définition de la partie fonctionnelle -> services + interactions
 - [ ] Définition de la partie technique -> Réseau, Serveurs, Stockage, Cloud
@@ -18,4 +18,8 @@
 	- [ ] Gestion des accès
 	- [ ] Sauvegarde
 	- [ ] bases de PRA/PCA
-- [ ] Schéma logique -> 
+- [ ] Schéma logique -> Vue d'ensemble des services et flux
+- [ ] Schéma technique -> Infrastructure et composants
+- [ ] Schéma de sécurité -> Zones de confiance, filtrage, accès
+- [ ] Relire + Corriger les comparaisons de solutions techniques
+- [ ] Mis en forme du document
