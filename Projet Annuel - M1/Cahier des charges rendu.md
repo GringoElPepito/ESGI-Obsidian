@@ -206,7 +206,7 @@ Nous avons optés pour Ceph, en effet cette solution s'intègre parfaitement à 
 | **Support multi-cloud / hybride** | Excellent, standard industriel                            | Limitée, moins adaptée au multi-cloud                           |
 | **Public cible**                  | Entreprises, grandes infrastructures, DevOps expérimentés | PME, équipes dev souhaitant simplicité et rapidité              |
 | **Cas d’usage principal**         | Production à grande échelle, cloud natif                  | Déploiements simples et rapides, développement et petites infra |
-Nous avons opté pour Kubernetes, car bien plus facilement scalable et répondant à l'adaptation à la demande en temps réel.
+Nous avons opté pour Kubernetes, car bien plus facilement scalable tout en fournissant un bien plus grand nombre de fonctionnalité notamment en termes de sécurité avec ETCD, le RBAC ou encore les Network Policies. De plus, Kubernetes est supporté par une bien plus grande communauté, facilitant l'exploitation de cette solution.
 
 ## Sauvegarde :
 
@@ -244,28 +244,28 @@ Notre choix s'est porté sur Proxmox Backup Server notamment pour sa faciliter d
 | **Intégration**                 | Limitée à outils open-source et scripts                                 | Très large (Office 365, Teams, SharePoint, Azure AD…)                                 |
 | **Support éditeur**             | Communauté, support commercial optionnel                                | Microsoft, support premium entreprise                                                 |
 | **Cas d’usage principal**       | Serveur mail complet open-source avec contrôle total                    | Solution de messagerie et collaboration professionnelle à grande échelle              |
-Nous avons optés pour Mailcow car conteneurisable et donc déployable sur un cluster Kubernetes ce qui permettra d'adapter en temps réel la consommation du service aux besoins utilisateurs.
+Nous avons optés pour Mailcow car c'est une solution conteneurisable et donc déployable sur un cluster Kubernetes ce qui permettra d'adapter en temps réel la consommation du service aux besoins utilisateurs.
 
 ## Messagerie instantanée :
 
-|Critère|**Mattermost**|**Rocket.Chat**|
-|---|---|---|
-|**Type**|Open-source (avec version entreprise)|Open-source (avec version entreprise)|
-|**Licence**|MIT (OSS) + Enterprise|MIT (OSS) + Enterprise|
-|**Déploiement**|On-prem, cloud privé, Docker/Kubernetes|On-prem, cloud privé, Docker/Kubernetes|
-|**Interface**|Web, desktop, mobile|Web, desktop, mobile|
-|**Messagerie**|Canaux publics/privés, messages directs, threads|Canaux publics/privés, messages directs, threads|
-|**Audio / Vidéo**|Intégré via plugins ou Jitsi, WebRTC|Intégré via Jitsi ou WebRTC|
-|**Notifications / Alertes**|Push, email, webhook, intégration alerting|Push, email, webhook, intégration alerting|
-|**Intégrations**|GitLab, Jira, CI/CD, Webhooks, plugins|GitLab, Jira, CI/CD, Webhooks, plugins|
-|**Sécurité**|SSO, OAuth, LDAP, 2FA, chiffrement TLS|SSO, OAuth, LDAP, 2FA, chiffrement TLS|
-|**Scalabilité**|Bonne (clusters possibles)|Bonne (clusters possibles)|
-|**Personnalisation**|Thèmes, plugins, APIs, bots|Thèmes, plugins, APIs, bots|
-|**Support multilingue**|Oui|Oui|
-|**Mises à jour**|Régulières, version OSS + Enterprise|Régulières, version OSS + Enterprise|
-|**Public cible**|PME, grandes entreprises, DevOps|PME, grandes entreprises, communautés open-source|
-|**Cas d’usage principal**|Collaboration sécurisée et intégrée avec outils DevOps|Collaboration sécurisée et personnalisable, communication d’équipe|
-Nous avons optés pour Mattermost pour la facilité de son déploiement, les intégrations qu'ils proposent ainsi que la possibilité de déploiement sous forme de conteneur.
+| Critère                     | **Mattermost**                                         | **RocketChat**                                                     |
+| --------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------ |
+| **Type**                    | Open-source (avec version entreprise)                  | Open-source (avec version entreprise)                              |
+| **Licence**                 | MIT (OSS) + Enterprise                                 | MIT (OSS) + Enterprise                                             |
+| **Déploiement**             | On-prem, cloud privé, Docker/Kubernetes                | On-prem, cloud privé, Docker/Kubernetes                            |
+| **Interface**               | Web, desktop, mobile                                   | Web, desktop, mobile                                               |
+| **Messagerie**              | Canaux publics/privés, messages directs, threads       | Canaux publics/privés, messages directs, threads                   |
+| **Audio / Vidéo**           | Intégré via plugins ou Jitsi, WebRTC                   | Intégré via Jitsi ou WebRTC                                        |
+| **Notifications / Alertes** | Push, email, webhook, intégration alerting             | Push, email, webhook, intégration alerting                         |
+| **Intégrations**            | GitLab, Jira, CI/CD, Webhooks, plugins                 | GitLab, Jira, CI/CD, Webhooks, plugins                             |
+| **Sécurité**                | SSO, OAuth, LDAP, 2FA, chiffrement TLS                 | SSO, OAuth, LDAP, 2FA, chiffrement TLS                             |
+| **Scalabilité**             | Bonne (clusters possibles)                             | Bonne (clusters possibles)                                         |
+| **Personnalisation**        | Thèmes, plugins, APIs, bots                            | Thèmes, plugins, APIs, bots                                        |
+| **Support multilingue**     | Oui                                                    | Oui                                                                |
+| **Mises à jour**            | Régulières, version OSS + Enterprise                   | Régulières, version OSS + Enterprise                               |
+| **Public cible**            | PME, grandes entreprises, DevOps                       | PME, grandes entreprises, communautés open-source                  |
+| **Cas d’usage principal**   | Collaboration sécurisée et intégrée avec outils DevOps | Collaboration sécurisée et personnalisable, communication d’équipe |
+Nous avons optés pour Mattermost pour la facilité de son déploiement, les intégrations qu'ils proposent ainsi que la possibilité de déploiement sous forme de conteneur fonctionnant sur Kubernetes. 
 
 ## Téléphonie IP :
 
@@ -285,7 +285,7 @@ Nous avons optés pour Mattermost pour la facilité de son déploiement, les int
 | **Courbe d’apprentissage**            | Faible à moyenne                                           | Moyenne à élevée (Linux + Asterisk knowledge)                     |
 | **Public cible**                      | PME, entreprises cherchant une solution clé en main        | PME, organisations techniques capables de gérer Asterisk          |
 | **Cas d’usage principal**             | Téléphonie IP simple à déployer et gérer, intégration CRM  | Téléphonie IP flexible, personnalisable et extensible via modules |
-Nous avons optés pour FreePBX car il permet une bien plus grande personnalisation de le fonctionnement du service de téléphonie.
+Nous avons optés pour 3CX car la solution met bien plus l'accent sur la sécurisation du service ce qui est un point indispensable au vu de la criticité de notre contexte.
 
 ## Supervision :
 |Critère|**Prometheus**|**Zabbix**|
@@ -304,7 +304,7 @@ Nous avons optés pour FreePBX car il permet une bien plus grande personnalisati
 |**Usage principal**|Monitoring temps réel, observabilité, DevOps|Supervision complète IT, alerting système et réseau|
 |**Public cible**|DevOps, ingénieurs cloud, infrastructures modernes|Administrateurs systèmes, entreprises traditionnelles|
 |**Support entreprise**|Par partenaires (CNCF / Red Hat etc.)|Zabbix SIA (support commercial)|
-Nous avons optés pour Prometheus pour sa haute compatibilité avec les environnements DevOps.
+Nous avons optés pour Prometheus pour sa haute compatibilité avec les environnements 
 ## SIEM :
 
 | Critère                       | **Splunk**                                       | **Wazuh**                                    |
