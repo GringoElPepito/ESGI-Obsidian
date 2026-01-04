@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Note.md",
+                "file": "Projet Annuel - M1/Cahier des charges rendu.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Note"
+              "title": "Cahier des charges rendu"
             }
           },
           {
@@ -484,8 +484,8 @@
   },
   "active": "1f37fbbbfd27e491",
   "lastOpenFiles": [
-    "Projet Annuel - M1/Brut.md",
     "Projet Annuel - M1/Note.md",
+    "Projet Annuel - M1/Brut.md",
     "Projet Annuel - M1/Sans titre.md",
     "Projet Annuel - M1/Architecture Réseau.md",
     "Projet Annuel - M1/Cahier des charges rendu.md",

@@ -523,23 +523,24 @@ Pour sa facilité d'interfaçage avec Kubernetes nous avons optés pour Harbor. 
 
 ## Bastion
 
-| Critère                     | Wallix | Guacamole |
-| --------------------------- | ------ | --------- |
-| **Type**                    |        |           |
-| **Licence**                 |        |           |
-| **Déploiement**             |        |           |
-| **Interface de gestion**    |        |           |
-| **Registry supportée**      |        |           |
-| **Authentification**        |        |           |
-| **Sécurité**                |        |           |
-| **Replication / Mirroring** |        |           |
-| **Scalabilité**             |        |           |
-| **Intégration CI/CD**       |        |           |
-| **Monitoring / Logging**    |        |           |
-| **Support Enterprise**      |        |           |
-| **Public cible**            |        |           |
-| **Cas d’usage principal**   |        |           |
-
+| **Critère**                             | **JumpServer**                                    | **Wallix Bastion**                                                |
+| --------------------------------------- | ------------------------------------------------- | ----------------------------------------------------------------- |
+| **Type de solution**                    | Open-source PAM / bastion                         | Commercial PAM / bastion leader européen                          |
+| **Licence / coût**                      | Gratuit (GPL-3 pour la communauté)                | Commercial (licences, SaaS ou on-premise)                         |
+| **Déploiement**                         | Sur site, cloud, cluster / HA possible            | On-premise, cloud, SaaS; déploiement sans agent                   |
+| **Authentification**                    | LDAP/AD, SSO (OIDC/SAML), MFA                     | LDAP/AD, SAML, MFA (peut intégration externe)                     |
+| **Contrôle des accès / RBAC**           | Oui (RBAC, ACL, JIT)                              | Oui (contrôle granulaire, workflows d’approbation) (              |
+| **Audit & enregistrement des sessions** | Oui (enregistrements, logs, replay)               | Oui (enregistrement vidéo/clavier + métadonnées) (                |
+| **Gestion des credentials**             | Découverte & rotation de comptes/credentials      | Coffre-fort de mots de passe, rotation, A2A password management   |
+| **Accès supportés**                     | SSH, RDP, Kubernetes, DB, RemoteApp (via browser) | SSH, RDP, Telnet, VNC, HTTPS web apps via Access Manager          |
+| **Monitoring en temps réel**            | Oui (surveillance sessions)                       | Oui (monitoring & supervision avec capacités d’arrêt)             |
+| **Intégrations API / SIEM**             | API existantes (module PAM)                       | Intégration SIEM, plugins, API selon édition                      |
+| **Scalabilité**                         | Élevée (cluster, multi-tenant)                    | Élevée (grandes entreprises, multi-tenant possible)               |
+| **Complexité de mise en œuvre**         | Technique, documentation parfois hétérogène       | Plus encadrée (commercial), mais déploiement peut être complexe   |
+| **Support / écosystème**                | Communauté + support commercial possible          | Support professionnel, formation, intégrateurs                    |
+| **Conformité & reporting**              | Basique (logs/records exportables)                | Rapports avancés, conformité réglementaire (ISO, RGPD, NIS2)      |
+| **Cas d’usage idéal**                   | Bastion open-source complet avec audit et PAM     | PAM d’entreprise avec gouvernance, conformité et intégration SIEM |
+Nous avons choisi d'opté pour JumpServer car c'est une soluti
 
 # Pilotage
 
