@@ -114,6 +114,9 @@ Voici donc la liste des services que nous avons pu définir jusqu'à maintenant 
 	- Flux entrants : service de mail
 	- Flux entrants : service de messagerie instantanné
 	- Flux entrants : service de téléphonie IP
+- Bastion
+	- Flux entrants : Interactions administrateurs
+	- Flux sortants : Connexion aux machines cibles
 - Supervision
 	- Flux entrants : Accès interface de gestion
 	- Flux bidirectionnels : Supervision des équipements
@@ -523,24 +526,25 @@ Pour sa facilité d'interfaçage avec Kubernetes nous avons optés pour Harbor. 
 
 ## Bastion
 
-| **Critère**                             | **JumpServer**                                    | **Wallix Bastion**                                                |
-| --------------------------------------- | ------------------------------------------------- | ----------------------------------------------------------------- |
-| **Type de solution**                    | Open-source PAM / bastion                         | Commercial PAM / bastion leader européen                          |
-| **Licence / coût**                      | Gratuit (GPL-3 pour la communauté)                | Commercial (licences, SaaS ou on-premise)                         |
-| **Déploiement**                         | Sur site, cloud, cluster / HA possible            | On-premise, cloud, SaaS; déploiement sans agent                   |
-| **Authentification**                    | LDAP/AD, SSO (OIDC/SAML), MFA                     | LDAP/AD, SAML, MFA (peut intégration externe)                     |
-| **Contrôle des accès / RBAC**           | Oui (RBAC, ACL, JIT)                              | Oui (contrôle granulaire, workflows d’approbation) (              |
-| **Audit & enregistrement des sessions** | Oui (enregistrements, logs, replay)               | Oui (enregistrement vidéo/clavier + métadonnées) (                |
-| **Gestion des credentials**             | Découverte & rotation de comptes/credentials      | Coffre-fort de mots de passe, rotation, A2A password management   |
-| **Accès supportés**                     | SSH, RDP, Kubernetes, DB, RemoteApp (via browser) | SSH, RDP, Telnet, VNC, HTTPS web apps via Access Manager          |
-| **Monitoring en temps réel**            | Oui (surveillance sessions)                       | Oui (monitoring & supervision avec capacités d’arrêt)             |
-| **Intégrations API / SIEM**             | API existantes (module PAM)                       | Intégration SIEM, plugins, API selon édition                      |
-| **Scalabilité**                         | Élevée (cluster, multi-tenant)                    | Élevée (grandes entreprises, multi-tenant possible)               |
-| **Complexité de mise en œuvre**         | Technique, documentation parfois hétérogène       | Plus encadrée (commercial), mais déploiement peut être complexe   |
-| **Support / écosystème**                | Communauté + support commercial possible          | Support professionnel, formation, intégrateurs                    |
-| **Conformité & reporting**              | Basique (logs/records exportables)                | Rapports avancés, conformité réglementaire (ISO, RGPD, NIS2)      |
-| **Cas d’usage idéal**                   | Bastion open-source complet avec audit et PAM     | PAM d’entreprise avec gouvernance, conformité et intégration SIEM |
-Nous avons choisi d'opté pour JumpServer car c'est une soluti
+| **Critère**                             | **JumpServer**                                                                | **Apache Guacamole**                                                   |
+| --------------------------------------- | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| **Type de solution**                    | Bastion / PAM (gestion d’accès privilégiés)                                   | Gateway d’accès distant via navigateur (HTML5)                         |
+| **Licence**                             | Open-source (GPL3, Community) + Enterprise payante                            | Open-source (Apache License 2.0)                                       |
+| **Objectif principal**                  | Sécuriser les accès SSH/RDP/DB avec audit, RBAC, MFA, vault de credentials    | Accès distant aux postes/serveurs via navigateur sans client installé  |
+| **Accès & protocoles supportés**        | SSH, RDP, VNC, SFTP, bases de données, Kubernetes                             | SSH, RDP, VNC, telnet, autres via plugins                              |
+| **Gestion des identités / auth**        | LDAP/AD, MFA, RBAC, intégrations SSO possibles                                | LDAP/AD, extensions pour MFA (via plugins)                             |
+| **Enregistrement / audit des sessions** | Oui (enregistrement, audit granulaire, replay)                                | Logs d’accès, mais **pas d’audit vidéo** ni replay intégré             |
+| **Gestion des credentials**             | Oui (vault + rotation automatisée)                                            | Non (les credentials sont passés au moment de la connexion)            |
+| **Contrôle d’accès fin**                | Oui — permissions basées sur rôles, restrictions par nœud, heure, approbation | Basique — contrôle par utilisateur/credentials                         |
+| **Interface utilisateur**               | Web-UI pour admin & users + console web pour sessions                         | Web-UI pour accès distant via HTML5                                    |
+| **Scalabilité / HA**                    | Cluster possible, multi-tenant                                                | Peut être mis derrière load-balancer pour HA                           |
+| **Focus sécurité**                      | Très fort (PAM / bastion / conformité)                                        | Moyen (accès simplifié, pas de PAM complet)                            |
+| **Cas d’usage typique**                 | SOC / SecOps, entreprises avec exigences audit & conformité                   | Accès simple à postes/serveurs sans client (helpdesk, BYOD, usage web) |
+| **Support entreprise**                  | Via JumpServer Enterprise ou intégrateurs                                     | Communautaire + support via prestataires                               |
+| **Complexité de mise en place**         | Moyenne à élevée                                                              | Faible à moyenne                                                       |
+| **Public cible**                        | Organisations cherchant une **gestion sécurisée des accès privilégiés**       | Organisations cherchant un **accès distant simple via navigateur**     |
+Nous avons optés pour JumpServer pour ses fonctionnalités permettant une bien meilleur sécurisation des accès, tout en offrant une capacité d'audit bien plus complète.
+
 
 # Pilotage
 
