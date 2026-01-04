@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Document/PBS-WBS.md",
+                "file": "Projet Annuel - M1/Cahier des charges rendu.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PBS-WBS"
+              "title": "Cahier des charges rendu"
             }
           },
           {
@@ -485,6 +485,7 @@
   },
   "active": "076cb115dedf8fbf",
   "lastOpenFiles": [
+    "Projet Annuel - M1/Document/PBS-WBS.md",
     "Projet Annuel - M1/Cahier des charges rendu.md",
     "Projet Annuel - M1/Contexte.md",
     "Projet Annuel - M1/ToDo Cahier des charges.md",
@@ -496,7 +497,6 @@
     "Sans titre 2.md",
     "Projet Annuel - M1/Installation/Ansible.md",
     "Projet Annuel - M1/Installation/Proxmox iscsi.md",
-    "Projet Annuel - M1/Document/PBS-WBS.md",
     "Projet Annuel - M1/Projet annuel.md",
     "Projet Annuel - M1/Installation/Proxmox Ceph.md",
     "IA/Brut.md",
