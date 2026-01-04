@@ -104,7 +104,7 @@ Concernant les accès informatique, ces derniers seront gérés à l'aide d'un a
 ## Conception fonctionnelle
 La conception fonctionnelle a pour but de définir les différents services et interactions que devra prendre en charge l'infrastructure.
 Voici donc la liste des services que nous avons pu définir jusqu'à maintenant ainsi que les interactions les concernant :
-- ERP
+- ERP solution permettant la gestion d'une entreprise (Achat, Vente, Production, Temps de travail etc...)
 	- Flux entrants : Interactions utilisateurs
 	- Flux bidirectionnels : logiciels de production
 	- Flux sortant : Interaction avec Blueway (Récupération des numéros de production)
@@ -123,7 +123,7 @@ Voici donc la liste des services que nous avons pu définir jusqu'à maintenant 
 	- Flux entrants : Récupération des logs
 	- Flux sortant : émission des alertes
 - Automatisation
-	- Flux sortants : Accès aux différents terminaux
+	- Flux sortants : Accès aux différents terminaux (VM, hyperviseur, Pare-feu, équipement réseau etc...)
 - Sauvegarde
 	- Flux entrants : Accès interface de gestion
 	- Flux sortants : Réalisation des sauvegardes
@@ -183,7 +183,7 @@ Chaque sous-réseau du zone possède un ID VLAN définit de la manière suivante
 | Bastion                | 0    | 3      | 103  | 10.10.3.0 | 255.255.255.0 | 10.10.3.1 |
 | Ansible                | 0    | 4      | 104  | 10.10.4.0 | 255.255.255.0 | 10.10.4.1 |
 | Proxmox                | 1    | 0      | 110  | 10.11.0.0 | 255.255.255.0 | 10.11.0.1 |
-| Ceph/TrueNAS           | 1    | 1      | 111  | 10.11.1.0 | 255.255.255.0 | 10.11.1.1 |
+| Ceph                   | 1    | 1      | 111  | 10.11.1.0 | 255.255.255.0 | 10.11.1.1 |
 | Active Directory       | 1    | 2      | 112  | 10.11.2.0 | 255.255.255.0 | 10.11.2.1 |
 | SAP                    | 1    | 3      | 113  | 10.11.3.0 | 255.255.255.0 | 10.11.3.1 |
 | Kubernetes - Harbor    | 1    | 4      | 114  | 10.11.4.0 | 255.255.255.0 | 10.11.4.1 |
@@ -217,11 +217,6 @@ Pour la partie LAN, nous prévoyons de suivre une architecture 3 tiers qui se d�
 - DISTRIBUTION - cette partie du LAN a pour objectif de diffuser le réseau aux différents équipements de la couche ACCESS.
 - ACCESS - cette partie du LAN a pour objectif de fournir les accès réseaux aux différents terminaux utilisateurs.
 Grâce à cette architecture, il est bien plus simple d'agrandir et de gérer l'infrastructure au cours du temps, notamment en facilitant l'identification de potentielles pannes réseaux pouvant survenir au cours du cycle de vie de l'infrastructure.
-
-### Serveurs
-Pour les serveurs 
-
-### Stockage
 ### PCA
 PCA signifie Plan de Continuité d'Activité, il définit l'ensemble des moyens mis en place pour maintenir l'activité de l'entreprise et ce même en cas de panne.
 Tout d'abord, il y a mis en place de 2 salles informatiques, chacune localisé dans un bâtiment différent (2e étage du bâtiment 40 & 1er sous-sol du bâtiment 70), dans le but de maintenir l'activité et ce même si l'une des 2 salles est rendue inexploitable. Chaque salle contiendra les éléments suivants :

@@ -21,5 +21,5 @@
 - [ ] Schéma logique -> Vue d'ensemble des services et flux
 - [ ] Schéma technique -> Infrastructure et composants
 - [ ] Schéma de sécurité -> Zones de confiance, filtrage, accès
-- [ ] Relire + Corriger les comparaisons de solutions techniques
+- [x] Relire + Corriger les comparaisons de solutions techniques
 - [ ] Mis en forme du document
