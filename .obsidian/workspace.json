@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Architecture Réseau.md",
+                "file": "Projet Annuel - M1/Note.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Architecture Réseau"
+              "title": "Note"
             }
           },
           {
@@ -320,14 +320,7 @@
               "icon": "lucide-file",
               "title": "Deploiement Azure"
             }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "f3e5a7e27980ff47",
-        "type": "tabs",
-        "children": [
+          },
           {
             "id": "076cb115dedf8fbf",
             "type": "leaf",
@@ -489,11 +482,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "bfb643269a2d6408",
+  "active": "1f37fbbbfd27e491",
   "lastOpenFiles": [
-    "Projet Annuel - M1/ToDo Cahier des charges.md",
-    "Projet Annuel - M1/Cahier des charges rendu.md",
+    "Projet Annuel - M1/Brut.md",
+    "Projet Annuel - M1/Note.md",
+    "Projet Annuel - M1/Sans titre.md",
     "Projet Annuel - M1/Architecture Réseau.md",
+    "Projet Annuel - M1/Cahier des charges rendu.md",
+    "Projet Annuel - M1/ToDo Cahier des charges.md",
     "Psychlogie/Dark Psychologie.md",
     "Sans titre 2.md",
     "Projet Annuel - M1/Installation/Ansible.md",
@@ -515,10 +511,7 @@
     "Projet Annuel - M1/Contexte.md",
     "Vmware/Rapport Projet Vmware.md",
     "Vmware/Introduciton à la Virtualisation et découverte de l'hyperviseur ESXi.md",
-    "Projet Annuel - M1/Sans titre.md",
     "Projet Annuel - Bachelor 3/DNS.md",
-    "Vmware/Brut.md",
-    "Projet Annuel - M1/Brut.md",
     "Vmware",
     "attachments/Pasted image 20251124114936.png",
     "attachments/Pasted image 20251124105553.png",
