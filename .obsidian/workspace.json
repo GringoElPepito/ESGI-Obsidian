@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/ToDo Cahier des charges.md",
+                "file": "Commandes utiles.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ToDo Cahier des charges"
+              "title": "Commandes utiles"
             }
           },
           {
@@ -485,8 +485,15 @@
   },
   "active": "076cb115dedf8fbf",
   "lastOpenFiles": [
-    "Projet Annuel - M1/Cahier des charges rendu.md",
+    "Note TOEIC.md",
+    "Outils.md",
+    "Rapport Alternance.md",
+    "SmartBin.md",
     "Projet Annuel - M1/ToDo Cahier des charges.md",
+    "Sans titre.md",
+    "Sans titre 1.md",
+    "Sans titre.base",
+    "Projet Annuel - M1/Cahier des charges rendu.md",
     "Projet Annuel - M1/Document/PBS-WBS.md",
     "Projet Annuel - M1/Contexte.md",
     "Projet Annuel - M1/Note.md",
@@ -507,12 +514,6 @@
     "attachments/Pasted image 20251027092204.png",
     "Python/Cours 1.md",
     "Projet Annuel - M1/Cahier des charges.md",
-    "Vmware/Répartition.md",
-    "Projet Annuel - M1/Liste Technos.md",
-    "Vmware/Révision.md",
-    "Vmware/Rapport Projet Vmware.md",
-    "Vmware/Introduciton à la Virtualisation et découverte de l'hyperviseur ESXi.md",
-    "Projet Annuel - Bachelor 3/DNS.md",
     "Vmware",
     "attachments/Pasted image 20251124114936.png",
     "attachments/Pasted image 20251124105553.png",
@@ -530,7 +531,6 @@
     "Linux/L3",
     "attachments/Pasted image 20251027122807.png",
     "attachments/Pasted image 20251027122758.png",
-    "Cloud Day",
     "Untitled.canvas"
   ]
 }
