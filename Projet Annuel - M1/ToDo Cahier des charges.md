@@ -9,7 +9,7 @@
 - [x] Relire + Corriger expression du besoin
 - [x] Relire + Corriger exigences Fonctionnelles
 - [x] Relire + Corriger exigences Non- Fonctionnelles
-- [ ] Rédiger les objectifs par niveaux de prio (Must Have, Nice to have)
+- [x] Rédiger les objectifs par niveaux de prio (Must Have, Nice to have)
 - [x] Définition de la partie fonctionnelle -> services + interactions
 - [x] Définition de la partie technique -> Réseau, Serveurs, Stockage, Cloud
 - [x] Intégration de la sécurité
