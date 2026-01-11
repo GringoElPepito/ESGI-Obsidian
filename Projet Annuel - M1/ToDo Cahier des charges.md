@@ -25,12 +25,12 @@
 - [ ] Mis en forme du document
 - [ ] RBS
 - [ ] Finir Analyse financières
-- [ ] Convention de nommage
-	- [ ] Serveurs
-	- [ ] VM
-	- [ ] Pare-feux
-	- [ ] Switch
-	- [ ] Postes utilisateurs
+- [x] Convention de nommage
+	- [x] Serveurs
+	- [x] VM
+	- [x] Pare-feux
+	- [x] Switch
+	- [x] Postes utilisateurs
 - [ ] Sources
 - [ ] PCA
 - [ ] PRA
