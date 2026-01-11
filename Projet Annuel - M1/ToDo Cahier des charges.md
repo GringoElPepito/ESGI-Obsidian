@@ -23,7 +23,7 @@
 - [ ] Schéma de sécurité -> Zones de confiance, filtrage, accès
 - [x] Relire + Corriger les comparaisons de solutions techniques
 - [ ] Mis en forme du document
-- [ ] RBS
+- [x] RBS
 - [ ] Finir Analyse financières
 - [x] Convention de nommage
 	- [x] Serveurs
