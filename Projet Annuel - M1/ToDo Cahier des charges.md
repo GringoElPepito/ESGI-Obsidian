@@ -32,6 +32,6 @@
 	- [x] Switch
 	- [x] Postes utilisateurs
 - [ ] Sources
-- [ ] PCA
-- [ ] PRA
+- [x] PCA
+- [x] PRA
 - [ ] Page de garde
