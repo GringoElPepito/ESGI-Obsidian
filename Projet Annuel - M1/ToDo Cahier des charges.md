@@ -3,13 +3,13 @@
 - [x] Relire + Corriger présentation équipe projet
 - [ ] Planification projet
 	- [ ] GANTT
-	- [ ] PERT ?
-	- [ ] Kanban
-	- [ ] RACI
+	- [ ] PERT
+	- [x] Kanban
+	- [x] RACI
 - [x] Relire + Corriger expression du besoin
 - [x] Relire + Corriger exigences Fonctionnelles
 - [x] Relire + Corriger exigences Non- Fonctionnelles
-- [ ] Rédiger les objectifs globaux et spécifiques
+- [ ] Rédiger les objectifs par niveaux de prio (Must Have, Nice to have)
 - [x] Définition de la partie fonctionnelle -> services + interactions
 - [x] Définition de la partie technique -> Réseau, Serveurs, Stockage, Cloud
 - [x] Intégration de la sécurité
@@ -23,3 +23,15 @@
 - [ ] Schéma de sécurité -> Zones de confiance, filtrage, accès
 - [x] Relire + Corriger les comparaisons de solutions techniques
 - [ ] Mis en forme du document
+- [ ] RBS
+- [ ] Finir Analyse financières
+- [ ] Convention de nommage
+	- [ ] Serveurs
+	- [ ] VM
+	- [ ] Pare-feux
+	- [ ] Switch
+	- [ ] Postes utilisateurs
+- [ ] Sources
+- [ ] PCA
+- [ ] PRA
+- [ ] Page de garde
