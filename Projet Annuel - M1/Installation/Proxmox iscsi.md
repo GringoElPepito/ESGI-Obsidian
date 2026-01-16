@@ -11,7 +11,7 @@ iscsiadm -m discovery -t sendtargets -p 10.99.99.2:3260
 
 Ajout du partage iSCSI pour montage automatique au démarrage du service `open-iscsi.service` :
 ```bash
-iscsiadm -m node -T iqn.2005-10.org.freenas.ctl:vm-datastore -p 10.99.99.2:3260 --op update -n node.startup -v automatic
+iscsiadm -m node -T iqn.2005-10.org.freenas.ctl:vm-datastore -p 10.99.99.6:3260 --op update -n node.startup -v automatic
 ```
 
 Redémarrage du service :
