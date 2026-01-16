@@ -1,4 +1,4 @@
 
 ```bash
-find ./ -type -f -exec grep -H "BITBUCKET_DISABLE" {} \; 
+find / -type f -exec grep -H "freenas-proxmox" {} \; 
 ```
