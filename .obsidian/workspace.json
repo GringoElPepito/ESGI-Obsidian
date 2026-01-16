@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Installation/Proxmox iscsi.md",
+                "file": "Projet Annuel - M1/Installation/Proxmox Network.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Proxmox iscsi"
+              "title": "Proxmox Network"
             }
           },
           {
@@ -499,6 +499,8 @@
   },
   "active": "a063af7b72eabc5e",
   "lastOpenFiles": [
+    "Projet Annuel - M1/Installation/Proxmox iscsi.md",
+    "Projet Annuel - M1/Installation/Proxmox Network.md",
     "Projet Annuel - M1/Installation/Proxmox Ceph.md",
     "Projet Annuel - M1/Document/Présentation Equipe Projet.md",
     "Projet Annuel - M1/Document/PBS-WBS.md",
@@ -521,11 +523,9 @@
     "Psychlogie/Dark Psychologie.md",
     "Sans titre 2.md",
     "Projet Annuel - M1/Installation/Ansible.md",
-    "Projet Annuel - M1/Installation/Proxmox iscsi.md",
     "Projet Annuel - M1/Projet annuel.md",
     "IA/Brut.md",
     "Sans titre 3.md",
-    "Windows Server/Correction TP.md",
     "attachments/Pasted image 20251027101636.png",
     "attachments/Pasted image 20251027092204.png",
     "Vmware",
