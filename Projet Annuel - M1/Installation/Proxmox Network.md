@@ -11,4 +11,6 @@ La création d'une zone ajoutera un élément Zone aux objets présents au sein 
 
 Après avoir créer votre zone, il va être possible de créer un VNet. Un VNet est un switch virtuel lié à une Zone et permettant de créer des sous-réseaux.
 
-Les sous-réseaux permettent surtout
+Les sous-réseaux offrent les fonctionnalités suivantes :
+- Mis en place d'un DHCP
+- SNAT permettant aux VM/LXC de sortir du sous-réseau 
