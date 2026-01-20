@@ -14,3 +14,7 @@ Après avoir créer votre zone, il va être possible de créer un VNet. Un VNet 
 Les sous-réseaux offrent les fonctionnalités suivantes :
 - Mis en place d'un DHCP
 - SNAT permettant aux VM/LXC de sortir du sous-réseau 
+
+
+
+Zone VLA -> VNets si activation de l'option `VLAN AWARE` alors possible de définir le tag du VLAN sur les guests à ce moment le trafic sortant des guests sera taggué. Si `VLAN AWARE` est désactivé sur le VNet alors impossible de tagguer l'interface des guests (ERREUR au démarrage).
