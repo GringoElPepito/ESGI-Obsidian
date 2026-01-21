@@ -8,3 +8,7 @@ Vivien - Jumpserver :
 - Potentiellement problème de chemin avec le binaire iptables
 - Connexion à JumpServer avec compte AD à moitié fonctionnelle
 - Solution Fonctionnant sous Docker
+- Possibilité d'utiliser une base de données extérieur
+
+
+
