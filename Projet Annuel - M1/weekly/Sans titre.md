@@ -1,5 +1,4 @@
 Julien -Maquette Réseau :
-- 
 - téléchargement des images sur pnetlab
 
 Vivien - Jumpserver :
@@ -10,7 +9,8 @@ Vivien - Jumpserver :
 - Solution Fonctionnant sous Docker
 - Possibilité d'utiliser une base de données extérieur
 
-Soratha -
+Soratha - GLPI :
+- 
 
-Proxmox
+Miguel - Proxmox
 
