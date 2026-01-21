@@ -17,4 +17,7 @@ Les sous-réseaux offrent les fonctionnalités suivantes :
 
 
 
-Zone VLA -> VNets si activation de l'option `VLAN AWARE` alors possible de définir le tag du VLAN sur les guests à ce moment le trafic sortant des guests sera taggué. Si `VLAN AWARE` est désactivé sur le VNet alors impossible de tagguer l'interface des guests (ERREUR au démarrage).
+Zone VLAN -> VNets si activation de l'option `VLAN AWARE` alors possible de définir le tag du VLAN sur les guests à ce moment le trafic sortant des guests sera taggué. Si `VLAN AWARE` est désactivé sur le VNet alors impossible de tagguer l'interface des guests (ERREUR au démarrage).
+
+
+SI SDN fonctionne pas
