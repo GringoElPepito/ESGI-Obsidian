@@ -10,6 +10,7 @@ Vivien - Jumpserver :
 - Possibilité d'utiliser une base de données extérieur
 
 Soratha - GLPI :
+- Intégration LDAPS
 - 
 
 Miguel - Proxmox
