@@ -14,6 +14,11 @@ Ajout du partage iSCSI pour montage automatique au démarrage du service `open-i
 iscsiadm -m node -T iqn.2005-10.org.freenas.ctl:vm-datastore -p 10.99.99.6:3260 --op update -n node.startup -v automatic
 ```
 
+Suppression du partage ISCSI
+```bash
+iscsiadm -m node -T iqn.2005-10.org.freenas.ctl:vm-datastore -p 10.99.99.6:3260 --op update -n node.startup -v manual
+```
+
 Redémarrage du service :
 ```bash
 systemctl restart open-iscsi.service 
