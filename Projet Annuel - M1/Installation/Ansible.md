@@ -27,6 +27,6 @@ New-ItemProperty @tokenFilterParams
 
 
 Script d'activation de WinRM :
-``` 
-
+```PowerShell
+Enable-PSRemoting -Force
 ```
