@@ -26,3 +26,7 @@ New-ItemProperty @tokenFilterParams
 
 
 
+Script d'activation de WinRM :
+```
+
+```
