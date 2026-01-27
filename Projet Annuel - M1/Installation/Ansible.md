@@ -1,4 +1,4 @@
-WinRM :
+Configuration WinRM 
 ```PowerShell
 Enable-PSRemoting -Force
 
