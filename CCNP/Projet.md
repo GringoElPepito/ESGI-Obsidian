@@ -20,14 +20,14 @@ ipv6 ospf 101 area 1
 no shutdown
 int Gi0/1
 ip add 172.16.0.1 255.255.0.0
-ip ospf authentication-key ospf-key
+ip ospf authentication key-chain ospf-key
 ipv6 add 2001:DB8:16:16::1/64
 ipv6 ospf 101 area 0
 ipv6 rip 101 enable
 no shutdown
 int Gi0/2
 ip add 172.19.0.1 255.255.0.0
-ip ospf authentication-key ospf-key
+ip ospf authentication key-chain ospf-key
 ipv6 add 2001:DB8:19:19::1/64
 ipv6 ospf 101 area 0
 ipv6 rip 101 enable
@@ -93,7 +93,7 @@ ipv6 rip 101 enable
 no shutdown
 int Gi0/2
 ip add 172.17.0.1 255.255.0.0
-ip ospf authentication key ospf-key
+ip ospf authentication key-chain ospf-key
 ipv6 add 2001:DB8:17:17::1/64
 ipv6 ospf 101 area 0
 ipv6 rip 101 enable
