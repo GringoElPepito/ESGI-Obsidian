@@ -34,6 +34,7 @@ network 172.16.0.0
 network 172.19.0.0
 exit
 router ospf 100
+router-id 1.1.1.1
 area 0 authentication
 passive-interface Gi0/0
 network 192.168.1.0 0.0.0.255 area 1
