@@ -10,5 +10,34 @@ ipv6 unicast-routing
 aaa new-model
 int Gi0/0
 ip add 192.168.1.254 255.255.255.0
-ipv6 add 2001:DB8:1:1::FE
+ipv6 enable
+ipv6 add 2001:DB8:1:1::FE/64
+ipv6 ospf 101 area 1
+int Gi0/1
+ip add 172.16.0.1 255.255.0.0
+ipv6 add 2001:DB8:16:16::1/64
+ipv6 ospf 101 area 0
+int Gi0/2
+ip add 172.18.0.1 255.255.0.0
+ipv6 add 2001:DB8:19:19::1/64
+exit
+router eigrp 100
+passive-interface Gi0/0
+network 192.168.1.0
+network 172.16.0.0
+network 172.19.0.0
+exit
+router ospf 100
+passive-interface Gi0/0
+network 192.168.1.0 0.0.0.255 area 1
+network 172.16.0.0 0.0.255.255 area 0
+network 172.19.0.0 0.0.255.255 area 0
+exit
+router rip
+version 2
+passive-interface Gi0/0
+network 192.168.1.0
+network 172.16.0.0
+network 172.19.0.0
+exit
 ```
