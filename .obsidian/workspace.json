@@ -64,6 +64,20 @@
             }
           },
           {
+            "id": "d63b758a0a322d30",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sans titre.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sans titre"
+            }
+          },
+          {
             "id": "bfb643269a2d6408",
             "type": "leaf",
             "state": {
@@ -364,7 +378,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -511,11 +525,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "6be1aad348607a88",
+  "active": "d63b758a0a322d30",
   "lastOpenFiles": [
+    "Sans titre.md",
+    "Projet Annuel - M1/Installation/CA.md",
+    "CCNP/Projet.md",
     "Projet Annuel - M1/Installation/Proxmox iscsi.md",
     "Projet Annuel - M1/Installation/Proxmox Ceph.md",
-    "Projet Annuel - M1/Installation/CA.md",
     "Projet Annuel - M1/Installation/Ansible.md",
     "Projet Annuel - M1/Installation/Proxmox Network.md",
     "Projet Annuel - M1/weekly/Semaine 1.md",
@@ -531,7 +547,6 @@
     "Rapport Alternance.md",
     "SmartBin.md",
     "Projet Annuel - M1/ToDo Cahier des charges.md",
-    "Sans titre.md",
     "Sans titre 1.md",
     "Sans titre.base",
     "Projet Annuel - M1/Cahier des charges rendu.md",
@@ -540,7 +555,6 @@
     "Projet Annuel - M1/Brut.md",
     "Projet Annuel - M1/Sans titre.md",
     "Projet Annuel - M1/Architecture Réseau.md",
-    "Psychlogie/Dark Psychologie.md",
     "attachments/Pasted image 20251027101636.png",
     "attachments/Pasted image 20251027092204.png",
     "Vmware",
