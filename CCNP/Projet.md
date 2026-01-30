@@ -7,6 +7,10 @@ no ip domain-lookup
 ip domain-name cisco.lan
 ip routing
 ipv6 unicast-routing
+key chain ospf-key
+key 1
+cryptographic-algorithm hmac-sha-512
+key-string c1$c0-c1$c0
 aaa new-model
 int Gi0/0
 ip add 192.168.1.254 255.255.255.0
