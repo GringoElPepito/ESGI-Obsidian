@@ -14,6 +14,7 @@ key-string c1$c0-c1$c0
 aaa new-model
 int Gi0/0
 ip add 192.168.1.254 255.255.255.0
+ip ospf authentication-key ospf-key
 ipv6 enable
 ipv6 add 2001:DB8:1:1::FE/64
 ipv6 ospf 101 area 1
@@ -33,6 +34,7 @@ network 172.16.0.0
 network 172.19.0.0
 exit
 router ospf 100
+area 0 authentication
 passive-interface Gi0/0
 network 192.168.1.0 0.0.0.255 area 1
 network 172.16.0.0 0.0.255.255 area 0
