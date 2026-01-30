@@ -40,4 +40,10 @@ network 192.168.1.0
 network 172.16.0.0
 network 172.19.0.0
 exit
+ipv6 router eigrp 101
+passive-interface gi0/0
+ipv6 router ospf 101
+passive-interface gi0/0
+ipv6 router rip 101
+exit
 ```
