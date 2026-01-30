@@ -8,17 +8,115 @@
         "type": "tabs",
         "children": [
           {
-            "id": "665459d72635b068",
+            "id": "1f37fbbbfd27e491",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SmartBin.md",
+                "file": "Projet Annuel - M1/Cahier des charges rendu.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SmartBin"
+              "title": "Cahier des charges rendu"
+            }
+          },
+          {
+            "id": "076cb115dedf8fbf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projet Annuel - M1/ToDo Cahier des charges.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ToDo Cahier des charges"
+            }
+          },
+          {
+            "id": "a063af7b72eabc5e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projet Annuel - M1/Installation/Proxmox Network.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Proxmox Network"
+            }
+          },
+          {
+            "id": "6be1aad348607a88",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projet Annuel - M1/Installation/CA.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CA"
+            }
+          },
+          {
+            "id": "d63b758a0a322d30",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sans titre.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sans titre"
+            }
+          },
+          {
+            "id": "bfb643269a2d6408",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projet Annuel - M1/Cahier des charges rendu.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cahier des charges rendu"
+            }
+          },
+          {
+            "id": "43fafdac9951b11e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projet Annuel - M1/Installation/Ansible.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ansible"
+            }
+          },
+          {
+            "id": "64cd3c7873020beb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "IA/Brut.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Brut"
             }
           },
           {
@@ -51,26 +149,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Brut.md",
+                "file": "Projet Annuel - M1/Liste Technos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brut"
-            }
-          },
-          {
-            "id": "391420f3138115c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CCNP/Projet.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Projet"
+              "title": "Liste Technos"
             }
           },
           {
@@ -238,17 +322,17 @@
             }
           },
           {
-            "id": "1f37fbbbfd27e491",
+            "id": "b7ecdd526037ece0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Cours 1.md",
+                "file": "IA/Note.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cours 1"
+              "title": "Note"
             }
           },
           {
@@ -412,13 +496,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Smartbin text.md",
+                "file": "Projet Annuel - M1/Cahier des charges.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Smartbin text"
+              "title": "Plan de Cahier des charges"
             }
           }
         ],
@@ -441,35 +525,38 @@
       "bases:Create new base": false
     }
   },
-  "active": "391420f3138115c3",
+  "active": "d63b758a0a322d30",
   "lastOpenFiles": [
-    "Sécu-Master/Brut.md",
-    "CCNP/Projet.md",
-    "Projet Annuel - M1/weekly/Semaine 1.md",
-    "Projet Annuel - M1/weekly",
-    "Projet Annuel - M1/ToDo Cahier des charges.md",
-    "Projet Annuel - M1/Note.md",
-    "Projet Annuel - M1/Installation/Proxmox iscsi.md",
-    "Projet Annuel - M1/Installation/Proxmox Network.md",
+    "Sans titre.md",
     "Projet Annuel - M1/Installation/CA.md",
+    "CCNP/Projet.md",
+    "Projet Annuel - M1/Installation/Proxmox iscsi.md",
+    "Projet Annuel - M1/Installation/Proxmox Ceph.md",
+    "Projet Annuel - M1/Installation/Ansible.md",
+    "Projet Annuel - M1/Installation/Proxmox Network.md",
+    "Projet Annuel - M1/weekly/Semaine 1.md",
+    "CCNP/Note TP.md",
+    "CCNP/Brut.md",
+    "Projet Annuel - M1/weekly",
     "Commandes utiles.md",
-    "Projet Annuel - M1/Architecture Réseau.md",
-    "Projet Annuel - M1/Sans titre.md",
-    "Projet Annuel - M1/Sans titre 1.md",
-    "Sans titre 3.md",
-    "IA/Note.md",
-    "Projet Annuel - M1/Brut.md",
-    "Projet Annuel - M1/Cahier des charges.md",
-    "Projet Annuel - Bachelor 3/Maquette Réseau.md",
-    "Projet Annuel - M1/Projet annuel.md",
-    "Projet Annuel - M1/Contexte.md",
+    "Projet Annuel - M1/Document/Présentation Equipe Projet.md",
+    "Projet Annuel - M1/Document/PBS-WBS.md",
+    "Projet Annuel - M1/Document/Méthode Agile-SCRUM.md",
+    "Note TOEIC.md",
+    "Outils.md",
+    "Rapport Alternance.md",
+    "SmartBin.md",
+    "Projet Annuel - M1/ToDo Cahier des charges.md",
+    "Sans titre 1.md",
+    "Sans titre.base",
     "Projet Annuel - M1/Cahier des charges rendu.md",
-    "Vmware/Répartition.md",
-    "Vmware/Révision.md",
-    "Planification Projet/Brut.md",
-    "Vmware/Rapport Projet Vmware.md",
-    "Planification Projet/Cours-1.md",
-    "Planification Projet/Gestion des risques.md",
+    "Projet Annuel - M1/Contexte.md",
+    "Projet Annuel - M1/Note.md",
+    "Projet Annuel - M1/Brut.md",
+    "Projet Annuel - M1/Sans titre.md",
+    "Projet Annuel - M1/Architecture Réseau.md",
+    "attachments/Pasted image 20251027101636.png",
+    "attachments/Pasted image 20251027092204.png",
     "Vmware",
     "attachments/Pasted image 20251124114936.png",
     "attachments/Pasted image 20251124105553.png",
@@ -479,16 +566,13 @@
     "attachments/Pasted image 20251124084821.png",
     "Psychlogie",
     "Projet Annuel - M1/Installation",
+    "Projet Annuel - M1/Sans titre/Sans titre",
     "Projet Annuel - M1/Document",
     "Linux/M1",
     "Linux/L3/LPIC102",
     "Linux/L3/LPIC101",
-    "Linux/L3",
     "attachments/Pasted image 20251027122807.png",
     "attachments/Pasted image 20251027122758.png",
-    "attachments/Pasted image 20251027120903.png",
-    "attachments/Pasted image 20251027115026.png",
-    "Cloud Day",
     "Untitled.canvas"
   ]
 }
