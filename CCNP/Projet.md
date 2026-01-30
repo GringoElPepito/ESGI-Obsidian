@@ -17,6 +17,7 @@ int Gi0/1
 ip add 172.16.0.1 255.255.0.0
 ipv6 add 2001:DB8:16:16::1/64
 ipv6 ospf 101 area 0
+ipv6 rip 101 enable
 int Gi0/2
 ip add 172.18.0.1 255.255.0.0
 ipv6 add 2001:DB8:19:19::1/64
@@ -46,4 +47,5 @@ ipv6 router ospf 101
 passive-interface gi0/0
 ipv6 router rip 101
 exit
+
 ```
