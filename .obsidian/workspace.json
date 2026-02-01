@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNP/Projet.md",
+                "file": "Projet Annuel - M1/Installation/Proxmox iscsi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Projet"
+              "title": "Proxmox iscsi"
             }
           },
           {
@@ -443,9 +443,9 @@
   },
   "active": "391420f3138115c3",
   "lastOpenFiles": [
+    "CCNP/Projet.md",
     "Sans titre.md",
     "Sécu-Master/Brut.md",
-    "CCNP/Projet.md",
     "Projet Annuel - M1/weekly/Semaine 1.md",
     "Projet Annuel - M1/weekly",
     "Projet Annuel - M1/ToDo Cahier des charges.md",
