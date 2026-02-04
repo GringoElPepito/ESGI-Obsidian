@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Installation/Proxmox iscsi.md",
+                "file": "Projet Annuel - M1/weekly/Semaine 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Proxmox iscsi"
+              "title": "Semaine 2"
             }
           },
           {
@@ -443,14 +443,15 @@
   },
   "active": "391420f3138115c3",
   "lastOpenFiles": [
+    "Projet Annuel - M1/weekly/Semaine 1.md",
+    "Projet Annuel - M1/weekly/Semaine 2.md",
+    "Projet Annuel - M1/Installation/Proxmox iscsi.md",
     "CCNP/Projet.md",
     "Sans titre.md",
     "Sécu-Master/Brut.md",
-    "Projet Annuel - M1/weekly/Semaine 1.md",
     "Projet Annuel - M1/weekly",
     "Projet Annuel - M1/ToDo Cahier des charges.md",
     "Projet Annuel - M1/Note.md",
-    "Projet Annuel - M1/Installation/Proxmox iscsi.md",
     "Projet Annuel - M1/Installation/Proxmox Network.md",
     "Projet Annuel - M1/Installation/CA.md",
     "Commandes utiles.md",
@@ -469,7 +470,6 @@
     "Vmware/Révision.md",
     "Planification Projet/Brut.md",
     "Vmware/Rapport Projet Vmware.md",
-    "Planification Projet/Cours-1.md",
     "Vmware",
     "attachments/Pasted image 20251124114936.png",
     "attachments/Pasted image 20251124105553.png",
