@@ -22,4 +22,4 @@ Zone VLAN -> VNets si activation de l'option `VLAN AWARE` alors possible de déf
 
 SI SDN fonctionne pas 
 
-Pour récupérer les vlan de la Zone VLAN SDN, il faut que la zone soit relié à une vmbr mappé à une carte physique de cette manière toutes les VM reliés à la même vmbr que la Zone VLAN SDN seront capable de récupérer le trafic provenant de n'importe quelle vnet (vlan) via le tagging. La carte vmbr doit avoir l'option 
+Pour récupérer les vlan de la Zone VLAN SDN, il faut que la zone soit relié à une vmbr mappé à une carte physique de cette manière toutes les VM reliés à la même vmbr que la Zone VLAN SDN seront capable de récupérer le trafic provenant de n'importe quelle vnet (vlan) via le tagging. La carte vmbr doit avoir l'option VLAN Aware activé
