@@ -313,12 +313,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Infrastructure/Réseau/Architecture.md",
+                "file": "Linux/L3/LPIC102/Projet-Partiel.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Architecture"
+              "title": "Projet-Partiel"
             }
           }
         ],
@@ -471,8 +471,10 @@
   },
   "active": "84443d17c9029b14",
   "lastOpenFiles": [
-    "Projet Annuel - M1/Infrastructure/Réseau.md",
+    "Projet Annuel - M1/Installation/CA.md",
+    "Projet Annuel - M1/Installation/Sans titre.md",
     "Projet Annuel - M1/Infrastructure/Réseau/Architecture.md",
+    "Projet Annuel - M1/Infrastructure/Réseau.md",
     "Projet Annuel - M1/Infrastructure/Virtualisation",
     "Projet Annuel - M1/Infrastructure/Réseau",
     "Projet Annuel - M1/Infrastructure",
@@ -488,7 +490,6 @@
     "Projet Annuel - M1/ToDo Cahier des charges.md",
     "Projet Annuel - M1/Note.md",
     "Projet Annuel - M1/Installation/Proxmox Network.md",
-    "Projet Annuel - M1/Installation/CA.md",
     "Commandes utiles.md",
     "Projet Annuel - M1/Architecture Réseau.md",
     "Projet Annuel - M1/Sans titre.md",
@@ -500,7 +501,6 @@
     "Projet Annuel - Bachelor 3/Maquette Réseau.md",
     "Projet Annuel - M1/Projet annuel.md",
     "Projet Annuel - M1/Contexte.md",
-    "Projet Annuel - M1/Cahier des charges rendu.md",
     "Vmware",
     "attachments/Pasted image 20251124114936.png",
     "attachments/Pasted image 20251124105553.png",
