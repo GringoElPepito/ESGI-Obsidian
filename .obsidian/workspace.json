@@ -413,14 +413,14 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Créer une nouvelle base": false,
       "switcher:Ouvrir le sélecteur rapide": false,
       "graph:Ouvrir la vue graphique": false,
       "canvas:Créer une nouvelle toile": false,
       "daily-notes:Ouvrir la note quotidienne": false,
       "templates:Insérer le modèle": false,
       "command-palette:Ouvrir la palette de commandes": false,
-      "github-sync:Sync with Remote": false,
-      "bases:Create new base": false
+      "github-sync:Sync with Remote": false
     }
   },
   "active": "c908d374d9c98530",
