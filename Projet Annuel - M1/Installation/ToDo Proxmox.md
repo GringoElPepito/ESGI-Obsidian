@@ -1,0 +1,3 @@
+- [ ] Création d'un script pour ajout des administrateurs
+- [ ] Création d'un fichier `.bashrc` par défaut à push sur tous les nouveaux comptes
+- [ ] 
