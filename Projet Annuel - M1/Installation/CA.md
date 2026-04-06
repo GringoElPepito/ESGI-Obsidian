@@ -12,5 +12,7 @@ sudo dnf in -y easy-rsa
 mkdir ~/easy-rsa
 ln -s /usr/share/easy-rsa/* ~/easy-rsa/
 chmod 700 ~/easy-rsa
+cd ~/easy-rsa/3.2.4
+./easyrsa init-pki
 
 ```
