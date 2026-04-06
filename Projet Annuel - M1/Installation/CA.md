@@ -2,4 +2,13 @@
 ## ToDo Manual
 - [x] Update packages
 - [x] Install needed packages `sudo dnf in -y openssl`
-- [ ] 
+
+
+## ToDo Manual with easy-rsa
+```bash
+sudo dnf up -y
+sudo dnf in -y epel-release
+sudo dnf in -y easy-rsa
+mkdir ~/easy-rsa
+ln -s /usr/share/easy-rsa/* ~/easy-rsa/
+```
