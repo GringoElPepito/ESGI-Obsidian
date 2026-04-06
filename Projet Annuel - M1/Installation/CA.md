@@ -11,4 +11,6 @@ sudo dnf in -y epel-release
 sudo dnf in -y easy-rsa
 mkdir ~/easy-rsa
 ln -s /usr/share/easy-rsa/* ~/easy-rsa/
+chmod 700 ~/easy-rsa
+
 ```
