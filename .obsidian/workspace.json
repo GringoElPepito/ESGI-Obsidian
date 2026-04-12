@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNP/Partiel.md",
+                "file": "Windows Server/Cours.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Partiel"
+              "title": "Cours"
             }
           },
           {
@@ -425,6 +425,7 @@
   },
   "active": "c908d374d9c98530",
   "lastOpenFiles": [
+    "CCNP/Partiel.md",
     "Projet Annuel - M1/Installation/ToDo Proxmox.md",
     "Projet Annuel - M1/Installation/OPNSense.md",
     "Projet Annuel - M1/Installation/Sans titre.md",
@@ -432,7 +433,6 @@
     "Projet Annuel - M1/Infrastructure/Réseau",
     "Projet Annuel - M1/Infrastructure",
     "Projet Annuel - M1/Installation/Proxmox Network.md",
-    "CCNP/Partiel.md",
     "Projet Annuel - M1/Brut.md",
     "Projet Annuel - M1/Installation/Proxmox iscsi.md",
     "Projet Annuel - M1/Installation/Proxmox Ceph.md",
