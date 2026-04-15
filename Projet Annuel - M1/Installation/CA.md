@@ -23,4 +23,7 @@ set_var EASYRSA_REQ_OU "Community"
 set_var EASYRSA_ALGO "rsa"
 set_var EASYRSA_DIGEST "sha512"
 ' > pki/vars
+sudo cp pki/ca.crt /etc/pki/ca-trust/source/anchors/
+sudo update-ca-trust
+
 ```
