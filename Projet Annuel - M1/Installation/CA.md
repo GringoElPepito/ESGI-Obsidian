@@ -14,4 +14,13 @@ ln -s /usr/share/easy-rsa/* ~/easy-rsa/
 chmod 700 ~/easy-rsa
 cd ~/easy-rsa/3.2.4
 ./easyrsa init-pki
+echo 'set_var EASYRSA_REQ_COUNTRY "FR"
+set_var EASYRSA_REQ_PROVINCE "Ile-de-France"
+set_var EASYRSA_REQ_CITY "Fontenay-sous-Bois"
+set_var EASYRSA_REQ_ORG "CENEXIS"
+set_var EASYRSA_REQ_EMAIL "admin@cenexis.lan"
+set_var EASYRSA_REQ_OU "Community"
+set_var EASYRSA_ALGO "rsa"
+set_var EASYRSA_DIGEST "sha512"
+' > pki/vars
 ```
