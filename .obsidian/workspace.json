@@ -327,12 +327,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/ToDo Cahier des charges.md",
+                "file": "Projet Annuel - M1/Installation/CA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ToDo Cahier des charges"
+              "title": "CA"
             }
           }
         ],
@@ -485,12 +485,16 @@
   },
   "active": "c711c433c67f344f",
   "lastOpenFiles": [
+    "Projet Annuel - M1/Installation/Ansible.md",
+    "Projet Annuel - M1/Brut.md",
+    "Projet Annuel - M1/Cahier des charges.md",
+    "Projet Annuel - M1/Cahier des charges rendu.md",
+    "Projet Annuel - M1/ToDo Cahier des charges.md",
     "Linux/L3/LPIC102/Projet-Partiel.md",
     "Projet Annuel - M1/Installation/Proxmox iscsi.md",
     "Projet Annuel - M1/Installation/CA.md",
     "Projet Annuel - M1/Installation/ToDo Proxmox.md",
     "Projet Annuel - M1/Installation/OPNSense.md",
-    "Projet Annuel - M1/Installation/Ansible.md",
     "Projet Annuel - M1/Installation/Proxmox Ceph.md",
     "Projet Annuel - M1/Installation/Sans titre.md",
     "Projet Annuel - M1/Infrastructure/Réseau/Architecture.md",
@@ -506,15 +510,11 @@
     "Sans titre.md",
     "Sécu-Master/Brut.md",
     "Projet Annuel - M1/weekly",
-    "Projet Annuel - M1/ToDo Cahier des charges.md",
     "Projet Annuel - M1/Note.md",
     "Projet Annuel - M1/Installation/Proxmox Network.md",
     "Commandes utiles.md",
     "Projet Annuel - M1/Architecture Réseau.md",
     "Projet Annuel - M1/Sans titre.md",
-    "Projet Annuel - M1/Sans titre 1.md",
-    "Sans titre 3.md",
-    "IA/Note.md",
     "Vmware",
     "attachments/Pasted image 20251124114936.png",
     "attachments/Pasted image 20251124105553.png",

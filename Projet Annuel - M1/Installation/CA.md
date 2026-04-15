@@ -3,6 +3,12 @@
 - [x] Update packages
 - [x] Install needed packages `sudo dnf in -y openssl`
 
+# Script openssl
+
+```bash
+
+```
+
 
 ## ToDo Manual with easy-rsa
 ```bash
@@ -25,5 +31,4 @@ set_var EASYRSA_DIGEST "sha512"
 ' > pki/vars
 sudo cp pki/ca.crt /etc/pki/ca-trust/source/anchors/
 sudo update-ca-trust
-
 ```
