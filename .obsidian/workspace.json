@@ -4,279 +4,366 @@
     "type": "split",
     "children": [
       {
-        "id": "25b4f0174f53c142",
-        "type": "tabs",
+        "id": "e4006e3e15cac50a",
+        "type": "split",
         "children": [
           {
-            "id": "665459d72635b068",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SmartBin.md",
-                "mode": "source",
-                "source": false
+            "id": "25b4f0174f53c142",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "665459d72635b068",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "SmartBin.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "SmartBin"
+                }
               },
-              "icon": "lucide-file",
-              "title": "SmartBin"
-            }
-          },
-          {
-            "id": "2f1fbb8eef8c0004",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vue graphique"
-            }
-          },
-          {
-            "id": "861891a0a3ec616d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CCNP/Brut.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "2f1fbb8eef8c0004",
+                "type": "leaf",
+                "state": {
+                  "type": "graph",
+                  "state": {},
+                  "icon": "lucide-git-fork",
+                  "title": "Vue graphique"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Brut"
-            }
-          },
-          {
-            "id": "c908d374d9c98530",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Windows Server/Cours.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "861891a0a3ec616d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "CCNP/Brut.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Brut"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Cours"
-            }
-          },
-          {
-            "id": "2119956c03e298a2",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Nouvel onglet"
-            }
-          },
-          {
-            "id": "848c40724213bbbc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CCNA/Brut.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "c908d374d9c98530",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Projet Annuel - M1/Brut.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Brut"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Brut"
-            }
-          },
-          {
-            "id": "b9ebb92ea90368dc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Supervision/Cours 1.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "391420f3138115c3",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Projet Annuel - M1/weekly/Semaine 2.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Semaine 2"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Cours 1"
-            }
-          },
-          {
-            "id": "87123a620381440e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TOEIC.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "1b4068305b5a5a5f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Projet Annuel - M1/weekly/Semaine 3.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Semaine 3"
+                }
               },
-              "icon": "lucide-file",
-              "title": "TOEIC"
-            }
-          },
-          {
-            "id": "bb3ef11460f5a63c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "LPIC102/TP 12-05-2025.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "2119956c03e298a2",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "CCNA/OSI model/Couche 3 - Réseau.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Couche 3 - Réseau"
+                }
               },
-              "icon": "lucide-file",
-              "title": "TP 12-05-2025"
-            }
-          },
-          {
-            "id": "86851b9b0e2c9ac3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SmartBin.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "848c40724213bbbc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "CCNA/Brut.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Brut"
+                }
               },
-              "icon": "lucide-file",
-              "title": "SmartBin"
-            }
-          },
-          {
-            "id": "dee1bb5e125e7404",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vue graphique"
-            }
-          },
-          {
-            "id": "826a379f518244e1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Growth Hacking/Cours 1.md",
-                "mode": "source",
-                "source": false
+              {
+                "id": "b9ebb92ea90368dc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Supervision/Cours 1.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Cours 1"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Cours 1"
-            }
+              {
+                "id": "87123a620381440e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "TOEIC.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "TOEIC"
+                }
+              },
+              {
+                "id": "bb3ef11460f5a63c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "LPIC102/TP 12-05-2025.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "TP 12-05-2025"
+                }
+              },
+              {
+                "id": "86851b9b0e2c9ac3",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "SmartBin.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "SmartBin"
+                }
+              },
+              {
+                "id": "dee1bb5e125e7404",
+                "type": "leaf",
+                "state": {
+                  "type": "graph",
+                  "state": {},
+                  "icon": "lucide-git-fork",
+                  "title": "Vue graphique"
+                }
+              },
+              {
+                "id": "826a379f518244e1",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Growth Hacking/Cours 1.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Cours 1"
+                }
+              },
+              {
+                "id": "54c445ef2cea852b",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "LPIC101/Cours 1.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Cours 1"
+                }
+              },
+              {
+                "id": "2c85ce8b81ca9e7f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "LPIC101/Exo.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Exo"
+                }
+              },
+              {
+                "id": "d04e134ab97ef3bf",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Virtualisation/Projet Soutenance.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Projet Soutenance"
+                }
+              },
+              {
+                "id": "ad5fe8c047d977fe",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "CCNA/OSI model/Couche 3 - Réseau.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Couche 3 - Réseau"
+                }
+              },
+              {
+                "id": "1f37fbbbfd27e491",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Python/Cours 1.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Cours 1"
+                }
+              },
+              {
+                "id": "43eefb0a563b37b2",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Windows Server/Correction TP.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Correction TP"
+                }
+              },
+              {
+                "id": "a60d0c6697ec25d8",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "TOEIC.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "TOEIC"
+                }
+              },
+              {
+                "id": "b37d62d32f9a5c29",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Cloud Computing/Deploiement Azure.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Deploiement Azure"
+                }
+              },
+              {
+                "id": "84443d17c9029b14",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Projet Annuel - M1/Installation/Proxmox Network.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Proxmox Network"
+                }
+              },
+              {
+                "id": "c711c433c67f344f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Projet Annuel - M1/Installation/Proxmox iscsi.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Proxmox iscsi"
+                }
+              }
+            ],
+            "currentTab": 23
           },
           {
-            "id": "54c445ef2cea852b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "LPIC101/Cours 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Cours 1"
-            }
-          },
-          {
-            "id": "2c85ce8b81ca9e7f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "LPIC101/Exo.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Exo"
-            }
-          },
-          {
-            "id": "d04e134ab97ef3bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Virtualisation/Projet Soutenance.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Projet Soutenance"
-            }
-          },
-          {
-            "id": "ad5fe8c047d977fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CCNA/OSI model/Couche 3 - Réseau.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Couche 3 - Réseau"
-            }
-          },
-          {
-            "id": "1f37fbbbfd27e491",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python/Cours 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Cours 1"
-            }
-          },
-          {
-            "id": "43eefb0a563b37b2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Windows Server/Correction TP.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Correction TP"
-            }
-          },
-          {
-            "id": "a60d0c6697ec25d8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TOEIC.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "TOEIC"
-            }
-          },
-          {
-            "id": "b37d62d32f9a5c29",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud Computing/Deploiement Azure.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Deploiement Azure"
-            }
+            "id": "37e04c2c970072a2",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "af6fde1b9f88bca5",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Projet Annuel - M1/Installation/CA.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "CA"
+                }
+              }
+            ]
           }
         ],
-        "currentTab": 3
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -423,37 +510,38 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "c908d374d9c98530",
+  "active": "af6fde1b9f88bca5",
   "lastOpenFiles": [
-    "CCNP/Partiel.md",
+    "Projet Annuel - M1/Installation/Proxmox iscsi.md",
+    "Linux/L3/LPIC102/Projet-Partiel.md",
+    "Projet Annuel - M1/Installation/CA.md",
     "Projet Annuel - M1/Installation/ToDo Proxmox.md",
     "Projet Annuel - M1/Installation/OPNSense.md",
+    "Projet Annuel - M1/Installation/Ansible.md",
+    "Projet Annuel - M1/Installation/Proxmox Ceph.md",
     "Projet Annuel - M1/Installation/Sans titre.md",
     "Projet Annuel - M1/Infrastructure/Réseau/Architecture.md",
+    "Projet Annuel - M1/Infrastructure/Réseau.md",
+    "Projet Annuel - M1/Infrastructure/Virtualisation",
     "Projet Annuel - M1/Infrastructure/Réseau",
     "Projet Annuel - M1/Infrastructure",
-    "Projet Annuel - M1/Installation/Proxmox Network.md",
-    "Projet Annuel - M1/Brut.md",
-    "Projet Annuel - M1/Installation/Proxmox iscsi.md",
-    "Projet Annuel - M1/Installation/Proxmox Ceph.md",
-    "CCNP/Projet.md",
+    "CCNP/Partiel.md",
     "Projet Annuel - M1/weekly/Semaine 3.md",
+    "Projet Annuel - M1/weekly/Semaine 1.md",
     "Projet Annuel - M1/weekly/Semaine 2.md",
+    "CCNP/Projet.md",
     "Sans titre.md",
     "Sécu-Master/Brut.md",
-    "Projet Annuel - M1/weekly/Semaine 1.md",
     "Projet Annuel - M1/weekly",
     "Projet Annuel - M1/ToDo Cahier des charges.md",
     "Projet Annuel - M1/Note.md",
-    "Projet Annuel - M1/Installation/CA.md",
+    "Projet Annuel - M1/Installation/Proxmox Network.md",
     "Commandes utiles.md",
     "Projet Annuel - M1/Architecture Réseau.md",
     "Projet Annuel - M1/Sans titre.md",
     "Projet Annuel - M1/Sans titre 1.md",
     "Sans titre 3.md",
     "IA/Note.md",
-    "Projet Annuel - M1/Cahier des charges.md",
-    "Projet Annuel - Bachelor 3/Maquette Réseau.md",
     "Vmware",
     "attachments/Pasted image 20251124114936.png",
     "attachments/Pasted image 20251124105553.png",
@@ -466,7 +554,6 @@
     "Projet Annuel - M1/Document",
     "Linux/M1",
     "Linux/L3/LPIC102",
-    "Linux/L3/LPIC101",
     "attachments/Pasted image 20251027122807.png",
     "attachments/Pasted image 20251027122758.png",
     "attachments/Pasted image 20251027120903.png",
