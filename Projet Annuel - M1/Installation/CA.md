@@ -31,6 +31,24 @@ openssl req -new \
     -subj "/C=FR/O=LUDOVIK/CN=OCSP Root Responder" \
     -keyout private/root-ocsp.key \
     -out root-ocsp.csr
+openssl ca \
+    -config root-ca.conf \
+    -in root-ocsp.csr \
+    -out root-ocsp.crt \
+    -extensions ocsp_ext \
+    -days 30
+openssl ocsp \
+    -port 9080
+    -index db/index \
+    -rsigner root-ocsp.crt \
+    -rkey private/root-ocsp.key \
+    -CA root-ca.crt \
+    -text
+openssl ocsp \
+    -issuer root-ca.crt \
+    -CAfile root-ca.crt \
+    -cert root-ocsp.crt \
+    -url http://127.0.0.1:9080
 ```
 
 
