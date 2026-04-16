@@ -18,11 +18,19 @@ openssl req -new \
 	-config root-ca.conf \
     -out root-ca.csr \
     -keyout private/root-ca.key
+openssl ca -gencrl \
+	-config root-ca.conf \
+	-out root-ca.crl
 openssl ca -selfsign \
     -config root-ca.conf \
     -in root-ca.csr \
     -out root-ca.crt \
     -extensions ca_ext
+openssl req -new \
+    -newkey rsa:2048 \
+    -subj "/C=FR/O=LUDOVIK/CN=OCSP Root Responder" \
+    -keyout private/root-ocsp.key \
+    -out root-ocsp.csr
 ```
 
 
@@ -47,4 +55,12 @@ set_var EASYRSA_DIGEST "sha512"
 ' > pki/vars
 sudo cp pki/ca.crt /etc/pki/ca-trust/source/anchors/
 sudo update-ca-trust
+```
+
+# Revoke certificate
+```bash
+openssl ca \
+	-config root-ca.conf \
+    -revoke certs/1002.pem \
+    -crl_reason keyCompromise
 ```
