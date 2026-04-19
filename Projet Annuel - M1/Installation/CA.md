@@ -37,14 +37,14 @@ openssl ca \
     -out root-ocsp.crt \
     -extensions ocsp_ext \
     -days 30
-openssl ocsp \
-    -port 9080
+openssl ocsp \ # Test du certificat OCSP P1
+    -port 9080 \
     -index db/index \
     -rsigner root-ocsp.crt \
     -rkey private/root-ocsp.key \
     -CA root-ca.crt \
     -text
-openssl ocsp \
+openssl ocsp \ # Test du certificat OCSP P2
     -issuer root-ca.crt \
     -CAfile root-ca.crt \
     -cert root-ocsp.crt \
