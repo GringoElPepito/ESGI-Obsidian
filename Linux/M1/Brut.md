@@ -244,3 +244,13 @@ vim /etc/hostname
 ```
 
 ### LVM : Stockage virtuel de Linux
+Recommandation ANSSI
+- `/` -> sans option
+- `/boot` -> nosuid, nodev, noexec
+- `/opt` -> nosuid, nodev (ro optionnel)
+- `/tmp` -> nosuid, nodev, noexec
+- `/srv` -> nosuid, nodev (noexec,ro optionnel)
+- `/home` -> nosuid, nodev, noexec
+- `/`
+
+Fonctionnement de LVM
