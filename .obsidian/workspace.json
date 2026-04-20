@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "API/Brut.md",
+                "file": "Linux/M1/Brut2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brut"
+              "title": "Brut2"
             }
           },
           {
@@ -439,8 +439,10 @@
   },
   "active": "4da16eb1ac7932e0",
   "lastOpenFiles": [
-    "Sans titre 1.md",
+    "Linux/M1/Brut.md",
+    "Linux/M1/Brut2.md",
     "API/Brut.md",
+    "Sans titre 1.md",
     "Windows Server/Cours.md",
     "API",
     "CCNP/Partiel.md",
@@ -467,8 +469,6 @@
     "Commandes utiles.md",
     "Projet Annuel - M1/Architecture Réseau.md",
     "Projet Annuel - M1/Sans titre.md",
-    "Projet Annuel - M1/Sans titre 1.md",
-    "Sans titre 3.md",
     "Vmware",
     "attachments/Pasted image 20251124114936.png",
     "attachments/Pasted image 20251124105553.png",
