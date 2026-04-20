@@ -36,3 +36,29 @@ Versioning de l'API :
 - /api/v2
 
 Pagination, Filtrage et Tri
+
+# Format d'une requête 
+```
+GET /api/posts/12 HTTP/1.1
+Host: jsonplaceholder.typicode.com
+Accept: application/json
+Authorization: Bearer fuzçecioezhnciuzencviozebcuizec
+User-Agent: Mozilla/5.0
+```
+
+```
+HTTP/1.1 200 OK Date: 
+Server: nginx/1.18.0
+Content-Type: application/json
+Content-Length: 245
+Cache-Control: 
+```
+
+# Découpage d'une URL HTTP
+
+`https://jsonplaceholder.typicode.com/posts/1/comments?_limit=5&_sort=id`
+- `https://` = Protocol
+- `jsonplaceholder.typicode.com` = Domaine
+- `/posts` = Ressource
+- `/1` = Path Parameter
+- ``
