@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Installation/CA.md",
+                "file": "Linux/M1/Brut.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CA"
+              "title": "Brut"
             }
           },
           {
@@ -429,6 +429,8 @@
   },
   "active": "2119956c03e298a2",
   "lastOpenFiles": [
+    "Projet Annuel - M1/Installation/CA.md",
+    "Projet Annuel - M1/Installation/Ansible.md",
     "Commandes utiles.md",
     "Linux/M1/Brut.md",
     "Windows Server/Cours.md",
@@ -457,8 +459,6 @@
     "Projet Annuel - M1/weekly",
     "Projet Annuel - M1/ToDo Cahier des charges.md",
     "Projet Annuel - M1/Note.md",
-    "Projet Annuel - M1/Installation/CA.md",
-    "Projet Annuel - M1/Architecture Réseau.md",
     "Vmware",
     "attachments/Pasted image 20251124114936.png",
     "attachments/Pasted image 20251124105553.png",

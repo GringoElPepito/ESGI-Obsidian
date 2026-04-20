@@ -267,3 +267,8 @@ Chaque modification du fichier `/etc/fstab` il faut tester que la syntaxe de cel
 ```bash
 mount -a
 ```
+
+## Bannière et MOTD
+Bannière s'affiche dés l'initialisation de la connexion SSH
+MOTD (Message Of The Day) s'affiche dés que l'utilisateur est authentifié
+
