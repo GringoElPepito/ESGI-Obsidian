@@ -23,6 +23,11 @@ Les différents types d'API :
 - GraphQL
 - RPC
 
-Une API REST doit être stateless, le serveur n'a pas besoin de se souvenir des requêtes précédentes.
-Possibilité de mise en cache des données
-Interface uniforme
+- Une API REST doit être stateless, le serveur n'a pas besoin de se souvenir des requêtes précédentes.
+- Possibilité de mise en cache des données
+- Interface uniforme
+- Code HTTP
+- Utilisation des méthodes HTTP
+	- GET
+	- POST
+	- 
