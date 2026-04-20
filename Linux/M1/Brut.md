@@ -233,6 +233,7 @@ Permet de spécifier le nombre d'itération de log avant suppression
 ```
 rotate 4
 ```
+
 ## Brut
 Linux possède 3 Kernel :
 - Version en cours d'utilisation
