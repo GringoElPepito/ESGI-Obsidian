@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Commandes utiles.md",
+                "file": "Linux/M1/Brut.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Commandes utiles"
+              "title": "Brut"
             }
           },
           {
@@ -429,13 +429,14 @@
   },
   "active": "2119956c03e298a2",
   "lastOpenFiles": [
+    "Windows Server/Cours.md",
+    "Commandes utiles.md",
     "Sans titre.md",
     "Linux/M1/Brut.md",
     "Linux/M1/Révision.md",
     "Linux/M1/Brut2.md",
     "API/Brut.md",
     "Sans titre 1.md",
-    "Windows Server/Cours.md",
     "API",
     "CCNP/Partiel.md",
     "Projet Annuel - M1/Installation/ToDo Proxmox.md",
@@ -457,7 +458,6 @@
     "Projet Annuel - M1/ToDo Cahier des charges.md",
     "Projet Annuel - M1/Note.md",
     "Projet Annuel - M1/Installation/CA.md",
-    "Commandes utiles.md",
     "Projet Annuel - M1/Architecture Réseau.md",
     "Vmware",
     "attachments/Pasted image 20251124114936.png",
