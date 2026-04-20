@@ -30,4 +30,9 @@ Les différents types d'API :
 - Utilisation des méthodes HTTP
 	- GET
 	- POST
-	- 
+
+Versioning de l'API :
+- /api/v1
+- /api/v2
+
+Pagination, Filtrage et Tri
