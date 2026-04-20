@@ -61,4 +61,8 @@ Cache-Control:
 - `jsonplaceholder.typicode.com` = Domaine
 - `/posts` = Ressource
 - `/1` = Path Parameter
-- ``
+- `/comment` = Sous-resource
+- `?` = séparateur URL parameters
+- `_limit=5&_sort=id` = paramètres
+
+
