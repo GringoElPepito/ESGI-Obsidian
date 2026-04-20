@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/M1/Brut.md",
+                "file": "Commandes utiles.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brut"
+              "title": "Commandes utiles"
             }
           },
           {
@@ -429,10 +429,10 @@
   },
   "active": "2119956c03e298a2",
   "lastOpenFiles": [
+    "Linux/M1/Brut.md",
     "Windows Server/Cours.md",
     "Commandes utiles.md",
     "Sans titre.md",
-    "Linux/M1/Brut.md",
     "Linux/M1/Révision.md",
     "Linux/M1/Brut2.md",
     "API/Brut.md",

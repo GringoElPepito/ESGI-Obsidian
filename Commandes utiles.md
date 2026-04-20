@@ -1,6 +1,6 @@
 Rechercher des fichiers via le contenu :
 ```bash
-find / -type f -exec grep -H "freenas-proxmox" {} \; 
+find ./.config/hypr/ -type f -exec grep -H "background" {} \; 
 ```
 
 Scanner les disques :
