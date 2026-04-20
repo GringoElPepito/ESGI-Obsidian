@@ -231,10 +231,16 @@ Permet de spécifier le nombre d'itération de log avant suppression
 rotate 4
 ```
 
-## Brut
+## Partie 2
 Linux possède 3 Kernel :
 - Version en cours d'utilisation
 - Version précédente
 - Version qui a été installé à la création de la machine (fallback)
 
 ### Ajouter un Linux à un AD
+Configurer le hostname, il faut que celui-ci soit d'une longueur strictement inférieur à 16 caractères :
+```bash
+vim /etc/hostname
+```
+
+### LVM : Stockage virtuel de Linux
