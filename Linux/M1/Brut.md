@@ -258,3 +258,12 @@ Fonctionnement de LVM
 - VG Volume Group - Ensemble de PV utilisables pour la création de volume logiques LVM
 - LV Logical Volume - Partitions logiques créer à partir de l'espace disponible 
 
+Format du fichier `/etc/fstab` :
+```/etc/fstab
+
+```
+
+Chaque modification du fichier `/etc/fstab` il faut tester que la syntaxe de celui-ci est valide avant de redémarrer:
+```bash
+mount -a
+```
