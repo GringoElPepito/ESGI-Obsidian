@@ -254,3 +254,6 @@ Recommandation ANSSI
 - `/`
 
 Fonctionnement de LVM
+- PV Physical Volume - représente les disques ou partitions physiques qui seront disponibles pour créer les partitions logiques LVM
+- VG Volume Group - Ensemble de PV utilisables pour la création de volume logiques LVM
+- LV Logical Volume - Partitions logiques créer à partir de l'espace disponible 
