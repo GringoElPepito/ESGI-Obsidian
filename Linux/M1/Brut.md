@@ -206,9 +206,6 @@ Exemple :
 toto ALL=(ALL) ALL
 ```
 
-
-
-
 ## Log
 Les types de logs :
 - `Syslog` : Logs système de journalisation principal dans Ubuntu
@@ -239,3 +236,5 @@ Linux possède 3 Kernel :
 - Version en cours d'utilisation
 - Version précédente
 - Version qui a été installé à la création de la machine (fallback)
+
+### Ajouter un Linux à un AD

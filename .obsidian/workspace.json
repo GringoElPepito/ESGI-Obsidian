@@ -60,7 +60,7 @@
             }
           },
           {
-            "id": "4da16eb1ac7932e0",
+            "id": "2119956c03e298a2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -71,16 +71,6 @@
               },
               "icon": "lucide-file",
               "title": "Brut"
-            }
-          },
-          {
-            "id": "2119956c03e298a2",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Nouvel onglet"
             }
           },
           {
@@ -437,10 +427,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "4da16eb1ac7932e0",
+  "active": "2119956c03e298a2",
   "lastOpenFiles": [
-    "Linux/M1/Brut2.md",
+    "Linux/M1/Révision.md",
     "Linux/M1/Brut.md",
+    "Linux/M1/Brut2.md",
     "API/Brut.md",
     "Sans titre 1.md",
     "Windows Server/Cours.md",
@@ -468,7 +459,6 @@
     "Projet Annuel - M1/Installation/CA.md",
     "Commandes utiles.md",
     "Projet Annuel - M1/Architecture Réseau.md",
-    "Projet Annuel - M1/Sans titre.md",
     "Vmware",
     "attachments/Pasted image 20251124114936.png",
     "attachments/Pasted image 20251124105553.png",
