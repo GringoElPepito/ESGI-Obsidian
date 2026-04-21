@@ -326,7 +326,7 @@ Création de la règle par défaut, cette règle doit être la première dans la
 sudo iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
 ```
 
-
+Création d'une règle autorisant les communication ciblant l'interface loopback :
 ```bash
 sudo iptables -A INPUT -i lo -j ACCEPT
 ```
@@ -334,4 +334,9 @@ sudo iptables -A INPUT -i lo -j ACCEPT
 Création d'une nouvelle chaîne :
 ```bash
 sudo iptables -N INPUT-SSH
+```
+
+Création d'une règle de redirection de chaîne :
+```bash
+sudo iptables -A INPUT -p tcp --dport 22 -j INPUT-SSH
 ```
