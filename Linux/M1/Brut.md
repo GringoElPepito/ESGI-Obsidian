@@ -296,4 +296,13 @@ Les tables sont utilisés pour organiser les règles en fonction du type de traf
 - Filter : est utilisé pour filterr les paquets en fonction de règles spécifiques, permettant ainsi de bloquer ou d'accepter certains types de trafic
 - NAT (Network Adress Translation) : est utilisé pour la translation d'adresses réseau, ce qui permet de rediriger ou de modifier les addresses IP et les ports des paquets.
 - Mangle: est utilisé pour modifier les en-têtes de paquets, tels que le type de service (TOS) ou les marqueurs de qualité de service (QoS)
-- RAW
+- RAW : est utilisé pour effectuer un traitement spécifique des paquets avant qu'ils ne passent pas par d'autres tables.
+
+Chaînes chaque table est constituée de plusieurs chaînes. Les chaînes sont des listes d'actions qui seront appliqués aux paquets lorsqu'ils traversent le pare-feu. Les chaînes les plus couramment utilisées sont :
+- INPUT : Cette chaîne s'applique au trafic entrant destiné à votre système
+- OUTPUT : Cette chaîne s'applique au trafic sortant généré par votre système
+- FORWARD : Cette chaîne s'applique au trafic qui est simplement routé à travers votre système vers une autre destination
+
+Règles : Les règles sont des instructions spécifiques qui définissent ce qui doit être fait avec les paquets qui correspondent à certains critères. Chaque règle est associée à une chaîne spécifique et peut être utilisée pour accepter, rejeter, rediriger ou modifier les paquets. :
+- ACCEPT : Cela signifie que le paquet sera autorisé à passer
+- DROP : Cela signifie q
