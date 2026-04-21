@@ -341,4 +341,15 @@ Création d'une règle de redirection de chaîne :
 sudo iptables -A INPUT -p tcp --dport 22 -j INPUT-SSH
 ```
 
+Sauvegarder configuration iptables
+```bash
+sudo iptables-save | sudo tee -a /etc/iptables/rules.v4
+```
+
+Restaurer configuration iptables
+```bash
+sudo iptables-restore < /etc/iptables/rules.v4
+```
+
+
 
