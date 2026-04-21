@@ -284,3 +284,16 @@ Modification les attributes d'un fichier :
 ```bash
 chattr +a .bash_history
 ```
+
+# Iptables
+
+Les bases d'Iptables :
+- les tables
+- les chaînes
+- les règles
+
+Les tables sont utilisés pour organiser les règles en fonction du type de trafic réseau. Les tables les plus couramment utilisées :
+- Filter : est utilisé pour filterr les paquets en fonction de règles spécifiques, permettant ainsi de bloquer ou d'accepter certains types de trafic
+- NAT (Network Adress Translation) : est utilisé pour la translation d'adresses réseau, ce qui permet de rediriger ou de modifier les addresses IP et les ports des paquets.
+- Mangle: est utilisé pour modifier les en-têtes de paquets, tels que le type de service (TOS) ou les marqueurs de qualité de service (QoS)
+- RAW
