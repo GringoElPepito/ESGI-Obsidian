@@ -1,6 +1,10 @@
 Rechercher des fichiers via le contenu :
 ```bash
-find ./.config/hypr/ -type f -exec grep -H "background" {} \; 
+find ./.config/hypr -type f -exec grep -H "background" {} \; 
+```
+
+```bash
+find / -type d -name ISO
 ```
 
 Scanner les disques :

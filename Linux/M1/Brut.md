@@ -260,7 +260,7 @@ Fonctionnement de LVM
 
 Format du fichier `/etc/fstab` :
 ```/etc/fstab
-
+/dev/mapper/rootvg-lv_vartmp /var/tmp 0 0 nodev, noexec, nosuid
 ```
 
 Chaque modification du fichier `/etc/fstab` il faut tester que la syntaxe de celui-ci est valide avant de redémarrer:
@@ -271,4 +271,3 @@ mount -a
 ## Bannière et MOTD
 Bannière s'affiche dés l'initialisation de la connexion SSH
 MOTD (Message Of The Day) s'affiche dés que l'utilisateur est authentifié
-
