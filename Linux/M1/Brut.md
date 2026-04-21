@@ -311,6 +311,11 @@ Règles : Les règles sont des instructions spécifiques qui définissent ce qui
 
 La policy est une règle par défaut qui est appliqué quand aucune des règles contenues dans la chaînes ne correspond au paquet traité.
 
+Les états de paquets :
+- NEW : Nouveau paquet entrant
+- RELATED : Paquet de réponse à une requête réalisé par la machine hôte
+- ESTABLISHED : Paquet liés à une connexion établit
+
 Lister les chaînes existantes :
 ```bash
 sudo iptables -L -n
@@ -326,7 +331,7 @@ sudo iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
 sudo iptables -A INPUT -i lo -j ACCEPT
 ```
 
-Les états de paquets :
-- NEW : Nouveau paquet entrant
-- RELATED : Paquet de réponse à une requête réalisé par la machine hôte
-- ESTABLISHED : Paquet liés à une connexion établit
+Création d'une nouvelle chaîne :
+```bash
+sudo iptables -N INPUT-SSH
+```
