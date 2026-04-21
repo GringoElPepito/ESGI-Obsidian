@@ -342,4 +342,3 @@ sudo iptables -A INPUT -p tcp --dport 22 -j INPUT-SSH
 ```
 
 
-ip
