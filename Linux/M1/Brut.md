@@ -316,7 +316,17 @@ Lister les chaînes existantes :
 sudo iptables -L -n
 ```
 
-Création d'une 
+Création de la règle par défaut, cette règle doit être la première dans la chaînes INPUT
 ```bash
 sudo iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
 ```
+
+
+```bash
+sudo iptables -A INPUT -i lo -j ACCEPT
+```
+
+Les états de paquets :
+- NEW : Nouveau paquet entrant
+- RELATED : Paquet de réponse à une requête réalisé par la machine hôte
+- ESTABLISHED : Paquet liés à une connexion établit
