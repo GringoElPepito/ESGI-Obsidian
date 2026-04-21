@@ -275,3 +275,12 @@ MOTD (Message Of The Day) s'affiche dés que l'utilisateur est authentifié
 la bannière se configure dans le fichier `/etc/issue.net`
 
 ## Droit étendu Linux
+Lister les attributs d'un fichier :
+```bash
+lsattr .bash_history
+```
+
+Modification les attributes d'un fichier :
+```bash
+chattr +a .bash_history
+```
