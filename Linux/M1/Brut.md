@@ -305,4 +305,18 @@ Chaînes chaque table est constituée de plusieurs chaînes. Les chaînes sont d
 
 Règles : Les règles sont des instructions spécifiques qui définissent ce qui doit être fait avec les paquets qui correspondent à certains critères. Chaque règle est associée à une chaîne spécifique et peut être utilisée pour accepter, rejeter, rediriger ou modifier les paquets. :
 - ACCEPT : Cela signifie que le paquet sera autorisé à passer
-- DROP : Cela signifie q
+- DROP : Cela signifie que le paquet ne sera pas autorisé à passer.
+- REJECT : Fonctionne à la base comme la cible DROP, mais elle renvoie un message d'erreur à l'hôte qui a envoyé le paquet
+- RETURN : Cela signifie ignorer la chaîne actuelle et revenir à la règle suivante de la chaîne dans laquelle elle a été appelée.
+
+La policy est une règle par défaut qui est appliqué quand aucune des règles contenues dans la chaînes ne correspond au paquet traité.
+
+Lister les chaînes existantes :
+```bash
+sudo iptables -L -n
+```
+
+Création d'une 
+```bash
+sudo iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+```
