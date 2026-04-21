@@ -271,3 +271,5 @@ mount -a
 ## Bannière et MOTD
 Bannière s'affiche dés l'initialisation de la connexion SSH
 MOTD (Message Of The Day) s'affiche dés que l'utilisateur est authentifié
+
+la bannière se configure dans le fichier `issue.conf`
