@@ -275,6 +275,12 @@ MOTD (Message Of The Day) s'affiche dés que l'utilisateur est authentifié
 la bannière se configure dans le fichier `/etc/issue.net`
 
 ## Droit étendu Linux
+Les attributs sont des  
+Les attributs
+- `a` Ajout uniquement, empêche la modification du fichier autre que pour l'ajout de contenu. Le fichier ne peut pas être supprimer, ne peut pas voir ses droits modifiers
+- `i` Immuable, Le fichier ne peut pas du tout être modifié, il est figé dans l'état actuel
+- `s` suppression sécurisé, Lorsque le fichier est supprimé, les données de celui-ci sont écrasés avec des 0
+- `u` Lorsque le fichier est supprimé les données de  celui-ci sont gardés ce qui permet une récupération ultérieur.
 Lister les attributs d'un fichier :
 ```bash
 lsattr .bash_history
@@ -284,6 +290,7 @@ Modification les attributes d'un fichier :
 ```bash
 chattr +a .bash_history
 ```
+
 
 # Iptables
 
