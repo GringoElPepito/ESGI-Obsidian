@@ -1,0 +1,1 @@
+`ansible.cfg` est le fichier de configuration d'Ansible, il contient différent paramètre comme l'emplacement du fichier d'inventaire, l'emplacement des logs.

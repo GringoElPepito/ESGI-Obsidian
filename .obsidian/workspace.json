@@ -65,7 +65,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/M1/Brut.md",
+                "file": "Ansible/Brut.md",
                 "mode": "source",
                 "source": false
               },
@@ -429,9 +429,11 @@
   },
   "active": "2119956c03e298a2",
   "lastOpenFiles": [
+    "Linux/M1/Brut.md",
+    "Ansible/Brut.md",
+    "Ansible",
     "Projet Annuel - M1/Installation/CA.md",
     "API/Brut.md",
-    "Linux/M1/Brut.md",
     "Linux/M1/Révision.md",
     "Commandes utiles.md",
     "Projet Annuel - M1/Installation/Ansible.md",
@@ -458,7 +460,6 @@
     "Projet Annuel - M1/weekly/Semaine 1.md",
     "Projet Annuel - M1/weekly",
     "Projet Annuel - M1/ToDo Cahier des charges.md",
-    "Projet Annuel - M1/Note.md",
     "Vmware",
     "attachments/Pasted image 20251124114936.png",
     "attachments/Pasted image 20251124105553.png",
@@ -470,7 +471,6 @@
     "Projet Annuel - M1/Installation",
     "Projet Annuel - M1/Document",
     "Linux/M1",
-    "Linux/L3/LPIC102",
     "attachments/Pasted image 20251027122807.png",
     "attachments/Pasted image 20251027122758.png",
     "attachments/Pasted image 20251027120903.png",
