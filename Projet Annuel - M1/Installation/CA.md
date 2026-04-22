@@ -199,7 +199,7 @@ keyUsage                = critical,digitalSignature
 subjectKeyIdentifier    = hash
 ```
 # Script openssl
-
+## Root-CA Script
 ```bash
 mkdir root-ca
 cd root-ca
