@@ -338,7 +338,7 @@ Lister les chaînes existantes :
 sudo iptables -L -n
 ```
 
-Création de la règle par défaut, cette règle doit être la première dans la chaînes INPUT pour optimiser le fonctionnement
+Création de la règle par défaut, cette règle doit être la première dans la chaînes INPUT pour optimiser la réception des paquets
 ```bash
 sudo iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
 ```
@@ -356,6 +356,11 @@ sudo iptables -N INPUT-SSH
 Création d'une règle de redirection de chaîne :
 ```bash
 sudo iptables -A INPUT -p tcp --dport 22 -j INPUT-SSH
+```
+
+Création d'une règle autorisant le trafic sur le port 443 :
+```bash
+sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 ```
 
 Sauvegarder configuration iptables
