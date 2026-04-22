@@ -258,9 +258,19 @@ Fonctionnement de LVM
 - VG Volume Group - Ensemble de PV utilisables pour la création de volume logiques LVM
 - LV Logical Volume - Partitions logiques créer à partir de l'espace disponible 
 
+Commande LVM :
+```bash
+pvcreate /dev/sdb
+lvcreate -l 100%FREE -n lv_esgi2 esgivg
+lvcreate -L 5G -n lv_esgi esgi
+lvextend -r -L +1G /dev/mapper/esgivg-lv_esgi
+```
+
+
+
 Format du fichier `/etc/fstab` :
 ```/etc/fstab
-/dev/mapper/rootvg-lv_vartmp /var/tmp 0 0 nodev, noexec, nosuid
+/dev/mapper/rootvg-lv_vartmp /var/tmp ext4 nodev,noexec,nosuid 0 0
 ```
 
 Chaque modification du fichier `/etc/fstab` il faut tester que la syntaxe de celui-ci est valide avant de redémarrer:
