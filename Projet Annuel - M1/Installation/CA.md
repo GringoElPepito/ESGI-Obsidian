@@ -246,6 +246,13 @@ openssl ocsp \ # Test du certificat OCSP P2
     -url http://127.0.0.1:9080
 ```
 
+```bash
+mkdir sub-ca
+cd sub-ca
+vi sub-ca.conf
+mkdir certs db private
+```
+
 ## ToDo Manual with easy-rsa
 ```bash
 sudo dnf up -y
