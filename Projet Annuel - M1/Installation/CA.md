@@ -246,6 +246,7 @@ openssl ocsp \ # Test du certificat OCSP P2
     -url http://127.0.0.1:9080
 ```
 
+## Sub-CA Script
 ```bash
 mkdir sub-ca
 cd sub-ca
@@ -258,6 +259,13 @@ openssl req -new \
     -config sub-ca.conf \
     -out sub-ca.csr \
     -keyout private/sub-ca.key
+scp sub-ca.csr desigual@10.11.2.20:/home/desigual/root-ca
+```
+
+# Sub-CA on Root-CA Script
+```bash
+sudo openssl ca -config root-ca.conf -in sub-ca.csr -out sub-ca.crt -extensions sub_ca_ext
+
 ```
 
 ## ToDo Manual with easy-rsa
