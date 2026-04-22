@@ -338,7 +338,7 @@ Lister les chaînes existantes :
 sudo iptables -L -n
 ```
 
-Création de la règle par défaut, cette règle doit être la première dans la chaînes INPUT
+Création de la règle par défaut, cette règle doit être la première dans la chaînes INPUT pour optimiser le fonctionnement
 ```bash
 sudo iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
 ```
