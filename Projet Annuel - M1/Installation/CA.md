@@ -251,6 +251,13 @@ mkdir sub-ca
 cd sub-ca
 vi sub-ca.conf
 mkdir certs db private
+chmod 700 private
+touch db/index
+openssl rand -hex 16  > db/serial
+openssl req -new \
+    -config sub-ca.conf \
+    -out sub-ca.csr \
+    -keyout private/sub-ca.key
 ```
 
 ## ToDo Manual with easy-rsa
