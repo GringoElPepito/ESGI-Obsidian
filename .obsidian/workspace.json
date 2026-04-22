@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "API/Brut.md",
+                "file": "Projet Annuel - M1/Installation/CA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brut"
+              "title": "CA"
             }
           },
           {
@@ -429,6 +429,7 @@
   },
   "active": "2119956c03e298a2",
   "lastOpenFiles": [
+    "API/Brut.md",
     "Linux/M1/Brut.md",
     "Linux/M1/Révision.md",
     "Projet Annuel - M1/Installation/CA.md",
@@ -437,7 +438,6 @@
     "Windows Server/Cours.md",
     "Sans titre.md",
     "Linux/M1/Brut2.md",
-    "API/Brut.md",
     "Sans titre 1.md",
     "API",
     "CCNP/Partiel.md",
