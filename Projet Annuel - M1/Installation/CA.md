@@ -265,6 +265,21 @@ scp sub-ca.csr desigual@10.11.2.20:/home/desigual/root-ca
 # Sub-CA on Root-CA Script
 ```bash
 sudo openssl ca -config root-ca.conf -in sub-ca.csr -out sub-ca.crt -extensions sub_ca_ext
+```
+
+# Sub-CA opérations :
+```bash
+openssl ca \
+    -config sub-ca.conf \
+    -in server.csr \
+    -out server.crt \
+    -extensions server_ext
+    
+openssl ca \
+    -config sub-ca.conf \
+    -in client.csr \
+    -out client.crt \
+    -extensions client_ext
 
 ```
 
