@@ -45,6 +45,24 @@ Il existe l'instruction `block`, cette instruction possède 2 avantages, elle pe
   block:
 	  - name: TASK1
 	    debug:
-	
+		  msg: "Pas de problème"
+  rescue:
+	  - name:
+	    debug:
+		  msg: "Il y a une erreur"
 
 ```
+
+l'instruction `notify` permet de déclencher un handler très utile pour redémarrer des services suite à la modification de leur configuration.
+
+Arborescence Role Ansible :
+- `defaults`
+- `files`
+- `handlers`
+- `meta`
+- `tasks`
+- `templates`
+- `tests`
+- `vars`
+
+Il existe certain
