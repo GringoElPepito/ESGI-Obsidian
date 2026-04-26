@@ -213,14 +213,14 @@ openssl req -new \
 	-config root-ca.conf \
     -out root-ca.csr \
     -keyout private/root-ca.key
-openssl ca -gencrl \
-	-config root-ca.conf \
-	-out root-ca.crl
 openssl ca -selfsign \
     -config root-ca.conf \
     -in root-ca.csr \
     -out root-ca.crt \
     -extensions ca_ext
+openssl ca -gencrl \
+	-config root-ca.conf \
+	-out root-ca.crl
 openssl req -new \
     -newkey rsa:2048 \
     -subj "/C=FR/O=LUDOVIK/CN=OCSP Root Responder" \
