@@ -58,8 +58,7 @@ L'équipe compte une dizaine de personne (cf. Annexe Organigramme).
   
 
 ## Fonction occupée et missions
-Au cours de cette alternance, j'occupe le poste d'ingénieur développement et socle. Le but de se poste est principalement l'industrialisation des tech
-voici les missions liés à cette fonction :
+Au cours de cette alternance, j'occupe le poste d'ingénieur développement et socle. Le but de se poste est principalement l'industrialisation des technologies dans le but de pouvoir les déployer à grande échelles et que ces dernières soit exploitables par les collaborateurs de SFR. Voici donc les missions liés à cette fonction :
 - Je maintiens et fais évoluer les automatisations existantes sur les différents environnements en gestion au sein de l'équipe socle.
 - Je créé de nouvelles automatisations lorsque cela est nécessaire.
 - Je standardise et uniformise la base de code pour faciliter son évolution au fil du temps.
