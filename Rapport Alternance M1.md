@@ -59,9 +59,14 @@ L'équipe compte une dizaine de personne (cf. Annexe Organigramme).
 
 ## Fonction occupée et missions
 Au cours de cette alternance, j'occupe le poste d'ingénieur développement et socle, voici les missions liés à cette fonction :
-- Maintien des automatisations existantes sur les différents environnements en gestion au sein de l'équipe socle
-- Création de nouve
-- 
+- Je maintiens et fais évoluer les automatisations existantes sur les différents environnements en gestion au sein de l'équipe socle
+- Je créé de nouvelles automatisations lorsque cela est nécessaire
+- Je standardise et uniformise la base de code 
+- Je contribue à l'amélioration de notre cycle de développement ainsi que de nos process
+- Je réponds aux pannes et demandes rencontrées par les collaborateurs.
+- Je documente mes productions dans le but de faciliter leur exploitation et leur maintien
+- Maintien des différents outils de l'équipe Socle Réseau
+- Standardisation 
 
   
   
@@ -215,7 +220,7 @@ L'entreprise SFR est un très grande entreprise
 Au cours de cette alternance, j'ai eu l'occasion de mettre à l'œuvre mes compétences techniques ainsi que mes méthodes d'organisations. En effet, l'équipe ingénierie Socle Réseau étant en charge de la gestion de plusieurs socles, il devient assez complexe de s'y retrouver surtout au début. Comprendre et retenir le rôle, le fonctionnement ainsi que les relations entre chacun des socles est quelque chose d'indispensable pour pouvoir bien travailler au sein de cet environnement. De plus, chaque socle possède des technologies différentes augmentant encore le nombre d'éléments à retenir.
 C'est pourquoi il est primordial de construire une base de connaissance, permettant de facilement retrouver les informations liés à chacun des socles. Pour cela, j'ai créer un ensemble de note organisé facilitant la recherche d'information.
 
-Mes missions se concentrent principalement sur les automatisations Ansible, cependant énormément de personnes différentes, prestataires externes ou internes à l'équipe, ont créer et/ou modifier les automatisations existantes à ce-jour. A cause de cela, le code ne respecte pas de standard ce qui complexifie le maintien de la base de code existante. C'est pourquoi depuis mon arrivée, je tente autant que possible d'uniformiser le code de nos différentes automatisations. Que ce soit avec la création de rôle standard pour Ansible permettant d'éviter la duplication du code ou encore la mise en place de bonnes pratiques concernant la gestion des dépôt Git de chacun des projets d'automatisations, le but est de rendre le code le plus simple à maintenir possible sur le long termes
+Mes missions se concentrent principalement sur les automatisations Ansible, cependant énormément de personnes différentes, prestataires externes ou internes à l'équipe, ont créer et/ou modifier les automatisations existantes à ce-jour. A cause de cela, le code ne respecte pas de standard ce qui complexifie le maintien de la base de code existante. C'est pourquoi depuis mon arrivée, je tente autant que possible d'uniformiser le code de nos différentes automatisations. Que ce soit avec la création de rôle standard pour Ansible permettant d'éviter la duplication du code ou encore la mise en place de bonnes pratiques concernant la gestion des dépôt Git de chacun des projets d'automatisations, le but est de rendre le code le plus simple à maintenir possible sur le long termes.
   
 ## Résultat de l'alternance
 Cette période en entreprise, a été pour moi une occasion de mettre à l'œuvre mes compétences techniques et surtout d'en acquérir de nouvelles. En effet, j'évolue au sein d'une équipe d'ingénierie, ceci implique que la plupart de nos missions sont très grandement orientées vers des aspects techniques ce qui est un peu qui que j'apprécie particulièrement car ce n'était pas forcément le cas lors de mes précédentes alternances.
