@@ -212,11 +212,10 @@ Une fois l'installation terminé, il suffit de tester la connectivité via SSH p
 L'entreprise SFR est un très grande entreprise
 
 ## Apport à l'entreprise
-Cette période en entreprise, a été pour moi une occasion de mettre à l'œuvre mes compétences techniques et surtout d'en acquérir de nouvelles. En effet, j'évolue au sein d'une équipe d'ingénierie, ceci implique que la plupart de nos missions sont très grandement orientées vers des aspects techniques ce qui est un peu qui que j'apprécie particulièrement car ce n'était pas forcément le cas lors de mes précédentes alternances.
-Mon poste se concentre d'ailleurs principalement sur les automatisations, ce qui me permet d'interagir avec les plupart des éléments composants nos différents socles. En effet, pour réaliser les automatisations, je me dois de comprendre le fonctionnement es systèmes sur lesquelles mon automate interviendra ainsi que l'intégralité des process que je me d'automatiser.
-Cette alternance m'offre une place de choix pour apprendre en long en large et en travers un ensemble de technologie diverses et variées concernant le réseau, le système, le stockage, la sauvegarde ou encore la virtualisation. De plus, chaque membre de l
+Au cours de cette alternance
   
 ## Résultat de l'alternance
-
-
+Cette période en entreprise, a été pour moi une occasion de mettre à l'œuvre mes compétences techniques et surtout d'en acquérir de nouvelles. En effet, j'évolue au sein d'une équipe d'ingénierie, ceci implique que la plupart de nos missions sont très grandement orientées vers des aspects techniques ce qui est un peu qui que j'apprécie particulièrement car ce n'était pas forcément le cas lors de mes précédentes alternances.
+Mon poste se concentre d'ailleurs principalement sur les automatisations, ce qui me permet d'interagir avec les plupart des éléments composants nos différents socles. En effet, pour réaliser les automatisations, je me dois de comprendre le fonctionnement es systèmes sur lesquelles mon automate interviendra ainsi que l'intégralité des process que je me d'automatiser.
+Cette alternance m'offre une place de choix pour apprendre en long en large et en travers un ensemble de technologie diverses et variées concernant le réseau, le système, le stockage, la sauvegarde ou encore la virtualisation. De plus, chaque membre de l'équipe possède un niveau technique très avancé et est très pédagogue ce qui pousse à la progression ne serait-ce que par envie d'atteindre leur niveau.
 # Conclusion
