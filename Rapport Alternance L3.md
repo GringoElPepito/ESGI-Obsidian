@@ -31,8 +31,6 @@ Cependant, l'hébergement n'est pas la seule activité de l'hôtel, l'établisse
 
 L'hôtel COSTES se démarquent de ses concurrents par son ambiance singulière
 
-
-
 ## Focus sur le service
 Au cours de mon alternance, j'ai eu la chance d'évoluer au sein du service informatique de l'entreprise, qui se charge de la mise en place, de la maintenance et de la supervision des systèmes d'informations des différents entreprise et établissement du groupe. 
 
