@@ -68,7 +68,7 @@ Au cours de cette alternance, j'occupe le poste d'ingénieur développement et s
 - Je supervise le bon fonctionnement de nos automatisations et apporte des corrections à ces dernières si nécessaire
 - Je teste la mise en place de solutions techniques dans le but de les industrialiser et de pouvoir les proposer au sein du catalogue de service de nos socles.
 - Je me charge de faire évoluer le catalogue d'OS proposé sur nos socles fournissant des machines virtuelles.
-- Je maintien
+- Je maintiens 
 
   
   
