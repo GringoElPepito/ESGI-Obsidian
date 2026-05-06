@@ -58,19 +58,20 @@ L'équipe compte une dizaine de personne (cf. Annexe Organigramme).
   
 
 ## Fonction occupée et missions
-Au cours de cette alternance, j'occupe le poste d'ingénieur développement et socle, voici les missions liés à cette fonction :
+Au cours de cette alternance, j'occupe le poste d'ingénieur développement et socle. Le but de se poste est principalement l'industrialisation des tech
+voici les missions liés à cette fonction :
 - Je maintiens et fais évoluer les automatisations existantes sur les différents environnements en gestion au sein de l'équipe socle.
 - Je créé de nouvelles automatisations lorsque cela est nécessaire.
-- Je standardise et uniformise la base de code.
+- Je standardise et uniformise la base de code pour faciliter son évolution au fil du temps.
 - Je contribue à l'amélioration de notre cycle de développement ainsi que de nos process.
 - Je réponds aux pannes et demandes rencontrées par les collaborateurs.
 - Je documente mes productions dans le but de faciliter leur exploitation et leur maintien.
 - Je supervise le bon fonctionnement de nos automatisations et apporte des corrections à ces dernières si nécessaire
 - Je teste la mise en place de solutions techniques dans le but de les industrialiser et de pouvoir les proposer au sein du catalogue de service de nos socles.
 - Je me charge de faire évoluer le catalogue d'OS proposé sur nos socles fournissant des machines virtuelles.
-- Je maintiens 
+- Je maintiens les différents outils liés à l'exploitation des socles
 
-  
+## Outils et prestataires
   
 
 ## Automatisation MAJ LUN de Boot
