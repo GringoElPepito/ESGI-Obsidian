@@ -58,7 +58,10 @@ L'équipe compte une dizaine de personne (cf. Annexe Organigramme).
   
 
 ## Fonction occupée et missions
-Au cours de cette alternance, j'occupe le poste d'ingénieur
+Au cours de cette alternance, j'occupe le poste d'ingénieur développement et socle, voici les missions liés à cette fonction :
+- Maintien des automatisations existantes sur les différents environnements en gestion au sein de l'équipe socle
+- Création de nouve
+- 
 
   
   
