@@ -57,7 +57,7 @@ L'équipe compte une dizaine de personne (cf. Annexe Organigramme).
 
   
 
-## Cadre de l'alternance
+## Fonction occupée et missions
 Au cours de cette alternance, j'occupe le poste d'ingénieur
 
   
