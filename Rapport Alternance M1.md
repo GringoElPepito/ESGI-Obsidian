@@ -207,7 +207,12 @@ Une fois l'installation terminé, il suffit de tester la connectivité via SSH p
   
 
 # Partie 3 : Bilan et recul sur les missions
-L'entreprise SFR comprend énormément de personnes talentueuses qui ont toutes permis de faire grandir celle-ci.
+## Analyse de l'entreprise
+
+L'entreprise SFR est un très grande entreprise
+
+## Apport à l'entreprise
+Cette période en entreprise, a été pour moi une occasion de mettre à l'œuvre mes compétences techniques et surtout d'en acquérir de nouvelles. En effet, j'évolue au sein d'une équipe d'ingénierie, ceci implique que la plupart de nos missions sont très grandement orientées vers des aspects techniques. 
   
   
 
