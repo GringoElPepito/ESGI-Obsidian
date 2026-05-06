@@ -58,8 +58,7 @@ L'équipe compte une dizaine de personne (cf. Annexe Organigramme).
   
 
 ## Cadre de l'alternance
-
-Pour cette alternance, j'évolue donc dans l'équipe Ingénierie Socle
+Au cours de cette alternance, j'occupe le poste d'ingénieur
 
   
   
