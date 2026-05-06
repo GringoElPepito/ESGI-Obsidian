@@ -206,8 +206,8 @@ Une fois l'installation terminé, il suffit de tester la connectivité via SSH p
 
   
 
-# Bilan
-
+# Partie 3 : Bilan et recul sur les missions
+L'entreprise SFR comprend énormément de personnes talentueuses qui ont toutes permis de faire grandir celle-ci.
   
   
 
