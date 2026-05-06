@@ -212,7 +212,7 @@ Une fois l'installation terminé, il suffit de tester la connectivité via SSH p
 L'entreprise SFR est un très grande entreprise
 
 ## Apport à l'entreprise
-Au cours de cette alternance
+Au cours de cette alternance, j'ai eu l'occasion de mettre à l'œuvre mes compétences techniques ainsi que mes méthodes d'organisations. En effet, l'équipe ingénierie Socle Réseau étant en charge de la gestion de plusieurs socles, il devient assez complexe de s'y retrouver surtout au début. Comprendre et retenir le rôle, le fonctionnement ainsi que les relations entre chacun des socles est quelque chose d'indispensable pour pouvoir bien travailler au sein de cet environnement. De plus, chaque socle possède des technologies différentes
   
 ## Résultat de l'alternance
 Cette période en entreprise, a été pour moi une occasion de mettre à l'œuvre mes compétences techniques et surtout d'en acquérir de nouvelles. En effet, j'évolue au sein d'une équipe d'ingénierie, ceci implique que la plupart de nos missions sont très grandement orientées vers des aspects techniques ce qui est un peu qui que j'apprécie particulièrement car ce n'était pas forcément le cas lors de mes précédentes alternances.
