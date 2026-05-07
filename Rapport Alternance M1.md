@@ -147,7 +147,7 @@ Dans le cadre de l'amélioration du cycle de développement, le sujet de mettre 
 
 -
 
-Dans un premier temps, cette solution servira a fournir à notre équipe des systèmes standard dédiés au développement pour faciliter la création et le maintien de nos automatisations. Si les tests sont concluants et que la technologie le permet alors la solution sera potentiellement proposé en tant que service aux clients du socle KORN.
+Dans un premier temps, cette solution servira a fournir à notre équipe des systèmes standard dédiés au développement pour faciliter la création et le maintien de nos automatisations. Si les tests sont concluants et que la technologie le permet alors la solution sera potentiellement proposé en tant que service aux clients du socle OpenShift.
 
 Kubernetes permet l'installation d'opérateur, qui sont pour faire simple des applications fournissant un service ou étendant les fonctionnalités de Kubernetes. Dans le cas d'OpenShift, Red Hat propose un catalogue d'opérateur développé par Red Hat ou qui sont certifié par Red Hat garantissant une meilleur compatibilité entre l'environnement Kubernetes OpenShift et l'opérateur. Ce catalogue est assez fournit et propose par ailleurs un opérateur semblant répondre à mon besoin, à savoir Red Hat OpenShift Dev Spaces. En effet, cet opérateur a pour but de créer des environnements de développement à partir d'un fichier `.devfile` définissant les caractéristiques de l'environnement à créer.
 
