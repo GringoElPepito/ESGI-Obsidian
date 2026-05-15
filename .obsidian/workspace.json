@@ -327,12 +327,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rapport Alternance M1.md",
+                "file": "Projet Annuel - M1/Installation/Proxmox Ceph.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Rapport Alternance M1"
+              "title": "Proxmox Ceph"
             }
           }
         ],
@@ -485,8 +485,11 @@
   },
   "active": "c711c433c67f344f",
   "lastOpenFiles": [
-    "Rapport Alternance L3.md",
+    "Projet Annuel - M1/Installation/Proxmox Network.md",
+    "Projet Annuel - M1/Installation/ToDo Proxmox.md",
+    "Projet Annuel - M1/Installation/Sans titre.md",
     "Rapport Alternance M1.md",
+    "Rapport Alternance L3.md",
     "Linux/L3/LPIC102/Brut.md",
     "Projet Annuel - M1/Installation/CA.md",
     "Sans titre 1.md",
@@ -501,10 +504,8 @@
     "Projet Annuel - M1/ToDo Cahier des charges.md",
     "Linux/L3/LPIC102/Projet-Partiel.md",
     "Projet Annuel - M1/Installation/Proxmox iscsi.md",
-    "Projet Annuel - M1/Installation/ToDo Proxmox.md",
     "Projet Annuel - M1/Installation/OPNSense.md",
     "Projet Annuel - M1/Installation/Proxmox Ceph.md",
-    "Projet Annuel - M1/Installation/Sans titre.md",
     "Projet Annuel - M1/Infrastructure/Réseau/Architecture.md",
     "Projet Annuel - M1/Infrastructure/Réseau.md",
     "Projet Annuel - M1/Infrastructure/Virtualisation",
@@ -515,7 +516,6 @@
     "Projet Annuel - M1/weekly/Semaine 1.md",
     "Projet Annuel - M1/weekly/Semaine 2.md",
     "CCNP/Projet.md",
-    "Sans titre.md",
     "Projet Annuel - M1/weekly",
     "Vmware",
     "attachments/Pasted image 20251124114936.png",
