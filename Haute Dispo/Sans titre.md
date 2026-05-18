@@ -3,6 +3,7 @@
 # WEB 1
 ```bash
 sudo dnf in -y nginx php
+sudo systemctl enable --now nginx
 
 ```
 
@@ -22,6 +23,12 @@ sudo galera_new_cluster
 sudo systemctl enable mariadb
 sudo sed -i '/^wsrep_cluster_address="gcomm:\/\/"/cwsrep_cluster_address="gcomm://10.1.1.6,10.1.1.7,10.1.1.8"' /etc/my.cnf.d/galera.cnf
 sudo mysql_secure_installation
+sudo mysql -u root
+CREATE DATABASE WordPress CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+CREATE USER 'wpdb'@'10.1.1.4' IDENTIFIED BY 'wpdb';
+GRANT ALL PRIVILEGES ON WordPress.* TO 'wpdb'@'10.1.1.4';
+CREATE USER 'wpdb'@'10.1.1.5' IDENTIFIED BY 'wpdb';
+GRANT ALL PRIVILEGES ON WordPress.* TO 'wpdb'@'10.1.1.5';
 ```
 
 ## BDD 2
