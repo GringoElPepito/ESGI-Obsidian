@@ -64,4 +64,27 @@ Elle doit être intégrée dans une stratégie globale de défense en profondeur
 Le futur s'oriente vers le Zero Trust et la sécurité cloud-centric, mais comprendre les bases périmtriques est fondamental pour tout ingénieur en réseaux et sécurité
 
 # Active Directory
-Composant central dans l'infrastructure M
+Composant central dans l'infrastructure Microsoft : annuaire des utilisateurs, groupes, contrôleurs de domaine, authentification, etc.
+
+Si un attaquant compromet AD, cela lui donne un contrôle massif sur tout le SI (exfiltration, sabotage, persistance)
+
+l'ANSSI observe que beaucoup d'attaques réussissent par mauavises pratiques d'administration, par défaut mal configurés ou par cloisonnement insuffisant
+
+L'objectif du durcissement est de réduire les chemins d'attaque, limiter l'exposition des objets sensibles, segmenter les fonctions critiques et éviter les escalades de privilèges non contrôlées.
+
+## Modèle de tiers/cloisonnement (Tiering)
+- Tier 0 : coeur de confiance - les ressources les plus critiques (contrôleurs de domaine, comptes de service AD, comptes d'administration AD)
+- Tier 1 : services métiers, serveurs applicatifs ou de données ayant une valeur métier élevée, mais moins sensibles que le coeur AD
+- Tier 2 : postes de travail, endpoints, ressources moins sensibles, etc.
+
+Une ressource d'un Tier inférieur ne doit pas pouvoir compromettre un Tier supérieur via des chemins d'attaque directs
+on doit analyser et bloquer les chemins d'attaque entre tiers
+on applique des politiques de sécurité plus strictes pour le Tier 0, avec un nombre restreint d'interactions autorisées
+le cloisonnement ne se limite pas au réseau : il doit être logique, matériel, système et organisationnel
+Ce cloisonnement est un processus itératif : on commence
+
+
+Pour durcir AD, il faut savoir par où un attaquant pourrait progresser de façon latérale ou verticale.
+L'analyse dse chemins d'attaque est donc centrale
+Types de chemins :
+- Relations de contrôle AD (transitivité)
