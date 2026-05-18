@@ -16,4 +16,36 @@ Type de firewall :
 
 IDS (Intrusion Detection System) : détecte des activités suspectes (signature, anomalies)
 IPS (Intrusion Prevention System) : agit en temps réel pour bloquer l'attaque
-Limite : peuvent générer des faux positifs/faux négati
+Limite : peuvent générer des faux positifs/faux négatifs, nécessitent un ajustement constant
+
+DMZ (Demilitarized Zones)
+- Zone intermédiaire entre le réseau interne et Internet
+- On y place les serveur accessibles publiquement (Web, mail, DNS)
+Avantage :
+- Si une machine en DMZ est compromise, l'attaquant
+
+Les VPN (Virtual Private Network)
+But : assurer un communication sécurisé de bout en bout via Internet
+Mécanismes : chiffrement (IPSec, SSL), authentification forte
+Exemple : Un employé distant se connecte au réseau de l'entreprise via un tunnel sécurisé
+
+Les proxies et reverse-proxies
+Proxy : agit comme intermédiaire entre l'utilisateur et internet, filtrant et journalisant les requêtes
+Reverse proxy : protège les serveurs
+
+Filtrage DNS et Web
+- Empêche l'accès à des sites malveillants ou non autorisés
+- Complément essentiel aux pare-feu et proxies
+
+Types d'architecture :
+- Architecture en Bastion : Une machine fortement sécurisée set de point d'entrée unique
+- Architecture en couches d'oignon : superposition de plusieurs mécanismes (pare-feu, IDS, proxy, authentification multifactorielle), défense en profondeur
+- Architecture Zero Trust : Remise en question du périmètre classique, ne jamais faire confiance, même à l'intérieur du réseau
+
+Contrôle d'accès basé sur l'identité, le contexte et la conformité des appareils
+
+Types de menaces :
+- Bypass des pare-feu : via protocoles tunneling, ports non filtrés
+- Attaques DDoS : Saturent le périmètre pour empêcher le fonctionnement normal
+- Shadow IT : applications ou équipements non autorisés échappant au périmètre
+- Mob
