@@ -327,12 +327,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Haute Dispo/Brut.md",
+                "file": "Haute Dispo/Sans titre.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brut"
+              "title": "Sans titre"
             }
           }
         ],
@@ -485,8 +485,9 @@
   },
   "active": "c711c433c67f344f",
   "lastOpenFiles": [
-    "Sécu-périmétrique/Brut.md",
     "Haute Dispo/Brut.md",
+    "Haute Dispo/Sans titre.md",
+    "Sécu-périmétrique/Brut.md",
     "Haute Dispo",
     "Linux/L3/LPIC102/Projet-Partiel.md",
     "Linux/M1/Brut.md",
@@ -514,7 +515,6 @@
     "Projet Annuel - M1/Cahier des charges rendu.md",
     "Projet Annuel - M1/ToDo Cahier des charges.md",
     "Projet Annuel - M1/Installation/Proxmox iscsi.md",
-    "Projet Annuel - M1/Installation/OPNSense.md",
     "Projet Annuel - M1/Infrastructure/Virtualisation",
     "Projet Annuel - M1/Infrastructure/Réseau",
     "Projet Annuel - M1/Infrastructure",
