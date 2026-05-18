@@ -87,4 +87,22 @@ Ce cloisonnement est un processus itératif : on commence
 Pour durcir AD, il faut savoir par où un attaquant pourrait progresser de façon latérale ou verticale.
 L'analyse dse chemins d'attaque est donc centrale
 Types de chemins :
-- Relations de contrôle AD (transitivité)
+- Relations de contrôle AD (transitivité) : Si A contrôle B et B contrôle C, la compromission de A peut permettre la compromission de C
+- Exploitation de protocole AD / Windows légitimes (RPC, SMB, Kerberos, LDAP) dans un contexte détourné ou mal configuré
+- Secrets d'authentification (mots de passe, hashes, clés), réutilisation de comptes locaux, serviescripteurs d'authentification, etc.
+- Agents de gestion centralisée, services installés, scripts automatisés, etc.
+- Chemin hors AD, via infrastructure physique, virtuelles ou cloud, pouvant rétroagir sur AD
+
+Etapes d'analyse :
+- identification initiale des ressources sensibles (Tier 0 en priorité)
+- Cartographie des relations légitimes entre objets AD / systèmes
+- Détection des liens transitifs ou implicites
+- Evaluation de la difficulté d'exploitation de chaque chemin (coût, conditions, faisabilité)
+- Priorisation des chemins à traiter (ceux plus exploitables)
+
+Bonnes pratiques :
+ANSSI propose plusieurs recommandations :
+- Séparer les postes bureautiques et les postes d'administrations
+- Ne pas utiliser un compte d'administration pour des usages courants
+- Ne pas mutualiser les usages d'administration entre Tiers sans mesures de sécurité renforcées
+- Comptes, postes et méthodes d'administration dédiés pour chaque zone de confiance (Tier)
