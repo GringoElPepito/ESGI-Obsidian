@@ -48,4 +48,20 @@ Types de menaces :
 - Bypass des pare-feu : via protocoles tunneling, ports non filtrés
 - Attaques DDoS : Saturent le périmètre pour empêcher le fonctionnement normal
 - Shadow IT : applications ou équipements non autorisés échappant au périmètre
-- Mob
+- Mobilité et Cloud : le périmètre devient flou, obligeant à combiner périmétrique et sécurité applicative
+
+Bonnes pratique
+- Mettre en place une politique de sécurité stricte "Deny By default"
+- Segmentation du réseau (VLAN, microsegmentation)
+- Surveillance et journalisation du trafic (SIEM : Security Information and Event Manager)
+- Tests réguliers (pentests, red team)
+- Mise à jour continue des règles et signatures
+- Sensibilisation des utilisateurs (phising, BYOD - Bring You Own Device)
+
+Conclusion 
+la sécurité périmétrique reste indispensable mais n'est plus suffisante
+Elle doit être intégrée dans une stratégie globale de défense en profondeur, complété par des contrôles au niveau des applications, des données et des identités
+Le futur s'oriente vers le Zero Trust et la sécurité cloud-centric, mais comprendre les bases périmtriques est fondamental pour tout ingénieur en réseaux et sécurité
+
+# Active Directory
+Composant central dans l'infrastructure M
