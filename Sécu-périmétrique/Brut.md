@@ -109,3 +109,8 @@ ANSSI propose plusieurs recommandations :
 
 Durcissement système / logiciel
 Bloqué par défaut les MCP
+
+Principe du moindre privilège est fondamental : donner uniquement les droits strictement nécessaires pour une tâche, rien de plus.
+JEA en powershell
+
+Journalisation et détection
