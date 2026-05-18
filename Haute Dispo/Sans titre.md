@@ -3,11 +3,12 @@
 # WEB 1
 ```bash
 sudo dnf in -y nginx php-fpm php-mysqlnd
-sudo systemctl enable --now nginx
 sudo firewall-cmd --add-service=http
 sudo firewall-cmd --add-service=https
 sudo firewall-cmd --add-port={80/tcp,443/tcp}
 sudo firewall-cmd --runtime-to-permanent
+sudo systemctl enable --now nginx
+sudo systemctl enable --now php-fpm
 ```
 
 # BDD
