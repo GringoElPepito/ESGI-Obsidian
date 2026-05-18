@@ -327,7 +327,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sécu-périmétrique/Brut.md",
+                "file": "Haute Dispo/Brut.md",
                 "mode": "source",
                 "source": false
               },
@@ -485,9 +485,11 @@
   },
   "active": "c711c433c67f344f",
   "lastOpenFiles": [
+    "Sécu-périmétrique/Brut.md",
+    "Haute Dispo/Brut.md",
+    "Haute Dispo",
     "Linux/L3/LPIC102/Projet-Partiel.md",
     "Linux/M1/Brut.md",
-    "Sécu-périmétrique/Brut.md",
     "Sécu-périmétrique",
     "Linux/L3/LPIC102/Tache automatise.md",
     "Linux/L3/LPIC102/TP 12-05-2025.md",
@@ -513,7 +515,6 @@
     "Projet Annuel - M1/ToDo Cahier des charges.md",
     "Projet Annuel - M1/Installation/Proxmox iscsi.md",
     "Projet Annuel - M1/Installation/OPNSense.md",
-    "Projet Annuel - M1/Infrastructure/Réseau/Architecture.md",
     "Projet Annuel - M1/Infrastructure/Virtualisation",
     "Projet Annuel - M1/Infrastructure/Réseau",
     "Projet Annuel - M1/Infrastructure",
@@ -526,7 +527,6 @@
     "attachments/Pasted image 20251124092243.png",
     "attachments/Pasted image 20251124084821.png",
     "Psychlogie",
-    "Projet Annuel - M1/Installation",
     "attachments/Pasted image 20251027122807.png",
     "attachments/Pasted image 20251027122758.png",
     "attachments/Pasted image 20251027120903.png",
