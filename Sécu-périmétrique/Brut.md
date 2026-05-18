@@ -106,3 +106,6 @@ ANSSI propose plusieurs recommandations :
 - Ne pas utiliser un compte d'administration pour des usages courants
 - Ne pas mutualiser les usages d'administration entre Tiers sans mesures de sécurité renforcées
 - Comptes, postes et méthodes d'administration dédiés pour chaque zone de confiance (Tier)
+
+Durcissement système / logiciel
+Bloqué par défaut les MCP
