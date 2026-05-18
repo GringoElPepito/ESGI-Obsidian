@@ -395,7 +395,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "add route",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -416,7 +416,8 @@
               "title": "Signet"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -510,7 +511,7 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "c711c433c67f344f",
+  "active": "29aec86b1c613a6b",
   "lastOpenFiles": [
     "Haute Dispo/Sans titre.md",
     "Linux/L3/LPIC102/Projet-Partiel.md",
