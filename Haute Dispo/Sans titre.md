@@ -1,3 +1,11 @@
+# WEB
+
+# WEB 1
+```bash
+sudo dnf in -y nginx php
+
+```
+
 # BDD
 ## BDD 1
 ```bash
@@ -28,6 +36,7 @@ sudo sed -i '/^wsrep_cluster_name="my_wsrep_cluster"/cwsrep_cluster_name="galera
 sudo sed -i '/^#wsrep_cluster_address="dummy:\/\/"/cwsrep_cluster_address="gcomm://10.1.1.6,10.1.1.7,10.1.1.8"' /etc/my.cnf.d/galera.cnf
 sudo sed -i '/^#wsrep_node_name=/cwsrep_node_name="bdd2"' /etc/my.cnf.d/galera.cnf
 sudo sed -i '/^#wsrep_node_address=/cwsrep_node_address="10.1.1.7"' /etc/my.cnf.d/galera.cnf
+sudo mysql_secure_installation
 sudo systemctl enable --now mariadb
 ```
 
@@ -44,5 +53,6 @@ sudo sed -i '/^wsrep_cluster_name="my_wsrep_cluster"/cwsrep_cluster_name="galera
 sudo sed -i '/^#wsrep_cluster_address="dummy:\/\/"/cwsrep_cluster_address="gcomm://10.1.1.6,10.1.1.7,10.1.1.8"' /etc/my.cnf.d/galera.cnf
 sudo sed -i '/^#wsrep_node_name=/cwsrep_node_name="bdd3"' /etc/my.cnf.d/galera.cnf
 sudo sed -i '/^#wsrep_node_address=/cwsrep_node_address="10.1.1.8"' /etc/my.cnf.d/galera.cnf
+sudo mysql_secure_installation
 sudo systemctl enable --now mariadb
 ```
