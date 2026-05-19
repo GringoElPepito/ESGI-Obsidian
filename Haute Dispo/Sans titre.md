@@ -24,6 +24,8 @@ sudo unzip wordpress-latest-fr_FR.zip -d /var/www
 sudo systemctl enable --now nginx
 sudo systemctl enable --now php-fpm
 sudo systemctl restart nginx
+sudo setsebool httpd_can_network_connect=1
+sudo setsebool httpd_can_network_connect_db=1
 ```
 
 `/etc/nginx/web.conf` :
