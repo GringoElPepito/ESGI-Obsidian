@@ -3,10 +3,9 @@
 # WEB 1
 ```bash
 sudo dnf in -y nginx php-fpm php-mysqlnd
-sudo firewall-cmd --add-service=http
-sudo firewall-cmd --add-service=https
-sudo firewall-cmd --add-port={80/tcp,443/tcp}
-sudo firewall-cmd --runtime-to-permanent
+sudo firewall-cmd --add-service=http --permanent
+sudo firewall-cmd --add-service=https --permanent
+sudo firewall-cmd --reload
 sudo systemctl enable --now nginx
 sudo systemctl enable --now php-fpm
 ```
@@ -16,6 +15,7 @@ sudo systemctl enable --now php-fpm
 ```bash
 sudo dnf install -y mariadb-server mariadb-server-galera galera setools-console policycoreutils-python-utils vim
 sudo firewall-cmd --add-service=galera --permanent 
+sudo firewall-cmd --reload
 sudo vi /etc/my.cnf.d/galera.cnf
 sudo sed -i '/^wsrep_cluster_name="my_wsrep_cluster"/cwsrep_cluster_name="galera_cluster"' /etc/my.cnf.d/galera.cnf
 sudo sed -i '/^#wsrep_cluster_address="dummy:\/\/"/cwsrep_cluster_address="gcomm://"' /etc/my.cnf.d/galera.cnf
@@ -38,6 +38,7 @@ GRANT ALL PRIVILEGES ON WordPress.* TO 'wpdb'@'10.1.1.5';
 ```bash
 sudo dnf install -y mariadb-server mariadb-server-galera galera setools-console policycoreutils-python-utils vim
 sudo firewall-cmd --add-service=galera --permanent 
+sudo firewall-cmd --reload
 sudo vi /etc/my.cnf.d/galera.cnf
 sudo sed -i '/^wsrep_cluster_name="my_wsrep_cluster"/cwsrep_cluster_name="galera_cluster"' /etc/my.cnf.d/galera.cnf
 sudo sed -i '/^#wsrep_cluster_address="dummy:\/\/"/cwsrep_cluster_address="gcomm://10.1.1.6,10.1.1.7,10.1.1.8"' /etc/my.cnf.d/galera.cnf
@@ -52,6 +53,7 @@ sudo systemctl enable --now mariadb
 ```bash
 sudo dnf install -y mariadb-server mariadb-server-galera galera setools-console policycoreutils-python-utils vim
 sudo firewall-cmd --add-service=galera --permanent 
+sudo firewall-cmd --reload
 sudo vi /etc/my.cnf.d/galera.cnf
 sudo sed -i '/^wsrep_on=0/cwsrep_on=1' /etc/my.cnf.d/galera.cnf
 sudo sed -i '/^wsrep_cluster_name="my_wsrep_cluster"/cwsrep_cluster_name="galera_cluster"' /etc/my.cnf.d/galera.cnf
