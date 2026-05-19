@@ -6,6 +6,7 @@ sudo dnf in -y nginx php-fpm php-mysqlnd wget vim rsync unzip
 sudo firewall-cmd --add-service=http --permanent
 sudo firewall-cmd --add-service=https --permanent
 sudo firewall-cmd --reload
+sudo vim /etc/nginx/web.conf
 sudo systemctl enable --now nginx
 sudo systemctl enable --now php-fpm
 wget https://fr.wordpress.org/wordpress-latest-fr_FR.zip
@@ -15,36 +16,29 @@ sudo unzip wordpress-latest-fr_FR.zip -d /var/www
 `/etc/nginx/web.conf` :
 ```
 server {
-  # Example PHP Nginx FPM config file
   listen 80 default_server;
   listen [::]:80 default_server;
+  #root /var/www/html;
   root /var/www/wordpress;
 
-  # Add index.php to setup Nginx, PHP & PHP-FPM config
-  index index.php index.html index.htm index.nginx-debian.html;
-
+  index index.php index.html;
   server_name _;
-
   location / {
     try_files $uri $uri/ =404;
   }
 
-  # pass PHP scripts on Nginx to FastCGI (PHP-FPM) server
   location ~ \.php$ {
-    include snippets/fastcgi-php.conf;
-
-    # Nginx php-fpm sock config:
-    fastcgi_pass unix:/run/php/php8.1-fpm.sock;
-    # Nginx php-cgi config :
-    # Nginx PHP fastcgi_pass 127.0.0.1:9000;
+    fastcgi_pass unix:/run/php-fpm/www.sock;
+    fastcgi_index index.php;
+    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    include fastcgi_params;
   }
 
-  # deny access to Apache .htaccess on Nginx with PHP,
-  # if Apache and Nginx document roots concur
   location ~ /\.ht {
     deny all;
   }
-} # End of PHP FPM Nginx config example
+} 
+
 
 ```
 
