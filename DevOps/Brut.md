@@ -6,9 +6,9 @@ les types de réseaux :
 - none (NULL)
 - overlay
 - user-defined bridge
-- macvlan (bridge)
-- macvlan (802.1q)
-- IP VLAN (L2/L3)
+- macvlan (bridge) créer un réseau similaire à un réseau bridge sur VMWare, nécessite que la promiscuité soit activé, n'est pas absolument
+- macvlan (802.1q) créer un réseau similaire à un réseau bridge sur VMWare permettant de créer des sous-interfaces par VLAN. Nécessite aussi que le mode promiscuité soit activée. Crééer une adresse MAC virtuelle
+- IP VLAN (L2/L3) comme le macvlan (bridge) mais sans adresse MAC virtuelle
 
 Mappage de port
 
@@ -26,5 +26,10 @@ docker run --rm -ti --network
 netstat -paunt
 ```
 A noter que les process docker ont un PID à 6 chiffres ou plus
+
+```bash
+docker network create -d macvlan \
+  --subnet 192.168.1.1
+```
 
 
