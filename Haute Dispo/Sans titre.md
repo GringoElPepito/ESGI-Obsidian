@@ -7,7 +7,7 @@ sudo firewall-cmd --add-service=https --permanent
 sudo firewall-cmd --add-service=mysql --permanent
 sudo firewall-cmd --reload
 sudo vim /etc/haproxy/conf.d/lb.conf
-
+sudo systemctl enable --now haproxy
 ```
 
 # WEB
