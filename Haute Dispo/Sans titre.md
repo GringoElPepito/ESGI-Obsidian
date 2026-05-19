@@ -14,7 +14,7 @@ sudo systemctl enable --now php-fpm
 # BDD
 ## BDD 1
 ```bash
-sudo dnf in -y mariadb-server mariadb-server-galera galera setools-console policycoreutils-python-utils
+sudo dnf install -y mariadb-server mariadb-server-galera galera setools-console policycoreutils-python-utils vim
 sudo firewall-cmd --add-service=mysql 
 sudo firewall-cmd --add-port={3306/tcp,4567/tcp,4568/tcp,4444/tcp}
 sudo firewall-cmd --runtime-to-permanent
@@ -38,7 +38,7 @@ GRANT ALL PRIVILEGES ON WordPress.* TO 'wpdb'@'10.1.1.5';
 ## BDD 2
 
 ```bash
-sudo dnf in -y mariadb-server mariadb-server-galera galera setools-console policycoreutils-python-utils
+sudo dnf install -y mariadb-server mariadb-server-galera galera setools-console policycoreutils-python-utils vim
 sudo firewall-cmd --add-service=mysql 
 sudo firewall-cmd --add-port={3306/tcp,4567/tcp,4568/tcp,4444/tcp}
 sudo firewall-cmd --runtime-to-permanent
@@ -54,7 +54,7 @@ sudo systemctl enable --now mariadb
 ## BDD 3
 
 ```bash
-sudo dnf in -y mariadb-server mariadb-server-galera galera setools-console policycoreutils-python-utils
+sudo dnf install -y mariadb-server mariadb-server-galera galera setools-console policycoreutils-python-utils vim
 sudo firewall-cmd --add-service=mysql 
 sudo firewall-cmd --add-port={3306/tcp,4567/tcp,4568/tcp,4444/tcp}
 sudo firewall-cmd --runtime-to-permanent
@@ -71,9 +71,61 @@ sudo systemctl enable --now mariadb
 # Correction
 
 ## Galera
-- mettre 1 IP statique et un nom d'hôte
-- 
+Mettre 1 IP statique et un nom d'hôte
+![[Pasted image 20260519145031.png]]
 ```bash
+sudo dnf install -y mariadb-server mariadb-server-galera galera setools-console policycoreutils-python-utils vim
+```
+
+Conf `/etc/my.cnf.d/galera.conf` :
+```bash
+[galera]
+# Mandatory settings
+wsrep_on                 = ON
+wsrep_provider           = /usr/lib64/galera/libgalera_smm.so
+wsrep_cluster_name       = "MariaDB Galera Cluster"
+wsrep_cluster_address    = gcomm://10.1.1.6,10.1.1.7,10.1.1.8
+binlog_format            = row
+default_storage_engine   = InnoDB
+innodb_autoinc_lock_mode = 2
+innodb_buffer_pool_size  = 128M
+wsrep_node_name          = DB1
+wsrep_node_address       = 10.1.1.6
+wsrep_sst_method         = rsync
+bind-address             = 0.0.0.0
+```
 
 ```
-![[Pasted image 20260519145031.png]]
+[galera]
+# Mandatory settings
+wsrep_on                 = ON
+wsrep_provider           = /usr/lib64/galera/libgalera_smm.so
+wsrep_cluster_name       = "MariaDB Galera Cluster"
+wsrep_cluster_address    = gcomm://10.1.1.6,10.1.1.7,10.1.1.8
+binlog_format            = row
+default_storage_engine   = InnoDB
+innodb_autoinc_lock_mode = 2
+innodb_buffer_pool_size  = 128M
+wsrep_node_name          = DB2
+wsrep_node_address       = 10.1.1.7
+wsrep_sst_method         = rsync
+bind-address             = 0.0.0.0
+```
+
+```
+[galera]
+# Mandatory settings
+wsrep_on                 = ON
+wsrep_provider           = /usr/lib64/galera/libgalera_smm.so
+wsrep_cluster_name       = "MariaDB Galera Cluster"
+wsrep_cluster_address    = gcomm://10.1.1.6,10.1.1.7,10.1.1.8
+binlog_format            = row
+default_storage_engine   = InnoDB
+innodb_autoinc_lock_mode = 2
+innodb_buffer_pool_size  = 128M
+wsrep_node_name          = DB3
+wsrep_node_address       = 10.1.1.8
+wsrep_sst_method         = rsync
+bind-address             = 0.0.0.0
+
+```
