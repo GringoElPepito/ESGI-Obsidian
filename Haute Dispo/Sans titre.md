@@ -5,9 +5,11 @@ sudo dnf in -y haproxy vim keepalived
 sudo firewall-cmd --add-service=http --permanent
 sudo firewall-cmd --add-service=https --permanent
 sudo firewall-cmd --add-service=mysql --permanent
+sudo firewall-cmd --add-port=80/tcp --permanent
 sudo firewall-cmd --reload
 sudo vim /etc/haproxy/conf.d/lb.conf
 sudo systemctl enable --now haproxy
+sudo setsebool -P haproxy_connect_any on
 ```
 
 # WEB
