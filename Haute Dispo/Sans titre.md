@@ -2,13 +2,14 @@
 
 # WEB 1
 ```bash
-sudo dnf in -y nginx php-fpm php-mysqlnd wget vim rsync
+sudo dnf in -y nginx php-fpm php-mysqlnd wget vim rsync unzip
 sudo firewall-cmd --add-service=http --permanent
 sudo firewall-cmd --add-service=https --permanent
 sudo firewall-cmd --reload
 sudo systemctl enable --now nginx
 sudo systemctl enable --now php-fpm
 wget https://fr.wordpress.org/wordpress-latest-fr_FR.zip
+sudo unzip wordpress-latest-fr_FR.zip -d /var/www
 ```
 
 `/etc/nginx/web.conf` :
@@ -17,7 +18,7 @@ server {
   # Example PHP Nginx FPM config file
   listen 80 default_server;
   listen [::]:80 default_server;
-  root /var/www/html;
+  root /var/www/wordpress;
 
   # Add index.php to setup Nginx, PHP & PHP-FPM config
   index index.php index.html index.htm index.nginx-debian.html;
