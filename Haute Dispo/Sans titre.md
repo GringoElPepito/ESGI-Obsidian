@@ -1,16 +1,23 @@
+# HAProxy
+
+```bash
+
+```
+
 # WEB
 
 # WEB 1
 ```bash
-sudo dnf in -y nginx php-fpm php-mysqlnd wget vim rsync unzip
+sudo dnf in -y nginx php-fpm php-mysqlnd wget vim rsync unzip vim
 sudo firewall-cmd --add-service=http --permanent
 sudo firewall-cmd --add-service=https --permanent
 sudo firewall-cmd --reload
-sudo vim /etc/nginx/web.conf
-sudo systemctl enable --now nginx
-sudo systemctl enable --now php-fpm
+sudo vim /etc/nginx/conf.d/web.conf
 wget https://fr.wordpress.org/wordpress-latest-fr_FR.zip
 sudo unzip wordpress-latest-fr_FR.zip -d /var/www
+sudo systemctl enable --now nginx
+sudo systemctl enable --now php-fpm
+sudo systemctl restart nginx
 ```
 
 `/etc/nginx/web.conf` :
@@ -18,7 +25,6 @@ sudo unzip wordpress-latest-fr_FR.zip -d /var/www
 server {
   listen 80 default_server;
   listen [::]:80 default_server;
-  #root /var/www/html;
   root /var/www/wordpress;
 
   index index.php index.html;
