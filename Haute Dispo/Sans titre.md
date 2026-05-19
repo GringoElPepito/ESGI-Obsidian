@@ -10,6 +10,9 @@ sudo firewall-cmd --reload
 sudo vim /etc/haproxy/conf.d/lb.conf
 sudo systemctl enable --now haproxy
 sudo setsebool -P haproxy_connect_any on
+sudo semanage port -a -t http_port_t -p tcp 80
+
+haproxy -dD -f /etc/haproxy/haproxy.cfg
 ```
 
 # WEB
