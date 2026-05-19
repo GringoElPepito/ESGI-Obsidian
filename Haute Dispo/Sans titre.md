@@ -72,7 +72,8 @@ sudo dnf install -y mariadb-server mariadb-server-galera galera setools-console 
 sudo vim /etc/my.cnf.d/galera.cnf
 sudo firewall-cmd --add-service=galera --permanent
 sudo firewall-cmd --reload
-sudo galera
+sudo galera_new_cluster
+sudo systemctl enable --now mariadb
 ```
 
 Conf `/etc/my.cnf.d/galera.conf` :
