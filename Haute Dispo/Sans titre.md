@@ -1,6 +1,12 @@
 # HAProxy
 
 ```bash
+sudo dnf in -y haproxy vim keepalived
+sudo firewall-cmd --add-service=http --permanent
+sudo firewall-cmd --add-service=https --permanent
+sudo firewall-cmd --add-service=mysql --permanent
+sudo firewall-cmd --reload
+sudo vim /etc/haproxy/conf.d/lb.conf
 
 ```
 
