@@ -93,7 +93,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/M1/Brut.md",
+                "file": "Powershell/Brut.md",
                 "mode": "source",
                 "source": false
               },
@@ -443,8 +443,8 @@
   },
   "active": "848c40724213bbbc",
   "lastOpenFiles": [
-    "Linux/M1/Révision.md",
     "Linux/M1/Brut.md",
+    "Linux/M1/Révision.md",
     "Powershell/Brut.md",
     "DevOps/Brut.md",
     "Powershell",

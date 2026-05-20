@@ -13,8 +13,10 @@ Autoriser l'exécution de script Powershell
 ```Powershell
 Set-ExecutionPolicy unrestricted
 ```
+un cmdlets est une commande PowerShell. Chaque commande retourne un résultat sous la forme d'un objet ou d'un tableau d'objet ou d'un objet Null
 
-Chaque commande retourne un résultat sous la forme d'un objet ou d'un tableau d'objet ou d'un objet Null
-
-un cmdlets est une commande PowerShell
+Permet de récupérer la liste des services qui sont actuellement stoppé et affiche leur noms :
+```PowerShell
+Get-Service | WHERE {$_.status -eq "Stopped"} | SELECT displayname
+```
 
