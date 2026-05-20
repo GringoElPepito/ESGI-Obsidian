@@ -8,6 +8,8 @@ Verbes de base :
 - New - pour créer quelque chose
 
 Construction d'une instruction 
+
+Autoriser l'exécution de script Powershell
 ```Powershell
-Get-ExecutionPolicy
+Set-ExecutionPolicy unrestricted
 ```
