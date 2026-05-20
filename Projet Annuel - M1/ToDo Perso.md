@@ -1,0 +1,4 @@
+- [ ] Corriger déploiement LXC pour ajout des mountpoints
+- [ ] Automatisation déploiement bdd
+- [ ] Automatisation déploiement Wordpress
+- [ ] Automatisation déploiement HAProxy
