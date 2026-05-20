@@ -38,4 +38,18 @@ docker network create -d macvlan \
 # Docker Images & Dockerfile
 Chaque LAYER d'une image correspond à une instruction présente dans le docker file
 
-Liste des 
+Liste des instructions :
+- `FROM` -> image parente
+- `LABEL` -> ajout de métadonnées
+- `RUN` -> commande(s) utilisée(s) pour construire l'image
+- `ENV` -> permet de définir une variable d'environnement par défaut, on appellera les variables de la manière suivante `${nom_de_la_variable}`
+- `CMD` -> exécute une commande
+- `EXPOSE` -> Port(s) écouté(s) par le conteneur
+- `ARG` -> Variables passées comme paramètres à la construction de l'image
+- `COPY` -> Permet de copier un fichier présent sur la machine hôte vers le conteneur
+- `ADD` -> Fais la même chose que `COPY` mais permet aussi de récupérer des fichiers et archives sur internet et les décompresses si besoin
+- `WORKDIR` -> effectue un cd au sein de l'image conteneur
+- `VOLUME` -> Créer un point de montage
+```Dockerfile
+
+```
