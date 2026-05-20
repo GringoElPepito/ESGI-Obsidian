@@ -52,7 +52,12 @@ Liste des instructions :
 - `USER` -> utiliser un UID de préférence non-existant sur la machine hôte
 - `ENTRYPOINT` -> Commande immuable exécuté au démarrage du conteneur, prend une liste de sting `["ping","--help"]`
 - `CMD` -> Commande exécuté au démarrage du conteneur qui peut être remplacé à l'exécution de la commande de démarrage du conteneur
-Une bonne pratique est d'utiliser `ENTRYPOINT` pour la commande de base a exécuter et `CMD` pour le ou les arguments de la commande qui pourront donc 
+Une bonne pratique est d'utiliser `ENTRYPOINT` pour la commande de base a exécuter et `CMD` pour le ou les arguments de la commande qui pourront donc être surchargé
 ```Dockerfile
 
 ```
+
+Le cache enregistre chacune des couches (Layer) d'une image 
+Cache Busting : Mutualiser toutes les commandes dans le moins de `RUN` possible
+
+.dockerignore permet d'ignorer certains fichiers que auraient dû être copié par une instruction `ADD` ou `COPY`. Fonctionne comme un .gitignore
