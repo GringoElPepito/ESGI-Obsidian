@@ -61,3 +61,7 @@ Le cache enregistre chacune des couches (Layer) d'une image
 Cache Busting : Mutualiser toutes les commandes dans le moins de `RUN` possible
 
 .dockerignore permet d'ignorer certains fichiers que auraient dû être copié par une instruction `ADD` ou `COPY`. Fonctionne comme un .gitignore
+
+Placer les layers les plus susceptibles d'être modifiés à la fin et les moins susceptibles d'être modifier au début.
+
+Pour une image utilisé en environnement de DEV plutôt favorisé l'utilisage d'un volume
