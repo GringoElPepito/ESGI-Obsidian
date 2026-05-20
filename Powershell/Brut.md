@@ -17,3 +17,4 @@ Set-ExecutionPolicy unrestricted
 Chaque commande retourne un résultat sous la forme d'un objet ou d'un tableau d'objet ou d'un objet Null
 
 un cmdlets est une commande PowerShell
+

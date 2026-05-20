@@ -93,7 +93,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Powershell/Brut.md",
+                "file": "Linux/M1/Brut.md",
                 "mode": "source",
                 "source": false
               },
@@ -443,8 +443,10 @@
   },
   "active": "848c40724213bbbc",
   "lastOpenFiles": [
-    "DevOps/Brut.md",
+    "Linux/M1/Révision.md",
+    "Linux/M1/Brut.md",
     "Powershell/Brut.md",
+    "DevOps/Brut.md",
     "Powershell",
     "Commandes utiles.md",
     "Projet Annuel - M1/ToDo Perso.md",
@@ -463,10 +465,8 @@
     "Rapport Alternance M1.md",
     "Rapport Alternance L3.md",
     "Ansible/Brut.md",
-    "Linux/M1/Brut.md",
     "Ansible",
     "API/Brut.md",
-    "Linux/M1/Révision.md",
     "Projet Annuel - M1/Installation/Ansible.md",
     "Windows Server/Cours.md",
     "Sans titre.md",
