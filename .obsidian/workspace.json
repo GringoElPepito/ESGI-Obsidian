@@ -93,7 +93,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Brut.md",
+                "file": "Powershell/Brut.md",
                 "mode": "source",
                 "source": false
               },
@@ -443,8 +443,10 @@
   },
   "active": "848c40724213bbbc",
   "lastOpenFiles": [
-    "Commandes utiles.md",
     "DevOps/Brut.md",
+    "Powershell/Brut.md",
+    "Powershell",
+    "Commandes utiles.md",
     "Projet Annuel - M1/ToDo Perso.md",
     "CCNA/Brut.md",
     "Docker/TP.md",
@@ -473,7 +475,6 @@
     "API",
     "CCNP/Partiel.md",
     "Projet Annuel - M1/Installation/OPNSense.md",
-    "Projet Annuel - M1/Installation/Sans titre.md",
     "Projet Annuel - M1/Infrastructure/Réseau",
     "Projet Annuel - M1/Infrastructure",
     "Projet Annuel - M1/weekly",
@@ -484,7 +485,6 @@
     "attachments/Pasted image 20251124095729.png",
     "attachments/Pasted image 20251124092243.png",
     "attachments/Pasted image 20251124084821.png",
-    "Psychlogie",
     "attachments/Pasted image 20251027122807.png",
     "attachments/Pasted image 20251027122758.png",
     "attachments/Pasted image 20251027120903.png",
