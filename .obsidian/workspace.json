@@ -93,12 +93,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Commandes utiles.md",
+                "file": "DevOps/Brut.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Commandes utiles"
+              "title": "Brut"
             }
           },
           {
@@ -443,6 +443,7 @@
   },
   "active": "848c40724213bbbc",
   "lastOpenFiles": [
+    "Commandes utiles.md",
     "DevOps/Brut.md",
     "Projet Annuel - M1/ToDo Perso.md",
     "CCNA/Brut.md",
@@ -464,7 +465,6 @@
     "Ansible",
     "API/Brut.md",
     "Linux/M1/Révision.md",
-    "Commandes utiles.md",
     "Projet Annuel - M1/Installation/Ansible.md",
     "Windows Server/Cours.md",
     "Sans titre.md",

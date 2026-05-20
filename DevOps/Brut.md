@@ -65,3 +65,5 @@ Cache Busting : Mutualiser toutes les commandes dans le moins de `RUN` possible
 Placer les layers les plus susceptibles d'être modifiés à la fin et les moins susceptibles d'être modifier au début.
 
 Pour une image utilisé en environnement de DEV plutôt favorisé l'utilisation d'un volume pointant vers un dossier de la machine contenant le code de l'application permettant d'éviter un build de l'image à chaque modification du code.
+
+Choisir une image spécifique en X.Y.Z pour s'assurer d'avoir une version stable
