@@ -1,1 +1,13 @@
 # Powershell
+Verbes de base :
+- Get - Pour obtenir quelque chose
+- Set - pour définir quelque chose (modifier une valeur de propriété)
+- Start - Exécuter quelque chose (un processus en général)
+- Stop - pour arrêter quelque chose en cours d'exécution (un processus en général)
+- Out - pour générer quelque chose
+- New - pour créer quelque chose
+
+Construction d'une instruction 
+```Powershell
+Get-ExecutionPolicy
+```
