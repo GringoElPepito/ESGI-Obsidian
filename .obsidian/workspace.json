@@ -93,12 +93,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Brut.md",
+                "file": "Commandes utiles.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brut"
+              "title": "Commandes utiles"
             }
           },
           {
@@ -443,10 +443,10 @@
   },
   "active": "848c40724213bbbc",
   "lastOpenFiles": [
+    "DevOps/Brut.md",
     "Projet Annuel - M1/ToDo Perso.md",
     "CCNA/Brut.md",
     "Docker/TP.md",
-    "DevOps/Brut.md",
     "Projet Annuel - M1/Installation/ToDo Proxmox.md",
     "DevOps",
     "Sans titre 2.md",

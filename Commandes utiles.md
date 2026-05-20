@@ -12,3 +12,7 @@ Scanner les disques :
 echo '- - -' | sudo tee -a /sys/class/scsi_host/host*/scan
 ```
 
+Permet de créer un fichier de log grâce à `nohup` tout en mettant l'exécution en arrière place `&`
+```bash
+nohup apt update -y &
+```
