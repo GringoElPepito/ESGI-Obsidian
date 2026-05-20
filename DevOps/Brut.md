@@ -43,13 +43,16 @@ Liste des instructions :
 - `LABEL` -> ajout de métadonnées
 - `RUN` -> commande(s) utilisée(s) pour construire l'image
 - `ENV` -> permet de définir une variable d'environnement par défaut, on appellera les variables de la manière suivante `${nom_de_la_variable}`
-- `CMD` -> exécute une commande
 - `EXPOSE` -> Port(s) écouté(s) par le conteneur
 - `ARG` -> Variables passées comme paramètres à la construction de l'image
 - `COPY` -> Permet de copier un fichier présent sur la machine hôte vers le conteneur
 - `ADD` -> Fais la même chose que `COPY` mais permet aussi de récupérer des fichiers et archives sur internet et les décompresses si besoin
 - `WORKDIR` -> effectue un cd au sein de l'image conteneur
 - `VOLUME` -> Créer un point de montage
+- `USER` -> utiliser un UID de préférence non-existant sur la machine hôte
+- `ENTRYPOINT` -> Commande immuable exécuté au démarrage du conteneur, prend une liste de sting `["ping","--help"]`
+- `CMD` -> Commande exécuté au démarrage du conteneur qui peut être remplacé à l'exécution de la commande de démarrage du conteneur
+Une bonne pratique est d'utiliser `ENTRYPOINT` pour la commande de base a exécuter et `CMD` pour le ou les arguments de la commande qui pourront donc 
 ```Dockerfile
 
 ```
