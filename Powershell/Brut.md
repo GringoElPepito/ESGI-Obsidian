@@ -23,7 +23,7 @@ Get-Service | WHERE {$_.status -eq "Stopped"} | SELECT displayname
 si on ne nomme pas une variable de boucle elle prend par défaut le nom `_` et sera appelable de la manière suivante `$_`
 
 ```Powershell
-# Copie chaque élément présent dans le dossier courant 
+# Copie chaque élément (dossier et fichier) présent dans le dossier courant et les copie dans le dossier C:\NewDirectory\
 Get-ChildItem | ForEach-Object {
 	Copy-Item -Path $_.FullName -destination C:\NewDirectory\
 }
