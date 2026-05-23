@@ -1,0 +1,2 @@
+Pour garantir un certain niveau de sécurité, nous avons décidés de partir sur une architecture par délégation. En effet nous avons mis en place une Autorité de certification Racine ainsi qu'une Autorité de certification délégué. De cette manière, il nous ait possible d'éteindre l'autorité racine dans le but de rendre celle-ci inaccessible et limiter le risque de compromission de la clé privé.
+La seule machine pouvant émettre des certificats est donc l'autorité déléguée qui ne peut émettre que certains types de certificat.
