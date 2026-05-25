@@ -327,12 +327,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Document/CA.md",
+                "file": "FYC/Brut.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CA"
+              "title": "Brut"
             }
           }
         ],
@@ -485,8 +485,10 @@
   },
   "active": "c711c433c67f344f",
   "lastOpenFiles": [
-    "Projet Annuel - M1/Installation/CA.md",
     "Projet Annuel - M1/Document/CA.md",
+    "FYC/Brut.md",
+    "FYC",
+    "Projet Annuel - M1/Installation/CA.md",
     "Projet Annuel - M1/Installation/Ansible.md",
     "Jury 22-05-2026.md",
     "Projet Annuel - M1/Document/Sans titre",
@@ -512,7 +514,6 @@
     "Info-ESGI.md",
     "Outils.md",
     "SmartBin.md",
-    "Sans titre 2.md",
     "attachments/Pasted image 20260519145031.png",
     "DevOps",
     "Haute Dispo",
@@ -521,7 +522,6 @@
     "API",
     "Projet Annuel - M1/Infrastructure/Virtualisation",
     "Projet Annuel - M1/Infrastructure/Réseau",
-    "Projet Annuel - M1/Infrastructure",
     "attachments/Pasted image 20251124114936.png",
     "attachments/Pasted image 20251124105553.png",
     "attachments/Pasted image 20251124103355.png",
