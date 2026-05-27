@@ -16,3 +16,8 @@ Permet de créer un fichier de log grâce à `nohup` tout en mettant l'exécutio
 ```bash
 nohup apt update -y &
 ```
+
+vérifier conf HAProxy :
+```bash
+haproxy -c -V -f /etc/haproxy/haproxy.cf
+```
