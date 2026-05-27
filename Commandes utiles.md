@@ -19,5 +19,5 @@ nohup apt update -y &
 
 vérifier conf HAProxy :
 ```bash
-haproxy -c -V -f /etc/haproxy/haproxy.cf
+haproxy -c -V -f /etc/haproxy/haproxy.cfg
 ```
