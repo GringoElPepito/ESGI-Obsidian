@@ -327,12 +327,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Haute Dispo/Sans titre.md",
+                "file": "FYC/Présentation premier suivi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sans titre"
+              "title": "Présentation premier suivi"
             }
           }
         ],
@@ -485,8 +485,10 @@
   },
   "active": "c711c433c67f344f",
   "lastOpenFiles": [
-    "Commandes utiles.md",
     "FYC/Brut.md",
+    "FYC/Présentation premier suivi.md",
+    "Haute Dispo/Sans titre.md",
+    "Commandes utiles.md",
     "Projet Annuel - M1/Document/CA.md",
     "FYC",
     "Projet Annuel - M1/Installation/CA.md",
@@ -495,7 +497,6 @@
     "Projet Annuel - M1/Document/Sans titre",
     "Projet Annuel - M1/Installation/Proxmox iscsi.md",
     "Presentation Theatre.md",
-    "Haute Dispo/Sans titre.md",
     "Powershell/Brut.md",
     "Powershell",
     "Haute Dispo/Brut.md",
@@ -513,7 +514,6 @@
     "Note TOEIC.md",
     "Info-ESGI.md",
     "Outils.md",
-    "SmartBin.md",
     "attachments/Pasted image 20260519145031.png",
     "DevOps",
     "Haute Dispo",

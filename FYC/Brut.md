@@ -11,3 +11,5 @@ Description: Comment une architecture peut-elle se définir selon différents be
 
 
 Le but de ce cours est d'aborder les différents concepts réseaux, stockages, hardware et logicielles permettant de mettre en place une solution cloud sans forcément se concentre sur technologie définie.
+
+
