@@ -12,15 +12,21 @@ Liste des sources :
 	- [OpenCube](https://horizon-opencube.eu/ "https://horizon-opencube.eu/")
 - Techno
 	- [OpenStack](https://docs.openstack.org/2026.1/)
+	- [CozyStack](https://cozystack.io/blog/)
 	- [TerraForm](https://developer.hashicorp.com/terraform/docs)
 	- [RedHat](https://docs.redhat.com/en)
 	- [Mistral](https://mistral.ai/fr/news/)
 	- [Kubernetes](https://kubernetes.io/blog/)
 	- [Nutanix Doc](https://portal.nutanix.com/page/documents/list?type=software)
-	- [VMWare](https://www.vmware.com/resources/resource-center "https://www.vmware.com/resources/resource-center")
+	- [VMWare Doc](https://www.vmware.com/resources/resource-center)
+	- [HaProxy Blog](https://www.haproxy.com/blog)
+	- [Cilium](https://cilium.io/blog/)
 - Youtuber
 	- [Cocadmin](https://www.youtube.com/@cocadmin)
 	- [NetworkChuck](https://www.youtube.com/@NetworkChuck)
-	- 
+	- [TechWorld With Nana](https://www.youtube.com/@TechWorldwithNana)
+
+- Conférence
+	- [FRnOG](https://www.frnog.org/?page=meetings&lang=en)
 
 
