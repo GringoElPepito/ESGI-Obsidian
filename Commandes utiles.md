@@ -1,6 +1,6 @@
 Rechercher des fichiers via le contenu :
 ```bash
-find ./.config/hypr -type f -exec grep -H "background" {} \; 
+find /etc/wazuh-indexer -type f -exec grep -H "O=Wazuh" {} \; 
 ```
 
 ```bash
