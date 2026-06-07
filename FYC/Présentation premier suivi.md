@@ -3,8 +3,9 @@
 # Plan du cours
 1. Hardware 
 2. Réseau
-3. OS
-4. 
+3. OS (hyperviseur/orchestrateur)
+4. virtualisation/conteneurisation
+5. mis à disposition du service
 
 # Portfolio
 Liste des sources :
