@@ -1,7 +1,10 @@
 # Pitch
 
 # Plan du cours
-1. 
+1. Hardware 
+2. Réseau
+3. OS
+4. 
 
 # Portfolio
 Liste des sources :
