@@ -375,4 +375,34 @@ sudo iptables-restore < /etc/iptables/rules.v4
 
 
 ## Apache 
-Apache2 pour du grand public ou des choses simpl
+Apache2 pour du grand public ou des choses simples
+NGINX pur des cas plus spécifiques
+
+Fichier de conf d'apache  `/etc/apache2/apache2.conf` :
+```
+ServerRoot # permet de définir l'emplacement des configurations (emplacement réseau utilisable)
+Timeout # Définition du temps avant timeout de la connexion
+KeepAlive # permet de maintenir
+```
+
+Structure du dossier de configuration Apache2 `/etc/apache2` :
+- `conf-available`
+- `conf-enable`
+- `mods-available`
+- `mods-enable`
+- `sites-available`
+- `sites-enable`
+- `envvars`
+
+
+Fichier de configuration site :
+```
+<VirtualHost *:80>
+	ServerAdmin webmaster@localhost
+	ServerName example.com
+	DocumentRoot /var/www/html/example.com/public_html
+	
+	<Directory /var/www/html/example.com/public_html>
+		Options Indexes # Permet de lister l'arborescence si pas de fichier index.html
+		Options FollowSymLinks # Permet d'activer le parcourt des raccourcis
+```
