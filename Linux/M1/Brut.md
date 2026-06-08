@@ -419,3 +419,9 @@ Activer un module Apache2 :
 ```bash
 a2enmod ssl
 ```
+
+Activer un site Apache2:
+```bash
+a2ensite test_https
+```
+
