@@ -405,4 +405,12 @@ Fichier de configuration site :
 	<Directory /var/www/html/example.com/public_html>
 		Options Indexes # Permet de lister l'arborescence si pas de fichier index.html
 		Options FollowSymLinks # Permet d'activer le parcourt des raccourcis
+		AllowOverride All
+		.htaccess # Permet de login mot de passe et de modifier la configuration Apache
+		Require all granted # Permet de donner les droits pour lire/télécharger les fichiers du site
+	</Directory>
+	
+	ErrorLog ${APACHE_LOG_DIR}/example.com_error.log
+	CustomLog ${APACHE_LOG_DIR}/example.com.access_example.log combined
+</VirtualHost>
 ```
