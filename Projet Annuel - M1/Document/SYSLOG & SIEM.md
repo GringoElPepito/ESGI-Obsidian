@@ -1,0 +1,1 @@
+Concernant la partie de centralisation des logs, nous utilisons la solutions Rsyslog avec le Protocol RELP.
