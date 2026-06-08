@@ -414,3 +414,8 @@ Fichier de configuration site :
 	CustomLog ${APACHE_LOG_DIR}/example.com.access_example.log combined
 </VirtualHost>
 ```
+
+Activer un module Apache2 :
+```bash
+a2enmod ssl
+```
