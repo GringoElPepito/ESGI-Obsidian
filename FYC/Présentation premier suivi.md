@@ -7,6 +7,17 @@
 4. virtualisation/conteneurisation
 5. mis à disposition du service
 
+
+-
+1. Intro et Pres
+2. Qu'est-ce que le cloud
+3. Hardware
+4. Réseau
+5. Virtua
+6. Autonomisation
+7. Serverless
+8. Mis en prod
+
 # Portfolio
 Liste des sources :
 - Cloud Provider
