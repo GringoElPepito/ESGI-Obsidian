@@ -13,9 +13,9 @@
 2. Qu'est-ce que le cloud
 3. Hardware
 4. Réseau
-5. Virtua
+5. Virtualisation
 6. Autonomisation
-7. Serverless
+7. Serverless -> Orchestration
 8. Mis en prod
 
 # Portfolio
