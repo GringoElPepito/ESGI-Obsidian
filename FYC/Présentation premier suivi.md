@@ -1,5 +1,9 @@
 # Pitch
 
+Question à poser :
+- 2 TP max ou possible d'en faire plus ?
+- 
+
 # Plan du cours
 1. Hardware 
 2. Réseau
