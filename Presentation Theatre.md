@@ -4,6 +4,9 @@
 Aujourd'hui on va vous apprendre à gérer votre première 10/10
 
 ## Qu'est-ce qu'une 10/10
+Une 10/10 est une personne dont la note relative ou la note absolue atteint la valeur 10/10.
+La note relative se base uniquement sur l'apparence de la personne noté, c'est par ailleurs la méthode de notation la plus utilisée sur les réseaux sociaux.
+La note absolue quand à elle se base 
 
 ## Comment repérer les 10/10
 ### Les types de 10/10
@@ -20,9 +23,9 @@ A partir de maintenant il faut s'accrocher, Voici la représentation de ce parad
 
 Voici maintenant son équivalent masculin :
 5/10 riche > 5/10 attentionné > 5/10 musclé
-
+{transition}
 7/10 riche > 7/10 musclé > 7/10 attentionné
-
+{transition}
 10/10 attentionné > 10/10 musclé > 10/10 riche
 
 Si vous trouvez un 10/10, riche, musclé et attentionné, lâchez le dossier car il joue très certainement de la flûte
