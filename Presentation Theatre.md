@@ -24,7 +24,14 @@ Voici maintenant son équivalent masculin :
 Si vous trouvez un 10/10, riche, musclé et attentionné, lâchez le dossier car il joue très certainement de la flûte
 
 ## Comment gerer sa 10/10
+Vous avez repérer votre sur 10/10, il est maintenant l'heure de passer à l'action
+
+Vous allez devoir faire ressortir votre côté bestiale, faire le loup qui sommeille en vous {ABOIEMENT}
+
+
 ### Les footballs interdit
+Certains individus peu scrupuleux utilisent des techniques interdites dans le but
+- Le PAFBALL {Low cortisol -> High Cortisol}
 
 # Conclusion
 Ne cherchez pas la personne parfaite, osez simplement faire des rencontres avec des nouvelles personnes même si ces dernières sont imparfaites.
