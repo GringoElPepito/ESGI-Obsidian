@@ -440,4 +440,21 @@ PAM permet d'utiliser des stratégies :
 - required : Tous les modules utilisant ce contrôle doivent passer avec succès pour que la vérification soit accordée. Le cas échéant l'utilisateur n'est averti qu'à la fin du traitement de la pile
 - requisite : Comme required sauf que l'utilisateur est averti immédiatement
 - optionnal : L'échec ou le succès de ce module importe peut et ne peut faire échouer la vérification
-- sufficient : s'il réussit et qu'il n'y a pas de required en échec, le traitement s'arrête là. Le reste de la pile n'est alors q
+- sufficient : s'il réussit et qu'il n'y a pas de required en échec, le traitement s'arrête là. Le reste de la pile n'est alors pas traité
+
+
+
+
+Exemple d'une ligne :
+```bash
+password requisite pam_pwquality.so retry=3
+```
+Description de la ligne :
+- `password`  appel du mécanisme
+- `requisite` définition de la stratégie
+- `pam_pwquality.so` module 
+- `retry=3` option du module
+
+
+Les fichier PAM se trouve dans `/etc/security` :
+- `ace`
