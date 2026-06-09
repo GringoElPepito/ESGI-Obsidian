@@ -493,3 +493,25 @@ sudo faillock --user toto --reset
 ```
 
 # DHCP
+Installation du server DHCP
+```bash
+sudo dnf install isc-dhcp-server
+```
+
+Fichier `/etc/dhcp/dhcpd.conf` :
+```bash
+subnet 10.4.238.0 netmask 255.255.254.0 {
+	option routers 10.4.239.254;
+	option subnet-mask 255.255.254.0;
+	option domain-name "esgi.fr";
+	option domain-name-servers 10.4.239.26;
+	range 10.4.238.20 10.4.238.40;
+	next-server 10.4.238.138;
+	filename bootpxe.efi;
+}
+
+host myalap.esgi.fr {
+	hardware ethernet 00:50:56:a2:1c:1c;
+	fixed-address 10.66.133.110;
+}
+```
