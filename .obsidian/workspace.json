@@ -327,12 +327,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/M1/Brut.md",
+                "file": "Presentation Theatre.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brut"
+              "title": "Presentation Theatre"
             }
           }
         ],
@@ -485,14 +485,12 @@
   },
   "active": "c711c433c67f344f",
   "lastOpenFiles": [
-    "Linux/M1/Révision.md",
-    "Presentation Theatre.md",
-    "Rapport Alternance L3.md",
+    "FYC/Présentation premier suivi.md",
     "FYC/Brut.md",
-    "Linux/M1/Brut.md",
+    "Presentation Theatre.md",
     "Outils.md",
     "Note TOEIC.md",
-    "FYC/Présentation premier suivi.md",
+    "Linux/M1/Brut.md",
     "Sans titre.md",
     "Commandes utiles.md",
     "Projet Annuel - M1/Document/SYSLOG & SIEM.md",
@@ -514,6 +512,8 @@
     "Projet Annuel - M1/Note.md",
     "Projet Annuel - M1/Projet annuel.md",
     "Projet Annuel - M1/Sans titre.md",
+    "Projet Annuel - M1/ToDo Cahier des charges.md",
+    "Projet Annuel - M1/ToDo Perso.md",
     "attachments/Pasted image 20260519145031.png",
     "DevOps",
     "Haute Dispo",
