@@ -480,3 +480,9 @@ fail_interval = 900 #(15 minutes) - intervalle pour réaliser les tentatives
 unlock_time = 600 #(10 minutes) - temps avant le déblocage du compte
 even_deny_root # blocage du compte root
 ```
+
+`/etc/pam.d/` :
+
+`/etc/pam.d/common-auth` :
+```
+```
