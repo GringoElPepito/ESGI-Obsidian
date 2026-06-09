@@ -10,7 +10,7 @@ Aujourd'hui on va vous apprendre à gérer votre première 10/10
 
 ## Le théorème de Rhô
 Publié par le Docteur Chat Rhô (**ρ**) en 1967 {fait la gestuelle du 67}
-Ce théorème décrit l'agencement hiérarchique 
+Ce théorème décrit l'agencement hiérarchique des individus selon leurs couleurs de cheveux ainsi que leur note
 
 ## Comment gerer sa 10/10
 ### Les footballs interdit
