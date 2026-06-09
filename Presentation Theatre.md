@@ -21,6 +21,10 @@ A partir de maintenant il faut s'accrocher, Voici la représentation de ce parad
 Voici maintenant son équivalent masculin :
 5/10 riche > 5/10 attentionné > 5/10 musclé
 
+7/10 riche > 7/10 musclé > 7/10 attentionné
+
+10/10 attentionné > 10/10 musclé > 10/10 riche
+
 Si vous trouvez un 10/10, riche, musclé et attentionné, lâchez le dossier car il joue très certainement de la flûte
 
 ## Comment gérer sa 10/10
@@ -32,8 +36,9 @@ Vous allez devoir faire ressortir votre côté bestiale, faire le loup qui somme
 ### Les footballs interdit
 {son Delirious JJK}
 Certains individus peu scrupuleux utilisent des techniques interdites dans le but
-- Le PAFBALL -> C'est une Technique consistant à amener des sujets intimes bien trop tôt dans la conversation, comme parler de sexe dès le 5e message ou encore lancer la conversation avec la tristement célèbre Dick Pick. Les adeptes de cette technique sont appelés les kamikazes. Ce football est problématique car bien trop agressif et risqué. Dans le cas de la Dick Pick, il est quasi certain que l'interlocuteur ne soit pas consentant à recevoir une photo de vos attributs. Et s'il y a une chose à retenir c'est qu'il faut toujours respecter le consentement {Low cortisol -> High Cortisol}
-- Le BetryalBall -> Cette méthode consiste à descendre l'un de ses potes dans le but de se mettre en avant, cette technique est utilisé par les hommes de la pire espèces, des charognards à sacrifier leur camarade pour ne serait-ce qu'un peu d'attention féminine
+- Le PAFBALL -> La technique interdite du pafball, 
+  elle consiste à amener des sujets intimes bien trop tôt dans la conversation, comme parler de sexe dès le 5e message ou encore lancer la conversation avec une Dick Pick. Les adeptes de cette technique sont appelés les kamikazes. Ce football est problématique car bien trop agressif et risqué. Dans le cas de la Dick Pick, il est quasi certain que l'interlocuteur ne soit pas consentant à recevoir une photo de vos attributs. Et s'il y a une chose à retenir c'est qu'il faut toujours respecter le consentement {Low cortisol -> High Cortisol}
+- Le BetryalBall -> Cette méthode consiste à descendre l'un de ses potes dans le but de se mettre en avant, cette technique est utilisé par les hommes de la pire espèces, des charognards prêt à sacrifier leur camarade pour ne serait-ce qu'un peu d'attention féminine.
 - Le Retour Périodique -> Cette technique consiste à draguer la personne pendant quelques jours avant de disparaitre pendant plusieurs semaines pour finalement revenir et répéter l'opération. Cette méthode permet de maintenir la possession de l'attention sans pour autant enfermer son utilisateur dans cette seule et unique option.
 
 # Conclusion
