@@ -491,3 +491,5 @@ Débloquer un compte utilisateur bloqué
 ```bash
 sudo faillock --user toto --reset
 ```
+
+# DHCP
