@@ -486,3 +486,7 @@ even_deny_root # blocage du compte root
 `/etc/pam.d/common-auth` :
 ```
 ```
+
+Débloquer 
+```
+```
