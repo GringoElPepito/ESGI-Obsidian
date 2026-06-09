@@ -426,3 +426,18 @@ a2ensite test_https
 ```
 
 # PAM
+
+PAM pour Pluggable Authentication Modules, est un système d'authentification modulaire utilisé sur les systèmes d'exploitation Linux et d'autres systèmes Unix. PAM fournit une infrastructure pour l'authentification
+
+PAM propose 4 types d'authentification :
+- Mécanique account fournit une seule primitive : il vérifie si le compte demandé est disponible (si le compte n'est pas arrivé à expiration, si l'est autorisé à ce connecter à cette heure de la journée)
+- Le mécanisme auth fournit deux primitive : il assure l'authentification réelle, éventuellement en demandant et en vérifiant un mot de passe,  et il définit des "certificats d'identité" tels que l'appartenance à un groupe ou des "tickets" kerberos
+- Le mécanisme password fournit une seule primitive : il permet de mettre à jour le jeton d'authentification (en général un mot de passe), soit qu'il a expiré, soit parce que l'utilisateur souhaite le modifier
+- Le mécanisme session fournit deux primitives :
+
+
+PAM permet d'utiliser des stratégies :
+- required : Tous les modules utilisant ce contrôle doivent passer avec succès pour que la vérification soit accordée. Le cas échéant l'utilisateur n'est averti qu'à la fin du traitement de la pile
+- requisite : Comme required sauf que l'utilisateur est averti immédiatement
+- optionnal : L'échec ou le succès de ce module importe peut et ne peut faire échouer la vérification
+- sufficient : s'il réussit et qu'il n'y a pas de required en échec, le traitement s'arrête là. Le reste de la pile n'est alors q
