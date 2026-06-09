@@ -457,4 +457,26 @@ Description de la ligne :
 
 
 Les fichier PAM se trouve dans `/etc/security` :
-- `ace`
+- `access.conf`
+- `capability.conf`
+- `faillock.conf`
+- `group.conf`
+- `limits.conf`
+- `limits.d`
+- `namespace.conf`
+- `namespace.d`
+- `namespace.init`
+- `opasswd`
+- `pam_env.conf`
+- `pwhistory.conf`
+- `sepermit.conf`
+- `time.conf`
+
+PAM ne fonctionne que localement 
+
+`/etc/security/faillock.conf` :
+```
+fail_interval = 900 #(15 minutes) - intervalle pour réaliser les tentatives
+unlock_time = 600 #(10 minutes) - temps avant le déblocage du compte
+even_deny_root # blocage du compte root
+```
