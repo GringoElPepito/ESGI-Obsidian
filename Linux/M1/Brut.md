@@ -487,6 +487,7 @@ even_deny_root # blocage du compte root
 ```
 ```
 
-Débloquer 
-```
+Débloquer un compte utilisateur bloqué
+```bash
+sudo faillock --user toto --reset
 ```
