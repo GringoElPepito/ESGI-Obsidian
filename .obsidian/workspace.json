@@ -327,7 +327,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/M1/Brut.md",
+                "file": "DevOps/Brut.md",
                 "mode": "source",
                 "source": false
               },
@@ -393,8 +393,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "4657410d733d48a7",
@@ -486,12 +485,12 @@
   },
   "active": "c711c433c67f344f",
   "lastOpenFiles": [
+    "Linux/M1/Brut.md",
     "Presentation Theatre.md",
     "FYC/Présentation premier suivi.md",
     "FYC/Brut.md",
     "Outils.md",
     "Note TOEIC.md",
-    "Linux/M1/Brut.md",
     "Sans titre.md",
     "Commandes utiles.md",
     "Projet Annuel - M1/Document/SYSLOG & SIEM.md",
