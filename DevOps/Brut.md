@@ -182,3 +182,22 @@ healthcheck -> permet de surcharger le healthcheck présent dans l'image
 
 ```
 ```
+
+Gestion des volumes :
+Pour les volumes data, il faut déclarer sa création de la manière suivante
+```
+volumes:
+	postgres-data:
+```
+
+
+Gestion des déploiements
+Gestion des ressources:
+```YAML
+deploy:
+	ressources:
+		limits:
+			cpu: '0.5' # Alloue 50% d'un coeur du processeur
+			cpu-shares: ``
+			cpuser-cpus: '2' # Permet de spécifier le cpu à utiliser
+```
