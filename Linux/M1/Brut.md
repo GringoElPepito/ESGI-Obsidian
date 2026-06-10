@@ -525,11 +525,11 @@ L'option `next-server` permet de spécifier l'IP du server PXE (Pre Execution En
 # DNS
 Domain Name System permet de résoudre un domain/FQDN en adresse IP ou inversement
 
-| Enregistrement | Code IANA | RFC      | Statut | Signification | Fonction |
-| -------------- | --------- | -------- | ------ | ------------- | -------- |
-| A              | 1         | RFC 1035 | actif  | Address IPv4  |          |
-| AAAA           | 28        | RFC 3596 | actif  | Address IPv6  |          |
-|                |           |          |        |               |          |
+| Enregistrement | Code IANA | RFC      | Statut | Signification  | Fonction |
+| -------------- | --------- | -------- | ------ | -------------- | -------- |
+| A              | 1         | RFC 1035 | actif  | Address IPv4   |          |
+| AAAA           | 28        | RFC 3596 | actif  | Address IPv6   |          |
+| CNAME          |           |          |        | Canonical Name |          |
 
 Installer le service DNS sur Ubuntu :
 ```bash
@@ -580,4 +580,9 @@ zone "200.168.192.in-addr.arpa" {
         type master;
         file "/etc/bind/db.200.168.192";
 };
+```
+
+
+```bash
+host toto.esgi.fr
 ```
