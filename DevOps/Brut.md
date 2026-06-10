@@ -66,4 +66,7 @@ Placer les layers les plus susceptibles d'être modifiés à la fin et les moins
 
 Pour une image utilisé en environnement de DEV plutôt favorisé l'utilisation d'un volume pointant vers un dossier de la machine contenant le code de l'application permettant d'éviter un build de l'image à chaque modification du code.
 
-Choisir une image spécifique en X.Y.Z pour s'assurer d'avoir une version stable 
+Choisir une image spécifique en X.Y.Z pour s'assurer d'avoir une version stable
+
+## Build Multi-Stage
+Le multi-stage consiste à créer une ou plusieurs images intermédiaire permettant de fournir
