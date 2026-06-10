@@ -536,6 +536,20 @@ dossier de configuration de bind `/etc/bind`:
 - bind.keys -> Fichier permettant à des services externes (ex: DHCP) de s'authentifier auprès du serveur DNS pour ajouter des  enregistrements au sein de celui-ci
 - db.X -> Fichier contenant les enregistrements des zones inverses permettant de résoudre une IP en nom de domaine
 - db.{name} -> Fichier contenant les enregistrements des zones direct permettant de résoudre un nom de domaine en une IP
-```
 
+Fichier de zone
 ```
+$TTL  604800
+@  IN  SOA  localhost.  root.localhost. (
+	2 ;Serial -> correspond au numéro de version de la configuration DNS
+	604800 ;Refresh -> Reload automatique du service si pas fait à la main
+	86400 ;Retry -> 
+	2419200 ;Expire ->
+	604800 ;Negative Cache TTL
+)
+@ IN NS localhost.
+@ IN A  127.0.0.1
+@ IN AAAA ::1
+toto.esgi.fr IN A 192.168.120.220
+```
+Le serial sert notamment pour la synchronisation entre les serveurs DNS, pour cela tous les serveurs comparent leurs numéros de version (serial) et la configuration avec le serial il est important d'augmenter la valeur à chaque modification pour éviter qu'une configuration DNS moins à jour écrase celle comportant les dernières modifications
