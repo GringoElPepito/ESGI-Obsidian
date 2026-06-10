@@ -4,12 +4,16 @@
 Aujourd'hui on va vous apprendre à gérer votre première 10/10
 
 ## Qu'est-ce qu'une 10/10
-Une 10/10 est une personne remplissant parfaitement les critères d'attirances soit subjectivement soit objectivement.
+Une 10/10 est une personne remplissant parfaitement les critères d'attirances d'une personne définit.
 Pour évaluer la note d'une personne, il existe 2 méthodes de notations :
 - La note relative
 - La note absolue
+
 La note relative se base uniquement sur l'apparence de la personne noté, c'est par ailleurs la méthode de notation la plus utilisée sur les réseaux sociaux.
+
 La note absolue quand à elle se base sur l'apparence mais aussi sur la mentalité de la personne, c'est la métrique sur laquelle doivent se concentrer les personnes recherchant du sérieux.
+
+Dans les 2 cas, les critères de notations sont subjectifs et varie donc d'une personne à l'autre, alors même si certaines personnes peuvent avoir des avis désastreux, il faut savoir garder son calme et rester respectueux.
 
 ## Comment repérer les 10/10
 ### Les types de 10/10
