@@ -562,7 +562,7 @@ Pour faciliter la gestion des configurations de zones de recherches
 
 Fichier de configuration named.conf :
 ```
-
+include "/etc/bind/"
 ```
 
 Fichier de configuration named.conf.esgi.fr :
