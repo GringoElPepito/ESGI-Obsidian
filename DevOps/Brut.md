@@ -99,7 +99,27 @@ docker image prune
 # Docker Compose
 Docker compose est un orchestrateur
 Un orchestrateur est un gestionnaire de process (Systemd, Kubernetes, Docker-Swarm)
-
+Propriété de base d'un service dans Docker Compose :
+- image
+- build
+- volumes
+- restart
+- container_name: permet de remplacer le nom par défaut d'un conteneur, par défaut celui-ci prendra le nom suivant "<nom_du_dossier>_<nom_du_service>"
+- environment: permet de créer des variables d'environnement sur le format clé valeur au sein du conteneur
 ```yaml
-
+services:
+	user-service:
+		build: ./user-service
+		container_name: user-service
 ```
+
+```YAML
+services:
+	user-service:
+		build:
+			target:
+			context:
+			dockerfile:
+```
+
+Gestion des variables 
