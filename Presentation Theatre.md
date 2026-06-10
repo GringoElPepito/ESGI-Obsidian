@@ -1,7 +1,8 @@
 # Comment gérer sa ou son 10/10
 
 ## Intro
-Aujourd'hui on va vous apprendre à gérer votre première 10/10
+Aujourd'hui on va vous apprendre à gérer votre première 10/10. 
+Avant de commencer nous souhaitons réaliser un petit disclaimer 
 
 ## Qu'est-ce qu'une 10/10
 Une 10/10 est une personne remplissant parfaitement les critères d'attirances d'une personne définit.
@@ -17,6 +18,13 @@ Dans les 2 cas, les critères de notations sont subjectifs et varie donc d'une p
 
 ## Comment repérer les 10/10
 ### Les types de 10/10
+
+Ils existent différents types de 10/10 :
+- Asian Type Fine Shit
+- Snow Bunny
+- Latinas Papasito
+- Black Queen
+- Sand Bunny
 
 ## Le paradoxe de Rhô (à l'oral -> Paradoxe DoRo)
 Publié par le Docteur Chat Rhô (**ρ**) en 1967 {fait la gestuelle du 67}
@@ -37,7 +45,7 @@ Voici maintenant son équivalent masculin :
 {transition}
 10/10 attentionné > 10/10 musclé > 10/10 riche
 
-Si vous trouvez un 10/10, riche, musclé et attentionné, lâchez le dossier car il joue très certainement de la flûte
+Si vous trouvez un 10/10, riche, musclé et attentionné, lâchez le dossier car il joue très certainement de la flûte.
 
 ## Comment gérer sa 10/10
 Vous avez repérer votre sur 10/10, il est maintenant l'heure de passer à l'action
