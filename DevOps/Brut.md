@@ -89,3 +89,10 @@ Il est possible de réaliser le build d'une image spécifique en précisant le t
 docker build --target git -t gitimage:1.0 .
 ```
 
+Pas de build sur un Docker Compose de prod. En production on préférera utiliser un registry privé dans lequel sera assuré le versioning des images
+
+Supprimer les images intermédiaire :
+```bash
+docker image prune
+```
+
