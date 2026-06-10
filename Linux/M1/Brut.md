@@ -545,11 +545,11 @@ $TTL  604800
 	604800 ;Refresh -> Reload automatique du service si pas fait à la main
 	86400 ;Retry -> 
 	2419200 ;Expire ->
-	604800 ;Negative Cache TTL
+	604800 ;Negative Cache TTL ->
 )
 @ IN NS localhost.
 @ IN A  127.0.0.1
 @ IN AAAA ::1
 toto.esgi.fr IN A 192.168.120.220
 ```
-Le serial sert notamment pour la synchronisation entre les serveurs DNS, pour cela tous les serveurs comparent leurs numéros de version (serial) et la configuration avec le serial il est important d'augmenter la valeur à chaque modification pour éviter qu'une configuration DNS moins à jour écrase celle comportant les dernières modifications
+Le serial sert notamment pour la synchronisation entre les serveurs DNS, pour cela tous les serveurs comparent leurs numéros de version (serial) et la configuration avec le serial le plus élevé écrase les autres. il est important d'augmenter la valeur à chaque modification pour éviter qu'une configuration DNS moins à jour écrase celle comportant les dernières modifications
