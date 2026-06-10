@@ -69,11 +69,23 @@ Pour une image utilisé en environnement de DEV plutôt favorisé l'utilisation 
 Choisir une image spécifique en X.Y.Z pour s'assurer d'avoir une version stable
 
 ## Build Multi-Stage
-Le multi-stage consiste à créer une ou plusieurs images intermédiaire dans le but de préparer tous les éléments nécessaires aux fonctionnement de l'application et copier.
+Le multi-stage consiste à créer une ou plusieurs images intermédiaire dans le but de préparer tous les éléments nécessaires aux fonctionnement de l'application et copier le résultat dans une image finale allégé.
+
+Le multi-staging permet aussi de gérer les différences enter les différents environnement
 
 la target est le nom d'une image intermédiaire on le définit de la manière suivante :
 ```Dockerfile
 FROM apline:latest AS git
 ```
 Le nom suivant l'instruction `AS` est le nom de la target
+
+Il est d'ailleurs possible de réutiliser une des images intermédiaires comme une image de base :
+```Dockerfile
+FROM git AS builder
+```
+
+Il est possible de réaliser le build d'une image spécifique en précisant le target au lancement de la commande de build :
+```bash
+docker build --target git -t gitimage:1.0 .
+```
 
