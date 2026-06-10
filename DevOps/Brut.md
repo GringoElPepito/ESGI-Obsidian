@@ -201,3 +201,14 @@ deploy:
 			cpu-shares: ``
 			cpuser-cpus: '2' # Permet de spécifier le cpu à utiliser
 ```
+
+
+Pour ajouter un registry :
+```
+```
+
+Pour push une image sur un registry privé:
+```
+docker tag devimage:1.0 registry.private.com:5000/devimage:1.1
+docker push devimage:5000
+```
