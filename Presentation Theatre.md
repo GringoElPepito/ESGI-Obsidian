@@ -25,7 +25,6 @@ Ils existent différents types de 10/10 :
 - Latinas Papasito
 - Black Queen
 - Sand Bunny
-- 
 
 ## Le paradoxe de Rhô (à l'oral -> Paradoxe DoRo)
 Publié par le Docteur Chat Rhô (**ρ**) en 1967 {fait la gestuelle du 67}
