@@ -2,7 +2,7 @@
 
 ## Intro
 Aujourd'hui on va vous apprendre à gérer votre première 10/10. 
-Avant de commencer nous souhaitons réaliser un petit disclaimer 
+Avant de commencer nous souhaitons réaliser un petit disclaimer : Les propos qui vont suivre sont à but humoristique et ne sont pas à prendre au pied de la lettre, Merci de votre compréhension.
 
 ## Qu'est-ce qu'une 10/10
 Une 10/10 est une personne remplissant parfaitement les critères d'attirances d'une personne définit.
@@ -20,7 +20,7 @@ Dans les 2 cas, les critères de notations sont subjectifs et varie donc d'une p
 ### Les types de 10/10
 
 Ils existent différents types de 10/10 :
-- Asian Type Fine Shit
+- Asian Fine Shyt
 - Snow Bunny
 - Latinas Papasito
 - Black Queen
