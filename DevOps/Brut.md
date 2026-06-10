@@ -96,3 +96,10 @@ Supprimer les images intermédiaire :
 docker image prune
 ```
 
+# Docker Compose
+Docker compose est un orchestrateur
+Un orchestrateur est un gestionnaire de process (Systemd, Kubernetes, Docker-Swarm)
+
+```yaml
+
+```
