@@ -515,3 +515,5 @@ host myalap.esgi.fr {
 	fixed-address 10.66.133.110;
 }
 ```
+
+L'option `next-server` permet de spécifier l'IP du server PXE (Pre Execution Environment)
