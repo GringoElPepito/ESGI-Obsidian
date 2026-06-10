@@ -143,9 +143,42 @@ environment:
 ```
 
 Gestion des réseaux
-Par défaut docker compose cré
+Par défaut docker compose créer un réseau en le nommant de la manière suivante `<nom_du_dossier>_<nom_du_reseau>`, ce comportement peut être changé grâce à `external: true` qui permet d'utiliser le réseau déjà existant et d'empêcher l'exécution du docker compose si le réseau n'existe pas.
 ```YAML
 networks:
 	todo-network:
-		driver: 
+		driver: bridge
+		external: true
+```
+
+Il est possible de fixer des adresses sur les conteneurs :
+```
+networks:
+	to-network:
+		ipam:
+			
+```
+
+Les politiques :
+
+restart -> permet de gérer le redémarrage, il prend 3 valeurs possibles :
+- `always` -> redémarre le conteneur peu importe ce qu'il a arrêté
+- `on-abort` -> ne redémarre pas le service s'il a été arrêté manuellement
+- `on-failure` -> redémarre le conteneur si celui-ci tombe en erreur
+
+depends_on:
+
+```
+depends_on:
+  - postgres # Vérifie que postgres est running
+
+
+depends_on:
+	service: postgres # Vérifie que postgres est healthy
+	service_condition: service_healthy
+```
+
+healthcheck -> permet de surcharger le healthcheck présent dans l'image
+
+```
 ```
