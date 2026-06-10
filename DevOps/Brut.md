@@ -122,4 +122,30 @@ services:
 			dockerfile:
 ```
 
-Gestion des variables 
+Gestion des variables :
+Par défaut, docker-compose se base sur les variables présent dans le fichier `.env`, il est possible de changer cela grâce à la propriété `env_file`
+```yaml
+services:
+	user-service:
+		env_file: .env.prod
+```
+
+Les variables récupérées de puis le fichier d'environnement sont utilisable de la manière suivante: `${<nom_de_la_variable>`:
+```YAML
+environment:
+	POSTGRES_USER: ${POSTGRES_USER}
+```
+
+il est possible de définir une valeur par défaut dans le cas où une variable ne serait pas définit grâce à la syntaxe suivante `:-<valeur_par_defaut>`
+```YAML
+environment:
+	POSTGRES_USER: ${POSTGRES_USER:-user}
+```
+
+Gestion des réseaux
+Par défaut docker compose cré
+```YAML
+networks:
+	todo-network:
+		driver: 
+```
