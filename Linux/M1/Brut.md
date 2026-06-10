@@ -517,3 +517,13 @@ host myalap.esgi.fr {
 ```
 
 L'option `next-server` permet de spécifier l'IP du server PXE (Pre Execution Environment)
+
+# DNS
+Domain Name System permet de résoudre un domain/FQDN en adresse IP ou inversement
+
+
+| Enregistrement | Code IANA | RFC      | Statut | Signification | Fonction |
+| -------------- | --------- | -------- | ------ | ------------- | -------- |
+| A              | 1         | RFC 1035 | actif  | Address IPv4  |          |
+| AAAA           | 28        | RFC 3596 | actif  | Address IPv6  |          |
+|                |           |          |        |               |          |
