@@ -433,7 +433,7 @@ PAM propose 4 types d'authentification :
 - Mécanique account fournit une seule primitive : il vérifie si le compte demandé est disponible (si le compte n'est pas arrivé à expiration, si l'est autorisé à ce connecter à cette heure de la journée)
 - Le mécanisme auth fournit deux primitive : il assure l'authentification réelle, éventuellement en demandant et en vérifiant un mot de passe,  et il définit des "certificats d'identité" tels que l'appartenance à un groupe ou des "tickets" kerberos
 - Le mécanisme password fournit une seule primitive : il permet de mettre à jour le jeton d'authentification (en général un mot de passe), soit qu'il a expiré, soit parce que l'utilisateur souhaite le modifier
-- Le mécanisme session fournit deux primitives :
+- Le mécanisme session fournit deux primitives : mise en place et fermeture de la session. Il est activé une fois qu'un utilisateur a été autorisé afin de lui permettre d'utiliser son compte. Il lui fournit certaines ressources et certains services, par exemple en montant son répertoire personnel, en rendant sa boîte aux lettres disponible, en lançant un agent ssh.
 
 
 PAM permet d'utiliser des stratégies :
@@ -443,7 +443,9 @@ PAM permet d'utiliser des stratégies :
 - sufficient : s'il réussit et qu'il n'y a pas de required en échec, le traitement s'arrête là. Le reste de la pile n'est alors pas traité
 
 
-
+```
+service stratégie module arguments
+```
 
 Exemple d'une ligne :
 ```bash
@@ -455,8 +457,10 @@ Description de la ligne :
 - `pam_pwquality.so` module 
 - `retry=3` option du module
 
+Le fichiers de configuration de PAM sont contenu dans le dossier `/etc/pam.d` :
+- 
 
-Les fichier PAM se trouve dans `/etc/security` :
+Les modules PAM se trouve dans `/etc/security` :
 - `access.conf`
 - `capability.conf`
 - `faillock.conf`
@@ -537,7 +541,7 @@ dossier de configuration de bind `/etc/bind`:
 - db.X -> Fichier contenant les enregistrements des zones inverses permettant de résoudre une IP en nom de domaine
 - db.{name} -> Fichier contenant les enregistrements des zones direct permettant de résoudre un nom de domaine en une IP
 
-Fichier de zone
+Fichier de zone `db.esgi.fr`
 ```
 $TTL  604800
 @  IN  SOA  localhost.  root.localhost. (
@@ -553,3 +557,27 @@ $TTL  604800
 toto.esgi.fr IN A 192.168.120.220
 ```
 Le serial sert notamment pour la synchronisation entre les serveurs DNS, pour cela tous les serveurs comparent leurs numéros de version (serial) et la configuration avec le serial le plus élevé écrase les autres. il est important d'augmenter la valeur à chaque modification pour éviter qu'une configuration DNS moins à jour écrase celle comportant les dernières modifications
+
+Pour faciliter la gestion des configurations de zones de recherches
+
+Fichier de configuration named.conf :
+```
+
+```
+
+Fichier de configuration named.conf.esgi.fr :
+```
+//
+// Do any esgi.fr domain configuration here
+//
+
+zone "esgi.fr" {
+        type master;
+        file "/etc/bind/db.esgi.fr";
+};
+
+zone "200.168.192.in-addr.arpa" {
+        type master;
+        file "/etc/bind/db.200.168.192";
+};
+```
