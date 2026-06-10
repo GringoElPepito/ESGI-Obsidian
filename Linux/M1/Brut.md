@@ -582,7 +582,7 @@ zone "200.168.192.in-addr.arpa" {
 };
 ```
 
-
+Tester les enregsitrements DNS :
 ```bash
-host toto.esgi.fr
+host toto.esgi.fr 127.0.0.1
 ```
