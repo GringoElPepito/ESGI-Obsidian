@@ -24,6 +24,8 @@ A partir de maintenant il faut s'accrocher, Voici la représentation de ce parad
 {transition}
 10/10 rousse > 10/10 brune > 10/10 blonde
 
+Cette échelle représente la réalité et nous sommes fermés au débat
+
 Voici maintenant son équivalent masculin :
 5/10 riche > 5/10 attentionné > 5/10 musclé
 {transition}
