@@ -114,3 +114,28 @@ Principe du moindre privilège est fondamental : donner uniquement les droits st
 JEA en powershell
 
 Journalisation et détection
+
+# IDS/IPS
+
+Bonne pratique pour optimisation IDS en détection et IPS en prévention uniquement en se basant sur les résultats de l'IDS
+
+NIDS -> Network IDS
+HIDS -> Host IDS
+
+Méthodes de détection :
+- Détection par signatures
+	- Compare les paquets à une base de données d'attaques connues
+	- Similaire à un antivirus
+	- Avantage : rapide, peu de faux positifs
+	- Inconvénient : inefficace contre les attaques inconnues (Zero-Day)
+- Détection par anomalies
+	- Crée un modèle de comportement "normal" du réseau
+	- Détecte les écarts significatifs
+	- Avantage : Détecte les attaques nouvelles
+	- Inconvénient : Taux de faux positifs élevé, nécessite un apprentissage
+	- En train d'exploser avec l'IA
+- Détection comportementale / heuristique
+	- Principe de l'analyse heuristique : repérer des comportements suspects et les bloqués, cependant génère beaucoup de faux positif
+	- Analyse le comportement global d'un utilisateur, d'une machine ou d'un protocole
+
+- Placement rés
