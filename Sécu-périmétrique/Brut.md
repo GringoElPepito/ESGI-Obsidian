@@ -138,4 +138,11 @@ Méthodes de détection :
 	- Principe de l'analyse heuristique : repérer des comportements suspects et les bloqués, cependant génère beaucoup de faux positif
 	- Analyse le comportement global d'un utilisateur, d'une machine ou d'un protocole
 
-- Placement rés
+- Placement réseau
+	- En ligne (inline) : trafic passe à travers l'IPS -> possibilité de bloquer
+	- En écoute (passive) : IDS observe le trafic via un port miroir -> pas de blocage, uniquement détection
+- Composants typiques
+	- Capteurs : capturent les paquets réseau
+	- Serveur d'analyse : exécute les règles de détection
+	- Console de gestion : interface pour les alertes, configuration, statistiques
+	- Base de signatures/ règles : patterns connus d'attaques
