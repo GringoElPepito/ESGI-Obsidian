@@ -212,3 +212,7 @@ Pour push une image sur un registry privé:
 docker tag devimage:1.0 registry.private.com:5000/devimage:1.1
 docker push devimage:5000
 ```
+
+Pipeline commune multi-environnement
+Maxer sécu
+Doc final + pres
