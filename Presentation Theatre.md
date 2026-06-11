@@ -1,18 +1,30 @@
 # Comment gérer sa ou son 10/10
 
 ## Intro
-Aujourd'hui on va vous apprendre à gérer votre première 10/10
+Aujourd'hui on va vous apprendre à gérer votre première 10/10. 
+Avant de commencer nous souhaitons réaliser un petit disclaimer : Les propos qui vont suivre sont à but humoristique et ne sont pas à prendre au pied de la lettre, Merci de votre compréhension.
 
 ## Qu'est-ce qu'une 10/10
-Une 10/10 est une personne remplissant parfaitement les critères d'attirances soit subjectivement soit objectivement.
+Une 10/10 est une personne remplissant parfaitement les critères d'attirances d'une personne définit.
 Pour évaluer la note d'une personne, il existe 2 méthodes de notations :
 - La note relative
 - La note absolue
+
 La note relative se base uniquement sur l'apparence de la personne noté, c'est par ailleurs la méthode de notation la plus utilisée sur les réseaux sociaux.
+
 La note absolue quand à elle se base sur l'apparence mais aussi sur la mentalité de la personne, c'est la métrique sur laquelle doivent se concentrer les personnes recherchant du sérieux.
+
+Dans les 2 cas, les critères de notations sont subjectifs et varie donc d'une personne à l'autre, alors même si certaines personnes peuvent avoir des avis désastreux, il faut savoir garder son calme et rester respectueux.
 
 ## Comment repérer les 10/10
 ### Les types de 10/10
+
+Ils existent différents types de 10/10 :
+- Asian Fine Shyt
+- Snow Bunny
+- Latinas Papasito
+- Black Queen
+- Sand Bunny
 
 ## Le paradoxe de Rhô (à l'oral -> Paradoxe DoRo)
 Publié par le Docteur Chat Rhô (**ρ**) en 1967 {fait la gestuelle du 67}
@@ -24,6 +36,8 @@ A partir de maintenant il faut s'accrocher, Voici la représentation de ce parad
 {transition}
 10/10 rousse > 10/10 brune > 10/10 blonde
 
+Cette échelle représente la réalité et nous sommes fermés au débat
+
 Voici maintenant son équivalent masculin :
 5/10 riche > 5/10 attentionné > 5/10 musclé
 {transition}
@@ -31,7 +45,7 @@ Voici maintenant son équivalent masculin :
 {transition}
 10/10 attentionné > 10/10 musclé > 10/10 riche
 
-Si vous trouvez un 10/10, riche, musclé et attentionné, lâchez le dossier car il joue très certainement de la flûte
+Si vous trouvez un 10/10, riche, musclé et attentionné, lâchez le dossier car il joue très certainement de la flûte.
 
 ## Comment gérer sa 10/10
 Vous avez repérer votre sur 10/10, il est maintenant l'heure de passer à l'action
