@@ -327,12 +327,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Sans titre 1.md",
+                "file": "Projet Annuel - M1/Suivi PA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sans titre 1"
+              "title": "Suivi PA"
             }
           }
         ],
@@ -485,8 +485,10 @@
   },
   "active": "c711c433c67f344f",
   "lastOpenFiles": [
-    "TOEIC.md",
+    "Projet Annuel - M1/Sans titre.md",
+    "Projet Annuel - M1/Suivi PA.md",
     "Projet Annuel - M1/Sans titre 1.md",
+    "TOEIC.md",
     "Presentation Theatre.md",
     "Sans titre 1.md",
     "DevOps/Brut.md",
@@ -512,8 +514,6 @@
     "Projet Annuel - M1/Brut.md",
     "Projet Annuel - M1/Cahier des charges.md",
     "Projet Annuel - M1/Contexte.md",
-    "Projet Annuel - M1/Liste Technos.md",
-    "Projet Annuel - M1/Note.md",
     "attachments/Pasted image 20260519145031.png",
     "DevOps",
     "Haute Dispo",
