@@ -26,6 +26,7 @@
 - Système
 	- [ ] Wazuh - Configuration Alerte
 	- [ ] Rsyslog - Installation Agent Wazuh
-	- [ ] 
+	- [ ] Zabbix - Tout
 	- [ ] Proxmox Backup Server - Tout
+	- [ ] 
 - Cloud
