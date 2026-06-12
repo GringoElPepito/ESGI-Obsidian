@@ -327,12 +327,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TOEIC.md",
+                "file": "Projet Annuel - M1/Sans titre 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TOEIC"
+              "title": "Sans titre 1"
             }
           }
         ],
@@ -485,6 +485,8 @@
   },
   "active": "c711c433c67f344f",
   "lastOpenFiles": [
+    "TOEIC.md",
+    "Projet Annuel - M1/Sans titre 1.md",
     "Presentation Theatre.md",
     "Sans titre 1.md",
     "DevOps/Brut.md",
@@ -512,8 +514,6 @@
     "Projet Annuel - M1/Contexte.md",
     "Projet Annuel - M1/Liste Technos.md",
     "Projet Annuel - M1/Note.md",
-    "Projet Annuel - M1/Projet annuel.md",
-    "Projet Annuel - M1/Sans titre.md",
     "attachments/Pasted image 20260519145031.png",
     "DevOps",
     "Haute Dispo",
