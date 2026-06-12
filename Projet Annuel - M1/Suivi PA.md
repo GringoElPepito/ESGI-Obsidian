@@ -22,7 +22,10 @@
 	- [ ] STP - test
 	- [ ] IPSec GRE
 	- [ ] Configuration Firewall Interne
-	- [ ] Configuration Firewall
+	- [ ] Configuration Firewall Externe
 - Système
-	- [ ] Proxmox Backup Server
+	- [ ] Wazuh - Configuration Alerte
+	- [ ] Rsyslog - Installation Agent Wazuh
+	- [ ] 
+	- [ ] Proxmox Backup Server - Tout
 - Cloud
