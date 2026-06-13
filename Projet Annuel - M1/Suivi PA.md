@@ -30,3 +30,29 @@
 	- [ ] Proxmox Backup Server - Tout
 	- [ ] 
 - Cloud
+
+
+
+# Compte rendu séance suivi 
+Pour soutenance:
+- Rajouter contexte existant et vendre le projet avec les problemes de l'entreprise et ce qu'on propose pour resoudre ces problèmes
+- Faire une bonne demo pour scénarios avec scripts python déclenchant attaque et interfacer twilio paging etc
+- Zabbix justificatifions de non utilisation de proxy (Chaque site se gère lui-même)
+
+Pour le schéma d'architecture:
+
+- Siem en haut et fleche sort du siem + ajouté serveur Rsyslog
+- Zabbix en haut
+- Mettre en place une vue hiérarchique et horizontal
+
+Location Serveur + Cloud :
+- Hetzner faire raid 1 pcq leur stockage pète souvent 
+- Offre elastic scaleway, bare metal tarif à l'utilisation donc moins cher 
+- Apply partie startup progamme sur aws pourr 1000€ de crédit 
+
+Réseau :
+- Bien régler mtu mss pour gre ipsec 
+
+Infra :
+- Remplacement de MailCow par Poste.io 
+- Ajout Stockage cloud pour justification 
