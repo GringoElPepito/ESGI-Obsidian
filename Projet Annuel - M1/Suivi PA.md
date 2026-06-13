@@ -33,7 +33,7 @@
 
 
 
-# Compte rendu séance suivi 
+# Compte rendu séance suivi PA
 Pour soutenance:
 - Rajouter contexte existant et vendre le projet avec les problemes de l'entreprise et ce qu'on propose pour resoudre ces problèmes
 - Faire une bonne demo pour scénarios avec scripts python déclenchant attaque et interfacer twilio paging etc
@@ -55,4 +55,4 @@ Réseau :
 
 Infra :
 - Remplacement de MailCow par Poste.io 
-- Ajout Stockage cloud pour justification 
+- Ajout Stockage cloud pour justification lien VPN intersite
