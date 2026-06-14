@@ -341,12 +341,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Suivi PA.md",
+                "file": "Projet Annuel - M2/Item to integrate.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Suivi PA"
+              "title": "Item to integrate"
             }
           }
         ],
@@ -499,8 +499,10 @@
   },
   "active": "78474d04e5746624",
   "lastOpenFiles": [
-    "Sécu-périmétrique/Brut.md",
     "Projet Annuel - M1/Suivi PA.md",
+    "Projet Annuel - M2/Item to integrate.md",
+    "Projet Annuel - M2",
+    "Sécu-périmétrique/Brut.md",
     "Sans titre 1.md",
     "DevOps/Brut.md",
     "Linux/M1/Brut.md",
@@ -527,7 +529,6 @@
     "Projet Annuel - M1/Cahier des charges.md",
     "Projet Annuel - M1/Contexte.md",
     "Projet Annuel - M1/Liste Technos.md",
-    "Projet Annuel - M1/Note.md",
     "attachments/Pasted image 20260519145031.png",
     "DevOps",
     "Haute Dispo",
@@ -535,7 +536,6 @@
     "Ansible",
     "API",
     "Projet Annuel - M1/Infrastructure/Virtualisation",
-    "Projet Annuel - M1/Infrastructure/Réseau",
     "attachments/Pasted image 20251124114936.png",
     "attachments/Pasted image 20251124105553.png",
     "attachments/Pasted image 20251124103355.png",
