@@ -4,7 +4,7 @@ find /etc/wazuh-indexer -type f -exec grep -H "O=Wazuh" {} \;
 ```
 
 ```bash
-find / -type d -name ISO
+find / -type d -name pip
 ```
 
 Scanner les disques :
