@@ -1,6 +1,6 @@
 Rechercher des fichiers via le contenu :
 ```bash
-find /etc/wazuh-indexer -type f -exec grep -H "O=Wazuh" {} \; 
+find / -type f -exec grep -H "ansible@pbs!ansible" {} \; 
 ```
 
 ```bash
