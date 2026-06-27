@@ -355,12 +355,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Installation/Proxmox/Proxmox iscsi.md",
+                "file": "Projet Annuel - M1/Installation/Proxmox/Proxmox Backup Server.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Proxmox iscsi"
+              "title": "Proxmox Backup Server"
             }
           }
         ],
@@ -513,10 +513,11 @@
   },
   "active": "1d128eac1daedb34",
   "lastOpenFiles": [
+    "Projet Annuel - M1/Installation/Proxmox/Proxmox iscsi.md",
+    "Projet Annuel - M1/Installation/Proxmox/Proxmox Backup Server.md",
     "Projet Annuel - M1/ToDo Perso.md",
     "Commandes utiles.md",
     "Projet Annuel - M1/Installation/Proxmox/Proxmox Setup.md",
-    "Projet Annuel - M1/Installation/Proxmox/Proxmox iscsi.md",
     "Projet Annuel - M1/Installation/Proxmox",
     "Projet Annuel - M1/Installation/Proxmox/Proxmox Ceph.md",
     "Sans titre 2.md",
@@ -541,7 +542,6 @@
     "Haute Dispo/Sans titre.md",
     "Projet Annuel - M1/Document/CA.md",
     "FYC",
-    "Projet Annuel - M1/Installation/CA.md",
     "Projet Annuel - M1/Document/Sans titre",
     "Powershell",
     "attachments/Pasted image 20260519145031.png",
