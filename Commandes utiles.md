@@ -22,3 +22,8 @@ vérifier conf HAProxy :
 haproxy -c -V -f /etc/haproxy/haproxy.cfg
 /usr/sbin/haproxy -Ws -f /etc/haproxy/haproxy.cfg -f /etc/haproxy/
 ```
+
+Lister les services en échec
+```bash
+`systemctl list-units --failed`
+```
