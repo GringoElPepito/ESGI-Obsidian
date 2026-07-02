@@ -4,7 +4,7 @@ find / -type f -exec grep -H "ansible@pbs!ansible" {} \;
 ```
 
 ```bash
-find / -type d -name pip
+find / -type d -name zabbix.conf.php
 ```
 
 Scanner les disques :
