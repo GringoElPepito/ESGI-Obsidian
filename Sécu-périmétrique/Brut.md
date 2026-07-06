@@ -169,3 +169,5 @@ on donne le minimum nécessaire, pas plus :
 - accès temporaires
 - séparation admin / utilisateur
 - réaction automatique possible (bloquer, re-authentifier, isoler)
+
+# Les bastions
