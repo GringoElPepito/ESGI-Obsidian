@@ -146,3 +146,19 @@ Méthodes de détection :
 	- Serveur d'analyse : exécute les règles de détection
 	- Console de gestion : interface pour les alertes, configuration, statistiques
 	- Base de signatures/ règles : patterns connus d'attaques
+
+# Zero-Trust
+Modèle de cybersécurité qui part d'une idée simple :
+- aucune confiance implicite n'est accordée, même à l'intérieur du réseau
+- On résume souvent ça par : "Never trust, always verify"
+
+Pourquoi ce modèle est né :
+- Le modèle périmétrique classique supposait :
+	- dehors = dangereux -> on filtre fort (firewall, VPN)
+	- dedans = confiance -> on laisse circuler
+
+Sauf qu'aujourd'hui :
+- télétravail, cloud, Saas, mobiles, BYOD, IoT
+- attaques par phishing puis déplacement latéral -> le périmètre n'est plus fiable
+- Zero Trust répond à ça en disant :
+	- "Être dans le réseau ne veut plus dire être fiable"
