@@ -162,3 +162,10 @@ Sauf qu'aujourd'hui :
 - attaques par phishing puis déplacement latéral -> le périmètre n'est plus fiable
 - Zero Trust répond à ça en disant :
 	- "Être dans le réseau ne veut plus dire être fiable"
+
+On pratique le moindre privilège
+on donne le minimum nécessaire, pas plus :
+- droits limités
+- accès temporaires
+- séparation admin / utilisateur
+- réaction automatique possible (bloquer, re-authentifier, isoler)
