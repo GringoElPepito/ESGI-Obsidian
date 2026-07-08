@@ -61,4 +61,7 @@ Infra :
 
 
 # RETOUR PA 
-CENEXIS
+Rendu 1 :
+- Annexe pour les parties connaissances pure
+- Méthode AGILE reformulé le texte
+- Cloud a pousser pipeline avec schema
