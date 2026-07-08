@@ -67,3 +67,8 @@ Rendu 1 :
 - Cloud a pousser pipeline avec schéma - ajouter coût au devis.
 - Continuer d'avancer
 - Automatiser création pipeline
+
+Penser les scénarios :
+- Création d'un nouvel utilisateur alerte acknowledge
+- Brute force alerte par mail
+- Scénario de restauration de backup avec chrono pour temps de reprise
