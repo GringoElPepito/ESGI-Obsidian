@@ -63,5 +63,7 @@ Infra :
 # RETOUR PA 
 Rendu 1 :
 - Annexe pour les parties connaissances pure
-- Méthode AGILE reformulé le texte
-- Cloud a pousser pipeline avec schema
+- Méthode AGILE reformulé le texte pour éviter copier-coller
+- Cloud a pousser pipeline avec schéma - ajouter coût au devis.
+- Continuer d'avancer
+- Automatiser création pipeline
