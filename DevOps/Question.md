@@ -1,0 +1,2 @@
+- Gitlab obligatoire ?
+- Self-Hosted OK ou obligatoirement en cloud ?
