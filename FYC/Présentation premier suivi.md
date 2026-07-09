@@ -56,7 +56,6 @@ Liste des sources :
 	- [Cocadmin](https://www.youtube.com/@cocadmin)
 	- [NetworkChuck](https://www.youtube.com/@NetworkChuck)
 	- [TechWorld With Nana](https://www.youtube.com/@TechWorldwithNana)
-
 - Conférence
 	- [FRnOG](https://www.frnog.org/?page=meetings&lang=en)
 
