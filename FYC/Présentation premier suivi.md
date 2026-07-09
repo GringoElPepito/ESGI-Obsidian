@@ -24,7 +24,9 @@ Question à poser :
 	1. Comment exposer les services de manière performantes
 	2. Gérer la haute disponibilité
 6. Virtualisation/Conteneurisation
-7. Autonomisation -> L'intérêt de l'automatisation et sa mise en place
+7. Autonomisation
+	1. L'intérêt de l'automatisation
+	2. Les automatisations à prioriser
 8. Serverless -> Orchestration
 9. Mis en prod
 
