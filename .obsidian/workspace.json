@@ -327,12 +327,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FYC/Présentation premier suivi.md",
+                "file": "FYC/Séance suivi 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Présentation premier suivi"
+              "title": "Séance suivi 1"
             }
           }
         ],
@@ -393,8 +393,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "4657410d733d48a7",
@@ -486,6 +485,8 @@
   },
   "active": "c711c433c67f344f",
   "lastOpenFiles": [
+    "FYC/Présentation premier suivi.md",
+    "FYC/Séance suivi 1.md",
     "FYC/Sans titre.md",
     "Projet Annuel - M1/Suivi PA.md",
     "DevOps/Question.md",
@@ -506,14 +507,12 @@
     "Sans titre 1.md",
     "DevOps/Brut.md",
     "Linux/M1/Brut.md",
-    "FYC/Présentation premier suivi.md",
     "FYC/Brut.md",
     "Outils.md",
     "Note TOEIC.md",
     "Sans titre.md",
     "Commandes utiles.md",
     "Projet Annuel - M1/Document/SYSLOG & SIEM.md",
-    "Haute Dispo/Sans titre.md",
     "FYC",
     "Projet Annuel - M1/Document/Sans titre",
     "Powershell",
