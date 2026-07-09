@@ -14,7 +14,7 @@ Question à poser :
 
 - - - - 
 1. Intro et Pres
-2. Qu'est-ce que le cloud
+2. Qu'est-ce que le cloud ?
 3. Définition du besoin
 4. Hardware
 	1. Où stocké sont hardware ?
@@ -28,8 +28,7 @@ Question à poser :
 7. Autonomisation
 	1. L'intérêt de l'automatisation
 	2. Comment automatiser
-8. Serverless -> Orchestration
-9. Mis en prod
+8. Mis en prod
 
 # Portfolio
 Liste des sources :
