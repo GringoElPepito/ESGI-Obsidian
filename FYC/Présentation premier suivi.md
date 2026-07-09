@@ -16,8 +16,8 @@ Question à poser :
 1. Intro et Pres
 2. Qu'est-ce que le cloud
 3. Hardware -> Comment choisir l'hardware en fonction du besoin
-4. Réseau -> Comment mettre à disposition
-5. Virtualisation/Conteneurisation -> 
+4. Réseau -> Comment exposer les services de manière performantes et sécurisé
+5. Virtualisation/Conteneurisation ->  
 6. Autonomisation -> L'intérêt de l'automatisation et sa mise en place
 7. Serverless -> Orchestration
 8. Mis en prod
