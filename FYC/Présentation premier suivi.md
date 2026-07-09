@@ -15,12 +15,18 @@ Question à poser :
 - - - - 
 1. Intro et Pres
 2. Qu'est-ce que le cloud
-3. Hardware -> Comment choisir l'hardware en fonction du besoin
-4. Réseau -> Comment exposer les services de manière performantes et sécurisé
-5. Virtualisation/Conteneurisation ->  
-6. Autonomisation -> L'intérêt de l'automatisation et sa mise en place
-7. Serverless -> Orchestration
-8. Mis en prod
+3. Définition du besoin
+4. Hardware
+	1. Où stocké sont hardware ?
+	2. Comment choisir l'hardware en fonction du besoin ?
+	3. Gérer le scaling
+5. Réseau 
+	1. Comment exposer les services de manière performantes
+	2. Gérer la haute disponibilité
+6. Virtualisation/Conteneurisation ->  
+7. Autonomisation -> L'intérêt de l'automatisation et sa mise en place
+8. Serverless -> Orchestration
+9. Mis en prod
 
 # Portfolio
 Liste des sources :
