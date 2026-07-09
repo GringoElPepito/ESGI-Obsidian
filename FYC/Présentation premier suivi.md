@@ -12,13 +12,13 @@ Question à poser :
 5. mis à disposition du service
 
 
--
+- - - - 
 1. Intro et Pres
 2. Qu'est-ce que le cloud
-3. Hardware
-4. Réseau
-5. Virtualisation
-6. Autonomisation
+3. Hardware -> Comment choisir l'hardware en fonction du besoin
+4. Réseau -> Comment mettre à disposition
+5. Virtualisation/Conteneurisation -> 
+6. Autonomisation -> L'intérêt de l'automatisation et sa mise en place
 7. Serverless -> Orchestration
 8. Mis en prod
 
