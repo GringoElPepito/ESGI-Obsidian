@@ -24,7 +24,8 @@ Question à poser :
 	1. Comment exposer les services de manière performantes
 	2. Gérer la haute disponibilité
 6. Virtualisation/Conteneurisation
-	1. 
+	1. Conteneurisation ou VM
+	2. Pourquoi combiner les 2
 7. Autonomisation
 	1. L'intérêt de l'automatisation
 	2. Comment automatiser
