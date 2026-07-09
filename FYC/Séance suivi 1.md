@@ -1,0 +1,1 @@
+Gros plan sur la partie vidéo
