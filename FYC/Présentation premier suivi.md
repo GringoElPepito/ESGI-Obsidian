@@ -17,7 +17,7 @@ Question à poser :
 2. Qu'est-ce que le cloud ?
 3. Définition du besoin
 4. Hardware
-	1. Où stocké sont hardware ?
+	1. Où stocker son hardware ?
 	2. Comment choisir l'hardware en fonction du besoin ?
 	3. Gérer le scaling
 5. Réseau 
@@ -25,7 +25,7 @@ Question à poser :
 	2. Gérer la haute disponibilité
 6. Virtualisation/Conteneurisation
 	1. Conteneurisation ou VM
-	2. Pourquoi combiner les 2
+	2. Pourquoi combiner les 2 (transition vers microvm)
 7. Autonomisation
 	1. L'intérêt de l'automatisation
 	2. Comment automatiser
