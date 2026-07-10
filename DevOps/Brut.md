@@ -315,10 +315,22 @@ Il existe différent mode de visibilité :
 - Masked -> Masqué dans les jobs mais peut être limité (certains caractère spéciaux non-utilisable)
 - Masked and Hidden
 
-Il existe pl
+Il existe plusieurs options :
+- Protectet variable -> Permet d'utiliser une variable uniquement dans une
+- Expand variable reference -> Permet d'utiliser des variables dans la déclaration d'un secret
 
 Astuce pour passer une clé ssh dans si besoin que tous les secrets soient en masked :
 - Suppression des sauts de lignes, encodage en base 64  : `cat id_rsa | tr -d "/n" . | base64`
 - On enregistre le résultat dans une variable GitLab
 - On décode la variable et on l'enregistre dans un fichier : `echo $VAR | base64 -d > id_rsa`
+- Modification des droits sur la clé `chmod 400 id_rsa`
+
+Lorsqu'on met une clé SSH en mode file ou variable, il faut ajouter un saut de ligne à la fin sinon ne fonctionne pas.
+
+OpenBao -> Gestionnaire de Secret
+
+
+Les variables GitLab sont utilisables dans n'importe quel fichier YAML présent sur le Repo.
+
+Charbonner la partie environnement
 
