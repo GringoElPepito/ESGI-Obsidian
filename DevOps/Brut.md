@@ -416,6 +416,7 @@ Possibilité d'avoir un cache global
 Les artifacts ne sont pas stockés sur les runners mais sur le serveur gitlab, avec une durée de vie de 30 jours par défaut (modifiable).
 
 à configurer dans un job
+la propriété needs permet de faire un depends_on et permet de récupérer les différents artefacts générés dans le job précédent.
 ex:
 ```YAML
 artifacts:
@@ -423,4 +424,13 @@ artifacts:
 		- install.log
 	reports:
 		dependency_scanning: install_auth.log
+	needs:
+	
 ```
+
+options des artefacts :
+- `expose_as` : permet de changer le nom
+- `expire_in` : Date de conservation des artifacts
+- `when` : permet de récupérer le artifact de manière conditionnel
+- `public` :  
+- `untracked` : permet de bypass le `.gitignore`
