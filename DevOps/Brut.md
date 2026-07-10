@@ -410,3 +410,17 @@ cache:
 		files: package-lock.json
 	prefix: auth
 ```
+
+Possibilité d'avoir un cache global
+
+Les artifacts ne sont pas stockés sur les runners mais sur le serveur gitlab, avec une durée de vie de 30 jours par défaut (modifiable).
+
+à configurer dans un job
+ex:
+```YAML
+artifacts:
+	path:
+		- install.log
+	reports:
+		dependency_scanning: install_auth.log
+```
