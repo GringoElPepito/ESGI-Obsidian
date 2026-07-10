@@ -277,12 +277,41 @@ Il est important de variabiliser, gérer le cache et les artéfacts.
 
 Ils existent 2 types de variables sur GitLab :
 - variable
-- secret
+- secret, 
 
-Les variables classiques peuvent être directement déclaré directement dans le fichier `.gitlab-ci.yml` :
+
+Les variables classiques peuvent être directement déclaré directement dans le fichier `.gitlab-ci.yml`.
+Surcharge de variable :
 ```YAML
 image: 
 
 variables:
-	APP: 
+	APP: nom_de_mon_app
+	
+job1:
+	variables:
+		APP: nouveau_nom_de_mon_app
 ```
+
+Gitlab pré-défini certaines variables :
+```
+$CI_COMMIT_BRANCH -> nom de la branche courante
+$CI_COMMIT_SHA -> hash complet du commit
+$CI_COMMIT_SHORT_SHA -> hash raccourci du commit
+$CI_COMMIT_REF_SLUG
+$CI_COMMIT_TAG
+
+$CI_PIPELINE_SOURCE
+$CI_PROJECT_NAME
+$CI_DEFAULT_BRANCH
+```
+
+Il existe plusieurs types de secret :
+- variable -> 
+- file -> 
+
+Il existe différent mode de visibilité :
+- Visible -> Peut être visible dans les jobs
+- Masked -> Masqué dans les jobs mais peut être limité (certains caractère spéciaux non-utilisable)
+
+Astuce pour passer une clé ssh dans si besoin que tous les secrets soient en masked :
