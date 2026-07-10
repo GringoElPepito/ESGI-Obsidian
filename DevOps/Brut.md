@@ -222,4 +222,36 @@ Doc final + pres
 Coutinuous Delivery -> Le déploiement final se fait via un push button demandant une validation manuelle
 Continuous Deployment -> L'entierté du déploiement est automatisé
 
-Le fichier de base est `.gitlab-ci.yml`
+Le but de la pipeline est de 
+
+Le fichier de base est `.gitlab-ci.yml`  ex :
+```YAML
+image: alpine:latest
+
+stages:
+	- build
+	- test
+	- deploy
+
+build_job:
+	stage: build
+	script:
+		- echo "Construction de l'application"
+		- echo "Remplacer par -> npm run build / mvn package / make..."
+		  
+test_job:
+	stage: test
+	script:
+		- echo "Exécution des tests..."
+		- echo "Remplacer par -> pytest / jest / phpunit.."
+```
+
+Les stages sont exécutés de manière séquentiels
+Les jobs sont exécutés de manière parallèles
+
+Pour exécuter les différents jobs, Gitlab fait appel à un Runner
+
+Gitflow correspond à la manière dont les branches sont gérés
+
+Règle d'une bonne pipeline :
+- Le fichier de pipeline doit être identique pour toutes les branches, il faut donc réussir à mutualiser les pré-requis des différentes branches (environnement) dans un seul fichier. Pour cela, on utilisera des conditions permettant d'exécuter certains jobs 
