@@ -216,3 +216,10 @@ docker push devimage:5000
 Pipeline commune multi-environnement
 Maxer sécu
 Doc final + pres
+
+## Pipeline
+
+Coutinuous Delivery -> Le déploiement final se fait via un push button demandant une validation manuelle
+Continuous Deployment -> L'entierté du déploiement est automatisé
+
+Le fichier de base est `.gitlab-ci.yml`
