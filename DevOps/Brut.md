@@ -265,3 +265,24 @@ Instruction de pipeline :
 - `after_script` -> Permet d'exécuter du code après la commande script, en cas d'erreur la pipeline ne failera pas. Etape de sauvegarde ou de clean.
 
 On déclenchera la pipeline généralement à la suite d'un commit sur une branche spécifique
+
+Les runners fonctionnent sur une instance virtualisé (VM). Une VM peut contenir plusieurs instance de runner, pour notamment fonctionner par utilisateur.
+Les runners ont besoin d'un exécutor les principaux sont :
+- Docker -> Démarre le script sous l'image qui lui a été donnée
+- Shell -> Démarre le script directement sur la VM 
+
+Pipeline Editor affiche les erreurs de syntaxe du fichier de pipeline.
+
+Il est important de variabiliser, gérer le cache et les artéfacts.
+
+Ils existent 2 types de variables sur GitLab :
+- variable
+- secret
+
+Les variables classiques peuvent être directement déclaré directement dans le fichier `.gitlab-ci.yml` :
+```YAML
+image: 
+
+variables:
+	APP: 
+```
