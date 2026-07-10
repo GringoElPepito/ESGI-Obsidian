@@ -313,5 +313,12 @@ Il existe plusieurs types de secret :
 Il existe différent mode de visibilité :
 - Visible -> Peut être visible dans les jobs
 - Masked -> Masqué dans les jobs mais peut être limité (certains caractère spéciaux non-utilisable)
+- Masked and Hidden
+
+Il existe pl
 
 Astuce pour passer une clé ssh dans si besoin que tous les secrets soient en masked :
+- Suppression des sauts de lignes, encodage en base 64  : `cat id_rsa | tr -d "/n" . | base64`
+- On enregistre le résultat dans une variable GitLab
+- On décode la variable et on l'enregistre dans un fichier : `echo $VAR | base64 -d > id_rsa`
+
