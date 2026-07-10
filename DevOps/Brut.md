@@ -434,3 +434,11 @@ options des artefacts :
 - `when` : permet de récupérer le artifact de manière conditionnel
 - `public` :  
 - `untracked` : permet de bypass le `.gitignore`
+
+
+Enregistrement d'une image docker dans un fichier tar :
+```bash
+docker save my-image:latest -o my-image.tar
+```
+Possible de transférer cette image via un artefact.
+
