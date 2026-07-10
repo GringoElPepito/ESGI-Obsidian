@@ -366,3 +366,22 @@ test_job:
 		- echo rien
 	allow_failure: true
 ```
+
+Gestion du cache et des artefact :
+Permettent de récupérer un élément d'un job pour l'utiliser dans un autre job
+le cache est stocké directement sur le runner
+
+Si du cache est généré sur le runner01
+Si la pipeline s'exécute sur 2 runners différents il y a 2 possibilité concernant le cache
+
+ex :
+```YAML
+cache:
+	paths:
+		- node_modules/
+
+cache:
+	key: $CI_COMMIT_REF_SLUG
+	paths:
+		- node_modules/
+```
