@@ -298,7 +298,7 @@ Gitlab pré-défini certaines variables :
 $CI_COMMIT_BRANCH -> nom de la branche courante
 $CI_COMMIT_SHA -> hash complet du commit
 $CI_COMMIT_SHORT_SHA -> hash raccourci du commit
-$CI_COMMIT_REF_SLUG
+$CI_COMMIT_REF_SLUG -> indique le nom de la branche
 $CI_COMMIT_TAG
 
 $CI_PIPELINE_SOURCE
@@ -371,8 +371,12 @@ Gestion du cache et des artefact :
 Permettent de récupérer un élément d'un job pour l'utiliser dans un autre job
 le cache est stocké directement sur le runner
 
-Si du cache est généré sur le runner01
+Si du cache est généré sur le runner01 et qui doit être utilisé par un job exécuté sur le runner02 alors il y a 2 possibilités :
+- Soit le cache est de nouveaux générés pour être utilisé localement
+- Soit il y a un stockage partagé entre les runners
 Si la pipeline s'exécute sur 2 runners différents il y a 2 possibilité concernant le cache
+
+la configuration du cache se fait au niveau du 
 
 ex :
 ```YAML
@@ -381,7 +385,27 @@ cache:
 		- node_modules/
 
 cache:
-	key: $CI_COMMIT_REF_SLUG
+	key: $CI_COMMIT_REF_SLUG # Permet de lié un cache à une branche et de le rendre utilisable pour toutes les prochaines exécutions de la pipeline
 	paths:
 		- node_modules/
+```
+
+Policy de cache :
+- Push/Pull, si les packages NPM sont modifiés, régénération du cache et réenregistrement de celui-ci
+- Pull, autorise uniquement la lecture
+- Push, autorise uniquement la modification du cache existant
+
+Possible de basé la clé de cache sur un fichier :
+```YAML
+cache:
+	key:
+		files: pakacge-lock.json
+```
+
+Il est aussi possible d'utiliser des préfixes :
+```
+cache:
+	key:
+		files: package-lock.json
+	prefix: $
 ```
