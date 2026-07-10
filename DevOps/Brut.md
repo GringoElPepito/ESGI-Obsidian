@@ -334,3 +334,4 @@ Les variables GitLab sont utilisables dans n'importe quel fichier YAML présent 
 
 Charbonner la partie environnement
 
+Le code doit être à la racine du projet
