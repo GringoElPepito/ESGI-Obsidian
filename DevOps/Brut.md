@@ -335,3 +335,34 @@ Les variables GitLab sont utilisables dans n'importe quel fichier YAML présent 
 Charbonner la partie environnement
 
 Le code doit être à la racine du projet
+
+Docker in docker avec l'image `docker:26.0.0-dind`
+
+```
+stages:
+build_job:
+	image: docker:latest
+	tags:
+		- deploy
+	environment:
+		name: prod
+		url: http://localhost:8080
+	services:
+		- name: docker:26.0.0-dind
+		  entrypoint: ["dockerd-entrypoint.sh", "--tls=false"]
+	stage: build
+	variables:
+		DOCKER_DRIVER: overlay2
+		DOCKER_TLS_CERTDIR: ""
+	script:
+		- echo "Compilation de l'application..."
+
+test_job:
+	image: node:20
+	stage: test
+	script:
+		- echo bonjour
+		- echo mlol
+		- echo rien
+	allow_failure: true
+```
