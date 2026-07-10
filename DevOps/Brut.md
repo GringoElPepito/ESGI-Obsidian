@@ -376,7 +376,7 @@ Si du cache est généré sur le runner01 et qui doit être utilisé par un job 
 - Soit il y a un stockage partagé entre les runners
 Si la pipeline s'exécute sur 2 runners différents il y a 2 possibilité concernant le cache
 
-la configuration du cache se fait au niveau du 
+la configuration du cache se fait au niveau du job
 
 ex :
 ```YAML
@@ -391,13 +391,14 @@ cache:
 ```
 
 Policy de cache :
-- Push/Pull, si les packages NPM sont modifiés, régénération du cache et réenregistrement de celui-ci
+- Push/Pull, si les packages NPM sont modifiés, régénération du cache et réenregistrement de celui-ci. Valeur par défaut
 - Pull, autorise uniquement la lecture
 - Push, autorise uniquement la modification du cache existant
 
 Possible de basé la clé de cache sur un fichier :
 ```YAML
 cache:
+	policy: pull
 	key:
 		files: pakacge-lock.json
 ```
@@ -407,5 +408,5 @@ Il est aussi possible d'utiliser des préfixes :
 cache:
 	key:
 		files: package-lock.json
-	prefix: $
+	prefix: auth
 ```
