@@ -254,4 +254,14 @@ Pour exécuter les différents jobs, Gitlab fait appel à un Runner
 Gitflow correspond à la manière dont les branches sont gérés
 
 Règle d'une bonne pipeline :
-- Le fichier de pipeline doit être identique pour toutes les branches, il faut donc réussir à mutualiser les pré-requis des différentes branches (environnement) dans un seul fichier. Pour cela, on utilisera des conditions permettant d'exécuter certains jobs 
+- Le fichier de pipeline doit être identique pour toutes les branches, il faut donc réussir à mutualiser les pré-requis des différentes branches (environnement) dans un seul fichier. Pour cela, on utilisera des conditions permettant d'exécuter certains jobs dans certains cas précis.
+
+Les types de Runner :
+- Runner personnel créer par vous même. Permettra de servir d'intermédiaire entre la pipeline et le serveur de déploiement final (Généralement via SSH).
+- Runner Gitlab -> limité à 400 minutes d'exécution.
+
+Instruction de pipeline :
+- `before_script` -> Permet d'exécuter des commandes du code avant le script, en cas d'erreur la pipeline ne failera pas. Etape de prépa, gestion des droits récupération de package.
+- `after_script` -> Permet d'exécuter du code après la commande script, en cas d'erreur la pipeline ne failera pas. Etape de sauvegarde ou de clean.
+
+On déclenchera la pipeline généralement à la suite d'un commit sur une branche spécifique
