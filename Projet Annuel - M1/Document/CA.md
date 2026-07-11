@@ -11,7 +11,17 @@ Voici les caractéristiques de l'instance root-ca.cenexis.lan :
 - OS : Rocky Linux 10.2
 - état HA attendu : stopped
 
+Voici les caractéristiques de l'instance sub-ca.cenexis.lan :
+- CPU : 1 core
+- RAM : 512 Mb
+- Stockage : 16G
+- Instance : LXC
+- OS : Rocky Linux 10.2
+- état HA attendu : stopped
+
 Nous avons mis en place 2 chaînes de certification distinctes, la première est une chaîne de certification classique, cependant la seconde est une chaîne de certification Post-Quantique. Cette seconde chaîne nous permet de préparer notre infrastructure aux futures attaques qui seront rendus possible avec la démocratisation de l'informatique quantique. Malheureusement à ce jour, la plupart des services et protocoles ne supportent pas encore les algorithmes liés au chiffrement Post-Quantique, c'est la raison pour laquelle nous maintenons 2 chaînes de certification. De cette manière nous pouvons fournir un chiffrement adapté à tous nos services et faire la migration vers le chiffrement Post-Quantique si les mis à jours de nos services ajoutent le support de celui-ci.
+
+Le déploiement et la configuration des autorités de certification racine et délégué sont entièrement automatisé via des playbook Ansible tout comme la génération de certificat client et serveur permettant de faciliter la configuration de nos différents services.
 
 `root-ca.conf` :
 ```INI
