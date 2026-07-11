@@ -10,6 +10,10 @@ Voici les caractéristiques de l'instance root-ca.cenexis.lan :
 - Instance : LXC
 - OS : Rocky Linux 10.2
 - état HA attendu : stopped
+- Réseau
+	- VLAN : VLAN 112 - Active Directory & CA
+	- IP : 10.11.2.20
+{screen - Summary root-ca.cenexis.lan}
 
 Voici les caractéristiques de l'instance sub-ca.cenexis.lan :
 - CPU : 1 core
@@ -17,7 +21,13 @@ Voici les caractéristiques de l'instance sub-ca.cenexis.lan :
 - Stockage : 16G
 - Instance : LXC
 - OS : Rocky Linux 10.2
-- état HA attendu : stopped
+- état HA attendu : started
+- - Réseau
+	- VLAN : VLAN 112 - Active Directory & CA
+	- IP : 10.11.2.21
+{screen - Summary sub-ca.cenexis.lan}
+
+Pour la création de
 
 Nous avons mis en place 2 chaînes de certification distinctes, la première est une chaîne de certification classique, cependant la seconde est une chaîne de certification Post-Quantique. Cette seconde chaîne nous permet de préparer notre infrastructure aux futures attaques qui seront rendus possible avec la démocratisation de l'informatique quantique. Malheureusement à ce jour, la plupart des services et protocoles ne supportent pas encore les algorithmes liés au chiffrement Post-Quantique, c'est la raison pour laquelle nous maintenons 2 chaînes de certification. De cette manière nous pouvons fournir un chiffrement adapté à tous nos services et faire la migration vers le chiffrement Post-Quantique si les mis à jours de nos services ajoutent le support de celui-ci.
 
