@@ -13,14 +13,16 @@ La dernière itération à ce jour de cet outil est nommé rsyslog, il possède 
 Voici les caractéristiques de l'instance syslog.cenexis.lan :
 - CPU : 1 core
 - RAM : 512 Mb
-- Stockage : 16G
+- Stockage : 32G
 - Instance : LXC
 - OS : Rocky Linux 10.2
-- état HA attendu : stopped
+- état HA attendu : started
 - Réseau
-	- VLAN : VLAN 112 - Active Directory & CA
-	- IP : 10.11.2.20
-{screen - Summary root-ca.cenexis.lan}
+	- VLAN : VLAN 161 - Syslog & SIEM
+	- IP : 10.16.1.10
+{screen - Summary syslog.cenexis.lan}
 
 Rsyslog est un service pouvant être configuré en tant que serveur ou client.
 En tant que serveur, celui-ci réceptionne les logs transmis par les machines clientes et les enregistrent en respectant les règles définis dans le ou les fichiers de configuration. En tant que client, celui-ci transmet automatiquement chaque message d’évènement au moment où il est émis par le système, évitant ainsi que les logs soient modifiés avant leur envoie.
+
+Dans notre cas, nous configurons le service pour qu'il fonctionne en mode serveur. Notre Rsyslog étant installé sur un Rocky Linux, cela implique qu’il faut ouvrir le port sur lequel le service va écouter pour recevoir les logs envoyer par les clients. Dans notre cas le port est 20514, le port par défaut est le 514, nous avons volontairement choisi un port différent pour des réseaux de sécurité.
