@@ -27,17 +27,19 @@ Voici les caractéristiques de l'instance sub-ca.cenexis.lan :
 	- IP : 10.11.2.21
 {screen - Summary sub-ca.cenexis.lan}
 
-Pour la création de
+Le déploiement et la configuration des autorités de certification racine et délégué sont entièrement automatisé via des playbook Ansible tout comme la génération de certificat client et serveur permettant de faciliter la configuration de nos différents services.
+
+Pour la création de l'autorité de certification, nous avons utilisé la solution OpenSSL qui sert de base à la plupart des autres solutions existantes sur Linux pour réaliser une autorité de certification. Pour gérer au mieux l'autorité de certification et garantir une cohérence dans la chaîne de certification, nous utilisons un fichier de configuration dédié et généré automatiquement au déploiement des instances.
+
+Une fois généré, les certificats racine et délégué sont par la suite récupérer par l'instance Ansible qui va ensuite se charger d'ajouter la chaîne de certification sur toutes les instances déjà déployés et toutes celles qui le seront déployés par la suite.
 
 Nous avons mis en place 2 chaînes de certification distinctes, la première est une chaîne de certification classique, cependant la seconde est une chaîne de certification Post-Quantique. Cette seconde chaîne nous permet de préparer notre infrastructure aux futures attaques qui seront rendus possible avec la démocratisation de l'informatique quantique. Malheureusement à ce jour, la plupart des services et protocoles ne supportent pas encore les algorithmes liés au chiffrement Post-Quantique, c'est la raison pour laquelle nous maintenons 2 chaînes de certification. De cette manière nous pouvons fournir un chiffrement adapté à tous nos services et faire la migration vers le chiffrement Post-Quantique si les mis à jours de nos services ajoutent le support de celui-ci.
-
-Le déploiement et la configuration des autorités de certification racine et délégué sont entièrement automatisé via des playbook Ansible tout comme la génération de certificat client et serveur permettant de faciliter la configuration de nos différents services.
 
 `root-ca.conf` :
 ```INI
 [default]
 name                    = root-ca
-domain_suffix           = cenexis.com
+domain_suffix           = cenexis.lan
 aia_url                 = http://$name.$domain_suffix/$name.crt
 crl_url                 = http://$name.$domain_suffix/$name.crl
 ocsp_url                = http://ocsp.$name.$domain_suffix:9080
@@ -48,7 +50,7 @@ name_opt                = utf8,esc_ctrl,multiline,lname,align
 countryName             = FR
 stateOrProvinceName     = Ile-de-France
 organizationName        = CENEXIS
-emailAddress            = admin@cenexis.com
+emailAddress            = admin@cenexis.lan
 organizationalUnitName  = Community
 commonName              = "Root Ca"
 
