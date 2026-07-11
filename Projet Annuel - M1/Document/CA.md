@@ -6,9 +6,10 @@ De cette manière, il nous est possible d'éteindre l'autorité racine dans le b
 Voici les caractéristiques de l'instance root-ca.cenexis.lan :
 - CPU : 1 core
 - RAM : 512 Mb
-- Stockage : 
+- Stockage : 16G
 - Instance : LXC
 - OS : Rocky Linux 10.2
+- état HA attendu : stopped
 
 Nous avons mis en place 2 chaînes de certification distinctes, la première est une chaîne de certification classique, cependant la seconde est une chaîne de certification Post-Quantique. Cette seconde chaîne nous permet de préparer notre infrastructure aux futures attaques qui seront rendus possible avec la démocratisation de l'informatique quantique. Malheureusement à ce jour, la plupart des services et protocoles ne supportent pas encore les algorithmes liés au chiffrement Post-Quantique, c'est la raison pour laquelle nous maintenons 2 chaînes de certification. De cette manière nous pouvons fournir un chiffrement adapté à tous nos services et faire la migration vers le chiffrement Post-Quantique si les mis à jours de nos services ajoutent le support de celui-ci.
 
