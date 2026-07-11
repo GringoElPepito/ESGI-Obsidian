@@ -3,7 +3,14 @@ Pour une entreprise traitant des données sensibles, disposer d'une autorité de
 Pour garantir un certain niveau de sécurité, nous avons opté pour une architecture par délégation. En effet nous avons mis en place une Autorité de certification racine ainsi qu'une Autorité de certification délégué. L'autorité racine émet un certificat de délégation qui permet à l'autorité délégué d'émettre des certificats soumis à certaines contraintes permettant de limiter l'impact potentiel d'une compromission de l'autorité délégué. 
 De cette manière, il nous est possible d'éteindre l'autorité racine dans le but de rendre celle-ci inaccessible et limiter le risque de compromission de la clé privé. Pour nous assuré que l'autorité racine reste bien éteinte, une supervision remonte une alerte lorsque l'instance répond au ping.
 
-La seule machine pouvant émettre des certificats est donc l'autorité déléguée qui ne peut émettre que certains types de certificat.
+Voici les caractéristiques de l'instance root-ca.cenexis.lan :
+- CPU : 1 core
+- RAM : 512 Mb
+- Stockage : 
+- Instance : LXC
+- OS : Rocky Linux 10.2
+
+Nous avons mis en place 2 chaînes de certification distinctes, la première est une chaîne de certification classique, cependant la seconde est une chaîne de certification Post-Quantique. Cette seconde chaîne nous permet de préparer notre infrastructure aux futures attaques qui seront rendus possible avec la démocratisation de l'informatique quantique. Malheureusement à ce jour, la plupart des services et protocoles ne supportent pas encore les algorithmes liés au chiffrement Post-Quantique, c'est la raison pour laquelle nous maintenons 2 chaînes de certification. De cette manière nous pouvons fournir un chiffrement adapté à tous nos services et faire la migration vers le chiffrement Post-Quantique si les mis à jours de nos services ajoutent le support de celui-ci.
 
 `root-ca.conf` :
 ```INI
