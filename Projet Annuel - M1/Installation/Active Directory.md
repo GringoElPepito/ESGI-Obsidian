@@ -14,7 +14,13 @@ console mmc -> ajouter le module certificat (cible ordinateur local) -> Personne
 		- Adresse de messagerie -> admin@cenexis.lan
 		- Nom commun -> FQDN de la machine
 	- Autre nom
+		- DNS -> nom de la machine (sans le domaine)
 		- DNS -> FQDN de la machine
 		- Adresse IP (v4) -> IPv4 de la machine
 - Extensions
-	- 
+	- Utilisation de la clé
+		- Signature Numérique
+		- Chiffrement de la clé
+	- Utilisation de la clé étendue
+		- Authentification du serveur
+Suivant -> Choisir emplacement fichier de requête
