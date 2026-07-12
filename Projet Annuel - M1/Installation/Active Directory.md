@@ -23,4 +23,21 @@ console mmc -> ajouter le module certificat (cible ordinateur local) -> Personne
 		- Chiffrement de la clé
 	- Utilisation de la clé étendue
 		- Authentification du serveur
-Suivant -> Choisir emplacement fichier de requête
+Suivant -> Choisir emplacement fichier de requête -> terminer
+
+Transférer le fichier sur sub-ca.cenexis.lan via SSH dans le dossier `/home/desigual/sub-ca/req`
+lancer la commande suivante :
+```bash
+openssl ca \
+-batch \
+-config sub-ca.conf \
+-subj "/CN={FQDN}/OU=Community/O=CENEXIS/L=Fontenay-sous-Bois/S=Ile-de-France/C=FR" \
+-create_serial \
+-in req/hostname.req \
+-out certs/hostname.crt \
+-extensions server_ext \
+-days 365 \
+-passin pass:{MDP_SUB_CA_PRIVATE_KEY}
+```
+
+Enfin transfert et ajout du certificat sur le serveur AD
