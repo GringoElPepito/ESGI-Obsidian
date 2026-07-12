@@ -1,5 +1,7 @@
 # Gestion certificat pour LDAPS
 
+## Récupérer la chaîne de certificat
+
 ## Demande de certificat
 console mmc -> ajouter le module certificat (cible ordinateur local) -> Personnel clique droit -> Toutes les tâches -> Option avancées -> Créer une demande personnalisé -> suivant -> suivant -> Clé CNG & Format PKCS # 10 -> déroulé "demande personnalisé" et cliquer sur propriété :
 - Dans général
@@ -40,4 +42,7 @@ openssl ca \
 -passin pass:{MDP_SUB_CA_PRIVATE_KEY}
 ```
 
-Enfin transfert et ajout du certificat sur le serveur AD
+Enfin transfert sur le serveur AD
+Installation du certificat, double clic sur le fichier, installation sur ordinateur local -> suivant -> Sélectionner automatiquement le magasin de certificats... -> suivant -> Terminer -> OK
+
+Redémarrage de la machine
