@@ -1,1 +1,3 @@
 Avec la complexification des systèmes d'informations et des attaques informatiques, il est devenu impératif de mettre en place au sein des infrastructures d'une taille conséquente une solution SIEM (S I Events M). {ChatGPT}
+
+Dans notre cas, nous avons optés pour la solution Wazuh qui est une solution SIEM Open-Source ayant à de nombreuses reprises fait ses preuves en proposant un système d'analyse complet se basant sur pl
