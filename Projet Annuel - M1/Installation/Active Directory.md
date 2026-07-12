@@ -9,3 +9,12 @@ console mmc -> ajouter le module certificat (cible ordinateur local) -> Personne
 		- Pays/région -> FR
 		- Etat -> Ile-de-France
 		- Ville -> Fontenay-sous-Bois
+		- Organisation -> CENEXIS
+		- Unité d'organisation -> Community
+		- Adresse de messagerie -> admin@cenexis.lan
+		- Nom commun -> FQDN de la machine
+	- Autre nom
+		- DNS -> FQDN de la machine
+		- Adresse IP (v4) -> IPv4 de la machine
+- Extensions
+	- 
