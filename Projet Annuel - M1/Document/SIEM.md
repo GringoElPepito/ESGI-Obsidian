@@ -1,0 +1,1 @@
+Avec la complexification des systèmes d'informations et des attaques informatiques, il est devenu impératif de mettre en place au sein des infrastructures d'une taille conséquente une solution SIEM (S I Events M). {ChatGPT}
