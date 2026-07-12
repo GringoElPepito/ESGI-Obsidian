@@ -2,6 +2,11 @@
 
 ## Récupérer la chaîne de certificat
 
+Pour récupérer la chaîne de certificat 
+```cmd
+ssh desigual@10.11.2.21:/home/desigual/sub-ca/ca-chai.crt ./
+```
+
 ## Demande de certificat
 console mmc -> ajouter le module certificat (cible ordinateur local) -> Personnel clique droit -> Toutes les tâches -> Option avancées -> Créer une demande personnalisé -> suivant -> suivant -> Clé CNG & Format PKCS # 10 -> déroulé "demande personnalisé" et cliquer sur propriété :
 - Dans général
