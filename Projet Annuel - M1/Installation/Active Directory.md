@@ -30,6 +30,9 @@ console mmc -> ajouter le module certificat (cible ordinateur local) -> Personne
 		- Chiffrement de la clé
 	- Utilisation de la clé étendue
 		- Authentification du serveur
+- Clé privé
+	- Options de clé
+		- Permettre l'exportation de la clé privé
 Suivant -> Choisir emplacement fichier de requête -> terminer
 
 Transférer le fichier sur sub-ca.cenexis.lan via SSH dans le dossier `/home/desigual/sub-ca/req`
