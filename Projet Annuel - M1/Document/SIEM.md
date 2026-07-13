@@ -19,6 +19,9 @@ Bien que nous ayons un serveur Rsyslog centralisant l'ensemble des logs de l'inf
 - La première est que Wazuh transforme les logs, ainsi en ayant à la fois Wazuh et le serveur Rsyslog, il nous est possible d'obtenir un SIEM fonctionnel tout en conservant un format brut des logs de manière centralisé
 - La seconde est que l'agent Wazuh ne se contente pas de remonter les logs, il analyse aussi l'intégrité des fichiers ou encore les vulnérabilités, installé l'agent Wazuh uniquement sur le serveur Rsyslog nous empêcherait de profiter de ces fonctionnalités sur le reste de notre infrastructure.
 
-Wazuh nous remonte les alertes par mail et par discord
+Nous avons configuré Wazuh de telle sorte à ce qu'il nous remonte les alertes à la fois par mail et par Discord permettant d'être informé en temps réel si jamais une tentative d'intrusion au sein de l'infrastructure venait à se produire.
+
+{screen - config alerte discord}
+{screen - config alerte mail}
 
 L'installation des différents services de Wazuh ainsi que le déploiement des agents sur les différentes instances est entièrement automatisé, permettant de facilement redéployé le serveur Wazuh en cas de problème ou encore d'ajouter de nouvelles instances au sein du champ de contrôle de notre SIEM.
