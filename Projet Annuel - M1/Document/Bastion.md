@@ -23,6 +23,7 @@ Comme expliqué précédemment dans la section des choix technologiques, nous av
 - `Lion` : Ce composant se charge de la gestion des connexions graphique (RDP, HTTP, HTTPS)
 - `Chen` : Base de données interne à JumpServer pour la gestion de l'interface Web
 Il y a plus de cela besoin d'une base de données de type SQL comme MariaDB ou PostgreSQL, celle-ci peut être externalisé
+Pour les accès web
 
 ===SOIT===
 c'est d'ailleurs ce que nous avons fait notamment, ainsi JumpServer utilise notre cluster de base de données à travers notre HAProxy, pour garantir la haute disponibilité de l'accès à la base de données
@@ -31,3 +32,5 @@ c'est d'ailleurs ce que nous avons fait notamment, ainsi JumpServer utilise notr
 cependant, dans notre cas nous avons fait le choix de la conteneurisé avec les autres services pour faciliter le déploiement et la gestion du service.
 
 Concernant l'installation, celle-ci est quasiment entièrement automatisé, je dis quasiment car il y a une étape qui ne peut malheureusement pas être automatisé et c'est la modification du mot de passe du compte admin.
+Cependant le provisioning des terminaux, des comptes, des utilisateurs et des permissions est entièrement automatisé, permettant de facilement ajouté de nouveaux éléments sans avoir à intervenir directement sur l'interface de JumpServer.
+
