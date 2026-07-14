@@ -30,4 +30,4 @@ c'est d'ailleurs ce que nous avons fait notamment, ainsi JumpServer utilise notr
 ===SOIT===
 cependant, dans notre cas nous avons fait le choix de la conteneurisé avec les autres services pour faciliter le déploiement et la gestion du service.
 
-Une fois cela
+Concernant l'installation, celle-ci est quasiment entièrement automatisé, je dis quasiment car il y a une étape qui ne peut malheureusement pas être automatisé et c'est la modification du mot de passe du compte admin.
