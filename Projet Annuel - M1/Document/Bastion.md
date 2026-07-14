@@ -23,7 +23,7 @@ Comme expliqué précédemment dans la section des choix technologiques, nous av
 - `Lion` : Ce composant se charge de la gestion des connexions graphique (RDP, HTTP, HTTPS)
 - `Chen` : Base de données interne à JumpServer pour la gestion de l'interface Web
 Il y a plus de cela besoin d'une base de données de type SQL comme MariaDB ou PostgreSQL, celle-ci peut être externalisé
-Pour les accès web tel que Proxmox ou autre
+Pour les accès web tel que Proxmox, 
 
 ===SOIT===
 c'est d'ailleurs ce que nous avons fait notamment, ainsi JumpServer utilise notre cluster de base de données à travers notre HAProxy, pour garantir la haute disponibilité de l'accès à la base de données
