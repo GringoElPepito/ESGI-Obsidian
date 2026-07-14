@@ -23,8 +23,11 @@ Comme expliqué précédemment dans la section des choix technologiques, nous av
 - `Lion` : Ce composant se charge de la gestion des connexions graphique (RDP, HTTP, HTTPS)
 - `Chen` : Base de données interne à JumpServer pour la gestion de l'interface Web
 Il y a plus de cela besoin d'une base de données de type SQL comme MariaDB ou PostgreSQL, celle-ci peut être externalisé
+
 ===SOIT===
 c'est d'ailleurs ce que nous avons fait notamment, ainsi JumpServer utilise notre cluster de base de données à travers notre HAProxy, pour garantir la haute disponibilité de l'accès à la base de données
 
 ===SOIT===
 cependant, dans notre cas nous avons fait le choix de la conteneurisé avec les autres services pour faciliter le déploiement et la gestion du service.
+
+Une fois cela
