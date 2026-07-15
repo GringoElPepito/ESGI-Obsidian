@@ -1,0 +1,2 @@
+Dans une infrastructure hautement disponible, le choix du stockage est un point primordial qui doit être attentivement choisi pour répondre au mieux aux besoins du projet. La solution retenu définira certaines contraintes qui devront être respecté pour garantir le bon fonctionnement de l'infrastructure.
+Nous souhaitionsin
