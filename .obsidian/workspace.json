@@ -327,12 +327,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Document/Bastion.md",
+                "file": "Projet Annuel - M1/Document/Proxmox Virtual Environment.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bastion"
+              "title": "Proxmox Virtual Environment"
             }
           }
         ],
@@ -485,8 +485,10 @@
   },
   "active": "c711c433c67f344f",
   "lastOpenFiles": [
-    "Projet Annuel - M1/Document/VM.md",
+    "Projet Annuel - M1/Document/Reverse-Proxy.md",
+    "Projet Annuel - M1/Document/Base de données.md",
     "Projet Annuel - M1/Document/Bastion.md",
+    "Projet Annuel - M1/Document/VM.md",
     "Projet Annuel - M1/Document/SIEM.md",
     "Projet Annuel - M1/Document/SYSLOG.md",
     "Projet Annuel - M1/Document/Active Directory.md",
@@ -509,8 +511,6 @@
     "Sans titre 2.md",
     "Projet Annuel - M1/Supervision.md",
     "Projet Annuel - M1/Installation/Proxmox/Proxmox iscsi.md",
-    "Projet Annuel - M1/Installation/Proxmox/Proxmox Setup.md",
-    "Projet Annuel - M1/Installation/Proxmox/Proxmox Network.md",
     "Projet Annuel - M1/Installation/Proxmox",
     "Projet Annuel - M2",
     "FYC",

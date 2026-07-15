@@ -1,0 +1,3 @@
+La virtualisation est un des éléments centraux de toutes infrastructures modernes. Là ou à l'époque chaque application devait fonctionner sur une machine distincte, la virtualisation a permis de faire tourner plusieurs applications sur un même serveur offrant ainsi la possibilité d'exploiter pleinement les ressources proposés par les serveurs physiques.
+Il existe de type de virtualisation :
+- Virtualisation type 1 : la solution de virtualisation est 
