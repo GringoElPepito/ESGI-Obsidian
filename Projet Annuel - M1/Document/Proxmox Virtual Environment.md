@@ -8,3 +8,7 @@ Par ailleurs Proxmox possède certaines fonctionnalités qui ne sont pas présen
 Le cluster Proxmox se compose de 3 machines pour pouvoir respecter le quorum,
 Voici les caractéristiques de la machine pve01.cenexis.lan :
 - CPU : 
+- RAM
+
+
+Proxmox est une solution offrant de nombreuses fonctionnalités qu'il est important de configurer judicieusement pour pouvoir pleinement en profiter.
