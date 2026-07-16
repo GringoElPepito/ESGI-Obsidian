@@ -9,8 +9,10 @@ Le cluster Proxmox se compose de 3 machines pour pouvoir respecter le quorum,
 Voici les caractéristiques de la machine pve01.cenexis.lan :
 - CPU : 
 - RAM :
+- OS : 
 - Stockage :
-- 
+- Interface réseau :
+	- 
 
 
 Proxmox est une solution offrant de nombreuses fonctionnalités qu'il est important de configurer judicieusement pour pouvoir pleinement en profiter.
@@ -24,9 +26,7 @@ C'est elle qui va définir le type de réseau virtuel qui pourra être utilisé.
 - Simple : un réseau local classique, cette zone n'est pas partagé entre les machines du cluster et ne permet donc pas la communication entre 2 instances (VM et/ou LXC) présentes sur 2 nœuds différents au sein du cluster.
 - VLAN : cette zone implémente la norme IEEE 802.1Q et permet donc de segmenter le trafic avec les tags de VLAN. Cette zone est partagé et permet donc la communication entre 2 instances présentes sur des nœuds du cluster différents.
 - QinQ : cette zone implémente la norme IEEE 802.1ad et permet d'insérer plusieurs tags VLAN au sein d'une même trames. Cette zone est partagé et permet donc la communication entre 2 instances présentes sur des nœuds du cluster différents.
-- VxLAN : cette
-
-
-La fonctionnalité **SDN de **Proxmox VE** permet de créer et gérer des réseaux virtuels de manière centralisée, sans avoir à configurer manuellement chaque interface réseau sur chaque nœud du cluster.
-
-En d'autres termes, le SDN sépare la **configuration logique du réseau** de l'infrastructure physique. Cela est particulièrement utile dans les clusters Proxmox, les environnements multi-sites ou les laboratoires.
+- VxLAN : cette zone implémente la solution VxLAN et permet donc de créer un réseau de niveau 2 au dessus d'un réseau IP. Cette zone est partagé et permet donc la communication entre 2 instances présentes sur des nœuds du cluster différents.
+- EVPN : cette zone est une version étendue du type VXLAN ajoutant un plan de contrôle BGP, particulièrement adapté aux grandes infrastructures. Cette zone est partagé et permet donc la communication entre 2 instances présentes sur des nœuds du cluster différents.
+Les zones VLAN, QinQ, VxLAN et EVPN implémente des protocoles standards et peuvent donc servir de base pour étendre le réseau du cluster au-delà de ce dernier en faisant directement le pont avec l'infrastructure physique de manière transparente sans surcouche supplémentaires.
+Le type de zone le plus adapté à notre besoin est le type VLAN.
