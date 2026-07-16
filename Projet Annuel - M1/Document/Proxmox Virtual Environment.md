@@ -27,10 +27,14 @@ Il existe d'autres types de comptes faisant appel à des services d'authentifica
 - Active Directory Server
 - LDAP Server 
 - OpenID Connect Server
-Pour ces 3 solutions, les utilisateurs répondant aux critères définis lors de la liaison pourront accéder à l'interface web uniquement. Il est possible de leur fournir un accès console mais cela requiert des solutions supplémentaires.
+Pour ces 3 solutions, les utilisateurs répondant aux critères définis lors de la liaison pourront accéder à l'interface web uniquement. Il est possible de leur fournir un accès console mais cela requiert des solutions supplémentaires. Dans notre cas, nous avons optés pour la solution PAM et cela pour plusieurs raisons. 
 
-Dans notre cas, nous avons optés pour la solution PAM et cela pour plusieurs raisons. La première est que bien que l'interface web de Proxmox permet de faire énormément de chose, certaines configurations nécessitent d'être réalisé directement depuis la console, de plus l'interface web ne fournit pas d'accès aux logs autres que celles concernant directement les événements liés au cluster. 
-La seconde est bien que Proxmox soit synchronisable avec l'Active Directory, cela présente quelques inconvénients de sécurité. En effet, si l'Active Directory, venait à être compromis alors l'intégralité de l'infrastructure virtuelle deviendrait accessible aux attaquants. En n'utilisant pas l'Active Directory, nous limitons l'impact d'une potentiel compromission de ce dernier.
+La première est que bien que l'interface web de Proxmox permet de faire énormément de chose, certaines configurations nécessitent d'être réalisé directement depuis la console, de plus l'interface web ne fournit pas d'accès aux logs autres que celles concernant directement les événements liés au cluster. 
+
+La seconde est bien que Proxmox soit synchronisable avec l'Active Directory, cela présente quelques inconvénients de sécurité. 
+En effet, si l'Active Directory, venait à être compromis alors l'intégralité de l'infrastructure virtuelle deviendrait accessible aux attaquants. 
+En n'utilisant pas l'Active Directory, nous limitons l'impact d'une potentiel compromission de ce dernier.
+
 Même si l'utilisation de PAM requiert que les utilisateurs soient ajoutés sur chacun des nœuds, cela n'est pas vraiment problématique étant donné que cela est une tâche automatisé dans notre playbook de configuration du cluster et des instances Proxmox.
 ## Haute disponibilité et Clusterisation
 
@@ -108,16 +112,6 @@ Cette approche est particulièrement utilisée pour les services critiques redon
 - des pare-feux virtuels fonctionnant en haute disponibilité.
 
 En répartissant ces machines sur des hôtes différents, une panne matérielle n'affectera pas simultanément tous les composants du service.
-
----
-
-## Complémentarité des trois fonctionnalités
-
-La haute disponibilité, le Cluster Resource Scheduling et les règles d'affinité répondent à des objectifs complémentaires.
-
-La **HA** assure la reprise automatique des services après une défaillance d'un nœud. Le **CRS** optimise la répartition des charges lorsque le cluster fonctionne normalement en équilibrant les ressources disponibles. Enfin, les **Affinity Rules** permettent à l'administrateur de définir des contraintes de placement afin de rapprocher ou d'éloigner certaines machines virtuelles selon les besoins fonctionnels ou les exigences de disponibilité.
-
-Combinées, ces fonctionnalités permettent de construire une infrastructure virtualisée à la fois performante, résiliente et facilement administrable, tout en garantissant une meilleure exploitation des ressources matérielles du cluster.
 
 ## SDN
 Pour la gestion des réseaux au sein du cluster Proxmox, nous avons utilisé la fonctionnalité SDN (Software- Defined Network) inclut par défaut dans Proxmox. 
