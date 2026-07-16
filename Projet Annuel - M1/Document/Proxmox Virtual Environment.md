@@ -54,6 +54,10 @@ Lorsque cela est possible, le CRS peut proposer ou effectuer des migrations à c
 - préparer plus facilement les opérations de maintenance.
 
 Le CRS peut fonctionner selon différentes politiques de placement, prenant en compte la disponibilité des ressources et les contraintes définies par l'administrateur.
+Le CRS peut prendre 3 modes de fonctionnement différents :
+- Basic (Resource Count) : se base sur le nombre d'instance (LXC et VM) en cours de fonctionnement sur chaque nœud pour choisir les déplacement d'instance à effectuer.
+- Static Load : se base sur l'ensemble des ressources réservées par les instances pour sélectionner les déplacements d'instances à effectuer.
+- Dynamic Load : se base sur les ressources actuellement consommées pour définir les déplacements d'instances à réaliser.
 Voici comme nous avons configurés ce dernier au sein de notre infrastructure
 { screen - Configuration CRS }
 ## Règles d'affinité (Affinity Rules)
