@@ -19,6 +19,7 @@ Proxmox est une solution offrant de nombreuses fonctionnalités qu'il est import
 Pour la gestion des réseaux au sein du cluster Proxmox, nous avons utilisé la fonctionnalité SDN (Software- Defined Network) inclut par défaut dans Proxmox. 
 La solution SDN de Proxmox permet de créer et gérer des réseaux virtuels de manière centralisée depuis la WebUI fournit par Proxmox. Une fois la configuration terminé, celle-ci est appliqué automatiquement aux nœuds ciblés par la configuration (par défaut l'ensemble du cluster), permettant de garantir une configuration uniforme d'une machine à l'autre. 
 
+
 La fonctionnalité **SDN de **Proxmox VE** permet de créer et gérer des réseaux virtuels de manière centralisée, sans avoir à configurer manuellement chaque interface réseau sur chaque nœud du cluster.
 
 En d'autres termes, le SDN sépare la **configuration logique du réseau** de l'infrastructure physique. Cela est particulièrement utile dans les clusters Proxmox, les environnements multi-sites ou les laboratoires.
