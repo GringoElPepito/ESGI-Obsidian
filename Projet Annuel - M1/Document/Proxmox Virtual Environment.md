@@ -14,29 +14,7 @@ Voici les caractéristiques de la machine pve01.cenexis.lan :
 - Interface réseau :
 	- 
 
-
 Proxmox est une solution offrant de nombreuses fonctionnalités qu'il est important de configurer judicieusement pour pouvoir pleinement en profiter.
-
-## SDN
-Pour la gestion des réseaux au sein du cluster Proxmox, nous avons utilisé la fonctionnalité SDN (Software- Defined Network) inclut par défaut dans Proxmox. 
-La solution SDN de Proxmox permet de créer et gérer des réseaux virtuels de manière centralisée depuis la WebUI fournit par Proxmox. 
-Une fois la configuration terminé, celle-ci est appliqué automatiquement aux nœuds ciblés par la configuration (par défaut l'ensemble du cluster), permettant de garantir une configuration uniforme d'une machine à l'autre. 
-Pour mettre en place la fonctionnalité sur un cluster Proxmox, il faut dans un premier temps créer une Zone. 
-C'est elle qui va définir le type de réseau virtuel qui pourra être utilisé. Il existe 5 types :
-- Simple : un réseau local classique, cette zone n'est pas partagé entre les machines du cluster et ne permet donc pas la communication entre 2 instances (VM et/ou LXC) présentes sur 2 nœuds différents au sein du cluster.
-- VLAN : cette zone implémente la norme IEEE 802.1Q et permet donc de segmenter le trafic avec les tags de VLAN. Cette zone est partagé et permet donc la communication entre 2 instances présentes sur des nœuds du cluster différents.
-- QinQ : cette zone implémente la norme IEEE 802.1ad et permet d'insérer plusieurs tags VLAN au sein d'une même trames. Cette zone est partagé et permet donc la communication entre 2 instances présentes sur des nœuds du cluster différents.
-- VxLAN : cette zone implémente la solution VxLAN et permet donc de créer un réseau de niveau 2 au dessus d'un réseau IP. Cette zone est partagé et permet donc la communication entre 2 instances présentes sur des nœuds du cluster différents.
-- EVPN : cette zone est une version étendue du type VxLAN ajoutant un plan de contrôle BGP, particulièrement adapté aux grandes infrastructures. Cette zone est partagé et permet donc la communication entre 2 instances présentes sur des nœuds du cluster différents.
-Les zones VLAN, QinQ, VxLAN et EVPN implémente des protocoles standards et peuvent donc servir de base pour étendre le réseau du cluster au-delà de ce dernier en faisant directement le pont avec l'infrastructure physique de manière transparente sans surcouche supplémentaires.
-Le type de zone le plus adapté à notre besoin est le type VLAN, notre choix c'est donc arrêté sur cette option. Nous avons donc créer une zone appeler cenexis qui accueillera tous les sous-réseaux nécessaire aux fonctionnement de l'infrastructure. 
-{ screen - ZONES PVE WebUI}
-Une fois la zone créée, il faut désormais créer les sous-réseaux. Au sein de SDN les sous-réseaux sont appelés des VNets (Virtual Networks), dans le cas d'une zone de type VLAN, chaque VNet correspond à un VLAN distinct et à ce titre doit avoir un ID Vlan (tag) unique.
-Concernant la nomenclature des VNet au sein du SDN, nous sommes limités à 8 caractères c'est pourquoi nous avons sélectionné la nomenclature suivante : VLAN{TAG_VLAN}. La norme 802.1q définit 4096 comme valeur maximal pour un tag VLAN de ce fait, celui-ci ne peut excéder 4 caractères et permet avec la nomenclature proposé de garantir qu'aucun troncage ne sera nécessaire pour le nommage des VNets. 
-Cependant la nomenclature n'est pas très parlante et rend difficile d'identifier le type de trafic circulant sur chaque VNet, la solution à cela est de définir un Alias, l'alias n'est pas utilisé par Proxmox pour identifier les VLANs et est donc de ce fait bien plus permissif que le nom des VNets.
-{ screen - VNets PVE WebUI }
-La zone ainsi que l'entierté des VNets sont déployés via le playbook Ansible de configuration des instances Proxmox ainsi, ils nous suffit d'ajouter les informations des VLANs manquants au sein de nos fichiers de variables Ansible et de relancer le playbook pour les voir s'ajouter aux VLANs déjà existants.
-Chaque VNet créé ajoutera une carte réseau virtuelle qui sera utilisable pour connecter nos instances LXC ou VM. Lorsqu'une instance VM ou LXC transmet une trame sur une carte réseau virtuelle de l'un des VNets de la zone de type VLAN, la trame est automatiquement étiquetée avec l'ID VLAN définit pour le VNet auquel l'instance est connecté, permettant d'identifier le VLAN d'origine pour les machines et systèmes amenés à traiter la trame.
 
 ## Haute disponibilité et Clusterisation
 
@@ -59,7 +37,7 @@ Le système HA s'appuie principalement sur deux composants :
 
 L'utilisation de la haute disponibilité nécessite généralement :
 - un cluster Proxmox fonctionnel avec quorum ;
-- un stockage accessible par plusieurs nœuds (par exemple Ceph, NFS, iSCSI ou ZFS avec réplication adaptée) ;
+- un stockage accessible par plusieurs nœuds (Dans notre cas le stockage iSCSI mis à disposition par le serveur TrueNAS ) ;
 - des ressources suffisantes sur les serveurs capables de reprendre les charges de travail en cas de panne.
 
 La haute disponibilité améliore significativement la résilience de l'infrastructure en réduisant le temps d'interruption des services hébergés.
@@ -76,11 +54,8 @@ Lorsque cela est possible, le CRS peut proposer ou effectuer des migrations à c
 - préparer plus facilement les opérations de maintenance.
 
 Le CRS peut fonctionner selon différentes politiques de placement, prenant en compte la disponibilité des ressources et les contraintes définies par l'administrateur.
-
-L'objectif est d'obtenir une infrastructure plus équilibrée sans intervention manuelle permanente.
-
----
-
+Voici comme nous avons configurés ce dernier au sein de notre infrastructure
+{ screen - Configuration CRS }
 ## Règles d'affinité (Affinity Rules)
 
 Les **Affinity Rules** permettent de contrôler le placement des machines virtuelles à l'intérieur du cluster en définissant des relations entre elles ou avec certains nœuds.
@@ -121,3 +96,24 @@ La haute disponibilité, le Cluster Resource Scheduling et les règles d'affinit
 La **HA** assure la reprise automatique des services après une défaillance d'un nœud. Le **CRS** optimise la répartition des charges lorsque le cluster fonctionne normalement en équilibrant les ressources disponibles. Enfin, les **Affinity Rules** permettent à l'administrateur de définir des contraintes de placement afin de rapprocher ou d'éloigner certaines machines virtuelles selon les besoins fonctionnels ou les exigences de disponibilité.
 
 Combinées, ces fonctionnalités permettent de construire une infrastructure virtualisée à la fois performante, résiliente et facilement administrable, tout en garantissant une meilleure exploitation des ressources matérielles du cluster.
+
+## SDN
+Pour la gestion des réseaux au sein du cluster Proxmox, nous avons utilisé la fonctionnalité SDN (Software- Defined Network) inclut par défaut dans Proxmox. 
+La solution SDN de Proxmox permet de créer et gérer des réseaux virtuels de manière centralisée depuis la WebUI fournit par Proxmox. 
+Une fois la configuration terminé, celle-ci est appliqué automatiquement aux nœuds ciblés par la configuration (par défaut l'ensemble du cluster), permettant de garantir une configuration uniforme d'une machine à l'autre. 
+Pour mettre en place la fonctionnalité sur un cluster Proxmox, il faut dans un premier temps créer une Zone. 
+C'est elle qui va définir le type de réseau virtuel qui pourra être utilisé. Il existe 5 types :
+- Simple : un réseau local classique, cette zone n'est pas partagé entre les machines du cluster et ne permet donc pas la communication entre 2 instances (VM et/ou LXC) présentes sur 2 nœuds différents au sein du cluster.
+- VLAN : cette zone implémente la norme IEEE 802.1Q et permet donc de segmenter le trafic avec les tags de VLAN. Cette zone est partagé et permet donc la communication entre 2 instances présentes sur des nœuds du cluster différents.
+- QinQ : cette zone implémente la norme IEEE 802.1ad et permet d'insérer plusieurs tags VLAN au sein d'une même trames. Cette zone est partagé et permet donc la communication entre 2 instances présentes sur des nœuds du cluster différents.
+- VxLAN : cette zone implémente la solution VxLAN et permet donc de créer un réseau de niveau 2 au dessus d'un réseau IP. Cette zone est partagé et permet donc la communication entre 2 instances présentes sur des nœuds du cluster différents.
+- EVPN : cette zone est une version étendue du type VxLAN ajoutant un plan de contrôle BGP, particulièrement adapté aux grandes infrastructures. Cette zone est partagé et permet donc la communication entre 2 instances présentes sur des nœuds du cluster différents.
+Les zones VLAN, QinQ, VxLAN et EVPN implémente des protocoles standards et peuvent donc servir de base pour étendre le réseau du cluster au-delà de ce dernier en faisant directement le pont avec l'infrastructure physique de manière transparente sans surcouche supplémentaires.
+Le type de zone le plus adapté à notre besoin est le type VLAN, notre choix c'est donc arrêté sur cette option. Nous avons donc créer une zone appeler cenexis qui accueillera tous les sous-réseaux nécessaire aux fonctionnement de l'infrastructure. 
+{ screen - ZONES PVE WebUI}
+Une fois la zone créée, il faut désormais créer les sous-réseaux. Au sein de SDN les sous-réseaux sont appelés des VNets (Virtual Networks), dans le cas d'une zone de type VLAN, chaque VNet correspond à un VLAN distinct et à ce titre doit avoir un ID Vlan (tag) unique.
+Concernant la nomenclature des VNet au sein du SDN, nous sommes limités à 8 caractères c'est pourquoi nous avons sélectionné la nomenclature suivante : VLAN{TAG_VLAN}. La norme 802.1q définit 4096 comme valeur maximal pour un tag VLAN de ce fait, celui-ci ne peut excéder 4 caractères et permet avec la nomenclature proposé de garantir qu'aucun troncage ne sera nécessaire pour le nommage des VNets. 
+Cependant la nomenclature n'est pas très parlante et rend difficile d'identifier le type de trafic circulant sur chaque VNet, la solution à cela est de définir un Alias, l'alias n'est pas utilisé par Proxmox pour identifier les VLANs et est donc de ce fait bien plus permissif que le nom des VNets.
+{ screen - VNets PVE WebUI }
+La zone ainsi que l'entierté des VNets sont déployés via le playbook Ansible de configuration des instances Proxmox ainsi, ils nous suffit d'ajouter les informations des VLANs manquants au sein de nos fichiers de variables Ansible et de relancer le playbook pour les voir s'ajouter aux VLANs déjà existants.
+Chaque VNet créé ajoutera une carte réseau virtuelle qui sera utilisable pour connecter nos instances LXC ou VM. Lorsqu'une instance VM ou LXC transmet une trame sur une carte réseau virtuelle de l'un des VNets de la zone de type VLAN, la trame est automatiquement étiquetée avec l'ID VLAN définit pour le VNet auquel l'instance est connecté, permettant d'identifier le VLAN d'origine pour les machines et systèmes amenés à traiter la trame.
