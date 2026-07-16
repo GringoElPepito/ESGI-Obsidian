@@ -59,7 +59,9 @@ Le CRS peut prendre 3 modes de fonctionnement différents :
 - Static Load : se base sur l'ensemble des ressources réservées par les instances pour sélectionner les déplacements d'instances à effectuer.
 - Dynamic Load : se base sur les ressources actuellement consommées pour définir les déplacements d'instances à réaliser.
 Voici comme nous avons configurés ce dernier au sein de notre infrastructure
-{ screen - Configuration CRS }
+![[Pasted image 20260716234037.png|584]]
+Nous avons choisi le mode Dynamic Load car la charge de nos instances peuvent varier en fonction du moment de la journée, de cette manière CRS pourra répartir en temps réel la charge entre toutes les machines du cluster Proxmox. Nous autorisons CRS a répartir au démarrage pour les nouvelles instances ainsi que pour les instances déjà en cours de fonctionnement, ce qui permet de supprimer la nécessité d'action humaine.
+
 ## Règles d'affinité (Affinity Rules)
 
 Les **Affinity Rules** permettent de contrôler le placement des machines virtuelles à l'intérieur du cluster en définissant des relations entre elles ou avec certains nœuds.
