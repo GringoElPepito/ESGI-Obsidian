@@ -38,4 +38,4 @@ Cependant la nomenclature n'est pas très parlante et rend difficile d'identifie
 La zone ainsi que l'entierté des VNets sont déployés via le playbook Ansible de configuration des instances Proxmox ainsi, ils nous suffit d'ajouter les informations des VLANs manquants au sein de nos fichiers de variables Ansible et de relancer le playbook pour les voir s'ajouter aux VLANs déjà existants.
 Chaque VNet créé ajoutera une carte réseau virtuelle qui sera utilisable pour connecter nos instances LXC ou VM. Lorsqu'une instance VM ou LXC transmet une trame sur une carte réseau virtuelle de l'un des VNets de la zone de type VLAN, la trame est automatiquement étiquetée avec l'ID VLAN définit pour le VNet auquel l'instance est connecté, permettant d'identifier le VLAN d'origine pour les machines et systèmes amenés à traiter la trame.
 
-## Haute disponibilité
+## Haute disponibilité et Clusterisation
