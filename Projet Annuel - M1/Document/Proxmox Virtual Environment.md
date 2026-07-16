@@ -23,9 +23,15 @@ Etant donné la criticité de Proxmox au sein de notre infrastructure, il est pr
 Nativement Proxmox propose 2 types d'utilisateurs :
 - PVE : utilisateur automatiquement diffusé à l'ensemble du cluster mais pouvant accéder uniquement à l'interface web, si un utilisateur PVE souhaite accéder à la console de l'un des nœuds du cluster, il devra utiliser un autre compte existant localement au sein du système Linux du nœud cible
 - PAM : utilisateur local devant être répliqué manuellement sur l'ensemble des membres du cluster. Il peut accéder à la fois à l'interface web ainsi qu'à la console des nœuds sur lesquels l'utilisateur existe.
-Il existe d'autres types de comptes faisant appel à des services d'authentification externe :
+Il existe d'autres types de comptes faisant appel à des services d'authentification externes :
 - Active Directory Server
-- LDAP Ser
+- LDAP Server 
+- OpenID Connect Server
+Pour ces 3 solutions, les utilisateurs répondant aux critères définis lors de la liaison pourront accéder à l'interface web uniquement. Il est possible de leur fournir un accès console mais cela requiert des solutions supplémentaires.
+
+Dans notre cas, nous avons optés pour la solution PAM et cela pour plusieurs raisons. La première est que bien que l'interface web de Proxmox permet de faire énormément de chose, certaines configurations nécessitent d'être réalisé directement depuis la console, de plus l'interface web ne fournit pas d'accès aux logs autres que celles concernant directement les événements liés au cluster. 
+La seconde est bien que Proxmox soit synchronisable avec l'Active Directory, cela présente quelques inconvénients de sécurité. En effet, si l'Active Directory, venait à être compromis alors l'intégralité de l'infrastructure virtuelle deviendrait accessible aux attaquants. En n'utilisant pas l'Active Directory, nous limitons l'impact d'une potentiel compromission de ce dernier.
+Même si l'utilisation de PAM requiert que les utilisateurs soient ajoutés sur chacun des nœuds, cela n'est pas vraiment problématique étant donné que cela est une tâche automatisé dans notre playbook de configuration du cluster et des instances Proxmox.
 ## Haute disponibilité et Clusterisation
 
 Proxmox offre la possibilité de clusteriser plusieurs machines PVE dans le but d'offrir un gestion centraliser de l'ensemble des membres du cluster et ceux sans avoir à installer d'instance virtuelle comme pour VMWare ESXi avec vSphere.
