@@ -41,8 +41,11 @@ Chaque VNet créé ajoutera une carte réseau virtuelle qui sera utilisable pour
 ## Haute disponibilité et Clusterisation
 
 Proxmox offre la possibilité de clusteriser plusieurs machines PVE dans le but d'offrir un gestion centraliser de l'ensemble des membres du cluster et ceux sans avoir à installer d'instance virtuelle comme pour VMWare ESXi avec vSphere.
-Une fois un cluster respectant le quorum installé, plusieurs fonctionnalités deviennent utilisables (certaines fonctionnalités requiert des éléments supplémentaires pour fonctionner). Le principe de quorum permet de définir le nombre maximum d'instance pouvant rencontrer une panne sans endiguer le bon fonctionnement du service en cluster. On le calcule de la manière suivante
+Lors de la mise en place d'un service en cluster, dans notre cas, Proxmox, il est indispensable de définir le quorum.Le principe de quorum permet de définir le nombre maximum d'instance pouvant rencontrer une panne sans endiguer le bon fonctionnement du service en cluster. 
+On calcule le quorum à l'aide de la formule suivante : N/2+1, où N représente le nombre d'instance du cluster, la division est de N par 2 est une division euclidienne dont le résultat est donc un nombre entier. 
+Dans notre cas, le cluster Proxmox est constitué de 3 machines, donc 3/2 + 1 = 1 + 1 = 2. Il nous faut de ce fait 2 machines opérationnelles pour que le cluster soit maintenu, ce qui signifie qu'au-delà d'une panne le cluster est considérer hors-service.
 
+Une fois un cluster respectant le quorum installé, plusieurs fonctionnalités deviennent utilisables (certaines fonctionnalités requiert des éléments supplémentaires pour fonctionner). 
 
 La fonctionnalité **High Availability (HA)** de Proxmox VE permet d'assurer la continuité de fonctionnement des machines virtuelles (VM) et des conteneurs (LXC) en cas de défaillance d'un serveur du cluster.
 
