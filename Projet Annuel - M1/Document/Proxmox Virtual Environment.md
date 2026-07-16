@@ -29,4 +29,6 @@ C'est elle qui va définir le type de réseau virtuel qui pourra être utilisé.
 - VxLAN : cette zone implémente la solution VxLAN et permet donc de créer un réseau de niveau 2 au dessus d'un réseau IP. Cette zone est partagé et permet donc la communication entre 2 instances présentes sur des nœuds du cluster différents.
 - EVPN : cette zone est une version étendue du type VXLAN ajoutant un plan de contrôle BGP, particulièrement adapté aux grandes infrastructures. Cette zone est partagé et permet donc la communication entre 2 instances présentes sur des nœuds du cluster différents.
 Les zones VLAN, QinQ, VxLAN et EVPN implémente des protocoles standards et peuvent donc servir de base pour étendre le réseau du cluster au-delà de ce dernier en faisant directement le pont avec l'infrastructure physique de manière transparente sans surcouche supplémentaires.
-Le type de zone le plus adapté à notre besoin est le type VLAN.
+Le type de zone le plus adapté à notre besoin est le type VLAN, notre choix c'est donc arrêté sur cette option. Nous avons donc créer une zone appeler cenexis qui accueillera tous les sous-réseaux nécessaire aux fonctionnement de l'infrastructure. 
+{ screen - ZONES PVE WebUI}
+Une fois la zone créée, il faut désormais créer les sous-réseaux. Au sein de SDN les sous-réseaux sont appelés des VNets (Virtual Networks), dans le cas d'une zone de type VLAN, chaque VNet 
