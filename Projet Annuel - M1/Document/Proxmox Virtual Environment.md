@@ -40,6 +40,10 @@ Chaque VNet créé ajoutera une carte réseau virtuelle qui sera utilisable pour
 
 ## Haute disponibilité et Clusterisation
 
+Proxmox offre la possibilité de clusteriser plusieurs machines PVE dans le but d'offrir un gestion centraliser de l'ensemble des membres du cluster et ceux sans avoir à installer d'instance virtuelle comme pour VMWare ESXi avec vSphere.
+Une fois un cluster respectant le quorum installé, plusieurs fonctionnalités deviennent utilisables (certaines fonctionnalités requiert des éléments supplémentaires pour fonctionner). Le principe de quorum permet de définir le nombre maximum d'instance pouvant rencontrer une panne sans endiguer le bon fonctionnement du service en cluster. On le calcule de la manière suivante
+
+
 La fonctionnalité **High Availability (HA)** de Proxmox VE permet d'assurer la continuité de fonctionnement des machines virtuelles (VM) et des conteneurs (LXC) en cas de défaillance d'un serveur du cluster.
 
 Le principe repose sur la surveillance permanente de l'état des nœuds du cluster grâce au système de quorum de Proxmox. Lorsqu'une machine virtuelle est déclarée comme ressource HA, son état est contrôlé en permanence. Si le serveur qui l'héberge devient indisponible (panne matérielle, coupure d'alimentation, perte de connexion au cluster, etc.), le gestionnaire HA détecte automatiquement cette défaillance.
@@ -57,10 +61,6 @@ L'utilisation de la haute disponibilité nécessite généralement :
 
 La haute disponibilité améliore significativement la résilience de l'infrastructure en réduisant le temps d'interruption des services hébergés.
 
----
-
-## Cluster Resource Scheduling (CRS)
-
 Le **Cluster Resource Scheduling (CRS)** est un mécanisme permettant d'optimiser automatiquement la répartition des machines virtuelles et des conteneurs au sein d'un cluster Proxmox.
 
 Contrairement au système HA, dont l'objectif est de gérer les pannes, le CRS intervient lorsque le cluster fonctionne normalement. Il analyse régulièrement l'utilisation des ressources (processeur, mémoire, charge des nœuds, etc.) afin d'équilibrer les charges entre les différents serveurs.
@@ -68,13 +68,9 @@ Contrairement au système HA, dont l'objectif est de gérer les pannes, le CRS i
 Lorsque cela est possible, le CRS peut proposer ou effectuer des migrations à chaud (_Live Migration_) afin de déplacer certaines VM vers des nœuds moins sollicités. Cette répartition permet de :
 
 - limiter la surcharge d'un serveur ;
-    
 - améliorer les performances globales du cluster ;
-    
 - optimiser l'utilisation des ressources matérielles ;
-    
 - préparer plus facilement les opérations de maintenance.
-    
 
 Le CRS peut fonctionner selon différentes politiques de placement, prenant en compte la disponibilité des ressources et les contraintes définies par l'administrateur.
 
@@ -95,30 +91,21 @@ Deux types principaux de règles existent.
 Les règles d'affinité imposent que plusieurs machines virtuelles soient hébergées sur le même nœud lorsque cela est possible.
 
 Cette configuration est utile lorsque plusieurs services communiquent très fréquemment, par exemple :
-
 - un serveur web et son cache ;
-    
 - une application et son serveur Redis ;
-    
 - plusieurs composants d'une même application distribuée.
-    
 
 Le fait de les exécuter sur le même hôte permet de réduire la latence réseau et d'améliorer les performances.
 
 ### Règles d'anti-affinité (Anti-Affinity)
-
 À l'inverse, les règles d'anti-affinité imposent que certaines machines virtuelles ne soient jamais hébergées sur le même serveur.
 
 Cette approche est particulièrement utilisée pour les services critiques redondants, par exemple :
 
 - deux contrôleurs de domaine ;
-    
 - plusieurs serveurs de bases de données répliquées ;
-    
 - plusieurs nœuds Kubernetes ;
-    
 - des pare-feux virtuels fonctionnant en haute disponibilité.
-    
 
 En répartissant ces machines sur des hôtes différents, une panne matérielle n'affectera pas simultanément tous les composants du service.
 
