@@ -16,6 +16,16 @@ Voici les caractéristiques de la machine pve01.cenexis.lan :
 
 Proxmox est une solution offrant de nombreuses fonctionnalités qu'il est important de configurer judicieusement pour pouvoir pleinement en profiter.
 
+## Gestion des comptes et de l'authentification
+
+Etant donné la criticité de Proxmox au sein de notre infrastructure, il est primordial de se questionner sur la manière dont les comptes utilisateurs de ce dernier doivent être gérer.
+
+Nativement Proxmox propose 2 types d'utilisateurs :
+- PVE : utilisateur automatiquement diffusé à l'ensemble du cluster mais pouvant accéder uniquement à l'interface web, si un utilisateur PVE souhaite accéder à la console de l'un des nœuds du cluster, il devra utiliser un autre compte existant localement au sein du système Linux du nœud cible
+- PAM : utilisateur local devant être répliqué manuellement sur l'ensemble des membres du cluster. Il peut accéder à la fois à l'interface web ainsi qu'à la console des nœuds sur lesquels l'utilisateur existe.
+Il existe d'autres types de comptes faisant appel à des services d'authentification externe :
+- Active Directory Server
+- LDAP Ser
 ## Haute disponibilité et Clusterisation
 
 Proxmox offre la possibilité de clusteriser plusieurs machines PVE dans le but d'offrir un gestion centraliser de l'ensemble des membres du cluster et ceux sans avoir à installer d'instance virtuelle comme pour VMWare ESXi avec vSphere.
@@ -62,13 +72,13 @@ Voici comme nous avons configurés ce dernier au sein de notre infrastructure
 ![[Pasted image 20260716234037.png|584]]
 Nous avons choisi le mode Dynamic Load car la charge de nos instances peuvent varier en fonction du moment de la journée, de cette manière CRS pourra répartir en temps réel la charge entre toutes les machines du cluster Proxmox. Nous autorisons CRS a répartir au démarrage pour les nouvelles instances ainsi que pour les instances déjà en cours de fonctionnement, ce qui permet de supprimer la nécessité d'action humaine.
 
-## Règles d'affinité (Affinity Rules)
+Il est possible de pousser la répartition de charge à un cran supérieur à l'ai des règles d'affinité ou Affinity Rules en anglais.
 
 Les **Affinity Rules** permettent de contrôler le placement des machines virtuelles à l'intérieur du cluster en définissant des relations entre elles ou avec certains nœuds.
 
 Ces règles offrent une plus grande maîtrise de l'organisation des services tout en restant compatibles avec les mécanismes de haute disponibilité et de planification des ressources.
 
-Deux types principaux de règles existent.
+Ces règles d'affinités peuvent être 
 
 ### Règles d'affinité (Affinity)
 
