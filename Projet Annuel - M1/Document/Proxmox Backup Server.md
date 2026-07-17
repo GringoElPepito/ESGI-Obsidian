@@ -1,0 +1,1 @@
+La sauvegarde est l'un des éléments principaux de sécurité pour une entreprise. En effet, si l'entreprise venait à perdre ses données cela pourrait avoir un impact terrible sur la production qui dans la plupart des cas devra être stoppé de toute urgence. C'est pourquoi il est important 

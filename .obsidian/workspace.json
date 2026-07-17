@@ -327,12 +327,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Document/Proxmox Virtual Environment.md",
+                "file": "Projet Annuel - M1/Document/Proxmox Backup Server.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Proxmox Virtual Environment"
+              "title": "Proxmox Backup Server"
             }
           }
         ],
@@ -485,9 +485,9 @@
   },
   "active": "c711c433c67f344f",
   "lastOpenFiles": [
+    "Projet Annuel - M1/Document/Proxmox Virtual Environment.md",
     "Projet Annuel - M1/Document/Proxmox Backup Server.md",
     "Projet Annuel - M1/Document/Bastion.md",
-    "Projet Annuel - M1/Document/Proxmox Virtual Environment.md",
     "attachments/Pasted image 20260716234037.png",
     "Projet Annuel - M1/Document/SAN.md",
     "Projet Annuel - M1/Installation/Proxmox/Proxmox Backup Server.md",
