@@ -12,13 +12,19 @@ Il existe 2 de type de logiciel de virtualisation :
 
 Comme expliqué précédemment lors de la section concernant les choix technologiques, nous nous sommes arrêtés sur la solution Proxmox Virtual Environment pour la virtualisation. Bien que plus récente, cette solution Open-Source commence à faire ses preuves mêmes dans les entreprises avec des contextes critiques. L'écart avec des solutions comme VMWare ESXi se réduit peu à peu au fil des mis à jour apportant de nouvelles fonctionnalités déjà présentes chez ses concurrents.
 
-En plus de la virtualisation, Proxmox propose aussi une solution de conteneurisation. La conteneurisation est un nouveau paradigme prenant de plus en plus de places au sein des infrastructures informatiques.
+En plus de la virtualisation, Proxmox propose aussi une solution de conteneurisation grâce à LXC (Linux Containers).
 
 La conteneurisation est une technologie de virtualisation légère qui permet d'exécuter des applications dans des environnements isolés appelés **conteneurs**. Contrairement aux machines virtuelles, les conteneurs ne disposent pas de leur propre système d'exploitation complet : ils partagent le noyau du système d'exploitation de l'hôte tout en restant isolés les uns des autres.
 
 Chaque conteneur embarque uniquement les bibliothèques, dépendances et fichiers nécessaires à l'exécution de son application, ce qui le rend plus léger, plus rapide à démarrer et moins gourmand en ressources qu'une machine virtuelle. Cette approche facilite le déploiement, la portabilité et la gestion des applications, tout en garantissant un environnement d'exécution cohérent entre les phases de développement, de test et de production.
 
-La conteneurisation est aujourd'hui largement utilisée pour le déploiement d'applications modernes et de services distribués. Dans Proxmox VE, cette technologie est mise en œuvre grâce aux conteneurs **LXC (Linux Containers)**.
+Il existe deux grandes catégories de conteneurs : les **conteneurs applicatifs** et les **conteneurs systèmes**.
+
+Les **conteneurs applicatifs**, tels que ceux créés avec **Docker**, sont conçus pour exécuter une application ou un service unique. Chaque conteneur embarque uniquement les composants indispensables au fonctionnement de cette application, ce qui favorise une architecture modulaire et facilite le déploiement, la mise à jour et la montée en charge des services. Ils sont largement utilisés dans les environnements de développement, les architectures de microservices et les plateformes d'orchestration comme Kubernetes.
+
+Les **conteneurs systèmes**, tels que les **LXC (Linux Containers)** utilisés par Proxmox VE, reproduisent quant à eux un environnement Linux complet. Ils permettent d'exécuter plusieurs services simultanément et offrent une expérience proche de celle d'un serveur physique, tout en conservant les avantages de la conteneurisation en termes de légèreté et de performances. Ils sont particulièrement adaptés à l'hébergement de services traditionnels, à la virtualisation de serveurs Linux et aux infrastructures où plusieurs applications doivent cohabiter dans un même environnement.
+
+Ainsi, si Docker est principalement destiné au déploiement d'applications individuelles, LXC vise à fournir un système d'exploitation complet au sein d'un conteneur. Le choix entre ces deux approches dépend des besoins de l'infrastructure, du niveau d'isolation recherché et du type de services à héberger.
 
 Le cluster Proxmox se compose de 3 machines pour pouvoir respecter le quorum,
 Voici les caractéristiques de la machine pve01.cenexis.lan :
@@ -28,8 +34,6 @@ Voici les caractéristiques de la machine pve01.cenexis.lan :
 - Stockage :
 - Interface réseau :
 	- 
-
-Proxmox est une solution offrant de nombreuses fonctionnalités qu'il est important de configurer judicieusement pour pouvoir pleinement en profiter.
 
 ## Gestion des comptes et de l'authentification
 
@@ -144,11 +148,11 @@ C'est elle qui va définir le type de réseau virtuel qui pourra être utilisé.
 Les zones VLAN, QinQ, VxLAN et EVPN implémente des protocoles standards et peuvent donc servir de base pour étendre le réseau du cluster au-delà de ce dernier en faisant directement le pont avec l'infrastructure physique de manière transparente sans surcouche supplémentaires.
 
 Le type de zone le plus adapté à notre besoin est le type VLAN, notre choix c'est donc arrêté sur cette option. Nous avons donc créer une zone appeler cenexis qui accueillera tous les sous-réseaux nécessaire aux fonctionnement de l'infrastructure.
-{ screen - ZONES PVE WebUI}
+{ screen - ZONES PVE WebUI }
 
 Une fois la zone créée, il faut désormais créer les sous-réseaux. Au sein de SDN les sous-réseaux sont appelés des VNets (Virtual Networks), dans le cas d'une zone de type VLAN, chaque VNet correspond à un VLAN distinct et à ce titre doit avoir un ID Vlan (tag) unique.
 
-Concernant la nomenclature des VNet au sein du SDN, nous sommes limités à 8 caractères c'est pourquoi nous avons sélectionné la nomenclature suivante : VLAN{TAG_VLAN}. La norme 802.1q définit 4096 comme valeur maximal pour un tag VLAN de ce fait, celui-ci ne peut excéder 4 caractères et permet avec la nomenclature proposé de garantir qu'aucun troncage ne sera nécessaire pour le nommage des VNets. 
+Concernant la nomenclature des VNet au sein du SDN, nous sommes limités à 8 caractères c'est pourquoi nous avons sélectionné la nomenclature suivante : VLAN<TAG_VLAN>. La norme 802.1q définit 4096 comme valeur maximal pour un tag VLAN de ce fait, celui-ci ne peut excéder 4 caractères et permet avec la nomenclature proposé de garantir qu'aucun troncage ne sera nécessaire pour le nommage des VNets. 
 
 Cependant la nomenclature n'est pas très parlante et rend difficile d'identifier le type de trafic circulant sur chaque VNet, la solution à cela est de définir un Alias, l'alias n'est pas utilisé par Proxmox pour identifier les VLANs et est donc de ce fait bien plus permissif que le nom des VNets.
 { screen - VNets PVE WebUI }
