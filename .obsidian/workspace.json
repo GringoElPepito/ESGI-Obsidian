@@ -327,12 +327,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Document/VM.md",
+                "file": "Projet Annuel - M1/Document/Supervision.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "VM"
+              "title": "Supervision"
             }
           }
         ],
@@ -485,6 +485,8 @@
   },
   "active": "c711c433c67f344f",
   "lastOpenFiles": [
+    "Projet Annuel - M1/Document/VM.md",
+    "Projet Annuel - M1/Document/Supervision.md",
     "Projet Annuel - M1/Document/Téléphonie.md",
     "Projet Annuel - M1/Document/Serveur Mail.md",
     "Projet Annuel - M1/Document/SAN.md",
@@ -508,10 +510,8 @@
     "Projet Annuel - M1/Installation/Proxmox/Proxmox Network.md",
     "Projet Annuel - M1/Installation/Proxmox/Proxmox Setup.md",
     "Projet Annuel - M1/Infrastructure/Réseau/Architecture.md",
-    "Projet Annuel - M1/Document/VM.md",
     "Projet Annuel - M1/Document/SYSLOG.md",
     "Projet Annuel - M1/Installation/Active Directory.md",
-    "Projet Annuel - M1/Cahier des charges.md",
     "Projet Annuel - M1/Installation/Proxmox",
     "Projet Annuel - M2",
     "FYC",
