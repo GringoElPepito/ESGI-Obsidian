@@ -2,6 +2,9 @@ La sauvegarde est l'un des éléments principaux de sécurité pour une entrepri
 
 Notre solution de virtualisation étant Proxmox Virtual Environment, nous avons choisi Proxmox Backup Sever comme solution de sauvegarde.
 
+Voici les caractéristiques du serveur de sauvegarde pbs.cenexis.lan :
+
+
 **Proxmox Backup Server (PBS)** est une solution de sauvegarde développée par Proxmox pour protéger les machines virtuelles, les conteneurs LXC et les hôtes Proxmox VE. Conçue pour s'intégrer nativement à Proxmox VE, elle permet de centraliser la gestion des sauvegardes et de simplifier les opérations de restauration.
 
 PBS utilise un mécanisme de sauvegarde **incrémentielle** basé sur la **déduplication des données**. Lorsqu'une nouvelle sauvegarde est effectuée, seules les données modifiées depuis la précédente sont transférées et stockées. Cette approche réduit considérablement l'espace de stockage nécessaire ainsi que le temps requis pour réaliser les sauvegardes.
