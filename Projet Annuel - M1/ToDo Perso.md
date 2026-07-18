@@ -19,5 +19,5 @@ Exemple :
 - Exploitation
 	- Interface de gestion (Machine + Service)
 	- Action Courante
-	- Incident courants -> Vérif + Résolu
+	- Incident courants -> Vérif + Résolution
 
