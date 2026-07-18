@@ -48,8 +48,12 @@ Voici comment se découpe le playbook deploy_siem charger de l'installation et d
 Le première accès disponible est l'accès SSH rendu disponible à travers le bastion JumpServer (fty-lbst01.cenexis.lan), celui-ci sera principalement utilisé pour s'occuper de la gestion de l'instance. L'accès SSH permettre de réaliser les mis à jour systèmes ou encore de débuguer les différents services, s'ils venaient à être hors-service. L'authentification utilise des clé SSH et est entièrement géré par le bastion.
 Le second accès de cette machine se fait via l'interface web à laquelle on accèdera encore une fois à travers le bastion JumpServer. Cet accès servira surtout a exploité le service Wazuh, donc surveillance des différentes instances, analyse des données récupérées ou encore génération de rapport. L'authentification est entièrement managé par le bastion évitant d'avoir à retenir des identifiants d'accès supplémentaires.
 
-#### Action Quotidienne
+#### Gestion général
 
 #### Mis à jour
+Pour la mis à jour de Wazuh, il suffit d'exécuter la commande suivante :
+```bash
+sudo dnf update -y wazuh-indexer wazuh-manager wazuh-dashboard filebeat
+```
 
 #### Incidents général
