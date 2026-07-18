@@ -10,7 +10,7 @@ Voici les caractéristiques de l'instance fty-lsie01.cenexis.lan :
 | RAM             | 4G                                                                 |
 | Stockage        | 64G                                                                |
 | Interfaces      | eth0: VLAN161 -> 10.16.1.20                                        |
-| Ports           | 22 (SSH), 443(HTTPS), 1514 (), 1515 (), 9200 (), 9300 (), 55000 () |
+
 {screen - Summary fty-lsie01.cenexis.lan}
 ### Installation
 
@@ -43,6 +43,16 @@ Voici comment se découpe le playbook deploy_siem charger de l'installation et d
 
 ### Exploitation
 
+#### Services en écoute
+Etant donné que nous avons réalisé une installation All-in-One de Wazuh, un certain nombre de port sont en écoute pour assurer le bon fonctionnement de chaque service. En voici la liste et le détail de chacun de ses ports :
+- 22 : Accès SSH 
+- 443 : Accès HTTPS -> Wazuh Dashboard WebUI de Wazuh
+- 1514 :
+- 1515 :
+- 5500 :
+- 9200 :
+- 9300 :
+
 #### Accès
 
 Le première accès disponible est l'accès SSH rendu disponible à travers le bastion JumpServer (fty-lbst01.cenexis.lan), celui-ci sera principalement utilisé pour s'occuper de la gestion de l'instance. L'accès SSH permettre de réaliser les mis à jour systèmes ou encore de débuguer les différents services, s'ils venaient à être hors-service. L'authentification utilise des clé SSH et est entièrement géré par le bastion.
@@ -53,7 +63,7 @@ Le second accès de cette machine se fait via l'interface web à laquelle on acc
 #### Mis à jour
 Pour la mis à jour de Wazuh, il suffit d'exécuter la commande suivante :
 ```bash
-sudo dnf update -y wazuh-indexer wazuh-manager wazuh-dashboard filebeat
+sudo dnf update -y wazuh-indexer wazuh-manager wazuh-dashboard libcap filebeat coreutils
 ```
 
 #### Incidents général
