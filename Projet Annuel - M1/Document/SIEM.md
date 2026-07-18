@@ -45,8 +45,8 @@ Voici comment se découpe le playbook deploy_siem charger de l'installation et d
 
 #### Accès
 
-Le première accès disponible est l'accès SSH rendu disponible à travers le bastion JumpServer (fty-lbst01.cenexis.lan)
-La seconde est via l'interface web est elle aussi accessible via le bastion
+Le première accès disponible est l'accès SSH rendu disponible à travers le bastion JumpServer (fty-lbst01.cenexis.lan), celui-ci sera principalement utilisé pour s'occuper de la gestion de l'instance. L'accès SSH permettre de réaliser les mis à jour systèmes ou encore de débuguer les différents services, s'ils venaient à être hors-service.
+Le second accès de cette machine se fait via l'interface web à laquelle on accèdera encore une fois à travers le bastion JumpServer. Cet accès servira surtout a exploité le service Wazuh, donc surveillance des différentes instances, 
 
 #### Action Quotidienne
 
