@@ -2,15 +2,15 @@ La mise en place d'une solution de gestion des informations et des événements 
 
 Voici les caractéristiques de l'instance fty-lsie01.cenexis.lan :
 
-| Paramètres      | Valeur                      |
-| --------------- | --------------------------- |
-| Type d'instance | LXC                         |
-| OS              | Rocky 10.2                  |
-| CPU             | 2 vCPU                      |
-| RAM             | 4G                          |
-| Stockage        | 64G                         |
-| Interfaces      | eth0: VLAN161 -> 10.16.1.20 |
-| Ports           | 1515                        |
+| Paramètres      | Valeur                                                             |
+| --------------- | ------------------------------------------------------------------ |
+| Type d'instance | LXC                                                                |
+| OS              | Rocky 10.2                                                         |
+| CPU             | 2 vCPU                                                             |
+| RAM             | 4G                                                                 |
+| Stockage        | 64G                                                                |
+| Interfaces      | eth0: VLAN161 -> 10.16.1.20                                        |
+| Ports           | 22 (SSH), 443(HTTPS), 1514 (), 1515 (), 9200 (), 9300 (), 55000 () |
 {screen - Summary fty-lsie01.cenexis.lan}
 ### Installation
 
@@ -44,6 +44,9 @@ Voici comment se découpe le playbook deploy_siem charger de l'installation et d
 ### Exploitation
 
 #### Accès
+La machine fournit 2 accès permettant de l'administrer.
+Le première accès disponible est l'accès SSH rendu disponible à travers le bastion JumpServer (fty-lbst01.cenexis.lan)
+La seconde est via l'interface web accessible 
 
 #### Action Quotidienne
 
