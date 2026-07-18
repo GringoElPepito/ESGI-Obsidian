@@ -47,11 +47,11 @@ Voici comment se découpe le playbook deploy_siem charger de l'installation et d
 Etant donné que nous avons réalisé une installation All-in-One de Wazuh, un certain nombre de port sont en écoute pour assurer le bon fonctionnement de chaque service. En voici la liste et le détail de chacun de ses ports :
 - 22 : Accès SSH 
 - 443 : Accès HTTPS -> Wazuh Dashboard WebUI de Wazuh
-- 1514 :
-- 1515 :
-- 5500 :
-- 9200 :
-- 9300 :
+- 1514 : Communication avec les agents Wazuh
+- 1515 : Enrôlement des agents
+- 9200 : API de l'indexer permet au Dashboard et à Filebeat 
+- 9300 : Communication interne du cluster OpenSearch
+- 55000 : API REST de Wazuh notamment pour que le Dashboard puisse interagir avec le Wazuh Manager 
 
 #### Accès
 
