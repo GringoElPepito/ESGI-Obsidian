@@ -1,4 +1,13 @@
 ## Mise en place LDAPS
+Récupérer la chaîne de certification :
+```powershell
+scp desigual@10.11.2.21:/home/desigual/sub-ca/ca-chain.crt ./
+```
+
+Importation du certificat dans le magasin Windows :
+```powershell
+Import-Certificate -FilePath .\ca-chain.crt  -CertStoreLocation 'Cert:\LocalMachine\Root' -Verbose
+```
 
 Création d'un fichier `request.inf` :
 ```inf
@@ -30,7 +39,7 @@ certreq -new request.inf fty-wads01.csr
 
 Copie du fichier de demande de signature sur l'autorité de certification intermédiaire :
 ```powershell
-scp ./fty-wads01.csr desigual@10.11.2.21:/home/desigual/req/
+scp ./fty-wads01.csr desigual@10.11.2.21:/home/desigual/sub-ca/req/
 ```
 
 Sur l'autorité de certification intermédiaire :
@@ -44,7 +53,7 @@ sudo chown desigual:desigual ../fty-wads01.p7b
 
 Récupération du certificat sur l'AD :
 ```powershell
-scp desigual@10.11.2.21:/home/desigual/req/fty-wads01.p7b ./
+scp desigual@10.11.2.21:/home/desigual/fty-wads01.p7b ./
 ```
 
 Installation du certificat :
