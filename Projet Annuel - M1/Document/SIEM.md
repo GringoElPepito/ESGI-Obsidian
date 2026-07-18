@@ -44,9 +44,9 @@ Voici comment se découpe le playbook deploy_siem charger de l'installation et d
 ### Exploitation
 
 #### Accès
-La machine fournit 2 accès permettant de l'administrer.
+
 Le première accès disponible est l'accès SSH rendu disponible à travers le bastion JumpServer (fty-lbst01.cenexis.lan)
-La seconde est via l'interface web accessible 
+La seconde est via l'interface web est elle aussi accessible via le bastion
 
 #### Action Quotidienne
 
