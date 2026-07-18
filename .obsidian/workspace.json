@@ -327,12 +327,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/ToDo Perso.md",
+                "file": "Projet Annuel - M1/Document/Modèle.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ToDo Perso"
+              "title": "Modèle"
             }
           }
         ],
@@ -485,6 +485,9 @@
   },
   "active": "c711c433c67f344f",
   "lastOpenFiles": [
+    "Projet Annuel - M1/Document/Automatisation.md",
+    "Projet Annuel - M1/Document/Modèle.md",
+    "Projet Annuel - M1/ToDo Perso.md",
     "Projet Annuel - M1/ToDo Cahier des charges.md",
     "Projet Annuel - M1/Document/Active Directory.md",
     "DevOps/Question.md",
@@ -509,9 +512,6 @@
     "Sans titre 2.md",
     "Projet Annuel - M1/Supervision.md",
     "Projet Annuel - M1/Installation/Proxmox/Proxmox iscsi.md",
-    "Projet Annuel - M1/Installation/Proxmox/Proxmox Setup.md",
-    "Projet Annuel - M1/Installation/Proxmox/Proxmox Network.md",
-    "Projet Annuel - M1/Installation/Proxmox/Proxmox Ceph.md",
     "Projet Annuel - M1/Installation/Proxmox",
     "Projet Annuel - M2",
     "FYC",
