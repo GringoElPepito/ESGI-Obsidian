@@ -13,5 +13,11 @@
 
 Exemple : 
 ## Nom de la techno
-présentation de la techno
-### Installation
+- présentation de la techno
+- Paramètre de la machine -> Specs + port exposé
+- Installation + Automatisation
+- Exploitation
+	- Interface de gestion (Machine + Service)
+	- Action Courante
+	- Incident courants -> Vérif + Résolu
+
