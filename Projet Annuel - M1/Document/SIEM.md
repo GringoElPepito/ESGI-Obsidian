@@ -1,15 +1,16 @@
 La mise en place d'une solution de gestion des informations et des événements de sécurité (SIEM) est essentielle pour une entreprise exerçant une activité critique et traitant des données sensibles. En centralisant et en analysant en temps réel les journaux d'événements issus des différents équipements et applications, le SIEM permet de détecter rapidement les comportements anormaux, les tentatives d'intrusion et les incidents de sécurité. Il améliore la capacité de réaction des équipes, facilite les investigations grâce à la conservation des traces d'activité et contribue au respect des exigences réglementaires en matière de sécurité et de traçabilité. En offrant une visibilité globale sur l'état de sécurité du système d'information, le SIEM renforce la résilience de l'entreprise face aux cybermenaces.
 
 Voici les caractéristiques de l'instance siem.cenexis.lan :
-- CPU : 2 cores
-- RAM :  4G
-- Stockage : 64G
-- Instance : LXC
-- OS : Rocky Linux 10.2
-- état HA attendu : started
-- Réseau
-	- VLAN : VLAN 161 - Syslog & SIEM
-	- IP : 10.16.1.20
+
+| Paramètres      | Valeur                      |
+| --------------- | --------------------------- |
+| Type d'instance | LXC                         |
+| OS              | Rocky 10.2                  |
+| CPU             | 2 vCPU                      |
+| RAM             | 4G                          |
+| Stockage        | 64G                         |
+| Interfaces      | eth0: VLAN161 -> 10.16.1.20 |
+| Ports           |                             |
 {screen - Summary siem.cenexis.lan}
 
 Dans notre cas, nous avons optés pour la solution Wazuh qui est une solution SIEM Open-Source ayant à de nombreuses reprises fait ses preuves en proposant un système d'analyse complet allant au-delà de la simple analyse de logs. Notre installation de Wazuh est une installation All-in-One,  c'est à dire que l'ensemble des composants de la solution est installé sur un même serveur. Cette configuration regroupe le **Wazuh Server**, chargé de recevoir et d'analyser les événements de sécurité transmis par les agents, le **Wazuh Indexer**, qui stocke et indexe les données pour permettre leur recherche et leur corrélation, ainsi que le **Wazuh Dashboard**, qui fournit une interface web de supervision, de visualisation et d'administration. 
