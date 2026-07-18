@@ -10,7 +10,7 @@ Voici les caractéristiques de l'instance fty-lsie01.cenexis.lan :
 | RAM             | 4G                          |
 | Stockage        | 64G                         |
 | Interfaces      | eth0: VLAN161 -> 10.16.1.20 |
-| Ports           |                             |
+| Ports           | 1515                        |
 {screen - Summary fty-lsie01.cenexis.lan}
 ### Installation
 
@@ -27,11 +27,24 @@ Nous avons configuré Wazuh de telle sorte à ce qu'il nous remonte les alertes 
 {screen - config alerte mail}
 
 L'installation des différents services de Wazuh ainsi que le déploiement des agents sur les différentes instances est entièrement automatisé, permettant de facilement redéployé le serveur Wazuh en cas de problème ou encore d'ajouter de nouvelles instances au sein du champ de contrôle de notre SIEM.
-Voici comment se découpe l'
+
+Voici comment se découpe le playbook deploy_siem charger de l'installation et de la configuration automatisé de Wazuh (l'instance LXC est préalablement déployé grâce au playbook deploy_lxc.yml) :
+
+| Rôle                         | Action                                                                                                      |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| common/set_certificate_facts | Initialisation des variables pour l'automatisation des tâches liés aux certificats                          |
+| common/request_certificate   | Création d'un certificat à partir d'un CSR                                                                  |
+| common/set_certificate_facts | Initialisation des variables pour l'automatisation des tâches liés aux certificats (certificat admin Wazuh) |
+| common/request_certificate   | Création d'un certificat à partir d'un CSR (certificat admin Wazuh)                                         |
+| siem/add_repo                | Ajoute le dépôt Wazuh à la machine                                                                          |
+| siem/indexer                 | Installe et configure le service Wazuh indexer                                                              |
+| siem/server                  | Installe et configure le service Wazuh server                                                               |
+| siem/dashboard               | Installe et configure le service Wazuh Dashboard                                                            |
 
 ### Exploitation
 
 #### Accès
+
 #### Action Quotidienne
 
 #### Mis à jour
