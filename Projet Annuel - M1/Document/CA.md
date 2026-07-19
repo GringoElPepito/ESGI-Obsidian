@@ -55,7 +55,13 @@ Etant donné que nous avons réalisé une installation All-in-One de Wazuh, un c
 Le première accès disponible est l'accès SSH rendu disponible à travers le bastion JumpServer (fty-lbst01.cenexis.lan), celui-ci sera principalement utilisé pour s'occuper de la gestion de l'instance. L'accès SSH permettre de réaliser les mis à jour systèmes ou encore de débuguer les différents services, s'ils venaient à être hors-service. L'authentification utilise des clé SSH et est entièrement géré par le bastion.
 
 #### Gestion général
-L
+Il n'y a pas de service fonctionnant en permanence pour l'autorité de certification, tout se passe avec des commandes ad-hoc réalisé en fonction des besoins.
+| Service        | Dossier de configuration | Chemin vers logs       |
+| -------------- | ------------------------ | ---------------------- |
+| wazuh-dahboard | /etc/wazuh-dashboard     | N/A                    |
+| wazuh-indexer  | /etc/wazuh-indexer       | /var/log/wazuh-indexer |
+| wazuh-manager  | /var/ossec/etc           | /var/ossec/logs        |
+| filebeat       | /etc/filebeat            | /var/log/filebeat      |
 
 `root-ca.conf` :
 ```INI
