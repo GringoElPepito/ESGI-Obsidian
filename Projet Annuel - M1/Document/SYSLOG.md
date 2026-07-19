@@ -1,4 +1,4 @@
-# Serveur de centralisation des journaux - fty-llog01.cenexis.lan
+Un serveur de logs permet de centraliser les journaux d'événements provenant de l'ensemble des équipements d'une infrastructure (serveurs, équipements réseau, applications, etc.). Cette centralisation facilite la supervision, le diagnostic des incidents, les investigations de sécurité et la conservation des traces d'activité. Il permet de préserver une version non-transformée des journaux d'évènements permettant de suivre l'intégralité du déroulement des activités.
 
 Voici les caractéristiques de l'instance **fty-llog01.cenexis.lan** :
 
@@ -21,7 +21,7 @@ Les communications entre les différents clients Syslog et le serveur sont réal
 
 Afin d'assurer la confidentialité et l'intégrité des journaux échangés, les communications RELP sont protégées par **TLS 1.3** avec des mécanismes de chiffrement **Post-Quantiques (PQC)**. Cette configuration permet de renforcer la sécurité des échanges tout en anticipant les futures évolutions des capacités de calcul liées à l'informatique quantique.
 
-Le serveur Rsyslog constitue le point central de collecte des journaux avant leur exploitation par la plateforme SIEM. Les logs sont conservés dans leur format d'origine, permettant de disposer d'une source fiable et non modifiée lors des investigations de sécurité.
+Le serveur Rsyslog a pour but de préserver une version brut des logs qui lui sont transmises.
 
 L'installation et la configuration du serveur sont entièrement automatisées à l'aide d'Ansible, permettant un redéploiement rapide en cas d'incident ou la reconstruction de l'infrastructure à l'identique.
 
