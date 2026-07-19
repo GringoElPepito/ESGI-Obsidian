@@ -23,7 +23,7 @@ Afin d'assurer la confidentialité et l'intégrité des journaux échangés, les
 
 Le serveur Rsyslog a pour but de préserver une version brut des logs qui lui sont transmises. Nous avons donc décorrélé le fonctionnement du Rsyslog et du SIEM pour éviter que celles-ci soient altérées.
 
-Concernant la réception et le rangement des logs, l'ensemble des logs est stocké dans le dossier /var/log/remote qui contient pour chaque hôte un dossier spécifique 
+Concernant la réception et le rangement des logs, l'ensemble des logs est stocké dans le dossier /var/log/remote qui contient un dossier distinct par client Rsyslog. Chaque dossier client contient un fichier de log par processus permettant ainsi de facilement récupéré les informations que l'on souhaite.
 
 L'installation et la configuration du serveur sont entièrement automatisées à l'aide d'Ansible, permettant un redéploiement rapide en cas d'incident ou la reconstruction de l'infrastructure à l'identique.
 
@@ -52,6 +52,8 @@ Le fonctionnement de cette machine repose principalement sur le service **rsyslo
 |Service|Dossier de configuration|Chemin des journaux|
 |---|---|---|
 |rsyslog|/etc/rsyslog.conf et /etc/rsyslog.d/|/var/log|
+
+Récupération des logs des machines clientes -> `/var/log/remote/{hostname}/{processus}.log`
 
 Les principales commandes d'administration sont les suivantes :
 
