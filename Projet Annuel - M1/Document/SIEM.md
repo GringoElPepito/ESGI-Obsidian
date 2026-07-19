@@ -43,10 +43,10 @@ Voici comment se découpe le playbook deploy_siem charger de l'installation et d
 
 ### Exploitation
 
-#### Services en écoute
+#### Ports en écoute
 Etant donné que nous avons réalisé une installation All-in-One de Wazuh, un certain nombre de port sont en écoute pour assurer le bon fonctionnement de chaque service. En voici la liste et le détail de chacun de ses ports :
 - 22 : Accès SSH 
-- 443 : Accès HTTPS -> Wazuh Dashboard WebUI de Wazuh
+- 443 : Accès HTTPS; Interface Web de Wazuh fournit par Wazuh Dashboard
 - 1514 : Communication avec les agents Wazuh
 - 1515 : Enrôlement des agents
 - 9200 : API de l'indexer permet au Dashboard et à Filebeat 
@@ -59,6 +59,18 @@ Le première accès disponible est l'accès SSH rendu disponible à travers le b
 Le second accès de cette machine se fait via l'interface web à laquelle on accèdera encore une fois à travers le bastion JumpServer. Cet accès servira surtout a exploité le service Wazuh, donc surveillance des différentes instances, analyse des données récupérées ou encore génération de rapport. L'authentification est entièrement managé par le bastion évitant d'avoir à retenir des identifiants d'accès supplémentaires.
 
 #### Gestion général
+La machine fty-lsie01.cenexis.lan doit faire opérer 4 services distinct pour que Wazuh fonctionne :
+- wazuh-dahboard
+- wazuh-indexer
+- wazuh-manager
+- filebeat
+Pour gérer ces services on utilisera les commandes suivantes :
+```bash
+systemctl status <nom_du_service> # Pour obtenir rapidement l'état du service
+systemctl restart <nom_du_service> # Pour redémarrer un service
+systemctl status wazuh-manager
+systemctl status filebeat
+```
 
 #### Mis à jour
 Pour la mis à jour de Wazuh, il suffit d'exécuter la commande suivante :
