@@ -58,7 +58,7 @@ Etant donné que nous avons réalisé une installation All-in-One de Wazuh, un c
 Le première accès disponible est l'accès SSH rendu disponible à travers le bastion JumpServer (fty-lbst01.cenexis.lan), celui-ci sera principalement utilisé pour s'occuper de la gestion de l'instance. L'accès SSH permettre de réaliser les mis à jour systèmes ou encore de débuguer les différents services, s'ils venaient à être hors-service. L'authentification utilise des clé SSH et est entièrement géré par le bastion.
 
 Le second accès de cette machine se fait via l'interface web à laquelle on accèdera encore une fois à travers le bastion JumpServer. Cet accès servira surtout a exploité le service Wazuh, donc surveillance des différentes instances, analyse des données récupérées ou encore génération de rapport. L'authentification est entièrement managé par le bastion évitant d'avoir à retenir des identifiants d'accès supplémentaires.
-{ screen - WebUI Wazuh}
+{ screen - WebUI Wazuh }
 
 #### Gestion général
 La machine fty-lsie01.cenexis.lan doit faire opérer 4 services distinct pour que Wazuh fonctionne :
