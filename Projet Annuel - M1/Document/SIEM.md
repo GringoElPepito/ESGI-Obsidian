@@ -60,22 +60,27 @@ Le second accès de cette machine se fait via l'interface web à laquelle on acc
 
 #### Gestion général
 La machine fty-lsie01.cenexis.lan doit faire opérer 4 services distinct pour que Wazuh fonctionne :
-- wazuh-dahboard
-- wazuh-indexer
-- wazuh-manager
-- filebeat
+
+| Service        | Dossier de configuration | Chemin vers logs       |
+| -------------- | ------------------------ | ---------------------- |
+| wazuh-dahboard | /etc/wazuh-dashboard     | N/A                    |
+| wazuh-indexer  | /etc/wazuh-indexer       | /var/log/wazuh-indexer |
+| wazuh-manager  | /var/ossec/etc           | /var/ossec/logs        |
+| filebeat       | /etc/filebeat            | /var/log/filebeat      |
+
 Pour gérer ces services on utilisera les commandes suivantes :
 ```bash
 systemctl status <nom_du_service> # Pour obtenir rapidement l'état du service
-systemctl restart <nom_du_service> # Pour redémarrer un service
-systemctl status wazuh-manager
-systemctl status filebeat
+systemctl stop <nom_du_service> # Pour arrêter un service
+systemctl start <nom_du_service> # Pour démarrer un serivce
+systemctl restart <nom_du_service> # Pour redémarrer un service en FAILED
+journalctl -xeu <nom_du_service> # Pour voir les derniers logs du service
 ```
 
 #### Mis à jour
 Pour la mis à jour de Wazuh, il suffit d'exécuter la commande suivante :
 ```bash
-sudo dnf update -y wazuh-indexer wazuh-manager wazuh-dashboard libcap filebeat coreutils
+sudo dnf update -y wazuh-indexer wazuh-manager wazuh-dashboard filebeat
 ```
 
 #### Incidents général
