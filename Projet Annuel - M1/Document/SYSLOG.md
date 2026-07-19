@@ -1,30 +1,77 @@
-Bien trop souvent délaissé dans les plus petites infrastructures, le serveur Syslog est un outil parfaitement adapté pour retracer le déroulement d’une attaque informatique ou encore d’un incident rendant hors d’usage certaines machines. 
+# Serveur de centralisation des journaux - fty-llog01.cenexis.lan
 
-Ce service a pour simple but de réceptionner les logs, à savoir les informations des événements, de l’ensemble des machines de l’infrastructure. Cela permet ainsi de centraliser l’intégralité des logs à un seul et unique endroit, facilitant ainsi leur accès et renforçant la disponibilité des logs.
+Voici les caractéristiques de l'instance **fty-llog01.cenexis.lan** :
 
-Pour la centralisation des logs, nous avons optés pour la solution Rsyslog, une solution open source représentant la dernière itération de l’outil syslog et présentant de nombreux avantages en comparaison à ces prédécesseurs.
+|Paramètres|Valeur|
+|---|---|
+|Type d'instance|LXC|
+|OS|Rocky Linux 10.2|
+|CPU|1 vCPU|
+|RAM|512 Mo|
+|Stockage|32 Go|
+|Interface|eth0 : VLAN161 (Syslog & SIEM) → 10.16.1.10|
 
-L’outil Syslog a connu plusieurs itérations, la première nommé Syslog, supportait uniquement l’ UDP et ne pouvait donc pas garantir le transport jusqu’à la destination. De plus, il ne supportait pas le chiffrement de données, ce qui représente un problème de sécurité assez important.
+{screen - Summary fty-llog01.cenexis.lan}
 
-La seconde itération nommé Syslog-ng supporte le transport par TCP et le chiffrement TLS, remédiant ainsi aux lacunes de son prédécesseur.
+## Installation
 
-La dernière itération à ce jour de cet outil est nommé rsyslog, il possède les mêmes fonctionnalités que syslog-ng tout en ajoutant le support du protocole RELP. Là où TCP ne permet pas de renvoyés les logs si la connexion a été interrompue entre le client et le serveur, RELP se charge de renvoyés les logs qui n’ont pas pu l’être.
+L'instance **fty-llog01.cenexis.lan** héberge le service **Rsyslog** configuré en mode **serveur** afin de centraliser les journaux provenant de l'ensemble des équipements de l'infrastructure. Cette centralisation permet de conserver une copie brute des événements système générés par les différents serveurs, équipements réseau et services applicatifs, facilitant ainsi les opérations de supervision, d'investigation et d'audit.
 
-Voici les caractéristiques de l'instance syslog.cenexis.lan :
-- CPU : 1 core
-- RAM : 512 Mb
-- Stockage : 32G
-- Instance : LXC
-- OS : Rocky Linux 10.2
-- état HA attendu : started
-- Réseau
-	- VLAN : VLAN 161 - Syslog & SIEM
-	- IP : 10.16.1.10
-{screen - Summary syslog.cenexis.lan}
+Les communications entre les différents clients Syslog et le serveur sont réalisées à l'aide du protocole **RELP (Reliable Event Logging Protocol)**. Contrairement au protocole Syslog classique basé sur UDP ou TCP, RELP garantit la livraison des messages grâce à un mécanisme d'accusé de réception, évitant ainsi toute perte de journaux lors d'une interruption réseau ou d'un redémarrage d'un équipement.
 
-Rsyslog est un service pouvant être configuré en tant que serveur ou client.
-En tant que serveur, celui-ci réceptionne les logs transmis par les machines clientes et les enregistrent en respectant les règles définis dans le ou les fichiers de configuration. En tant que client, celui-ci transmet automatiquement chaque message d’évènement au moment où il est émis par le système, évitant ainsi que les logs soient modifiés avant leur envoie.
+Afin d'assurer la confidentialité et l'intégrité des journaux échangés, les communications RELP sont protégées par **TLS 1.3** avec des mécanismes de chiffrement **Post-Quantiques (PQC)**. Cette configuration permet de renforcer la sécurité des échanges tout en anticipant les futures évolutions des capacités de calcul liées à l'informatique quantique.
 
-Dans notre cas, nous configurons le service pour qu'il fonctionne en mode serveur. Notre Rsyslog étant installé sur un Rocky Linux, cela implique qu’il faut ouvrir le port sur lequel le service va écouter pour recevoir les logs envoyer par les clients. Dans notre cas le port est 20514, le port par défaut est le 514, nous avons volontairement choisi un port différent pour des raisons de sécurité. Pour poursuivre dans ce sens l'intégralité des échanges réalisé entre les clients rsyslog et le serveur sont chiffrés à l'aide d'un algorithme de chiffrement Post-Quantique, à savoir ML-DSA65 supporté par TLSv1.3. Ainsi nous pouvons garantir un niveau de sécurité maximal concernant la transmission des logs de nos différentes instances limitant ainsi les risques que ceux-ci soit interceptés et décrypter.
-Pour faciliter la navigation entre les logs, nous avons fait en sorte que chaque hôte remontant ses logs sur le serveur ait son propre dossier et qu'un fichier de log soit créer par process. De cette manière, il est bien plus facile de trouver les logs que l'on souhaite.
-{screen - Configuration rsyslog }
+Le serveur Rsyslog constitue le point central de collecte des journaux avant leur exploitation par la plateforme SIEM. Les logs sont conservés dans leur format d'origine, permettant de disposer d'une source fiable et non modifiée lors des investigations de sécurité.
+
+L'installation et la configuration du serveur sont entièrement automatisées à l'aide d'Ansible, permettant un redéploiement rapide en cas d'incident ou la reconstruction de l'infrastructure à l'identique.
+
+## Exploitation
+
+### Ports en écoute
+
+Le serveur Rsyslog expose uniquement les services nécessaires à son fonctionnement :
+
+- **22** : Accès SSH (uniquement via le serveur de bastion)
+- **20514** : Réception des journaux Syslog via le protocole **RELP** sécurisé par **TLS 1.3**
+
+### Accès
+
+L'administration de l'instance est exclusivement réalisée via un accès **SSH** transitant par le serveur de bastion de l'infrastructure. Aucune connexion SSH directe depuis le réseau utilisateur n'est autorisée.
+
+L'authentification repose exclusivement sur des clés SSH gérées par le bastion, garantissant un contrôle centralisé des accès administrateurs.
+
+Le service Rsyslog ne dispose d'aucune interface Web. Son administration s'effectue uniquement depuis la ligne de commande.
+
+## Gestion générale
+
+Le fonctionnement de cette machine repose principalement sur le service **rsyslog**.
+
+|Service|Dossier de configuration|Chemin des journaux|
+|---|---|---|
+|rsyslog|/etc/rsyslog.conf et /etc/rsyslog.d/|/var/log|
+
+Les principales commandes d'administration sont les suivantes :
+
+```bash
+systemctl status rsyslog      # Vérifier l'état du service
+systemctl stop rsyslog        # Arrêter le service
+systemctl start rsyslog       # Démarrer le service
+systemctl restart rsyslog     # Redémarrer le service
+journalctl -xeu rsyslog       # Consulter les journaux du service
+```
+
+## Mise à jour
+
+Avant toute intervention, une sauvegarde de la machine doit être réalisée afin de permettre un retour arrière en cas d'incident.
+
+La mise à jour du système ainsi que du service Rsyslog s'effectue simplement à l'aide de la commande suivante :
+
+```bash
+sudo dnf update -y
+```
+
+Une fois la mise à jour terminée, il est recommandé de redémarrer le service Rsyslog afin de prendre en compte les éventuelles nouvelles versions des composants installés :
+
+```bash
+sudo systemctl restart rsyslog
+```
