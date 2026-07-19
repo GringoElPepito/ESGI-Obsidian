@@ -4,27 +4,27 @@ Pour garantir un certain niveau de sécurité, nous avons opté pour une archite
 De cette manière, il nous est possible d'éteindre l'autorité racine dans le but de rendre celle-ci inaccessible et limiter le risque de compromission de la clé privé. Pour nous assuré que l'autorité racine reste bien éteinte, une supervision remonte une alerte lorsque l'instance répond au ping.
 
 Voici les caractéristiques de l'instance root-ca.cenexis.lan :
-- CPU : 1 core
-- RAM : 512 Mb
-- Stockage : 16G
-- Instance : LXC
-- OS : Rocky Linux 10.2
-- état HA attendu : stopped
-- Réseau
-	- VLAN : VLAN 112 - Active Directory & CA
-	- IP : 10.11.2.20
+
+| Paramètres      | Valeur                      |
+| --------------- | --------------------------- |
+| Type d'instance | LXC                         |
+| OS              | Rocky 10.2                  |
+| CPU             | 1 vCPU                      |
+| RAM             | 512Mb                       |
+| Stockage        | 16G                         |
+| Interfaces      | eth0: VLAN112 -> 10.11.2.20 |
 {screen - Summary root-ca.cenexis.lan}
 
 Voici les caractéristiques de l'instance sub-ca.cenexis.lan :
-- CPU : 1 core
-- RAM : 512 Mb
-- Stockage : 16G
-- Instance : LXC
-- OS : Rocky Linux 10.2
-- état HA attendu : started
-- - Réseau
-	- VLAN : VLAN 112 - Active Directory & CA
-	- IP : 10.11.2.21
+
+| Paramètres      | Valeur                      |
+| --------------- | --------------------------- |
+| Type d'instance | LXC                         |
+| OS              | Rocky 10.2                  |
+| CPU             | 1 vCPU                      |
+| RAM             | 512Mb                       |
+| Stockage        | 16G                         |
+| Interfaces      | eth0: VLAN112 -> 10.11.2.21 |
 {screen - Summary sub-ca.cenexis.lan}
 
 Le déploiement et la configuration des autorités de certification racine et délégué sont entièrement automatisé via des playbook Ansible tout comme la génération de certificat client et serveur permettant de faciliter la configuration de nos différents services.
@@ -37,11 +37,25 @@ Nous avons mis en place 2 chaînes de certification distinctes, la première est
 
 Voici comment se découpe le playbook deploy_ca.yml charger de l'installation et de la configuration automatisé de Wazuh (l'instance LXC est préalablement déployé grâce au playbook deploy_lxc.yml) :
 
+| Rôle                 | Action                                                                                                                 |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| ca/ca_directories    | Créer l'arborescence et les fichiers de configuration pour l'autorité de certification Post-Quantique                  |
+| ca/create_ca_cmd     | Créer l'autorité de certification Post-Quantique avec la génération des différents certificats Racine et Intermédiaire |
+| ca/ca_directories    | Créer l'arborescence et les fichiers de configuration pour l'autorité de certification classique                       |
+| ca/create_ca_cmd     | Créer l'autorité de certification classique avec la génération des différents certificats Racine et Intermédiaire      |
+| common/stop_instance | Eteint l'autorité de certification Racine                                                                              |
+### Exploitation
 
-| Rôle | Action |
-| ---- | ------ |
-|      |        |
+#### Ports en écoute
+Etant donné que nous avons réalisé une installation All-in-One de Wazuh, un certain nombre de port sont en écoute pour assurer le bon fonctionnement de chaque service. En voici la liste et le détail de chacun de ses ports :
+- 22 : Accès SSH 
 
+#### Accès
+
+Le première accès disponible est l'accès SSH rendu disponible à travers le bastion JumpServer (fty-lbst01.cenexis.lan), celui-ci sera principalement utilisé pour s'occuper de la gestion de l'instance. L'accès SSH permettre de réaliser les mis à jour systèmes ou encore de débuguer les différents services, s'ils venaient à être hors-service. L'authentification utilise des clé SSH et est entièrement géré par le bastion.
+
+#### Gestion général
+L
 
 `root-ca.conf` :
 ```INI

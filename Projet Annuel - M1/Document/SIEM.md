@@ -2,14 +2,14 @@ Un serveur de logs permet de centraliser les journaux d'événements provenant d
 
 Voici les caractéristiques de l'instance fty-lsie01.cenexis.lan :
 
-| Paramètres      | Valeur                                                             |
-| --------------- | ------------------------------------------------------------------ |
-| Type d'instance | LXC                                                                |
-| OS              | Rocky 10.2                                                         |
-| CPU             | 2 vCPU                                                             |
-| RAM             | 4G                                                                 |
-| Stockage        | 64G                                                                |
-| Interfaces      | eth0: VLAN161 -> 10.16.1.20                                        |
+| Paramètres      | Valeur                      |
+| --------------- | --------------------------- |
+| Type d'instance | LXC                         |
+| OS              | Rocky 10.2                  |
+| CPU             | 2 vCPU                      |
+| RAM             | 4G                          |
+| Stockage        | 64G                         |
+| Interfaces      | eth0: VLAN161 -> 10.16.1.20 |
 
 {screen - Summary fty-lsie01.cenexis.lan}
 ### Installation
