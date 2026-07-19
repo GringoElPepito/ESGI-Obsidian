@@ -348,12 +348,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Document/SYSLOG.md",
+                "file": "Projet Annuel - M1/Document/CA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SYSLOG"
+              "title": "CA"
             }
           }
         ]
@@ -505,9 +505,12 @@
   },
   "active": "c9debe9a257c4225",
   "lastOpenFiles": [
+    "Projet Annuel - M1/Document/Bastion.md",
+    "Projet Annuel - M1/Document/Automatisation.md",
     "Projet Annuel - M1/Document/LXC.md",
-    "Projet Annuel - M1/Document/SIEM.md",
+    "Projet Annuel - M1/Document/Méthode Agile-SCRUM.md",
     "Projet Annuel - M1/Document/SYSLOG.md",
+    "Projet Annuel - M1/Document/SIEM.md",
     "Projet Annuel - M1/Document/VM.md",
     "Projet Annuel - M1/Document/Reverse-Proxy.md",
     "Projet Annuel - M1/Document/Serveur Mail.md",
@@ -519,7 +522,6 @@
     "Projet Annuel - M1/Document/Proxmox Backup Server.md",
     "Projet Annuel - M1/Document/Téléphonie.md",
     "Projet Annuel - M1/Document/Modèle.md",
-    "Projet Annuel - M1/Document/Automatisation.md",
     "Projet Annuel - M1/ToDo Perso.md",
     "Projet Annuel - M1/ToDo Cahier des charges.md",
     "Projet Annuel - M1/Document/Active Directory.md",
@@ -527,11 +529,9 @@
     "attachments/Pasted image 20260716234037.png",
     "Projet Annuel - M1/Installation/Active Directory.md",
     "Projet Annuel - M1/Document/Pare-feu virtuel.md",
-    "Projet Annuel - M1/Document/Bastion.md",
     "Projet Annuel - M1/Document/Base de données.md",
     "FYC/Séance suivi 1.md",
     "FYC/Sans titre.md",
-    "Projet Annuel - M1/Suivi PA.md",
     "Projet Annuel - M1/Installation/Proxmox",
     "Projet Annuel - M2",
     "FYC",
