@@ -21,10 +21,13 @@ Les communications entre les différents clients Syslog et le serveur sont réal
 
 Afin d'assurer la confidentialité et l'intégrité des journaux échangés, les communications RELP sont protégées par **TLS 1.3** avec des mécanismes de chiffrement **Post-Quantiques (PQC)**. Cette configuration permet de renforcer la sécurité des échanges tout en anticipant les futures évolutions des capacités de calcul liées à l'informatique quantique.
 
-Le serveur Rsyslog a pour but de préserver une version brut des logs qui lui sont transmises.
+Le serveur Rsyslog a pour but de préserver une version brut des logs qui lui sont transmises. Nous avons donc décorrélé le fonctionnement du Rsyslog et du SIEM pour éviter que celles-ci soient altérées.
+
+Concernant la réception et le rangement des logs, l'ensemble des logs est stocké dans le dossier /var/log/remote qui contient pour chaque hôte un dossier spécifique 
 
 L'installation et la configuration du serveur sont entièrement automatisées à l'aide d'Ansible, permettant un redéploiement rapide en cas d'incident ou la reconstruction de l'infrastructure à l'identique.
 
+L'installation et la configuration de Rsyslog est entièrement comprise dans le playbook deploy_lxc.yml permettant le déploiement des instances LXC.
 ## Exploitation
 
 ### Ports en écoute
