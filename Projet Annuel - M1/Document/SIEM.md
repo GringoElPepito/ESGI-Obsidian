@@ -78,6 +78,7 @@ journalctl -xeu <nom_du_service> # Pour voir les derniers logs du service
 ```
 
 #### Mis à jour
+Avant toute mise à jour, une backup doit être réalisé pour permettre un rollback en cas d'incident suite à l'intervention.
 Pour la mis à jour de Wazuh, il suffit d'exécuter la commande suivante :
 ```bash
 sudo dnf update -y wazuh-indexer wazuh-manager wazuh-dashboard filebeat
