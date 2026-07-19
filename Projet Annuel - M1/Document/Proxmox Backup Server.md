@@ -2,7 +2,7 @@ La sauvegarde est l'un des éléments principaux de sécurité pour une entrepri
 
 Notre solution de virtualisation étant Proxmox Virtual Environment, nous avons choisi Proxmox Backup Sever comme solution de sauvegarde.
 
-Voici les caractéristiques du serveur de sauvegarde pbs.cenexis.lan :
+Voici les caractéristiques du serveur de sauvegarde fty-bck01.cenexis.lan :
 - CPU :
 - RAM : 
 - Stockage :
