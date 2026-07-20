@@ -22,7 +22,7 @@ Comme expliqué précédemment dans la section des choix technologiques, nous av
 - `KoKo` : Ce composant se charge de la gestion des connexions CLI (SSH, Telnet, Kubernetes etc..) avec les terminaux concernés
 - `Lion` : Ce composant se charge de la gestion des connexions graphique (RDP, HTTP, HTTPS)
 - `Chen` : Base de données interne à JumpServer pour la gestion de l'interface Web
-Il y a en plus de cela besoin d'une base de données de type SQL comme MariaDB ou PostgreSQL, celle-ci peut être externalisé. La solution utilise aussi une base de donnée Redis (clé/valeur), qui peut elle aussi être externalisé. 
+Il y a en plus de cela besoin d'une base de données de type SQL comme MariaDB ou PostgreSQL, celle-ci peut être externalisé. La solution utilise aussi une base de donnée Redis (clé/valeur), qui peut elle aussi être externalisé. Enfin JumpServer nécessite un dernier service, Celery qui est une solution d'orchestration et de gestion de tâche, celui-ci ne peut pas être externalisé et doit donc forcément être conteneurisé.
 Dans notre cas, seul la base de données PostgreSQL a été externalisé, ainsi JumpServer peut profiter de notre cluster de base de données PostgreSQL. Cependant JumpServer étant le seul service utilisant Redis, nous avons décidé de le laisser conteneurisé.
 
 Pour les accès web tel que Proxmox ou Wazuh, il est obligatoire d'installer une VM Windows supplémentaire qui servira de point relais pour accéder aux interfaces web.
@@ -56,10 +56,26 @@ JumpServer se découpant en plusieurs micro-services, un certain nombre de port 
 - 80 : Accès HTTP, ne sert qu'à la direction vers HTTPS
 - 443 : Accès HTTPS, WebUI JumpServer
 - 323 : NTP
-- 2222 : Accès SSH d'utilis'
+- 2222 : Accès SSH d'utilisation JumpServer (équivalent WebUI en CLI)
 
 #### Accès
 
 Le première accès disponible est l'accès SSH sur le port 22 qui est directement disponible depuis le VLAN 104 (IT Services). Cet accès fournit directement la main sur la machine et servira donc à la gestion de l'instance en elle-même. Cet accès SSH permet de réaliser les mis à jour systèmes ou encore de débuguer les différents services, s'ils venaient à être hors-service. L'authentification utilise des clé SSH et est entièrement géré par le bastion.
 
-Le second accès disponible
+Le second accès disponible est l'accès Web qui sert principalement à gérer et utiliser la solution JumpServer elle-même. Via cette interface Web, il est possible de se connecter aux différentes instances préalablement ajoutés, ou encore de gérer les différents éléments (Serveurs, Utilisateurs, Groupes, Comptes de connexion).
+
+Le troisième et dernier accès est l'accès SSH sur le port 2222 qui est lui aussi directement disponible depuis le VLAN104(IT Services). Cependant celui-ci ne donne pas un accès direct à la machine, il donne lieu à une application CLI proposant un service similaire à ce qu'on pourrait trouver sur l'interface Web. En effet, depuis cet accès, il est possible de se connecter aux différents serveurs (via leur accès CLI uniquement).
+
+#### Gestion général
+Tous les services propres à JumpServer, mise à part la base de données SQL, sont conteneurisé via Docker.
+
+Pour gérer ces services on utilisera les commandes suivantes :
+```bash
+docker compose ps # État des conteneurs 
+docker compose logs -f postfix-mailcow # Journaux du service SMTP 
+docker compose logs -f dovecot-mailcow # Journaux du service IMAP/POP3
+docker compose logs -f nginx-mailcow # Journaux du proxy HTTPS 
+docker compose logs -f rspamd-mailcow # Journaux du moteur anti-spam 
+docker compose restart postfix-mailcow # Redémarrage d'un service 
+docker compose down # Arrêt de la plateforme
+```
