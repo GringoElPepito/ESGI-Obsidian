@@ -189,8 +189,13 @@ Chaque VNet créé ajoutera une carte réseau virtuelle qui sera utilisable pour
 Lorsqu'une instance VM ou LXC transmet une trame sur une carte réseau virtuelle de l'un des VNets de la zone de type VLAN, la trame est automatiquement étiquetée avec l'ID VLAN définit pour le VNet auquel l'instance est connecté, permettant d'identifier le VLAN d'origine pour les machines et systèmes amenés à traiter la trame.
 
 ## Stockage
-Les PVE ont deux stockages partagés le premier en NFS sert notamment au stockage des ISO et des images conteneurs. Le second en iSCSI sert à stocker les VM et les LXC que le cluster Proxmox se chargera de faire fonctionner
+Les PVE ont deux stockages partagés le premier en NFS sert notamment au stockage des ISO et des images conteneurs. Le second en iSCSI sert à stocker les VM et les LXC que le cluster Proxmox se chargera de faire fonctionner.
 
+Pour le stockage NFS, celui a été entièrement configuré à travers l'interface web Datacenter->Storage->Add->NFS, il suffit ensuite d'entrer les informations du partage
+On définit l'ID qui correspond au nom du stockage, puis le serveur et le chemin absolu vers partage NFS. Enfin on autorise le stockage d'image ISO et de template de conteneur. Enfin il faut appuyer sur Add et le stockage apparaîtra pour tous les nœuds du cluster
+![[Pasted image 20260720071551.png]]
+
+Pour le stockage iSCSI, chaque PVE est relié
 ## Automatisation
 Une partie de la configuration des PVE est automatisé avec le playbook deploy_proxmox.yml, voici comment se découpe le fonctionnement de cette automatisation :
 
