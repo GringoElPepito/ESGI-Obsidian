@@ -23,16 +23,28 @@ Comme expliqué précédemment dans la section des choix technologiques, nous av
 - `Lion` : Ce composant se charge de la gestion des connexions graphique (RDP, HTTP, HTTPS)
 - `Chen` : Base de données interne à JumpServer pour la gestion de l'interface Web
 Il y a en plus de cela besoin d'une base de données de type SQL comme MariaDB ou PostgreSQL, celle-ci peut être externalisé. La solution utilise aussi une base de donnée Redis (clé/valeur), qui peut elle aussi être externalisé. 
-Dans notre cas, seul la base de données PostgreSQL a été externalisé.
+Dans notre cas, seul la base de données PostgreSQL a été externalisé, ainsi JumpServer peut profiter de notre cluster de base de données PostgreSQL. Cependant JumpServer étant le seul service utilisant Redis, nous avons décidé de le laisser conteneurisé.
 
 Pour les accès web tel que Proxmox ou Wazuh, il est obligatoire d'installer une VM Windows supplémentaire qui servira de point relais pour accéder aux interfaces web.
 
-===SOIT===
-c'est d'ailleurs ce que nous avons fait notamment, ainsi JumpServer utilise notre cluster de base de données à travers notre HAProxy, pour garantir la haute disponibilité de l'accès à la base de données
-
-===SOIT===
-cependant, dans notre cas nous avons fait le choix de la conteneurisé avec les autres services pour faciliter le déploiement et la gestion du service.
 
 Concernant l'installation, celle-ci est quasiment entièrement automatisé, je dis quasiment car il y a une étape qui ne peut malheureusement pas être automatisé et c'est la modification du mot de passe du compte admin.
 Cependant le provisioning des terminaux, des comptes, des utilisateurs et des permissions est entièrement automatisé, permettant de facilement ajouté de nouveaux éléments sans avoir à intervenir directement sur l'interface de JumpServer.
 
+Voici comment se découpe le playbook deploy_jumpser.yml charger de l'installation et de la configuration automatisé de JumpServer (l'instance VM est déployé manuellement) :
+
+| Rôle                               | Action                                                                                            |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------- |
+| common/set_certificate_facts       | Initialisation des variables pour l'automatisation des tâches liés aux certificats                |
+| common/request_certificate         | Création d'un certificat à partir d'un CSR                                                        |
+| jumpserver/install_jumpserver      | Installe et réalise la configuration de base de JumpServer                                        |
+| jumpserver/init_requests           | Prépare les informations nécessaire à la configuration de JumpServer via l'API                    |
+| jumpserver/create_assets           | Créé les serveurs dans jumpserver en se basant sur l'inventaire ansible                           |
+| jumpserver/create_accounts         | Crée les comptes de connexions des serveurs dans jumpserver en se basant sur l'inventaire ansible |
+| jumpserver/init_requests           | Prépare les informations nécessaire à la configuration de JumpServer via l'API                    |
+| jumpserver/create_groups           | Créé les groupes dans jumpserver                                                                  |
+| jumpserver/create_users            | Créé les utilisateurs dans jumpserver                                                             |
+| jumpserver/create_nodes            | Créé les dossiers pour trier les serveurs dans jumpserver                                         |
+| jumpserver/create_unmanaged_assets | Créé les serveurs n'appartenant pas à l'inventaire ansible                                        |
+| jumpserver/create_accounts         | Créé                                                                                              |
+| jumpserver/create_permissions      |                                                                                                   |
