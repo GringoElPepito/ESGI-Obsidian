@@ -223,3 +223,15 @@ Le première accès disponible est l'accès SSH rendu disponible à travers le b
 
 Le second accès de cette machine se fait via l'interface web à laquelle on accèdera encore une fois à travers le bastion JumpServer. Cet accès est celui à privilégié car il permet d'interagir avec tous les PVE du cluster depuis une seule interface. De plus, l'interface web fournit un accès CLI permettant si besoin de réaliser certaines commandes pour notamment utilisé des fonctionnalités malheureusement pas encore intégré à l'interface web.
 { screen - WebUI Wazuh }
+
+## Gestion général
+
+
+## Mise à jour
+Pour les mise à jours des machines Proxmox, il y a deux manières de procéder.
+Soit via l'interface web {nom_de_la_machine}->Updates->Upgrade
+Soit via la console :
+```bash
+sudo apt update
+sudo apt upgrade
+```
