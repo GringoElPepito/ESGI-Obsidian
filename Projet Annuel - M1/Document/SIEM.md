@@ -1,3 +1,4 @@
+
 Un serveur de logs permet de centraliser les journaux d'événements provenant de l'ensemble des équipements d'une infrastructure (serveurs, équipements réseau, applications, etc.). Cette centralisation facilite la supervision, le diagnostic des incidents, les investigations de sécurité et la conservation des traces d'activité. Il constitue également une source fiable de données pour les solutions de SIEM, qui exploitent ces journaux afin de détecter les comportements anormaux et les tentatives d'intrusion.
 
 Voici les caractéristiques de l'instance fty-lsie01.cenexis.lan :

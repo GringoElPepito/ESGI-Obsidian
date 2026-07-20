@@ -10,16 +10,6 @@ Enfin le troisième inconvénient est la consommation de ressources supplémenta
 Pour les raisons citées plutôt, nous avons finalement décidés de nous orientés vers une solution de stockage SAN (Storage Area Network). 
 Avec du stockage SAN, on va dédié des machines aux stockages et connectés les noeuds de virtualisation à ces machines avec une connexion dédié, pour que ces derniers puissent accéder aux stockages mis à disposition par le serveurs de stockage. à savoir TrueNAS SCALE. 
 
-Voici les caractéristiques de notre machine TrueNAS :
--          CPU : 2 cores
--          RAM : 4Gib
--          Nom d’hôte : san.kasgrunt.lan
--          IP : 172.21.51.59
--          Stockage :
-o   Disque de 32Gb pour l’installation du système d’exploitation
-o   Disque de 100Gb
-o   Disque de 3Tb
-
 Voici les caractéristiques de fty-lsto01.cenexis.lan :
 
 | Paramètres      | Valeur                                                                                   |
@@ -34,10 +24,10 @@ Voici les caractéristiques de fty-lsto01.cenexis.lan :
 
 Nous avons configuré sur celle-ci deux pools de stockage :
 
--          ISO_POOL, un espace utilisant le disque de 100G servant à entreposer les ISO d’installation nécessaire à la création des machines virtuelles.
+- ISO_POOL, un espace utilisant le disque de 100G servant à entreposer les ISO d’installation nécessaire à la création des machines virtuelles.
 { screen - ISO POOL }
 
--          VM_POOL, un espace utilisant le disque de 3Tb dédié au stockage des machines virtuelles.
+- VM_POOL, un espace utilisant le disque de 3Tb dédié au stockage des machines virtuelles.
 { screen - VM_POOL }
 
 ISO_POOL est partagé en NFS, tandis que VM_POOL l’est via iSCSI. Nous avons fait ce choix car iSCSI permet à la machine distante accédant au stockage de directement modifié les blocs offrant des biens meilleurs performances. Cependant, iSCSI n’intègre pas de système de résolution de conflit, dans le cas des machines virtuelles cela n’est pas un problème car les données de chaque machine virtuelle n’est utilisé que par l’un des trois serveurs Proxmox à la fois. Mais ceci n’est pas vrai pour les ISO d’installation, en effet, il est très probable que les trois PVE souhaitent accéder à un même fichier ISO au même moment, ce qui pourrait se résulter en un conflit si on utilisait le protocole iSCSI. C’est pourquoi les ISO sont partagé grâce à NFS, ce protocole intègre directement un système de résolution de conflit répondant directement au problème posé par notre cas d’utilisation.

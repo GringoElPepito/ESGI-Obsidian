@@ -327,12 +327,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Document/VM.md",
+                "file": "Projet Annuel - M1/Document/Serveur Mail.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "VM"
+              "title": "Serveur Mail"
             }
           }
         ],
@@ -348,12 +348,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Installation/Proxmox/Proxmox iscsi.md",
+                "file": "Projet Annuel - M1/Document/SIEM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Proxmox iscsi"
+              "title": "SIEM"
             }
           }
         ]
@@ -505,10 +505,14 @@
   },
   "active": "c711c433c67f344f",
   "lastOpenFiles": [
-    "Projet Annuel - M1/Document/Téléphonie.md",
-    "Projet Annuel - M1/Document/SYSLOG.md",
-    "Projet Annuel - M1/Document/Supervision.md",
+    "Projet Annuel - M1/Document/SIEM.md",
     "Projet Annuel - M1/Document/Serveur Mail.md",
+    "Projet Annuel - M1/Installation/Proxmox/Proxmox iscsi.md",
+    "Projet Annuel - M1/Document/SAN.md",
+    "Projet Annuel - M1/Document/Supervision.md",
+    "Projet Annuel - M1/Document/SYSLOG.md",
+    "Projet Annuel - M1/Document/Téléphonie.md",
+    "Projet Annuel - M1/Document/VM.md",
     "Projet Annuel - M1/Document/Reverse-Proxy.md",
     "Projet Annuel - M1/Document/Proxmox Virtual Environment.md",
     "Projet Annuel - M1/Document/Proxmox Backup Server.md",
@@ -523,13 +527,9 @@
     "Projet Annuel - M1/Document/Base de données.md",
     "Projet Annuel - M1/Document/Bastion.md",
     "attachments/Pasted image 20260720074419.png",
-    "Projet Annuel - M1/Document/SAN.md",
-    "Projet Annuel - M1/Installation/Proxmox/Proxmox iscsi.md",
     "attachments/Pasted image 20260720071551.png",
-    "Projet Annuel - M1/Document/SIEM.md",
     "Projet Annuel - M1/Document/Active Directory.md",
     "Projet Annuel - M1/Document/CA.md",
-    "Projet Annuel - M1/Document/VM.md",
     "Projet Annuel - M1/ToDo Perso.md",
     "Projet Annuel - M1/ToDo Cahier des charges.md",
     "attachments/Pasted image 20260716234037.png",
