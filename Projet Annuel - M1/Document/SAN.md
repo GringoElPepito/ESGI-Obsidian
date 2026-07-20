@@ -50,7 +50,25 @@ Nous avons aussi limité l’accès au partage iSCSI aux IQN (Nom Qualifié iSCS
 
 Concernant la configuration du partage NFS, celui-ci est monté dans le dossier /mnt qui est sur linux le dossier par défaut pour monter des volumes. De plus nous avons aussi restreint les accès au partage aux adresses IP des PVE permettant ainsi de réduire le risque d’une attaque ou d’une compromission de partage.
 
+## Ports en écoute
+TrueNAS est un système proposant de nombreuses fonctionnalités à ce titre, un certain nombre de port sont en écoute pour assurer le bon fonctionnement de chaque service. En voici la liste et le détail de chacun de ses ports :
+- 22 : Accès SSH
+- 80 : HTTP pour redirection vers HTTPS
+- 443 : HTTPS
+- 2049 : NFS
+- 3260 : iSCSI
 # Exploitation
 
+## Accès 
+Le première accès disponible est l'accès SSH rendu disponible à travers le bastion JumpServer (fty-lbst01.cenexis.lan), celui-ci sera principalement utilisé pour s'occuper de la gestion de l'instance. L'accès SSH permet de réaliser les mis à jour systèmes ou encore de débuguer les différents services, s'ils venaient à être hors-service. L'authentification utilise des clé SSH et est entièrement géré par le bastion.
+
+Le second accès de cette machine se fait via l'interface web à laquelle on accèdera encore une fois à travers le bastion JumpServer. Cet accès permet notamment de configuré les différents services liés au fonctionnement de TrueNAS de manière plus intuitive que via l'accès SSH.
+{ screen - TrueNAS WebUI }
+
+## Gestion général
+
+Concernant la gestion général, l'idéal est d'intervenir à travers l'interface pour sa facilité de prise en main. Les services iSCSI et NFS, sont les 2 services critiques nécessaires au bon fonctio
+
+
 ## Mise à jour
-Pour mettre à jour la machine fty-lsto01.cenexis.lan, il faut au préalable couper les 
+Pour mettre à jour la machine fty-lsto01.cenexis.lan, il faut au préalable couper les connexions entre celle-ci et les PVE. Ensuite depuis l'interface web il faut se rendre dans System -> Update -> Install Update et suivre les instructions.
