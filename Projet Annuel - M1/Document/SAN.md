@@ -22,14 +22,14 @@ o   Disque de 3Tb
 
 Voici les caractéristiques de fty-lsto01.cenexis.lan :
 
-| Paramètres      | Valeur                         |
-| --------------- | ------------------------------ |
-| Type d'instance | Serveur Physique               |
-| OS              | TrueNAS SCALE                  |
-| CPU             | 6 CPU                          |
-| RAM             | 16G                            |
-| Stockage        | - 128Go OS<br>- 128Go<br>- 1To |
-| Interfaces      | eth0: VLAN161 -> 10.16.1.20    |
+| Paramètres      | Valeur                                                                                   |
+| --------------- | ---------------------------------------------------------------------------------------- |
+| Type d'instance | Serveur Physique                                                                         |
+| OS              | TrueNAS SCALE                                                                            |
+| CPU             | 6 CPU                                                                                    |
+| RAM             | 16G                                                                                      |
+| Stockage        | - 128Go OS<br>- 128Go<br>- 1To                                                           |
+| Interfaces      | eth0: VLAN111 -> 10.11.1.10<br>eth1: 10.99.99.2<br>eth2: 10.99.99.6<br>eth3: 10.99.99.10 |
 # Installation
 
 Nous avons configuré sur celle-ci deux pools de stockage :
@@ -67,8 +67,9 @@ Le second accès de cette machine se fait via l'interface web à laquelle on acc
 
 ## Gestion général
 
-Concernant la gestion général, l'idéal est d'intervenir à travers l'interface pour sa facilité de prise en main. Les services iSCSI et NFS, sont les 2 services critiques nécessaires au bon fonctio
-
+Concernant la gestion général, l'idéal est d'intervenir à travers l'interface pour sa facilité de prise en main. 
+Les services iSCSI et NFS, sont les 2 services critiques nécessaires au bon fonctionnement des PVE. Ils sont tous deux accessibles depuis l'onglet Shares de TrueNAS.
+Pour la gestion des utilisateurs, il faudra se rendre dans l'onglet Credentials -> Users
 
 ## Mise à jour
 Pour mettre à jour la machine fty-lsto01.cenexis.lan, il faut au préalable couper les connexions entre celle-ci et les PVE. Ensuite depuis l'interface web il faut se rendre dans System -> Update -> Install Update et suivre les instructions.

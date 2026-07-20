@@ -1,3 +1,4 @@
+# Présentation
 La virtualisation est un des éléments centraux de la plupart des infrastructures modernes. Là ou à l'époque chaque application devait fonctionner sur une machine distincte, la virtualisation a permis de faire tourner plusieurs applications sur un même serveur offrant ainsi la possibilité d'exploiter pleinement les ressources proposés par les serveurs physiques.
 
 La virtualisation est une technologie qui permet d'exécuter plusieurs systèmes d'exploitation ou applications indépendants sur un même serveur physique. Elle repose sur un logiciel appelé **hyperviseur**, qui crée et gère des **machines virtuelles (VM)** en partageant les ressources matérielles de l'hôte, telles que le processeur, la mémoire, le stockage et les interfaces réseau.
@@ -26,6 +27,40 @@ Les **conteneurs systèmes**, tels que les **LXC (Linux Containers)** utilisés 
 
 Ainsi, si Docker est principalement destiné au déploiement d'applications individuelles, LXC vise à fournir un système d'exploitation complet au sein d'un conteneur. Le choix entre ces deux approches dépend des besoins de l'infrastructure, du niveau d'isolation recherché et du type de services à héberger.
 
+Voici les caractéristiques de l'instance fty-hyp01.cenexis.lan :
+
+| Paramètres      | Valeur                                            |
+| --------------- | ------------------------------------------------- |
+| Type d'instance | Serveur physique                                  |
+| OS              | Proxmox 9.2.3                                     |
+| CPU             | 20 CPU                                            |
+| RAM             | 32G                                               |
+| Stockage        | 256Go                                             |
+| Interfaces      | vmbr0: VLAN110 -> 10.11.0.10<br>vmbr1: 10.99.99.1 |
+
+Voici les caractéristiques de l'instance fty-hyp02.cenexis.lan :
+
+| Paramètres      | Valeur                                            |
+| --------------- | ------------------------------------------------- |
+| Type d'instance | Serveur physique                                  |
+| OS              | Proxmox 9.2.3                                     |
+| CPU             | 20 CPU                                            |
+| RAM             | 32G                                               |
+| Stockage        | 256Go                                             |
+| Interfaces      | vmbr0: VLAN110 -> 10.11.0.11<br>vmbr1: 10.99.99.5 |
+
+Voici les caractéristiques de l'instance fty-hyp03.cenexis.lan :
+
+| Paramètres      | Valeur                                            |
+| --------------- | ------------------------------------------------- |
+| Type d'instance | Serveur physique                                  |
+| OS              | Proxmox 9.2.3                                     |
+| CPU             | 20 CPU                                            |
+| RAM             | 32G                                               |
+| Stockage        | 256Go                                             |
+| Interfaces      | vmbr0: VLAN110 -> 10.11.0.10<br>vmbr1: 10.99.99.9 |
+
+# Installation
 ## Gestion des comptes et de l'authentification
 
 Etant donné la criticité de Proxmox au sein de notre infrastructure, il est primordial de se questionner sur la manière dont les comptes utilisateurs de ce dernier doivent être gérer.
@@ -152,3 +187,7 @@ La zone ainsi que l'entierté des VNets sont déployés via le playbook Ansible 
 
 Chaque VNet créé ajoutera une carte réseau virtuelle qui sera utilisable pour connecter nos instances LXC ou VM. 
 Lorsqu'une instance VM ou LXC transmet une trame sur une carte réseau virtuelle de l'un des VNets de la zone de type VLAN, la trame est automatiquement étiquetée avec l'ID VLAN définit pour le VNet auquel l'instance est connecté, permettant d'identifier le VLAN d'origine pour les machines et systèmes amenés à traiter la trame.
+
+
+
+# Exploitation
