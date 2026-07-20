@@ -225,7 +225,15 @@ Le second accès de cette machine se fait via l'interface web à laquelle on acc
 { screen - WebUI Wazuh }
 
 ## Gestion général
-
+La major partie des tâches liés à Proxmox concernera la gestion des instances VM et LXC. Il est possible de gérer cela à travers l'interface web où à travers la console.
+via la console on utilisera :
+les commandes suivantes pour les LXC :
+```bash
+# lxc-<action>
+lxc-start 110220 # Démarre le LXC avec l'id 110220
+lxc-stop 110220 # Stoppe le LXC
+lxc-top 110220 # Réalise un top dans le LXC
+```
 
 ## Mise à jour
 Pour les mise à jours des machines Proxmox, il y a deux manières de procéder.
