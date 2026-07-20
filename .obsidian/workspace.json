@@ -327,12 +327,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Document/Active Directory.md",
+                "file": "Projet Annuel - M1/Document/Automatisation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Active Directory"
+              "title": "Automatisation"
             }
           }
         ],
@@ -506,6 +506,7 @@
   "active": "c711c433c67f344f",
   "lastOpenFiles": [
     "Projet Annuel - M1/Document/SIEM.md",
+    "Projet Annuel - M1/Document/Automatisation.md",
     "Projet Annuel - M1/Document/Active Directory.md",
     "Projet Annuel - M1/Document/Bastion.md",
     "Projet Annuel - M1/Document/LXC.md",
@@ -525,7 +526,6 @@
     "Projet Annuel - M1/Document/SAN.md",
     "Projet Annuel - M1/Document/VM.md",
     "Projet Annuel - M1/Document/Téléphonie.md",
-    "Projet Annuel - M1/Document/Automatisation.md",
     "Projet Annuel - M1/Document/Base de données.md",
     "Projet Annuel - M1/ToDo Perso.md",
     "Projet Annuel - M1/ToDo Cahier des charges.md",

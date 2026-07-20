@@ -54,9 +54,11 @@ Une fois installé, nous configurons l'Active Directory. Dans un premier temps o
 Nous configurons ensuite les capacités de l'Active Directory, nous activons le DNS, le Catalogue Global ainsi que l'option RODC. Cette dernière option fais en sorte qu'aucune modification sur l'Active Directory ne soit réalisable depuis cette machine. 
 { screen - CONFIG AD 2 }
 
+Nous validons le reste de la configuration et lançons l'installation finale. 
+{ screen - Installe POST CONFIG AD }
 
-
-
+A la fin de cette installation, la machine redémarre et une fois rallumé nous pouvons voir que la machine a bien été ajouté au contrôleur de domaine en Lecture seule
+{ screen - DOMAIN CONTROLLERS}
 
 ## Mise en place LDAPS
 Récupérer la chaîne de certification :
@@ -125,3 +127,10 @@ Vérification du LDAPS :
 ```powerhsell
 netstat -ano | findstr :636
 ```
+
+# Exploitation
+
+## Accès
+
+Concernant les accès, il n'y en a qu'un seul qui est celui fournit par le bastion (fty-lbst01.cenexis.lan). Ce dernier fournit un accès RDP permettant un accès direct à la machine ce qui est parfait pour l'administration des machines ou du domaine. L'intégralité des opérations ciblant l'Active Directory doivent être réalisé au travers du bastion.
+
