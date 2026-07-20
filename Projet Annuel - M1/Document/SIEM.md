@@ -79,7 +79,7 @@ systemctl restart <nom_du_service> # Pour redémarrer un service en FAILED
 journalctl -xeu <nom_du_service> # Pour voir les derniers logs du service
 ```
 
-#### Mis à jour
+#### Mise à jour
 Avant toute mise à jour, une backup doit être réalisé pour permettre un rollback en cas d'incident suite à l'intervention (cf. Procédure de sauvegarde).
 Pour la mis à jour de Wazuh, il suffit d'exécuter la commande suivante :
 ```bash

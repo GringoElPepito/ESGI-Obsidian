@@ -56,12 +56,30 @@ Le première accès disponible est l'accès SSH rendu disponible à travers le b
 
 #### Gestion général
 Il n'y a pas de service fonctionnant en permanence pour l'autorité de certification, tout se passe avec des commandes ad-hoc réalisé en fonction des besoins.
-| Service        | Dossier de configuration | Chemin vers logs       |
-| -------------- | ------------------------ | ---------------------- |
-| wazuh-dahboard | /etc/wazuh-dashboard     | N/A                    |
-| wazuh-indexer  | /etc/wazuh-indexer       | /var/log/wazuh-indexer |
-| wazuh-manager  | /var/ossec/etc           | /var/ossec/logs        |
-| filebeat       | /etc/filebeat            | /var/log/filebeat      |
+
+| Hôte    | Autorité                     | Emplacement               |
+| ------- | ---------------------------- | ------------------------- |
+| root-ca | Racine                       | /home/desigual/root-ca    |
+| root-ca | Racine Post-Quantique        | /home/desigual/root-ca-pq |
+| sub-ca  | Intermédiaire                | /home/desigual/sub-ca     |
+| sub-ca  | Intermédiaire Post-Quantique | /home/desigual/sub-ca-pq  |
+L'arborescence de chacun de ces dossiers se découpe de la manière suivante :
+
+| Fichier/Dossier | Rôle                                                              |
+| --------------- | ----------------------------------------------------------------- |
+| certs           | Contient les certificats générés                                  |
+| db              | Contient les informations liés à la gestion des certificats       |
+| private         | Contient les clés privés liés au certificats                      |
+| req             | Contient les demandes de création de certificat                   |
+| *.conf          | Fichier contenant la configuration de l'autorité de certification |
+Pour gérer le remplacement de certificat, il suffit de relancer les playbooks liés au déploiement de chaque service, pour que ces derniers soient mis
+#### Mise à jour
+Avant toute mise à jour, une backup doit être réalisé pour permettre un rollback en cas d'incident suite à l'intervention (cf. Procédure de sauvegarde).
+Pour la mis à jour de OpenSSL, il suffit d'exécuter la commande suivante :
+```bash
+sudo dnf update -y
+```
+
 
 `root-ca.conf` :
 ```INI
