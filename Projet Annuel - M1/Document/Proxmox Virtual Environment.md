@@ -223,7 +223,8 @@ vgcreate vm_datastore /dev/sda
 ```
 
 Après avoir réalisé les commandes ci-dessus, il faut se rendre sur l'interface web Datacenter->Storage->Add->LVM.
-Il faut ensuite remplir les différents champs 
+Il faut ensuite remplir les différents champs. Il faut impérativement coché la case Shared sinon ce stockage ne sera pas considéré comme partagé et ne permettra d'utilisé les fonctionnalités de cluster comme la migration à chaud.
+![[Pasted image 20260720074419.png]]
 ## Automatisation
 Une partie de la configuration des PVE est automatisé avec le playbook deploy_proxmox.yml, voici comment se découpe le fonctionnement de cette automatisation :
 
@@ -266,6 +267,13 @@ les commandes suivantes pour les LXC :
 lxc-start 110220 # Démarre le LXC avec l'id 110220
 lxc-stop 110220 # Stoppe le LXC
 lxc-top 110220 # Réalise un top dans le LXC
+```
+
+les commandes suivantes pour les VM:
+```bash
+qm start 110211 # Démarre la VM
+qm stop 110211 # Stop la VM
+qm terminal 110211 # Permet de se connecter au terminal de la VM via un port série
 ```
 
 ## Mise à jour
