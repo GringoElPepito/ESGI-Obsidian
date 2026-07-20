@@ -33,3 +33,19 @@ Une partie de la configuration de Proxmox Backup Server est automatisé via le p
 Voici la liste des portes :
 - 22 : Accès SSH
 - 8007 : Accès WebUI
+
+## Accès
+
+Le première accès disponible est l'accès SSH rendu disponible à travers le bastion JumpServer (fty-lbst01.cenexis.lan), celui-ci sera principalement utilisé pour s'occuper de la gestion de l'instance. L'accès SSH permet de réaliser les mis à jour systèmes ou encore de débuguer les différents services, s'ils venaient à être hors-service. L'authentification utilise des clé SSH et est entièrement géré par le bastion.
+
+Le second accès de cette machine se fait via l'interface web à laquelle on accèdera encore une fois à travers le bastion JumpServer. Cet accès servira surtout a exploité le service de sauvegarde, gestion du stockage de sauvegarde ou encore gestion des sauvegardes elle-même
+{ screen - WebUI PBS }
+
+## Mise à jour
+Pour les mise à jours des machines Proxmox, il y a deux manières de procéder.
+Soit via l'interface web Administration->Updates->Upgrade
+Soit via la console :
+```bash
+sudo apt update
+sudo apt upgrade
+```
