@@ -188,6 +188,9 @@ La zone ainsi que l'entierté des VNets sont déployés via le playbook Ansible 
 Chaque VNet créé ajoutera une carte réseau virtuelle qui sera utilisable pour connecter nos instances LXC ou VM. 
 Lorsqu'une instance VM ou LXC transmet une trame sur une carte réseau virtuelle de l'un des VNets de la zone de type VLAN, la trame est automatiquement étiquetée avec l'ID VLAN définit pour le VNet auquel l'instance est connecté, permettant d'identifier le VLAN d'origine pour les machines et systèmes amenés à traiter la trame.
 
+## Stockage
+
+
 ## Automatisation
 Une partie de la configuration des PVE est automatisé avec le playbook deploy_proxmox.yml, voici comment se découpe le fonctionnement de cette automatisation :
 
@@ -209,4 +212,14 @@ Une partie de la configuration des PVE est automatisé avec le playbook deploy_p
 ## Ports en écoute
 Proxmox est une solution proposant de nombreuses fonctionnalités, c'est pourquoi elle expose aussi un certain nombre de ports. Voici la liste et le détail de chacun de ses ports :
 - 22 : Accès SSH
-- 3128 : SPICE Pro
+- 3128 : SPICE Proxy - Utilisé pour accéder au console des VM
+- 5405 : Synchronisation Corosync (Communication du Cluster Proxmox)
+- 5900 à 5999 : WebSocket VNC - Accès console des VM
+- 60000 à 60050 : Migration à chaud des VM
+
+## Accès
+
+Le première accès disponible est l'accès SSH rendu disponible à travers le bastion JumpServer (fty-lbst01.cenexis.lan), celui-ci sera principalement utilisé pour s'occuper de la gestion de l'instance. L'accès SSH permet de réaliser les mis à jour systèmes ou encore de débuguer les différents services, s'ils venaient à être hors-service. L'authentification utilise des clé SSH et est entièrement géré par le bastion.
+
+Le second accès de cette machine se fait via l'interface web à laquelle on accèdera encore une fois à travers le bastion JumpServer. Cet accès est celui à privilégié car il permet d'interagir avec tous les PVE du cluster depuis une seule interface. De plus, l'interface web fournit un accès CLI permettant si besoin de réaliser certaines commandes pour notamment utilisé des fonctionnalités malheureusement pas encore intégré à l'interface web.
+{ screen - WebUI Wazuh }
