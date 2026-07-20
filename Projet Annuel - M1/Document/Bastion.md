@@ -27,7 +27,6 @@ Dans notre cas, seul la base de données PostgreSQL a été externalisé, ainsi 
 
 Pour les accès web tel que Proxmox ou Wazuh, il est obligatoire d'installer une VM Windows supplémentaire qui servira de point relais pour accéder aux interfaces web.
 
-
 Concernant l'installation, celle-ci est quasiment entièrement automatisé, je dis quasiment car il y a une étape qui ne peut malheureusement pas être automatisé et c'est la modification du mot de passe du compte admin.
 Cependant le provisioning des terminaux, des comptes, des utilisateurs et des permissions est entièrement automatisé, permettant de facilement ajouté de nouveaux éléments sans avoir à intervenir directement sur l'interface de JumpServer.
 
@@ -69,13 +68,27 @@ Le troisième et dernier accès est l'accès SSH sur le port 2222 qui est lui au
 #### Gestion général
 Tous les services propres à JumpServer, mise à part la base de données SQL, sont conteneurisé via Docker.
 
-Pour gérer ces services on utilisera les commandes suivantes :
+Voici la liste des conteneurs liés au service JumpServer :| jms_redis  |
+- jms_koko
+- jms_lion
+- jms_celery
+- jms_chen
+- jms_web
+-  jms_core
+
+ Pour gérer l'ensemble des micro-services liés à JumpServer, on utilisera les commandes suivantes :
 ```bash
-docker compose ps # État des conteneurs 
-docker compose logs -f postfix-mailcow # Journaux du service SMTP 
-docker compose logs -f dovecot-mailcow # Journaux du service IMAP/POP3
-docker compose logs -f nginx-mailcow # Journaux du proxy HTTPS 
-docker compose logs -f rspamd-mailcow # Journaux du moteur anti-spam 
-docker compose restart postfix-mailcow # Redémarrage d'un service 
-docker compose down # Arrêt de la plateforme
+cd /opt/jumpserver-installer-v4.10.16 # Dossier contenant le script de gestion
+jmsctl.sh status # Pour afficher le statut des conteneurs
+jmsctl.sh start # Pour démarrer les conteneurs
+jmsctl.sh stop # Pour arrêter les conteneurs
+jmsctl.sh restart # Pour redémarrer les conteneurs
+```
+
+#### Mise à jour
+Avant toute mise à jour, une backup doit être réalisé pour permettre un rollback en cas d'incident suite à l'intervention (cf. Procédure de sauvegarde).
+Pour la mis à jour de JumpServer, il suffit d'exécuter la commande suivante :
+```bash
+cd /opt/jumpserver-installer-v4.10.16
+jmsctl.sh upgrade
 ```
