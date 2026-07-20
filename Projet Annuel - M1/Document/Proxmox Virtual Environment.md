@@ -219,13 +219,11 @@ pvcreate /dev/sda
 
 Création d'un volume group :
 ```bash
-vgcreate vg_iscsi_vm_datastore /dev/sda
+vgcreate vm_datastore /dev/sda
 ```
 
-Création d'un pool LVM :
-```bash
-lvcreate -l 100%FREE vg_iscsi_vm_datastore/data 
-```
+Après avoir réalisé les commandes ci-dessus, il faut se rendre sur l'interface web Datacenter->Storage->Add->LVM.
+Il faut ensuite remplir les différents champs 
 ## Automatisation
 Une partie de la configuration des PVE est automatisé avec le playbook deploy_proxmox.yml, voici comment se découpe le fonctionnement de cette automatisation :
 
