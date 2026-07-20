@@ -1,7 +1,17 @@
 # Installation
 Cette section portera sur l'installation de l'instance fty-wads03.cenexis.lan, nous n'aborderons pas l'installation du système en lui-même.
 ## Active Directory RODC
-La première étape est de définir la configuration IP, nous définissons ici l'AD primaire (10.11)
+La première étape est de définir la configuration IP, nous définissons ici l'AD primaire (10.11.2.10 - fty-wads01.cenexis.lan) comme DNS principal, car étant la seule instance qui n'est pas en Lecture Seul, il est la machine qui sera forcément le plus à jour. De plus celui-ci n'étant pas exposé il traite bien moins de requête que les 2 instances RODC.
+{ screen - conf IP }
+
+Nous renommons par la même occasion l'interface pour facilement pouvoir identifier la configuration de celle-ci. Cette action est principalement une anticipation d'une potentiel évolution où les Active Directory auraient plusieurs interfaces. En les nommant de cette manière, il sera possible de différencier chaque interface sans avoir à entrer dans la configuration de chacune.
+{ screen -interface }
+
+Suite à cela, nous renommons la machine fty-wads03 et l'ajoutons au domaine cenexis.lan
+{ screen - renommage }
+{ screen - Ajout au domaine }
+
+Nous redémarrons la machine pour prendre en compte les modifications précédentes. Puis nous procédons à l'installation du service Active Directory.
 
 ## Mise en place LDAPS
 Récupérer la chaîne de certification :
