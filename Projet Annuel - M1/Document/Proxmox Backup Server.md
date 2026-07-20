@@ -41,6 +41,10 @@ Le première accès disponible est l'accès SSH rendu disponible à travers le b
 Le second accès de cette machine se fait via l'interface web à laquelle on accèdera encore une fois à travers le bastion JumpServer. Cet accès servira surtout a exploité le service de sauvegarde, gestion du stockage de sauvegarde ou encore gestion des sauvegardes elle-même
 { screen - WebUI PBS }
 
+## Gestion général
+La majeur partie des actions seront réalisés directement sur l'interface web du cluster PVE, cependant certaines actions ne sont réalisables que depuis l'interface web du PBS :
+- Vérification des backups : backup -> Verify All ou clique droit sur backup puis verify.
+
 ## Mise à jour
 Pour les mise à jours des machines Proxmox, il y a deux manières de procéder.
 Soit via l'interface web Administration->Updates->Upgrade
