@@ -42,10 +42,8 @@ Le second accès de cette machine se fait via l'interface web à laquelle on acc
 { screen - WebUI PBS }
 
 ## Gestion général
-La majeur partie des actions seront réalisés directement sur l'interface web du cluster PVE, cependant certaines actions ne sont réalisables que depuis l'interface web du PBS :
-- Vérification des backups : backup -> Verify All ou clique droit sur backup puis verify.
+La majeur partie des actions seront réalisés directement sur l'interface web du cluster PVE, l'une des actions principales sera la vérification des backups : backup -> Verify All ou clique droit sur une backup puis verify. Le but de valider que l'intégrité de la sauvegarde
 - 
-
 ## Mise à jour
 Pour les mise à jours des machines Proxmox, il y a deux manières de procéder.
 Soit via l'interface web Administration->Updates->Upgrade
