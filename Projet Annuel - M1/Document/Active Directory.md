@@ -1,3 +1,37 @@
+L'Active Directory constitue le cœur de l'infrastructure informatique d'une organisation, car il centralise l'authentification, la gestion des utilisateurs, des groupes et des ressources. Dans une infrastructure critique, sa sécurisation est essentielle afin de garantir la confidentialité, l'intégrité et la disponibilité des systèmes d'information. Une compromission de l'Active Directory peut permettre à un attaquant d'obtenir des privilèges élevés, de se déplacer latéralement sur le réseau et de prendre le contrôle de l'ensemble du domaine. La mise en œuvre de mécanismes de sécurité, tels que le chiffrement des communications via LDAPS, contribue à protéger les échanges d'informations sensibles et à renforcer la résilience globale de l'infrastructure face aux cybermenaces.
+
+Voici les caractéristiques de l'instance fty-lwads01.cenexis.lan :
+
+| Paramètres      | Valeur                      |
+| --------------- | --------------------------- |
+| Type d'instance | VM                          |
+| OS              | Windows Server 2022         |
+| CPU             | 4 vCPU                      |
+| RAM             | 4G                          |
+| Stockage        | 60G                         |
+| Interfaces      | eth0: VLAN112 -> 10.11.2.10 |
+
+Voici les caractéristiques de l'instance fty-lwads02.cenexis.lan :
+
+| Paramètres      | Valeur                      |
+| --------------- | --------------------------- |
+| Type d'instance | VM                          |
+| OS              | Windows Server 2022         |
+| CPU             | 4 vCPU                      |
+| RAM             | 4G                          |
+| Stockage        | 60G                         |
+| Interfaces      | eth0: VLAN112 -> 10.11.2.11 |
+
+Voici les caractéristiques de l'instance fty-lwads01.cenexis.lan :
+
+| Paramètres      | Valeur                      |
+| --------------- | --------------------------- |
+| Type d'instance | VM                          |
+| OS              | Windows Server 2022         |
+| CPU             | 4 vCPU                      |
+| RAM             | 4G                          |
+| Stockage        | 60G                         |
+| Interfaces      | eth0: VLAN112 -> 10.11.2.12 |
 # Installation
 Cette section portera sur l'installation de l'instance fty-wads03.cenexis.lan, nous n'aborderons pas l'installation du système en lui-même.
 ## Active Directory RODC
@@ -12,6 +46,17 @@ Suite à cela, nous renommons la machine fty-wads03 et l'ajoutons au domaine cen
 { screen - Ajout au domaine }
 
 Nous redémarrons la machine pour prendre en compte les modifications précédentes. Puis nous procédons à l'installation du service Active Directory.
+{ screen - installe AD }
+
+Une fois installé, nous configurons l'Active Directory. Dans un premier temps on définit le domaine auquel lié l'Active Directory et le compte utiliser pour cela.
+{ screen - CONFIG AD 1 }
+
+Nous configurons ensuite les capacités de l'Active Directory, nous activons le DNS, le Catalogue Global ainsi que l'option RODC. Cette dernière option fais en sorte qu'aucune modification sur l'Active Directory ne soit réalisable depuis cette machine. 
+{ screen - CONFIG AD 2 }
+
+
+
+
 
 ## Mise en place LDAPS
 Récupérer la chaîne de certification :
