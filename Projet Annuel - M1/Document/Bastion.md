@@ -45,6 +45,21 @@ Voici comment se découpe le playbook deploy_jumpser.yml charger de l'installati
 | jumpserver/create_groups           | Créé les groupes dans jumpserver                                                                  |
 | jumpserver/create_users            | Créé les utilisateurs dans jumpserver                                                             |
 | jumpserver/create_nodes            | Créé les dossiers pour trier les serveurs dans jumpserver                                         |
-| jumpserver/create_unmanaged_assets | Créé les serveurs n'appartenant pas à l'inventaire ansible                                        |
-| jumpserver/create_accounts         | Créé                                                                                              |
-| jumpserver/create_permissions      |                                                                                                   |
+| jumpserver/create_unmanaged_assets | Créé les serveurs n'appartenant pas à l'inventaire ansible dans jumpserver                        |
+| jumpserver/create_accounts         | Créé les comptes des serveur n'appartenant pas à l'inventaire ansible dans jumpserver             |
+| jumpserver/create_permissions      | Créé les permissions pour donner les droits de connexions aux utilisateurs                        |
+### Exploitation
+
+#### Ports en écoute
+JumpServer se découpant en plusieurs micro-services, un certain nombre de port sont en écoute pour assurer le bon fonctionnement de chaque service. En voici la liste et le détail de chacun de ses ports :
+- 22 : Accès SSH 
+- 80 : Accès HTTP, ne sert qu'à la direction vers HTTPS
+- 443 : Accès HTTPS, WebUI JumpServer
+- 323 : NTP
+- 2222 : Accès SSH d'utilis'
+
+#### Accès
+
+Le première accès disponible est l'accès SSH sur le port 22 qui est directement disponible depuis le VLAN 104 (IT Services). Cet accès fournit directement la main sur la machine et servira donc à la gestion de l'instance en elle-même. Cet accès SSH permet de réaliser les mis à jour systèmes ou encore de débuguer les différents services, s'ils venaient à être hors-service. L'authentification utilise des clé SSH et est entièrement géré par le bastion.
+
+Le second accès disponible
