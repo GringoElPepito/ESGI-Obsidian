@@ -195,7 +195,37 @@ Pour le stockage NFS, celui a été entièrement configuré à travers l'interfa
 On définit l'ID qui correspond au nom du stockage, puis le serveur et le chemin absolu vers partage NFS. Enfin on autorise le stockage d'image ISO et de template de conteneur. Enfin il faut appuyer sur Add et le stockage apparaîtra pour tous les nœuds du cluster
 ![[Pasted image 20260720071551.png]]
 
-Pour le stockage iSCSI, chaque PVE est relié
+Pour le stockage iSCSI, chaque PVE est relié au serveur de stockage via un lien Ethernet dédié pour garantir un meilleur débit et une isolation du trafic. les étapes qui suivent ont été réalisé sur la machine fty-hyp01.cenexis.lan :
+
+Installation du package si non présent :
+```bash
+apt install open-iscsi # installation du package
+```
+
+Récupération les partages disponibles iscsi :
+```bash
+iscsiadm -m discovery -t sendtargets -p 10.99.99.2:3260
+```
+
+Ajout du partage iSCSI pour montage automatique au démarrage du service `open-iscsi.service` :
+```bash
+iscsiadm -m node -T iqn.2005-10.org.freenas.ctl:vm-datastore -p 10.99.99.2:3260 --op update -n node.startup -v automatic
+```
+
+Initialisation du disque :
+```bash
+pvcreate /dev/sda
+```
+
+Création d'un volume group :
+```bash
+vgcreate vg_iscsi_vm_datastore /dev/sda
+```
+
+Création d'un pool LVM :
+```bash
+lvcreate -l 100%FREE vg_iscsi_vm_datastore/data 
+```
 ## Automatisation
 Une partie de la configuration des PVE est automatisé avec le playbook deploy_proxmox.yml, voici comment se découpe le fonctionnement de cette automatisation :
 

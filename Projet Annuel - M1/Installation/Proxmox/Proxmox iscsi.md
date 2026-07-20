@@ -4,7 +4,7 @@ Installation du package si non présent :
 apt install open-iscsi # installation du package
 ```
 
-Récupérer les partages disponibles iscsi :
+Récupération les partages disponibles iscsi :
 ```bash
 iscsiadm -m discovery -t sendtargets -p 10.99.99.2:3260
 ```

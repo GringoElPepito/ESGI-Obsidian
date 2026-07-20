@@ -42,9 +42,6 @@ Nous avons configuré sur celle-ci deux pools de stockage :
 
 ISO_POOL est partagé en NFS, tandis que VM_POOL l’est via iSCSI. Nous avons fait ce choix car iSCSI permet à la machine distante accédant au stockage de directement modifié les blocs offrant des biens meilleurs performances. Cependant, iSCSI n’intègre pas de système de résolution de conflit, dans le cas des machines virtuelles cela n’est pas un problème car les données de chaque machine virtuelle n’est utilisé que par l’un des trois serveurs Proxmox à la fois. Mais ceci n’est pas vrai pour les ISO d’installation, en effet, il est très probable que les trois PVE souhaitent accéder à un même fichier ISO au même moment, ce qui pourrait se résulter en un conflit si on utilisait le protocole iSCSI. C’est pourquoi les ISO sont partagé grâce à NFS, ce protocole intègre directement un système de résolution de conflit répondant directement au problème posé par notre cas d’utilisation.
 
-Pour le partage iSCSI, nous avons configuré un dataset nommé vm-datastore. Les dataset sont des systèmes de fichier créer au sein d’un pool de stockage qui vont pouvoir ainsi être exploités pour stocker des fichiers et répertoires.
-{ screen - dataset }
-
 Nous avons aussi limité l’accès au partage iSCSI aux IQN (Nom Qualifié iSCSI) de nos PVE. De plus nous avons aussi créer deux utilisateurs dédiés à l’exploitation du partage iSCSI par les ESXi pour limiter l’impact d’une potentiel compromission des PVE
 { screen - Config iSCSI }
 
