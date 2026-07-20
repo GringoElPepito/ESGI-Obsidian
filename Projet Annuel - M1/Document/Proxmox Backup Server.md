@@ -21,8 +21,12 @@ La solution intègre également des fonctionnalités telles que le chiffrement d
 
 Une partie de la configuration de Proxmox Backup Server est automatisé via le playbook deploy_proxmox.yml :
 
-| Rôle    | Action |
-| ------- | ------ |
-| proxmox |        |
-| proxmox |        |
-| proxmox |        |
+| Rôle                  | Action                                     |
+| --------------------- | ------------------------------------------ |
+| proxmox/pbs_zfs_disk  | Créer le pool zfs                          |
+| proxmox/add_pbs_users | Créer les utilisateurs PAM et PBS          |
+| proxmox/connect_pbs   | Connecte le serveur PBS au Cluster Proxmox |
+
+# Exploitation
+
+## Ports en écoute
