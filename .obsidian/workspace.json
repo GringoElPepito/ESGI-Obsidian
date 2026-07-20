@@ -327,12 +327,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Document/Bastion.md",
+                "file": "Projet Annuel - M1/Document/LXC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bastion"
+              "title": "LXC"
             }
           }
         ],
@@ -505,8 +505,10 @@
   },
   "active": "c711c433c67f344f",
   "lastOpenFiles": [
-    "Projet Annuel - M1/Document/SIEM.md",
+    "Projet Annuel - M1/Document/Proxmox Virtual Environment.md",
+    "Projet Annuel - M1/Document/Proxmox Backup Server.md",
     "Projet Annuel - M1/Document/Bastion.md",
+    "Projet Annuel - M1/Document/SIEM.md",
     "Projet Annuel - M1/Document/CA.md",
     "Projet Annuel - M1/Document/SYSLOG.md",
     "Projet Annuel - M1/Document/Supervision.md",
@@ -518,8 +520,6 @@
     "Projet Annuel - M1/Document/PBS-WBS.md",
     "Projet Annuel - M1/Document/Présentation Entreprise cliente.md",
     "Projet Annuel - M1/Document/Présentation Equipe Projet.md",
-    "Projet Annuel - M1/Document/Proxmox Backup Server.md",
-    "Projet Annuel - M1/Document/Proxmox Virtual Environment.md",
     "Projet Annuel - M1/Document/Reverse-Proxy.md",
     "Projet Annuel - M1/Document/SAN.md",
     "Projet Annuel - M1/Document/VM.md",

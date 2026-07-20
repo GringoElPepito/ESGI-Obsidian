@@ -63,8 +63,11 @@ Le première accès disponible est l'accès SSH sur le port 22 qui est directeme
 
 Le second accès disponible est l'accès Web qui sert principalement à gérer et utiliser la solution JumpServer elle-même. Via cette interface Web, il est possible de se connecter aux différentes instances préalablement ajoutés, ou encore de gérer les différents éléments (Serveurs, Utilisateurs, Groupes, Comptes de connexion).
 
+{ screen - WebUI }
+
 Le troisième et dernier accès est l'accès SSH sur le port 2222 qui est lui aussi directement disponible depuis le VLAN104(IT Services). Cependant celui-ci ne donne pas un accès direct à la machine, il donne lieu à une application CLI proposant un service similaire à ce qu'on pourrait trouver sur l'interface Web. En effet, depuis cet accès, il est possible de se connecter aux différents serveurs (via leur accès CLI uniquement).
 
+{ screen - CLI }
 #### Gestion général
 Tous les services propres à JumpServer, mise à part la base de données SQL, sont conteneurisé via Docker.
 

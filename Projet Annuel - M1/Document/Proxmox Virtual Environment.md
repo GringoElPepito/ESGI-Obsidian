@@ -26,15 +26,6 @@ Les **conteneurs systèmes**, tels que les **LXC (Linux Containers)** utilisés 
 
 Ainsi, si Docker est principalement destiné au déploiement d'applications individuelles, LXC vise à fournir un système d'exploitation complet au sein d'un conteneur. Le choix entre ces deux approches dépend des besoins de l'infrastructure, du niveau d'isolation recherché et du type de services à héberger.
 
-Le cluster Proxmox se compose de 3 machines pour pouvoir respecter le quorum,
-Voici les caractéristiques de la machine pve01.cenexis.lan :
-- CPU : 
-- RAM :
-- OS : 
-- Stockage :
-- Interface réseau :
-	- 
-
 ## Gestion des comptes et de l'authentification
 
 Etant donné la criticité de Proxmox au sein de notre infrastructure, il est primordial de se questionner sur la manière dont les comptes utilisateurs de ce dernier doivent être gérer.
