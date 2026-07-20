@@ -1,4 +1,8 @@
 # Installation
+Cette section portera sur l'installation de l'instance fty-wads03.cenexis.lan, nous n'aborderons pas l'installation du système en lui-même.
+## Active Directory RODC
+La première étape est de définir la configuration IP, nous définissons ici l'AD primaire (10.11)
+
 ## Mise en place LDAPS
 Récupérer la chaîne de certification :
 ```powershell
@@ -46,13 +50,11 @@ scp ./fty-wads03.csr desigual@10.11.2.21:/home/desigual/sub-ca/req/
 Sur l'autorité de certification intermédiaire :
 ```bash
 cd /home/desigual/sub-ca
-sudo openssl ca -batch -config sub-ca.conf -subj "/CN=fty-wads03.cenexis.lan/OU=Community/O=CENEXIS/L=Fontenay-sous-Bois/S=Ile-de-France/C=FR" -create_serial -in req/fty-wads03.csr -out certs/fty-wads03.crt -extensions server_ext -days 365 -passin pass:ChangeThisPassphrase
-sudo openssl crl2pkcs7 -nocrl -certfile certs/fty-wads01.crt -certfile sub-ca.crt -certfile root-ca.crt -out certs/fty-wads03.p7b
+sudo openssl ca -batch -config sub-ca.conf -subj "/CN=fty-wads03.cenexis.lan/OU=Community/O=CENEXIS/L=Fontenay-sous-Bois/S=Ile-de-France/C=FR" -create_serial -in req/fty-wads03.csr -out certs/fty-wads03.crt -extensions server_ext -days 365 -passin pass:<pswd_private_key_sub_ca>
+sudo openssl crl2pkcs7 -nocrl -certfile certs/fty-wads03.crt -certfile sub-ca.crt -certfile root-ca.crt -out certs/fty-wads03.p7b
 sudo cp certs/fty-wads03.p7b ../
 sudo chown desigual:desigual ../fty-wads03.p7b
 ```
-
-<pswd_private_key_sub_ca>
 
 Récupération du certificat sur l'AD :
 ```powershell
