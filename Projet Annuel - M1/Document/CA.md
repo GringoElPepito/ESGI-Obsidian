@@ -72,97 +72,10 @@ L'arborescence de chacun de ces dossiers se découpe de la manière suivante :
 | private         | Contient les clés privés liés au certificats                      |
 | req             | Contient les demandes de création de certificat                   |
 | *.conf          | Fichier contenant la configuration de l'autorité de certification |
-Pour gérer le remplacement de certificat, il suffit de relancer les playbooks liés au déploiement de chaque service, pour que ces derniers soient mis
+Pour gérer le remplacement de certificat, il suffit de relancer les playbooks liés au déploiement de chaque service, pour que ces derniers soient mis à jour automatiquement.
 #### Mise à jour
 Avant toute mise à jour, une backup doit être réalisé pour permettre un rollback en cas d'incident suite à l'intervention (cf. Procédure de sauvegarde).
 Pour la mis à jour de OpenSSL, il suffit d'exécuter la commande suivante :
 ```bash
 sudo dnf update -y
-```
-
-
-`root-ca.conf` :
-```INI
-[default]
-name                    = root-ca
-domain_suffix           = cenexis.lan
-aia_url                 = http://$name.$domain_suffix/$name.crt
-crl_url                 = http://$name.$domain_suffix/$name.crl
-ocsp_url                = http://ocsp.$name.$domain_suffix:9080
-default_ca              = ca_default
-name_opt                = utf8,esc_ctrl,multiline,lname,align
-
-[ca_dn]
-countryName             = FR
-stateOrProvinceName     = Ile-de-France
-organizationName        = CENEXIS
-emailAddress            = admin@cenexis.lan
-organizationalUnitName  = Community
-commonName              = "Root Ca"
-
-[ca_default]
-home                    = .
-database                = $home/db/index
-serial                  = $home/db/serial
-crlnumber               = $home/db/crlnumber
-certificate             = $home/$name.crt
-private_key             = $home/private/$name.key
-RANDFILE                = $home/private/random
-new_certs_dir           = $home/certs
-unique_subject          = no
-copy_extensions         = none
-default_days            = 3650
-default_crl_days        = 365
-default_md              = sha256
-policy                  = policy_c_o_match
-
-[policy_c_o_match]
-countryName             = match
-stateOrProvinceName     = optional
-organizationName        = match
-organizationalUnitName  = optional
-commonName              = supplied
-emailAddress            = optional
-
-[req]
-default_bits            = 4096
-encrypt_key             = yes
-default_md              = sha256
-utf8                    = yes
-string_mask             = utf8only
-prompt                  = no
-distinguished_name      = ca_dn
-req_extensions          = ca_ext
-
-[ca_ext]
-basicConstraints        = critical,CA:true
-keyUsage                = critical,keyCertSign,cRLSign
-subjectKeyIdentifier    = hash
-
-[sub_ca_ext]
-authorityInfoAccess     = @issuer_info
-authorityKeyIdentifier  = keyid:always
-basicConstraints        = critical,CA:true,pathlen:0
-crlDistributionPoints   = @crl_info
-extendedKeyUsage        = clientAuth,serverAuth
-keyUsage                = critical,keyCertSign,cRLSign
-nameConstraints         = @name_constraints
-subjectKeyIdentifier    = hash
-
-[crl_info]
-URI.0                   = $crl_url
-
-[issuer_info]
-caIssuers;URI.0         = $aia_url
-OCSP;URI.0              = $ocsp_url
-
-[name_constraints]
-permitted;DNS.0=.cenexis.com
-
-[ocsp_ext]
-authorityKeyIdentifier  = keyid:always
-basicConstraints        = critical,CA:false
-extendedKeyUsage        = OCSPSigning
-keyUsage                = critical,digitalSignature
-subjectKeyIdentifier    = hash
 ```
