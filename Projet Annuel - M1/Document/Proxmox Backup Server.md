@@ -30,3 +30,6 @@ Une partie de la configuration de Proxmox Backup Server est automatisé via le p
 # Exploitation
 
 ## Ports en écoute
+Voici la liste des portes :
+- 22 : Accès SSH
+- 8007 : Accès WebUI
