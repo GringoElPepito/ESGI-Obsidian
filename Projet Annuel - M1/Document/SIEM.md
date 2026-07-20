@@ -44,7 +44,7 @@ Voici comment se découpe le playbook deploy_siem charger de l'installation et d
 ### Exploitation
 
 #### Ports en écoute
-Etant donné que nous avons réalisé une installation All-in-One de Wazuh, un certain nombre de port sont en écoute pour assurer le bon fonctionnement de chaque service. En voici la liste et le détail de chacun de ses ports :
+Etant donné que nous avons réalisé une installation All-in-One de Wazuh, un certain nombre de port sont en écoute pour assurer le bon fonctionnement de chaque service. Voici la liste et le détail de chacun de ses ports :
 - 22 : Accès SSH 
 - 443 : Accès HTTPS; Interface Web de Wazuh fournit par Wazuh Dashboard
 - 1514 : Communication avec les agents Wazuh

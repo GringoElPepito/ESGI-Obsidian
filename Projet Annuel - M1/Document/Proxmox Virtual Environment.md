@@ -189,6 +189,24 @@ Chaque VNet créé ajoutera une carte réseau virtuelle qui sera utilisable pour
 Lorsqu'une instance VM ou LXC transmet une trame sur une carte réseau virtuelle de l'un des VNets de la zone de type VLAN, la trame est automatiquement étiquetée avec l'ID VLAN définit pour le VNet auquel l'instance est connecté, permettant d'identifier le VLAN d'origine pour les machines et systèmes amenés à traiter la trame.
 
 ## Automatisation
-Une par
+Une partie de la configuration des PVE est automatisé avec le playbook deploy_proxmox.yml, voici comment se découpe le fonctionnement de cette automatisation :
+
+| Rôle                            | Action                                                    |
+| ------------------------------- | --------------------------------------------------------- |
+| proxmox/set_node_network        | Configuration des interfaces réseaux des PVE              |
+| common/enable_services          | Démarrage des services définis dans les variables d'hôtes |
+| proxmox/add_group               | Créer les groupes au sein de Proxmox                      |
+| proxmox/add_webui_users         | Créer les utilisateurs PAM et PVE                         |
+| proxmox/deploy_zones            | Déploie les Zones SDN                                     |
+| proxmox/deploy_vnets            | Déploie les VNets SDN                                     |
+| proxmox/deploy_subnets          | Déploie les subnets SDN                                   |
+| proxmox/connect_pbs             | Connecte le serveur de sauvegarde au cluster PVE          |
+| proxmox/create_ressources_pools | Créer les pools de ressources                             |
+| proxmox/job_bacups              | Créer les jobs de sauvegarde                              |
 
 # Exploitation
+
+## Ports en écoute
+Proxmox est une solution proposant de nombreuses fonctionnalités, c'est pourquoi elle expose aussi un certain nombre de ports. Voici la liste et le détail de chacun de ses ports :
+- 22 : Accès SSH
+- 3128 : SPICE Pro
