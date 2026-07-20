@@ -51,3 +51,6 @@ Nous avons aussi limité l’accès au partage iSCSI aux IQN (Nom Qualifié iSCS
 Concernant la configuration du partage NFS, celui-ci est monté dans le dossier /mnt qui est sur linux le dossier par défaut pour monter des volumes. De plus nous avons aussi restreint les accès au partage aux adresses IP des PVE permettant ainsi de réduire le risque d’une attaque ou d’une compromission de partage.
 
 # Exploitation
+
+## Mise à jour
+Pour mettre à jour la machine fty-lsto01.cenexis.lan, il faut au préalable couper les 
