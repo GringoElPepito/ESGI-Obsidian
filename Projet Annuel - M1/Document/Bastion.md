@@ -32,21 +32,21 @@ Cependant le provisioning des terminaux, des comptes, des utilisateurs et des pe
 
 Voici comment se découpe le playbook deploy_jumpser.yml charger de l'installation et de la configuration automatisé de JumpServer (l'instance VM est déployé manuellement) :
 
-| Rôle                               | Action                                                                                            |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------- |
-| common/set_certificate_facts       | Initialisation des variables pour l'automatisation des tâches liés aux certificats                |
-| common/request_certificate         | Création d'un certificat à partir d'un CSR                                                        |
-| jumpserver/install_jumpserver      | Installe et réalise la configuration de base de JumpServer                                        |
-| jumpserver/init_requests           | Prépare les informations nécessaire à la configuration de JumpServer via l'API                    |
-| jumpserver/create_assets           | Créé les serveurs dans jumpserver en se basant sur l'inventaire ansible                           |
-| jumpserver/create_accounts         | Crée les comptes de connexions des serveurs dans jumpserver en se basant sur l'inventaire ansible |
-| jumpserver/init_requests           | Prépare les informations nécessaire à la configuration de JumpServer via l'API                    |
-| jumpserver/create_groups           | Créé les groupes dans jumpserver                                                                  |
-| jumpserver/create_users            | Créé les utilisateurs dans jumpserver                                                             |
-| jumpserver/create_nodes            | Créé les dossiers pour trier les serveurs dans jumpserver                                         |
-| jumpserver/create_unmanaged_assets | Créé les serveurs n'appartenant pas à l'inventaire ansible dans jumpserver                        |
-| jumpserver/create_accounts         | Créé les comptes des serveur n'appartenant pas à l'inventaire ansible dans jumpserver             |
-| jumpserver/create_permissions      | Créé les permissions pour donner les droits de connexions aux utilisateurs                        |
+| Rôle                               | Action                                                                                                                                                                        |
+| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| common/set_certificate_facts       | Initialisation des variables pour l'automatisation des tâches liés aux certificats                                                                                            |
+| common/request_certificate         | Création d'un certificat à partir d'un CSR                                                                                                                                    |
+| jumpserver/install_jumpserver      | Installe et réalise la configuration de base de JumpServer                                                                                                                    |
+| jumpserver/init_requests           | Prépare les informations nécessaire à la configuration de JumpServer via l'API                                                                                                |
+| jumpserver/create_assets           | Créé les serveurs dans jumpserver en se basant sur l'inventaire ansible                                                                                                       |
+| jumpserver/create_accounts         | Crée les comptes de connexions des serveurs dans jumpserver en se basant sur l'inventaire ansible. Si accès SSH génère une paire de clé pour une connexion sans mot de passe. |
+| jumpserver/init_requests           | Prépare les informations nécessaire à la configuration de JumpServer via l'API                                                                                                |
+| jumpserver/create_groups           | Créé les groupes dans jumpserver                                                                                                                                              |
+| jumpserver/create_users            | Créé les utilisateurs dans jumpserver                                                                                                                                         |
+| jumpserver/create_nodes            | Créé les dossiers pour trier les serveurs dans jumpserver                                                                                                                     |
+| jumpserver/create_unmanaged_assets | Créé les serveurs n'appartenant pas à l'inventaire ansible dans jumpserver                                                                                                    |
+| jumpserver/create_accounts         | Créé les comptes des serveur n'appartenant pas à l'inventaire ansible dans jumpserver                                                                                         |
+| jumpserver/create_permissions      | Créé les permissions pour donner les droits de connexions aux utilisateurs                                                                                                    |
 ### Exploitation
 
 #### Ports en écoute

@@ -1,4 +1,7 @@
-Les LXC représente la majorité des instances qui ont été déployés, 
+Les LXC représente la majorité des instances qui ont été déployés. Il y a plusieurs raisons à cela, la première est qu'il consomme beaucoup moins de ressources de calcul et de stockage qu'une VM. La seconde est qu'il se démarre plus rapidement que les VM. Cependant bien que les LXC possèdent certains avantages, ils ne sont pas exempt de tout défaut. Il n'est par exemple pas possible de réaliser de la migration à chaud sans interruption de service, un LXC utilisant directement le noyau de son hôte, il est impossible de transférer un LXC d'un hôte à un autre sans arrêter ce LXC.
+
+Les LXC n'étant pas des systèmes à part entière, certaines configurations ne sont malheureusement pas réalisable (notamment celles affectant le noyau de l'instance ciblée)
+
 Le déploiement des LXC est entièrement automatisé à travers le playbook deploy_lxc.yml. Voici comment ce dernier se découpe :
 
 | Rôle                         | Action                                                                                                                       |
@@ -14,6 +17,7 @@ Le déploiement des LXC est entièrement automatisé à travers le playbook depl
 | common/get_facts             | Récupère les facts du LXC                                                                                                    |
 | common/update_packages       | Mets à jour les paquets                                                                                                      |
 | common/install_packages      | Installe les paquets définit dans les variables d'hôtes du LXC                                                               |
+| lxc/hardening_ssh            | Pousse une configuration sécurisé de SSH et enregistre une clé publique pour les connexions suivante                         |
 | common/set_certificate_facts | Initialisation des variables pour l'automatisation des tâches liés aux certificats                                           |
 | common/get_certificates      | Récupère la chaîne de certificat et l'enregistre                                                                             |
 | common/request_certificate   | Génère une demande de certificat, la fait signé par l'autorité intermédiaire et transmet le certificat au LXC                |
@@ -25,3 +29,5 @@ Le déploiement des LXC est entièrement automatisé à travers le playbook depl
 | common/add_services_fwcmd    | Ajoute les services à firewalld                                                                                              |
 | common/setsebool             | Ajoute les configurations booléennes pour SELinux                                                                            |
 | common/sysctl                | Ajoute les configurations Sysctl                                                                                             |
+
+Avec cette automatisation, il suffit de définir les variables d'hôtes nécessaire au playbook et de lancer ce dernier pour avoir un LXC fonctionnel et pré-configuré, permettant de gagner un certain temps dans le déploiement de nos services.
