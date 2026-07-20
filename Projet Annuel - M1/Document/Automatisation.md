@@ -11,4 +11,4 @@ Voici les caractéristiques de fty-laut01.cenexis.lan :
 | Stockage        | 16G                         |
 | Interfaces      | eth0: VLAN115 -> 10.11.5.10 |
 
-fty-laut01.cenexis.lan est l'instance contrôlant toutes les automatisations de cette infrastructure. Avec Ansible, cette machine déploie, installe et configure les autres inst
+fty-laut01.cenexis.lan est l'instance contrôlant toutes les automatisations de cette infrastructure. Avec Ansible, cette machine déploie, installe et configure les autres instances.
