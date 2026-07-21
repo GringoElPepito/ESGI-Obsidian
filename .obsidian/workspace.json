@@ -327,36 +327,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projet Annuel - M1/Document/SYSLOG.md",
+                "file": "Projet Annuel - M1/Document/Supervision.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SYSLOG"
+              "title": "Supervision"
             }
           }
         ],
         "currentTab": 23
-      },
-      {
-        "id": "cb766f6f7a687e69",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6ef306e81452996a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projet Annuel - M1/Installation/Proxmox/Proxmox iscsi.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Proxmox iscsi"
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -505,35 +485,34 @@
   },
   "active": "c711c433c67f344f",
   "lastOpenFiles": [
-    "Projet Annuel - M1/Installation/Proxmox/Proxmox iscsi.md",
-    "Projet Annuel - M1/Installation/Proxmox/Proxmox Ceph.md",
-    "Projet Annuel - M1/Suivi PA.md",
-    "Projet Annuel - M1/Document/Proxmox Backup Server.md",
-    "Projet Annuel - M1/Document/Présentation Equipe Projet.md",
-    "Projet Annuel - M1/Document/Présentation Entreprise cliente.md",
-    "Projet Annuel - M1/Document/PBS-WBS.md",
-    "Projet Annuel - M1/Document/Mattermost.md",
-    "Projet Annuel - M1/Document/SYSLOG.md",
-    "Projet Annuel - M1/Document/SIEM.md",
-    "Projet Annuel - M1/Document/SAN.md",
-    "Projet Annuel - M1/Document/Proxmox Virtual Environment.md",
-    "Projet Annuel - M1/Document/Téléphonie.md",
-    "Projet Annuel - M1/Document/Supervision.md",
-    "Projet Annuel - M1/Document/Serveur Mail.md",
-    "Projet Annuel - M1/Document/Active Directory.md",
-    "Projet Annuel - M1/Document/Automatisation.md",
-    "Projet Annuel - M1/Document/Base de données.md",
-    "Projet Annuel - M1/Document/Reverse-Proxy.md",
-    "Projet Annuel - M1/Document/Bastion.md",
-    "Projet Annuel - M1/Document/CA.md",
-    "Projet Annuel - M1/Document/Pare-feu virtuel.md",
-    "Projet Annuel - M1/Document/VM.md",
-    "Projet Annuel - M1/Document/LXC.md",
-    "Projet Annuel - M1/Document/Modèle.md",
-    "Projet Annuel - M1/Document/Méthode Agile-SCRUM.md",
     "attachments/Pasted image 20260720074419.png",
     "attachments/Pasted image 20260720071551.png",
+    "Projet Annuel - M1/Document/Modèle.md",
+    "Projet Annuel - M1/Document/Mattermost.md",
+    "Projet Annuel - M1/Document/LXC.md",
+    "Projet Annuel - M1/Document/Automatisation.md",
+    "Projet Annuel - M1/Document/VM.md",
+    "Projet Annuel - M1/Document/Supervision.md",
+    "Projet Annuel - M1/Document/Téléphonie.md",
+    "Projet Annuel - M1/Document/Serveur Mail.md",
+    "Projet Annuel - M1/Document/SAN.md",
+    "Projet Annuel - M1/Document/SIEM.md",
+    "Projet Annuel - M1/Document/Reverse-Proxy.md",
+    "Projet Annuel - M1/Document/Proxmox Virtual Environment.md",
+    "Projet Annuel - M1/Document/Proxmox Backup Server.md",
+    "Projet Annuel - M1/Document/Présentation Equipe Projet.md",
+    "Projet Annuel - M1/Document/Bastion.md",
+    "Projet Annuel - M1/Document/Base de données.md",
+    "Projet Annuel - M1/Document/Active Directory.md",
+    "Projet Annuel - M1/Document/Présentation Entreprise cliente.md",
+    "Projet Annuel - M1/Document/PBS-WBS.md",
+    "Projet Annuel - M1/Document/Pare-feu virtuel.md",
+    "Projet Annuel - M1/Document/Méthode Agile-SCRUM.md",
+    "Projet Annuel - M1/Document/CA.md",
     "attachments/Pasted image 20260716234037.png",
+    "Projet Annuel - M1/Installation/Proxmox/Proxmox Backup Server.md",
+    "Projet Annuel - M1/Installation/Proxmox/Proxmox Ceph.md",
+    "Projet Annuel - M1/Installation/Proxmox/Proxmox iscsi.md",
     "Projet Annuel - M1/Installation/Proxmox",
     "Projet Annuel - M2",
     "FYC",
@@ -551,6 +530,7 @@
     "attachments/Pasted image 20251124095729.png",
     "attachments/Pasted image 20251124092243.png",
     "attachments/Pasted image 20251124084821.png",
+    "attachments/Pasted image 20251027122807.png",
     "Untitled.canvas"
   ]
 }
