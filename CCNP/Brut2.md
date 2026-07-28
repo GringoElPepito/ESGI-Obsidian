@@ -61,5 +61,15 @@ exit
 /// Définition de la PSK
 crypto isakmp key toto1234 address 2.2.2.1
 /// Config Phase 2
-crypto ipsec transform-set TS_VPN esp-des esp
+crypto ipsec transform-set TS_VPN esp-des esp-md5
+exit
+/// Créer une crypto ACL -> ACL qui définit le trafic qui doit passer dans le tunnel IPSec
+ip access-list stand ACL_VPN
+permit 192.168.0.0 0.0.255.255
+exit
+/// Créer une crypto map pour recoller les éléments configurés précédemment crypto map CM_VPN
+crypto map CM_VPN 10 ipsec-isakmp
+match address ACL_VPN
+set transfor TS_VPN
+set peer
 ```
