@@ -47,3 +47,19 @@ A la fin de la phase 2 : Deux SA unidirectionnel
 On utilisera le mode transport si les 2 paires sont capables de communiquer sans IPSec.
 
 Pour les choix d'algo de chiffrement, il ne faut pas forcément prendre le plus élevé car plus gros coût sur les performances.
+
+Configuration Phase 1 :
+```bash
+crypto isakmp policy 1
+authenti pre
+encryp des
+hash
+md5
+group 2
+lifetime 43200
+exit
+/// Définition de la PSK
+crypto isakmp key toto1234 address 2.2.2.1
+/// Config Phase 2
+crypto ipsec transform-set TS_VPN esp-des esp
+```
