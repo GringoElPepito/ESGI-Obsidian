@@ -31,3 +31,8 @@
 # Proxmox
 - [ ] Gestion du CRS (équivalent DRS VMWare VCenter)
 - [ ] 
+
+# Infra
+- [ ] NTPv4
+- [ ] IPSec Remote Access
+- [ ] IPSec

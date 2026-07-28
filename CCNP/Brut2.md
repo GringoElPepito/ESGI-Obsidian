@@ -6,6 +6,7 @@ MLS 1 réseau = X interface et 1 interface = X réseau
 
 Les MLS ajoute un temps de latence quasiment nulle.
 
+Focus NTP en v4 si possible
 
 FIB Fowarding Information Base
 
@@ -23,4 +24,7 @@ Créer un tunnel sécurisé entre 2 LAN privés (L2L ou du site-to-site) ou entr
 
 Phase 1 : IKE (Internet Key Exchange) sous protocole :
 - ISAKMP (Internet Security Association Key Management Protocol)
-But : Sécurisation de l'identification des futurs pairs IPSec - valide
+But : Sécurisation de l'identification des futurs pairs IPSec 
+Les 2 paires IPSec vont négocier les 2 paires une politique communes :
+	- Méthode d'authentification : PSK (pre-shared key), RSA-SIG, RSA-encrypted-nonce
+	- Algo de chiffrement de la suite de la Phase 1 et de la négociation de la phase 2 : DES, 3DES, AES{128,192.256}
