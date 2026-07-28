@@ -40,5 +40,10 @@ Les 2 paires négocient une politique identique :
 - Méthode d'encapsulation : tunnel (mode par défaut : création de nouvelles en-têtes IP) / Transport (pas de nouveaux header IP)
 - Algo de chiffrement de l'échange des données de LAN à LAN : DES, 3DES, AES
 - Algo de hashage de l'échange des données de LAN à LAN : MD5, SHA
+- Optionnellement : Activer PFS (DH à la phase 2) : Chaque session à sa propre clé de chiffrement
+- Lifetime : 3600s (1H) ou 4GB d'info échangées
+A la fin de la phase 2 : Deux SA unidirectionnel
 
 On utilisera le mode transport si les 2 paires sont capables de communiquer sans IPSec.
+
+Pour les choix d'algo de chiffrement, il ne faut pas forcément prendre le plus élevé car plus gros coût sur les performances.
