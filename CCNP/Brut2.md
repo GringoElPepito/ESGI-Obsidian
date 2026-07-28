@@ -72,4 +72,8 @@ crypto map CM_VPN 10 ipsec-isakmp
 match address ACL_VPN
 set transfor TS_VPN
 set peer
+
+int e0/2
+crypto map CM_VPN
+
 ```
