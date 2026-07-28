@@ -327,12 +327,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Sans titre.md",
+                "file": "CCNP/Brut2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sans titre"
+              "title": "Brut2"
             }
           }
         ],
@@ -485,9 +485,10 @@
   },
   "active": "c711c433c67f344f",
   "lastOpenFiles": [
+    "DevOps/Sans titre.md",
+    "CCNP/Brut2.md",
     "CCNP/Sans titre.md",
     "DevOps/Brut.md",
-    "DevOps/Sans titre.md",
     "DevOps/Note.md",
     "Projet Annuel - M1/Document/Supervision.md",
     "attachments/Pasted image 20260720074419.png",
@@ -512,7 +513,6 @@
     "Projet Annuel - M1/Document/PBS-WBS.md",
     "Projet Annuel - M1/Document/Pare-feu virtuel.md",
     "Projet Annuel - M1/Document/Méthode Agile-SCRUM.md",
-    "Projet Annuel - M1/Document/CA.md",
     "attachments/Pasted image 20260716234037.png",
     "Projet Annuel - M1/Installation/Proxmox",
     "Projet Annuel - M2",
