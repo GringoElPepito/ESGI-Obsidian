@@ -37,4 +37,8 @@ Phase 2 : IPSec
 But : sécurisation des données de LAN à LAN
 Les 2 paires négocient une politique identique :
 - Protocole d'encapsulation : AH (Pas de chiffrement possible), ESP (Encapsulation Security Payload)
-- Méthode d'encapsulation
+- Méthode d'encapsulation : tunnel (mode par défaut : création de nouvelles en-têtes IP) / Transport (pas de nouveaux header IP)
+- Algo de chiffrement de l'échange des données de LAN à LAN : DES, 3DES, AES
+- Algo de hashage de l'échange des données de LAN à LAN : MD5, SHA
+
+On utilisera le mode transport si les 2 paires sont capables de communiquer sans IPSec.
