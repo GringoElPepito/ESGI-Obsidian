@@ -97,3 +97,8 @@ ip nhrp map multicast dynamic -> permet de faire passer le trafic multicast au s
 tunnel source e0/1 -> assigne une interface physique à une interface tunnel
 
 tunnel mode gre multipoint -> permet de passer de GRE à MGRE.
+
+
+MGRE
+NHRP -> Permet à un spoke de se connecter au Hub et de récupérer les IP des autres Spoke
+Profil IPsec
