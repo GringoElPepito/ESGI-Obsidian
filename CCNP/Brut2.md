@@ -77,3 +77,5 @@ int e0/2
 crypto map CM_VPN
 
 ```
+
+Pour que des routeurs échanges des tables de routage, il faut que ces derniers partagent un réseau en commun
