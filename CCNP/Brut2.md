@@ -84,3 +84,5 @@ Pour que des routeurs échanges des tables de routage, il faut que ces derniers 
 L'instruction network dans les protocoles de routages permet au routeur de vérifier quelle(s) interface(s) appartient au réseau renseigné et va activer OSPF sur les interfaces concernées et ajouter le réseau à la liste des réseaux à distribués.
 
 IPSec ne supporte pas le multicast et le broadcast, c'est pour cela que l'on utilise GRE qui permet d'encapsulé le trafic
+
+Sur l'interface tunnel si GRE sinon WAN il faut baisser la mtu à 1416 pour permettre au paquet d'accueillir le paquet l'en-
