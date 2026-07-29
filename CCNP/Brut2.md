@@ -87,6 +87,13 @@ IPSec ne supporte pas le multicast et le broadcast, c'est pour cela que l'on uti
 
 Sur l'interface tunnel si GRE sinon WAN il faut baisser la mtu à 1416 pour permettre au paquet d'accueillir le paquet l'en-tête GRE qui contient 84 octets. De cette manière les paquets passant à travers le tunnel resteront égal ou inférieur à 1500 octets évitant que les paquets soient fragmentés ce qui peut ajouter de la latence et ralentir le trafic
 
-
 DM VPN -> nécessite MGRE car GRE point à point
 NHRP 
+
+ip split-horizon eig 100 -> permet de ne pas rediffuser une route obtenu via une interface sur cette même interface. Il faut désactiver cette option dans le cas d'un VPN utilisant l'architecture Hub and Spoke.
+
+ip nhrp map multicast dynamic -> permet de faire passer le trafic multicast au sein du lien de tunnel
+
+tunnel source e0/1 -> assigne une interface physique à une interface tunnel
+
+tunnel mode gre multipoint -> permet de passer de GRE à MGRE.
