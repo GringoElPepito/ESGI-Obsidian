@@ -128,3 +128,7 @@ le dernier bit de l'IP source est à 1, le dernier bit de l'IP destination est �
 Si 4 liens -> On regarde les 2 derniers bits de chaque IP
 les 2 derniers bit de l'IP source sont 01, les 2 derniers bit de l'IP destination sont 10
 XOR donne comme résultat 11 ce sera donc le 4e lien qui sera utilisé
+
+
+Port edge port connecté à un terminal
+Designated port -> port menant vers le root-bridge
