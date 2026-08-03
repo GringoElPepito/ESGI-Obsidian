@@ -7,7 +7,7 @@
 	- [ ] Refactor inventory file
 	- [ ] Create inventory file for each environment
 - [ ] Mattermost
-	- [ ] Replace API Calls for LDAP integration by Temlating config file
+	- [ ] Replace API Calls for LDAP integration by Templating config file
 - [ ] JumpServer - Refactor All the code
 	- [ ] Refactor User creation
 	- [ ] Refactor Asset creation
@@ -18,7 +18,9 @@
 	- [ ] Automate RemoteApp Asset creation
 - [ ] Mailcow 
 	- [ ] Automate Mailcow deployment
-	- [ ] Automate Mailcow LDAP Syncrhonisation
+	- [ ] Automate Mailcow LDAP Synchronisation
+	- [ ] 
 - [ ] VM 
 	- [ ] Integration With Cloud-init
 	- [ ] Post Deployment automation
+	- [ ] Windows Deployment
