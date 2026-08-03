@@ -23,8 +23,8 @@
 - [ ] Mailcow 
 	- [ ] Automate Mailcow deployment
 	- [ ] Automate Mailcow LDAP Synchronisation
-	- [ ] 
 - [ ] VM 
 	- [ ] Integration With Cloud-init
 	- [ ] Post Deployment automation
 	- [ ] Windows Deployment
+	- [ ] Création d'un compte d'automatisation dédié pour Windows et Linux
