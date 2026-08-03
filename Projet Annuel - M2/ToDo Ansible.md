@@ -6,6 +6,8 @@
 - [ ] Inventory
 	- [ ] Refactor inventory file
 	- [ ] Create inventory file for each environment
+- [ ] Ansible
+	- [ ] Create a playbook folder
 - [ ] Mattermost
 	- [ ] Replace API Calls for LDAP integration by Templating config file
 - [ ] JumpServer - Refactor All the code
