@@ -29,7 +29,7 @@
 - [ ] Gestion des rapports SLA
 
 # Proxmox
-- [ ] Gestion du CRS (équivalent DRS VMWare VCenter)
+- [x] Gestion du CRS (équivalent DRS VMWare VCenter)
 - [ ] 
 
 # Infra

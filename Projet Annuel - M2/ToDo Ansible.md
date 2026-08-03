@@ -1,0 +1,14 @@
+- [ ] Mattermost
+	- [ ] Replace API Calls for LDAP integration by Temlating config file
+- [ ] JumpServer - Refactor All the code
+	- [ ] Refactor User creation
+	- [ ] Refactor Asset creation
+	- [ ] Refactor Account creation
+	- [ ] Refactor Permission creation
+	- [ ] Refactor Node (folder) creation
+	- [ ] Automate RemoteApp Machine creation
+	- [ ] Automate RemoteApp Asset creation
+- [ ] Mailcow 
+	- [ ] Automate Mailcow deployment
+	- [ ] Automate Mailcow LDAP Syncrhonisation
+	- [ ] Automate
