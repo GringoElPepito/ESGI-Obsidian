@@ -8,6 +8,8 @@
 	- [ ] Create inventory file for each environment
 - [ ] Ansible
 	- [ ] Create a playbook folder
+	- [ ] Create a system for Main Playbook calling post-deployment (Service installation) Playbook
+	- [ ] Move post-deployment playbook into the playbook folder
 - [ ] Mattermost
 	- [ ] Replace API Calls for LDAP integration by Templating config file
 - [ ] JumpServer - Refactor All the code
