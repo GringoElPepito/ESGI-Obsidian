@@ -1,3 +1,11 @@
+- [ ] Variables
+	- [ ] Create Site folder for global_vars
+	- [ ] Create Site folder for group_vars
+	- [ ] Create Site folder for host_vars
+	- [ ] Rearrange variables between global, group and host vars
+- [ ] Inventory
+	- [ ] Refactor inventory file
+	- [ ] Create inventory file for each environment
 - [ ] Mattermost
 	- [ ] Replace API Calls for LDAP integration by Temlating config file
 - [ ] JumpServer - Refactor All the code
@@ -11,4 +19,6 @@
 - [ ] Mailcow 
 	- [ ] Automate Mailcow deployment
 	- [ ] Automate Mailcow LDAP Syncrhonisation
-	- [ ] Automate
+- [ ] VM 
+	- [ ] Integration With Cloud-init
+	- [ ] Post Deployment automation
