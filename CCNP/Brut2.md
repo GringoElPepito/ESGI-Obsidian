@@ -102,3 +102,33 @@ tunnel mode gre multipoint -> permet de passer de GRE à MGRE.
 MGRE
 NHRP -> Permet à un spoke de se connecter au Hub et de récupérer les IP des autres Spoke
 Profil IPsec
+
+
+
+
+équilibrage de charge, algorithme binaire :
+- MAC SRC
+- MAC DST
+- IP SRC
+- IP DST
+- PORT SRC
+- PORT DST
+
+algo XOR :
+- IP SRC/IP DST
+- MAC SRC/MAC DST
+- PORT SRC/PORT DST
+
+IP SRC = 10.1.1.0000 0001
+IP DST = 10.1.1.0000 0110
+
+Si 2 liens -> On regarde le dernier bit de chaque IP
+le dernier bit de l'IP source est à 1, le dernier bit de l'IP destination est à 0 donc le XOR donne comme résultat 0 ce sera donc le premier lien qui sera utilisé
+
+Si 4 liens -> On regarde les 2 derniers bits de chaque IP
+les 2 derniers bit de l'IP source sont 01, les 2 derniers bit de l'IP destination sont 10
+XOR donne comme résultat 11 ce sera donc le 4e lien qui sera utilisé
+
+
+Port edge port connecté à un terminal
+Designated port -> port menant vers le root-bridge

@@ -1,0 +1,30 @@
+- [ ] Variables
+	- [ ] Create Site folder for global_vars
+	- [ ] Create Site folder for group_vars
+	- [ ] Create Site folder for host_vars
+	- [ ] Rearrange variables between global, group and host vars
+- [ ] Inventory
+	- [ ] Refactor inventory file
+	- [ ] Create inventory file for each environment
+- [ ] Ansible
+	- [ ] Create a playbook folder
+	- [ ] Create a system for Main Playbook calling post-deployment (Service installation) Playbook
+	- [ ] Move post-deployment playbook into the playbook folder
+- [ ] Mattermost
+	- [ ] Replace API Calls for LDAP integration by Templating config file
+- [ ] JumpServer - Refactor All the code
+	- [ ] Refactor User creation
+	- [ ] Refactor Asset creation
+	- [ ] Refactor Account creation
+	- [ ] Refactor Permission creation
+	- [ ] Refactor Node (folder) creation
+	- [ ] Automate RemoteApp Machine creation
+	- [ ] Automate RemoteApp Asset creation
+- [ ] Mailcow 
+	- [ ] Automate Mailcow deployment
+	- [ ] Automate Mailcow LDAP Synchronisation
+- [ ] VM 
+	- [ ] Integration With Cloud-init
+	- [ ] Post Deployment automation
+	- [ ] Windows Deployment
+	- [ ] Création d'un compte d'automatisation dédié pour Windows et Linux
