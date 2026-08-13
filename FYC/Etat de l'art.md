@@ -1,0 +1,2 @@
+Le 14 mars 2006, Amazon propose la première offre commerciale de "cloud computing" avec la création d'Amazon Web Services (AWS). A sa création la plateforme AWS proposait 3 services S3 cloud storage, SQS et EC2.
+20 ans plus tard, AWS propose désormais
