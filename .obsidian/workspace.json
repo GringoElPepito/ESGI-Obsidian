@@ -362,9 +362,23 @@
               "icon": "lucide-file",
               "title": "Sans titre 3"
             }
+          },
+          {
+            "id": "2ef97b52b9563576",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "FYC/Etat de l'art.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Etat de l'art"
+            }
           }
         ],
-        "currentTab": 25
+        "currentTab": 26
       }
     ],
     "direction": "vertical"
@@ -513,12 +527,15 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "2a72605fb4cad385",
+  "active": "2ef97b52b9563576",
   "lastOpenFiles": [
-    "Sans titre 3.md",
     "FYC/Présentation équipe.md",
-    "Projet Annuel - M2/ToDo Ansible.md",
+    "FYC/Sans titre.md",
+    "FYC/Séance suivi 1.md",
     "FYC/Présentation premier suivi.md",
+    "FYC/Etat de l'art.md",
+    "Sans titre 3.md",
+    "Projet Annuel - M2/ToDo Ansible.md",
     "CCNP/Brut2.md",
     "CCNA/OSI model/Couche3/GLBP.md",
     "CCNP/Sans titre.md",
@@ -538,9 +555,6 @@
     "Projet Annuel - M1/Document/PBS-WBS.md",
     "Projet Annuel - M1/Document/Mattermost.md",
     "Projet Annuel - M1/Document/SIEM.md",
-    "Projet Annuel - M1/Document/SAN.md",
-    "Projet Annuel - M1/Document/Proxmox Virtual Environment.md",
-    "Projet Annuel - M1/Document/Téléphonie.md",
     "attachments/Pasted image 20260720074419.png",
     "attachments/Pasted image 20260720071551.png",
     "attachments/Pasted image 20260716234037.png",
