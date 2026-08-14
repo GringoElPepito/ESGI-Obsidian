@@ -18,6 +18,6 @@ Dans le cas des machines virtuelles, il est bien évidemment préférable de cho
 
 Pour un service de stockage
 
-Pour un service de
+Pour un service de sauvegarde à froid, on s'orientera généralement vers des disques à bandes magnétiques ou encore des disques durs à basse consommation. Les 2 ne sont pas les matériels les plus performants cependant ils permettent de sauvegarder de grandes quantités de données à moindre coup. Dans le cas des bandes magnétiques, elles proposent en plus une durée de vie pouvant aller entre 20 et 30 ans contrairement au disque dur qui semble se limiter à une durée de vie allant de 5 à 10 ans pour un usage modéré.
 
 # Localisation du matériel
