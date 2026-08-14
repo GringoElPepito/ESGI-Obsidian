@@ -3,6 +3,8 @@ C'est pourquoi il est impératif de comprendre le besoin à l'origine du projet 
 Dans notre cas, nous souhaitons mettre en place, un service d'exécution serverless. Ici la caractéristique la plus importante est la performance, le but va être de choisir un matériel permettant de réduire au maximum le temps entre le réception de la requête et l'envoi de la réponse par le serveur d'exécution.
 # Compute
 
+Pour le choix
+
 # Storage
 
 # Localisation du matériel
