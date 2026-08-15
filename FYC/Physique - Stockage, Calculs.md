@@ -10,8 +10,6 @@ Dans notre cas, nous souhaitons mettre en place, un service d'exécution serverl
 
 # Compute
 
-
-
 Si nous souhaitions mettre à disposition des machines virtuelles à nos clients, dans ce cas, nous aurions favoriser le choix de processeur avec un plus grand nombre de cœurs pour augmenter le pool de ressource à partager entre les différentes instances virtuelles quitte à ce que ces dernières soient un peu moins performantes à cause de la fréquence potentiellement un peu plus faible.
 
 Si nous voulions mettre en place un service de stockage, nous aurions mis ici l'accent sur un processeur économe en ressource mais ayant tout de même un certain nombre de cœurs notamment pour les fonctions de chiffrement et de compression ainsi que de nombreuses lignes PCIe permettant ainsi une gestion d'un plus grand pool de disques.
