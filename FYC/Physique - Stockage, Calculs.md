@@ -18,8 +18,10 @@ Dans notre cas, nous souhaitons mettre en place, un service d'exécution serverl
 # Compute
 
 Les ressources de calculs (Compute en anglais) correspond à l'ensemble des composants informatiques servant à réaliser des opérations informatiques de manière directs ou indirects :
-- Le processeur
-- 
+- le CPU ou processeur est un composant dit polyvalent qui excelle dans la réalisation les calculs dits complexes, il traite relativement peu d'opération à la fois mais le fait à une grande vitesse.
+- la RAM ou mémoire vive qui va permettre de stocker de manière temporaire les informations nécessaires aux calculs du processeur
+- le GPU ou carte graphique est le composant qui se charge de résoudre de large quantité de calculs simples (généralement des calculs matricielles), ce qui est parfaitement adapter aux calculs graphiques (affichage) ou encore à l'intelligence artificielle.
+- la VRAM ou mémoire vive graphique, est généralement directement intégré à la carte graphique et rempli le même rôle que la RAM mais pour la carte graphique.
 
 Si nous souhaitions mettre à disposition des machines virtuelles à nos clients, dans ce cas, nous aurions favoriser le choix de processeur avec un plus grand nombre de cœurs pour augmenter le pool de ressource à partager entre les différentes instances virtuelles quitte à ce que ces dernières soient un peu moins performantes à cause de la fréquence potentiellement un peu plus faible.
 
