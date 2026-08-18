@@ -32,7 +32,9 @@ Si nous voulions mettre en place un service de stockage, nous aurions mis ici l'
 # Storage
 
 On définit de matériel de stockage l'ensemble des composants permettant de conserver les données et ce même si la machine hôte est éteinte. Bien que la RAM et la VRAM servent elles aussi à stocker des informations, elles ne préservent pas les données une fois la machine est éteinte d'où l'appellation de mémoire vive. A l'inverse, les équipements tels que les HDD, SSD SATA ou encore SSD NVMe que l'on qualifie de mémoire morte, permettent de préserver les données et cela même si la machine est éteinte :
-- Les SSD NVMe sont à ce jour la version de la mémoire morte la plus performante mais par la même occasion la plus onéreuse. Ces composants se connecte directement à la carte mère via les ports PCI Express (ou PCIe) ce qui permet des débit plus de 10x supérieurs 
+- Les SSD utilise la mémoire flash pour stocker les données, l'entièreté des données est stockés de manières électroniques à l'aide d'électrons piégés ou non dans des transistors représentant ainsi les 1 et les 0 du langages binaire et cela même sans alimentation.
+	- Les SSD NVMe sont à ce jour la version de la mémoire morte la plus performante mais par la même occasion la plus onéreuse. Ces composants se connecte directement à la carte mère via les ports PCI Express (ou PCIe) ce qui permet des débit plus de 10x supérieurs aux équipements les plus rapides fonctionnant en SATA.
+	- Les SSD SATA sont une version plus anciennes des SSD NVMe utilisant un câble SATA pour se connecter à la carte mère. Bien que moins rapide que la version NVMe, ils restent tout de mêmes assez intéressant car ils sont un bon compromis entre le prix, la vitesse et la taille du
 
 Dans notre cas, nous souhaitons mettre en place, un service d'exécution serverless. Ici la caractéristique la plus importante est la performance, le but va être de choisir un matériel permettant de réduire au maximum le temps entre le réception de la requête et l'envoi de la réponse par le serveur d'exécution.
 
