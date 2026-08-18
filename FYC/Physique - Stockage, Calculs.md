@@ -17,7 +17,9 @@ Dans notre cas, nous souhaitons mettre en place, un service d'exécution serverl
 
 # Compute
 
-Les ressources de calculs (Compute en anglais) correspond à l'ensemble des composants informatiques servant à réaliser des opérations informatiques de manière directs ou indirects  :
+Les ressources de calculs (Compute en anglais) correspond à l'ensemble des composants informatiques servant à réaliser des opérations informatiques de manière directs ou indirects :
+- Le processeur
+- 
 
 Si nous souhaitions mettre à disposition des machines virtuelles à nos clients, dans ce cas, nous aurions favoriser le choix de processeur avec un plus grand nombre de cœurs pour augmenter le pool de ressource à partager entre les différentes instances virtuelles quitte à ce que ces dernières soient un peu moins performantes à cause de la fréquence potentiellement un peu plus faible.
 
