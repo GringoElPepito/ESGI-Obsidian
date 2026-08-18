@@ -19,15 +19,20 @@ Dans notre cas, nous souhaitons mettre en place, un service d'exécution serverl
 
 Les ressources de calculs (Compute en anglais) correspond à l'ensemble des composants informatiques servant à réaliser des opérations informatiques de manière directs ou indirects :
 - le CPU ou processeur est un composant dit polyvalent qui excelle dans la réalisation les calculs dits complexes, il traite relativement peu d'opération à la fois mais le fait à une grande vitesse.
-- la RAM ou mémoire vive qui va permettre de stocker de manière temporaire les informations nécessaires aux calculs du processeur
-- le GPU ou carte graphique est le composant qui se charge de résoudre de large quantité de calculs simples (généralement des calculs matricielles), ce qui est parfaitement adapter aux calculs graphiques (affichage) ou encore à l'intelligence artificielle.
-- la VRAM ou mémoire vive graphique, est généralement directement intégré à la carte graphique et rempli le même rôle que la RAM mais pour la carte graphique.
+- la RAM ou mémoire vive qui va permettre de stocker de manière temporaire les informations nécessaires aux calculs du processeur. Ce type de mémoire propose une très faible latence.
+- le GPU ou carte graphique ou processeur graphique est le composant qui se charge de résoudre de large quantité de calculs simples (généralement des calculs matricielles), ce qui est parfaitement adapter aux calculs graphiques (affichage) ou encore à l'intelligence artificielle.
+- la VRAM ou mémoire vive graphique, est généralement directement intégré à la carte graphique et rempli le même rôle que la RAM mais pour la carte graphique. Ce type de mémoire possède une très large bande passante permettant de transmettre une large quantité de données au GPU.
+
+
 
 Si nous souhaitions mettre à disposition des machines virtuelles à nos clients, dans ce cas, nous aurions favoriser le choix de processeur avec un plus grand nombre de cœurs pour augmenter le pool de ressource à partager entre les différentes instances virtuelles quitte à ce que ces dernières soient un peu moins performantes à cause de la fréquence potentiellement un peu plus faible.
 
 Si nous voulions mettre en place un service de stockage, nous aurions mis ici l'accent sur un processeur économe en ressource mais ayant tout de même un certain nombre de cœurs notamment pour les fonctions de chiffrement et de compression ainsi que de nombreuses lignes PCIe permettant ainsi une gestion d'un plus grand pool de disques.
 
 # Storage
+
+On définit de matériel de stockage l'ensemble des composants permettant de conserver les données et ce même si la machine hôte est éteinte. Bien que la RAM et la VRAM servent elles aussi à stocker des informations, elles ne préservent pas les données une fois la machine est éteinte d'où l'appellation de mémoire vive. A l'inverse, les équipements tels que les HDD, SSD SATA ou encore SSD NVMe que l'on qualifie de mémoire morte, permettent de préserver les données et cela même si la machine est éteinte :
+- Les SSD NVMe sont à ce jour la version de la mémoire morte la plus performante mais par la même occasion la plus onéreuse. Ces composants se connecte directement à la carte mère via les ports PCI Express (ou PCIe) ce qui permet des débit plus de 10x supérieurs 
 
 Dans notre cas, nous souhaitons mettre en place, un service d'exécution serverless. Ici la caractéristique la plus importante est la performance, le but va être de choisir un matériel permettant de réduire au maximum le temps entre le réception de la requête et l'envoi de la réponse par le serveur d'exécution.
 
