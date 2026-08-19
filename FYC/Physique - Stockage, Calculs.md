@@ -21,6 +21,7 @@ Chaque service qu'accueillera l'infrastructure est susceptible d'avoir ses propr
 Avant de choisir le matériel il faut donc comprendre la charge principal auquel devra répondre l'infrastructure pour faire fonctionner le ou les services à héberger.
 
 
+
 # Comment gérer le stockage
 
 # Où stocker le matériel
