@@ -11,7 +11,7 @@ Voici la liste des principaux éléments composants un ordinateur :
 - La carte réseau permet comme son nom l'indique de connecter la machine à un réseau pour que celle-ci puisse communiquer avec d'autres machines. La majorité des cartes mères intègrent directement une ou plusieurs cartes réseaux.
 - L'alimentation est le composant permettant de fournir l'énergie nécessaire au fonctionnement de l'ensemble des composants de l'ordinateur.
 
-Ils existent d'autres composant informatiques répondant à des besoins spécifiques que nous n'aborderons pas dans ce cours car 
+Ils existent d'autres composant informatiques répondant à des besoins spécifiques que nous n'aborderons pas dans ce cours car ces derniers ne seront pas forcément pertin
 # Comment choisir ces composants
 
 Pour toutes infrastructures informatique le choix du matériel est une question primordial. Celui-ci est dirigé par 2 éléments centraux le besoin auquel doit répondre l'infrastructure ainsi que le budget disponible. C'est d'ailleurs ce second facteur qui pose le plus souvent problème, ce qui est d'autant plus vrai avec toutes les récentes augmentations des prix des composants informatiques.
