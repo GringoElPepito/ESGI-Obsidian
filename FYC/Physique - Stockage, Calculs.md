@@ -3,10 +3,10 @@
 Les composants informatiques sont les éléments qui une fois assemblés permettent d'aboutir à ce qu'on appelle communément un ordinateur.
 Voici la liste des principaux éléments composants un ordinateur :
 - Le CPU ou processeur est un composant dit polyvalent qui excelle dans la réalisation les calculs dits complexes, il traite relativement peu d'opération à la fois mais le fait à une grande vitesse.
-- La RAM ou mémoire vive qui va permettre de stocker de manière temporaire les informations nécessaires aux calculs du processeur. Ce type de mémoire propose une très faible latence.
+- La RAM ou mémoire vive qui va permettre de stocker de manière temporaire les informations nécessaires aux calculs du processeur. Ce type de mémoire propose une très faible latence ce qui parfait pour accès rapide aux données stockés dans la RAM par le processeur. Les données enregistrées dans la RAM ne sont pas conservés entre les redémarrages ou lorsque la machine est éteinte.
 - Le GPU ou carte graphique ou processeur graphique est le composant qui se charge de résoudre de large quantité de calculs simples (généralement des calculs matricielles), ce qui est parfaitement adapter aux calculs graphiques (affichage) ou encore à l'intelligence artificielle.
-- La VRAM ou mémoire vive graphique, est généralement directement intégré à la carte graphique et rempli le même rôle que la RAM mais pour la carte graphique. Ce type de mémoire possède une très large bande passante permettant de transmettre une large quantité de données au GPU.
-- 
+- La VRAM ou mémoire vive graphique, est généralement directement intégré à la carte graphique et rempli le même rôle que la RAM mais pour la carte graphique. Ce type de mémoire possède une très large bande passante permettant de transmettre une large quantité de données au GPU. A l'instar de la RAM, la VRAM ne conserve pas non plus les données entre les redémarrage ou lorsque la machine est éteinte.
+- Le Stockage ou mémoire morte se représente sous différents types de composants que nous détaillerons plus tard et qui permettent de conserver les données et ce même lorsque la machine n'est plus alimentée 
 # Comment choisir ces composants
 
 Pour toutes infrastructures informatique le choix du matériel est une question primordial. Celui-ci est dirigé par 2 éléments centraux le besoin auquel doit répondre l'infrastructure ainsi que le budget disponible. C'est d'ailleurs ce second facteur qui pose le plus souvent problème, ce qui est d'autant plus vrai avec toutes les récentes augmentations des prix des composants informatiques.
