@@ -39,7 +39,12 @@ Imaginons maintenant que nous souhaitons proposer des machines virtuelles à nos
 
 # Comment gérer le stockage
 
-La gestion du stockage au sein d'une infrastructure est un autre élément nécessitant une certaine attention 
+La gestion du stockage au sein d'une infrastructure est un autre élément nécessitant une certaine attention. 
+
+## Système de fichier
+
+## Redondance des disques
+## Architecture d'accès au stockage
 
 
 # Où stocker le matériel
