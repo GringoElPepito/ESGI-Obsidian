@@ -48,7 +48,13 @@ Il y a quatre points sur lesquelles s'arrêter pour définir une politique gén�
 
 ## Redondance des disques
 
-Le stockage repose sur des équipements physiques qui peuvent donc de facto tomber en panne. Pour palier cela il existe la solution RAID
+Le stockage repose sur des équipements physiques qui peuvent donc de facto tomber en panne. Pour palier cela il existe la solution RAID (Redundant Array of Independent Disks) qui consiste à associer plusieurs disques dans le but d'améliorer les performances, la redondance ou les deux.
+
+Voici les types de RAID basiques :
+- RAID 0 : Ici on va combiner l'ensemble des disques pour que toutes les données inscrites soient réparties sur 
+- RAID 1 : 
+- RAID 5 : 
+- RAID 6 : 
 
 ## Système de fichiers
 ## Architecture d'accès au stockage
