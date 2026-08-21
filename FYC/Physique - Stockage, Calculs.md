@@ -32,7 +32,7 @@ Imaginons maintenant que nous souhaitons proposer des machines virtuelles à nos
 - CPU : Ici nous nous concentrerons donc sur le fait d'avoir un processeur avec une certaine quantité de cœur, de telle sorte à ce qu'un nombre important de machines virtuelles puissent fonctionner en parallèle. Bien évidemment une haute fréquence sera toujours préférable cependant ce n'est pas forcément un point bloquant sauf cas particulier nécessitant une machine virtuelle avec de très hautes performances.
 - RAM : Comme pour le CPU, ici le but sera d'avoir un maximum de RAM quitte à réduire la fréquence de celle-ci, toujours dans le but de maximiser le nombre d'instances pouvant être hébergé au sein de l'infrastructure
 - Stockage : Contrairement au stockage des fonctions de notre cas précédent, ici nous devons stocké des systèmes d'exploitations complet ainsi que tous les éléments nécessaire pour faire fonctionner les services qui seront exécutés au sein des instances virtuelles. Encore une fois le but va être d'avoir un espace de stockage conséquent. Une solution pour réduire les coûts seraient d'avoir 2 types de stockages, l'un rapide où l'on stockerait l'OS des VM et le second plus lents mais aussi plus grand permettant de stocker les grand volumes de données. Si le budget le permet le stockage rapide sera assuré par des SSD NVMe et le lent par des SSD SATA. Dans le cas contraire, les SSD SATA feront office de stockage performant et des HDD pourront remplir le rôle de stockage de données.
-- 
+- Réseau : même chose que pour la partie précédente.
 
 # Comment gérer le stockage
 
