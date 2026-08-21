@@ -12,6 +12,8 @@ Voici la liste des principaux éléments composants un ordinateur :
 - L'alimentation est le composant permettant de fournir l'énergie nécessaire au fonctionnement de l'ensemble des composants de l'ordinateur.
 
 Ils existent d'autres composant informatiques répondant à des besoins spécifiques que nous n'aborderons pas dans ce cours car ces derniers ne seront pas forcément pertinents par à rapport à notre cas.
+
+
 # Comment choisir ces composants
 
 Pour toute infrastructure informatique le choix du matériel est une question primordial. Celui-ci est dirigé par 2 éléments centraux le besoin auquel doit répondre l'infrastructure ainsi que le budget disponible. C'est d'ailleurs ce second facteur qui pose le plus souvent problème, ce qui est d'autant plus vrai avec toutes les récentes augmentations des prix des composants informatiques.
@@ -34,6 +36,10 @@ Imaginons maintenant que nous souhaitons proposer des machines virtuelles à nos
 - Stockage : Contrairement au stockage des fonctions de notre cas précédent, ici nous devons stocké des systèmes d'exploitations complet ainsi que tous les éléments nécessaire pour faire fonctionner les services qui seront exécutés au sein des instances virtuelles. Encore une fois le but va être d'avoir un espace de stockage conséquent. Une solution pour réduire les coûts seraient d'avoir 2 types de stockages, l'un rapide où l'on stockerait l'OS des VM et le second plus lents mais aussi plus grand permettant de stocker les grand volumes de données. Si le budget le permet le stockage rapide sera assuré par des SSD NVMe et le lent par des SSD SATA. Dans le cas contraire, les SSD SATA feront office de stockage performant et des HDD pourront remplir le rôle de stockage de données.
 - Réseau : même chose que pour la partie précédente.
 
+
 # Comment gérer le stockage
+
+La gestion du stockage au sein d'une infrastructure est un autre élément nécessitant une certaine attention 
+
 
 # Où stocker le matériel
