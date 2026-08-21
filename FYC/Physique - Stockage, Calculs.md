@@ -50,11 +50,14 @@ Il y a quatre points sur lesquelles s'arrêter pour définir une politique gén�
 
 Le stockage repose sur des équipements physiques qui peuvent donc de facto tomber en panne. Pour palier cela il existe la solution RAID (Redundant Array of Independent Disks) qui consiste à associer plusieurs disques dans le but d'améliorer les performances, la redondance ou les deux.
 
+
 Voici les types de RAID basiques :
-- RAID 0 : Ici on va combiner 2 disques ou plus  pour que toutes les données inscrites soient réparties entre les disques ce qui permet d'améliorer les performances. Cependant si l'un des disques tombe en panne l'entièreté des données sont perdues. Pour le RAID 0 on calcul l'espace de stockage utilisable de la manière suivante :
+- RAID 0 : Ici on va combiner 2 disques ou plus pour que toutes les données inscrites soient réparties entre les disques ce qui permet d'améliorer les performances. Cependant si l'un des disques tombe en panne l'entièreté des données sont perdues. Le RAID 0 permet d'exploiter pleinement l'espace disponible sur chaque disque.
 - RAID 1 : 
 - RAID 5 : 
 - RAID 6 : 
+
+Concernant la réalisation d'un RAID quel qu'il soit, il est préférable d'utiliser uniquement des disques de la même taille. Dans le cas contraire, l'espace disponible sera basé sur le disque avec la taille la plus faible, exemple : un RAID 0 avec un disque de 500Go et un autre disque de 1To ne fournira qu'un espace de stockage de 1To (500Go pour le premier disque et 500Go pour le second disque), ce qui représente une perte sèche de 500Go dans ce cas.
 
 ## Système de fichiers
 ## Architecture d'accès au stockage
