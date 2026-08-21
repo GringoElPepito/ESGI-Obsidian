@@ -36,7 +36,7 @@ Imaginons maintenant que nous souhaitons proposer des machines virtuelles à nos
 - Stockage : Contrairement au stockage des fonctions de notre cas précédent, ici nous devons stocké des systèmes d'exploitations complet ainsi que tous les éléments nécessaire pour faire fonctionner les services qui seront exécutés au sein des instances virtuelles. Encore une fois le but va être d'avoir un espace de stockage conséquent. Une solution pour réduire les coûts seraient d'avoir 2 types de stockages, l'un rapide où l'on stockerait l'OS des VM et le second plus lents mais aussi plus grand permettant de stocker les grand volumes de données. Si le budget le permet le stockage rapide sera assuré par des SSD NVMe et le lent par des SSD SATA. Dans le cas contraire, les SSD SATA feront office de stockage performant et des HDD pourront remplir le rôle de stockage de données.
 - Réseau : même chose que pour la partie précédente.
 
-
+Les 2 cas présentés ci-dessus sont des exemples pouvant servir de base pour vos futurs décisions architecturales. L'important est de comprendre le besoin et de définir les éléments qui seront les plus à même d'y répondre.
 # Comment gérer le stockage
 
 La gestion du stockage au sein d'une infrastructure est un autre élément nécessitant une certaine attention. La question du stockage est loin d'être une question anodine, car elle va avoir un impact direct sur les futurs évolutions de l'infrastructure. 
