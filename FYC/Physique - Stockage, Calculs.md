@@ -46,9 +46,9 @@ Il y a quatre points sur lesquelles s'arrêter pour définir une politique gén�
 - Accès au stockage
 - Sauvegarde
 
-## Système de fichiers
-
 ## Redondance des disques
+
+## Système de fichiers
 ## Architecture d'accès au stockage
 
 ## Sauvegarde
