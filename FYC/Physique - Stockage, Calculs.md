@@ -48,7 +48,7 @@ Il y a quatre points sur lesquelles s'arrêter pour définir une politique gén�
 
 ## Redondance des disques
 
-Le stockage des 
+Le stockage repose sur des équipements physiques qui peuvent donc de facto tomber en panne. Pour palier cela il existe la solution RAID
 
 ## Système de fichiers
 ## Architecture d'accès au stockage
