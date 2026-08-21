@@ -48,6 +48,8 @@ Il y a quatre points sur lesquelles s'arrêter pour définir une politique gén�
 
 ## Redondance des disques
 
+Le stockage des 
+
 ## Système de fichiers
 ## Architecture d'accès au stockage
 
