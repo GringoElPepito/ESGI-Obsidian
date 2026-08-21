@@ -55,3 +55,8 @@ Il y a quatre points sur lesquelles s'arrêter pour définir une politique gén�
 
 
 # Où stocker le matériel
+
+# Minute Sécu
+
+- Secure Boot et TPM
+- Sécurisation des accès
