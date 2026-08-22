@@ -76,8 +76,8 @@ Voici un tableau comparatif des différents RAID présentés ci-dessus :
 | RAID 1  | 2            | k * n / 2     | 1 disque            |
 | RAID 5  | 3            | k * (n - 1)   | 1 disque            |
 | RAID 6  | 4            | k * (n - 2)   | 2 disque            |
-| RAID 10 | 4            |               | 1 par paire RAID 1  |
-| RAID 01 | 4            |               | 1 par groupe        |
+| RAID 10 | 4            | k * n / 2     | 1 par paire RAID 1  |
+| RAID 01 | 4            | k * n / 2     | 1 par groupe        |
 | RAID 50 | 6            |               | 1 par groupe RAID 5 |
 | RAID 60 | 8            |               | 2 par groupe RAID 6 |
 
