@@ -94,9 +94,18 @@ Un système de fichier correspond au moyen utiliser pour enregistrer, structurer
 Les supports physique sont en eux-mêmes assez peu exploitable, les systèmes de fichiers viennent faciliter leur utilisation en apportant une couche d'abstraction simplifiant l'écriture et la lecture des données.
 ### Système de fichiers locaux
 
-Les systèmes de fichiers sont ceux contrôl
+Les systèmes de fichiers locaux sont utilisé pour gérer le stockage d'une machine elle-même il en existe une pléthore cependant nous nous concentrerons sur les plus utilisés, en voici la liste :
+- ext4 : 
+- XFS : 
+- ZFS : 
+- BTRFS : 
+- VMFS : Exclusif aux solutions VMWare ESXi.
+- NTFS : Exclusif aux solutions Windows.
+- ReFS : Exclusif aux solutions Windows.
 
 ### Système de fichiers réseaux et distribués
+
+Nous avons abordés
 
 ## Architecture d'accès au stockage
 
