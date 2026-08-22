@@ -50,7 +50,6 @@ Il y a quatre points sur lesquelles s'arrêter pour définir une politique gén�
 
 Le stockage repose sur des équipements physiques qui peuvent donc de facto tomber en panne. Pour palier cela il existe la solution RAID (Redundant Array of Independent Disks) qui consiste à associer plusieurs disques dans le but d'améliorer les performances, la redondance ou les deux.
 
-
 Voici les types de RAID basiques :
 - RAID 0 (ou stripping) : Ici on va combiner 2 disques ou plus pour que toutes les données inscrites soient réparties entre les disques ce qui permet d'améliorer les performances. Cependant si l'un des disques tombe en panne l'entièreté des données sont perdues. Le RAID 0 permet d'exploiter pleinement l'espace disponible sur chaque disque. Ce RAID est celui présentant les meilleurs performances en lecture et en écriture.
 - RAID 1 (ou mirroring) : Requiert 2 disques ou plus. Ici on va simplement dupliquer les données sur l'ensemble des disques présent au sein du RAID. De cette manière, si l'un des disques venaient à tomber en panne, les autres seraient immédiatement utilisable. L'espace disponible pour le RAID 1 correspond à la taille du plus petit disque du RAID. Il est donc assez peu intéressant d'utiliser plus de 2 disques pour un RAID 1.
@@ -90,7 +89,7 @@ Dans le cas de notre service d'exécution serverless, il est important de savoir
 
 ## Système de fichiers
 
-
+Un système de fichier correspond initialement au moyen utiliser pour stocker les données sur un support physique (HDD, SSD SATA/NVMe, Clé USB etc...)
 
 ## Architecture d'accès au stockage
 
