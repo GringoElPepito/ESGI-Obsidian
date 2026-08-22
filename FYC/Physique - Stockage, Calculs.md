@@ -87,14 +87,14 @@ Maintenant que vous connaissez les forces et faiblesses de chaque type de RAID, 
 
 Dans le cas de notre service d'exécution serverless, il est important de savoir ce que va réaliser la majorité des fonctions qui vont être exécutés. Si les fonctions ne font pas d'écriture sur le disque alors un RAID 50 ou 60 dépendant du niveau de sécurité voulu pourrait parfaitement faire l'affaire. Cependant si les fonctions réalisent un grand nombre d'écriture alors il serait préférable d'utiliser un RAID 10 quitte à perdre de l'espace. Bien évidemment le plus important est comme toujours de parvenir à concilier le budget avec les besoins de l'infrastructure.
 
-## Système de fichiers
+## Système de fichiers 
 
 Un système de fichier correspond au moyen utiliser pour enregistrer, structurer, nommer et indexer les données sur un support de stockage (HDD, SSD SATA/NVMe, Clé USB etc...).
 
-Les supports physique sont en eux-mêmes 
-### Système de fichiers physique
+Les supports physique sont en eux-mêmes assez peu exploitable, les systèmes de fichiers viennent faciliter leur utilisation en apportant une couche d'abstraction simplifiant l'écriture et la lecture des données.
+### Système de fichiers locaux
 
-### Système de fichiers 
+### Système de fichiers réseaux et distribués
 
 ## Architecture d'accès au stockage
 
