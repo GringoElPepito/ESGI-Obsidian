@@ -53,9 +53,9 @@ Le stockage repose sur des équipements physiques qui peuvent donc de facto tomb
 
 Voici les types de RAID basiques :
 - RAID 0 : Ici on va combiner 2 disques ou plus pour que toutes les données inscrites soient réparties entre les disques ce qui permet d'améliorer les performances. Cependant si l'un des disques tombe en panne l'entièreté des données sont perdues. Le RAID 0 permet d'exploiter pleinement l'espace disponible sur chaque disque.
-- RAID 1 : Requiert 2 disques ou plus. Ici on va simplement dupliquer les données sur l'ensemble des disques présent au sein du RAID. De cette manière, si l'un des disques venaient à tomber en panne, les autres seraient immédiatement utilisable
-- RAID 5 : 
-- RAID 6 : 
+- RAID 1 : Requiert 2 disques ou plus. Ici on va simplement dupliquer les données sur l'ensemble des disques présent au sein du RAID. De cette manière, si l'un des disques venaient à tomber en panne, les autres seraient immédiatement utilisable. L'espace disponible pour le RAID 1 correspond à la taille du plus petit disque du RAID. Il est donc assez peu intéressant d'utiliser plus de 2 disques pour un RAID 1.
+- RAID 5 : Requiert 3 disques ou plus. Ce RAID fonctionne avec des blocs de parités distribués entre les disques du RAID qui permettent de reconstruire les données perdus en cas de panne d'un des disques. Ce RAID permet de supporter la panne d'un seul et unique disque, de plus la reconstruction des données peut être assez longue. L'espace disponible 
+- RAID 6 : Requiert 4 disques ou plus. Ce RAID fonctionne lui aussi avec des blocs de parités cependant, chaque bloc de parité est dupliqué sur un second disque 
 
 Concernant la réalisation d'un RAID quel qu'il soit, il est préférable d'utiliser uniquement des disques de la même taille. Dans le cas contraire, l'espace disponible sera basé sur le disque avec la taille la plus faible, exemple : un RAID 0 avec un disque de 500Go et un autre disque de 1To ne fournira qu'un espace de stockage de 1To (500Go pour le premier disque et 500Go pour le second disque), ce qui représente une perte sèche de 500Go dans ce cas.
 
