@@ -70,16 +70,16 @@ Voici maintenant les RAID imbriqués :
 
 Voici un tableau comparatif des différents RAID présentés ci-dessus :
 
-| Type    | Disques min. | Espace Dispo.       | Tolérance panne |
-| ------- | ------------ | ------------------- | --------------- |
-| RAID 0  | 2            | Aucune              |                 |
-| RAID 1  | 2            | 1 disque            |                 |
-| RAID 5  | 3            | 1 disque            |                 |
-| RAID 6  | 4            | 2 disque            |                 |
-| RAID 10 | 4            | 1 par paire RAID 1  |                 |
-| RAID 01 | 4            | 1 par groupe        |                 |
-| RAID 50 | 6            | 1 par groupe RAID 5 |                 |
-| RAID 60 | 8            | 2 par groupe RAID 6 |                 |
+| Type    | Disques min. | Espace Dispo. | Tolérance panne     |
+| ------- | ------------ | ------------- | ------------------- |
+| RAID 0  | 2            |               | Aucune              |
+| RAID 1  | 2            |               | 1 disque            |
+| RAID 5  | 3            |               | 1 disque            |
+| RAID 6  | 4            |               | 2 disque            |
+| RAID 10 | 4            |               | 1 par paire RAID 1  |
+| RAID 01 | 4            |               | 1 par groupe        |
+| RAID 50 | 6            |               | 1 par groupe RAID 5 |
+| RAID 60 | 8            |               | 2 par groupe RAID 6 |
 
 
 
