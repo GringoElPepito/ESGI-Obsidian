@@ -53,7 +53,7 @@ Le stockage repose sur des équipements physiques qui peuvent donc de facto tomb
 
 Voici les types de RAID basiques :
 - RAID 0 : Ici on va combiner 2 disques ou plus pour que toutes les données inscrites soient réparties entre les disques ce qui permet d'améliorer les performances. Cependant si l'un des disques tombe en panne l'entièreté des données sont perdues. Le RAID 0 permet d'exploiter pleinement l'espace disponible sur chaque disque.
-- RAID 1 : 
+- RAID 1 : Requiert 2 disques ou plus. Ici on va simplement dupliquer les données sur l'ensemble des disques présent au sein du RAID. De cette manière, si l'un des disques venaient à tomber en panne, les autres seraient immédiatement utilisable
 - RAID 5 : 
 - RAID 6 : 
 
