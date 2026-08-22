@@ -12,14 +12,21 @@ set MASTER_IP=172.16.0.100
 set WORKER_IP=("172.16.0.101" "172.16.0.102" "172.16.0.103")
 ```
 
-Génération des fichier de configuration :
-```bash
-talosctl gen config fyc https://172.16.0.100:6443
-```
-
-Appliquer la configuration généré sur
-
 Récupération des disques :
 ```bash
 talosctl get disks --insecure --nodes %MASTER_IP%
 ```
+
+Il faut ensuite récupéré le disque principal dans la majorité des cas ce sera `/dev/sda` 
+
+Génération des fichier de configuration :
+```bash
+talosctl gen config fyc --dns-domain k8s.lan --install-disk /dev/sda https://$MASTER_IP:6443
+```
+
+Appliquer la configuration généré sur le master pour le premier démarrage :
+```bash
+talosctl apply-config --insecure --nodes $MASTER_IP --file controlplane.yml
+```
+
+
