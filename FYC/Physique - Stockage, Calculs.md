@@ -86,7 +86,7 @@ Voici un tableau comparatif des différents RAID présentés ci-dessus :
 
 Maintenant que vous connaissez les forces et faiblesses de chaque type de RAID, il faut maintenant choisir le celui qui conviendra à notre infrastructure.
 
-Dans le cas de notre service d'exécution serverless
+Dans le cas de notre service d'exécution serverless, le meilleur RAID à mettre en place serait le RAID 10 cependant celui-ci 
 
 
 
