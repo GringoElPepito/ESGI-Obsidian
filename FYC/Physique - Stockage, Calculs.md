@@ -94,6 +94,8 @@ Un système de fichier correspond au moyen utiliser pour enregistrer, structurer
 Les supports physique sont en eux-mêmes assez peu exploitable, les systèmes de fichiers viennent faciliter leur utilisation en apportant une couche d'abstraction simplifiant l'écriture et la lecture des données.
 ### Système de fichiers locaux
 
+Les systèmes de fichiers sont ceux contrôl
+
 ### Système de fichiers réseaux et distribués
 
 ## Architecture d'accès au stockage
