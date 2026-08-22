@@ -63,8 +63,8 @@ Concernant la réalisation d'un RAID quel qu'il soit, il est préférable d'util
 
 Il est possible de combiner plusieurs types de RAID entre eux généralement dans le but de profiter des performances et de la sécurité offert par les types combinés
 Voici maintenant les RAID imbriqués :
-- RAID 10 : on va mettre en place plusieurs paires en RAID 1 
-- RAID 01 :
+- RAID 10 : Requiert minimum 4 disques. On va mettre en place plusieurs paires en RAID 1 chaque paire sera ensuite combiné avec les autres au sein d'un RAID 0. A la fois performant et sécurisé au détriment de l'espace disponible.
+- RAID 01 : Requiert minimum 4 disques. C'est l'inverse du RAID 10, on va créer des paires en RAID 0 qui seront ensuite associé pour former un RAID 1. On préférera généralement le RAID 10 car plus résilient. Si un disque tombe au sein d'un RAID 01 alors la paire concernée doit être entièrement reconstruite.
 - RAID 50 :
 - RAID 60 :
 
