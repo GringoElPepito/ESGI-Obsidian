@@ -52,8 +52,8 @@ Le stockage repose sur des équipements physiques qui peuvent donc de facto tomb
 
 
 Voici les types de RAID basiques :
-- RAID 0 : Ici on va combiner 2 disques ou plus pour que toutes les données inscrites soient réparties entre les disques ce qui permet d'améliorer les performances. Cependant si l'un des disques tombe en panne l'entièreté des données sont perdues. Le RAID 0 permet d'exploiter pleinement l'espace disponible sur chaque disque. Ce RAID est celui présentant les meilleurs performances en lecture et en écriture.
-- RAID 1 : Requiert 2 disques ou plus. Ici on va simplement dupliquer les données sur l'ensemble des disques présent au sein du RAID. De cette manière, si l'un des disques venaient à tomber en panne, les autres seraient immédiatement utilisable. L'espace disponible pour le RAID 1 correspond à la taille du plus petit disque du RAID. Il est donc assez peu intéressant d'utiliser plus de 2 disques pour un RAID 1.
+- RAID 0 (ou stripping) : Ici on va combiner 2 disques ou plus pour que toutes les données inscrites soient réparties entre les disques ce qui permet d'améliorer les performances. Cependant si l'un des disques tombe en panne l'entièreté des données sont perdues. Le RAID 0 permet d'exploiter pleinement l'espace disponible sur chaque disque. Ce RAID est celui présentant les meilleurs performances en lecture et en écriture.
+- RAID 1 (ou mirroring) : Requiert 2 disques ou plus. Ici on va simplement dupliquer les données sur l'ensemble des disques présent au sein du RAID. De cette manière, si l'un des disques venaient à tomber en panne, les autres seraient immédiatement utilisable. L'espace disponible pour le RAID 1 correspond à la taille du plus petit disque du RAID. Il est donc assez peu intéressant d'utiliser plus de 2 disques pour un RAID 1.
 - RAID 5 : Requiert 3 disques ou plus. Ce RAID fonctionne avec des blocs de parités distribués entre les disques du RAID qui permettent de reconstruire les données perdus en cas de panne d'un des disques. Ce RAID permet de supporter la panne d'un seul et unique disque. L'espace disponible pour le RAID 5 se calcul de la manière suivante : k * ( n - 1 ), où k représente la taille du plus petit disque et n le nombre de disque disponible au sein du RAID. L'ajout des blocs de parités peut ralentir la performance d'écriture. 
 - RAID 6 : Requiert 4 disques ou plus. Ce RAID fonctionne lui aussi avec des blocs de parités cependant, chaque bloc de parité est dupliqué sur un second disque. Ce RAID permet de supporter jusqu'à deux pannes de disques simultanés. L'espace disponible pour le RAID 6 se calcul de la manière suivante : k * ( n - 2 ), où k représente la taille du plus petit disque et n le nombre de disque disponible au sein du RAID. L'ajout des blocs de parités peut ralentir la performance d'écriture et cela davantage que pour le RAID 5 car il a 2 blocs de parités pour chaque bloque de données. 
 
@@ -61,9 +61,9 @@ Les RAID 2, 3 et 4 existent aussi cependant ces derniers ne sont que très rarem
 
 Concernant la réalisation d'un RAID quel qu'il soit, il est préférable d'utiliser uniquement des disques de la même taille et de la même vitesse. Dans le cas contraire, l'espace disponible sera basé sur le disque avec la taille la plus faible, exemple : un RAID 0 avec un disque de 500Go et un autre disque de 1To ne fournira qu'un espace de stockage de 1To (500Go pour le premier disque et 500Go pour le second disque), ce qui représente une perte sèche de 500Go dans ce cas. Concernant la vitesse similaire entre les disques, cela est surtout dans le but d'obtenir des performances stables et prévisibles ce qui pourrait ne pas être le cas avec des disques ayant des vitesses différentes.
 
-Il est possible de combiner plusieurs types de RAID entre eux généralement dans le but 
+Il est possible de combiner plusieurs types de RAID entre eux généralement dans le but de profiter des performances et de la sécurité offert par les types combinés
 Voici maintenant les RAID imbriqués :
-- RAID 10 :
+- RAID 10 : on va mettre en place plusieurs paires en RAID 1 
 - RAID 01 :
 - RAID 50 :
 - RAID 60 :
