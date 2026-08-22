@@ -85,7 +85,11 @@ Voici un tableau comparatif des différents RAID présentés ci-dessus :
 | RAID 60 | 8            | k * (n - 2m)  | 2 par groupe RAID 6 | Très Bonne | Correcte                   |
 
 Maintenant que vous connaissez les forces et faiblesses de chaque type de RAID, il faut maintenant choisir le celui qui conviendra à notre infrastructure.
-La meilleur solution est le RAID 10 cependant c'est aussi la version la plus onéreuse
+
+La meilleur solution est le RAID 10 cependant c'est aussi la version la plus onéreuse car pour obtenir un pool de stockage de 4 To il faudra 8 disques de 1To. Pour des plus grands pool de stockage cela peut vite représenter une grosse enveloppe qui viendra amputé le budget global.
+Le RAID 01 est globalement équivalent au RAID 10.
+
+
 
 
 ## Système de fichiers
