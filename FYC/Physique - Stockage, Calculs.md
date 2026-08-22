@@ -86,7 +86,7 @@ Voici un tableau comparatif des différents RAID présentés ci-dessus :
 
 Maintenant que vous connaissez les forces et faiblesses de chaque type de RAID, il faut maintenant choisir le celui qui conviendra à notre infrastructure.
 
-Pour notre d'exécution de fonction en serverless le RAID 50 est parfaitement adapté 
+Dans le cas de notre service d'exécution serverless
 
 
 
