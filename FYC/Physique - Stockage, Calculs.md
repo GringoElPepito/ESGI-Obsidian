@@ -89,7 +89,12 @@ Dans le cas de notre service d'exécution serverless, il est important de savoir
 
 ## Système de fichiers
 
-Un système de fichier correspond initialement au moyen utiliser pour stocker les données sur un support physique (HDD, SSD SATA/NVMe, Clé USB etc...)
+Un système de fichier correspond au moyen utiliser pour enregistrer, structurer, nommer et indexer les données sur un support de stockage (HDD, SSD SATA/NVMe, Clé USB etc...).
+
+Les supports physique sont en eux-mêmes 
+### Système de fichiers physique
+
+### Système de fichiers 
 
 ## Architecture d'accès au stockage
 
