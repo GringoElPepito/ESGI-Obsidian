@@ -1,4 +1,11 @@
-Création des variables :
+Création des variables (LINUX) :
+```bash
+export MASTER_IP=172.16.0.100
+
+export WORKER_IP=("172.16.0.101" "172.16.0.102" "172.16.0.103")
+```
+
+Création des variables (LINUX) :
 ```bash
 export MASTER_IP=172.16.0.100
 
