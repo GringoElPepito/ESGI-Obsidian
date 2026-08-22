@@ -61,6 +61,7 @@ Les RAID 2, 3 et 4 existent aussi cependant ces derniers ne sont que très rarem
 
 Concernant la réalisation d'un RAID quel qu'il soit, il est préférable d'utiliser uniquement des disques de la même taille et de la même vitesse. Dans le cas contraire, l'espace disponible sera basé sur le disque avec la taille la plus faible, exemple : un RAID 0 avec un disque de 500Go et un autre disque de 1To ne fournira qu'un espace de stockage de 1To (500Go pour le premier disque et 500Go pour le second disque), ce qui représente une perte sèche de 500Go dans ce cas. Concernant la vitesse similaire entre les disques, cela est surtout dans le but d'obtenir des performances stables et prévisibles ce qui pourrait ne pas être le cas avec des disques ayant des vitesses différentes.
 
+Il est possible de combiner plusieurs types de RAID entre eux généralement dans le but 
 Voici maintenant les RAID imbriqués :
 - RAID 10 :
 - RAID 01 :
