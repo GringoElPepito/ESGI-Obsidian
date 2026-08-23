@@ -390,12 +390,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FYC/Brouillon - Physique - Stockage, Calculs.md",
+                "file": "FYC/Filesystem.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brouillon - Physique - Stockage, Calculs"
+              "title": "Filesystem"
             }
           }
         ]
@@ -547,10 +547,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "2ef97b52b9563576",
+  "active": "80f3a52c9259dc59",
   "lastOpenFiles": [
-    "FYC/Brouillon - Physique - Stockage, Calculs.md",
     "FYC/Physique - Stockage, Calculs.md",
+    "FYC/Filesystem.md",
+    "FYC/Brouillon - Physique - Stockage, Calculs.md",
     "FYC/Setup TALOS.md",
     "FYC/Etat de l'art.md",
     "FYC/Définition Cloud Computing.md",
@@ -574,7 +575,6 @@
     "Projet Annuel - M1/Installation/Proxmox/Proxmox Ceph.md",
     "Projet Annuel - M1/Suivi PA.md",
     "Projet Annuel - M1/Document/Proxmox Backup Server.md",
-    "Projet Annuel - M1/Document/Présentation Equipe Projet.md",
     "attachments/Pasted image 20260720074419.png",
     "attachments/Pasted image 20260720071551.png",
     "attachments/Pasted image 20260716234037.png",
