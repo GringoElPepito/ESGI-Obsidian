@@ -105,11 +105,11 @@ Les systèmes de fichiers locaux sont utilisé pour gérer le stockage d'une mac
 
 - BTRFS : BTRFS est conçu pour être une réponse Open Source à ZFS dans le but d'être intégré au noyau Linux. BTRFS est aussi un système de fichier en Copy On Write comme ZFS, il utilise lui aussi un système de pool de stockage qui va par la suite pouvoir accueillir des volumes. BTRFS permet aussi de prendre des Snapshots des volumes qui peuvent être conservé en lecture seule ou en lecture écriture. BTRFS propose aussi une compression de fichier transparente réaliser en arrière plan ainsi qu'une implémentation des solutions RAID pour préserver l'intégrité des données. BTRFS est par la même occasion optimisé pour fonctionner sur des SSD contrairement aux autres systèmes de fichiers. Il supporte par ailleurs nativement OverlayFS qui est par exemple utilisé par Docker et Podman. De plus, BTRFS nécessite bien moins de RAM que ZFS pour fonctionner. Cependant BTRFS est encore une technologie assez jeune et compte encore un certain nombre de fonctionnalité en développement. BTRFS est un système de fichiers flexible qui profitera aux systèmes pouvant exploiter les snapshots et autres mécanismes de BTRFS comme Docker/Podman.
 
-- VMFS : Exclusif aux solutions VMWare ESXi. VMFS est un système de fichier par cluster qui a été entièrement conçu pour la gestion des accès concurrent par plusieurs hôtes ainsi que pour le stockage de machines virtuelles. 
+- VMFS : Exclusif aux solutions VMWare ESXi et développé par Broadcom VMWare. VMFS est un système de fichier par cluster qui a été entièrement conçu pour la gestion des accès concurrent par plusieurs hôtes ainsi que pour le stockage de machines virtuelles. 
 
-- NTFS : Exclusif aux solutions Windows. NTFS est le système de fichier par défaut sur Windows. Il permet une gestion des droits assez poussée, il possède quelques autres fonctionnalités intéressantes comme la journalisation, la compression ou encore le chiffrement. Son plus grand défaut est sa compatibilité avec des systèmes autres que Windows ce qui peut être assez contraignant pour des 
+- NTFS : Exclusif aux solutions Windows et développé par Microsoft. NTFS est le système de fichier par défaut sur Windows. Il permet une gestion des droits assez poussée, il possède quelques autres fonctionnalités intéressantes comme la journalisation, la compression ou encore le chiffrement. Son plus grand défaut est sa compatibilité avec des systèmes autres que Windows qui est assez restreinte car NTFS est une solution propriétaire ce qui rend difficile son intégration à d'autres systèmes.
 
-- ReFS : Exclusif aux solutions Windows. 
+- ReFS : Exclusif aux solutions Windows et développé par Microsoft. ReFS est un autre système de fichier de Microsoft qui est optimisé pour le stockage de grandes quantité de données critiques. Il propose
 
 ### Système de fichiers réseaux et distribués
 
