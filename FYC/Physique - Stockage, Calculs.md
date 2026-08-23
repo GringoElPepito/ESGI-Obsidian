@@ -114,11 +114,12 @@ Les systèmes de fichiers locaux sont utilisé pour gérer le stockage d'une mac
 ### Système de fichiers réseaux et distribués
 
 Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'occupe de rendre le stockage local d'une machine accessible et utilisable par d'autres machines à travers le réseau. Voici la liste de ceux utilisés en entreprise :
+
 - NFS : NFS est le système de fichiers réseau standard pour les systèmes Linux et Unix. Via NFS les machines distantes accédant au partage le font comme s'elles accédaient à un stockage locale. Avec la version 4 de NFS (NFSv4) il est possible de restreindre l'accès du partage à travers une authentification Kerberos et des ACL. Les données sont aussi chiffrés pour garantir un niveau de sécurité maximal. Bien que développé pour les systèmes Linux et Unix, Windows possède une intégration NFS qui doit être activé dans les paramètres, cependant ce client ne supporte que la version 3 de NFS.
 
 - SMB : SMB est un système de fichiers réseau développer par Microsoft et intégré nativement aux solutions Windows et Windows Server. La dernière version SMBv3 intègre un chiffrement bout-en-bout, SMB Multichannel qui a pour but d'agréger plusieurs connexions en parallèle ce qui améliore le débit et permet de la tolérance de panne. SMBv3 propose aussi SMB Direct qui se base sur RDMA pour augmenter le débit de transfert, réduire la latence ainsi que la charge processeur. Bien que ce soit une solution Microsoft, le noyau Linux intègre deux modules l'un prenant en charge la partie client de SMBv3 et l'autre la partie serveur.
 
-- CephFS :
+- CephFS : CephFS est un système de fichiers distribué
 
 ## Architecture d'accès au stockage
 
