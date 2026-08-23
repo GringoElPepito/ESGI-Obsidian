@@ -109,7 +109,7 @@ Les systèmes de fichiers locaux sont utilisé pour gérer le stockage d'une mac
 
 - NTFS : Exclusif aux solutions Windows et développé par Microsoft. NTFS est le système de fichier par défaut sur Windows. Il permet une gestion des droits assez poussée, il possède quelques autres fonctionnalités intéressantes comme la journalisation, la compression ou encore le chiffrement. Son plus grand défaut est sa compatibilité avec des systèmes autres que Windows qui est assez restreinte car NTFS est une solution propriétaire ce qui rend difficile son intégration à d'autres systèmes.
 
-- ReFS : Exclusif aux solutions Windows et développé par Microsoft. ReFS est un autre système de fichier de Microsoft qui est optimisé pour le stockage de grandes quantité de données critiques. Il propose
+- ReFS : Exclusif aux solutions Windows et développé par Microsoft. ReFS est un autre système de fichier de Microsoft qui est optimisé pour le stockage de grandes quantité de données critiques. Il propose plusieurs fonctionnalités de sécurité avec des checksums, une réparation automatique des données ainsi qu'une séparation des données et des métadonnées pour une meilleure résistance à une potentielle corruption des données. ReFS est aussi taillé pour la haute disponibilité et s'adapte très bien aux environnements en cluster
 
 ### Système de fichiers réseaux et distribués
 
