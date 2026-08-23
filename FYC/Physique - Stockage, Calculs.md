@@ -97,7 +97,7 @@ Les supports physique sont en eux-mêmes assez peu exploitable, les systèmes de
 ### Système de fichiers locaux
 
 Les systèmes de fichiers locaux sont utilisé pour gérer le stockage d'une machine elle-même il en existe une pléthore cependant nous nous concentrerons sur les plus utilisés, en voici la liste :
-- EXT4 : Un système de fichier grandement utilisé et qui est notamment celui utilisé par défaut par Debian et Ubuntu. EXT4 est un système de fichier journalisé, lorsqu'un fichier doit être modifié, il va d'abord enregistré la modification dans un journal puis appliquer la modification.
+- EXT4 : Ext4 (Fourth extended file system) est la dernière version disponible à ce jour des systèmes de fichiers EXT. C'est un système par journalisation, c'est à dire qu'avant chaque modification un enregistrement de la modification a réalisé est effectué au sein de ce journal. C'est seulement après ça que la modification est appliquée. Cela permet de sécurisé les données en cas de panne système ou de coupure de courant vanne arrêté subitement la machine. Mais ce n'est pas tout, ext4 réalise aussi des allocations différée, il va garder en mémoire les modifications à réaliser sans les effectuées jusqu'à atteindre une certaine quantité de données à écrire. Ext4 permet aussi d'utiliser des extents qui sont des zones de stockage contigu (sans intervalle) qui seront réservé lorsque des fichiers seront créés. De cette manière, ext4 réduit la fragmentation des fichiers et réduit les coûts et le temps d'écriture.
 - XFS : 
 - ZFS : 
 - BTRFS : 
