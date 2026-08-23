@@ -124,7 +124,7 @@ Nous avons abordés
 
 # Automatisation
 
-# Minute Sécu
+# Instant Sécu
 
 - Secure Boot et TPM
 - Sécurisation des accès
