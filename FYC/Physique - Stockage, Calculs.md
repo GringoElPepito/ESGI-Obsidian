@@ -113,7 +113,7 @@ Les systèmes de fichiers locaux sont utilisé pour gérer le stockage d'une mac
 
 ### Système de fichiers réseaux et distribués
 
-Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'occupe de rendre le stockage local d'une machine accessible et utilisable par d'autres machines à travers le r
+Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'occupe de rendre le stockage local d'une machine accessible et utilisable par d'autres machines à travers le réseau.
 
 ## Architecture d'accès au stockage
 
