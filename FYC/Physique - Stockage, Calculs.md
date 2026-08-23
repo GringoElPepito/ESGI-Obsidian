@@ -105,7 +105,7 @@ Les systèmes de fichiers locaux sont utilisé pour gérer le stockage d'une mac
 
 - BTRFS : BTRFS est conçu pour être une réponse Open Source à ZFS dans le but d'être intégré au noyau Linux. BTRFS est aussi un système de fichier en Copy On Write comme ZFS, il utilise lui aussi un système de pool de stockage qui va par la suite pouvoir accueillir des volumes. BTRFS permet aussi de prendre des Snapshots des volumes qui peuvent être conservé en lecture seule ou en lecture écriture. BTRFS propose aussi une compression de fichier transparente réaliser en arrière plan ainsi qu'une implémentation des solutions RAID pour préserver l'intégrité des données. BTRFS est par la même occasion optimisé pour fonctionner sur des SSD contrairement aux autres systèmes de fichiers. Il supporte par ailleurs nativement OverlayFS qui est par exemple utilisé par Docker et Podman. De plus, BTRFS nécessite bien moins de RAM que ZFS pour fonctionner. Cependant BTRFS est encore une technologie assez jeune et compte encore un certain nombre de fonctionnalité en développement. BTRFS est un système de fichiers flexible qui profitera aux systèmes pouvant exploiter les snapshots et autres mécanismes de BTRFS comme Docker/Podman.
 
-- VMFS : Exclusif aux solutions VMWare ESXi. VMFS est un système
+- VMFS : Exclusif aux solutions VMWare ESXi. VMFS est un système de fichier par cluster qui a été entièrement conçu pour la gestion des accès concurrent par plusieurs hôtes ainsi que le stockage
 
 - NTFS : Exclusif aux solutions Windows. 
 
