@@ -96,7 +96,7 @@ Un système de fichier correspond au moyen utiliser pour enregistrer, structurer
 Les supports physique sont en eux-mêmes assez peu exploitable, les systèmes de fichiers viennent faciliter leur utilisation en apportant une couche d'abstraction simplifiant l'écriture et la lecture des données.
 ### Système de fichiers locaux
 
-Les systèmes de fichiers locaux sont utilisé pour gérer le stockage d'une machine elle-même il en existe une pléthore cependant nous nous concentrerons sur les plus utilisés, en voici la liste :
+Les systèmes de fichiers locaux sont utilisé pour gérer le stockage d'une machine elle-même. Ces généralement eux qui sont chargés d'inscrire les données en réalisant des appels au noyau du système voir directement au pilote des équipements de stockage. il en existe une pléthore cependant nous nous concentrerons sur les plus utilisés, en voici la liste :
 - EXT4 : Ext4 (Fourth extended file system) est la dernière version disponible à ce jour des systèmes de fichiers EXT. C'est par ailleurs le système de fichiers par défaut sur Debian et Ubuntu. C'est un système par journalisation, c'est à dire qu'avant chaque modification un enregistrement de la modification a réalisé est effectué au sein de ce journal. C'est seulement après ça que la modification est appliquée. Cela permet de sécurisé les données en cas de panne système ou de coupure de courant vanne arrêté subitement la machine. Mais ce n'est pas tout, ext4 réalise aussi des allocations différée, il va garder en mémoire les modifications à réaliser sans les effectuées jusqu'à atteindre une certaine quantité de données à écrire. De cette manière, ext4 réduit la fragmentation des fichiers et réduit les coûts et le temps d'écriture. EXT4 brille dans les cas d'utilisation général, il convient parfaitement aux environnements de travail classique.
 
 - XFS : XFS est le système de fichier par défaut pour les distributions basé sur RHEL. XFS est aussi un système de fichier par journalisation comme EXT4, il partage aussi d'autre similitude comme l'utilisation d'extents. La grande différence entre XFS et EXT4 est que XFS est optimisé pour les larges volumes de données pouvant prendre en charge des espaces de stockages allant jusqu'à 16 Exabytes de données. XFS est conçu pour faciliter l'évolutivité ainsi que le parallélisme pour notamment gérer plus opérations d'écritures/lectures simultanément. XFS propose le mécanisme Direct I/O qui permet d'outrepasser le cache de fichier kernel pour aller du cache utilisateur vers le matériel sans passer par un intermédiaire réduisant ainsi la charge CPU et augmentant directement les performances d'écriture et de lecture pour larges ensemble de données. XFS est plutôt adapté aux grandes bases de données ou stockages de fichiers ou de media volumineux.
@@ -105,9 +105,7 @@ Les systèmes de fichiers locaux sont utilisé pour gérer le stockage d'une mac
 
 - BTRFS : BTRFS est conçu pour être une réponse Open Source à ZFS dans le but d'être intégré au noyau Linux. BTRFS est aussi un système de fichier en Copy On Write comme ZFS, il utilise lui aussi un système de pool de stockage qui va par la suite pouvoir accueillir des volumes. BTRFS permet aussi de prendre des Snapshots des volumes qui peuvent être conservé en lecture seule ou en lecture écriture. BTRFS propose aussi une compression de fichier transparente réaliser en arrière plan ainsi qu'une implémentation des solutions RAID pour préserver l'intégrité des données. BTRFS est par la même occasion optimisé pour fonctionner sur des SSD contrairement aux autres systèmes de fichiers. Il supporte par ailleurs nativement OverlayFS qui est par exemple utilisé par Docker et Podman. De plus, BTRFS nécessite bien moins de RAM que ZFS pour fonctionner. Cependant BTRFS est encore une technologie assez jeune et compte encore un certain nombre de fonctionnalité en développement. BTRFS est un système de fichiers flexible qui profitera aux systèmes pouvant exploiter les snapshots et autres mécanismes de BTRFS comme Docker/Podman.
 
-- CephFS : 
-
-- VMFS : Exclusif aux solutions VMWare ESXi et développé par Broadcom VMWare. VMFS est un système de fichier par cluster qui a été entièrement conçu pour la gestion des accès concurrent par plusieurs hôtes ainsi que pour le stockage de machines virtuelles. Il peut aussi utiliser
+- VMFS : Exclusif aux solutions VMWare ESXi et développé par Broadcom VMWare. VMFS est un système de fichier par cluster qui a été entièrement conçu pour la gestion des accès concurrent par plusieurs hôtes ainsi que pour le stockage de machines virtuelles. Il peut aussi être utiliser pour stocker des fichiers plus classiques tel que des ISO mais ce n'est clairement pas ce pourquoi il a été conçu. 
 
 - NTFS : Exclusif aux solutions Windows et développé par Microsoft. NTFS est le système de fichier par défaut sur Windows. Il permet une gestion des droits assez poussée, il possède quelques autres fonctionnalités intéressantes comme la journalisation, la compression ou encore le chiffrement. Son plus grand défaut est sa compatibilité avec des systèmes autres que Windows qui est assez restreinte car NTFS est une solution propriétaire ce qui rend difficile son intégration à d'autres systèmes. C'est le système de fichiers à utiliser pour installer l'OS de vos machines Windows.
 
@@ -115,7 +113,7 @@ Les systèmes de fichiers locaux sont utilisé pour gérer le stockage d'une mac
 
 ### Système de fichiers réseaux et distribués
 
-
+Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'occupe de rendre le stockage local d'une machine accessible et utilisable par d'autres machines à travers le r
 
 ## Architecture d'accès au stockage
 
