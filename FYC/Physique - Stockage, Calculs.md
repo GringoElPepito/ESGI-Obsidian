@@ -119,7 +119,7 @@ Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'oc
 
 - SMB : SMB est un système de fichiers réseau développer par Microsoft et intégré nativement aux solutions Windows et Windows Server. La dernière version SMBv3 intègre un chiffrement bout-en-bout, SMB Multichannel qui a pour but d'agréger plusieurs connexions en parallèle ce qui améliore le débit et permet de la tolérance de panne. SMBv3 propose aussi SMB Direct qui se base sur RDMA pour augmenter le débit de transfert, réduire la latence ainsi que la charge processeur. Bien que ce soit une solution Microsoft, le noyau Linux intègre deux modules l'un prenant en charge la partie client de SMBv3 et l'autre la partie serveur.
 
-- CephFS : CephFS est un système de fichiers distribué faisant partie de Ceph une plateforme de stockage open source. CephFS permet à plusieurs machines de partager et de modifier les mêmes fichiers simultanément tout en offrant de très haute performance et incluant de la tolérance de panne. Il est possible 
+- CephFS : CephFS est un système de fichiers distribué faisant partie de Ceph une plateforme de stockage open source. CephFS permet à plusieurs machines de partager et de modifier les mêmes fichiers simultanément tout en offrant de très haute performance et incluant de la tolérance de panne. Il fournit une interface POSIX et permet donc d'être monté via le noyau Linux. Il est par ailleurs aussi possible de monté par dessus CephFS un partage NFS ou SMB.
 
 ## Architecture d'accès au stockage
 
