@@ -369,12 +369,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sans titre 2.md",
+                "file": "FYC/Physique - Stockage, Calculs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sans titre 2"
+              "title": "Physique - Stockage, Calculs"
             }
           }
         ],
@@ -529,17 +529,23 @@
   },
   "active": "2ef97b52b9563576",
   "lastOpenFiles": [
-    "Sans titre 3.md",
-    "FYC/Physique - Stockage, Calculs.md",
+    "FYC/Définition Cloud Computing.md",
     "FYC/Filesystem.md",
+    "FYC/Etat de l'art.md",
+    "FYC/Physique - Stockage, Calculs.md",
+    "FYC/Présentation équipe.md",
+    "FYC/Présentation premier suivi.md",
+    "Projet Annuel - M1/Cahier des charges.md",
+    "Projet Annuel - M1/Architecture Réseau.md",
+    "Projet Annuel - M1/Liste Technos.md",
+    "Projet Annuel - M1/Note.md",
+    "Projet Annuel - M1/Suivi PA.md",
+    "Sans titre 2.md",
+    "Sans titre 3.md",
     "FYC/Brouillon - Physique - Stockage, Calculs.md",
     "FYC/Setup TALOS.md",
-    "FYC/Etat de l'art.md",
-    "FYC/Définition Cloud Computing.md",
-    "FYC/Présentation équipe.md",
     "FYC/Sans titre.md",
     "FYC/Séance suivi 1.md",
-    "FYC/Présentation premier suivi.md",
     "Projet Annuel - M2/ToDo Ansible.md",
     "CCNP/Brut2.md",
     "CCNA/OSI model/Couche3/GLBP.md",
@@ -549,12 +555,6 @@
     "CCNA/OSI model/Couche 1 - Physique.md",
     "CCNA/Protocol/IPv4.md",
     "Projet Annuel - M1/Document/SYSLOG.md",
-    "DevOps/Sans titre.md",
-    "DevOps/Note.md",
-    "Projet Annuel - M1/Installation/Proxmox/Proxmox iscsi.md",
-    "Projet Annuel - M1/Installation/Proxmox/Proxmox Ceph.md",
-    "Projet Annuel - M1/Suivi PA.md",
-    "Projet Annuel - M1/Document/Proxmox Backup Server.md",
     "attachments/Pasted image 20260720074419.png",
     "attachments/Pasted image 20260720071551.png",
     "attachments/Pasted image 20260716234037.png",
