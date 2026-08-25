@@ -369,12 +369,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sans titre 3.md",
+                "file": "Sans titre 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sans titre 3"
+              "title": "Sans titre 2"
             }
           }
         ],
@@ -529,6 +529,7 @@
   },
   "active": "2ef97b52b9563576",
   "lastOpenFiles": [
+    "Sans titre 3.md",
     "FYC/Physique - Stockage, Calculs.md",
     "FYC/Filesystem.md",
     "FYC/Brouillon - Physique - Stockage, Calculs.md",
@@ -539,7 +540,6 @@
     "FYC/Sans titre.md",
     "FYC/Séance suivi 1.md",
     "FYC/Présentation premier suivi.md",
-    "Sans titre 3.md",
     "Projet Annuel - M2/ToDo Ansible.md",
     "CCNP/Brut2.md",
     "CCNA/OSI model/Couche3/GLBP.md",
