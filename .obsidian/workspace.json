@@ -369,36 +369,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FYC/Physique - Stockage, Calculs.md",
+                "file": "Sans titre 3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physique - Stockage, Calculs"
+              "title": "Sans titre 3"
             }
           }
         ],
         "currentTab": 26
-      },
-      {
-        "id": "6685ceaa1f5e9075",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "80f3a52c9259dc59",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "FYC/Filesystem.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Filesystem"
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -549,8 +529,8 @@
   },
   "active": "2ef97b52b9563576",
   "lastOpenFiles": [
-    "FYC/Filesystem.md",
     "FYC/Physique - Stockage, Calculs.md",
+    "FYC/Filesystem.md",
     "FYC/Brouillon - Physique - Stockage, Calculs.md",
     "FYC/Setup TALOS.md",
     "FYC/Etat de l'art.md",

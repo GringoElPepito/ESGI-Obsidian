@@ -1,0 +1,29 @@
+On entre dans le module 1, et on commence par la question la plus concrète qui soit : avant même de dessiner quoi que ce soit, qui va-t-on aller voir ?
+
+Un projet réseau ne part jamais d'une feuille blanche. Il part de plusieurs personnes, avec chacune sa vision du problème, souvent partielle, parfois contradictoire avec celle du voisin. Le travail de l'architecte, ce n'est pas de deviner le besoin depuis son bureau, c'est d'aller le chercher, méthodiquement, chez les bonnes personnes.
+
+Première étape, donc : cartographier les parties prenantes. Une partie prenante, c'est n'importe quel individu ou groupe qui influence le projet, ou qui en subit les conséquences. Sur un projet réseau classique, on en distingue en général quatre familles.
+
+D'abord, le métier. Ce sont les gens qui vont utiliser l'infrastructure au quotidien, sans forcément en comprendre les rouages techniques, et c'est très bien comme ça, ce n'est pas leur rôle. Sur le cas MECATHERM, notre fil rouge, c'est par exemple la directrice de site, qui pense en termes de postes de travail et de croissance à deux ans, ou le responsable production, qui pense en termes de lignes d'usinage et de coupures réseau qui coûtent des pièces rebutées.
+
+Ensuite, la DSI, la direction des systèmes d'information. C'est souvent le donneur d'ordre, celui qui porte le projet côté technique, qui arbitre les budgets IT, qui doit aussi garantir la cohérence avec le reste du système d'information. Sur MECATHERM, la DSI groupe n'est même pas citée explicitement dans les entretiens de cadrage, et c'est volontaire : sur le terrain, c'est souvent à l'architecte de faire émerger ce rôle, de comprendre qui, côté DSI, va porter le dossier.
+
+Troisième famille, la sécurité, portée en général par le RSSI, le responsable de la sécurité des systèmes d'information. Son rôle, c'est de poser les exigences de sécurité, de segmentation, de conformité. Sur MECATHERM, c'est la RSSI groupe qui exige, noir sur blanc, une isolation stricte entre les automates industriels et le réseau bureautique, en s'appuyant sur un incident déjà survenu sur un autre site. C'est exactement le genre d'exigence qu'on ne devine pas, qu'on obtient seulement en interrogeant la bonne personne.
+
+Enfin, la direction, qui arbitre les grands équilibres : budget, délai, priorités stratégiques. Sur notre cas, c'est le contrôle de gestion qui pose la contrainte CAPEX à quatre-vingt-cinq mille euros, et la direction de site qui fixe un délai de cinq mois non négociable, parce que la date d'ouverture commerciale ne peut pas glisser.
+
+Une fois cette cartographie posée, encore faut-il aller chercher l'information chez chacun. Et c'est là qu'interviennent les techniques de recueil, il y en a trois principales qu'on va détailler.
+
+La première, l'entretien semi-directif. Le principe, c'est de préparer une trame de questions ouvertes, sans script rigide, pour laisser la personne développer, apporter des éléments qu'on n'aurait pas anticipés. C'est la technique la plus adaptée pour aller chercher du contexte fin, chez un responsable de production par exemple, qui va vous parler de sa ligne d'usinage avec des détails qu'aucun questionnaire fermé n'aurait fait remonter.
+
+Deuxième technique, l'atelier de cadrage. Là, on réunit plusieurs parties prenantes en même temps, dans la même pièce. L'intérêt, c'est de faire émerger les tensions et les priorités collectivement, en direct. Un atelier avec la RSSI et le responsable production, par exemple, permet souvent de faire ressortir tout de suite les points de friction entre exigence de sécurité et contrainte opérationnelle, plutôt que de les découvrir séparément, deux semaines plus tard, en recoupant deux comptes rendus d'entretien.
+
+Troisième technique, plus souvent oubliée : le benchmark d'usage. Il s'agit d'aller observer ce qui se fait ailleurs, sur des sites comparables, ou même d'observer les usages réels sur le terrain plutôt que les usages déclarés. Sur MECATHERM, ça reviendrait par exemple à regarder comment les trois sites existants gèrent déjà leur réseau industriel, pour éviter de reproduire l'incident survenu sur le site de Rouen, celui que la RSSI mentionne justement dans son entretien.
+
+Un point de méthode avant de conclure. Ces trois techniques ne s'excluent pas, elles se combinent. On commence en général par des entretiens individuels, pour comprendre chaque point de vue sans influence croisée. On enchaîne avec un atelier collectif, pour arbitrer les tensions qui sont apparues. Et on complète, si le temps le permet, par un benchmark, pour challenger ce que les parties prenantes ont dit avec ce qui se pratique réellement ailleurs.
+
+Un dernier réflexe à garder en tête, et il vaut pour les trois techniques : méfiez-vous du besoin tel qu'il est formulé au premier degré. Quand la directrice de site dit qu'elle veut éviter de refaire le câblage dans dix-huit mois, ce n'est pas une demande de câblage, c'est une demande d'évolutivité. Le rôle de l'architecte, dans l'entretien comme dans l'atelier, c'est justement de creuser derrière la phrase pour retrouver l'intention métier qu'elle porte.
+
+Retenez donc l'essentiel de cette capsule. Cartographier les parties prenantes, ce n'est pas une formalité administrative en début de projet, c'est ce qui détermine qui vous devez aller interroger, et avec quelle technique. Sautez cette étape, et vous risquez de construire une belle architecture qui répond à un besoin que personne n'a jamais vraiment exprimé.
+
+Dans la capsule suivante, on prend tout ce qu'on a recueilli chez ces parties prenantes, et on le transforme en quelque chose d'exploitable : des exigences fonctionnelles et non fonctionnelles, priorisées avec la méthode MoSCoW.
