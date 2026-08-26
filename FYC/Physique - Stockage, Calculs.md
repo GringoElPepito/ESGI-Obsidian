@@ -28,7 +28,9 @@ Avant de choisir le matériel il faut donc comprendre la charge principal auquel
 
 Maintenant nous allons aborder les critères à regarder pour chacun des composants cités plus tôt.
 
-Le premier élément est le CPU, il y a plusieurs
+Le premier élément est le CPU, lors de la sélection d'un processeur il y a plusieurs critères sur lesquelles s'attarder :
+- Le nombre de cœurs 
+- La fréquence d'horloge (en GHz), cette valeur indique la vitesse de calcul
 
 Prenons le cas de ce cours c'est à dire la mise en place d'un service d'exécution serverless. Ici la caractéristique la plus importante est la performance, le but va être de choisir un matériel permettant de réduire au maximum le temps entre le réception de la requête et l'envoi de la réponse par le serveur d'exécution. 
 - CPU : Pour cela, nous allons donc privilégié des processeurs avec une haute fréquence quitte à prendre un modèle avec un peu moins de cœur (cela est a adapter en fonction de la charge estimée que devra encaisser l'infrastructure ainsi que du budget prévu pour celle-ci). Si jamais le processeur choisi est en-dessous des nécessités du service cela peut se traduire en un ralentissement global de ce dernier, car le processeur étant surchargé celui-ci mettra nécessairement plus de temps à traiter les requêtes.
