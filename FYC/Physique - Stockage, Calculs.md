@@ -16,7 +16,6 @@ Voici la liste des principaux éléments composants un ordinateur :
 - L'alimentation est le composant permettant de fournir l'énergie nécessaire au fonctionnement de l'ensemble des composants de l'ordinateur.
 
 Ils existent d'autres composant informatiques répondant à des besoins spécifiques que nous n'aborderons pas dans ce cours car ces derniers ne seront pas forcément pertinents par à rapport à notre cas.
-
 # Comment choisir ces composants
 
 Pour toute infrastructure informatique le choix du matériel est une question primordial. Celui-ci est dirigé par 2 éléments centraux le besoin auquel doit répondre l'infrastructure ainsi que le budget disponible. C'est d'ailleurs ce second facteur qui pose le plus souvent problème, ce qui est d'autant plus vrai avec toutes les récentes augmentations des prix des composants informatiques.
@@ -26,6 +25,8 @@ C'est pourquoi il est impératif de comprendre le besoin à l'origine du projet 
 Chaque service qu'accueillera l'infrastructure est susceptible d'avoir ses propres besoins, il est nécessaire de tous les prendre en compte et cela à chaque étape du design de l'infrastructure.
 
 Avant de choisir le matériel il faut donc comprendre la charge principal auquel devra répondre l'infrastructure pour faire fonctionner le ou les services à héberger. Il faudra avant de choisir les composant, réaliser au préalable une estimation de la charge dans le but de définir un seuil de ressource permettant de répondre au besoin de l'infrastructure.
+
+Maintenant nous allons regarder les critères à regarder pour chacun des composants cités plus tôt
 
 Prenons le cas de ce cours c'est à dire la mise en place d'un service d'exécution serverless. Ici la caractéristique la plus importante est la performance, le but va être de choisir un matériel permettant de réduire au maximum le temps entre le réception de la requête et l'envoi de la réponse par le serveur d'exécution. 
 - CPU : Pour cela, nous allons donc privilégié des processeurs avec une haute fréquence quitte à prendre un modèle avec un peu moins de cœur (cela est a adapter en fonction de la charge estimée que devra encaisser l'infrastructure ainsi que du budget prévu pour celle-ci). Si jamais le processeur choisi est en-dessous des nécessités du service cela peut se traduire en un ralentissement global de ce dernier, car le processeur étant surchargé celui-ci mettra nécessairement plus de temps à traiter les requêtes.
