@@ -136,4 +136,4 @@ Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'oc
 # Instant Sécu
 
 - Secure Boot et TPM
-- Sécurisation des accès
+- Sécurisation des accès physique (salle serveur)
