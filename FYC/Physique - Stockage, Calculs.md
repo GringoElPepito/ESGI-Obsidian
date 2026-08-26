@@ -26,7 +26,7 @@ Chaque service qu'accueillera l'infrastructure est susceptible d'avoir ses propr
 
 Avant de choisir le matériel il faut donc comprendre la charge principal auquel devra répondre l'infrastructure pour faire fonctionner le ou les services à héberger. Il faudra avant de choisir les composant, réaliser au préalable une estimation de la charge dans le but de définir un seuil de ressource permettant de répondre au besoin de l'infrastructure.
 
-Maintenant nous allons aborder les critères à regarder pour chacun des composants cités plus tôt
+Maintenant nous allons aborder les critères à regarder pour chacun des composants cités plus tôt, 
 
 Prenons le cas de ce cours c'est à dire la mise en place d'un service d'exécution serverless. Ici la caractéristique la plus importante est la performance, le but va être de choisir un matériel permettant de réduire au maximum le temps entre le réception de la requête et l'envoi de la réponse par le serveur d'exécution. 
 - CPU : Pour cela, nous allons donc privilégié des processeurs avec une haute fréquence quitte à prendre un modèle avec un peu moins de cœur (cela est a adapter en fonction de la charge estimée que devra encaisser l'infrastructure ainsi que du budget prévu pour celle-ci). Si jamais le processeur choisi est en-dessous des nécessités du service cela peut se traduire en un ralentissement global de ce dernier, car le processeur étant surchargé celui-ci mettra nécessairement plus de temps à traiter les requêtes.
