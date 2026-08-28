@@ -35,6 +35,19 @@ Le premier élément est le CPU, lors de la sélection d'un processeur il y a pl
 - Le socket et la compatibilité, ils sont des éléments important car ils vont déterminés la liste des choix possibles concernant la RAM et la carte mère. La partie de la carte mère sur laquelle se positionne le processeur s'appelle le socket, celui change en fonction de la marque (Intel ou AMD) et des générations de processeur. Il sera donc impossible de faire fonctionner un processeur avec une carte mère dont le socket n'est pas compatible. La compatibilité concerne la génération de RAM utilisable, nous détaillerons se point lorsque nous aborderons la RAM en elle-même, mais ce qu'il faut comprendre c'est qu'il n'est pas possible d'utiliser une barrette de RAM de 4e génération (DDR4) avec un processeur fonctionnant uniquement avec de la RAM de 5e génération (DDR5). 
 - Le TDP (Thermal Design Power ou puissance thermique de conception) contrairement à ce que beaucoup de personne pense, le TDP ne représente pas la consommation du processeur mais la chaleur maximale (exprimé en watts) que le système de refroidissement devra être en capacité d'évacué. Tout équipement ou matériel traversé par de l'électricité chauffe, cependant plus un processeur chauffe plus ses performances se détériore, c'est pourquoi la mesure du TDP est importante. Le TDP peut tout de même servir d'indicateur quant à la consommation d'un processeur, cependant celle-ci peut grandement varié en fonction de son utilisation et n'est donc pas à prendre au pied de la lettre. L'idéal est de prendre un processeur avec un TDP assez bas ainsi sa consommation électrique et la chaleur produite sera plus faible, le processeur aura donc moins besoin d'être refroidi pour fonctionner de manière optimale.
 
+Carte Mère
+- Socket Compatibilité CPU
+- Chipset
+- Format
+- RAM et Stockage
+
+RAM 
+- Capacité (en Go)
+- Compatibilité
+- Fréquence (en MHz)
+- Mode Dual Channel
+- Latence (CAS)
+
 Prenons le cas de ce cours c'est à dire la mise en place d'un service d'exécution serverless. Ici la caractéristique la plus importante est la performance, le but va être de choisir un matériel permettant de réduire au maximum le temps entre le réception de la requête et l'envoi de la réponse par le serveur d'exécution. 
 - CPU : Pour cela, nous allons donc privilégié des processeurs avec une haute fréquence quitte à prendre un modèle avec un peu moins de cœur (cela est a adapter en fonction de la charge estimée que devra encaisser l'infrastructure ainsi que du budget prévu pour celle-ci). Si jamais le processeur choisi est en-dessous des nécessités du service cela peut se traduire en un ralentissement global de ce dernier, car le processeur étant surchargé celui-ci mettra nécessairement plus de temps à traiter les requêtes.
 - RAM : Il faut ensuite estimer la RAM nécessaire, comme nous visons la vitesse les plus hautes fréquences en DDR5 seront le mieux évidemment si le financement ne suit pas à ce moment-là la DDR4 pourra être une option de secours. Maintenant concernant la quantité de RAM en elle même, il faut réaliser une estimation du nombre. Sachant que la RAM doit augmenter en adéquation avec le nombre de cœur du processeur. La RAM est un élément centrale pour un FaaS car c'est la RAM qui est utilisé pour stocker les fonctions qui ont été récemment exécutés ainsi permettre de réduire le temps de réponse. Plus la RAM est rapide, plus la réponse le sera, plus il y a de RAM, plus il sera possible de stocker des fonctions qui seront rapidement exécutables.
