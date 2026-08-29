@@ -45,12 +45,14 @@ RAM
 - Latence (CAS pour Column Address/Access Strobe) est exprimé avec une valeur numérique absolue (CL16) permet de mesurer le temps que met la RAM à répondre lorsqu'elle est sollicité. Plus la valeur est basse plus RAM répondra vite.
 
 Stockage
-- Le type de stockage, il existe plusieurs types de support physique permettant de stocker des données :
+- Le support de stockage, Il en existe de plusieurs sortes :
 	- Les SSD utilise la mémoire flash pour stocker les données, l'entièreté des données est stockés de manières électroniques à l'aide d'électrons piégés ou non dans des transistors représentant ainsi les 1 et les 0 du langages binaire et cela même sans alimentation.
 		- Les SSD NVMe sont à ce jour la version de la mémoire morte la plus performante mais par la même occasion la plus onéreuse. Ces composants se connecte directement à la carte mère via les ports PCI Express (ou PCIe) ce qui permet des débit plus de 10x supérieurs aux équipements les plus rapides fonctionnant en SATA.
 		- Les SSD SATA sont une version plus anciennes des SSD NVMe utilisant un câble SATA pour se connecter à la carte mère. Bien que moins rapide que la version NVMe, ils restent tout de même assez intéressant car ils sont un bon compromis entre le prix, la vitesse et la taille du stockage.
 	- Les HDD utilise des plusieurs disques magnétiques pour stocker les informations, une tête de lecture/écriture parcourt ces disques pour lire ou écrire des données. Les données sont inscrites à l'aide de d'impulsion électriques servant à aimanté des petites zones sur le disques de manière à représenter un 1 ou un 0. Le HDD est la manière la plus lente de toutes celles présentées pour stocker des données. Cependant c'est aussi la moins chère.
-- 
+- La vitesse, comme expliqué plus tôt le premier facteur qui influencera la vitesse, ça sera le support physique choisit les SSD NVMe étant les plus rapides et les HDD les plus lents. 
+- La capacité
+- Durabilité et fiabilité
 
 Alimentation
 
