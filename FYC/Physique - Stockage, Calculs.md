@@ -42,7 +42,7 @@ Carte Mère
 - RAM et Stockage
 
 RAM 
-- Capacité (en Go)
+- Capacité (en Go), c'est l'espace disponible qui sera exploitable par le processeur pour stocker les informations dont il a besoin. Idéalement on adapte la quantité de RAM en fonction de la charge de travail auquel devra répondre l'ordinateur. 
 - Compatibilité
 - Fréquence (en MHz)
 - Mode Dual Channel
