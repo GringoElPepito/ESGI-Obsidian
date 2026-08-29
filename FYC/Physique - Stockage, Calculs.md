@@ -43,7 +43,7 @@ Carte Mère
 
 RAM 
 - Capacité (en Go), c'est l'espace disponible qui sera exploitable par le processeur pour stocker les informations dont il a besoin. Idéalement on adapte la quantité de RAM en fonction de la charge de travail auquel devra répondre l'ordinateur. 
-- Compatibilité
+- Compatibilité, c'est pour faire simple la version de la RAM généralement présenté avec la présence de la mention DDRX où DDR signifie Double Data Rate et le X correspond à la version. La technologie DDR permet de transférer des données deux par cycle d'horloge ce qui permet de doubler les performances par rapport à du Single Data Rate sans augmenter la fréquence des cycles. La dernière version est là version 5 (DDR5). Les principales différences entre les générations sont l'
 - Fréquence (en MHz)
 - Mode Dual Channel
 - Latence (CAS)
