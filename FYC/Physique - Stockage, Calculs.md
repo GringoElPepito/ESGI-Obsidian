@@ -47,12 +47,11 @@ RAM
 Stockage
 - Le support de stockage, Il en existe de plusieurs sortes :
 	- Les SSD utilise la mémoire flash pour stocker les données, l'entièreté des données est stockés de manières électroniques à l'aide d'électrons piégés ou non dans des transistors représentant ainsi les 1 et les 0 du langages binaire et cela même sans alimentation.
-		- Les SSD NVMe sont à ce jour la version de la mémoire morte la plus performante mais par la même occasion la plus onéreuse. Ces composants se connecte directement à la carte mère via les ports PCI Express (ou PCIe) ce qui permet des débit plus de 10x supérieurs aux équipements les plus rapides fonctionnant en SATA.
+		- Les SSD NVMe sont à ce jour la version de la mémoire morte la plus performante mais par la même occasion la plus onéreuse. Ces composants se connecte directement à la carte mère via les ports PCI Express (ou PCIe) ce qui permet des débit plus de 10x supérieurs aux équipements les plus rapides fonctionnant en SATA. Il existe différente génération de SSD NVMe basé sur les génération de port PCIe, la dernière version est actuellement la version 5. La différence principale entre les générations et bien évidemment la performance qui augmente d'une génération à l'autre.
 		- Les SSD SATA sont une version plus anciennes des SSD NVMe utilisant un câble SATA pour se connecter à la carte mère. Bien que moins rapide que la version NVMe, ils restent tout de même assez intéressant car ils sont un bon compromis entre le prix, la vitesse et la taille du stockage.
 	- Les HDD utilise des plusieurs disques magnétiques pour stocker les informations, une tête de lecture/écriture parcourt ces disques pour lire ou écrire des données. Les données sont inscrites à l'aide de d'impulsion électriques servant à aimanté des petites zones sur le disques de manière à représenter un 1 ou un 0. Le HDD est la manière la plus lente de toutes celles présentées pour stocker des données. Cependant c'est aussi la moins chère.
-- La vitesse, comme expliqué plus tôt le premier facteur qui influencera la vitesse, ça sera le support physique choisit les SSD NVMe étant les plus rapides et les HDD les plus lents. 
-- La capacité
-- Durabilité et fiabilité
+- Les vitesses de lectures et d'écritures (en Mo/s), définissent les débit de données maximums en entrées (écritures) et en sorties (lecture). Comme expliqué plus tôt le premier facteur qui influencera la vitesse, ça sera le support physique choisit les SSD NVMe étant les plus rapides et les HDD les plus lents. Cependant tous les SSD NVMe ne se valent pas tous notamment entre les différentes générations qui peuvent avoir des différences de vitesse pouvant aller jusqu'à 6 fois plus vite si on compare la dernière génération avec la première.
+- La capacité (en To ou Go) correspond à la quantité de données qui pourra être stocké au sein de l'équipement, le but étant de réduire les coûts dimensionner en fonction de vos besoins. A prix égal un HDD propose généralement une bien plus grande capacité qu'un SSD SATA ou NVMe
 
 Alimentation
 
