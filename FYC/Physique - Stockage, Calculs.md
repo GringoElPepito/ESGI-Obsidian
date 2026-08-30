@@ -33,7 +33,7 @@ Le premier élément est le CPU, lors de la sélection d'un processeur il y a pl
 
 Carte Mère
 - Le socket est le premier point d'attention à avoir lorsque vous choisissez une carte mère. Le socket est la partie de la carte mère sur laquelle on va venir positionner le processeur. C'est cet élément qui va définir quels processeurs pourront être utilisés, à noter qu'on choisit généralement le processeur puis une carte mère adapté à celui-ci.
-- Le chipset
+- Le chipset est l'élément centrale du carte mère, c'est lui qui permet la communication entre processeur et les autres composants de l'ordinateurs. Le chipset définit la vitesse maximal à laquelle la RAM pourra fonctionner, le nombre d'équipement qui pourront être branché simultanément (Carte Graphique, SSD, HDD etc...) ou encore les types de connectiques que la carte mère pourra proposer. I
 - Format
 - RAM et Stockage
 
