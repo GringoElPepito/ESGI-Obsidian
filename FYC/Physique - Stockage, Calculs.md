@@ -33,9 +33,13 @@ Le premier élément est le CPU, lors de la sélection d'un processeur il y a pl
 
 Carte Mère
 - Le socket est le premier point d'attention à avoir lorsque vous choisissez une carte mère. Le socket est la partie de la carte mère sur laquelle on va venir positionner le processeur. C'est cet élément qui va définir quels processeurs pourront être utilisés, à noter qu'on choisit généralement le processeur puis une carte mère adapté à celui-ci.
-- Le chipset est l'élément centrale du carte mère, c'est lui qui permet la communication entre processeur et les autres composants de l'ordinateurs. Le chipset définit la vitesse maximal à laquelle la RAM pourra fonctionner, le nombre d'équipement qui pourront être branché simultanément (Carte Graphique, SSD, HDD etc...) ou encore les types de connectiques que la carte mère pourra proposer. I
-- Format
-- RAM et Stockage
+- Le chipset est l'élément centrale du carte mère, c'est lui qui permet la communication entre processeur et les autres composants de l'ordinateurs. Le chipset définit la vitesse maximal à laquelle la RAM pourra fonctionner, le nombre d'équipement qui pourront être branché simultanément (Carte Graphique, SSD, HDD etc...) ou encore les types de connectiques que la carte mère pourra proposer. Le chipset à une influence direct sur le prix de la carte mère car il définit la gamme du produit, il est donc important de connaître ses besoins pour choisir la carte mère la plus adapté et ainsi payer uniquement ce qui convient à vos besoins.
+- Le format correspond à la taille de la carte-mère, généralement plus une carte mère est grande plus elle proposera de connectiques. Encore une fois choisissez en fonction de vos besoins. Voici les format sont les suivants du plus petit au plus grand :
+	- mini-ITX
+	- micro-ATX
+	- ATX
+	- Extended-ATX
+- Slots de RAM et de Stockage, ce dernier est la plupart du temps lié au Chipset et au format
 
 RAM 
 - Capacité (en Go), c'est l'espace disponible qui sera exploitable par le processeur pour stocker les informations dont il a besoin. Idéalement on adapte la quantité de RAM en fonction de la charge de travail auquel devra répondre l'ordinateur, c'est donc à vous de vous renseigner en fonction de besoin. 
