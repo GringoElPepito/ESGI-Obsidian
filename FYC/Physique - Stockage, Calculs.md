@@ -39,7 +39,7 @@ Carte Mère
 	- micro-ATX
 	- ATX
 	- Extended-ATX
-- Slots de RAM et de Stockage, ce dernier est la plupart du temps lié au Chipset et au format
+- Le nombre slots de RAM et de Stockage, ce dernier est la plupart du temps lié au Chipset et au format choisi. Ce point peut être un facteur limitant concernant l'évolution de votre matériel. Si vous prenez une carte mère n'ayant que 2 slots de RAM et que ces derniers sont déjà utilisés alors vous serez obligés de remplacer vos barrettes pour augmenter la quantité de RAM, cependant si votre carte mère en possède 4 alors à ce moment-là vous pouvez simplement acheter de la RAM supplémentaire et l'ajouté directement aux côtés de celles déjà présente. C'est la même chose pour le stockage, il est donc important de prendre compte vos besoins ainsi que leurs potentielles évolutions.
 
 RAM 
 - Capacité (en Go), c'est l'espace disponible qui sera exploitable par le processeur pour stocker les informations dont il a besoin. Idéalement on adapte la quantité de RAM en fonction de la charge de travail auquel devra répondre l'ordinateur, c'est donc à vous de vous renseigner en fonction de besoin. 
@@ -58,6 +58,10 @@ Stockage
 - La capacité (en To ou Go) correspond à la quantité de données qui pourra être stocké au sein de l'équipement, le but étant de réduire les coûts dimensionner en fonction de vos besoins. A prix égal un HDD propose généralement une bien plus grande capacité qu'un SSD SATA ou NVMe
 
 Alimentation
+- La puissance est la quantité d'électricité que l'alimentation va pouvoir fournir, pour ce critère, il faut d'abord avoir choisi tous les autres composants car ce sont eux qui vont définir l'énergie nécessaire à transmettre pour que l'ordinateur puisse fonctionner.
+- Le rendement correspond à la faculté d'une alimentation à convertir le courant alternatif en courant continu 
+- La modularité
+- Les normes
 
 Prenons le cas de ce cours c'est à dire la mise en place d'un service d'exécution serverless. Ici la caractéristique la plus importante est la performance, le but va être de choisir un matériel permettant de réduire au maximum le temps entre le réception de la requête et l'envoi de la réponse par le serveur d'exécution. 
 - CPU : Pour cela, nous allons donc privilégié des processeurs avec une haute fréquence quitte à prendre un modèle avec un peu moins de cœur (cela est a adapter en fonction de la charge estimée que devra encaisser l'infrastructure ainsi que du budget prévu pour celle-ci). Si jamais le processeur choisi est en-dessous des nécessités du service cela peut se traduire en un ralentissement global de ce dernier, car le processeur étant surchargé celui-ci mettra nécessairement plus de temps à traiter les requêtes.
