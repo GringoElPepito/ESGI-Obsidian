@@ -32,8 +32,8 @@ Le premier élément est le CPU, lors de la sélection d'un processeur il y a pl
 - Le TDP (Thermal Design Power ou puissance thermique de conception) contrairement à ce que beaucoup de personne pense, le TDP ne représente pas la consommation du processeur mais la chaleur maximale (exprimé en watts) que le système de refroidissement devra être en capacité d'évacué. Tout équipement ou matériel traversé par de l'électricité chauffe, cependant plus un processeur chauffe plus ses performances se détériore, c'est pourquoi la mesure du TDP est importante. Le TDP peut tout de même servir d'indicateur quant à la consommation d'un processeur, cependant celle-ci peut grandement varié en fonction de son utilisation et n'est donc pas à prendre au pied de la lettre. L'idéal est de prendre un processeur avec un TDP assez bas ainsi sa consommation électrique et la chaleur produite sera plus faible, le processeur aura donc moins besoin d'être refroidi pour fonctionner de manière optimale.
 
 Carte Mère
-- 
-- Chipset
+- Le socket est le premier point d'attention à avoir lorsque vous choisissez une carte mère. C'est cet élément qui va définir quels processeurs pourront être utilisés, à noter qu'on choisit généralement le processeur puis une carte mère adapté à celui-ci.
+- Le chipset
 - Format
 - RAM et Stockage
 
