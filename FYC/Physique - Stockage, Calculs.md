@@ -59,9 +59,14 @@ Stockage
 
 Alimentation
 - La puissance est la quantité d'électricité que l'alimentation va pouvoir fournir, pour ce critère, il faut d'abord avoir choisi tous les autres composants car ce sont eux qui vont définir l'énergie nécessaire à transmettre pour que l'ordinateur puisse fonctionner.
-- Le rendement correspond à la faculté d'une alimentation à convertir le courant alternatif en courant continu 
-- La modularité
-- Les normes
+- Le rendement correspond à la faculté d'une alimentation à limiter les pertes d'énergie sous forme de chaleur lors de la conversion du courant alternatif en courant continu. Ce rendement se mesure avec les certifications 80+, voici les certifications existantes du moins bon au meilleur rendement :
+	- 80+
+	- 80+ bronze
+	- 80+ silver
+	- 80+ gold
+	- 80+ platinum
+	- 80+ titanium
+- La modularité est la capacité d'une alimentation à pouvoir débrancher ou non les câbles servant à faire transité l'électricité de l'alimentation jusqu'aux composants. Si certains câbles ne peuvent être retirés, alors ils devront rester dans le boitier ce qui peut amener à une mauvaise circulation de l'air au sein de celui-ci conduisant à un moins bon refroidissement de la machine.
 
 Prenons le cas de ce cours c'est à dire la mise en place d'un service d'exécution serverless. Ici la caractéristique la plus importante est la performance, le but va être de choisir un matériel permettant de réduire au maximum le temps entre le réception de la requête et l'envoi de la réponse par le serveur d'exécution. 
 - CPU : Pour cela, nous allons donc privilégié des processeurs avec une haute fréquence quitte à prendre un modèle avec un peu moins de cœur (cela est a adapter en fonction de la charge estimée que devra encaisser l'infrastructure ainsi que du budget prévu pour celle-ci). Si jamais le processeur choisi est en-dessous des nécessités du service cela peut se traduire en un ralentissement global de ce dernier, car le processeur étant surchargé celui-ci mettra nécessairement plus de temps à traiter les requêtes.
