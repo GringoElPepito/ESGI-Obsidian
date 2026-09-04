@@ -58,7 +58,7 @@ Stockage
 - La capacité (en To ou Go) correspond à la quantité de données qui pourra être stocké au sein de l'équipement, le but étant de réduire les coûts dimensionner en fonction de vos besoins. A prix égal un HDD propose généralement une bien plus grande capacité qu'un SSD SATA ou NVMe
 
 Alimentation
-- La puissance est la quantité d'électricité que l'alimentation va pouvoir fournir, pour ce critère, il faut d'abord avoir choisi tous les autres composants car ce sont eux qui vont définir l'énergie nécessaire à transmettre pour que l'ordinateur puisse fonctionner.
+- La puissance (en Watt) est la quantité d'électricité que l'alimentation va pouvoir fournir, pour ce critère, il faut d'abord avoir choisi tous les autres composants car ce sont eux qui vont définir l'énergie nécessaire à transmettre pour que l'ordinateur puisse fonctionner.
 - Le rendement correspond à la faculté d'une alimentation à limiter les pertes d'énergie sous forme de chaleur lors de la conversion du courant alternatif en courant continu. Ce rendement se mesure avec les certifications 80+, voici les certifications existantes du moins bon au meilleur rendement :
 	- 80+
 	- 80+ bronze
