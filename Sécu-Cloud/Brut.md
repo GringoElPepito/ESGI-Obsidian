@@ -104,7 +104,9 @@ Zero Trust :
 	- Solution expiration des logs inaltérables
 	- Imputabilité
 
-
+Gestion image pour VM :
 Image Originale -> Golden/Base Image -> Image Applicative
 
 Packer -> pour hardener une image
+
+Image applicative 
