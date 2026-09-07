@@ -110,3 +110,8 @@ Image Originale -> Golden/Base Image -> Image Applicative
 Packer -> pour hardener une image
 
 Image applicative 
+
+
+SOC (Security Operation Center)
+
+CSIRT (Computer Security Incident Response Team)
