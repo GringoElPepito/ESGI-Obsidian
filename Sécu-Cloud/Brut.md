@@ -112,6 +112,8 @@ Packer -> pour hardener une image
 Image applicative 
 
 
+SOAR
+
 SOC (Security Operation Center)
 
 CSIRT (Computer Security Incident Response Team)
