@@ -117,3 +117,19 @@ SOAR
 SOC (Security Operation Center)
 
 CSIRT (Computer Security Incident Response Team)
+
+
+# Logging et Monitoring
+Logging :
+- Sélection des informations utiles à stocker et archiver
+- Garantir la sécurité et la confidentialité des journaux stockés
+- Contrôler la qualité des données des journaux en analysant et en ajoutant aux journaux les informations manquantes
+- Analyser les logs
+- Contextualisation les évènements (enrichissement des logs)
+
+Monitoring :
+Certains outils ne fournissent pas d'historique de l'état de la machine.
+- Les performances, temps de réponse des différentes ressources du serveur
+- L'intégrité, vérification que le contenu des pages web ne chane pas
+- Et la disponibilité, vérifier que l'application assure l'intégralité de ses fonctionnalités (UP/DOWN)
+
