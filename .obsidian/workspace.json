@@ -369,12 +369,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sécu-Cloud/Brut.md",
+                "file": "FYC/Physique - Stockage, Calculs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brut"
+              "title": "Physique - Stockage, Calculs"
             }
           }
         ],
@@ -529,12 +529,12 @@
   },
   "active": "2ef97b52b9563576",
   "lastOpenFiles": [
-    "FYC/Physique - Stockage, Calculs.md",
     "Sécu-Cloud/Brut.md",
     "Sécu-Cloud",
     "FYC/Définition Cloud Computing.md",
     "FYC/Filesystem.md",
     "FYC/Etat de l'art.md",
+    "FYC/Physique - Stockage, Calculs.md",
     "FYC/Présentation équipe.md",
     "FYC/Présentation premier suivi.md",
     "Projet Annuel - M1/Cahier des charges.md",
