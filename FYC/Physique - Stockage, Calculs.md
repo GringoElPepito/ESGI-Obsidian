@@ -81,7 +81,7 @@ Imaginons maintenant que nous souhaitons proposer des machines virtuelles à nos
 - Réseau : même chose que pour la partie précédente.
 
 Les 2 cas présentés ci-dessus sont des exemples pouvant servir de base pour vos futurs décisions architecturales. L'important est de comprendre le besoin et de définir les éléments qui seront les plus à même d'y répondre.
-# Comment gérer le stockage
+# Comment gérer le stockage ?
 
 La gestion du stockage au sein d'une infrastructure est un autre élément nécessitant une certaine attention. La question du stockage est loin d'être une question anodine, car elle va avoir un impact direct sur les futurs évolutions de l'infrastructure. 
 Il y a quatre points sur lesquelles s'arrêter pour définir une politique général concernant le stockage :
