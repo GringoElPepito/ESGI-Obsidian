@@ -1,7 +1,8 @@
 Pré-requis :
 - ISO TALOS
 - talosctl (outil cli)
-- arkade (outil cli)
+- kubectl (outil cli)
+- helm (outil cli)
 
 # Etape 1
 Installer 4 VM Talos :
@@ -55,8 +56,33 @@ talosctl bootstrap --nodes $MASTER_IP
 # Récupération de la configuration kubectl
 talosctl kubeconfig --nodes <IP_CONTROL_PLANE>
 
-# installation de helm
-arkade install helm
-arkade install faas-cli
-arkade install openfaas-ce
+# déploiement des namespaces openfaas & openfaas-fn
+kubectl apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/namespaces.yml
+
+# Ajout du dépôt HELM officiel d'OpenFaaS
+helm repo add openfaas https://openfaas.github.io/faas-netes/
+helm repo update
+
+# Déployer OpenFaaS CE en mode Operator
+helm upgrade openfaas --install openfaas/openfaas \
+  --namespace openfaas \
+  --set functionNamespace=openfaas-fn \
+  --set generateBasicAuth=true \
+  --set operator.create=true
+
+# Vérification de l'état du déploiement
+kubectl rollout status -n openfaas deploy/gateway
+kubectl rollout status -n openfaas deploy/gateway-operator
+
+# Récupération du mot de passe et connexion avec faas-cli
+export OPENFAAS_URL=http://$(kubectl get svc -n openfaas gateway-external -o jsonpath='{.spec.clusterIP}'):8080
+
+PASSWORD=$(kubectl get secret -n openfaas basic-auth -o jsonpath="{.data.basic-auth-password}" | base64 --decode)
+
+echo -n "$PASSWORD" | faas-cli login --username admin --password-stdin
+
+# Déploiement d'une fonction de test
+faas-cli store deploy nodeinfo
+faas-cli list
+faas-cli invoke nodeinfo
 ```
