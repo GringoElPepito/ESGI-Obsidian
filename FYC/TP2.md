@@ -49,5 +49,14 @@ talosctl apply-config --insecure --nodes $MASTER_IP --file controlplane.yaml
 # Appliquer la configuration généré sur les workers pour la première fois
 talosctl apply-config --insecure --nodes $WORKER_IP --file worker.yaml
 
+# Initialisation de ETCD et démarrage des composants du control-plane
+talosctl bootstrap --nodes $MASTER_IP
 
+# Récupération de la configuration kubectl
+talosctl kubeconfig --nodes <IP_CONTROL_PLANE>
+
+# installation de helm
+arkade install helm
+arkade install faas-cli
+arkade install openfaas-ce
 ```
