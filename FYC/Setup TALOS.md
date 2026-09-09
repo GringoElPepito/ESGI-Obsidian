@@ -16,7 +16,7 @@ Il faut ensuite récupéré le disque principal dans la majorité des cas ce ser
 
 Génération des fichier de configuration :
 ```bash
-talosctl gen config fyc --dns-domain k8s.lan --install-disk /dev/sda https://$MASTER_IP:6443
+talosctl gen config fyc --dns-domain k8s.lan --install-disk /dev/sda https://$MASTER_IP:6443 --additional-sans $MASTER_IP,master01.k8s.lan 
 ```
 
 Appliquer la configuration généré sur le master pour le premier démarrage :
