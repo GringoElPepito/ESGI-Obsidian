@@ -30,7 +30,6 @@ Installer 4 VM Talos :
 Configurer le réseau des instances Talos 
 
 # Etape 2
-Configuration du cluster Talos
 Dans un shell taper les commandes suivantes :
 ```bash
 # Variable contenant l'IP du node Master
@@ -54,7 +53,7 @@ talosctl apply-config --insecure --nodes $WORKER_IP --file worker.yaml
 talosctl bootstrap --nodes $MASTER_IP
 
 # Récupération de la configuration kubectl
-talosctl kubeconfig --nodes <IP_CONTROL_PLANE>
+talosctl kubeconfig --nodes $MASTER_IP
 
 # déploiement des namespaces openfaas & openfaas-fn
 kubectl apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/namespaces.yml
