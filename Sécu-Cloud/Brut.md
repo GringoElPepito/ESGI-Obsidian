@@ -175,3 +175,8 @@ OPERATE -> Vérification de la conformité et de la cohérence des configuration
 MONITOR -> Surveillance de l'application en production et récupération des données
 
 SRE -> DevOps concentré sur la partie opérationnelle
+
+# Terraform
+outil en Go créer par HashiCorp
+Langage déclaratif HCL (Hashicorp Configuration Language)
+state -> description de toute l'infrastructure
