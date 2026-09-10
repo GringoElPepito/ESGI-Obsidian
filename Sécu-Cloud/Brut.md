@@ -133,3 +133,32 @@ Certains outils ne fournissent pas d'historique de l'état de la machine.
 - L'intégrité, vérification que le contenu des pages web ne chane pas
 - Et la disponibilité, vérifier que l'application assure l'intégralité de ses fonctionnalités (UP/DOWN)
 
+
+## DevOps
+anciennement chaque service était séparé entre dev et ops
+avec le devops, il est apparu un mur de confusion notamment au passage de l'app à la distribution
+
+DevOps est une méthode et une approche
+plan -> code -> build -> test -> release -> deploy -> operate -> monitor -> plan
+
+La sécurité est devenue la bête noir, il faut donc l'intégrer tout au long du processus et non juste à la fin
+
+D'abord un audit, une assimilation, prise en main de l'environnement et prendre en compte le besoin métier et technique. Ajouté la sécu en formant les personnes aux outils de sécu intégré
+
+Automatisation
+
+
+Erreur de la part de la sécu
+Zero trust à intégré petit à petit
+
+Erreur des DevOps
+Hostilité à la sécurité
+
+Ancienne façon de faire
+Pratique architecturale courante :
+- Documentation, DAT, CMDB Statique
+- Forte dépendance aux consoles et au technologie
+
+Nouvelle pratique
+Pratique de l'architecture évolué :
+- git pour versionner l'architec

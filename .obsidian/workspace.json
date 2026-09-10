@@ -383,7 +383,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FYC/Brut.md",
+                "file": "Sécu-Cloud/Brut.md",
                 "mode": "source",
                 "source": false
               },
@@ -543,6 +543,7 @@
   },
   "active": "38cbfd0ef2610216",
   "lastOpenFiles": [
+    "FYC/Brut.md",
     "Sans titre 4.md",
     "Sans titre 1.md",
     "FYC/glossaire.md",
@@ -569,7 +570,6 @@
     "Projet Annuel - M2/ToDo Ansible.md",
     "CCNP/Brut2.md",
     "CCNA/OSI model/Couche3/GLBP.md",
-    "CCNP/Sans titre.md",
     "attachments/Pasted image 20260720074419.png",
     "attachments/Pasted image 20260720071551.png",
     "attachments/Pasted image 20260716234037.png",
