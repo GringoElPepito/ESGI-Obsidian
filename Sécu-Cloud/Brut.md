@@ -161,4 +161,17 @@ Pratique architecturale courante :
 
 Nouvelle pratique
 Pratique de l'architecture évolué :
-- git pour versionner l'architec
+- git pour versionner l'architecture
+- solution d'automatisation
+- Config/GuardDuty pour les politiques de sécurité
+
+PLAN -> Standard de conformité
+CODE -> SAST
+BUILD -> Analyse de l'image
+TEST -> DAST
+RELEASE -> Dernière étape de validation
+DEPLOY -> Stratégie de déploiment sécurisé
+OPERATE -> Vérification de la conformité et de la cohérence des configurations
+MONITOR -> Surveillance de l'application en production et récupération des données
+
+SRE -> DevOps concentré sur la partie opérationnelle
