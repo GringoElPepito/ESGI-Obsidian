@@ -179,4 +179,8 @@ SRE -> DevOps concentré sur la partie opérationnelle
 # Terraform
 outil en Go créer par HashiCorp
 Langage déclaratif HCL (Hashicorp Configuration Language)
-state -> description de toute l'infrastructure
+state -> description de toute l'infrastructure versionné
+
+output -> variable de sortie
+provider -> fournisseur de ressources par API
+resource -> élément qui peut être CRUD via le provider l'objet d'une ressource est unique dans un même module
