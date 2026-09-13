@@ -165,11 +165,12 @@ Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'oc
 ## Accès au stockage
 Nous avons vu comment gérer les disques et stockés des données dessus. Cependant, il faut maintenant voir comment il est possible de rendre accessible cet espace de stockage à nos serveurs de calculs.
 
+
 ### Architecture de stockage
 
 L'architecture de stockage correspond à la manière de connecter les stockages au serveurs de calcul. Voici les 4 architectures de stockage les plus courantes :
 - DAS (Direct Attached Storage), ici les disques servant d'espaces de stockages sont directement connecté aux machines qui pourront donc localement exploiter ces derniers.
-- NAS (Network Attached Storage), les machines vont ici se connecter à un serveur de stockage distant en passant à travers le réseau
+- NAS (Network Attached Storage), les machines vont ici se connecter à un serveur de stockage distant en passant à travers le réseau principal.
 - SAN (Storage Area Network)
 - Cloud
 
