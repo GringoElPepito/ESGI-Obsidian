@@ -163,7 +163,7 @@ Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'oc
 - CephFS : CephFS est un système de fichiers distribué faisant partie de Ceph une plateforme de stockage open source. CephFS permet à plusieurs machines de partager et de modifier les mêmes fichiers simultanément tout en offrant de très haute performance et incluant de la tolérance de panne. Il fournit une interface POSIX et permet donc d'être monté via le noyau Linux. Il est par ailleurs aussi possible de monté par dessus CephFS un partage NFS ou SMB.
 
 ## Architecture d'accès au stockage
-
+Nous avons vu comment gérer les disques
 
 
 ## Sauvegarde

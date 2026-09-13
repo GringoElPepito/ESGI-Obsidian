@@ -369,12 +369,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FYC/Physique - Stockage, Calculs.md",
+                "file": "FYC/Présentation premier suivi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physique - Stockage, Calculs"
+              "title": "Présentation premier suivi"
             }
           }
         ],
@@ -549,19 +549,20 @@
   },
   "active": "2ef97b52b9563576",
   "lastOpenFiles": [
-    "FYC/Présentation premier suivi.md",
     "FYC/Présentation équipe.md",
+    "FYC/Physique - Stockage, Calculs.md",
+    "FYC/Filesystem.md",
+    "FYC/Etat de l'art.md",
+    "FYC/Définition Cloud Computing.md",
+    "FYC/Brouillon - Physique - Stockage, Calculs.md",
     "FYC/Brut.md",
+    "FYC/Présentation premier suivi.md",
     "FYC/TP2.md",
-    "Sans titre 4.md",
-    "Anglais.md",
     "FYC/Setup TALOS.md",
     "FYC/Séance suivi 1.md",
-    "FYC/Physique - Stockage, Calculs.md",
     "FYC/glossaire.md",
-    "FYC/Etat de l'art.md",
-    "FYC/Filesystem.md",
-    "FYC/Définition Cloud Computing.md",
+    "Sans titre 4.md",
+    "Anglais.md",
     "Sécu-Cloud/Brut.md",
     "Sécu-Cloud",
     "Projet Annuel - M1/Cahier des charges.md",
@@ -571,7 +572,6 @@
     "Projet Annuel - M1/Suivi PA.md",
     "Sans titre 2.md",
     "Sans titre 3.md",
-    "FYC/Brouillon - Physique - Stockage, Calculs.md",
     "Projet Annuel - M2/ToDo Ansible.md",
     "CCNP/Brut2.md",
     "CCNA/OSI model/Couche3/GLBP.md",
