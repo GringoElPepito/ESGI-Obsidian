@@ -167,7 +167,7 @@ Nous avons vu comment gérer les disques et stockés des données dessus. Cepend
 
 ### Architecture de stockage
 
-### 
+### Mode d'accès au stockage
 
 
 ## Sauvegarde
