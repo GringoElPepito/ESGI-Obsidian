@@ -167,7 +167,11 @@ Nous avons vu comment gérer les disques et stockés des données dessus. Cepend
 
 ### Architecture de stockage
 
-L'architecture de stockage
+L'architecture de stockage correspond à la manière de connecter les stockages au serveurs de calcul. Voici les 4 architectures de stockage les plus courantes :
+- DAS (Direct Attached Storage), ici les disques servant d'espaces de stockages sont directement connecté aux serveurs de calculs qui pourront donc localement exploité ces derniers.
+- NAS (Network Attached Storage), 
+- SAN (Storage Area Network)
+- Cloud
 
 ### Mode d'accès au stockage
 
