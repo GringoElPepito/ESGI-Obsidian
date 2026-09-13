@@ -164,6 +164,8 @@ Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'oc
 
 ## Architecture d'accès au stockage
 
+
+
 ## Sauvegarde
 
 
