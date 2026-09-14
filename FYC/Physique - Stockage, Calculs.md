@@ -165,7 +165,6 @@ Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'oc
 ## Accès au stockage
 Nous avons vu comment gérer les disques et stockés des données dessus. Cependant, il faut maintenant voir comment il est possible de rendre accessible cet espace de stockage à nos serveurs de calculs.
 
-
 ### Architecture de stockage
 
 L'architecture de stockage correspond à la manière de connecter les stockages au serveurs de calcul. Voici les 5 architectures de stockage les plus courantes :
@@ -176,11 +175,11 @@ L'architecture de stockage correspond à la manière de connecter les stockages 
 - Cloud, les machines sortent sur internet dans le but d'atteindre le stockage distant fournit par un Cloud Provider (AWS, Azure, GCP ou autre), le stockage est donc externe à l'infrastructure On-Premise.
 
 ### Mode d'accès au stockage
-Le mode d'accès correspond à la manière dont les machines vont lire ou écrire les données sur le serveur de stockage distant.
+Le mode d'accès correspond à la manière dont les machines vont lire ou écrire les données sur les disques.
 Il existe 3 mode d'accès :
-- Stockage en mode bloc, 
-- Stockage en mode fichier
-- Stockage en mode objet
+- Stockage en mode bloc, toutes les données vont être découpés en paquets de taille fixe (bloc) possédant chacun sa propre adresse, permettant ainsi de modifier un bloc spécifique sans avoir à modifier entièrement le fichier qui y est lié. C'est 
+- Stockage en mode fichier,
+- Stockage en mode objet, 
 
 ## Sauvegarde
 
