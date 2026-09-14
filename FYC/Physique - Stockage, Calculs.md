@@ -178,7 +178,7 @@ L'architecture de stockage correspond à la manière de connecter les stockages 
 ### Mode d'accès au stockage
 Le mode d'accès correspond à la manière dont les machines vont lire ou écrire les données sur le serveur de stockage distant.
 Il existe 3 mode d'accès :
-- Stockage en mode bloc
+- Stockage en mode bloc, le but ici est de permettre au machines distantes qui vont se connecter aux serveurs de stockages d'interagir avec les disques comme s'ils y étaient directement branché. Les serveurs de calculs vont donc transmettre
 - Stockage en mode fichier
 - Stockage en mode objet
 
