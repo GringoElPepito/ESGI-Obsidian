@@ -178,7 +178,7 @@ L'architecture de stockage correspond à la manière de connecter les stockages 
 Le mode d'accès correspond à la manière dont les machines vont lire ou écrire les données sur les disques.
 Il existe 3 mode d'accès :
 - Stockage en mode bloc, toutes les données vont être découpés en paquets de taille fixe (bloc) possédant chacun sa propre adresse, permettant ainsi de modifier un bloc spécifique sans avoir à modifier entièrement le fichier qui y est lié. C'est le mode le plus bas niveau (proche de la machine) mais aussi le plus performant.
-- Stockage en mode fichier, les données sont ici directement représentés sous forme de fichier 
+- Stockage en mode fichier, les données sont ici directement représentés sous forme de fichier organisé en dossiers. C'est le type de stockage utilisé par les systèmes d'exploitations
 - Stockage en mode objet, 
 
 Ces 3 modes sont combinables et répondent à des besoins distincts. Prenons une machine avec un HDD servant à stocker des films qui pourront être par la suite diffusé sur un site internet. Pour écrire les données sur le disque les données des films, la machine utilisera le stockage en mode bloc, car c'est le seul moyen de communication direct avec le disque. Cependant pour agrégé les blocs sous forme de fichiers lisibles, on utilisera le stockage en mode fichier à travers un système de fichier qui pourra faire la traduction de fichier à bloc et inversement. Enfin pour rendre accessible par notre application les films stockés sur le disque on pourra utiliser un stockage en mode objet qui facilitera la récupération des films pour l'application.
