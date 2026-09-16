@@ -177,7 +177,13 @@ Ces 3 modes sont combinables et répondent à des besoins distincts. Prenons une
 
 ## Système de stockage par bloc
 
-
+Les plus utilisés :
+- SCSI
+- NVMe
+- FC
+- FCoE
+- iSCSI
+- NVMe-oF
 
 ## Système de fichiers 
 
