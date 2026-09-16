@@ -55,9 +55,21 @@ Mode de stockage
 conserve, organise et présente les données de manières différentes chacun ayant leurs avantages et inconvénients
 
 Le stockage par bloc vise à être utilisé comme un disque dédié à la machine
-Modification rapide et fin des données
-haute performance/faible latence
+Avantages :
+- Modification rapide et fin des données
+- haute performance/faible latence
+
+Inconvénients :
+- Limité à une instance
+
 
 Usage :
 - stockage de VM
-- Base de données transactionnelles
+- Base de données transactionnelles avec gros besoins de lectures/écritures (MySQL, PostgreSQL, Oracle SQL)
+Architecture : 
+- SAN (en général)
+
+Stockage par fichier, les données sont stockés en tant qu'élément à l'intérieur d'un dossier accessible via un chemin indiquant l'emplacement au sein de l'arborescence
+
+Avantages :
+- 
