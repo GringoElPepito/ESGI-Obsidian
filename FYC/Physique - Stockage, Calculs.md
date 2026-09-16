@@ -165,7 +165,7 @@ Le stockage en mode fichier excelle particulièrement pour la collaboration, le 
 
 Stockage en mode objet, avec ce mode de stockage il n'y a aucun dossier ni aucune arborescence ou hiérarchie. Toutes les données sont rassemblés en unités indépendantes les unes des autres que l'on appelle objets. Comme il n'y a pas de dossier l'ensemble des objets se retrouvent au même niveau. Chaque objet contient ses données, ses métadonnées et un identifiant unique (qui fait partie des métadonnées). L'accès aux objets se fait généralement à travers des requêtes web ou API.
 Les avantages du stockage en mode objet sont les suivants :
-- 
+- Stockage fac
 
 Ces 3 modes sont combinables et répondent à des besoins distincts. Prenons une machine avec un HDD servant à stocker des films qui pourront être par la suite diffusé sur un site internet. Pour écrire les données sur le disque, la machine utilisera le stockage en mode bloc, car c'est le seul moyen de communication direct avec le disque. Cependant pour agrégé les blocs sous forme de fichiers lisibles, on utilisera le stockage en mode fichier à travers un système de fichier qui pourra faire la traduction de fichier à bloc et inversement. Enfin pour rendre accessible par notre application les films stockés sur le disque on pourra utiliser un stockage en mode objet qui facilitera la récupération des films pour l'application.
 
