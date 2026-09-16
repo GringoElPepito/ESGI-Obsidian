@@ -72,4 +72,33 @@ Architecture :
 Stockage par fichier, les données sont stockés en tant qu'élément à l'intérieur d'un dossier accessible via un chemin indiquant l'emplacement au sein de l'arborescence
 
 Avantages :
-- 
+- Contrôle d'accès et du partage
+- Utilisable simultanément par plusieurs utilisateurs et instances
+
+Inconvénients :
+- Baisse de performance si gros volume de fichier
+- Mis à l'échelle complexe
+
+Usage :
+- Collaboration et partage de documents
+- Accès simultanés par plusieurs instances
+
+Stockage par objet, chaque fichier est stocké sous la forme d'objet contenant 3 éléments :
+- la donnée elle même
+- les métadonnées lié au fichier
+- un identifiant unique (fait partie des métadonnées)
+Accessible via une API de manière simultanés par plusieurs utilisateurs
+
+Avantages :
+- Stockage hautement évolutif
+- Prix compétitifs
+- Métadonnées illimitées
+
+Inconvénients :
+- Modifications fastidieuses
+- Latence plus longue
+
+Usage :
+- Stockage de grands volumes de données non structurées (Vidéo, Image)
+- Archivage, sauvegarde, site web statique
+- Big data, IA, Analyse de données
