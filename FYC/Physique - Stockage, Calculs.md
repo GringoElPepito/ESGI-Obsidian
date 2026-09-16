@@ -149,11 +149,19 @@ Il existe 3 mode d'accès :
 - Stockage en mode fichier
 - Stockage en mode objet
 
-Stockage en mode bloc, toutes les données vont être découpés en paquets de taille fixe (bloc) possédant chacun sa propre adresse, permettant ainsi de modifier un bloc spécifique sans avoir à modifier entièrement le fichier qui y est lié. C'est le mode le plus bas niveau (proche de la machine) mais aussi le plus performant. Les hautes performances et la faible latence sont par ailleurs ses avantages principaux, qui sont entres autres permis par la possibilité de modifier uniquement les blocs voulus et non le fichier en entier. Un inconvénient majeur est qu'un espace de stockage par bloc est par défaut utilisable par Ce type de stockage excelle pour le stockage de Machine Virtuelle ou pour les base de données transactionnelles comme MySQL, PostgreSQL ou encore Oracle SQL.
+Stockage en mode bloc, toutes les données vont être découpés en paquets de taille fixe (bloc) possédant chacun sa propre adresse, permettant ainsi de modifier un bloc spécifique sans avoir à modifier entièrement le fichier qui y est lié. C'est le mode le plus bas niveau (proche de la machine) mais aussi le plus performant. 
+Les hautes performances et la faible latence sont par ailleurs ses avantages principaux, qui sont entres autres permis par la possibilité de modifier uniquement les blocs voulus et non le fichier en entier. 
+Un inconvénient majeur est qu'un espace de stockage par bloc est par défaut utilisable par une seule et unique instance. Il existe malgré tout des protocoles de stockage par bloc ou des systèmes de fichiers intègrent des systèmes permettant un accès multiple à un espace de stockage par bloc unique, cela peut rendre la mise en place assez complexe. 
+Ce type de stockage excelle pour le stockage de Machine Virtuelle ou pour les base de données transactionnelles comme MySQL, PostgreSQL ou encore Oracle SQL.
 
-Stockage en mode fichier, les données sont ici directement représentés sous forme de fichier organisé en hiérarchie de dossiers. C'est le mode de stockage utilisé par les systèmes d'exploitations, il vient généralement se placer au dessus du stockage en mode bloc pour faciliter l'exploitation du stockage par un humain. Ses principaux avantages sont les suivants :
+Stockage en mode fichier, les données sont ici directement représentés sous forme de fichier organisé en hiérarchie de dossiers. C'est le mode de stockage utilisé par les systèmes d'exploitations, il vient généralement se placer au dessus du stockage en mode bloc pour faciliter l'exploitation du stockage par un humain. 
+Ses principaux avantages sont les suivants :
 - La possibilité de mettre en place un contrôle d'accès ainsi que du partage de fichier
 - Utilisable par plusieurs utilisateurs ou instance simultanément
+Cependant, il compte aussi certains inconvénient :
+- Plus le volume de données est grand plus les performances ont tendances à baisser
+- Il peut être assez complexe de mettre à l'échelle un stockage en mode fichier surtout si les besoins évolue rapidement
+Le stockage en mode fichier excelle particulièrement pour la collaboration, le partage de document ainsi que pour les accès simultanés par plusieurs instances.
 
 Stockage en mode objet, avec ce mode de stockage il n'y a aucun dossier ni aucune arborescence ou hiérarchie. Toutes les données sont rassemblés en unités indépendantes les unes des autres que l'on appelle objets. Comme il n'y a pas de dossier l'ensemble des objets se retrouvent au même niveau. Chaque objet contient ses données, ses métadonnées et un identifiant unique. L'accès aux objets se fait généralement à travers des requêtes web ou API. Point à noté, il n'est pas possible de modifier un objet, si vous souhaitez en modifier le contenu, il faudra écraser l'objet original avec un nouvel objet qui aura les modifications souhaitées.  
 
