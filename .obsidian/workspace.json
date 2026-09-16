@@ -390,12 +390,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FYC/Setup TALOS.md",
+                "file": "FYC/Brouillon - Physique - Stockage, Calculs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Setup TALOS"
+              "title": "Brouillon - Physique - Stockage, Calculs"
             }
           }
         ]
@@ -547,16 +547,16 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "2ef97b52b9563576",
+  "active": "1f16796001f62b31",
   "lastOpenFiles": [
-    "FYC/Setup TALOS.md",
     "FYC/Physique - Stockage, Calculs.md",
+    "FYC/Brouillon - Physique - Stockage, Calculs.md",
+    "FYC/Setup TALOS.md",
     "FYC/Présentation premier suivi.md",
     "FYC/Présentation équipe.md",
     "FYC/Filesystem.md",
     "FYC/Etat de l'art.md",
     "FYC/Définition Cloud Computing.md",
-    "FYC/Brouillon - Physique - Stockage, Calculs.md",
     "FYC/Brut.md",
     "FYC/TP2.md",
     "FYC/Séance suivi 1.md",

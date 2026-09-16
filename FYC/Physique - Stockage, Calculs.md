@@ -86,8 +86,11 @@ Les 2 cas présentés ci-dessus sont des exemples pouvant servir de base pour vo
 La gestion du stockage au sein d'une infrastructure est un autre élément nécessitant une certaine attention. La question du stockage est loin d'être une question anodine, car elle va avoir un impact direct sur les futurs évolutions de l'infrastructure. 
 Il y a quatre points sur lesquelles s'arrêter pour définir une politique général concernant le stockage :
 - Redondance des disques
-- Système de fichiers
-- Accès au stockage
+- Architecture d'accès au stockage
+- Mode de stockage
+- Stockage en mode bloc
+- Stockage en mode fichier
+- Stockage en mode objet
 - Sauvegarde
 ## Redondance des disques
 
@@ -130,6 +133,22 @@ Maintenant que vous connaissez les forces et faiblesses de chaque type de RAID, 
 
 Dans le cas de notre service d'exécution serverless, il est important de savoir ce que va réaliser la majorité des fonctions qui vont être exécutés. Si les fonctions ne font pas d'écriture sur le disque alors un RAID 50 ou 60 dépendant du niveau de sécurité voulu pourrait parfaitement faire l'affaire. Cependant si les fonctions réalisent un grand nombre d'écriture alors il serait préférable d'utiliser un RAID 10 quitte à perdre de l'espace. Bien évidemment le plus important est comme toujours de parvenir à concilier le budget avec les besoins de l'infrastructure.
 
+### Architecture d'accès au stockage
+
+L'architecture de stockage correspond à la manière de connecter les stockages au serveurs de calcul. Voici les 5 architectures de stockage les plus courantes :
+- DAS (Direct Attached Storage), ici les disques servant d'espaces de stockages sont directement connectés aux machines qui pourront donc localement exploiter ces derniers.
+- NAS (Network Attached Storage), les machines vont ici se connecter à un serveur de stockage distant en passant à travers le réseau physique global de l'infrastructure.
+- SAN (Storage Area Network), les machines vont se connecter à un ou plusieurs serveurs de stockage à travers un réseau physique dédié (Switch, Câbles etc..) servant à transporter uniquement le trafic entre les machines de calculs et les serveurs de stockages.
+- HCI (HyperConverged Infrastructure), comme pour le DAS, les disques sont directement connectés sur chacune des machines, cependant, chaque machine va mettre en commun son espace de stockage avec les autres pour former un stockage unifié entre toutes les machines du cluster. L'interconnexion entre les machines peut se faire via le réseau physique global ou de préférence via un réseau physique dédié pour de meilleur performance.
+- Cloud, les machines sortent sur internet dans le but d'atteindre le stockage distant fournit par un Cloud Provider (AWS, Azure, GCP ou autre), le stockage est donc externe à l'infrastructure On-Premise.
+
+### Mode de stockage
+Le mode de stockage correspond à la manière dont les machines vont interagir avec l'espace de stockage pour .
+Il existe 3 mode d'accès :
+- Stockage en mode bloc, toutes les données vont être découpés en paquets de taille fixe (bloc) possédant chacun sa propre adresse, permettant ainsi de modifier un bloc spécifique sans avoir à modifier entièrement le fichier qui y est lié. C'est le mode le plus bas niveau (proche de la machine) mais aussi le plus performant. Cependant il n'est pas exploitable par un humain en tant que tel c'est pour ça que l'on combine avec le mode suivant.
+- Stockage en mode fichier, les données sont ici directement représentés sous forme de fichier organisé en hiérarchie de dossiers. C'est le mode de stockage utilisé par les systèmes d'exploitations, il vient se placer au dessus du stockage en mode bloc pour faciliter l'exploitation du stockage par un humain. Les données sont directement accessible par l'interface fournit par le système d'exploitation.
+- Stockage en mode objet, avec ce mode de stockage il n'y a aucun dossier ni aucune arborescence ou hiérarchie. Toutes les données sont rassemblés en unités indépendantes les unes des autres que l'on appelle objets. Comme il n'y a pas de dossier l'ensemble des objets se retrouvent au même niveau. Chaque objet contient ses données, ses métadonnées et un identifiant unique. L'accès aux objets se fait généralement à travers des requêtes web ou API. Point à noté, il n'est pas possible de modifier un objet, si vous souhaitez en modifier le contenu, il faudra écraser l'objet original avec un nouvel objet qui aura les modifications souhaitées.  
+
 ## Système de fichiers 
 
 Un système de fichier correspond au moyen utiliser pour enregistrer, structurer, nommer et indexer les données sur un support de stockage (HDD, SSD SATA/NVMe, Clé USB etc...).
@@ -165,21 +184,9 @@ Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'oc
 ## Accès au stockage
 Nous avons vu comment gérer les disques et stockés des données dessus. Cependant, il faut maintenant voir comment il est possible de rendre accessible cet espace de stockage à nos serveurs de calculs.
 
-### Architecture de stockage
 
-L'architecture de stockage correspond à la manière de connecter les stockages au serveurs de calcul. Voici les 5 architectures de stockage les plus courantes :
-- DAS (Direct Attached Storage), ici les disques servant d'espaces de stockages sont directement connectés aux machines qui pourront donc localement exploiter ces derniers.
-- NAS (Network Attached Storage), les machines vont ici se connecter à un serveur de stockage distant en passant à travers le réseau physique global de l'infrastructure.
-- SAN (Storage Area Network), les machines vont se connecter à un ou plusieurs serveurs de stockage à travers un réseau physique dédié (Switch, Câbles etc..) servant à transporter uniquement le trafic entre les machines de calculs et les serveurs de stockages.
-- HCI (HyperConverged Infrastructure), comme pour le DAS, les disques sont directement connectés sur chacune des machines, cependant, chaque machine va mettre en commun son espace de stockage avec les autres pour former un stockage unifié entre toutes les machines du cluster. L'interconnexion entre les machines peut se faire via le réseau physique global ou de préférence via un réseau physique dédié pour de meilleur performance.
-- Cloud, les machines sortent sur internet dans le but d'atteindre le stockage distant fournit par un Cloud Provider (AWS, Azure, GCP ou autre), le stockage est donc externe à l'infrastructure On-Premise.
 
-### Mode de stockage
-Le mode de stockage correspond à la manière dont les machines vont lire ou écrire les données sur les disques.
-Il existe 3 mode d'accès :
-- Stockage en mode bloc, toutes les données vont être découpés en paquets de taille fixe (bloc) possédant chacun sa propre adresse, permettant ainsi de modifier un bloc spécifique sans avoir à modifier entièrement le fichier qui y est lié. C'est le mode le plus bas niveau (proche de la machine) mais aussi le plus performant. Cependant il n'est pas exploitable par un humain en tant que tel c'est pour ça que l'on combine avec le mode suivant.
-- Stockage en mode fichier, les données sont ici directement représentés sous forme de fichier organisé en hiérarchie de dossiers. C'est le mode de stockage utilisé par les systèmes d'exploitations, il vient se placer au dessus du stockage en mode bloc pour faciliter l'exploitation du stockage par un humain. Les données sont directement accessible par l'interface fournit par le système d'exploitation.
-- Stockage en mode objet, avec ce mode de stockage il n'y a aucun dossier ni aucune arborescence ou hiérarchie. Toutes les données sont rassemblés en unités indépendantes les unes des autres que l'on appelle objets. Comme il n'y a pas de dossier l'ensemble des objets se retrouvent au même niveau. Chaque objet contient ses données, ses métadonnées et un identifiant unique. L'accès aux objets se fait généralement à travers des requêtes web ou API. Point à noté, il n'est pas possible de modifier un objet, si vous souhaitez en modifier le contenu, il faudra écraser l'objet original avec un nouvel objet qui aura les modifications souhaitées.  
+
 
 Ces 3 modes sont combinables et répondent à des besoins distincts. Prenons une machine avec un HDD servant à stocker des films qui pourront être par la suite diffusé sur un site internet. Pour écrire les données sur le disque, la machine utilisera le stockage en mode bloc, car c'est le seul moyen de communication direct avec le disque. Cependant pour agrégé les blocs sous forme de fichiers lisibles, on utilisera le stockage en mode fichier à travers un système de fichier qui pourra faire la traduction de fichier à bloc et inversement. Enfin pour rendre accessible par notre application les films stockés sur le disque on pourra utiliser un stockage en mode objet qui facilitera la récupération des films pour l'application.
 ## Sauvegarde
