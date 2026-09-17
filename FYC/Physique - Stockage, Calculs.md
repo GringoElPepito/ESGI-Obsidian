@@ -176,11 +176,13 @@ Le stockage en mode objet est très adapté au stockage de données d'archivage,
 Ces 3 modes sont combinables et répondent à des besoins distincts. Prenons une machine avec un HDD servant à stocker des films qui pourront être par la suite diffusé sur un site internet. Pour écrire les données sur le disque, la machine utilisera le stockage en mode bloc, car c'est le seul moyen de communication direct avec le disque. Cependant pour agrégé les blocs sous forme de fichiers lisibles, on utilisera le stockage en mode fichier à travers un système de fichier qui pourra faire la traduction de fichier à bloc et inversement. Enfin pour rendre accessible par notre application les films stockés sur le disque on pourra utiliser un stockage en mode objet qui facilitera la récupération des films pour l'application.
 
 ## Système de stockage par bloc
-Comme expliqué précédemment le stockage par bloc permet de lire et d'écrire sur un espace de stockage local ou distant en accédant directement aux blocs constituants les données. Voici les protocoles les plus commun utilisé pour la mise en place du bloc storage
-Les plus utilisés :
-- AHCI
+Comme expliqué précédemment le stockage par bloc permet de lire et d'écrire sur un espace de stockage local ou distant en accédant directement aux blocs constituants les données. On peut regroupé les système de stockage par bloc dans 2 catégories les systèmes locaux et les systèmes en réseaux
+Voici les systèmes de stockage par bloc locaux :
+- AHCI (Advanced Host Controller Interface) est une technologie qui va permettre de faire le lien entre le système d'exploitation et les périphérique de stockage SATA. 
 - SCSI
 - NVMe
+
+Les 
 - FC
 - FCoE
 - iSCSI
