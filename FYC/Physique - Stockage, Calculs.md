@@ -178,8 +178,7 @@ Ces 3 modes sont combinables et répondent à des besoins distincts. Prenons une
 ## Système de stockage par bloc
 Comme expliqué précédemment le stockage par bloc permet de lire et d'écrire sur un espace de stockage local ou distant en accédant directement aux blocs constituants les données. On peut regroupé les système de stockage par bloc dans 2 catégories les systèmes locaux et les systèmes en réseaux
 Voici les systèmes de stockage par bloc locaux :
-- AHCI (Advanced Host Controller Interface) est une technologie qui va permettre de faire le lien entre le système d'exploitation et les périphérique de stockage SATA. 
-- SCSI
+- SCSI (Small Computer System Interface) est un standard d'interface matérielle et un protocole visant à simplifier l'envoie d'instruction au périphérique de stockage par le système d'exploitation. SCSI n'est qu'un intermédiaire et ne permet pas d'écrire directement sur le disque. En effet, les instructions SCSI sont par la suite traduit par SATL (SCSI-to-ATA Translation Layer) en instructions ATA qui sont elles compréhensibles par le contrôleur du périphérique de stockage et qui pourra donc les exécuter.
 - NVMe
 
 Les 
