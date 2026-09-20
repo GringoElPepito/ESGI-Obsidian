@@ -182,7 +182,7 @@ Voici les systèmes de stockage par bloc locaux :
 - NVMe (Non-Volatile Memory Express) est à la fois une interface matérielle et un protocole de communication dédié aux échanges entre les périphériques de mémoire flash (SSD) et le reste du système via le bus PCIe (PCI Express). Etant construit précisément dans le but de fonctionner avec des SSD, NVMe possède de bien meilleur performance que SCSI pour ce type de périphérique.
 
 SCSI et NVMe sont tous les deux très efficaces mais ils ne sont malheureusement utilisables que sur des périphériques directement branché à la carte mère du serveur à travers un câble SAS/SATA ou un port NVMe. C'est pourquoi plusieurs systèmes de stockage par bloc en réseau ont fait leur apparition. Voici les plus populaires :
-- iSCSI (internet Small Computer System Interface)
+- iSCSI (internet Small Computer System Interface) directement adapté de SCSI, iSCSI permet à une machine d'atteindre des disques d'un serveur distant et de transmettre des instruction SCSI en se basant sur le protocole IP/TCP. 
 - FC (Fiber Channel)
 - FCoE (Fiber Channel over Ethernet)
 - NVMe-oF (Non-Volatile Memory Express over Fabric)
