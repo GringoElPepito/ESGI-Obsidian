@@ -183,7 +183,7 @@ Voici les systèmes de stockage par bloc locaux :
 
 SCSI et NVMe sont tous les deux très efficaces mais ils ne sont malheureusement utilisables que sur des périphériques directement branché à la carte mère du serveur à travers un câble SAS/SATA ou un port NVMe. C'est pourquoi plusieurs systèmes de stockage par bloc en réseau ont fait leur apparition. Voici les plus populaires :
 - iSCSI (internet Small Computer System Interface) directement adapté de SCSI, iSCSI permet à une machine d'atteindre des disques d'un serveur distant et de transmettre des instruction SCSI en se basant sur le protocole TCP/IP. Au sein d'iSCSI, le client est ce qu'on  appelle l'initiateur (initiator) qui est celui initialisant la connexion auprès du serveur qu'on appelle la cible (target). La cible elle expose des disques virtuels qu'on appellent LUN (Logical Unit Number) qui correspond globalement à un volume ou un fragment d'un disque physique. iSCSI fonctionnant au-dessus du protocole TCP/IP il peut être déployé en architecture NAS sur un réseau physique existant sans nécessité de matériel dédié. Cependant il est tout à fait possible de mettre en place un réseau physique à part notamment pour séparer le trafic iSCSI du reste de l'infrastructure.
-- FC (Fiber Channel) 
+- FC (Fiber Channel) est un protocol de communication comme Ethernet. Fiber Channel est conçu pour des transferts de données sans perte et à très haut débit
 - FCoE (Fiber Channel over Ethernet)
 - NVMe-oF (Non-Volatile Memory Express over Fabric)
 	- NVMe over FC
