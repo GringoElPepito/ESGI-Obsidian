@@ -181,11 +181,11 @@ Voici les systèmes de stockage par bloc locaux :
 - SCSI (Small Computer System Interface) est un standard d'interface matérielle et un protocole visant à simplifier l'envoie d'instruction au périphérique de stockage par le système d'exploitation. SCSI a été initialement conçu pour les disques durs, cependant l'apparition des mémoires flash a poussé l'intégration d'instructions adapté à ce nouveau type de mémoire au sein du protocole SCSI, mais son design historique ne permet malheureusement pas d'exploité pleinement le potentiel des SSD. Dans le cas d'un disque branché en SATA, SCSI n'est qu'un intermédiaire et ne permet pas d'écrire directement sur le disque. En effet, les instructions SCSI sont par la suite traduit par SATL (SCSI-to-ATA Translation Layer) en instructions ATA qui sont elles compréhensibles par le contrôleur du périphérique de stockage et qui pourra donc les exécuter. Cependant il existe un autre type de port appeler SAS qui est assez proche de l'apparence du SATA à la différence que la partie du port servant à l'alimentation et la partie servant au transfert des données sont jointes contrairement au SATA. Dans le cas du SAS, SCSI n'est pas traduit mais directement exécuté ce qui réduit grandement la latence et augmente donc par la même occasion les performances.
 - NVMe (Non-Volatile Memory Express) est à la fois une interface matérielle et un protocole de communication dédié aux échanges entre les périphériques de mémoire flash (SSD) et le reste du système via le bus PCIe (PCI Express). Etant construit précisément dans le but de fonctionner avec des SSD, NVMe possède de bien meilleur performance que SCSI pour ce type de périphérique.
 
-Les 
-- FC
-- FCoE
-- iSCSI
-- NVMe-oF
+Voici les systèmes de stockage par bloc en réseau :
+- FC (Fiber Channel)
+- FCoE (Fiber Channel over Ethernet)
+- iSCSI (internet Small Computer System Interface)
+- NVMe-oF (Non-Volatile Memory Express over Fabric)
 	- NVMe over FC
 	- NVMe over TCP
 	- NVMe over RDMA
