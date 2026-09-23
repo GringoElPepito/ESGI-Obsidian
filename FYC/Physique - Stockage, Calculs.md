@@ -137,8 +137,8 @@ Dans le cas de notre service d'exécution serverless, il est important de savoir
 
 L'architecture de stockage correspond à la manière de connecter les stockages au serveurs de calcul. Voici les 5 architectures de stockage les plus courantes :
 - DAS (Direct Attached Storage), ici les disques servant d'espaces de stockages sont directement connectés aux machines qui pourront donc localement exploiter ces derniers.
-- NAS (Network Attached Storage), les machines vont ici se connecter à un serveur de stockage distant en passant à travers le réseau physique global de l'infrastructure.
-- SAN (Storage Area Network), les machines vont se connecter à un ou plusieurs serveurs de stockage à travers un réseau physique dédié (Switch, Câbles etc..) servant à transporter uniquement le trafic entre les machines de calculs et les serveurs de stockages.
+- NAS (Network Attached Storage), les machines vont ici se connecter à un serveur de stockage distant via une typologie de données en fichier en passant, généralement à travers le réseau physique global de l'infrastructure.
+- SAN (Storage Area Network), les machines vont se connecter à un ou plusieurs serveurs de stockage via une typologie de données en bloc, généralement à travers un réseau physique dédié (Switch, Câbles etc..) servant à transporter uniquement le trafic entre les machines de calculs et les serveurs de stockages.
 - HCI (HyperConverged Infrastructure), comme pour le DAS, les disques sont directement connectés sur chacune des machines, cependant, chaque machine va mettre en commun son espace de stockage avec les autres pour former un stockage unifié entre toutes les machines du cluster. L'interconnexion entre les machines peut se faire via le réseau physique global ou de préférence via un réseau physique dédié pour de meilleur performance.
 - Cloud, les machines sortent sur internet dans le but d'atteindre le stockage distant fournit par un Cloud Provider (AWS, Azure, GCP ou autre), le stockage est donc externe à l'infrastructure On-Premise.
 
