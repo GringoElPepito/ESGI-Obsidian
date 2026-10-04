@@ -192,11 +192,6 @@ SCSI et NVMe sont tous les deux très efficaces mais ils ne sont malheureusement
 	- InfiniBand est un protocole qui se place au même niveau qu'Ethernet, De ce fait il n'est pas possible d'utiliser des switches Ethernet pour y faire circuler du trafic InfiniBand, il est pour cela absolument nécessairement d'acheter des équipements réseau dédiés supportant ce protocole. Les équipements InfiniBand intègre nativement des fonction de contrôle de flux permettant de réduire le risque de perte de paquet. Ce protocole supporte nativement RDMA ce qui offre les meilleurs performances possibles pour ce type de trafic. Cependant InfiniBand est un protocole propriétaire, de ce fait, les équipements le supportant peuvent être très onéreux.
 	- RoCE (RDMA over Converged Ethernet) est un protocole reposant sur le protocole Ethernet pour faire transiter du trafic RDMA. Pour fonctionner il requiert des switchs Ethernet intégrant des fonctions lossless devant être par la suite configuré de manière adapter pour réduire le risque de perte de paquets. Il existe de version du protocole RoCE. La version 1 intervient à la couche 2 du modèle OSI et n'est donc pas routable ce qui limite grandement l'évolutivité. La version 2 est elle routable grâce à l'encapsulation du trafic RDMA au sein de segment UDP/IP lui permettant d'interagir avec la couche 3 et 4. RoCE est un bon compromis pour utiliser du RDMA tout en limitant les coûts liés au à l'infrastructure (au détriment des performances en moyenne 5 à 15% inférieur à InfiniBand). Cependant sa mise en place requiert une configuration pouvant être assez complexe à maintenir.
 	- iWARP (Internet Wide Area RDMA Protocol) est un protocole utilisant TCP/IP pour faire transiter le trafic RDMA. TCP étant un protocole plus gourmand en trafic que l'UDP utilisé par RoCEv2, iWARP a tendance à être moins performant et témoigné plus de latence que ce dernier. Bien que moins performant, iWARP est bien plus simple à configurer et à maintenir que RoCE.
-- HCI (Hyper Converged Infrastructure) comme nous l'avons expliqué plutôt lorsque nous avons abordés les architectures de stockage, Les infrastructures HCI ou hyperconvergées sont des infrastructures où les serveurs de calculs servent aussi au stockage. Chaque serveur va mettre à disposition ses disques locaux au reste du cluster dans le but de les mutualiser et de former un espace de stockage commun.
-	- vSAN est une technologie propriétaire dédié aux environnements VMWare ESXi/vSphere et qui permet de mettre en place une infrastructure hyperconvergée. vSAN présente les données (snapshots, disques virtuels etc...) sous forme d'objet tout en permettant aux VM d'accéder à leurs disques via un stockage par bloc. Enfin, vSAN propose les option vDFS (vSAN Distributed File System) qui permet de naviguer au sein d'une arborescence de fichier ainsi que le partage NFS et SMB.
-	- DSF est une technologie propriétaire dédié aux infrastructures Nutanix et qui permet de mettre en place une infrastructure hyperconvergée.
-	- CEPH est une technologie Open Source notamment porté par Red Hat, qui permet
-	- S2D (Storage Spaces Direct)
 ## Système de fichiers 
 
 Un système de fichier correspond au moyen utiliser pour enregistrer, structurer, nommer et indexer les données sur un support de stockage (HDD, SSD SATA/NVMe, Clé USB etc...).
@@ -229,12 +224,9 @@ Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'oc
 
 - CephFS : CephFS est un système de fichiers distribué faisant partie de Ceph une plateforme de stockage open source. CephFS permet à plusieurs machines de partager et de modifier les mêmes fichiers simultanément tout en offrant de très haute performance et incluant de la tolérance de panne. Il fournit une interface POSIX et permet donc d'être monté via le noyau Linux. Il est par ailleurs aussi possible de monté par dessus CephFS un partage NFS ou SMB.
 
-## Accès au stockage
-Nous avons vu comment gérer les disques et stockés des données dessus. Cependant, il faut maintenant voir comment il est possible de rendre accessible cet espace de stockage à nos serveurs de calculs.
+## Système de stockage par Objet
 
-
-
-
+## Stockage Hyperconvergé
 
 
 ## Sauvegarde
