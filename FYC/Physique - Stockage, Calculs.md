@@ -226,9 +226,6 @@ Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'oc
 
 ## Système de stockage par Objet
 
-## Stockage Hyperconvergé
-
-
 ## Sauvegarde
 
 
