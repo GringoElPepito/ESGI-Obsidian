@@ -6,7 +6,9 @@ RAG :
 # Pourquoi donner à lire au modèle ?
 Corpus VALDORNE mutuelle -> 71 documents internes d'une mutuelle fictive
 
-Lorsque 
+Token portion d'un mot, en Français on a en moeynne 1,6 token par mot.
+
+Les Transformers permettent de lire la phrase d'un coup plutôt que mot à mot. Les transformers utilisent plus de données, plus de puissance de calcul pour aboutir à des modèles plus performants
 
 # Comment choisit-on ce qu'il lit ?
 
