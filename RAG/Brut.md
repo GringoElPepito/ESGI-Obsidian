@@ -6,6 +6,8 @@ RAG :
 # Pourquoi donner à lire au modèle ?
 Corpus VALDORNE mutuelle -> 71 documents internes d'une mutuelle fictive
 
+Lorsque 
+
 # Comment choisit-on ce qu'il lit ?
 
 # où cela casse-t-il et que répare-t-on ?
