@@ -27,7 +27,7 @@ La longueur des documents est ce qui a le plus d'impact dans le remplissage du c
 
 Fine-Tuning consiste à réentrainer un modèle avec des données supplémentaires dans le but de modifier ses poids. LoRA (Low Rank Adaptation).
 
-Modèle de base Matrice 4096 x 4096 -> 16,8 millions de paramètres. Avec LoRA on va avoir 2 matrices supplémentaires une matrice A de 4096 x 32 et une matrice B de 32 x 4096, que l'on va multiplier pour obtenir une matrice de correction que l'on va appliquer sur la Matrice de base. A + B = 262 144 paramètres.
+Modèle de base Matrice 4096 x 4096 -> 16,8 millions de paramètres. Avec LoRA on va avoir 2 matrices supplémentaires une matrice A de 4096 x 32 et une matrice B de 32 x 4096, que l'on va multiplier pour obtenir une matrice de correction que l'on va appliquer sur la Matrice de base. A + B = 262 144 paramètres. Ce qui évite de modifier le modèle de base
 QLoRA (Quantified LoRA) qui applique une compression supplémentaire sur les matrices A et B
 
 Les poids d'un modèle sont 
