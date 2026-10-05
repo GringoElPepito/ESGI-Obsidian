@@ -4,6 +4,7 @@ RAG :
 - Generation -> Génération, Le modèle répond à partir de ce qu'il vient de lire
 
 # Pourquoi donner à lire au modèle ?
+Corpus VALDORNE mutuelle -> 71 documents internes d'une mutuelle fictive
 
 # Comment choisit-on ce qu'il lit ?
 
