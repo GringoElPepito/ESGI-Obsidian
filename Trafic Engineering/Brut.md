@@ -25,7 +25,14 @@ Packet Loss : -
 Jitter : -
 
 Exemple Flux VoIP :
-BW : 
-Delay :
-Packet Loss :
-Jitter :
+BW : --
+Delay : ++
+Packet Loss : ++++
+Jitter : ++++
+
+DSP Digital Signal Processor puce de récéption du trafic liés aux appels pour les téléphones
+
+Analogique -> 1 lien = 1 appel
+Pour palier les problèmes liés à l'analogique, passage au numérique.
+
+Numérique -> 8 échelles
