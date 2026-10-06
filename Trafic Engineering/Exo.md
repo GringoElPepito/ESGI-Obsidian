@@ -102,6 +102,13 @@ set peer 2.2.2.1
 exit
 int e0/1
 crypto map CM_VPN
+ex
+///NAT Exemption
+ip access-list extended ACLNAT
+deny ip 192.168.10.0 0.0.0.255 192.168.11.0 0.0.0.255
+permit ip 192.168.10.0 0.0.0.255 any
+exit
+do wr
 ```
 
 IPSec SITE2 :
@@ -134,4 +141,11 @@ set peer 1.1.1.1
 exit
 int e0/1
 crypto map CM_VPN
+ex
+///NAT Exemption
+ip access-list extended ACLNAT
+deny ip 192.168.11.0 0.0.0.255 192.168.10.0 0.0.0.255
+permit ip 192.168.11.0 0.0.0.255 any
+exit
+do wr
 ```
