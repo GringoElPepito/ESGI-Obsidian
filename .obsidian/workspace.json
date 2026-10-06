@@ -6,6 +6,7 @@
       {
         "id": "25b4f0174f53c142",
         "type": "tabs",
+        "dimension": 50,
         "children": [
           {
             "id": "665459d72635b068",
@@ -425,6 +426,7 @@
       {
         "id": "dcd13b7adf56ce34",
         "type": "tabs",
+        "dimension": 50,
         "children": [
           {
             "id": "cefdf682274ead9b",
@@ -432,12 +434,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/OSI model/Couche3/NAT.md",
+                "file": "CCNP/Brut2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NAT"
+              "title": "Brut2"
             }
           }
         ]
@@ -590,10 +592,13 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "29aec86b1c613a6b",
+  "active": "0924eaaa9ff8542c",
   "lastOpenFiles": [
-    "Trafic Engineering/Exo.md",
+    "CCNP/Brut2.md",
+    "Réseau Opérateur/Brut.md",
+    "Sécu-périmétrique/Brut.md",
     "CCNA/OSI model/Couche3/NAT.md",
+    "Trafic Engineering/Exo.md",
     "CCNA/OSI model/Couche3/Couche 3 - Réseau.md",
     "Sécu-Cloud/Brut.md",
     "Sans titre 5.md",
@@ -618,9 +623,6 @@
     "Projet Annuel - M1/Architecture Réseau.md",
     "Projet Annuel - M1/Liste Technos.md",
     "Projet Annuel - M1/Note.md",
-    "Projet Annuel - M1/Suivi PA.md",
-    "Sans titre 2.md",
-    "Sans titre 3.md",
     "attachments/Pasted image 20260720074419.png",
     "attachments/Pasted image 20260720071551.png",
     "attachments/Pasted image 20260716234037.png",
