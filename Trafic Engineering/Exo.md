@@ -71,3 +71,8 @@ en
 conf t
 hostname PC-INTERNET
 ```
+
+IPSec :
+```
+/// Etablir un tunnel sécurisé entre des LANs
+```
