@@ -65,3 +65,9 @@ no shut
 do wr
 ```
 
+PC INTERNET:
+```
+en
+conf t
+hostname PC-INTERNET
+```
