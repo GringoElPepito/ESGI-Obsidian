@@ -49,4 +49,17 @@ Code : Numériser le flux analogique à la source et le dénumériser à destina
 
 Paquetisation de la VoIP :
 En général, chaque paquet contient 20ms de voix, sur de la vidéo conférence on peut retrouver 40 à 80ms de voix.
+
 Taille en octet 
+Un paquet = 20ms -> 1/50 d'1 seconde
+
+Pour G.711 -> 64000 / 50 / 8 = 160 octets
+Pour G.729 -> 8000 / 50 / 8 = 20 octets
+
+RTP -> Real Time Protocol, sert à gérer le réordonnancement des paquets de voix qui n'est pas traité par UDP
+
+Taille des headers :
+
+
+Structure du paquet :
+| L2 | IP | RTP | UDP | Payload 20ms |

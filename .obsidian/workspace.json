@@ -476,7 +476,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "IPSEC",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -497,7 +497,8 @@
               "title": "Signet"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -591,7 +592,7 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "0924eaaa9ff8542c",
+  "active": "29aec86b1c613a6b",
   "lastOpenFiles": [
     "Trafic Engineering/Exo.md",
     "CCNP/Brut2.md",
