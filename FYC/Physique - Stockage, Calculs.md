@@ -86,8 +86,11 @@ Les 2 cas présentés ci-dessus sont des exemples pouvant servir de base pour vo
 La gestion du stockage au sein d'une infrastructure est un autre élément nécessitant une certaine attention. La question du stockage est loin d'être une question anodine, car elle va avoir un impact direct sur les futurs évolutions de l'infrastructure. 
 Il y a quatre points sur lesquelles s'arrêter pour définir une politique général concernant le stockage :
 - Redondance des disques
-- Système de fichiers
-- Accès au stockage
+- Architecture d'accès au stockage
+- Mode de stockage
+- Stockage en mode bloc
+- Stockage en mode fichier
+- Stockage en mode objet
 - Sauvegarde
 ## Redondance des disques
 
@@ -130,6 +133,65 @@ Maintenant que vous connaissez les forces et faiblesses de chaque type de RAID, 
 
 Dans le cas de notre service d'exécution serverless, il est important de savoir ce que va réaliser la majorité des fonctions qui vont être exécutés. Si les fonctions ne font pas d'écriture sur le disque alors un RAID 50 ou 60 dépendant du niveau de sécurité voulu pourrait parfaitement faire l'affaire. Cependant si les fonctions réalisent un grand nombre d'écriture alors il serait préférable d'utiliser un RAID 10 quitte à perdre de l'espace. Bien évidemment le plus important est comme toujours de parvenir à concilier le budget avec les besoins de l'infrastructure.
 
+### Architecture d'accès au stockage
+
+L'architecture de stockage correspond à la manière de connecter les stockages au serveurs de calcul. Voici les 5 architectures de stockage les plus courantes :
+- DAS (Direct Attached Storage), ici les disques servant d'espaces de stockages sont directement connectés aux machines qui pourront donc localement exploiter ces derniers.
+- NAS (Network Attached Storage), les machines vont ici se connecter à un serveur de stockage distant via une typologie de données en fichier en passant, généralement à travers le réseau physique global de l'infrastructure.
+- SAN (Storage Area Network), les machines vont se connecter à un ou plusieurs serveurs de stockage via une typologie de données en bloc, généralement à travers un réseau physique dédié (Switch, Câbles etc..) servant à transporter uniquement le trafic entre les machines de calculs et les serveurs de stockages.
+- HCI (HyperConverged Infrastructure), comme pour le DAS, les disques sont directement connectés sur chacune des machines, cependant, chaque machine va mettre en commun son espace de stockage avec les autres pour former un stockage unifié entre toutes les machines du cluster. L'interconnexion entre les machines peut se faire via le réseau physique global ou de préférence via un réseau physique dédié pour de meilleur performance.
+- Cloud, les machines sortent sur internet dans le but d'atteindre le stockage distant fournit par un Cloud Provider (AWS, Azure, GCP ou autre), le stockage est donc externe à l'infrastructure On-Premise.
+
+### Mode de stockage
+Le mode de stockage correspond à la manière dont les machines vont interagir avec l'espace de stockage pour .
+Il existe 3 mode d'accès :
+- Stockage en mode bloc
+- Stockage en mode fichier
+- Stockage en mode objet
+
+Stockage en mode bloc, toutes les données vont être découpés en paquets de taille fixe (bloc) possédant chacun sa propre adresse, permettant ainsi de modifier un bloc spécifique sans avoir à modifier entièrement le fichier qui y est lié. C'est le mode le plus bas niveau (proche de la machine) mais aussi le plus performant. 
+Les hautes performances et la faible latence sont par ailleurs ses avantages principaux, qui sont entres autres permis par la possibilité de modifier uniquement les blocs voulus et non le fichier en entier. 
+Un inconvénient majeur est qu'un espace de stockage par bloc est par défaut utilisable par une seule et unique instance. Il existe malgré tout des protocoles de stockage par bloc ou des systèmes de fichiers intègrent des systèmes permettant un accès multiple à un espace de stockage par bloc unique, cela peut rendre la mise en place assez complexe. 
+Ce type de stockage excelle pour le stockage de Machine Virtuelle ou pour les base de données transactionnelles comme MySQL, PostgreSQL ou encore Oracle SQL.
+
+Stockage en mode fichier, les données sont ici directement représentés sous forme de fichier organisé en hiérarchie de dossiers. C'est le mode de stockage utilisé par les systèmes d'exploitations, il vient généralement se placer au dessus du stockage en mode bloc pour faciliter l'exploitation du stockage par un humain. 
+Ses principaux avantages sont les suivants :
+- La possibilité de mettre en place un contrôle d'accès ainsi que du partage de fichier
+- Utilisable par plusieurs utilisateurs ou instance simultanément
+Cependant, il compte aussi certains inconvénient :
+- Plus le volume de données est grand plus les performances ont tendances à baisser
+- Il peut être assez complexe de mettre à l'échelle un stockage en mode fichier surtout si les besoins évolue rapidement
+Le stockage en mode fichier excelle particulièrement pour la collaboration, le partage de document ainsi que pour les accès simultanés par plusieurs instances.
+
+Stockage en mode objet, avec ce mode de stockage il n'y a aucun dossier ni aucune arborescence ou hiérarchie. Toutes les données sont rassemblés en unités indépendantes les unes des autres que l'on appelle objets. Comme il n'y a pas de dossier l'ensemble des objets se retrouvent au même niveau. Chaque objet contient ses données, ses métadonnées et un identifiant unique (qui fait partie des métadonnées). L'accès aux objets se fait généralement à travers des requêtes web ou API.
+Les avantages du stockage en mode objet sont les suivants :
+- Mise à l'échelle simplifié
+- Offres Cloud à des prix compétitifs
+- Métadonnées illimitées
+Les inconvénients sont les suivants :
+- Modifications fastidieuses (Il faut écraser la version existante d'un fichier avec la nouvelle pour le modifier)
+- La latence peut être assez élevé comparé aux autres mode de stockage
+Le stockage en mode objet est très adapté au stockage de données d'archivage, de sauvegarde, de site web statique, de grands volumes de données non structurées (Vidéo, Image etc...), Big data, IA, Analyse de données.
+
+Ces 3 modes sont combinables et répondent à des besoins distincts. Prenons une machine avec un HDD servant à stocker des films qui pourront être par la suite diffusé sur un site internet. Pour écrire les données sur le disque, la machine utilisera le stockage en mode bloc, car c'est le seul moyen de communication direct avec le disque. Cependant pour agrégé les blocs sous forme de fichiers lisibles, on utilisera le stockage en mode fichier à travers un système de fichier qui pourra faire la traduction de fichier à bloc et inversement. Enfin pour rendre accessible par notre application les films stockés sur le disque on pourra utiliser un stockage en mode objet qui facilitera la récupération des films pour l'application.
+
+## Système de stockage par bloc
+Comme expliqué précédemment le stockage par bloc permet de lire et d'écrire sur un espace de stockage local ou distant en accédant directement aux blocs constituants les données. On peut regroupé les système de stockage par bloc dans 2 catégories les systèmes locaux et les systèmes en réseaux
+Voici les systèmes de stockage par bloc locaux :
+- SCSI (Small Computer System Interface) est un standard d'interface matérielle et un protocole visant à simplifier l'envoie d'instruction au périphérique de stockage par le système d'exploitation. SCSI a été initialement conçu pour les disques durs, cependant l'apparition des mémoires flash a poussé l'intégration d'instructions adapté à ce nouveau type de mémoire au sein du protocole SCSI, mais son design historique ne permet malheureusement pas d'exploité pleinement le potentiel des SSD. Dans le cas d'un disque branché en SATA, SCSI n'est qu'un intermédiaire et ne permet pas d'écrire directement sur le disque. En effet, les instructions SCSI sont par la suite traduit par SATL (SCSI-to-ATA Translation Layer) en instructions ATA qui sont elles compréhensibles par le contrôleur du périphérique de stockage et qui pourra donc les exécuter. Cependant il existe un autre type de port appeler SAS qui est assez proche de l'apparence du SATA à la différence que la partie du port servant à l'alimentation et la partie servant au transfert des données sont jointes contrairement au SATA. Dans le cas du SAS, SCSI n'est pas traduit mais directement exécuté ce qui réduit grandement la latence et augmente donc par la même occasion les performances.
+- NVMe (Non-Volatile Memory Express) est à la fois une interface matérielle et un protocole de communication dédié aux échanges entre les périphériques de mémoire flash (SSD) et le reste du système via le bus PCIe (PCI Express). Etant construit précisément dans le but de fonctionner avec des SSD, NVMe possède de bien meilleur performance que SCSI pour ce type de périphérique.
+
+SCSI et NVMe sont tous les deux très efficaces mais ils ne sont malheureusement utilisables que sur des périphériques directement branché à la carte mère du serveur à travers un câble SAS/SATA ou un port NVMe. C'est pourquoi plusieurs systèmes de stockage par bloc en réseau ont fait leur apparition. Voici les plus populaires :
+- TCP/IP 
+	- iSCSI (internet Small Computer System Interface) directement adapté de SCSI, iSCSI permet à une machine d'atteindre des disques d'un serveur distant et de transmettre des instruction SCSI en se basant sur le protocole TCP/IP. Au sein d'iSCSI, le client est ce qu'on  appelle l'initiateur (initiator) qui est celui initialisant la connexion auprès du serveur qu'on appelle la cible (target). La cible elle expose des disques virtuels qu'on appellent LUN (Logical Unit Number) qui correspond globalement à un volume ou un fragment d'un disque physique. iSCSI fonctionnant au-dessus du protocole TCP/IP il peut être déployé en architecture NAS sur un réseau physique existant sans nécessité de matériel dédié. Cependant il est tout à fait possible de mettre en place un réseau physique à part notamment pour séparer le trafic iSCSI du reste de l'infrastructure.
+	- NVMe over TCP, directement adapté de NVMe, NVMe over TCP présente énormément de similitude avec iSCSI. Il permet à une machine client de transférer des instructions NVMe à travers le protocole TCP/IP. Il reprend aussi les concepts, d'initiateur, de cible et de LUN que l'on a vu avec iSCSI. La vraie différence entre iSCSI et NVMe over TCP, réside dans la gestion des échanges à travers le réseau, qui pour NVMe over TCP sont bien plus optimisé pour profiter des performances offertes par les SSD. Comme pour iSCSI, NVMe over TCP peut être déployer sur un réseau physique existant (NAS) ou sur un réseau physique dédié (SAN).
+- Fiber Channel technologie
+	- FC (Fiber Channel) est un protocol de communication comme Ethernet. Fiber Channel est conçu pour des transferts de données à très haut débit, sans pertes avec un maintien de l'ordre des paquets. Il existe différentes architectures pour le Fiber Channel, cependant nous nous concentrerons sur la plus commune à savoir l'architecture Fabric (switchée ou commutée). Dans le cas de l'architecture Fabric, on va placer un ou plusieurs switch Fiber Channel qui auront pour rôle de connecter les clients aux serveurs généralement au travers de liens fibre optique. Les clients et les serveurs sont connectés au(x) switch(es) FC à travers un adaptateur HBA dédié se connectant sur les ports PCIe de chaque machine. Les switches utilisés sont de type Fiber Channel et non Ethernet, ce qui signifie qu'uniquement le trafic Fiber Channel peut y transiter. Aussi il n'est pas possible d'utiliser un switch Ethernet pour mettre en place du Fiber Channel natif ce qui signifie que FC, dans un cas d'architecture Fabric, nécessite obligatoirement la mise en place d'un réseau physique dédié (SAN). Nativement, Fiber Channel transmet des instructions SCSI cependant il est possible d'y faire transiter des instructions NVMe pour obtenir du NVMe over FC. FC permet d'atteindre des performances bien supérieur aux protocoles reposant sur le protocole TCP/IP cependant il est aussi bien plus onéreux et peut aussi ajouter une certaine complexité à l'infrastructure globale.
+	- FCoE (Fiber Channel over Ethernet) est un dérivé du Fiber Channel qui consiste à encapsuler le trafic Fiber channel au sein d'une trame Ethernet. FCoE ne se basant pas sur TCP/IP mais sur Ethernet, les trames FCoE ne contiennent pas d'IP et ne peuvent donc pas traverser de routeur. Pour garantir la transmission des trames comme le ferait FC, FCoE utilise des protocoles en plus d'Ethernet à partenant à la suite technologique DCB (Data Center Bridging) comme PFC (Priority Flow Control) qui permet de prioriser le trafic FC en cas de congestion des liens pour nullifier les pertes ou ETS (Enhanced Transmission Selection) permettant de faire circuler sur une seule liaison Ethernet à la fois le trafic FCoE et le reste du trafic. Bien que FCoE ne nécessite pas de switch FC, il demande tout de même du matériel spécifique, les clients et les serveurs doivent posséder des CNA (Converged Network Adapter) qui combine carte réseau classique et HBA. Concernant les switches, ces derniers doivent intégrer les technologies DCB pour permettre au trafic FCoE de transiter. FCoE permet de profiter de performances équivalentes à FC sans pour autant devoir maintenir une infrastructure dédié, ce qui permet de simplifier l'infrastructure, cependant cela peut aussi rendre la configuration des équipements réseaux plus complexe.
+- RDMA (Remote Direct Memory Access) est une technologie de communication réseau visant à réaliser des échanges d'informations directement entre les mémoires des machines communicantes en outrepassant le système d'exploitation ainsi que le processeur. Cela présente plusieurs avantages comme la réduction de la latence en évitant le traitement du CPU et de l'OS, l'économie des ressources et l'amélioration des débits qui ne sont plus limités par le CPU ou l'OS. Pour pouvoir fonctionner RDMA a besoin que chaque terminal (serveur) possède une carte réseau compatible RDMA qui sera en capacité d'outrepasser l'OS ainsi que le CPU lors des accès mémoire.
+	- InfiniBand est un protocole qui se place au même niveau qu'Ethernet, De ce fait il n'est pas possible d'utiliser des switches Ethernet pour y faire circuler du trafic InfiniBand, il est pour cela absolument nécessairement d'acheter des équipements réseau dédiés supportant ce protocole. Les équipements InfiniBand intègre nativement des fonction de contrôle de flux permettant de réduire le risque de perte de paquet. Ce protocole supporte nativement RDMA ce qui offre les meilleurs performances possibles pour ce type de trafic. Cependant InfiniBand est un protocole propriétaire, de ce fait, les équipements le supportant peuvent être très onéreux.
+	- RoCE (RDMA over Converged Ethernet) est un protocole reposant sur le protocole Ethernet pour faire transiter du trafic RDMA. Pour fonctionner il requiert des switchs Ethernet intégrant des fonctions lossless devant être par la suite configuré de manière adapter pour réduire le risque de perte de paquets. Il existe de version du protocole RoCE. La version 1 intervient à la couche 2 du modèle OSI et n'est donc pas routable ce qui limite grandement l'évolutivité. La version 2 est elle routable grâce à l'encapsulation du trafic RDMA au sein de segment UDP/IP lui permettant d'interagir avec la couche 3 et 4. RoCE est un bon compromis pour utiliser du RDMA tout en limitant les coûts liés au à l'infrastructure (au détriment des performances en moyenne 5 à 15% inférieur à InfiniBand). Cependant sa mise en place requiert une configuration pouvant être assez complexe à maintenir.
+	- iWARP (Internet Wide Area RDMA Protocol) est un protocole utilisant TCP/IP pour faire transiter le trafic RDMA. TCP étant un protocole plus gourmand en trafic que l'UDP utilisé par RoCEv2, iWARP a tendance à être moins performant et témoigné plus de latence que ce dernier. Bien que moins performant, iWARP est bien plus simple à configurer et à maintenir que RoCE.
 ## Système de fichiers 
 
 Un système de fichier correspond au moyen utiliser pour enregistrer, structurer, nommer et indexer les données sur un support de stockage (HDD, SSD SATA/NVMe, Clé USB etc...).
@@ -162,7 +224,7 @@ Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'oc
 
 - CephFS : CephFS est un système de fichiers distribué faisant partie de Ceph une plateforme de stockage open source. CephFS permet à plusieurs machines de partager et de modifier les mêmes fichiers simultanément tout en offrant de très haute performance et incluant de la tolérance de panne. Il fournit une interface POSIX et permet donc d'être monté via le noyau Linux. Il est par ailleurs aussi possible de monté par dessus CephFS un partage NFS ou SMB.
 
-## Architecture d'accès au stockage
+## Système de stockage par Objet
 
 ## Sauvegarde
 

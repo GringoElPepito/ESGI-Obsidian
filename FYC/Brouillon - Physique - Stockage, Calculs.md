@@ -39,3 +39,66 @@ Pour un service de stockage
 Pour un service de sauvegarde à froid, on s'orientera généralement vers des disques à bandes magnétiques ou encore des disques durs à basse consommation. Les 2 ne sont pas les matériels les plus performants cependant ils permettent de sauvegarder de grandes quantités de données à moindre coup. Dans le cas des bandes magnétiques, elles proposent en plus une durée de vie pouvant aller entre 20 et 30 ans contrairement au disque dur qui semble se limiter à une durée de vie allant de 5 à 10 ans pour un usage modéré.
 
 # Localisation du matériel
+
+### Architecture de stockage
+
+L'architecture de stockage correspond à la manière de connecter les stockages au serveurs de calcul. Voici les 5 architectures de stockage les plus courantes :
+- DAS (Direct Attached Storage), ici les disques servant d'espaces de stockages sont directement connectés aux machines qui pourront donc localement exploiter ces derniers.
+- NAS (Network Attached Storage), les machines vont ici se connecter à un serveur de stockage distant en passant à travers le réseau physique global de l'infrastructure.
+- SAN (Storage Area Network), les machines vont se connecter à un ou plusieurs serveurs de stockage à travers un réseau physique dédié (Switch, Câbles etc..) servant à transporter uniquement le trafic entre les machines de calculs et les serveurs de stockages.
+- HCI (HyperConverged Infrastructure), comme pour le DAS, les disques sont directement connectés sur chacune des machines, cependant, chaque machine va mettre en commun son espace de stockage avec les autres pour former un stockage unifié entre toutes les machines du cluster. L'interconnexion entre les machines peut se faire via le réseau physique global ou de préférence via un réseau physique dédié pour de meilleur performance.
+- Cloud, les machines sortent sur internet dans le but d'atteindre le stockage distant fournit par un Cloud Provider (AWS, Azure, GCP ou autre), le stockage est donc externe à l'infrastructure On-Premise.
+
+
+
+Mode de stockage
+conserve, organise et présente les données de manières différentes chacun ayant leurs avantages et inconvénients
+
+Le stockage par bloc vise à être utilisé comme un disque dédié à la machine
+Avantages :
+- Modification rapide et fin des données
+- haute performance/faible latence
+
+Inconvénients :
+- Limité à une instance
+
+
+Usage :
+- stockage de VM
+- Base de données transactionnelles avec gros besoins de lectures/écritures (MySQL, PostgreSQL, Oracle SQL)
+Architecture : 
+- SAN (en général)
+
+Stockage par fichier, les données sont stockés en tant qu'élément à l'intérieur d'un dossier accessible via un chemin indiquant l'emplacement au sein de l'arborescence
+
+Avantages :
+- Contrôle d'accès et du partage
+- Utilisable simultanément par plusieurs utilisateurs et instances
+
+Inconvénients :
+- Baisse de performance si gros volume de fichier
+- Mis à l'échelle complexe
+
+Usage :
+- Collaboration et partage de documents
+- Accès simultanés par plusieurs instances
+
+Stockage par objet, chaque fichier est stocké sous la forme d'objet contenant 3 éléments :
+- la donnée elle même
+- les métadonnées lié au fichier
+- un identifiant unique (fait partie des métadonnées)
+Accessible via une API de manière simultanés par plusieurs utilisateurs
+
+Avantages :
+- Stockage hautement évolutif
+- Prix compétitifs
+- Métadonnées illimitées
+
+Inconvénients :
+- Modifications fastidieuses
+- Latence plus longue
+
+Usage :
+- Stockage de grands volumes de données non structurées (Vidéo, Image)
+- Archivage, sauvegarde, site web statique
+- Big data, IA, Analyse de données
