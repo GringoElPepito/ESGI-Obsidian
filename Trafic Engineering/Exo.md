@@ -18,5 +18,44 @@ no shut
 exit
 ip access-list standard ACLNAT
 ip nat inside source list ACLNAT int s1/0 overload
+ip dhcp-pool
+do wr
+```
+
+SITE 2 :
+```
+en
+conf t
+hostname SITE2
+no ip domain-lookup
+int e0/0
+ip add 192.168.11.254 255.255.255.0
+ip nat inside
+no shut
+int s1/0
+ip add 2.2.2.1 255.255.255.252
+ip nat outside
+no shut
+exit
+ip access-list standard ACLNAT
+ip nat inside source list ACLNAT int s1/0 overload
+do wr
+```
+
+ISP : 
+```
+en
+conf t
+hostname ISP
+no ip domain-lookup
+int s1/0
+ip add 1.1.1.2 255.255.255.252
+no shut
+int s2/0
+ip add 2.2.2.2 255.255.255.252
+no shut
+int e0/0
+ip add 8.8.8.254 255.255.255.0
+no shut
 do wr
 ```
