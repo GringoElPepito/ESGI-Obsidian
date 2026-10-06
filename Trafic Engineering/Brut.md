@@ -44,5 +44,9 @@ Vitesse d'un lien Serial 1,544 Mbs -> 23 canaux à 64kbs
 
 Code : Numériser le flux analogique à la source et le dénumériser à destination
 - G.711 : codec natif, non compressif (le principe expliqué au dessus) -> 64kbs. Idéal pour le LAN
-- G.729 : codec compressif : 8kbs. Attention pas compatible
-- 
+- G.729 : codec compressif : 8kbs. Attention pas compatible avec la polyphonie (Plusieurs sources sonores, typiquement MoH : Music on Hold)
+
+
+Paquetisation de la VoIP :
+En général, chaque paquet contient 20ms de voix, sur de la vidéo conférence on peut retrouver 40 à 80ms de voix.
+Taille en octet 
