@@ -421,6 +421,26 @@
           }
         ],
         "currentTab": 29
+      },
+      {
+        "id": "dcd13b7adf56ce34",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cefdf682274ead9b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CCNA/OSI model/Couche3/NAT.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "NAT"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -570,10 +590,12 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "29aec86b1c613a6b",
+  "active": "0924eaaa9ff8542c",
   "lastOpenFiles": [
-    "Sécu-Cloud/Brut.md",
+    "CCNA/OSI model/Couche3/NAT.md",
     "Trafic Engineering/Exo.md",
+    "CCNA/OSI model/Couche3/Couche 3 - Réseau.md",
+    "Sécu-Cloud/Brut.md",
     "Sans titre 5.md",
     "Trafic Engineering/Brut.md",
     "RAG/Brut.md",
@@ -599,8 +621,6 @@
     "Projet Annuel - M1/Suivi PA.md",
     "Sans titre 2.md",
     "Sans titre 3.md",
-    "FYC/Brouillon - Physique - Stockage, Calculs.md",
-    "FYC/Setup TALOS.md",
     "attachments/Pasted image 20260720074419.png",
     "attachments/Pasted image 20260720071551.png",
     "attachments/Pasted image 20260716234037.png",
