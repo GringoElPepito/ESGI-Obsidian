@@ -22,6 +22,7 @@ ip dhcp pool LAN1
 netw 192.168.10.0 255.255.255.0
 default-rout 192.168.10.254
 exit
+ip default-g 1.1.1.2
 do wr
 ```
 
@@ -42,6 +43,7 @@ no shut
 exit
 ip access-list standard ACLNAT
 ip nat inside source list ACLNAT int s1/0 overload
+ip default-g 2.2.2.2
 do wr
 ```
 
@@ -62,3 +64,4 @@ ip add 8.8.8.254 255.255.255.0
 no shut
 do wr
 ```
+
