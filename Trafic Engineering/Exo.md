@@ -18,7 +18,10 @@ no shut
 exit
 ip access-list standard ACLNAT
 ip nat inside source list ACLNAT int s1/0 overload
-ip dhcp-pool
+ip dhcp pool LAN1
+netw 192.168.10.0 255.255.255.0
+default-rout 192.168.10.254
+exit
 do wr
 ```
 
