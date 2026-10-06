@@ -412,12 +412,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Trafic Engineering/Exo.md",
+                "file": "Trafic Engineering/Brut.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Exo"
+              "title": "Brut"
             }
           }
         ],
@@ -497,8 +497,7 @@
               "title": "Signet"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -594,8 +593,8 @@
   },
   "active": "0924eaaa9ff8542c",
   "lastOpenFiles": [
-    "CCNP/Brut2.md",
     "Trafic Engineering/Exo.md",
+    "CCNP/Brut2.md",
     "Réseau Opérateur/Brut.md",
     "Sécu-périmétrique/Brut.md",
     "CCNA/OSI model/Couche3/NAT.md",
