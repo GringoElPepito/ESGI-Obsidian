@@ -35,4 +35,14 @@ DSP Digital Signal Processor puce de récéption du trafic liés aux appels pour
 Analogique -> 1 lien = 1 appel
 Pour palier les problèmes liés à l'analogique, passage au numérique.
 
-Numérique -> 8 échelles
+Numérique -> 8 échelles espacés, 16 cordes par échelles espacés.
+
+Pour numériser un signal il faut samplé 2 x plus souvent que l'amplitude observée. donc 8000F/s -> 64kbs
+8000 sample par seconde, chacun sample appartient à une corde dans 1 échelle codé sur 8 bits.
+
+Vitesse d'un lien Serial 1,544 Mbs -> 23 canaux à 64kbs
+
+Code : Numériser le flux analogique à la source et le dénumériser à destination
+- G.711 : codec natif, non compressif (le principe expliqué au dessus) -> 64kbs. Idéal pour le LAN
+- G.729 : codec compressif : 8kbs. Attention pas compatible
+- 
