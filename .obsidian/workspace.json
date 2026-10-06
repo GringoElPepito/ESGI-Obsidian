@@ -376,9 +376,21 @@
               "icon": "lucide-file",
               "title": "Physique - Stockage, Calculs"
             }
+          },
+          {
+            "id": "45cc07f279f24d64",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.14.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Notes de version 1.14.4"
+            }
           }
         ],
-        "currentTab": 26
+        "currentTab": 27
       },
       {
         "id": "2ee8be7c481f94df",
@@ -537,17 +549,17 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "canvas:Créer un nouveau canvas": false,
       "bases:Créer une nouvelle base": false,
       "switcher:Ouvrir le sélecteur rapide": false,
       "graph:Ouvrir la vue graphique": false,
-      "canvas:Créer une nouvelle toile": false,
       "daily-notes:Ouvrir la note quotidienne": false,
       "templates:Insérer le modèle": false,
       "command-palette:Ouvrir la palette de commandes": false,
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "2ef97b52b9563576",
+  "active": "45cc07f279f24d64",
   "lastOpenFiles": [
     "RAG/Brut.md",
     "FYC/Brouillon - Physique - Stockage, Calculs.md",
