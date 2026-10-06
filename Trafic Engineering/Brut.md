@@ -9,7 +9,23 @@ Sans QoS :
 
 Les différents de trafics n'ont pas tous les mêmes besoins.
 La QoS gère 4 problèmatiques :
-- BW
+- Lack of BandWidth
 - Packet Loss (congestion)
 - Delays
+	- Serialization delays : (lien 1Gbs -> delay 1 ns) Pas vraiment de possibilité d'agir dessus pour réduire le délai mis à part brancher un câble permettant un plus gros débit
+	- Propagation delays : temps passé sur le lien, Pas vraiment de possibilité d'agir dessus pour réduire le délai
+	- Processing delays : temps passé dans le matériel avant prise de décision et commutation
 - Jitter (variation de délais entre les paquets d'une même communication)
+
+
+Exemple Flux FTP :
+BW : +++
+Delay : -
+Packet Loss : -
+Jitter : -
+
+Exemple Flux VoIP :
+BW : 
+Delay :
+Packet Loss :
+Jitter :
