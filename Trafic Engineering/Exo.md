@@ -75,4 +75,19 @@ hostname PC-INTERNET
 IPSec :
 ```
 /// Etablir un tunnel sécurisé entre des LANs
+/// PHASE 1
+en
+conf t
+crypto isakmp policy 1
+autenthication pre
+encryption des /// DES car LAB en PROD utiliser AES
+hash md5 /// MD5 car LAB en PROD utiliser minimum SHA-1
+group 2 /// groupe 2 car LAB en PROD minimum 14
+lifetime 43200
+exit
+/// Définition de la PSK
+crypto isakmp key toto1234
+/// PHASE 2
+crypto ipsec transform-set TS_VPN esp-des esp-md5
+ex
 ```

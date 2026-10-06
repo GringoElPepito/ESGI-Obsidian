@@ -61,8 +61,7 @@ Configuration Phase 1 :
 crypto isakmp policy 1
 authenti pre
 encryp des
-hash
-md5
+hash md5
 group 2
 lifetime 43200
 exit
