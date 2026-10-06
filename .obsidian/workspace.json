@@ -395,12 +395,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sans titre 6.md",
+                "file": "FYC/Physique - Stockage, Calculs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sans titre 6"
+              "title": "Physique - Stockage, Calculs"
             }
           }
         ],
@@ -575,6 +575,9 @@
   },
   "active": "dce4f8aabe6f6e9d",
   "lastOpenFiles": [
+    "FYC/Présentation équipe.md",
+    "FYC/Physique - Stockage, Calculs.md",
+    "FYC/Brut.md",
     "Sans titre 6.md",
     "Trafic Engineering/Exo.md",
     "Trafic Engineering/Brut.md",
@@ -582,15 +585,12 @@
     "Sans titre 5.md",
     "RAG/Brut.md",
     "FYC/Brouillon - Physique - Stockage, Calculs.md",
-    "FYC/Physique - Stockage, Calculs.md",
     "RAG",
     "FYC/Setup TALOS.md",
     "FYC/Présentation premier suivi.md",
-    "FYC/Présentation équipe.md",
     "FYC/Filesystem.md",
     "FYC/Etat de l'art.md",
     "FYC/Définition Cloud Computing.md",
-    "FYC/Brut.md",
     "FYC/TP2.md",
     "FYC/Séance suivi 1.md",
     "FYC/glossaire.md",
