@@ -2,7 +2,7 @@ Traffic Engineering
 - Strictement associé à MPLS-BGP
 - QoS : Quality of service
 
-La QoS : fournit des services spécifiques à certains types de trafics au détriment d'autres types de trafics
+La QoS : fournit des services spécifiques à certains types de trafics au détriment d'autres types de trafics.
 Sans QoS : 
 - FIFO (First In/First Out) pour les équipement bas de gamme, Premier paquet arrivé, premier paquet servi
 - Fair queueing pour les équipements un peu plus haut de gammes, répartission équitable de la bande passante entre tous les trafics.
@@ -17,6 +17,7 @@ La QoS gère 4 problèmatiques :
 	- Processing delays : temps passé dans le matériel avant prise de décision et commutation
 - Jitter (variation de délais entre les paquets d'une même communication)
 
+La QoS s'applique aux paquets sortants, il va prioriser
 
 Exemple Flux FTP :
 BW : +++
@@ -66,3 +67,9 @@ UDP : 8 octets
 
 Structure du paquet :
 | L2 | IP | RTP | UDP | Payload 20ms |
+
+POTS : Plain Old Telephony System/Service
+
+BP réelle = (Taille totale de la trame en oct X BP nominale du codec en kbs) /Taille du payload en oct
+
+(18+20+12+8+20 x 8000)/20
