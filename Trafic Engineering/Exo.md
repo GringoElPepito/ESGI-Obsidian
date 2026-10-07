@@ -84,8 +84,8 @@ hostname PC-INTERNET
 
 IPSec SITE1 :
 ```
-/// Etablir un tunnel sécurisé entre des LANs
-/// PHASE 1
+!!! Etablir un tunnel sécurisé entre des LANs
+!!! PHASE 1
 en
 conf t
 crypto isakmp policy 1
@@ -110,7 +110,7 @@ match address ACL_VPN
 set transfor TS_VPN
 set peer 2.2.2.1
 exit
-int e0/1
+int g0/1
 crypto map CM_VPN
 ex
 ///NAT Exemption
