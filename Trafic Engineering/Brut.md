@@ -127,7 +127,7 @@ do wr
 
 
 IPSLA
-Config
+Config SITE 1
 ```
 ip sla 1
 udp-jitter 2.2.2.1 40000 codec g711a codec-inter 10 codec-num 500 codec-size 160
@@ -135,3 +135,11 @@ tos 46
 exit
 ip sla schedule 1 life forever start now !!! Déclenche la simulation de trafic immédiatement et de manière permanente
 ```
+
+Config SITE2
+```
+ip sla responder
+```
+
+Pour de la téléphonie tant que l'aller-retour prend moins de 200ms alors
+Min Opinion Score est une note permettant d'évaluer la qualité du service elle est comprise entre 1 et 5.
