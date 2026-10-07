@@ -6,7 +6,6 @@
       {
         "id": "25b4f0174f53c142",
         "type": "tabs",
-        "dimension": 50,
         "children": [
           {
             "id": "665459d72635b068",
@@ -379,6 +378,20 @@
             }
           },
           {
+            "id": "cefdf682274ead9b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Trafic Engineering/Exo.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Exo"
+            }
+          },
+          {
             "id": "38cbfd0ef2610216",
             "type": "leaf",
             "state": {
@@ -421,28 +434,7 @@
             }
           }
         ],
-        "currentTab": 29
-      },
-      {
-        "id": "dcd13b7adf56ce34",
-        "type": "tabs",
-        "dimension": 50,
-        "children": [
-          {
-            "id": "cefdf682274ead9b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Trafic Engineering/Exo.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Exo"
-            }
-          }
-        ]
+        "currentTab": 27
       }
     ],
     "direction": "vertical"
@@ -476,7 +468,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "///",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -497,7 +489,8 @@
               "title": "Signet"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -591,10 +584,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "0924eaaa9ff8542c",
+  "active": "cefdf682274ead9b",
   "lastOpenFiles": [
-    "Trafic Engineering/Exo.md",
     "Trafic Engineering/Brut.md",
+    "Trafic Engineering/Exo.md",
     "CCNP/Brut2.md",
     "Sans titre 6.md",
     "Réseau Opérateur/Brut.md",

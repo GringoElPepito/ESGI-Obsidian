@@ -90,21 +90,21 @@ en
 conf t
 crypto isakmp policy 1
 autenthication pre
-encryption des /// DES car LAB en PROD utiliser AES
-hash md5 /// MD5 car LAB en PROD utiliser minimum SHA-1
-group 2 /// groupe 2 car LAB en PROD minimum 14
+encryption des !!! DES car LAB en PROD utiliser AES
+hash md5 !!! MD5 car LAB en PROD utiliser minimum SHA-1
+group 2 !!! groupe 2 car LAB en PROD minimum 14
 lifetime 43200
 exit
-/// Définition de la PSK
+!!! Définition de la PSK
 crypto isakmp key toto1234
-/// PHASE 2
+!!! PHASE 2
 crypto ipsec transform-set TS_VPN esp-des esp-md5
 exit
-/// Définir l'interesting trafic
+!!! Définir l'interesting trafic
 ip access-list exte ACLVPN
 permit 192.168.10.0 0.0.0.255 192.168.11.0 O.O.O.255
 exit
-/// Créer une cyrpto map
+!!! Créer une cyrpto map
 crypto map CM_VPN 10 ipsec-isakmp
 match address ACL_VPN
 set transfor TS_VPN
@@ -112,7 +112,7 @@ set peer 2.2.2.1
 exit
 int g0/1
 crypto map CM_VPN
-ex
+exit
 ///NAT Exemption
 ip access-list extended ACLNAT
 deny ip 192.168.10.0 0.0.0.255 192.168.11.0 0.0.0.255
