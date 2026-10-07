@@ -78,3 +78,22 @@ Bande passante réelle utilisé par un appel utilisant le codec G.729
 Donc pour 10 appels, il faudra configuré la QoS du trafic temps réel/VoIP avec une bande passante maximale de 312kbs.
 
 CAC : Call Admission Control -> limitation du nombre d'appel sur l'IPBX.
+
+SNMP permet de supervisé 
+SNMPv1 est totalement obsolète
+SNMPv2 n'est pas chiffré donc préféré l'utilisation de SNMPv3 qui lui est chiffré.
+
+Les pirates tentent dans un premier temps de récupérer de l'information, 
+
+Protocole utilisé
+UDP 161 (port serveur - machine sur laquelle on récupère les informations)
+UDP 162 (port client - Machine de supervision qui va récupérer les infos (PRTG, Nagios, Zabbix))
+
+Les composants SNMP
+- La MIB (Management Information Base)
+	- Collection d'objets gérés (Managed Objects)
+
+La MIB
+- La MIB est structuré par SMI (Simple Management Information)
+- SNMP ne définit pas lui-même quelles informations un système peut exploiter
+- 
