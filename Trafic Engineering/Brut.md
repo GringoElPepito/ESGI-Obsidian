@@ -124,3 +124,14 @@ ip flow egress
 exit
 do wr
 ```
+
+
+IPSLA
+Config
+```
+ip sla 1
+udp-jitter 2.2.2.1 40000 codec g711a codec-inter 10 codec-num 500 codec-size 160
+tos 46
+exit
+ip sla schedule 1 life forever start now !!! Déclenche la simulation de trafic immédiatement et de manière permanente
+```
