@@ -59,7 +59,10 @@ Pour G.729 -> 8000 / 50 / 8 = 20 octets
 RTP -> Real Time Protocol, sert à gérer le réordonnancement des paquets de voix qui n'est pas traité par UDP
 
 Taille des headers :
-
+Ethernet : 18 octets
+IP : 20 à 60x octets 
+RTP : 12 octets
+UDP : 8 octets
 
 Structure du paquet :
 | L2 | IP | RTP | UDP | Payload 20ms |
