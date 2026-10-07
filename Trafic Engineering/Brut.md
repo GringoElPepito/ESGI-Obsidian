@@ -105,3 +105,8 @@ snmp-server community toto ro
 snmp-server contact Admin ISTRATEUR
 snmp-server location SITE1-PARIS
 ```
+
+
+Netfow -> Implémentation Cisco
+Standard IPFX
+Netflow v9
