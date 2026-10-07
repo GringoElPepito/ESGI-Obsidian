@@ -7,17 +7,20 @@ en
 conf t
 hostname SITE1
 no ip domain-lookup
-int e0/0
+int G0/0
 ip add 192.168.10.254 255.255.255.0
 ip nat inside
 no shut
-int s1/0
+int g0/1
 ip add 1.1.1.1 255.255.255.252
 ip nat outside
 no shut
 exit
-ip access-list standard ACLNAT
-ip nat inside source list ACLNAT int s1/0 overload
+ip access-list extended ACLNAT
+deny ip 192.168.10.0 0.0.0.255 192.168.11.0 0.0.0.255
+permit ip 192.168.10.0 0.0.0.255 any
+exit
+ip nat inside source list ACLNAT int g0/1 overload
 ip dhcp pool LAN1
 netw 192.168.10.0 255.255.255.0
 default-rout 192.168.10.254
@@ -32,17 +35,24 @@ en
 conf t
 hostname SITE2
 no ip domain-lookup
-int e0/0
+int G0/0
 ip add 192.168.11.254 255.255.255.0
 ip nat inside
 no shut
-int s1/0
+int g0/1
 ip add 2.2.2.1 255.255.255.252
 ip nat outside
 no shut
 exit
-ip access-list standard ACLNAT
-ip nat inside source list ACLNAT int s1/0 overload
+ip access-list extended ACLNAT
+deny ip 192.168.11.0 0.0.0.255 192.168.10.0 0.0.0.255
+permit ip 192.168.11.0 0.0.0.255 any
+exit
+ip nat inside source list ACLNAT int g0/1 overload
+ip dhcp pool LAN2
+netw 192.168.11.0 255.255.255.0
+default-rout 192.168.11.254
+exit
 ip default-g 2.2.2.2
 do wr
 ```
@@ -53,13 +63,13 @@ en
 conf t
 hostname ISP
 no ip domain-lookup
-int s1/0
+int g0/1
 ip add 1.1.1.2 255.255.255.252
 no shut
-int s2/0
+int g0/2
 ip add 2.2.2.2 255.255.255.252
 no shut
-int e0/0
+int g0/0
 ip add 8.8.8.254 255.255.255.0
 no shut
 do wr

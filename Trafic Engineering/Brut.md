@@ -110,3 +110,12 @@ snmp-server location SITE1-PARIS
 Netfow -> Implémentation Cisco
 Standard IPFX
 Netflow v9
+
+
+Configuration 
+```
+ip flow-export vers 9
+ip flow-export destination 192.168.10.1 50000
+ip flow-cache timeout active 1 /// en minutes
+ip flow-cache timeout inactive 30 /// en secondes
+```
