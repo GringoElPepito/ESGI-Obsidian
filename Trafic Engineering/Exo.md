@@ -26,6 +26,7 @@ netw 192.168.10.0 255.255.255.0
 default-rout 192.168.10.254
 exit
 ip default-g 1.1.1.2
+ip route 0.0.0.0 0.0.0.0 1.1.1.2 1
 do wr
 ```
 
@@ -54,6 +55,7 @@ netw 192.168.11.0 255.255.255.0
 default-rout 192.168.11.254
 exit
 ip default-g 2.2.2.2
+ip route 0.0.0.0 0.0.0.0 2.2.2.2 1
 do wr
 ```
 
