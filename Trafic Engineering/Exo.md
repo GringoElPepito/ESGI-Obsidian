@@ -101,7 +101,7 @@ crypto isakmp key toto1234 address 2.2.2.1
 crypto ipsec transform-set TS_VPN esp-des esp-md5
 exit
 !!! Définir l'interesting trafic
-ip access-list exte ACLVPN
+ip access-list exte ACL_VPN
 permit ip 192.168.10.0 0.0.0.255 192.168.11.0 0.0.0.255
 exit
 !!! Créer une cyrpto map
