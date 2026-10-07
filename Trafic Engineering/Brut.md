@@ -96,4 +96,12 @@ Les composants SNMP
 La MIB
 - La MIB est structuré par SMI (Simple Management Information)
 - SNMP ne définit pas lui-même quelles informations un système peut exploiter
-- 
+
+
+Config SNMP
+```
+snmp-server host 192.168.10.100 version 2 toto
+snmp-server community toto ro
+snmp-server contact Admin ISTRATEUR
+snmp-server location SITE1-PARIS
+```
