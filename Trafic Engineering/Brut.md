@@ -251,7 +251,7 @@ Classe de service :
 
 
 Recherche RTP, cRTP, sRTP, RTCP
-- RTP Real-Time Protocole -> Permet les échanges de
+- RTP Real-Time Protocole -> Permet les échanges de voix/vidéo (Flux Temps réel) et horodatage (timestamp) et réordonnacement des segments via 2 canaux unidirectionnels. Flux continu de données
 - cRTP Compressed Real-Time Protocole -> Compresse les en-têtes IP, RTP et UDP de 40 à 2 ou 4 octets (4 si checksums)
-- sRTP Secured Real-Time Protocole -> Chiffre le trafic RTP
-- RTCP Real-Time Control Procole -> Permet de faire un retour sur la qualité de transmission (QoS), transmission de métadonnées et de métrique mais pas de voix ou de données utiles
+- sRTP Secured Real-Time Protocole -> Ajoute le chiffrement et l'intégrité au protocle RTP. sRTCP permet de chiffrer les échanges de contrôle.
+- RTCP Real-Time Control Procole -> Permet de faire un retour sur la qualité de transmission (statistiques liés à la QoS), transmission de métadonnées et de métrique mais pas de voix ou de données utiles, 1 canal bi-directionnel. Flux périodique environ toutes les 5 secondes
