@@ -204,6 +204,7 @@ Dans le cas d'un paquet VoIP
 | IPP | IPP | IPP | D   | T   | R   | M   | 0   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1   | 0   | 1   | 1   | 1   | 0   | 0   | 0   |
+
 - D -> Delay, est-ce que le délai doit être le plus court possible ?
 - T -> ThroughPut, est-ce qu'il faut un débit minimum garanti ?
 - R -> Reliability, est-ce que la perte de paquet est important ?
