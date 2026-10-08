@@ -172,6 +172,13 @@ Dans le cas d'un paquet VoIP
 | IPP | IPP | IPP | D   | T   | R   | M   | 0   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1   | 0   | 1   | 1   | 1   | 0   | 0   | 0   |
-- D -> Delai, est-ce que le débit doit être le plus court possible
-- T -> ThroughPut
-- R -> Reliability, est-ce que la perte de paquet est important
+- D -> Delay, est-ce que le délai doit être le plus court possible ?
+- T -> ThroughPut, est-ce qu'il faut un débit minimum garanti ?
+- R -> Reliability, est-ce que la perte de paquet est important ?
+
+Pour le calcul de la valeur on ne prend en compte que les 6 bits avec les poids les plus forts (donc les plus à gauche) ce qui est égale à 46.
+
+Action QoS :
+- Strict Priority -> pour une seule classe uniquement (ToIP, Temps réel) : BP maximale mais strictement prioritaire. Permet de transmettre directement les paquets ciblés par cette règle en laissant les autres paquets en tampons.
+- CBWFQ : Class-Based Weighted Fair Queueing : Fournir une BP minimale et plus si possible.
+- CB Policing : Class-Based Policing : Fournit une BP maximale avec soit remarking/recoloring soit drop pour les flux en excès.
