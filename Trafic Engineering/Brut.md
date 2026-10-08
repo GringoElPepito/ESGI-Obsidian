@@ -100,7 +100,29 @@ La MIB (Management Informations Bases)
 	- Les MIB décrivent la structure des données collectés pour un dispositif géré
 		- Elles utilisent des espaces de noms (namespace) contenant des identifiants d'objets (OID -> Object Identifiant)
 		- Chaque OID identifie une variable qui peut être lue ou modifié par SNMP
+
 La MIB se présente sous la forme d'un objet à propriété comme on pourrait le retrouver en programmation.
+Exemple MIB :
+0. CCITT
+1. ISO
+	0. standard
+	1. registration authority
+	2. member body
+	3. organization
+		6. DoD
+			1. Internet
+				1. directory
+				2. management
+					1. MIB-2
+				3. experimental
+				4. private
+					1. enterprises
+				5. security
+				6. SNMPv2
+				7. mail
+2. ISO - CCITT
+
+Les informations se retrouve généralement au niveau des propriétés de MIB-2. L'OID de MIB-2 est 1.3.6.1.2.1
 
 
 Config SNMP
@@ -112,7 +134,8 @@ snmp-server location SITE1-PARIS
 ```
 
 
-Netfow -> Implémentation Cisco
+Netflow -> Implémentation Cisco
+Netflow est un protocole réseau développé par Cisco pour collecter, mesurer et analyser le trafic de données IP qui transite par un routeur ou un commutateur
 Standard IPFX permet de récupérer les 
 Netflow v9
 
