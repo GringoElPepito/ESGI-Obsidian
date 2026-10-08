@@ -1,5 +1,5 @@
 Traffic Engineering
-- Strictement associé à MPLS-BGP
+- Strictement associé à MPLS-BGP ou VxLAN -> MPLS-BGP-TE
 - QoS : Quality of service
 
 La QoS : fournit des services spécifiques à certains types de trafics au détriment d'autres types de trafics.
@@ -207,8 +207,13 @@ AFXY
 
 Correspondance :
 
-| Probabilité de suppression | Classe 1                  | Classe 2 | Classe 3 | Classe 4 |
-| -------------------------- | ------------------------- | -------- | -------- | -------- |
-| Faible                     | 001010<br>AF11<br>DSCP 10 |          |          |          |
-| Moyenne                    | 001100<br>AF12<br>DSCP 12 |          |          |          |
-| Importante                 | 001110<br>AF13<br>DSCP 14 |          |          |          |
+| Probabilité de suppression | Classe 1                  | Classe 2                  | Classe 3                  | Classe 4 |
+| -------------------------- | ------------------------- | ------------------------- | ------------------------- | -------- |
+| Faible                     | 001010<br>AF11<br>DSCP 10 | 010010<br>AF21<br>DSCP 18 | 011010<br>AF31<br>DSCP 26 |          |
+| Moyenne                    | 001100<br>AF12<br>DSCP 12 | 010100<br>AF22<br>DSCP 20 | 011100<br>AF              |          |
+| Importante                 | 001110<br>AF13<br>DSCP 14 | 010110<br>AF23<br>DSCP 22 |                           |          |
+
+
+QoS : in-serve (RSVP protocole client-serveur permettant de réserver une allocation stricte de la bande passante entre 2 clients) et diffserve (Diff)
+
+Côté opérateur, celui-ci va généralement faire du in-serve pour réserver la bande passante d'un client puis du diff-serve pour
