@@ -190,8 +190,6 @@ Reconnaissance :
 - On pourrait imaginer vérification des n° de ports, des IP source ou destination. Pas forcément prévisible et peut changer sur le trajet donc à éviter.
 - Pour permettre au matériel d'identifier un trafic, on va activer NBAR -> Network Base Application Recognition. Utilise un fichier PDLM (Packet Description Language Module) (équivalent base virale)
 
-
-
 Proxy SSL/TLS va servir de mandataire pour transmettre les requêtes de ces clients aux serveurs Web sur Internet. Le client contacte le Proxy en chiffrant les échanges avec le certificat du Proxy. Le Proxy va recevoir les requêtes, les déchiffrer et regarder leurs contenus puis les transmettre au serveur web cible et inspecter les réponses de ce dernier.
 
 Certain matériel ou application permettent de marquer nativement les paquets. Si les flux ne sont pas marqués nativement -> les reconnaîtres au plus proche de leur génération, de les identifier grâce NBAR et les marquer à ce moment-là.
