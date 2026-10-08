@@ -249,9 +249,9 @@ Correspondance :
 | Importante                 | 001110<br>AF13<br>DSCP 14 | 010110<br>AF23<br>DSCP 22 |                           |          |
 
 
-QoS : in-serve (RSVP protocole client-serveur permettant de réserver une allocation stricte de la bande passante entre 2 terminaux) et diffserve (Diff).
+QoS : int-serv (RSVP protocole client-serveur permettant de réserver une allocation stricte de la bande passante entre 2 terminaux) et diffserv (Diff).
 
-Pour l'in-serve le client est l'hôte à l'origine de la communication et le serveur est la passerelle de cet hôte
+Pour l'int-serv le client est l'hôte à l'origine de la communication et le serveur est la passerelle de cet hôte
 
 Côté opérateur, celui-ci va généralement faire du in-serve pour garantir la bande passante d'un client à un autre puis du diff-serve pour différencier les classes et mener certaines actions.
 
