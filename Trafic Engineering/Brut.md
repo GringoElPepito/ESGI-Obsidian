@@ -15,6 +15,7 @@ La QoS gère 4 problèmatiques :
 	- Serialization delays : (lien 1Gbs -> delay 1 ns) Pas vraiment de possibilité d'agir dessus pour réduire le délai mis à part brancher un câble permettant un plus gros débit
 	- Propagation delays : temps passé sur le lien, Pas vraiment de possibilité d'agir dessus pour réduire le délai
 	- Processing delays : temps passé dans le matériel avant prise de décision et commutation
+	- Queueing delay : Temps passé par le paquet à attendre dans la file d'attente d'une interface.
 - Jitter (variation de délais entre les paquets d'une même communication)
 
 La QoS s'applique aux paquets sortants, il va prioriser
