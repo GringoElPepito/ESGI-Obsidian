@@ -169,7 +169,7 @@ Config SITE2
 ip sla responder
 ```
 
-Pour de la téléphonie tant que l'aller-retour prend moins de 200ms alors
+Pour de la téléphonie tant que l'aller-retour prend moins de 200ms il n'y a pas de problème au niveau de la communication, jusqu'à 400ms, un délai peut être ressenti, au-delà la communication n'est plus fluide.
 Min Opinion Score est une note permettant d'évaluer la qualité du service elle est comprise entre 1 et 5.
 
 Marking/Coloring
