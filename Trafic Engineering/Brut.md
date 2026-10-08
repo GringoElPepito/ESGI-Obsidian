@@ -108,7 +108,7 @@ snmp-server location SITE1-PARIS
 
 
 Netfow -> Implémentation Cisco
-Standard IPFX
+Standard IPFX permet de récupérer les 
 Netflow v9
 
 
@@ -126,7 +126,7 @@ do wr
 ```
 
 
-IPSLA
+IPSLA Simulation de flux aller-retour pour tester la QoS
 Config SITE 1
 ```
 ip sla 1
@@ -143,3 +143,14 @@ ip sla responder
 
 Pour de la téléphonie tant que l'aller-retour prend moins de 200ms alors
 Min Opinion Score est une note permettant d'évaluer la qualité du service elle est comprise entre 1 et 5.
+
+Marking/Coloring
+Après reconnaissance de trafic -> marquage des paquets (ou des trames Ethernet) pour classer les flux
+
+QoS sur la sortie WAN ou sur les ports Trunk pouvant être des goulot d'étranglements.
+CoS Class of Service
+Si on souhaite marquer une trame Ethernet, il faut que celle-ci soit tagué via du dot1q qui ajoute une en-tête supplémentaire contenant un champ CoS.
+Reconnaissance :
+- On pourrait imaginer vérification des n° de ports, des IP source ou destination.
+
+FTP port 20 sert au contrôle et port 21 à la data.
