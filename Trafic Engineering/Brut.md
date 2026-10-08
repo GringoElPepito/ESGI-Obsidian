@@ -5,9 +5,9 @@ Traffic Engineering
 La QoS : fournit des services spécifiques à certains types de trafics au détriment d'autres types de trafics.
 Sans QoS : 
 - FIFO (First In/First Out) pour les équipement bas de gamme, Premier paquet arrivé, premier paquet servi
-- Fair queueing pour les équipements un peu plus haut de gammes, répartission équitable de la bande passante entre tous les trafics.
+- Fair queueing pour les équipements un peu plus haut de gammes, répartition équitable de la bande passante entre tous les trafics.
 
-Les différents de trafics n'ont pas tous les mêmes besoins.
+Les différents trafics n'ont pas tous les mêmes besoins.
 La QoS gère 4 problèmatiques :
 - Lack of BandWidth
 - Packet Loss (congestion)
@@ -31,7 +31,7 @@ Delay : ++
 Packet Loss : ++++
 Jitter : ++++
 
-DSP Digital Signal Processor puce de récéption du trafic liés aux appels pour les téléphones
+DSP Digital Signal Processor puce de réception du trafic liés aux appels pour les téléphones
 
 Analogique -> 1 lien = 1 appel
 Pour palier les problèmes liés à l'analogique, passage au numérique.
@@ -43,7 +43,7 @@ Pour numériser un signal il faut samplé 2 x plus souvent que l'amplitude obser
 
 Vitesse d'un lien Serial 1,544 Mbs -> 23 canaux à 64kbs
 
-Code : Numériser le flux analogique à la source et le dénumériser à destination
+Codec : Numériser le flux analogique à la source et le dénumériser à destination
 - G.711 : codec natif, non compressif (le principe expliqué au dessus) -> 64kbs. Idéal pour le LAN
 - G.729 : codec compressif : 8kbs. Attention pas compatible avec la polyphonie (Plusieurs sources sonores, typiquement MoH : Music on Hold)
 
@@ -85,7 +85,7 @@ SNMPv2 n'est pas chiffré donc préféré l'utilisation de SNMPv3 qui lui est ch
 
 Les pirates tentent dans un premier temps de récupérer de l'information, 
 
-Protocole utilisé
+Ports utilisés
 UDP 161 (port serveur - machine sur laquelle on récupère les informations)
 UDP 162 (port client - Machine de supervision qui va récupérer les infos (PRTG, Nagios, Zabbix))
 
