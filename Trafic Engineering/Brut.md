@@ -164,3 +164,14 @@ Proxy SSL/TLS va servir de mandataire pour transmettre les requêtes de ces clie
 
 Certain matériel ou application permettent de marquer nativement les paquets. Si les flux ne sont pas marqués nativement -> les reconnaîtres au plus proche de leur génération, de les identifier grâce NBAR et les marquer à ce moment-là.
 
+Classification au niveau IP : Champ ToS (Type of Service : 8 bits) qui contient 2 valeurs la première valeur (IPP : IP Precedence : 3 bits de poids fort du champ les plus à gauche) & (DSCP : Differenciated Service Code Point -> 6 bits de poids forts champs ToS).
+
+Champ TOS :
+Dans le cas d'un paquet VoIP
+
+| IPP | IPP | IPP | D   | T   | R   | M   | 0   |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1   | 0   | 1   | 1   | 1   | 0   | 0   | 0   |
+- D -> Delai, est-ce que le débit doit être le plus court possible
+- T -> ThroughPut
+- R -> Reliability, est-ce que la perte de paquet est important
