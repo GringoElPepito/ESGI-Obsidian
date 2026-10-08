@@ -183,7 +183,8 @@ Action QoS :
 - CBWFQ : Class-Based Weighted Fair Queueing : Fournir une BP minimale et plus si possible.
 - CB Policing : Class-Based Policing : Fournit une BP maximale avec soit remarking/recoloring soit drop pour les flux en excès.
 - CB Shapping : Class-Based Shapping : Fournit une BP moyenne mais Attention cela peut générer des délais très importants (voir des timeout). Cela permet de lisser la bande passante, il vide les files d'attentes lorsque le débit réel est inférieur au débit cible et les remplits dans le cas contraire.
-- CBWRED : Class-Based Weighted Random Early Detection
+- CBWRED : Class-Based Weighted Random Early Detection : Indiquer la probabilité de drop (drop discriminator) selon le type de trafic --> les seuils (modifiables) sont basés sur le champ ToS (IPP ou DSCP)
+- Compression des flux ToIP (cRTP : Compressed RTP) -> passer de 40 octets (compression des headers IP+UDP+RTP) à 2 ou 4 octets (si vérification checksum) -> ajoute des délais : à faire sur les liens dont la bande passante est <= T1 (1,544Mbs).
 
 Si congestion sur un équipement, par défaut, l'équipement va drop des paquets de manière aléatoire.
 
@@ -191,4 +192,8 @@ CB Policing permet de définir 3 seuils :
 - Max : 1Mbs
 - Exceed Traffic, il est possible d'exécuter une action soit drop soit remarking pour déprioriser ce trafic excédentaire.
 - Violation Traffic (TAIL DROP), dès qu'un trafic ciblé par le CB Policing tente de dépasser ce seuil celui-ci est automatiquement drop
+
+
+Champ ToS Per-Hop basé sur 3 bits 
+- 000 = Défaut (Best effort)
 - 
