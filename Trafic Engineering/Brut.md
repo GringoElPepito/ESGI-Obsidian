@@ -248,4 +248,10 @@ Classe de service :
 	- streaming-video (video) Netflix
 	- signalisation
 	- ip routing (Network Control)
-	- 
+
+
+Recherche RTP, cRTP, sRTP, RTCP
+- RTP Real-Time Protocole -> Permet les échanges de
+- cRTP Compressed Real-Time Protocole -> Compresse les en-têtes IP, RTP et UDP de 40 à 2 ou 4 octets (4 si checksums)
+- sRTP Secured Real-Time Protocole -> Chiffre le trafic RTP
+- RTCP Real-Time Control Procole -> Permet de faire un retour sur la qualité de transmission (QoS), transmission de métadonnées et de métrique mais pas de voix ou de données utiles
