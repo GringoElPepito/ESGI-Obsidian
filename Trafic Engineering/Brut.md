@@ -96,7 +96,11 @@ Les composants SNMP
 La MIB (Management Informations Bases)
 - La MIB est structuré par SMI (Simple Management Information)
 - SNMP ne définit pas lui-même quelles informations un système peut exploiter
-	- SNMP utilise une structure extensible dans laquelle les informations
+	- SNMP utilise une structure extensible dans laquelle les informations disponibles sont définies dans des MIBs
+	- Les MIB décrivent la structure des données collectés pour un dispositif géré
+		- Elles utilisent des espaces de noms (namespace) contenant des identifiants d'objets (OID -> Object Identifiant)
+		- Chaque OID identifie une variable qui peut être lue ou modifié par SNMP
+La MIB se présente sous la forme d'un objet à propriété comme on pourrait le retrouver en programmation.
 
 
 Config SNMP
