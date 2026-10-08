@@ -194,7 +194,7 @@ CB Policing permet de définir 3 seuils :
 - Violation Traffic (TAIL DROP), dès qu'un trafic ciblé par le CB Policing tente de dépasser ce seuil celui-ci est automatiquement drop
 
 
-Champ ToS Per-Hop basé sur 3 bits 
+Champ ToS Per-Hop Behaviour basé sur 3 bits 
 - 000 = Défaut (Best effort)
 - 101 = Expedited Forwarding
 - 001, 010, 011, 100 = Assured Forwarding
@@ -214,6 +214,12 @@ Correspondance :
 | Importante                 | 001110<br>AF13<br>DSCP 14 | 010110<br>AF23<br>DSCP 22 |                           |          |
 
 
-QoS : in-serve (RSVP protocole client-serveur permettant de réserver une allocation stricte de la bande passante entre 2 clients) et diffserve (Diff)
+QoS : in-serve (RSVP protocole client-serveur permettant de réserver une allocation stricte de la bande passante entre 2 terminaux) et diffserve (Diff).
 
-Côté opérateur, celui-ci va généralement faire du in-serve pour réserver la bande passante d'un client puis du diff-serve pour
+Pour l'in-serve le client est l'hôte à l'origine de la communication et le serveur est la passerelle de cet hôte
+
+Côté opérateur, celui-ci va généralement faire du in-serve pour garantir la bande passante d'un client à un autre puis du diff-serve pour différencier les classes et mener certaines actions.
+
+Au sein d'un site on va plutôt utilisé de la QoS diff-serve.
+
+SD-WAN correspond à une passrelle ayant plusieurs connnexions ex (Internet avec IPSec, Radio type starlink, MPLS-BGP)
