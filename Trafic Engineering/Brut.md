@@ -71,10 +71,13 @@ Structure du paquet :
 
 POTS : Plain Old Telephony System/Service
 
-BP réelle = (Taille totale de la trame en oct X BP nominale du codec en kbs) /Taille du payload en oct
+BP réelle = (Taille totale de la trame en oct X BP nominale du codec en kbs) / Taille du payload en oct
 
 Bande passante réelle utilisé par un appel utilisant le codec G.729
 ((18+20+12+8+20) x 8)/20 = 31,2 kbs 
+
+Bande passante réelle utilisé par un appel utilisant le codec G.711
+((18+20+12+8+160) x 64) / 160 = 87,2 kbs
 
 Donc pour 10 appels, il faudra configuré la QoS du trafic temps réel/VoIP avec une bande passante maximale de 312kbs.
 
