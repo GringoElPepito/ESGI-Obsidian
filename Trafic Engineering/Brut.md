@@ -222,4 +222,30 @@ Côté opérateur, celui-ci va généralement faire du in-serve pour garantir la
 
 Au sein d'un site on va plutôt utilisé de la QoS diff-serve.
 
-SD-WAN correspond à une passrelle ayant plusieurs connnexions ex (Internet avec IPSec, Radio type starlink, MPLS-BGP)
+SD-WAN correspond à une passrelle ayant plusieurs connnexions ex (Internet avec IPSec, Radio type starlink, MPLS-BGP).
+
+SIP est un proctole de signalisation, il ne transporte pas la voix, il est donc peut groumand en bande passante mais souhaite une latence faible
+
+Classe de service :
+- Modèle à 4 ou 5 classes
+	- Temps réel
+	- Signalisation (Peut être associé à la classe critique si modèle 4 classes)
+	- Critique
+	- Best Effort
+	- Scavenger
+- Modèle à 8 classes
+	- Voix (Temps réel)
+	- Vidéo (Temps réel)
+	- signalisation
+	- Network Control (Critique)
+	- Données Critiques (Critique)
+	- Bulk Data (Critique)
+	- Best Effort
+	- Scavenger
+- Modèle à 11 classes
+	- Voix
+	- interactive-video (video) Conférence Teams
+	- streaming-video (video) Netflix
+	- signalisation
+	- ip routing (Network Control)
+	- 
