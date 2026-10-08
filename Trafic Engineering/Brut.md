@@ -256,8 +256,28 @@ Recherche RTP, cRTP, sRTP, RTCP
 - sRTP Secured Real-Time Protocole -> Ajoute le chiffrement et l'intégrité au protocle RTP. chiffrement du payload voip (nécessité que les 2 téléphones aient le même certificat racine) sRTCP permet de chiffrer les échanges de contrôle.
 - RTCP Real-Time Control Procole -> Permet de faire un retour sur la qualité de transmission (statistiques liés à la QoS), transmission de métadonnées et de métrique mais pas de voix ou de données utiles, 1 canal bi-directionnel. Flux périodique environ toutes les 5 secondes. Si configuré peut permettre de changer le codec pour un codec moins gourmand en bande passante si problème sur le réseau (Congestion, latence ou autre)
 
+Le marquage ne doit être fait que pour les flux donc l'applicatif ne permet pas le marquage
 
 Configuration :
 ```
-!!! Reconnaissance 
+!!! Reconnaissance -> activer NBAR
+en
+conf t
+int gi0/1 !!! Interface WAN
+ip nbar protocol-discovery
+!!! classification
+class-map CM_VoIP
+match dscp 46 !!! Si marquage
+class-map CM_FTP
+match protocol ftp !!! Si pas de ToS fournit par l'applicatif
+
+!!! Création des politiques
+policy-map PM_g0/1
+class CM_VoIP
+priority 312 !!! -> Strict Priority valeur en kbs
+class CM_FTP 
+bandwith 2000 !!! -> CBWFQ valeur en kbs
+set dscp 31 !!! Action de Marking
+random-detect !!! CBWRED
+class CM_PTP
 ```
