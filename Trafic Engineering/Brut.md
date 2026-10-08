@@ -196,4 +196,19 @@ CB Policing permet de définir 3 seuils :
 
 Champ ToS Per-Hop basé sur 3 bits 
 - 000 = Défaut (Best effort)
-- 
+- 101 = Expedited Forwarding
+- 001, 010, 011, 100 = Assured Forwarding
+
+Classe 1,2,3 ou 4 en fonction des premiers 
+
+AFXY 
+- X correspond à la valeur constitué par les 3 premiers bits
+- Y correspond à la valeur constitué par les 2 bits suivants
+
+Correspondance :
+
+| Probabilité de suppression | Classe 1                  | Classe 2 | Classe 3 | Classe 4 |
+| -------------------------- | ------------------------- | -------- | -------- | -------- |
+| Faible                     | 001010<br>AF11<br>DSCP 10 |          |          |          |
+| Moyenne                    | 001100<br>AF12<br>DSCP 12 |          |          |          |
+| Importante                 | 001110<br>AF13<br>DSCP 14 |          |          |          |
