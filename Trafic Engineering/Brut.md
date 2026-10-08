@@ -182,3 +182,13 @@ Action QoS :
 - Strict Priority -> pour une seule classe uniquement (ToIP, Temps réel) : BP maximale mais strictement prioritaire. Permet de transmettre directement les paquets ciblés par cette règle en laissant les autres paquets en tampons.
 - CBWFQ : Class-Based Weighted Fair Queueing : Fournir une BP minimale et plus si possible.
 - CB Policing : Class-Based Policing : Fournit une BP maximale avec soit remarking/recoloring soit drop pour les flux en excès.
+- CB Shapping : Class-Based Shapping : Fournit une BP moyenne mais Attention cela peut générer des délais très importants (voir des timeout). Cela permet de lisser la bande passante, il vide les files d'attentes lorsque le débit réel est inférieur au débit cible et les remplits dans le cas contraire.
+- CBWRED : Class-Based Weighted Random Early Detection
+
+Si congestion sur un équipement, par défaut, l'équipement va drop des paquets de manière aléatoire.
+
+CB Policing permet de définir 3 seuils :
+- Max : 1Mbs
+- Exceed Traffic, il est possible d'exécuter une action soit drop soit remarking pour déprioriser ce trafic excédentaire.
+- Violation Traffic (TAIL DROP), dès qu'un trafic ciblé par le CB Policing tente de dépasser ce seuil celui-ci est automatiquement drop
+- 
