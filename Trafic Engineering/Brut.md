@@ -147,10 +147,20 @@ Min Opinion Score est une note permettant d'évaluer la qualité du service elle
 Marking/Coloring
 Après reconnaissance de trafic -> marquage des paquets (ou des trames Ethernet) pour classer les flux
 
+
+FTP actif port 20 sert au contrôle et port 21 à la data.
+FTP passif port aléatoire.
+
 QoS sur la sortie WAN ou sur les ports Trunk pouvant être des goulot d'étranglements.
 CoS Class of Service
 Si on souhaite marquer une trame Ethernet, il faut que celle-ci soit tagué via du dot1q qui ajoute une en-tête supplémentaire contenant un champ CoS.
 Reconnaissance :
-- On pourrait imaginer vérification des n° de ports, des IP source ou destination.
+- On pourrait imaginer vérification des n° de ports, des IP source ou destination. Pas forcément prévisible et peut changer sur le trajet donc à éviter.
+- Pour permettre au matériel d'identifier un trafic, on va activer NBAR -> Network Base Application Recognition. Utilise un fichier PDLM (Packet Description Language Module) (équivalent base virale)
 
-FTP port 20 sert au contrôle et port 21 à la data.
+
+
+Proxy SSL/TLS va servir de mandataire pour transmettre les requêtes de ces clients aux serveurs Web sur Internet. Le client contacte le Proxy en chiffrant les échanges avec le certificat du Proxy. Le Proxy va recevoir les requêtes, les déchiffrer et regarder leurs contenus puis les transmettre au serveur web cible et inspecter les réponses de ce dernier.
+
+Certain matériel ou application permettent de marquer nativement les paquets. Si les flux ne sont pas marqués nativement -> les reconnaîtres au plus proche de leur génération, de les identifier grâce NBAR et les marquer à ce moment-là.
+
