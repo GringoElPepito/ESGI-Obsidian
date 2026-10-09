@@ -369,12 +369,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TOEIC/Risk Management Oral.md",
+                "file": "TOEIC/New Oral.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Risk Management Oral"
+              "title": "New Oral"
             }
           },
           {
@@ -569,8 +569,9 @@
   },
   "active": "1f16796001f62b31",
   "lastOpenFiles": [
-    "Trafic Engineering/Brut.md",
     "TOEIC/Risk Management Oral.md",
+    "TOEIC/New Oral.md",
+    "Trafic Engineering/Brut.md",
     "Trafic Engineering/EXAM.md",
     "TOEIC",
     "Trafic Engineering/Concept.md",
@@ -598,7 +599,6 @@
     "Sécu-Cloud/Brut.md",
     "Sécu-Cloud",
     "Projet Annuel - M1/Cahier des charges.md",
-    "Projet Annuel - M1/Architecture Réseau.md",
     "attachments/Pasted image 20260720074419.png",
     "attachments/Pasted image 20260720071551.png",
     "attachments/Pasted image 20260716234037.png",
