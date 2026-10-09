@@ -322,3 +322,9 @@ exit
 int g0/1
 service-policy output PM-g0/1 !!! application des policy QoS au flux sortant
 ```
+
+Par défaut IPSec réécrit le Champ ToS de l'en-tête IP et la met à 0. Pour éviter ce comportement
+```
+qos pre-classified
+```
+
