@@ -140,6 +140,7 @@ snmp-server location SITE1-PARIS
 
 Netflow -> Implémentation Cisco
 Netflow est un protocole réseau développé par Cisco pour collecter, mesurer et analyser le trafic de données IP qui transite par un routeur ou un commutateur.
+Permet de différencier les types de trafics, les top-talkers (par défaut les 10 plus gros émetteurs).
 Standard IPFX permet de récupérer les 
 Netflow v9
 
@@ -310,7 +311,23 @@ class CM_VoIP
 priority 312 !!! -> Strict Priority valeur en kbs
 class CM_FTP 
 bandwith 2000 !!! -> CBWFQ valeur en kbs
-set dscp 31 !!! Action de Marking
+set dscp 14 !!! Action de Marking
 random-detect !!! CBWRED
 class CM_PTP
+set dscp 20
+police 1000000 exceed drop !!! -> CB Policing valeur en bits par seconde
+class CM_ICMP
+match proto icmp
+class CM_HTTP
+set dscp 18
+shape average 2000000 !!! -> CB Shaping valeur en bits par seconde
+exit
+int g0/1
+service-policy output PM-g0/1 !!! application des policy QoS au flux sortant
 ```
+
+Par défaut IPSec réécrit le Champ ToS de l'en-tête IP et la met à 0. Pour éviter ce comportement
+```
+qos pre-classified
+```
+
