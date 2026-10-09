@@ -369,12 +369,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Trafic Engineering/EXAM.md",
+                "file": "TOEIC/Brut.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EXAM"
+              "title": "Brut"
             }
           },
           {
@@ -589,8 +589,10 @@
   },
   "active": "1f16796001f62b31",
   "lastOpenFiles": [
-    "Trafic Engineering/Brut.md",
     "Trafic Engineering/EXAM.md",
+    "TOEIC/Brut.md",
+    "TOEIC",
+    "Trafic Engineering/Brut.md",
     "Trafic Engineering/Concept.md",
     "Jury 4e année.md",
     "Trafic Engineering/Exo.md",
@@ -617,7 +619,6 @@
     "Sécu-Cloud",
     "Projet Annuel - M1/Cahier des charges.md",
     "Projet Annuel - M1/Architecture Réseau.md",
-    "Projet Annuel - M1/Liste Technos.md",
     "attachments/Pasted image 20260720074419.png",
     "attachments/Pasted image 20260720071551.png",
     "attachments/Pasted image 20260716234037.png",
@@ -628,7 +629,6 @@
     "Powershell",
     "attachments/Pasted image 20260519145031.png",
     "DevOps",
-    "Haute Dispo",
     "attachments/Pasted image 20251124114936.png",
     "attachments/Pasted image 20251124105553.png",
     "attachments/Pasted image 20251124103355.png",
