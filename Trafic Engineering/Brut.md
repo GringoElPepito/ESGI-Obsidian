@@ -315,6 +315,8 @@ random-detect !!! CBWRED
 class CM_PTP
 set dscp 20
 police 1000000 exceed drop !!! -> CB Policing valeur en bits par seconde
+class CM_ICMP
+match proto icmp
 class CM_HTTP
 set dscp 18
 shape average 2000000 !!! -> CB Shaping valeur en bits par seconde
