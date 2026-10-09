@@ -140,6 +140,7 @@ snmp-server location SITE1-PARIS
 
 Netflow -> Implémentation Cisco
 Netflow est un protocole réseau développé par Cisco pour collecter, mesurer et analyser le trafic de données IP qui transite par un routeur ou un commutateur.
+Permet de différencier les types de trafics, les top-talkers (par défaut les 10 plus gros émetteurs).
 Standard IPFX permet de récupérer les 
 Netflow v9
 
