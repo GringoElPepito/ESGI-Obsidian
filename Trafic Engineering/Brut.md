@@ -310,7 +310,15 @@ class CM_VoIP
 priority 312 !!! -> Strict Priority valeur en kbs
 class CM_FTP 
 bandwith 2000 !!! -> CBWFQ valeur en kbs
-set dscp 31 !!! Action de Marking
+set dscp 14 !!! Action de Marking
 random-detect !!! CBWRED
 class CM_PTP
+set dscp 20
+police 1000000 exceed drop !!! -> CB Policing valeur en bits par seconde
+class CM_HTTP
+set dscp 18
+shape average 2000000 !!! -> CB Shaping valeur en bits par seconde
+exit
+int g0/1
+service-policy output PM-g0/1 !!! application des policy QoS au flux sortant
 ```
