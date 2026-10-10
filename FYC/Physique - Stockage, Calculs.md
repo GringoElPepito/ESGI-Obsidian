@@ -228,7 +228,9 @@ Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'oc
 
 ## Sauvegarde
 
-Concernant la sauvegarde
+La sauvegarde est un élément d'une importance capitale pour une infrastructure informatique. Elle permet de répondre à de nombreux incidents et problématiques pouvant être rencontrés, Corruption de données, Ransomware, Suppression non-désirée etc... 
+
+Il existe la
 
 
 # Où stocker le matériel
