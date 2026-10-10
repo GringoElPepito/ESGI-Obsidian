@@ -230,7 +230,9 @@ Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'oc
 
 La sauvegarde est un élément d'une importance capitale pour une infrastructure informatique. Elle permet de répondre à de nombreux incidents et problématiques pouvant être rencontrés, Corruption de données, Ransomware, Suppression non-désirée etc... 
 
-Il existe la méthode 3-2-1 qui consiste à conserver 3 copies des données, sur au moins 2 supports physique différents et avec au moins une copie hors-site. Ceci est un bon début mais la notion peut être poussé plus loin notamment avec la méthode 3-2-1-1-0, 
+Il existe la méthode 3-2-1 qui consiste à conserver 3 copies des données, sur au moins 2 supports physique différents et avec au moins une copie hors-site. Ceci est un bon début mais la notion peut être poussé plus loin notamment avec la méthode 3-2-1-1-0. Cette méthode reprend les principes de la méthodes 3-2-1 et ajoute deux principes supplémentaires une copie des sauvegardes doit être immuable ou hors ligne et il doit y avoir aucune (0) erreur lors de la vérification des données.
+
+
 
 
 # Où stocker le matériel
