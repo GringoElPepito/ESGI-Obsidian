@@ -228,6 +228,8 @@ Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'oc
 
 ## Sauvegarde
 
+Concernant la sauvegarde
+
 
 # Où stocker le matériel
 
