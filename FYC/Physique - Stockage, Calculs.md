@@ -234,7 +234,9 @@ La première étape va être de définir une politique de sauvegarde qui va perm
 
 Concernant la manière de sauvegarder, il existe la méthode 3-2-1 qui consiste à conserver 3 copies des données, sur au moins 2 supports physique différents et avec au moins une copie hors-site. Ceci est un bon début mais la notion peut être poussé plus loin notamment avec la méthode 3-2-1-1-0. Cette méthode reprend les principes de la méthodes 3-2-1 et ajoute deux principes supplémentaires une copie des sauvegardes doit être immuable ou hors ligne et il doit y avoir aucune (0) erreur lors de la vérification des données. Il est aussi intéressant de combiner les différents types de sauvegardes (Complètes, Incrémentiels et différentiels), de cette manière il est possible de bien mieux contrôler la volumétrie des sauvegardes.
 
-Un point à ne pas négliger est la réalisation de tests de restauration réguliers. Cela peut sembler assez évident, mais beaucoup d'entreprise
+Un point à ne pas négliger est la réalisation de tests de restauration réguliers. Cela peut sembler assez évident, mais beaucoup d'entreprises n'en font pas et au moment où la restauration est nécessaire ils peuvent finir par ce rendre compte d'autres problèmes n'ayant pas été découvert jusque là.
+Cela peut être combiné à des contrôles d'intégrités, à une supervision des jobs de backup ainsi qu'à un PRA/PCA pour 
+
 
 
 
