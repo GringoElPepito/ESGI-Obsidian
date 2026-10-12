@@ -232,7 +232,9 @@ La sauvegarde est un élément d'une importance capitale pour une infrastructure
 
 La première étape va être de définir une politique de sauvegarde qui va permettre d'établir différents éléments comme le RPO (perte de données maximale acceptable), le RTO (durée maximale d'interruption) pour chaque service en distinguant les niveaux de criticités. Vous devrez aussi définir (contractuellement si nécessaire) des SLA () ainsi que le partage des responsabilités entre vous gestionnaires de la plateforme et les utilisateurs. Ceci va permettre de cadrer la mise en place de la sauvegarde.
 
-Concernant la manière de sauvegarder, il existe la méthode 3-2-1 qui consiste à conserver 3 copies des données, sur au moins 2 supports physique différents et avec au moins une copie hors-site. Ceci est un bon début mais la notion peut être poussé plus loin notamment avec la méthode 3-2-1-1-0. Cette méthode reprend les principes de la méthodes 3-2-1 et ajoute deux principes supplémentaires une copie des sauvegardes doit être immuable ou hors ligne et il doit y avoir aucune (0) erreur lors de la vérification des données.
+Concernant la manière de sauvegarder, il existe la méthode 3-2-1 qui consiste à conserver 3 copies des données, sur au moins 2 supports physique différents et avec au moins une copie hors-site. Ceci est un bon début mais la notion peut être poussé plus loin notamment avec la méthode 3-2-1-1-0. Cette méthode reprend les principes de la méthodes 3-2-1 et ajoute deux principes supplémentaires une copie des sauvegardes doit être immuable ou hors ligne et il doit y avoir aucune (0) erreur lors de la vérification des données. Il est aussi intéressant de combiner les différents types de sauvegardes (Complètes, Incrémentiels et différentiels), de cette manière il est possible de bien mieux contrôler la volumétrie des sauvegardes.
+
+Un point à ne pas négliger est la réalisation de tests de restauration réguliers. Cela peut sembler assez évident, mais beaucoup d'entreprise
 
 
 
