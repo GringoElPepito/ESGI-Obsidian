@@ -226,6 +226,12 @@ Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'oc
 
 ## Système de stockage par Objet
 
+Les systèmes de stockage par Objets sont par essence des solutions de stockage réseau. 
+
+- MinIO
+- Cloudian
+- Ceph
+
 ## Sauvegarde
 
 La sauvegarde est un élément d'une importance capitale pour une infrastructure informatique. Elle permet de répondre à de nombreux incidents et problématiques pouvant être rencontrés, Corruption de données, Ransomware, Suppression non-désirée etc...
