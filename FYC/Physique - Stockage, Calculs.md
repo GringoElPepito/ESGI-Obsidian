@@ -234,7 +234,13 @@ Les systèmes de stockage par Objets sont par essence des solutions de stockage 
 
 # Stockage HCI
 
-Dans le cas des infrastructures 
+Dans le cas des infrastructures hyperconvergés, les serveurs de calculs intègrent aussi les fonctionnalités de stockage, c'est pourquoi les solutions de stockages pour ce type d'infrastructure sont généralement directement liés au système d'exploitation (hyperviseur) qui sera utilisé sur les serveurs.
+Voici les 4 grandes solutions existantes :
+- Ceph est une solution de stockage distribué open-source qui est notamment supporté par Red Hat. Cette solution est principalement designée pour les environnements Linux et permet de fournir les 3 modes stockages cités plutôt grâce à ses composants RADOS/RGW pour le stockage par objet, RBD 
+- vSAN
+- Nutanix
+- S2D
+Ces solutions sont toutes plus ou moins équivalentes et permettent de faire 
 
 ## Sauvegarde
 
