@@ -228,7 +228,7 @@ Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'oc
 
 Les systèmes de stockage par Objets sont par essence des solutions de stockage réseau. 
 
-- MinIO
+- MinIO 
 - Garage
 - Ceph (RGW)
 
