@@ -234,6 +234,8 @@ Les systèmes de stockage par Objets sont par essence des solutions de stockage 
 
 # Stockage HCI
 
+Dans le cas des infrastructures 
+
 ## Sauvegarde
 
 La sauvegarde est un élément d'une importance capitale pour une infrastructure informatique. Elle permet de répondre à de nombreux incidents et problématiques pouvant être rencontrés, Corruption de données, Ransomware, Suppression non-désirée etc...
