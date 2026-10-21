@@ -54,3 +54,17 @@ Possibilité de demander des garantit écrite par mail.
 
 Les expériences priment sur le reste.
 
+éviter les mots génériques.
+
+Focus sur le projet professionnel.
+
+Accompagnement gratuit pendant 2 ans.
+
+Continuez à prospecter même si promesse d'embauche.
+
+Les outils :
+- Mettre à jour le CV
+- Le profile LinkedIn
+- Rédiger une lettre de motivation (Seulement 7% des lettres de motivation sont lues). Mais lettre 
+
+
