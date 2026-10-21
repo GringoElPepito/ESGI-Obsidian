@@ -37,4 +37,7 @@ Pendant l'entretien :
 - Présentation de votre parcours
 - Transparence, honnêteté sur vos forces et sur vos axes d'amélioration
 - Préparer 2 à 3 questions
-- Vigilance sur la communication verbale (éviter les tics de lan)
+- Vigilance sur la communication verbale (éviter les tics de langages) et non verbale (posture)
+
+Minimum 43 000€ Fixe annuel 
+Jamais en-dessous de 40000€ c'est mort
