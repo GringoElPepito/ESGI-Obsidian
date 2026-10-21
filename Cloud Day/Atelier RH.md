@@ -49,4 +49,8 @@ Pour un entretien avec des ESN demander :
 
 Rester curieux apprendre en continu.
 
-Passer des certfic
+Passer des certifications.
+Possibilité de demander des garantit écrite par mail.
+
+Les expériences priment sur le reste.
+
