@@ -70,8 +70,17 @@ Les outils :
 Comment organiser la recherche :
 - Exploiter ses Réseaux (Personnel, professionnels...)
 - Utiliser LinkedIn dans ses recherches
-- La candidature spontanée
+- La candidature spontanée - gratuit pour la boîte
 - Les plateformes (Indeed, fashion job...)
+
+Les entretiens d'embauche :
+- La préparation des entretiens (Pourquoi devrais-je vous embaucher ? -> En quoi ton profil répond à mes attentes ? Comprendre les compétences demandés et l'offre focus sur les points importants)
+- Quelles sont vos prétentions salariales ?
+
+
+Démarrer Février début Mars.
+
+
 
 
 
