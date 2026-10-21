@@ -89,6 +89,12 @@ Garder les diplômes et les documents légales.
 Ne perder pas les solutions.
 
 
+CV Légère
+Photo professionnelle
+
+Afterworks 
+Gilles Gruda
+
 
 
 
