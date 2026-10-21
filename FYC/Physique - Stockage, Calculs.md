@@ -239,7 +239,7 @@ Dans le cas des infrastructures hyperconvergés, les serveurs de calculs intègr
 Voici les 4 grandes solutions existantes :
 - Ceph est une solution de stockage distribué open-source qui est notamment supporté par Red Hat. Cette solution est principalement designée pour les environnements Linux et permet de fournir les 3 modes stockages cités ci-dessus grâce à ses composants RADOS/RGW pour le stockage par objet, RBD (RADOS Block Device) pour le stockage par bloc et CephFS, vu un peu plutôt, pour le stockage par fichier. Ceph permet notamment d'exposer des services NFS, SMB, iSCSI, NMVe over TCP ou encore les solutions basé sur RDMA. Ceph est une solution très puissante pouvant être assez complexe à mettre en place et à maintenir.
 - vSAN est une solution de stockage distribué propriétaire développé BroadCom VMWare dédié pour les environnements VMWare ESXi et vSphere. 
-- Nutanix
+- Nutanix DSF (Distributed Storage Fabric)
 - S2D est une solution
 
 ## Sauvegarde
