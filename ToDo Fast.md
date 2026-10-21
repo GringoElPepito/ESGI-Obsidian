@@ -1,0 +1,1 @@
+- [ ] Checker sécurisation des compilations en mode release avec Rust
