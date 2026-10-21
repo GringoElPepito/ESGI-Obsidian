@@ -369,12 +369,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TOEIC/New Oral.md",
+                "file": "Cloud Day/Atelier RH.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "New Oral"
+              "title": "Atelier RH"
             }
           },
           {
@@ -569,8 +569,9 @@
   },
   "active": "1f16796001f62b31",
   "lastOpenFiles": [
-    "TOEIC/Risk Management Oral.md",
     "TOEIC/New Oral.md",
+    "Cloud Day/Atelier RH.md",
+    "TOEIC/Risk Management Oral.md",
     "Trafic Engineering/Brut.md",
     "Trafic Engineering/EXAM.md",
     "TOEIC",
@@ -598,7 +599,6 @@
     "Anglais.md",
     "Sécu-Cloud/Brut.md",
     "Sécu-Cloud",
-    "Projet Annuel - M1/Cahier des charges.md",
     "attachments/Pasted image 20260720074419.png",
     "attachments/Pasted image 20260720071551.png",
     "attachments/Pasted image 20260716234037.png",
