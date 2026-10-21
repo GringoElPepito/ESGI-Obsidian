@@ -237,9 +237,15 @@ Les systèmes de stockage par Objets sont par essence des solutions de stockage 
 
 Dans le cas des infrastructures hyperconvergés, les serveurs de calculs intègrent aussi les fonctionnalités de stockage, c'est pourquoi les solutions de stockages pour ce type d'infrastructure sont généralement directement liés au système d'exploitation (hyperviseur) qui sera utilisé sur les serveurs.
 Voici les 4 grandes solutions existantes :
+- Ceph - Linux
+- vSAN
+- Nutanix
+- S2D
+
+
 - Ceph est une solution de stockage distribué open-source qui est notamment supporté par Red Hat. Cette solution est principalement designée pour les environnements Linux et permet de fournir les 3 modes stockages cités ci-dessus grâce à ses composants RADOS/RGW pour le stockage par objet, RBD (RADOS Block Device) pour le stockage par bloc et CephFS, vu un peu plutôt, pour le stockage par fichier. Ceph permet notamment d'exposer des services NFS, SMB, iSCSI, NMVe over TCP ou encore les solutions basé sur RDMA. Ceph est une solution très puissante pouvant être assez complexe à mettre en place et à maintenir.
 - vSAN est une solution de stockage distribué propriétaire développé BroadCom VMWare dédié pour les environnements VMWare ESXi et vSphere. 
-- Nutanix DSF (Distributed Storage Fabric)
+- Nutanix DSF (Distributed Storage Fabric).
 - S2D est une solution
 
 ## Sauvegarde
