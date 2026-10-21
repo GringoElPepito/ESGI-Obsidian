@@ -41,3 +41,12 @@ Pendant l'entretien :
 
 Minimum 43 000€ Fixe annuel 
 Jamais en-dessous de 40000€ c'est mort
+
+
+Pour un entretien avec des ESN demander :
+- Taux d'intercontrat dans l'entreprise
+- Salaire durant l'intercontrat
+
+Rester curieux apprendre en continu.
+
+Passer des certfic
