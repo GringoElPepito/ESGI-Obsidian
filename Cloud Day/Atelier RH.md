@@ -64,7 +64,17 @@ Continuez à prospecter même si promesse d'embauche.
 
 Les outils :
 - Mettre à jour le CV
-- Le profile LinkedIn
-- Rédiger une lettre de motivation (Seulement 7% des lettres de motivation sont lues). Mais lettre 
+- Le profile LinkedIn, 
+- Rédiger une lettre de motivation (Seulement 7% des lettres de motivation sont lues). Mais lettre de motivation obligatoire il faut la faire. En profiter pour parler des éléments pas aborder dans le CV (projet professionnel, le parcours).
+
+Comment organiser la recherche :
+- Exploiter ses Réseaux (Personnel, professionnels...)
+- Utiliser LinkedIn dans ses recherches
+- La candidature spontanée
+- Les plateformes (Indeed, fashion job...)
+
+
+
+
 
 
