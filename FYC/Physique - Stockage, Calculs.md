@@ -192,6 +192,7 @@ SCSI et NVMe sont tous les deux très efficaces mais ils ne sont malheureusement
 	- InfiniBand est un protocole qui se place au même niveau qu'Ethernet, De ce fait il n'est pas possible d'utiliser des switches Ethernet pour y faire circuler du trafic InfiniBand, il est pour cela absolument nécessairement d'acheter des équipements réseau dédiés supportant ce protocole. Les équipements InfiniBand intègre nativement des fonction de contrôle de flux permettant de réduire le risque de perte de paquet. Ce protocole supporte nativement RDMA ce qui offre les meilleurs performances possibles pour ce type de trafic. Cependant InfiniBand est un protocole propriétaire, de ce fait, les équipements le supportant peuvent être très onéreux.
 	- RoCE (RDMA over Converged Ethernet) est un protocole reposant sur le protocole Ethernet pour faire transiter du trafic RDMA. Pour fonctionner il requiert des switchs Ethernet intégrant des fonctions lossless devant être par la suite configuré de manière adapter pour réduire le risque de perte de paquets. Il existe de version du protocole RoCE. La version 1 intervient à la couche 2 du modèle OSI et n'est donc pas routable ce qui limite grandement l'évolutivité. La version 2 est elle routable grâce à l'encapsulation du trafic RDMA au sein de segment UDP/IP lui permettant d'interagir avec la couche 3 et 4. RoCE est un bon compromis pour utiliser du RDMA tout en limitant les coûts liés au à l'infrastructure (au détriment des performances en moyenne 5 à 15% inférieur à InfiniBand). Cependant sa mise en place requiert une configuration pouvant être assez complexe à maintenir.
 	- iWARP (Internet Wide Area RDMA Protocol) est un protocole utilisant TCP/IP pour faire transiter le trafic RDMA. TCP étant un protocole plus gourmand en trafic que l'UDP utilisé par RoCEv2, iWARP a tendance à être moins performant et témoigné plus de latence que ce dernier. Bien que moins performant, iWARP est bien plus simple à configurer et à maintenir que RoCE.
+- RADOS Block Device est la solution de stockage par block fournit par Ceph
 ## Système de fichiers 
 
 Un système de fichier correspond au moyen utiliser pour enregistrer, structurer, nommer et indexer les données sur un support de stockage (HDD, SSD SATA/NVMe, Clé USB etc...).
@@ -226,7 +227,31 @@ Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'oc
 
 ## Système de stockage par Objet
 
+Les systèmes de stockage par Objets sont par essence des solutions de stockage réseau. 
+
+- MinIO 
+- Garage
+- Ceph (RGW)
+
+# Stockage HCI
+
+Dans le cas des infrastructures hyperconvergés, les serveurs de calculs intègrent aussi les fonctionnalités de stockage, c'est pourquoi les solutions de stockages pour ce type d'infrastructure sont généralement directement liés au système d'exploitation (hyperviseur) qui sera utilisé sur les serveurs.
+Voici les 4 grandes solutions existantes :
+- Ceph est une solution de stockage distribué open-source qui est notamment supporté par Red Hat. Cette solution est principalement designée pour les environnements Linux et permet de fournir les 3 modes stockages cités ci-dessus grâce à ses composants RADOS/RGW pour le stockage par objet, RBD (RADOS Block Device) pour le stockage par bloc et CephFS, vu un peu plutôt, pour le stockage par fichier. Ceph permet notamment d'exposer des services NFS, SMB, iSCSI, NMVe over TCP ou encore les solutions basé sur RDMA. Ceph est une solution très puissante pouvant être assez complexe à mettre en place et à maintenir.
+- vSAN est une solution de stockage distribué propriétaire développé BroadCom VMWare dédié pour les environnements VMWare ESXi et vSphere. 
+- Nutanix
+- S2D est une solution
+
 ## Sauvegarde
+
+La sauvegarde est un élément d'une importance capitale pour une infrastructure informatique. Elle permet de répondre à de nombreux incidents et problématiques pouvant être rencontrés, Corruption de données, Ransomware, Suppression non-désirée etc...
+
+La première étape va être de définir une politique de sauvegarde qui va permettre d'établir différents éléments comme le RPO (perte de données maximale acceptable), le RTO (durée maximale d'interruption) pour chaque service en distinguant les niveaux de criticités. Vous devrez aussi définir (contractuellement si nécessaire) des SLA () ainsi que le partage des responsabilités entre vous gestionnaires de la plateforme et les utilisateurs. Ceci va permettre de cadrer la mise en place de la sauvegarde.
+
+Concernant la manière de sauvegarder, il existe la méthode 3-2-1 qui consiste à conserver 3 copies des données, sur au moins 2 supports physique différents et avec au moins une copie hors-site. Ceci est un bon début mais la notion peut être poussé plus loin notamment avec la méthode 3-2-1-1-0. Cette méthode reprend les principes de la méthodes 3-2-1 et ajoute deux principes supplémentaires une copie des sauvegardes doit être immuable ou hors ligne et il doit y avoir aucune (0) erreur lors de la vérification des données. Il est aussi intéressant de combiner les différents types de sauvegardes (Complètes, Incrémentiels et différentiels), de cette manière il est possible de bien mieux contrôler la volumétrie des sauvegardes.
+
+Un point à ne pas négliger est la réalisation de tests de restauration réguliers. Cela peut sembler assez évident, mais beaucoup d'entreprises n'en font pas et au moment où la restauration est nécessaire ils peuvent finir par ce rendre compte d'autres problèmes n'ayant pas été découvert jusque là.
+Cela peut être combiné à des contrôles d'intégrités, à une supervision des jobs de backup ainsi qu'à un PRA/PCA pour garantir une réaction adapté à l'apparition de potentiels incidents.
 
 
 # Où stocker le matériel
