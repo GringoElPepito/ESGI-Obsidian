@@ -74,8 +74,10 @@ Comment organiser la recherche :
 - Les plateformes (Indeed, fashion job...)
 
 Les entretiens d'embauche :
-- La préparation des entretiens (Pourquoi devrais-je vous embaucher ? -> En quoi ton profil répond à mes attentes ? Comprendre les compétences demandés et l'offre focus sur les points importants)
-- Quelles sont vos prétentions salariales ?
+- La préparation des entretiens 
+	- Pourquoi devrais-je vous embaucher ? -> En quoi ton profil répond à mes attentes ? Comprendre les compétences demandés et l'offre focus sur les points importants
+	- Qualités et défauts ? Analyser les missions et déterminer les points importants en termes de qualités.
+- Quelles sont vos prétentions salariales ? -> Est-ce que tu connais la valeur de ton travail ? Si doute faire parler l'entreprise, à combien paierez-vous une personne remplissant 
 
 
 Démarrer Février début Mars.
