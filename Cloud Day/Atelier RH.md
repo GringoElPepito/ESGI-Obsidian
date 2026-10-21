@@ -77,12 +77,16 @@ Les entretiens d'embauche :
 - La préparation des entretiens 
 	- Pourquoi devrais-je vous embaucher ? -> En quoi ton profil répond à mes attentes ? Comprendre les compétences demandés et l'offre focus sur les points importants
 	- Qualités et défauts ? Analyser les missions et déterminer les points importants en termes de qualités.
-- Quelles sont vos prétentions salariales ? -> Est-ce que tu connais la valeur de ton travail ? Si doute faire parler l'entreprise, à combien paierez-vous une personne remplissant 
+- Quelles sont vos prétentions salariales ? -> Est-ce que tu connais la valeur de ton travail ? Si doute faire parler l'entreprise, à combien paierez-vous une personne remplissant toutes les critères du poste ?
+
+
+Checker myges pour les recherches
 
 
 Démarrer Février début Mars.
 
-
+Garder les diplômes et les documents légales.
+Ne perder pas les solutions.
 
 
 
