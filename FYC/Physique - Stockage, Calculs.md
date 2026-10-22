@@ -239,7 +239,7 @@ Dans le cas des infrastructures hyperconvergés, les serveurs de calculs intègr
 Voici les 4 grandes solutions existantes :
 - Ceph est une solution open source permettant de mettre en place un service de stockage distribué et unifié (fichiers, blocs et objets) sous Linux. Bien que Ceph permette de faire une HCI il est possible de déployer une infrastructure Ceph séparément du cluster d'hyperviseur. De plus, Ceph est capable d'exposer de nombreux protocoles de stockage en réseau (iSCSI,NFS,SMB,NVME-oF etc...) ce qui permet de faire fonctionner Ceph avec la major partie des hyperviseurs sur le marché. L'architecture de Ceph est assez complexe et demande une monté compétence pour assurer son installation et sa maintenance. Ceph à une très grande capacité de scaling, ce qui est très adapté au déploiement de cloud privés (OpenStack/Kubernetes), de la sauvegarde et objet S3 ou pour le stockage de grands volumes de données
 - vSAN est une solution propriétaire développé par BroadCom VMWare. vSAN est une solution dédié aux environnements VMWare ESXi/vCenter et ne peut donc être utilisé avec d'autres solutions d'Hypervision. Sa mise en place est parfaitement intégrer à l'environnement VMWare et donc assez simple. 
-- Nutanix DSF (Distributed Storage Fabric) est une solution propriétaire développé par Nutanix. Il est initialement Nutanix AHV
+- Nutanix DSF (Distributed Storage Fabric) est une solution propriétaire développé par Nutanix. La solution 
 - S2D - Windows Server Datacenter
 
 
