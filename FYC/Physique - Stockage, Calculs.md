@@ -237,7 +237,7 @@ Les systèmes de stockage par Objets sont par essence des solutions de stockage 
 
 Dans le cas des infrastructures hyperconvergés, les serveurs de calculs intègrent aussi les fonctionnalités de stockage, c'est pourquoi les solutions de stockages pour ce type d'infrastructure sont généralement directement liés au système d'exploitation (hyperviseur) qui sera utilisé sur les serveurs.
 Voici les 4 grandes solutions existantes :
-- Ceph est une solution open source permettant de mettre en place un service de stockage distribué et unifié (fichiers, blocs et objets) sous Linux. Bien que Ceph permette de faire une HCI il est possible de déployer une infrastructure Ceph séparément du cluster d'hyperviseur. L'architecture de Ceph est assez complexe et demande une monté compétence pour assurer son installation et sa maintenance. 
+- Ceph est une solution open source permettant de mettre en place un service de stockage distribué et unifié (fichiers, blocs et objets) sous Linux. Bien que Ceph permette de faire une HCI il est possible de déployer une infrastructure Ceph séparément du cluster d'hyperviseur. De plus, Ceph est capable d'exposer de nombreux protocoles de stockage en réseau (iSCSI,NFS,SMB,NVME-oF etc...) ce qui permet de faire fonctionner Ceph avec la major partie des hyperviseurs sur le marché. L'architecture de Ceph est assez complexe et demande une monté compétence pour assurer son installation et sa maintenance. Ceph à une très grande capacité de scaling
 - vSAN - VMWare ESXi/vSphere/vCenter
 - Nutanix DSF (Distributed Storage Fabric) - Nutanix AHV
 - S2D - Windows Server Datacenter
