@@ -227,9 +227,9 @@ Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'oc
 
 ## Système de stockage par Objet
 
-Les systèmes de stockage par Objets sont par essence des solutions de stockage réseau. 
+Les systèmes de stockage par Objets sont par essence des solutions de stockage réseau car accessible à travers une API (généralement via HTTP). 
 
-- MinIO - 
+- MinIO est une solution qui était initialement Open-Source mais est très récemment devenue une solution commerciale. Cett
 - Garage -
 - RustFS
 - Ceph (RGW) -
