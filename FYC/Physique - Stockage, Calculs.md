@@ -230,9 +230,9 @@ Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'oc
 Les systèmes de stockage par Objets sont par essence des solutions de stockage réseau car accessible à travers une API (généralement via HTTP). 
 
 - MinIO est une solution qui était initialement Open-Source mais est très récemment devenue une solution commerciale. MinIO est entièrement compatible avec l'API Amazon S3 qui est le format le plus répandue pour les stockages par objets. MinIO est principalement conçu pour la haute performance notamment pour les charges de travail liés à l'IA et/ou au Big Data, cependant il intègre aussi des systèmes de résilience comme l'erasure coding, qui est une protection en cas de perte de disques ou le bitrot permettant de détecter si des données ont été corrompues.
-- Garage 
+- Garage est une solution
 - RustFS
-- Ceph RGW (RADOS Gateway) est un composant de Ceph permettant d'exposer les données stockées au sein du cluster Ceph sous forme d'objet. Il est compatible avec l'API Amazon S3 et OpenStack Swift tout en assurant la transitivité entre ces 2 standards. 
+- Ceph RGW (RADOS Gateway) est un composant de Ceph permettant d'exposer les données stockées au sein du cluster Ceph sous forme d'objet. Il est compatible avec l'API Amazon S3 et OpenStack Swift tout en assurant la transitivité entre ces 2 standards. Il prend aussi en charge la gestion du multisite et de la réplication. Appartenant à la solution Ceph, Ceph RGW est Open-Source et témoigne d'une complexité concernant sa mise en place et son maintien.
 
 # Stockage HCI
 
