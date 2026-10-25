@@ -229,9 +229,9 @@ Les système de fichiers réseaux et distribués ont eux un autre rôle, il s'oc
 
 Les systèmes de stockage par Objets sont par essence des solutions de stockage réseau. 
 
-- MinIO 
-- Garage
-- Ceph (RGW)
+- MinIO -
+- Garage -
+- Ceph (RGW) -
 
 # Stockage HCI
 
@@ -241,10 +241,12 @@ Voici les 4 grandes solutions existantes :
 - vSAN est une solution propriétaire développé par BroadCom VMWare. vSAN est une solution dédié aux environnements VMWare ESXi/vCenter et ne peut donc être utilisé avec d'autres solutions d'Hypervision. Sa mise en place est parfaitement intégrer à l'environnement VMWare et donc assez simple. Cependant un point à prendre en compte est le prix des licences qui avec le rachat de VMWare par BroadCom a beaucoup augmenté.
 - Nutanix DSF (Distributed Storage Fabric) est une solution propriétaire développé par Nutanix. La solution est principalement conçu pour être utilisé au sein d'un environnement Nutanix avec Nutanix AHV (Acropolis Hypervisor) en tant qu'hyperviseur, cependant DSF est tout de même utilisable avec d'autres solutions comme ESXi ou Hyper-V. L'installation et l'exploitation de la solution est plutôt accessible grâce notamment aux différents outils de gestion intégré comme Prism. Comme pour vSAN, il faut prendre en compte le coût des licences.
 - Storage Spaces Direct (S2D) est une solution propriétaire développé par Microsoft. La solution est  - Windows Server Datacenter
+
+
 - Ceph est une solution de stockage distribué open-source qui est notamment supporté par Red Hat. Cette solution est principalement designée pour les environnements Linux et permet de fournir les 3 modes stockages cités ci-dessus grâce à ses composants RADOS/RGW pour le stockage par objet, RBD (RADOS Block Device) pour le stockage par bloc et CephFS, vu un peu plutôt, pour le stockage par fichier. Ceph permet notamment d'exposer des services NFS, SMB, iSCSI, NMVe over TCP ou encore les solutions basé sur RDMA. Ceph est une solution très puissante pouvant être assez complexe à mettre en place et à maintenir.
 - vSAN est une solution de stockage distribué propriétaire développé BroadCom VMWare dédié pour les environnements VMWare ESXi et vSphere. 
 - Nutanix DSF (Distributed Storage Fabric).
-- S2D est une solution
+- S2D est une solution 
 
 ## Sauvegarde
 
