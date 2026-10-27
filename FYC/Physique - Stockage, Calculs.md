@@ -129,7 +129,7 @@ Voici un tableau comparatif des différents RAID présentés ci-dessus :
 | RAID 50 | 6            | k * (n - m)   | 1 par groupe RAID 5 | Très Bonne | Bonne                      |
 | RAID 60 | 8            | k * (n - 2m)  | 2 par groupe RAID 6 | Très Bonne | Correcte                   |
 
-Maintenant que vous connaissez les forces et faiblesses de chaque type de RAID, il faut maintenant choisir le celui qui conviendra à notre infrastructure.
+Maintenant que vous connaissez les forces et faiblesses de chaque type de RAID, il faut maintenant choisir celui qui conviendra à notre infrastructure.
 
 Dans le cas de notre service d'exécution serverless, il est important de savoir ce que va réaliser la majorité des fonctions qui vont être exécutés. Si les fonctions ne font pas d'écriture sur le disque alors un RAID 50 ou 60 dépendant du niveau de sécurité voulu pourrait parfaitement faire l'affaire. Cependant si les fonctions réalisent un grand nombre d'écriture alors il serait préférable d'utiliser un RAID 10 quitte à perdre de l'espace. Bien évidemment le plus important est comme toujours de parvenir à concilier le budget avec les besoins de l'infrastructure.
 
