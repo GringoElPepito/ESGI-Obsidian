@@ -121,7 +121,7 @@ Voici un tableau comparatif des différents RAID présentés ci-dessus :
 | Type    | Disques min. | Espace Dispo. | Tolérance panne     | Lecture    | Ecriture                   |
 | ------- | ------------ | ------------- | ------------------- | ---------- | -------------------------- |
 | RAID 0  | 2            | k * n         | Aucune              | Excellente | Excellente                 |
-| RAID 1  | 2            | k * n / 2     | 1 disque            | Bonne      | Moyenne                    |
+| RAID 1  | 2            | k * 1         | n - 1 disque        | Bonne      | Moyenne                    |
 | RAID 5  | 3            | k * (n - 1)   | 1 disque            | Bonne      | Moyenne (parité)           |
 | RAID 6  | 4            | k * (n - 2)   | 2 disque            | Bonne      | Plus lente (double parité) |
 | RAID 10 | 4            | k * n / 2     | 1 par paire RAID 1  | Excellente | Excellente                 |
@@ -133,7 +133,7 @@ Maintenant que vous connaissez les forces et faiblesses de chaque type de RAID, 
 
 Dans le cas de notre service d'exécution serverless, il est important de savoir ce que va réaliser la majorité des fonctions qui vont être exécutés. Si les fonctions ne font pas d'écriture sur le disque alors un RAID 50 ou 60 dépendant du niveau de sécurité voulu pourrait parfaitement faire l'affaire. Cependant si les fonctions réalisent un grand nombre d'écriture alors il serait préférable d'utiliser un RAID 10 quitte à perdre de l'espace. Bien évidemment le plus important est comme toujours de parvenir à concilier le budget avec les besoins de l'infrastructure.
 
-### Architecture d'accès au stockage
+## Architecture d'accès au stockage
 
 L'architecture de stockage correspond à la manière de connecter les stockages au serveurs de calcul. Voici les 5 architectures de stockage les plus courantes :
 - DAS (Direct Attached Storage), ici les disques servant d'espaces de stockages sont directement connectés aux machines qui pourront donc localement exploiter ces derniers.
@@ -142,7 +142,7 @@ L'architecture de stockage correspond à la manière de connecter les stockages 
 - HCI (HyperConverged Infrastructure), comme pour le DAS, les disques sont directement connectés sur chacune des machines, cependant, chaque machine va mettre en commun son espace de stockage avec les autres pour former un stockage unifié entre toutes les machines du cluster. L'interconnexion entre les machines peut se faire via le réseau physique global ou de préférence via un réseau physique dédié pour de meilleur performance.
 - Cloud, les machines sortent sur internet dans le but d'atteindre le stockage distant fournit par un Cloud Provider (AWS, Azure, GCP ou autre), le stockage est donc externe à l'infrastructure On-Premise.
 
-### Mode de stockage
+## Mode de stockage
 Le mode de stockage correspond à la manière dont les machines vont interagir avec l'espace de stockage pour .
 Il existe 3 mode d'accès :
 - Stockage en mode bloc
@@ -235,7 +235,7 @@ Les systèmes de stockage par Objets sont par essence des solutions de stockage 
 - SeawedFS
 - Ceph RGW (RADOS Gateway) est un composant de Ceph permettant d'exposer les données stockées au sein du cluster Ceph sous forme d'objet. Il est compatible avec l'API Amazon S3 et OpenStack Swift tout en assurant la transitivité entre ces 2 standards. Il prend aussi en charge la gestion du multisite et de la réplication. Appartenant à la solution Ceph, Ceph RGW est Open-Source et témoigne d'une complexité concernant sa mise en place et son maintien.
 
-# Stockage HCI
+## Stockage HCI
 
 Dans le cas des infrastructures hyperconvergés, les serveurs de calculs intègrent aussi les fonctionnalités de stockage, c'est pourquoi les solutions de stockages pour ce type d'infrastructure sont généralement directement liés au système d'exploitation (hyperviseur) qui sera utilisé sur les serveurs.
 Voici les 4 grandes solutions existantes :
