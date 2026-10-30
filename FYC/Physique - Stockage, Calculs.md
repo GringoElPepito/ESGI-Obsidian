@@ -255,7 +255,6 @@ Concernant la manière de sauvegarder, il existe la méthode 3-2-1 qui consiste 
 Un point à ne pas négliger est la réalisation de tests de restauration réguliers. Cela peut sembler assez évident, mais beaucoup d'entreprises n'en font pas et au moment où la restauration est nécessaire ils peuvent finir par ce rendre compte d'autres problèmes n'ayant pas été découvert jusque là.
 Cela peut être combiné à des contrôles d'intégrités, à une supervision des jobs de backup ainsi qu'à un PRA/PCA pour garantir une réaction adapté à l'apparition de potentiels incidents.
 
-
 # Où stocker le matériel
 
 # Automatisation
