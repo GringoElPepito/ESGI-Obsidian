@@ -395,7 +395,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terraform/Brut.md",
+                "file": "DevSecOps/Brut.md",
                 "mode": "source",
                 "source": false
               },
@@ -555,11 +555,13 @@
   },
   "active": "dce4f8aabe6f6e9d",
   "lastOpenFiles": [
-    "FYC/Physique - Stockage, Calculs.md",
     "Terraform/Brut.md",
     "Terraform",
+    "Projet Annuel - M2/Item to integrate.md",
     "DevSecOps/Brut.md",
+    "RAG/Brut.md",
     "DevSecOps",
+    "FYC/Physique - Stockage, Calculs.md",
     "FYC/Brut.md",
     "FYC/Définition Cloud Computing.md",
     "FYC/glossaire.md",
@@ -581,9 +583,7 @@
     "Sans titre 1.md",
     "Trafic Engineering/EXAM.md",
     "TOEIC/New Oral.md",
-    "TOEIC/Risk Management Oral.md",
     "TOEIC",
-    "FYC/Brouillon - Physique - Stockage, Calculs.md",
     "Trafic Engineering",
     "RAG",
     "Sécu-Cloud",
