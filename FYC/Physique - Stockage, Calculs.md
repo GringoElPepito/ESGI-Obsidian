@@ -1,3 +1,4 @@
+
 # Les composants informatiques
 
 Les composants informatiques sont les éléments qui une fois assemblés permettent d'aboutir à ce qu'on appelle communément un ordinateur.
