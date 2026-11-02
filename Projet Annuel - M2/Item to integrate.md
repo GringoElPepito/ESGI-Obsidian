@@ -32,6 +32,19 @@
 - [x] Gestion du CRS (équivalent DRS VMWare VCenter)
 - [ ] 
 
+# CI/CD
+- [ ] Gestion du développement avec des issues
+- [ ] ArgoCD
+- [ ] étape de test fonctionnelle
+- [ ] Tests de sécurité
+	- [ ] SCA -> Analyse des dépendances
+	- [ ] SAST -> Analyse statique du code source
+	- [ ] DAST -> Analyse dynamique à l'exécution du code
+	- [ ] Analyse d'image avec Trivy ou autre
+	- [ ] Analyse IaC
+- [ ] Possibilité de Merge Request unique si tous les tests valide
+- [ ] 
+
 # Infra
 - [ ] NTPv4
 - [ ] IPSec Remote Access

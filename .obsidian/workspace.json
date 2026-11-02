@@ -395,12 +395,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevSecOps/Brut.md",
+                "file": "Projet Annuel - M2/Item to integrate.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brut"
+              "title": "Item to integrate"
             }
           }
         ],
@@ -555,8 +555,8 @@
   },
   "active": "dce4f8aabe6f6e9d",
   "lastOpenFiles": [
-    "RAG/Brut.md",
     "DevSecOps/Brut.md",
+    "RAG/Brut.md",
     "DevSecOps",
     "FYC/Physique - Stockage, Calculs.md",
     "FYC/Brut.md",
