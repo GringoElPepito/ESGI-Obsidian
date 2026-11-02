@@ -395,7 +395,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RAG/Brut.md",
+                "file": "DevSecOps/Brut.md",
                 "mode": "source",
                 "source": false
               },
@@ -555,6 +555,9 @@
   },
   "active": "dce4f8aabe6f6e9d",
   "lastOpenFiles": [
+    "RAG/Brut.md",
+    "DevSecOps/Brut.md",
+    "DevSecOps",
     "FYC/Physique - Stockage, Calculs.md",
     "FYC/Brut.md",
     "FYC/Définition Cloud Computing.md",
@@ -580,8 +583,6 @@
     "TOEIC/Risk Management Oral.md",
     "TOEIC",
     "FYC/Brouillon - Physique - Stockage, Calculs.md",
-    "FYC/Etat de l'art.md",
-    "FYC/TP2.md",
     "Trafic Engineering",
     "RAG",
     "Sécu-Cloud",
@@ -594,7 +595,6 @@
     "Projet Annuel - M1/Document/Sans titre",
     "Powershell",
     "attachments/Pasted image 20260519145031.png",
-    "DevOps",
     "attachments/Pasted image 20251124114936.png",
     "attachments/Pasted image 20251124105553.png",
     "attachments/Pasted image 20251124103355.png",
