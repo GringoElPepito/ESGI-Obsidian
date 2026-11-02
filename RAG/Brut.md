@@ -39,3 +39,8 @@ Les neurones d'un modèles sont une cellule qui prend un stimuli en entré et re
 # où cela casse-t-il et que répare-t-on ?
 
 # Mesurer et savoir ne pas faire de RAG
+
+
+# Les phases du RAG
+
+1. Indexation -> Découper les documents en chunks, convertir chaque chunk en vecteur.
