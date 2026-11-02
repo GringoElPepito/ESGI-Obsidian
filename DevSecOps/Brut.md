@@ -1,0 +1,1 @@
+GitOps -> gestion de l'infrastructure via un git.
