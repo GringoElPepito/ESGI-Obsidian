@@ -34,5 +34,29 @@ Security-Group ensemble de règle réseau permettant de gérer les flux entrant 
 
 # Terraform
 
-Inputs -> variables.tf
+Inputs -> variables.tf, ce que l'appelant fournit. Typé, validé, documenté
 
+Corps -> main.tf, les resources créées. Invisibles depuis l'extérieur.
+
+Outputs -> outputs.tf, les
+
+
+Appeler un module
+Le bloc module porte un nom local (web) et une source.
+Les arguments sont les variables du module.
+On lut ses outputs avec module.nom.output
+terraform
+
+```tf
+module "web" {
+}
+```
+
+Récupération du module :
+- Local
+- Git + Tag
+- Registre public
+
+Deux règles qui ne se discutent pas
+1. Un module enfant ne déclare jamais de bloc provider : il l'hérite du module racine. Seulement required_providers avec des contraintes de version.
+2. Un module d'une seule ressource sans variable est un signal d'alerte : de l'indirection sans bénéfice.
