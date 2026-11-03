@@ -82,3 +82,11 @@ Option 2 -> Un dossier par environnement :
 			- backend.tf
 			- main.tf
 			- terraform.tfvars
+
+
+Deux environnements dans un seul compte
+Les tags, default_tags :
+- Project
+- ManagedBy
+
+Gérer les states séparément
