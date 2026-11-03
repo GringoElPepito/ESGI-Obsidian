@@ -21,7 +21,11 @@ Etat de l'art
 Rapport de veille
 
 
-EXT4 est le système de fichier par défaut pour les distributions Linux basés sur Debian ou Ubuntu. EXT4 est un système par journalisation, c'est à dire qu'il enregistre au sein d'un journal chaque modification sur les métadonnées avant de les réaliser. EXT4 utilise des extents qui sont des suites contiguës de blocs physique du disque ainsi que d'autres mécanismes pour réduire la fragmentation. Il est parfait pour des cas d'utilisations généraux comme un poste de travail.
+EXT4 est le système de fichier par défaut pour les distributions Linux basés sur Debian ou Ubuntu. EXT4 est un système par journalisation, c'est à dire qu'il enregistre au sein d'un journal chaque modification sur les métadonnées avant de les réaliser. 
+
+Grâce à l'utilisation des extents qui sont des suites contiguës de blocs physiques présent sur le disque et d'autres mécanismes, EXT4 permet réduire la fragmentation des données au sein du disque. 
+
+Il est parfait pour des cas d'utilisations généraux comme un poste de travail.
 
 XFS est le système de fichier par défaut pour les distributions Linux basés sur RHEL. XFS est aussi un système de fichier par journalisation et utilise des extents comme EXT4. Cependant XFS est optimisé pour la gestion de large volumes de données gourmands en lecture/écriture. XFS vise à répondre au stockage de grandes bases de données ou de fichiers ou de média volumineux.
 
