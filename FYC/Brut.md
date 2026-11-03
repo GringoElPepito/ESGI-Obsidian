@@ -33,3 +33,6 @@ ZFS est un système de fichiers Open Source dont le développement est devenu pr
 
 
 BTRFS est un système de fichier pensé pour être un équivalent à ZFS directement intégré au noyau Linux. C'est un système de fichier en Copy on Write, il utilise lui aussi des pools de stockages servant à faire des volumes. il intègre des snapshots, de la compression, des checksums ou encore des implémentations RAID. BTRFS consomme moins de ressource que ZFS mais est bien plus jeune et certaine de ses fonctionnalités sont encore instables. BTRFS est assez flexible et sera parfait pour les systèmes exploitant ses fonctionnalités comme Docker/Podman.
+
+
+ReFS est un système de fichier exclusif aux solutions Windows et est développé par Microsoft.
