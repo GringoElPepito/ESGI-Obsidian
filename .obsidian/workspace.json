@@ -421,12 +421,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FYC/TP2.md",
+                "file": "FYC/TP3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TP2"
+              "title": "TP3"
             }
           }
         ],
@@ -581,6 +581,7 @@
   },
   "active": "e55fc147493b256c",
   "lastOpenFiles": [
+    "FYC/TP2.md",
     "FYC/TP3.md",
     "FYC/Physique - Stockage, Calculs.md",
     "FYC/Présentation équipe.md",
@@ -608,7 +609,6 @@
     "Sans titre 5.md",
     "Sans titre 4.md",
     "Sans titre 1.md",
-    "Trafic Engineering/EXAM.md",
     "TOEIC",
     "Trafic Engineering",
     "RAG",
