@@ -402,9 +402,21 @@
               "icon": "lucide-file",
               "title": "Brut"
             }
+          },
+          {
+            "id": "325dc5f1e00e3b48",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.15.0"
+              },
+              "icon": "lucide-book-up",
+              "title": "Notes de version 1.15.0"
+            }
           }
         ],
-        "currentTab": 28
+        "currentTab": 29
       }
     ],
     "direction": "vertical"
@@ -553,7 +565,7 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "dce4f8aabe6f6e9d",
+  "active": "325dc5f1e00e3b48",
   "lastOpenFiles": [
     "Terraform/Brut.md",
     "Terraform",
