@@ -50,7 +50,7 @@ talosctl apply-config --insecure --nodes $MASTER_IP --file controlplane.yaml
 talosctl apply-config --insecure --nodes $WORKER_IP --file worker.yaml
 
 # Initialisation de ETCD et démarrage des composants du control-plane
-talosctl bootstrap --nodes $MASTER_IP
+talosctl bootstrap --nodes $MASTER_IP --endpoints $MASTER_IP
 
 # Récupération de la configuration kubectl
 talosctl kubeconfig --nodes $MASTER_IP
