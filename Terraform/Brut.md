@@ -6,7 +6,7 @@ aws sts get-caller-identity
 Lorsqu'un fichier est en cours de modification sur un stockage S3, celui-ci est verrouillé.
 
 AWS
-Compte -> Un conteneur étanche de ressources et de factures identifié par douz chiffres.
+Compte -> Un conteneur étanche de ressources et de factures identifié par douze chiffres.
 
 Dans le lab : un compte par étudiant
 
