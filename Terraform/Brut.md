@@ -60,3 +60,25 @@ Récupération du module :
 Deux règles qui ne se discutent pas
 1. Un module enfant ne déclare jamais de bloc provider : il l'hérite du module racine. Seulement required_providers avec des contraintes de version.
 2. Un module d'une seule ressource sans variable est un signal d'alerte : de l'indirection sans bénéfice.
+
+Gestion des environnements DEV et PROD
+Option 1 -> Workspace
+```bash
+terraform workspace new dev
+terraform workspace new prod
+terraform select prod
+```
+
+Option 2 -> Un dossier par environnement :
+- Infra
+	- modules
+		- aws
+	- envs
+		- dev
+			- backend.tf
+			- main.tf # ref=v1.1.0
+			- terraform.tfvars
+		- prod
+			- backend.tf
+			- main.tf
+			- terraform.tfvars
