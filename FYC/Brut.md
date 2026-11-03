@@ -21,3 +21,4 @@ Etat de l'art
 Rapport de veille
 
 
+EXT4 est le système de fichier par défaut pour les distributions Linux basés sur Debian ou Ubuntu. EXT4 est un système par journalisation, c'est à dire qu'il enregistre au sein de'un journal chaque modification avant de les réaliser.
