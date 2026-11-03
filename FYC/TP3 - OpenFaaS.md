@@ -105,3 +105,24 @@ Il faut ensuite vérifier que le noyau de la microVM est différent du noyau de 
 ```bash
 kubectl exec kata-test -- uname -r
 ```
+
+Nativement OpenFaaS exécutera des pods classiques sans utiliser de MicroVM. Pour cela, nous allons installer Kyverno qui va permettre de modifier les ressources créées par OpenFaaS pour changer leur runtime par celui de kata et donc lancer nos fonctions serverless au sein de microVM.
+
+Installation de Kyverno :
+```bash
+helm repo add kyverno \
+  https://kyverno.github.io/kyverno/
+
+helm repo update
+
+helm upgrade --install kyverno kyverno/kyverno \
+  --namespace kyverno \
+  --create-namespace
+```
+
+Vérification de l'installation de kyverno :
+```bash
+kubectl get pods -n kyverno
+```
+
+Création d'une ClusterPolicy pour 
