@@ -395,12 +395,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FYC/Physique - Stockage, Calculs.md",
+                "file": "Terraform/Brut.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physique - Stockage, Calculs"
+              "title": "Brut"
             }
           }
         ],
@@ -555,13 +555,13 @@
   },
   "active": "dce4f8aabe6f6e9d",
   "lastOpenFiles": [
+    "FYC/Physique - Stockage, Calculs.md",
     "DevSecOps/Brut.md",
     "Terraform/Brut.md",
     "Terraform",
     "Projet Annuel - M2/Item to integrate.md",
     "RAG/Brut.md",
     "DevSecOps",
-    "FYC/Physique - Stockage, Calculs.md",
     "FYC/Brut.md",
     "FYC/Définition Cloud Computing.md",
     "FYC/glossaire.md",
