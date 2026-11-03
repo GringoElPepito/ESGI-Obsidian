@@ -1,7 +1,5 @@
 Reprendre le cluster Kubernetes installé au cours du TP2.
 
-
-
 But du TP déployer un service FaaS sécurisé utilisant des microVM avec Knative et Firecracker sur un cluster Kubernetes Talos.
 
 ajouter un disque de 20G sur chaque worker TALOS 
@@ -125,4 +123,64 @@ Vérification de l'installation de kyverno :
 kubectl get pods -n kyverno
 ```
 
-Création d'une ClusterPolicy pour 
+Création d'une ClusterPolicy dans le fichier `openfaas-kata-policy.yaml` pour indiquer à Kyverno qu'il doit modifier les nouveaux pods créés par OpenFaaS :
+```YAML
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: openfaas-use-kata
+spec:
+  background: false
+  rules:
+    - name: inject-kata-runtime
+      match:
+        any:
+          - resources:
+              kinds:
+                - Pod
+              namespaces:
+                - openfaas-fn
+      mutate:
+        patchStrategicMerge:
+          spec:
+            runtimeClassName: kata
+```
+
+Puis appliquer-le :
+```bash
+kubectl apply -f openfaas-kata-policy.yaml
+```
+
+Créer une fonction python :
+```bash
+faas-cli new hello-kata --lang python3
+```
+
+Puis modifier le fichier `hello-kata/handler.py` :
+```Python
+import platform
+import os
+
+def handle(event, context):
+    return {
+        "message": "Hello from Kata microVM!",
+        "kernel": platform.release(),
+        "hostname": os.uname().nodename
+    }
+```
+
+Construit l'image :
+```bash
+faas-cli build -f hello-kata.yml
+```
+
+Déploiement de la fonction :
+```bash
+faas-cli deploy -f hello-kata.yml
+```
+
+Test de la fonction :
+```bash
+echo '{"name":"LAB"}' | \
+  faas-cli invoke hello-kata
+```
