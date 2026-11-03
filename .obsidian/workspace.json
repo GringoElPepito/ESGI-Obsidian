@@ -407,11 +407,11 @@
         "currentTab": 28
       },
       {
-        "id": "deab18057dbd6c0e",
+        "id": "3e41b4d7589b932e",
         "type": "tabs",
         "children": [
           {
-            "id": "e282fd996ca7c107",
+            "id": "c3a6fee13b7c6c5c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -573,10 +573,13 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "e282fd996ca7c107",
+  "active": "dce4f8aabe6f6e9d",
   "lastOpenFiles": [
-    "FYC/Physique - Stockage, Calculs.md",
     "FYC/Brut.md",
+    "FYC/Physique - Stockage, Calculs.md",
+    "FYC/glossaire.md",
+    "FYC/TP2.md",
+    "FYC/TP3.md",
     "Terraform/Brut.md",
     "DevSecOps/Brut.md",
     "Terraform",
@@ -584,7 +587,6 @@
     "RAG/Brut.md",
     "DevSecOps",
     "FYC/Définition Cloud Computing.md",
-    "FYC/glossaire.md",
     "FYC/Présentation équipe.md",
     "FYC/Setup TALOS.md",
     "FYC/Séance suivi 1.md",
@@ -601,8 +603,6 @@
     "Sans titre 5.md",
     "Sans titre 4.md",
     "Sans titre 1.md",
-    "Trafic Engineering/EXAM.md",
-    "TOEIC/New Oral.md",
     "TOEIC",
     "Trafic Engineering",
     "RAG",
