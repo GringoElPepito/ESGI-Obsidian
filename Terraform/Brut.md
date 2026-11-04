@@ -123,7 +123,7 @@ trivy -> scanne les images et les dépendances
 
 
 IAM -> en quatre mots
-- Rôle
-- Politique
-- Profil d'instance
-- Dans le lab
+- Rôle -> Une identité sans mot de passe, que l'on endosse
+- Politique -> Un JSON : quelles actions sur quelles ressources
+- Profil d'instance -> Le porte-badge du rôle sur l'instance
+- Dans le lab -> Créer un rôle est refusé
