@@ -409,12 +409,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FYC/Fiche Scientifique.md",
+                "file": "FYC/Physique - Stockage, Calculs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fiche Scientifique"
+              "title": "Physique - Stockage, Calculs"
             }
           },
           {
@@ -583,8 +583,8 @@
   },
   "active": "bdf703fd7ae55968",
   "lastOpenFiles": [
-    "FYC/Physique - Stockage, Calculs.md",
     "FYC/Fiche Scientifique.md",
+    "FYC/Physique - Stockage, Calculs.md",
     "FYC/Note poster scientifique.md",
     "Terraform/Brut.md",
     "FYC/TP3 - OpenFaaS.md",
