@@ -35,7 +35,19 @@ L'approche utilisé est de descendre chacune des couches composants une infrastr
 
 Description des différents composants d'un ordinateur et de leur rôle :
 - CPU : Composant polyvalent réalisant des calculs complexes. Traite peu d'opération à la fois mais le fait à une très grande vitesse.
-- RAM : Composant servant à stocker de manière temporaire
+
+- RAM : Composant servant à stocker de manière temporaire les informations nécessaires aux calculs du processeur. Ce type de mémoire propose une très faible latence ce qui parfait pour accès rapide aux données stockés dans la RAM par le processeur. Les données enregistrées dans la RAM ne sont pas conservés entre les redémarrages ou lorsque la machine est éteinte.
+- GPU : Composant permettant de réaliser de nombreux calculs simples simultanément (calculs matricielles). Utiliser pour l'affichage ou l'IA.
+
+- VRAM : Composant généralement directement intégré à la carte graphique et rempli le même rôle que la RAM mais pour la carte graphique. Ce type de mémoire possède une très large bande passante permettant de transmettre une large quantité de données au GPU parfait pour que celui-ci réalise ces nombreux calculs simultanément. A l'instar de la RAM, la VRAM ne conserve pas non plus les données entre les redémarrage ou lorsque la machine est éteinte.
+
+- Stockage : Composant servant à conserver les données et ce même lorsque la machine n'est plus alimentée. Différents format (HDD, SSD SATA, SSD NVMe, Clé USB etc...)
+
+- Carte mère : Composant central regroupant tous les autres composants de l'ordinateur. Il intègre le BIOS ou l'UEFI qui est le système à la toute base de n'importe quel ordinateur qui fournit un accès direct aux autres composants.
+
+- Carte réseau : Composant permettant de connecter la machine à un réseau pour que celle-ci puisse communiquer avec d'autres machines. La majorité des cartes mères intègrent directement une ou plusieurs cartes réseaux.
+
+- Alimentation : Composant servant à fournir l'é
 
 ## Résultats
 
