@@ -51,7 +51,6 @@ Description des différents composants d'un ordinateur et de leur rôle :
 
 ### Stockage
 
-
 Les RAID (Redundant Array of Independant Disks) sont des manières d'associer différents supports physiques de stockage dans le but d'améliorer les performances et la résilience du stockage.
 
 L'architecture de stockage définit le chemin que vont emprunter les serveurs de calculs pour accéder aux stockages. Il existe 5 architectures :
@@ -61,7 +60,12 @@ L'architecture de stockage définit le chemin que vont emprunter les serveurs de
 - HCI (Hyperconverged Infrastructure)
 - Cloud
 
-Le mode de stockage correspond à la manière dont les données sont visualisées par le serveur de calcul au sein d'un espace de stockage. Il existe 
+Le mode de stockage correspond à la manière dont les données sont visualisées par le serveur de calcul au sein d'un espace de stockage. Il existe 3 modes :
+- Stockage par bloc
+- Stockage par fichier
+- Stockage par objet
+
+
 ## Résultats
 
 ## Aller plus loin
