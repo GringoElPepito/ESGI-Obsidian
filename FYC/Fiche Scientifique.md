@@ -52,30 +52,16 @@ Description des différents composants d'un ordinateur et de leur rôle :
 ### Stockage
 
 
-Les RAID :
-*k* = la taille du plus petit disque utilisé
-n = nombre de disques utilisés
-*m* = nombre de groupe
+Les RAID (Redundant Array of Independant Disks) sont des manières d'associer différents supports physiques de stockage dans le but d'améliorer les performances et la résilience du stockage.
 
-| Type    | Disques min. | Espace Dispo. | Tolérance panne     | Lecture    | Ecriture                   |
-| ------- | ------------ | ------------- | ------------------- | ---------- | -------------------------- |
-| RAID 0  | 2            | k * n         | Aucune              | Excellente | Excellente                 |
-| RAID 1  | 2            | k * 1         | n - 1 disque        | Bonne      | Moyenne                    |
-| RAID 5  | 3            | k * (n - 1)   | 1 disque            | Bonne      | Moyenne (parité)           |
-| RAID 6  | 4            | k * (n - 2)   | 2 disque            | Bonne      | Plus lente (double parité) |
-| RAID 10 | 4            | k * n / 2     | 1 par paire RAID 1  | Excellente | Excellente                 |
-| RAID 01 | 4            | k * n / 2     | 1 par groupe        | Excellente | Excellente                 |
-| RAID 50 | 6            | k * (n - m)   | 1 par groupe RAID 5 | Très Bonne | Bonne                      |
-| RAID 60 | 8            | k * (n - 2m)  | 2 par groupe RAID 6 | Très Bonne | Correcte                   |
+L'architecture de stockage définit le chemin que vont emprunter les serveurs de calculs pour accéder aux stockages. Il existe 5 architectures :
+- DAS (Direct Attaced Storage)
+- NAS (Network Attached Storage)
+- SAN (Storage Area Network)
+- HCI (Hyperconverged Infrastructure)
+- Cloud
 
-Architecture de stockage :
-- DAS (Direct Attached Storage) -> Périphérique connecter localement au serveur 
-- NAS (Network Attached Storage) -> Accès à un serveur de stockage en mode Fichier, généralement via le réseau physique global
-- SAN (Storage Area Network) -> Accès à un serveur de stockage en mode bloc, de préférence via un réseau physique dédié
-- HCI (Hyperconverged Infrastructure) -> Mutualisation du stockage local de plusieurs serveurs au sein d'un cluster
-- Cloud -> Accès à une solution de stockage fournit par un Cloud Provider externe.
-
-Mode de stockage : 
+Le mode de stockage correspond à la manière dont les données sont visualisées par le serveur de calcul au sein d'un espace de stockage. Il existe 
 ## Résultats
 
 ## Aller plus loin
