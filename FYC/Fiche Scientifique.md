@@ -34,9 +34,12 @@ Le cloud
 ## Méthode
 
 L'approche utilisé est de descendre chacune des couches composants une infrastructure cloud. les couches se découpent de la manière suivante :
-- Serverless -> 
-- Conteneurisation & Orchestration -> 
-- 
+- Serverless -> Le but est de comprendre le fonctionnement des solutions FaaS (Function as a Service).
+- Conteneurisation & Orchestration ->  
+- Virtualisation ->
+- Physique -> L'objectif de cette couche est de comprendre le fonctionnement des différents composants constituants un ordinateur, les relations entre elles et de déterminer la manière de choisir ces composants. 
+- Stockage -> Ici, le but est de visualiser les différents enjeux liés au stockage
+- Réseau -> Cette section se concentre sur l'approche à suivre pour concevoir une infrastructure réseau permettant de répondre aux besoins des services Cloud.
 
 ## Résultats
 
