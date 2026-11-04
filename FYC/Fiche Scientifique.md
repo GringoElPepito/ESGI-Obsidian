@@ -33,6 +33,11 @@ Le cloud
 
 ## Méthode
 
+L'approche utilisé est de descendre chacune des couches composants une infrastructure cloud. les couches se découpent de la manière suivante :
+- Serverless -> 
+- Conteneurisation & Orchestration -> 
+- 
+
 ## Résultats
 
 ## Aller plus loin
