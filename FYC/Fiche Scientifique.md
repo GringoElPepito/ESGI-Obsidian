@@ -47,8 +47,35 @@ Description des différents composants d'un ordinateur et de leur rôle :
 
 - Carte réseau : Composant permettant de connecter la machine à un réseau pour que celle-ci puisse communiquer avec d'autres machines. La majorité des cartes mères intègrent directement une ou plusieurs cartes réseaux.
 
-- Alimentation : Composant servant à fournir l'é
+- Alimentation : Composant servant à fournir l'énergie nécessaire au fonctionnement de l'ensemble des composants de l'ordinateur.
 
+### Stockage
+
+
+Les RAID :
+*k* = la taille du plus petit disque utilisé
+n = nombre de disques utilisés
+*m* = nombre de groupe
+
+| Type    | Disques min. | Espace Dispo. | Tolérance panne     | Lecture    | Ecriture                   |
+| ------- | ------------ | ------------- | ------------------- | ---------- | -------------------------- |
+| RAID 0  | 2            | k * n         | Aucune              | Excellente | Excellente                 |
+| RAID 1  | 2            | k * 1         | n - 1 disque        | Bonne      | Moyenne                    |
+| RAID 5  | 3            | k * (n - 1)   | 1 disque            | Bonne      | Moyenne (parité)           |
+| RAID 6  | 4            | k * (n - 2)   | 2 disque            | Bonne      | Plus lente (double parité) |
+| RAID 10 | 4            | k * n / 2     | 1 par paire RAID 1  | Excellente | Excellente                 |
+| RAID 01 | 4            | k * n / 2     | 1 par groupe        | Excellente | Excellente                 |
+| RAID 50 | 6            | k * (n - m)   | 1 par groupe RAID 5 | Très Bonne | Bonne                      |
+| RAID 60 | 8            | k * (n - 2m)  | 2 par groupe RAID 6 | Très Bonne | Correcte                   |
+
+Architecture de stockage :
+- DAS (Direct Attached Storage) -> Périphérique connecter localement au serveur 
+- NAS (Network Attached Storage) -> Accès à un serveur de stockage en mode Fichier, généralement via le réseau physique global
+- SAN (Storage Area Network) -> Accès à un serveur de stockage en mode bloc, de préférence via un réseau physique dédié
+- HCI (Hyperconverged Infrastructure) -> Mutualisation du stockage local de plusieurs serveurs au sein d'un cluster
+- Cloud -> Accès à une solution de stockage fournit par un Cloud Provider externe.
+
+Mode de stockage : 
 ## Résultats
 
 ## Aller plus loin
