@@ -92,3 +92,38 @@ Les tags, default_tags :
 Gérer les states séparément
 
 ## Secrets & IAM
+les point de fuite d'un secret :
+- Le code
+- Le state
+- user_data
+- Les logs
+
+Où stocker
+- SSM Parameter Store
+- Secrets Manager -> Rotation, RDS (réplication)
+
+Ecrire un secret sans qu'il soit enregistrer dans le state
+```tf
+variable "db_password" {
+	type = string
+	ephemeral = true
+}
+
+resource "aws_ssm_parameter" "db_password" {
+	name = "/novasphere/$(var.environment)/db_password"
+	type = secure_string
+	value_wo = 
+	value_wo_version = 1
+}
+```
+
+
+checkov -> analyse du code HCL
+trivy -> scanne les images et les dépendances
+
+
+IAM -> en quatre mots
+- Rôle
+- Politique
+- Profil d'instance
+- Dans le lab
