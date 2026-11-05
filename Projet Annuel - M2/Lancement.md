@@ -48,8 +48,31 @@ Infra cible :
 - Sécurité -> Zero Trust (ZTNA) pour accès distant, NGFW, isolation OT, SIEM centralisé, bastion (jumpserver), MFA obligatoire, IPS/IDS, EDR/SIEM/SOC, Prometheus/Grafana.
 Hub and Spoke
 
-RTO -> moins de 15min
-RPO -> moins de 2H
+RTO -> moins de 2H
+RPO -> moins de 15min
 
 Jalon 1 -> Fin janvier 2027 :
-- Livrables
+- Livrables :
+	- Mémoire technique
+	- matrice de conformité CCTP
+	- chiffrage TCO sur 3 ans
+	- incluant des métriques FinOps/Green IT
+Pitch de 10 min (15% de la note finale)
+
+Jalon 2 -> Fin avril 2027
+- Livrables :
+	- DAT complet et dépôt git validé
+	- IaC
+	- Revue : Audit de code Terraform/ansible sur machine (20%de la note)
+
+Jalon 3 : Fin Juin 2027
+- Recette 
+
+
+35mins du grand orales, 15 minutes dédiées à l'injection de pannes en direct par le jury. Vos architectures cibles sont votre seul filet de sécurité
+
+Moins de 5s pour reprise trafic BGP.
+S3 Object Lock (WORM) restauration via RunBook
+Tentative de suppression malveillante des backups.
+
+10min de pres, 15min d'inj
