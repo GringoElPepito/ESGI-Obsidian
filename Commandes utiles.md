@@ -1,6 +1,6 @@
 Rechercher des fichiers via le contenu :
 ```bash
-find / -type f -exec grep -H "ansible@pbs!ansible" {} \; 
+find / -type f -exec grep -H "docker" {} \; 
 ```
 
 ```bash
