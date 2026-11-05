@@ -42,7 +42,14 @@ Infra actuelle :
 
 Infra cible :
 - Réseau -> SD-WAN dynamique (BGP), 802.1X/RADIUS, segmentation Campus avec vlan dynamique, intégration de la QoS, HA des équipements réseaux, STP, Double stack IPv4/IPv6 sur le coeur de réseau.
-- Systèmes & identité -> Annuaire hybride (AD DS + Entra ID), standards CIS Benchmark
-- Processus -> Flux 100% GitOps, automatisation Terraform/Ansible
-- Sauvegardes -> Stockage S3 immuable (WORM) règle 3-2-1-1-0
-- Zero Trust (ZTNA), NGFW, isolation OT, SIEM centralisé.
+- Systèmes & identité -> Annuaire hybride (AD DS + Entra ID),, IDP Cloud (OKTA, Entra ID), Keycloack/authentik SAML ou OCID, Socle Linux RHEL/ Rocky avec standards CIS Benchmark, gestion centralisé des postes clients avec GPO et MDM.
+- Processus -> Flux 100% GitOps, automatisation Terraform/Ansible, IaC, CI/CD, ArgoCD
+- Sauvegardes & PRA -> Stockage S3 immuable MinIO ou Ceph (WORM) règle 3-2-1-1-0
+- Sécurité -> Zero Trust (ZTNA) pour accès distant, NGFW, isolation OT, SIEM centralisé, bastion (jumpserver), MFA obligatoire, IPS/IDS, EDR/SIEM/SOC, Prometheus/Grafana.
+Hub and Spoke
+
+RTO -> moins de 15min
+RPO -> moins de 2H
+
+Jalon 1 -> Fin janvier 2027 :
+- Livrables
