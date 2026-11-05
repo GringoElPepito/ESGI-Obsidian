@@ -75,4 +75,4 @@ Moins de 5s pour reprise trafic BGP.
 S3 Object Lock (WORM) restauration via RunBook
 Tentative de suppression malveillante des backups.
 
-10min de pres, 15min d'inj
+10min de pres, 15min d'injection de panne, 10min de question/réponse.
