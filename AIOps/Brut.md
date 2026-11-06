@@ -1,4 +1,4 @@
-Contexte d'entreprise Nordel -> modèle IA interne Orion basé sur Gwen3.5.
+Contexte d'entreprise Nordel -> modèle IA interne Orion basé sur Qwen3.5.
 
 Game Day éviter IA agentic.
 
@@ -11,8 +11,6 @@ Les quatres signaux d'observabilité :
 - Logs -> évènements textuels 
 - Traces -> Parcours distribué d'une requête à travers chaque microservice. 
 - Profils -> Echantillonnage de pile. Consommation CPU et mémoire par fonction
-
-
 
 
 Culture DevOps -> automatiser le maximum de choses
@@ -30,5 +28,18 @@ Culture SRI ->
 Prometheus - Grafana
 
 Ollama -> PC
+LLMd
 vLLM -> GPU
-T
+Tensor-RT -> Nvidia
+
+
+Checks :
+- Nagios : Sondes binaire sur seuil fixe, sans corrélation
+- Zabbix : Modèle pull dimensionnel à labels et requêtes
+
+Séries :
+- Prometheus : Modèle pull dimensionnel à labels et requêtes PromQL
+
+Standard :
+- OpenTelemetry : SDK et collecteur neutres pour traces, métriques et logs.
+Pl
