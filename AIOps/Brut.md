@@ -34,12 +34,13 @@ Tensor-RT -> Nvidia
 
 
 Checks :
-- Nagios : Sondes binaire sur seuil fixe, sans corrélation
-- Zabbix : Modèle pull dimensionnel à labels et requêtes
+- Nagios, Zabbix : Sondes binaire sur seuil fixe, sans corrélation
 
 Séries :
-- Prometheus : Modèle pull dimensionnel à labels et requêtes PromQL
+- Prometheus : Modèle pull dimensionnel à labels et requêtes PromQL -> stack kubernetes/conteneur
 
 Standard :
-- OpenTelemetry : SDK et collecteur neutres pour traces, métriques et logs.
-Pl
+- OpenTelemetry : standard pour les métriques, traces, et logs. SDK et collecteur neutres pour traces, métriques et logs.
+Plateformes :
+- Datadog, Dynatrace : SaaS, tout-en-un à corrélation intégrée et coût à l'usage
+- Splunk : spécialisé sécu
