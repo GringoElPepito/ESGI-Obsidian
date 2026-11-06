@@ -27,3 +27,8 @@ Culture SRI ->
 	- Duration -> centiles p50 et P95
 	- Golden Signals (Google) : RED + saturation
 
+Prometheus - Grafana
+
+Ollama -> PC
+vLLM -> GPU
+T
