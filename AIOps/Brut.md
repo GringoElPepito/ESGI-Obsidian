@@ -48,3 +48,13 @@ Plateformes :
 
 CheckMK -> alternative à Zabbix.
 
+SLO 
+
+Check de la quantité de requête sur un intervalle idéalement suffisamment long.
+P95 -> 95% du trafic est égale ou inférieur
+
+budget error est la quantité d'erreur tolérer sur l'infra.
+On continue les déploiements tant que le budget n'est pas atteint.
+Lorsque celui-ci est atteint on stoppe tous les déploiements et on travail sur la résilience de l'infra.
+
+Burn rate -> vitesse à laquelle le budget error est consommé
