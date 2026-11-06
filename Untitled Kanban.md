@@ -15,6 +15,8 @@ kanban-plugin: board
 
 ## Do
 
+- [ ] FYC - Rédaction de la partie réseau
+- [ ] FYC - Poster scienitifique
 
 
 ## Wait
