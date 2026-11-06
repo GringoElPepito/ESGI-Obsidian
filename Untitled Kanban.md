@@ -6,6 +6,11 @@ kanban-plugin: board
 
 ## Plan
 
+- [ ] Terraform - Pipeline CI/CD
+- [ ] PA - Réunion
+- [ ] Aiops - Finir LAB1A
+- [ ] Anglais - Présentation investissement
+- [ ] DevSecOps - Finir Setup infra
 
 
 ## Do
