@@ -58,3 +58,5 @@ On continue les déploiements tant que le budget n'est pas atteint.
 Lorsque celui-ci est atteint on stoppe tous les déploiements et on travail sur la résilience de l'infra.
 
 Burn rate -> vitesse à laquelle le budget error est consommé
+
+ne pas se contenter d'un code HTTP 200 OK.
