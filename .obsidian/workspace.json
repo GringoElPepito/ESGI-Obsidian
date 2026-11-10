@@ -428,30 +428,9 @@
               "icon": "lucide-file",
               "title": "Projet"
             }
-          },
-          {
-            "id": "5d6e7dcebf72e536",
-            "type": "leaf",
-            "state": {
-              "type": "kanban",
-              "state": {
-                "file": "Untitled Kanban.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false,
-                    false
-                  ]
-                }
-              },
-              "icon": "lucide-trello",
-              "title": "Untitled Kanban"
-            }
           }
         ],
-        "currentTab": 31
+        "currentTab": 30
       }
     ],
     "direction": "vertical"
@@ -590,6 +569,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-kanban:Create new board": false,
       "canvas:Créer un nouveau canvas": false,
       "bases:Créer une nouvelle base": false,
       "switcher:Ouvrir le sélecteur rapide": false,
@@ -597,20 +577,26 @@
       "daily-notes:Ouvrir la note quotidienne": false,
       "templates:Insérer le modèle": false,
       "command-palette:Ouvrir la palette de commandes": false,
-      "github-sync:Sync with Remote": false,
-      "obsidian-kanban:Create new board": false
+      "github-sync:Sync with Remote": false
     }
   },
-  "active": "5d6e7dcebf72e536",
+  "active": "e55fc147493b256c",
   "lastOpenFiles": [
+    "Board.md",
+    "TOEIC.md",
+    "ToDo Fast.md",
+    "Info-ESGI.md",
     "Anglais.md",
-    "Untitled Kanban.md",
-    "Sans titre.md",
-    "Sans titre 2.md",
-    "Sans titre 1.md",
+    "Commandes utiles.md",
+    "Jury 4e année.md",
+    "Note TOEIC.md",
+    "Outils.md",
+    "Rapport Alternance L3.md",
+    "Smartbin text.md",
+    "Terraform/Projet.md",
     "AIOps/Brut.md",
     "AIOps",
-    "Terraform/Projet.md",
+    "Sans titre 1.md",
     "FYC/Note poster scientifique.md",
     "FYC/Fiche Scientifique.md",
     "FYC/Réseau.md",
@@ -622,16 +608,9 @@
     "FYC/Physique - Stockage, Calculs.md",
     "FYC/Présentation équipe.md",
     "FYC/Définition Cloud Computing.md",
-    "Terraform/Brut.md",
+    "Sans titre.md",
     "Terraform",
-    "Projet Annuel - M2/Item to integrate.md",
-    "DevSecOps/Brut.md",
-    "RAG/Brut.md",
     "DevSecOps",
-    "FYC/Brut.md",
-    "FYC/glossaire.md",
-    "FYC/Séance suivi 1.md",
-    "Trafic Engineering/Concept.md",
     "TOEIC",
     "Trafic Engineering",
     "RAG",

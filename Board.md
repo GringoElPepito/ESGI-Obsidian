@@ -7,10 +7,11 @@ kanban-plugin: board
 ## Plan
 
 - [ ] Terraform - Pipeline CI/CD
-- [ ] PA - Réunion
 - [ ] Aiops - Finir LAB1A
 - [ ] Anglais - Présentation investissement
 - [ ] DevSecOps - Finir Setup infra
+- [ ] PA - Install Gitlab + sync script
+- [ ] FYC - Recherche + Rédaction Réseau
 
 
 ## Do
@@ -24,6 +25,7 @@ kanban-plugin: board
 ## Acknowledge
 
 **Complete**
+- [x] PA - Réunion
 
 
 
