@@ -2,13 +2,20 @@ Le réseau est l'ensemble des moyens matériels et logiciels permettant à deux 
 # Architecture LAN
 
 Liste des architectures :
-- Bus
-- Anneau
-- Etoile
+- Bus -> Un seul câble sert à relier l'ensemble des machines du réseau. De ce fait, chaque données transmises sur le réseau est en réalité transmis à l'ensemble des équipements reliés à ce bus.
+	- Avantages
+		- La mise en place est très simple
+		- Peu de matériel est nécessaire pour son installation donc très accessibles
+	- Inconvénients
+		- SPOF (Single Point Of Failure), si le câble est endommagé, l'intégralité du réseau est hors-service.
+		- Cette architecture peut présenter un très grand risque de collision en fonction du nombre de machine connecté pouvant amener à des pertes de paquets ou une congestion du réseau.
+		- Chaque données étant transmises à toutes les machines connectées, n'importe qui peut récupérer le trafic y circulant.
+- Anneau -> Chaque appareil est relié à deux autres terminaux uniquement de telle sorte à former physiquement une boucle une fois toutes les machines connectés.
+- Etoile -> Tous les terminaux sont reliés à un équipement unique assurant la communication entre toutes les machines.
 - 3 tiers
 - 2 tiers (collasped)
 - Spine and leaf (Clos) -> les leafs servent à connecter les terminaux (Serveurs, stockages, firewalls etc...) au reste du réseau. Chaque leaf est relié à tous les spines. les spines servent uniquement à faire transiter le trafic entre les leafs. D'ailleurs les spines sont uniquement reliés aux leafs.
 - Fat tree -> augmentation du nombre de lien à chaque fois que l'on remonte une couche.
-- 5 clos/Super spine -> est une extension de l'artchitecture spine and leaf permettant de dépasser la limité d'évolution imposé par le nombre de ports disponibles ou la complexité du cablâge. On va découper l'architecture en Pod, chaque pod sera un réseau spine-leaf. Chacun de ces pods remontent sur 
+- 5 clos/Super spine -> est une extension de l'artchitecture spine and leaf permettant de dépasser la limité d'évolution imposé par le nombre de ports disponibles ou la complexité du cablâge. On va découper l'architecture en Pod, chaque pod sera un réseau spine-leaf. Chacun des spines de ces pods remontent sur les Super-Spines qui ont pour but d'interconnecter tous les pods.
 
 # Architecture WAN
