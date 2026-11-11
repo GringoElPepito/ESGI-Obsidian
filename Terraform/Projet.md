@@ -32,3 +32,6 @@ Checkov check rules to skpi v2:
 - CKV_AWS_378: "Ensure AWS Load Balancer doesn't use HTTP protocol"
 - CKV2_AWS_28: "Ensure public facing ALB are protected by WAF"
 - CKV2_AWS_41: "Ensure an IAM role is attached to EC2 instance"
+
+
+CKV2_GHA_1: "Ensure top-level permissions are not set to write-all"
