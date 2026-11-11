@@ -12,7 +12,7 @@ Liste des architectures :
 		- Chaque données étant transmises à toutes les machines connectées, n'importe qui peut récupérer le trafic y circulant.
 - Anneau -> Chaque appareil est relié à deux autres terminaux uniquement de telle sorte à former physiquement une boucle une fois toutes les machines connectés.
 - Etoile -> Tous les terminaux sont reliés à un équipement unique assurant la communication entre toutes les machines.
-- 3 tiers
+- 3 tiers -> Modèle se découpant en 3 couches hiérarchiques, la couche access, la couche distribution/agrégation et la couche coeur. La couche access fournit l'accès réseau aux terminaux (poste utilisateur, imprimantes, téléphone IP et)
 - 2 tiers (collasped)
 - Spine and leaf (Clos) -> les leafs servent à connecter les terminaux (Serveurs, stockages, firewalls etc...) au reste du réseau. Chaque leaf est relié à tous les spines. les spines servent uniquement à faire transiter le trafic entre les leafs. D'ailleurs les spines sont uniquement reliés aux leafs.
 - Fat tree -> augmentation du nombre de lien à chaque fois que l'on remonte une couche.
