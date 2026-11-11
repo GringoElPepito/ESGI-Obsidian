@@ -12,3 +12,13 @@ Déclenchement
 
 `uses` -> appel de script créer par Github ou par la communauté. Utilisation du hash de commit (SHA) à la place du tag pour éviter attaque de supply chain. [Reference doc](https://github.com/github/awesome-copilot/blob/main/instructions/github-actions-ci-cd-best-practices.instructions.md#3-steps-and-actions)
 
+Checkov check rules to skip :
+- CKV_AWS_337: "Ensure SSM parameters are using KMS CMK"
+- CKV_AWS_382: "Ensure no security groups allow egress from 0.0.0.0:0 to port -1"
+- CKV_AWS_260: "Ensure no security groups allow ingress from 0.0.0.0:0 to port 80"
+- CKV_AWS_131: "Ensure that ALB drops HTTP headers"
+- CKV_AWS_150: "Ensure that Load Balancer has deletion protection enabled"
+- CKV_AWS_2: "Ensure ALB protocol is HTTPS"
+- CKV_AWS_23: "Ensure every security group and rule has a description"
+- CKV_AWS_126: "Ensure that detailed monitoring is enabled for EC2 instances"
+- CKV_AWS_8: "Ensure all data stored in the Launch configuration or instance Elastic Blocks Store is securely encrypted"
