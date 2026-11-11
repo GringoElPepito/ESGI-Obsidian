@@ -22,3 +22,13 @@ Checkov check rules to skip :
 - CKV_AWS_23: "Ensure every security group and rule has a description"
 - CKV_AWS_126: "Ensure that detailed monitoring is enabled for EC2 instances"
 - CKV_AWS_8: "Ensure all data stored in the Launch configuration or instance Elastic Blocks Store is securely encrypted"
+
+
+Checkov check rules to skpi v2:
+- CKV_TF_1: "Ensure Terraform module sources use a commit hash"
+- CKV_AWS_135: "Ensure that EC2 is EBS optimized"
+- CKV2_AWS_20: "Ensure that ALB redirects HTTP requests into HTTPS ones"
+- CKV_AWS_103: "Ensure that load balancer is using at least TLS 1.2"
+- CKV_AWS_378: "Ensure AWS Load Balancer doesn't use HTTP protocol"
+- CKV2_AWS_28: "Ensure public facing ALB are protected by WAF"
+- CKV2_AWS_41: "Ensure an IAM role is attached to EC2 instance"
