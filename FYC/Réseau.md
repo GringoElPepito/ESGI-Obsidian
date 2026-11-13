@@ -1,4 +1,6 @@
 Le réseau est l'ensemble des moyens matériels et logiciels permettant à deux machines informatiques de communiquer.
+
+# 
 # Architecture LAN
 
 Liste des architectures :
@@ -20,7 +22,9 @@ Liste des architectures :
 	- Inconvénients
 - 3 tiers -> Modèle se découpant en 3 couches hiérarchiques, la couche access, la couche distribution/agrégation et la couche coeur. La couche access fournit l'accès réseau aux terminaux (poste utilisateur, imprimantes, téléphone IP etc...) généralement grâce à des switchs de niveaux 2. La couche distribution fait le lien entre la couche coeur et la couche access. C'est à ce niveau qu'on assure le routage inter-VLANs et les filtrages (ACL) notamment grâce aux switches de niveaux 3. Enfin la couche coeur sert à faire transiter le trafic entre les différents équipements de la couche distribution avec des très hauts débits.
 	- Avantages
-		- a
+		- Chaque équipement à un rôle définit ce qui permet de faciliter l'identification d'une panne réseau.
+		- Cette architecture possède aussi une assez grande capacité d'évolution.
+		- De plus c'est une infrastructure particulièrement adapté au trafic nord-sud, 
 	- Inconvénients
 - 2 tiers (collasped) On repart du modèle 3 tier, cependant on fait ici fusionner la couche coeur et la couche distribution. De cette manière on simplifie l'architecture et réduit son coût.
 	- Avantages
@@ -31,6 +35,12 @@ Liste des architectures :
 		- a
 	- Inconvénients
 - Fat tree -> augmentation du nombre de lien à chaque fois que l'on remonte une couche.
+	- Avantages
+		- a
+	- Inconvénients
 - 5 clos/Super spine -> est une extension de l'artchitecture spine and leaf permettant de dépasser la limité d'évolution imposé par le nombre de ports disponibles ou la complexité du cablâge. On va découper l'architecture en Pod, chaque pod sera un réseau spine-leaf. Chacun des spines de ces pods remontent sur les Super-Spines qui ont pour but d'interconnecter tous les pods.
+	- Avantages
+		- a
+	- Inconvénients
 
 # Architecture WAN
