@@ -6,11 +6,9 @@ kanban-plugin: board
 
 ## Plan
 
-- [ ] Terraform - Pipeline CI/CD
 - [ ] Aiops - Finir LAB1A
 - [ ] Anglais - Présentation investissement
 - [ ] DevSecOps - Finir Setup infra
-- [ ] PA - Install Gitlab + sync script
 - [ ] FYC - Recherche + Rédaction Réseau
 
 
@@ -18,6 +16,8 @@ kanban-plugin: board
 
 - [ ] FYC - Rédaction de la partie réseau
 - [ ] FYC - Poster scienitifique
+- [ ] Terraform - Pipeline CI/CD
+- [ ] PA - Install Gitlab + sync script
 
 
 ## Wait

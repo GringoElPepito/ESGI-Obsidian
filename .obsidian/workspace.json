@@ -428,9 +428,30 @@
               "icon": "lucide-file",
               "title": "Réseau"
             }
+          },
+          {
+            "id": "70c7511ab8d0a9db",
+            "type": "leaf",
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "Board.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    false,
+                    false,
+                    false,
+                    false
+                  ]
+                }
+              },
+              "icon": "lucide-trello",
+              "title": "Board"
+            }
           }
         ],
-        "currentTab": 30
+        "currentTab": 31
       }
     ],
     "direction": "vertical"
@@ -580,8 +601,9 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "e55fc147493b256c",
+  "active": "70c7511ab8d0a9db",
   "lastOpenFiles": [
+    "ToDo Fast.md",
     "Terraform/Projet.md",
     "Terraform/Brut.md",
     "Untitled Kanban.md",
@@ -610,7 +632,6 @@
     "DevSecOps",
     "FYC/Brut.md",
     "FYC/glossaire.md",
-    "FYC/Séance suivi 1.md",
     "TOEIC",
     "Trafic Engineering",
     "RAG",
