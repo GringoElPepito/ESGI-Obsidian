@@ -15,7 +15,7 @@ L'anneau connecte chaque machine à deux autres machines uniquement de manière 
 
 L'étoile connecte toutes les machines à un équipement central assurant la communication entre toutes les machines.
 
-Avec la démocratisation de l'informatique, ces 3 architectures ont très vites été dépassées car elles ne permettent pas 
+Avec la démocratisation de l'informatique, ces 3 architectures ont très vites été dépassées car elles ne permettent pas de suivre.
 Liste des architectures :
 - Bus -> Un seul câble sert à relier l'ensemble des machines du réseau. De ce fait, chaque données transmises sur le réseau est en réalité transmis à l'ensemble des équipements reliés à ce bus.
 	- Avantages
