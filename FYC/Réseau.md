@@ -1,6 +1,10 @@
 Le réseau est l'ensemble des moyens matériels et logiciels permettant à deux machines informatiques de communiquer. Au fils des années les réseaux informatiques pour permettre plus de communications et de plus haut débits.
 
-Le réseau se pense lui aussi en fonction des besoins auxquelles doit répondre l'infrastructure. On ne conçoit pas une architecture réseau de la même manière pour un site de production industriel ou pour 
+Le réseau se pense lui aussi en fonction des besoins auxquelles doit répondre l'infrastructure. On ne conçoit pas une architecture réseau de la même manière pour un site de production industriel ou pour héberger une application web.
+
+Architecture
+Accès Internet
+Haute disponibilité Réseau
 # Architecture LAN
 
 Liste des architectures :
