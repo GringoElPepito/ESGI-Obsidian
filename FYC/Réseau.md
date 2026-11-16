@@ -9,8 +9,11 @@ Haute disponibilité Réseau
 
 Les architectures réseaux ont grandement évolués au cours des années notamment pour s'adapter aux besoins des infrastructures. Au début des réseaux informatiques il existait 3 architectures : Le bus, l'anneau et l'étoile.
 
+Le bus connecte toutes les machines à l'aide d'un seul et unique câble. De ce fait, chaque données transmises sur le réseau est en réalité transmis à l'ensemble des équipements reliés à ce bus.
 
+L'anneau connecte chaque machine à deux autres machines uniquement de manière à former physiquement un anneau avec toutes les connexions. 
 
+L'étoile connecte toutes les machines à un équipement central assurant la communication entre toutes les machines.
 Liste des architectures :
 - Bus -> Un seul câble sert à relier l'ensemble des machines du réseau. De ce fait, chaque données transmises sur le réseau est en réalité transmis à l'ensemble des équipements reliés à ce bus.
 	- Avantages
