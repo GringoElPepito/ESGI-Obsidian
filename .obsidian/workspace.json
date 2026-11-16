@@ -433,21 +433,14 @@
             "id": "70c7511ab8d0a9db",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "Board.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false,
-                    false
-                  ]
-                }
+                "file": "FYC/Réseau.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-trello",
-              "title": "Board"
+              "icon": "lucide-file",
+              "title": "Réseau"
             }
           }
         ],
@@ -603,11 +596,11 @@
   },
   "active": "70c7511ab8d0a9db",
   "lastOpenFiles": [
+    "Board.md",
     "ToDo Fast.md",
     "Terraform/Projet.md",
     "Terraform/Brut.md",
     "Untitled Kanban.md",
-    "Board.md",
     "Anglais.md",
     "Sans titre.md",
     "Sans titre 2.md",
