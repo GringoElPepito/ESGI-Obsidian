@@ -7,7 +7,9 @@ Accès Internet
 Haute disponibilité Réseau
 # Architecture LAN
 
-La conception des 
+Les architectures réseaux ont grandement évolués au cours des années notamment pour s'adapter aux besoins des infrastructures. Au début des réseaux informatiques il existait 3 architectures : Le bus, l'anneau et l'étoile.
+
+
 
 Liste des architectures :
 - Bus -> Un seul câble sert à relier l'ensemble des machines du réseau. De ce fait, chaque données transmises sur le réseau est en réalité transmis à l'ensemble des équipements reliés à ce bus.
