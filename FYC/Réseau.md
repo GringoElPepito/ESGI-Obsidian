@@ -7,6 +7,8 @@ Accès Internet
 Haute disponibilité Réseau
 # Architecture LAN
 
+La conception des 
+
 Liste des architectures :
 - Bus -> Un seul câble sert à relier l'ensemble des machines du réseau. De ce fait, chaque données transmises sur le réseau est en réalité transmis à l'ensemble des équipements reliés à ce bus.
 	- Avantages
