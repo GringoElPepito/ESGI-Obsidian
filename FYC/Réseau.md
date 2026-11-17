@@ -17,6 +17,12 @@ L'étoile connecte toutes les machines à un équipement central assurant la com
 
 Avec la démocratisation de l'informatique, ces 3 architectures ont très vites été dépassées car elles ne permettent pas de suivre l'évolution des besoins. C'est pourquoi de nouvelles architectures ont émergés comme l'architecture 3 tier, l'architecture 2 tier /collapsed ou encore le fat tree.
 
+L'architecture 3 tier est un modèle se découpant en 3 couches hiérarchiques, la couche access, la couche distribution/agrégation et la couche coeur. La couche access fournit l'accès réseau aux terminaux (poste utilisateur, imprimantes, téléphone IP etc...) généralement grâce à des switchs de niveaux 2. La couche distribution fait le lien entre la couche coeur et la couche access. C'est à ce niveau qu'on assure le routage inter-VLANs et les filtrages (ACL) notamment grâce aux switches de niveaux 3. Enfin la couche coeur sert à faire transiter le trafic entre les différents équipements de la couche distribution avec des très hauts débits.
+
+L'architecture 2 tier ou collapsed se base sur le modèle 3 tier, cependant on fait ici fusionner la couche coeur et la couche distribution. De cette manière on simplifie l'architecture et réduit son coût.
+
+Le fat tree consiste à augmenter le nombre de lien à chaque fois que l'on remonte une couche.
+
 
 Liste des architectures :
 - Bus -> Un seul câble sert à relier l'ensemble des machines du réseau. De ce fait, chaque données transmises sur le réseau est en réalité transmis à l'ensemble des équipements reliés à ce bus.
