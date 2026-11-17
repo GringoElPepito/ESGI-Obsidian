@@ -21,7 +21,7 @@ L'architecture 3 tier est un modèle se découpant en 3 couches hiérarchiques, 
 
 L'architecture 2 tier ou collapsed se base sur le modèle 3 tier, cependant on fait ici fusionner la couche coeur et la couche distribution. De cette manière on simplifie l'architecture et réduit son coût.
 
-Le fat tree consiste à augmenter le nombre de lien à chaque fois que l'on remonte une couche. Si on part sur l'architecture 3 tier 
+Le fat tree consiste à augmenter le nombre de lien à chaque fois que l'on remonte une couche. 
 
 
 Liste des architectures :
