@@ -21,7 +21,7 @@ L'architecture 3 tier est un modèle se découpant en 3 couches hiérarchiques, 
 
 L'architecture 2 tier ou collapsed se base sur le modèle 3 tier, cependant on fait ici fusionner la couche coeur et la couche distribution. De cette manière on simplifie l'architecture et réduit son coût.
 
-Le fat tree est un peu particulier car il ne définit pas une architecture a proprement parler mais plutôt un pattern à appliquer à une architecture. Le fat tree consiste à augmenter le nombre de lien à chaque fois que l'on remonte une couche. Imaginons que nous avons une architecture 3 tier, si nous y appliquons le fat tree alors les terminaux seront reliés aux switches Access avec 1 lien chacun, chaque switches Access sera reliés aux switches Distribution avec 2 liens
+Le fat tree est un peu particulier car il ne définit pas une architecture a proprement parler mais plutôt un pattern à appliquer à une architecture. Le fat tree consiste à augmenter le nombre de lien à chaque fois que l'on remonte une couche. Imaginons que nous avons une architecture 3 tier, si nous y appliquons le fat tree alors les terminaux seront reliés aux switches Access avec 1 lien chacun, chaque switch Access sera reliés aux switches Distribution avec 2 liens et chaque swicth Distribution sera relié avec
 
 
 Liste des architectures :
