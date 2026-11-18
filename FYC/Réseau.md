@@ -23,6 +23,8 @@ L'architecture 2 tier ou collapsed se base sur le modèle 3 tier, cependant on f
 
 Le fat tree est un peu particulier car il ne définit pas une architecture a proprement parler mais plutôt un pattern à appliquer à une architecture. Le fat tree consiste à augmenter le nombre de lien à chaque fois que l'on remonte une couche. Imaginons que nous avons une architecture 3 tier, si nous y appliquons le fat tree alors les terminaux seront reliés aux switches Access avec 1 lien chacun, chaque switch Access sera reliés aux switches Distribution avec 2 liens et chaque swicth Distribution sera relié avec 4 liens aux swicthes cores.
 
+Cependant l'apparition des clouds et la prolifération des services internet ont poussés les infrastructures à s'adapter à ces nouveaux besoins émergents. Un modèle c'est particulièrement démarqué du reste, le Spine-Leaf et sa déclinaison Super Spine.
+
 
 Liste des architectures :
 - Bus -> Un seul câble sert à relier l'ensemble des machines du réseau. De ce fait, chaque données transmises sur le réseau est en réalité transmis à l'ensemble des équipements reliés à ce bus.
