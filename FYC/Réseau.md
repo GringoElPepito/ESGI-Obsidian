@@ -25,6 +25,10 @@ Le fat tree est un peu particulier car il ne définit pas une architecture a pro
 
 Cependant l'apparition des clouds et la prolifération des services internet ont poussés les infrastructures à s'adapter à ces nouveaux besoins émergents. Un modèle c'est particulièrement démarqué du reste, le Spine-Leaf et sa déclinaison Super Spine.
 
+Le Spine-Leaf est une architecture qui se découpe en 2 couche, la couche Spine et la couche Leaf. Chaque switch Leaf est connecté à l'ensemble des switches Spine. En plus de cela, les switches Leaf connectent aussi les terminaux (Serveurs, Firewalls, Stockage etc...) au réseau. Les Spines sont uniquement connectés aux Leafs et ne servent qu'à fournir un point de passage entre les différentes Leafs. De cette manière une communication entre 2 terminaux ne passe jamais pas plus de 3 switches, ce qui permet de maintenir une latence très faible tout en garantissant de haute bande passante grâce à l'ensemble des liens de l'architecture.
+
+Le Super Spine règle le problème de scalabilité posé par le Spine-Leaf, on va diviser l'infrastructure réseau en Pod, chaque Pod accueillera une architecture Spine-Leaf et chacun de ces Pods sera reliés au Super-Spines qui permet d'assurer la communication entre les Pods.
+
 
 Liste des architectures :
 - Bus -> Un seul câble sert à relier l'ensemble des machines du réseau. De ce fait, chaque données transmises sur le réseau est en réalité transmis à l'ensemble des équipements reliés à ce bus.
