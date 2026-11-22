@@ -1,6 +1,6 @@
 Rechercher des fichiers via le contenu :
 ```bash
-find / -type f -exec grep -H "docker" {} \; 
+find / -type f -exec grep -H "https://dl.rockylinux.org/pub/rocky/9/images/x86_64/Rocky-9-GenericCloud-Base-9.8-20260525.0.x86_64.qcow2" {} \; 
 ```
 
 ```bash
