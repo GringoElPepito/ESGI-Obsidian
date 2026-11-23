@@ -1,0 +1,7 @@
+- [x] State multi-env
+- [x] Pipeline CI/CD
+- [x] Ansible + HTTPS
+- [ ] Déploiement PROD 
+	- [ ] Testé en PLAN
+- [ ] Déploiement DEV
+	- [ ] Testé en PLAN
