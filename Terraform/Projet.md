@@ -35,3 +35,4 @@ Checkov check rules to skpi v2:
 
 
 CKV2_GHA_1: "Ensure top-level permissions are not set to write-all"
+CKV_AWS_24:  "Ensure no security groups allow ingress from 0.0.0.0:0 to port 22"
