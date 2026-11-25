@@ -12,7 +12,6 @@ Déclenchement
 
 `uses` -> appel de script créer par Github ou par la communauté. Utilisation du hash de commit (SHA) à la place du tag pour éviter attaque de supply chain. [Reference doc](https://github.com/github/awesome-copilot/blob/main/instructions/github-actions-ci-cd-best-practices.instructions.md#3-steps-and-actions)
 
-Checkov check rules to skip :
 - CKV_AWS_337: "Ensure SSM parameters are using KMS CMK"
 - CKV_AWS_382: "Ensure no security groups allow egress from 0.0.0.0:0 to port -1"
 - CKV_AWS_260: "Ensure no security groups allow ingress from 0.0.0.0:0 to port 80"
@@ -22,9 +21,6 @@ Checkov check rules to skip :
 - CKV_AWS_23: "Ensure every security group and rule has a description"
 - CKV_AWS_126: "Ensure that detailed monitoring is enabled for EC2 instances"
 - CKV_AWS_8: "Ensure all data stored in the Launch configuration or instance Elastic Blocks Store is securely encrypted"
-
-
-Checkov check rules to skpi v2:
 - CKV_TF_1: "Ensure Terraform module sources use a commit hash"
 - CKV_AWS_135: "Ensure that EC2 is EBS optimized"
 - CKV2_AWS_20: "Ensure that ALB redirects HTTP requests into HTTPS ones"
@@ -32,7 +28,8 @@ Checkov check rules to skpi v2:
 - CKV_AWS_378: "Ensure AWS Load Balancer doesn't use HTTP protocol"
 - CKV2_AWS_28: "Ensure public facing ALB are protected by WAF"
 - CKV2_AWS_41: "Ensure an IAM role is attached to EC2 instance"
+- CKV2_GHA_1: "Ensure top-level permissions are not set to write-all"
+- CKV_AWS_24:  "Ensure no security groups allow ingress from 0.0.0.0:0 to port 22"
 
 
-CKV2_GHA_1: "Ensure top-level permissions are not set to write-all"
-CKV_AWS_24:  "Ensure no security groups allow ingress from 0.0.0.0:0 to port 22"
+skip_check: CKV_AWS_337,CKV_AWS_382,CKV_AWS_260,CKV_AWS_131,CKV_AWS_150,CKV_AWS_2,CKV_AWS_23,CKV_AWS_126,CKV_AWS_8,CKV_TF_1,CKV_AWS_135,CKV2_AWS_20,CKV_AWS_103,CKV_AWS_378,CKV2_AWS_28,CKV2_AWS_41,CKV2_GHA_1,CKV_AWS_24
